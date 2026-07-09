@@ -7,9 +7,9 @@ into a demo app with a long-running QA, browser, or workflow agent.
 Install NodeTrace into this app.
 
 Run:
-npx github:HomenShum/nodetrace add --framework vite
+npx github:HomenShum/NodeTrace add --framework vite
 # or, for Next App Router:
-npx github:HomenShum/nodetrace add --framework next
+npx github:HomenShum/NodeTrace add --framework next
 
 Keep the no-key happy path green first:
 npm run nodetrace:happy-path

@@ -56,8 +56,8 @@ Trace Lens should show:
 From a React/Vite app:
 
 ```bash
-npx github:HomenShum/nodetrace add --framework vite
-npx github:HomenShum/nodetrace add --framework next
+npx github:HomenShum/NodeTrace add --framework vite
+npx github:HomenShum/NodeTrace add --framework next
 ```
 
 After scoped npm publication:
@@ -127,7 +127,7 @@ flowchart LR
 ## 5. Coding-Agent Integration Prompt
 
 ```text
-Run npx github:HomenShum/nodetrace add --framework vite or --framework next in this app.
+Run npx github:HomenShum/NodeTrace add --framework vite or --framework next in this app.
 Keep the no-key happy path green before adding model/provider credentials.
 Open /nodetrace.html for Vite or /nodetrace for Next and verify Trace Lens.
 Tag product surfaces with data-nodetrace-surface.

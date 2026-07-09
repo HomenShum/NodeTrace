@@ -514,7 +514,7 @@ function readNodeRoomSource(filePath) {
   if (existsSync(livePath)) {
     return { source: readFileSync(livePath, "utf8"), mode: "live" };
   }
-  const snapshot = NODE_ROOM_SOURCE_SNAPSHOTS[filePath];
+  const snapshot = nodeRoomSourceSnapshots()[filePath];
   if (snapshot) return { source: snapshot, mode: "snapshot" };
   throw new Error(`NodeRoom source file not found: ${livePath}`);
 }
@@ -872,7 +872,8 @@ function escapeXml(value) {
     .replaceAll('"', "&quot;");
 }
 
-const NODE_ROOM_SOURCE_SNAPSHOTS = {
+function nodeRoomSourceSnapshots() {
+  return {
   "src/ui/panels/Artifact.tsx": `
 function TraceStrip({ roomId }: { roomId: string }) {
   return (
@@ -990,4 +991,5 @@ export function TraceFlow({ record, onOpenSource }) {
 .r-tracevu-shotframe { position: relative; display: inline-block; line-height: 0; }
 .r-tracevu-box { position: absolute; border: 2px solid var(--accent-primary); border-radius: 3px; background: color-mix(in srgb, var(--accent-primary) 16%, transparent); box-shadow: 0 0 0 1px var(--bg-primary); pointer-events: none; }
 `,
-};
+  };
+}

@@ -11,8 +11,8 @@ agent edits a JSON plan, then runs the CLI or MCP tool to capture:
 ## CLI
 
 ```bash
-npx github:HomenShum/nodetrace capture --plan examples/real-codebase-capture/noderoom.capture.json --dry-run
-npx github:HomenShum/nodetrace capture --plan examples/real-codebase-capture/noderoom.capture.json
+npx github:HomenShum/NodeTrace capture --plan examples/real-codebase-capture/noderoom.capture.json --dry-run
+npx github:HomenShum/NodeTrace capture --plan examples/real-codebase-capture/noderoom.capture.json
 ```
 
 After npm publication:
@@ -33,7 +33,7 @@ Local MCP clients can run:
   "mcpServers": {
     "nodetrace-capture": {
       "command": "npx",
-      "args": ["-y", "-p", "github:HomenShum/nodetrace", "nodetrace-mcp"]
+      "args": ["-y", "-p", "github:HomenShum/NodeTrace", "nodetrace-mcp"]
     }
   }
 }

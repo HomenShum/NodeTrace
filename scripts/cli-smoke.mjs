@@ -2,6 +2,7 @@ import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { spawnSync } from "node:child_process";
+import { createCaptureFixture } from "./capture-plan-fixture.mjs";
 
 const issues = [];
 const tempDir = mkdtempSync(join(tmpdir(), "nodetrace-cli-smoke-"));
@@ -67,9 +68,10 @@ function runInstall(targetDir, extraArgs) {
 }
 
 function runCaptureDryRun() {
+  const { planPath } = createCaptureFixture(tempDir);
   for (const command of [
-    ["bin/nodetrace.mjs", "capture", "--plan", "examples/real-codebase-capture/noderoom.capture.json", "--dry-run"],
-    ["bin/nodetrace-capture.mjs", "--plan", "examples/real-codebase-capture/noderoom.capture.json", "--dry-run"],
+    ["bin/nodetrace.mjs", "capture", "--plan", planPath, "--dry-run"],
+    ["bin/nodetrace-capture.mjs", "--plan", planPath, "--dry-run"],
   ]) {
     const result = spawnSync(process.execPath, command, {
       cwd: process.cwd(),

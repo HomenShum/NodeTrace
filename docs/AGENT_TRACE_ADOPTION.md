@@ -10,8 +10,8 @@ NodeRoom.
 Install NodeTrace into this repo and prove the no-key trace UI works.
 
 Use the correct framework target:
-npx github:HomenShum/nodetrace add --framework vite
-npx github:HomenShum/nodetrace add --framework next
+npx github:HomenShum/NodeTrace add --framework vite
+npx github:HomenShum/NodeTrace add --framework next
 
 Run the generated checks:
 npm run nodetrace:happy-path

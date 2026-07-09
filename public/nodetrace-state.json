@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T05:15:58.415Z",
+  "generatedAt": "2026-07-09T02:37:51.545Z",
   "session": {
     "id": "trace-coach-noderoom-sqlite",
     "title": "Trace Coach: NodeRoom codebase trace",
@@ -53,7 +53,7 @@
       "elementId": "coach-step-01-artifact-entry",
       "title": "Step 01: Open NodeRoom's Trace tab from the artifact shell",
       "status": "verified",
-      "confidence": 0.97,
+      "confidence": 0.88,
       "sourceLabel": "src/ui/panels/Artifact.tsx",
       "sourceUrl": "https://github.com/HomenShum/noderoom",
       "detail": "Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view."
@@ -65,7 +65,7 @@
       "elementId": "coach-step-02-detail-tabs",
       "title": "Step 02: Use the real NodeRoom trace tabs",
       "status": "verified",
-      "confidence": 0.97,
+      "confidence": 0.88,
       "sourceLabel": "src/ui/panels/TraceSurface.tsx",
       "sourceUrl": "https://github.com/HomenShum/noderoom",
       "detail": "The sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record."
@@ -77,7 +77,7 @@
       "elementId": "coach-step-03-trace-data",
       "title": "Step 03: Seed the app from NodeRoom TraceRecord data",
       "status": "verified",
-      "confidence": 0.97,
+      "confidence": 0.88,
       "sourceLabel": "src/ui/panels/traceData.ts",
       "sourceUrl": "https://github.com/HomenShum/noderoom",
       "detail": "NodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads."
@@ -89,7 +89,7 @@
       "elementId": "coach-step-04-step-row",
       "title": "Step 04: Render code and UI evidence like NodeRoom step rows",
       "status": "verified",
-      "confidence": 0.97,
+      "confidence": 0.88,
       "sourceLabel": "src/ui/panels/TraceStepRow.tsx",
       "sourceUrl": "https://github.com/HomenShum/noderoom",
       "detail": "Each step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted."
@@ -101,7 +101,7 @@
       "elementId": "coach-step-05-flow",
       "title": "Step 05: Keep the latest flow tab behavior",
       "status": "verified",
-      "confidence": 0.97,
+      "confidence": 0.88,
       "sourceLabel": "src/ui/panels/TraceFlow.tsx",
       "sourceUrl": "https://github.com/HomenShum/noderoom",
       "detail": "NodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list."
@@ -113,7 +113,7 @@
       "elementId": "coach-step-06-style",
       "title": "Step 06: Match NodeRoom's dark trace surface",
       "status": "verified",
-      "confidence": 0.97,
+      "confidence": 0.88,
       "sourceLabel": "src/app/styles.css",
       "sourceUrl": "https://github.com/HomenShum/noderoom",
       "detail": "The sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes."
@@ -192,7 +192,7 @@
     "mode": "campaign",
     "activeStepId": "coach-step-01-artifact-entry",
     "sourceRepo": "HomenShum/noderoom",
-    "sourceMode": "live",
+    "sourceMode": "snapshot",
     "steps": [
       {
         "id": "coach-step-01-artifact-entry",
@@ -229,8 +229,8 @@
             "    - panels",
             "      - Artifact.tsx"
           ],
-          "highlightStartLine": 2038,
-          "highlightEndLine": 2064,
+          "highlightStartLine": 1,
+          "highlightEndLine": 15,
           "captureKind": "actual-code-browser-shiki"
         },
         "mapCapture": {
@@ -240,9 +240,9 @@
         },
         "codeBlock": {
           "filePath": "src/ui/panels/Artifact.tsx",
-          "startLine": 2038,
-          "endLine": 2064,
-          "snippet": "  useEffect(() => { const el = ref.current; if (el && nearBottom.current) el.scrollTop = el.scrollHeight; }, [log.length]);\n  const onScroll = () => { const el = ref.current; if (el) nearBottom.current = el.scrollHeight - el.scrollTop - el.clientHeight < 60; };\n  const shown = log.slice(-40);\n  // The trace is a LOG, not the work surface. Collapse it by default so the artifact (the spreadsheet)\n  // reclaims the ~300px this strip otherwise holds -- the contract says the work surface carries focus.\n  // Auto-expand only when proposals are pending, since that is actionable review the host must not miss.\n  const open = openOverride ?? proposals.length > 0;\n  return (\n    <div className=\"r-trace\" data-testid=\"room-trace\" data-open={String(open)} data-noderoom-surface=\"workSurface.traceStrip\">\n      <div className=\"r-trace-head\">\n        <button\n          type=\"button\"\n          className=\"r-trace-toggle\"\n          aria-expanded={open}\n          aria-label={open ? \"Collapse room trace\" : \"Expand room trace\"}\n          onClick={() => setOpenOverride(!open)}\n        >\n          <ChevronRight size={13} className=\"r-trace-chev\" style={{ transform: open ? \"rotate(90deg)\" : \"none\" }} />\n          <History size={14} style={{ color: \"var(--text-muted)\" }} />\n          <span className=\"h-title\" style={{ fontSize: 12.5 }}>Room trace</span>\n          <span className=\"mono tiny faint\">{log.length} events</span>\n          {!open && proposals.length > 0 && <span className=\"r-trace-badge\">{proposals.length} to review</span>}\n        </button>\n        <span className=\"grow\" />\n        {run && <span className=\"r-trace-tele\" title={`${run.steps} steps · ${run.inputTokens.toLocaleString()} in + ${run.outputTokens.toLocaleString()} out tokens · ${run.ms}ms`}>{run.model} · {run.toolCalls} tools · ${run.costUsd.toFixed(3)}</span>}\n        {host && proposals.length > 1 && <button className=\"r-mini-btn primary\" disabled={acceptingAll} onClick={() => void acceptAll()}><Check size={12} /> Accept all</button>}\n      </div>"
+          "startLine": 1,
+          "endLine": 15,
+          "snippet": "\nfunction TraceStrip({ roomId }: { roomId: string }) {\n  return (\n    <div className=\"r-trace\" data-testid=\"room-trace\" data-open={String(open)} data-noderoom-surface=\"workSurface.traceStrip\">\n      <div className=\"r-trace-head\">\n        <button type=\"button\" className=\"r-trace-toggle\" onClick={() => setOpen((v) => !v)}>\n          <ChevronRight size={13} className=\"r-trace-chev\" />\n          <span className=\"h-title\">Room trace</span>\n        </button>\n      </div>\n      {open && <div className=\"r-trace-list\" aria-live=\"polite\" aria-label=\"Room activity log\" />}\n    </div>\n  );\n}\n"
         }
       },
       {
@@ -280,8 +280,8 @@
             "    - panels",
             "      - TraceSurface.tsx"
           ],
-          "highlightStartLine": 16,
-          "highlightEndLine": 48,
+          "highlightStartLine": 2,
+          "highlightEndLine": 22,
           "captureKind": "actual-code-browser-shiki"
         },
         "mapCapture": {
@@ -291,9 +291,9 @@
         },
         "codeBlock": {
           "filePath": "src/ui/panels/TraceSurface.tsx",
-          "startLine": 16,
-          "endLine": 48,
-          "snippet": "type DetailTab = \"overview\" | \"steps\" | \"flow\" | \"evidence\" | \"raw\";\n\n/** Capture a source into the Trace tab. Two lanes: Web (Firecrawl screenshot + extract) and SEC\n *  (EDGAR data API — authoritative facts by ticker/concept). The persisted record joins the list. */\nfunction CaptureForm({ roomId, onCapture, onSec }: {\n  roomId: string;\n  onCapture: (roomId: string, url: string, goal: string) => Promise<{ ok: boolean; error?: string }>;\n  onSec: (roomId: string, company: string, concept: string) => Promise<{ ok: boolean; error?: string }>;\n}) {\n  const [mode, setMode] = useState<\"web\" | \"sec\">(\"web\");\n  const [url, setUrl] = useState(\"\");\n  const [goal, setGoal] = useState(\"\");\n  const [company, setCompany] = useState(\"\");\n  const [concept, setConcept] = useState(\"\");\n  const [busy, setBusy] = useState(false);\n  const [err, setErr] = useState<string | null>(null);\n  const submit = async (e: FormEvent) => {\n    e.preventDefault();\n    if (busy) return;\n    const ready = mode === \"web\" ? url.trim() : company.trim();\n    if (!ready) { setErr(\"enter a \" + (mode === \"web\" ? \"URL\" : \"ticker\")); return; }\n    setBusy(true); setErr(null);\n    try {\n      const r = mode === \"web\"\n        ? await onCapture(roomId, url.trim(), goal.trim() || \"extract the key figures\")\n        : await onSec(roomId, company.trim(), concept.trim() || \"revenue\");\n      if (!r.ok) setErr(r.error ?? \"failed\");\n      else { setUrl(\"\"); setGoal(\"\"); setCompany(\"\"); setConcept(\"\"); }\n    } catch (e2) {\n      setErr(e2 instanceof Error ? e2.message : String(e2));\n    } finally {\n      setBusy(false);\n    }"
+          "startLine": 2,
+          "endLine": 22,
+          "snippet": "type DetailTab = \"overview\" | \"steps\" | \"flow\" | \"evidence\" | \"raw\";\n\nexport function TraceSurface({ roomId, onOpenSource }) {\n  const records = buildRecords(roomId);\n  const [selectedId, setSelectedId] = useState(records[0]?.id);\n  const [tab, setTab] = useState<DetailTab>(\"overview\");\n  const record = records.find((r) => r.id === selectedId) ?? records[0];\n  const detailTabs = ([\"overview\", \"steps\", \"flow\", \"evidence\", \"raw\"] as DetailTab[])\n    .filter((t) => t !== \"evidence\" || (record.evidenceCards?.length ?? 0) > 0);\n  return (\n    <div className=\"r-art-body r-tracevu\" data-testid=\"trace-surface\" data-noderoom-surface=\"workSurface.trace\">\n      <aside className=\"r-tracevu-list\" aria-label=\"Trace records\" />\n      <div className=\"r-tracevu-detail\">\n        <header className=\"r-tracevu-detail-head\">\n          <div className=\"r-tracevu-tabs\" role=\"tablist\" aria-label=\"Trace detail\" />\n        </header>\n      </div>\n    </div>\n  );\n}\n"
         }
       },
       {
@@ -331,8 +331,8 @@
             "    - panels",
             "      - traceData.ts"
           ],
-          "highlightStartLine": 31,
-          "highlightEndLine": 73,
+          "highlightStartLine": 1,
+          "highlightEndLine": 28,
           "captureKind": "actual-code-browser-shiki"
         },
         "mapCapture": {
@@ -342,9 +342,9 @@
         },
         "codeBlock": {
           "filePath": "src/ui/panels/traceData.ts",
-          "startLine": 31,
-          "endLine": 73,
-          "snippet": "  label: string;\n  detail?: string;\n  status: TraceTone;\n  /** Collapsible section (phase / spec / status) — keeps hundreds of steps navigable. */\n  group?: string;\n  /** When present, the step opens this cell on the work surface (split + pulse). */\n  targetArtifactId?: string;\n  targetElementId?: string;\n  /** QA steps carry a captured screenshot (served from /public/qa-trace) + metrics. */\n  screenshotUrl?: string;\n  metrics?: { label: string; value: string }[];\n  /** Pipeline-fed evidence: screenshots, logs, SSIM flicker diffs. */\n  attachments?: TraceAttachment[];\n}\n\n/** Client-side cap on rendered steps (BOUND rule). Beyond this, paginate/lazy-load from the server. */\nexport const MAX_TRACE_STEPS = 500;\n\nexport interface TraceRecord {\n  id: string;\n  kind: \"agent\" | \"qa\";\n  title: string;\n  subtitle: string;\n  ts: string;\n  source: { tool: string; version?: string; env?: string; model?: string };\n  verdict?: { label: string; tone: TraceTone };\n  /** Honest provenance at the evidence level (NOT fabricated per-line code attribution). */\n  attribution?: { ai: number; mixed: number; human: number };\n  steps: TraceStep[];\n  evidenceCards?: EvidenceCardArtifact[];\n  raw: unknown;\n}\n\n/**\n * A REAL run of scripts/design-qa/floor.ts captured 2026-06-17 (P0=0 P1=0 P2=0 → SHIP).\n * The screenshots are the floor's actual output, copied to /public/qa-trace. Refresh by re-running\n * the floor and re-copying the PNGs; the metrics below are this run's real stdout.\n */\nexport const QA_TRACE_RECORD: TraceRecord = {\n  id: \"qa-design-floor\",\n  kind: \"qa\",\n  title: \"QA · NodeRoom design floor\",\n  subtitle: \"Playwright visual + design-token sweep across 3 surfaces (scripts/design-qa/floor.ts)\","
+          "startLine": 1,
+          "endLine": 28,
+          "snippet": "\nexport interface TraceStep {\n  idx: number;\n  label: string;\n  detail?: string;\n  status: TraceTone;\n  group?: string;\n  targetArtifactId?: string;\n  targetElementId?: string;\n  screenshotUrl?: string;\n  metrics?: { label: string; value: string }[];\n  attachments?: TraceAttachment[];\n}\n\nexport interface TraceRecord {\n  id: string;\n  kind: \"agent\" | \"qa\";\n  title: string;\n  subtitle: string;\n  ts: string;\n  source: { tool: string; version?: string; env?: string; model?: string };\n  verdict?: { label: string; tone: TraceTone };\n  attribution?: { ai: number; mixed: number; human: number };\n  steps: TraceStep[];\n  evidenceCards?: EvidenceCardArtifact[];\n  raw: unknown;\n}\n"
         }
       },
       {
@@ -382,8 +382,8 @@
             "    - panels",
             "      - TraceStepRow.tsx"
           ],
-          "highlightStartLine": 25,
-          "highlightEndLine": 53,
+          "highlightStartLine": 1,
+          "highlightEndLine": 20,
           "captureKind": "actual-code-browser-shiki"
         },
         "mapCapture": {
@@ -393,9 +393,9 @@
         },
         "codeBlock": {
           "filePath": "src/ui/panels/TraceStepRow.tsx",
-          "startLine": 25,
-          "endLine": 53,
-          "snippet": "        <span className=\"r-tracevu-step-label\">\n          {s.label}\n          {ssims.map((a, i) => <span key={i} className=\"r-tracevu-ssim\" data-flicker={String(a.diffRatio > 0.02)}>Δ {(a.diffRatio * 100).toFixed(1)}%</span>)}\n          {s.targetArtifactId && <ArrowUpRight size={11} />}\n        </span>\n        {s.detail && <span className=\"r-tracevu-step-detail\">{s.detail}</span>}\n        {s.screenshotUrl && (\n          <a className=\"r-tracevu-shotlink\" href={s.screenshotUrl} target=\"_blank\" rel=\"noopener noreferrer\">\n            <span className=\"r-tracevu-shotframe\"><img className=\"r-tracevu-shot\" src={s.screenshotUrl} alt={s.label} loading=\"lazy\" /></span>\n          </a>\n        )}\n        {shots.map((a, i) => (\n          a.url ? (\n            <a key={i} className=\"r-tracevu-shotlink\" href={a.url} target=\"_blank\" rel=\"noopener noreferrer\">\n              <span className=\"r-tracevu-shotframe\">\n                <img className=\"r-tracevu-shot\" src={a.url} alt={a.label ?? s.label} loading=\"lazy\" />\n                {a.box && <span className=\"r-tracevu-box\" style={{ left: `${a.box.x * 100}%`, top: `${a.box.y * 100}%`, width: `${a.box.w * 100}%`, height: `${a.box.h * 100}%` }} aria-hidden=\"true\" />}\n              </span>\n            </a>\n          ) : (\n            <span key={i} className=\"r-tracevu-shotlink\"><span className=\"r-tracevu-pdf-loading\">resolving screenshot…</span></span>\n          )\n        ))}\n        {pdfs.map((a, i) => (\n          <span key={`pdf-${i}`} className=\"r-tracevu-shotlink\">\n            {a.url ? (\n              <Suspense fallback={<span className=\"r-tracevu-pdf-loading\">loading…</span>}>\n                <PdfCitation url={a.url} page={a.page} boxes={a.boxes} label={a.label ?? s.label} />\n              </Suspense>"
+          "startLine": 1,
+          "endLine": 20,
+          "snippet": "\nexport function StepRow({ s, onOpenSource }) {\n  return (\n    <div className=\"r-tracevu-step\" data-testid=\"trace-step\" data-tone={s.status}>\n      <span className=\"r-tracevu-step-idx\">{s.idx}</span>\n      <span className=\"r-tracevu-step-body\">\n        <span className=\"r-tracevu-step-label\">{s.label}</span>\n        {shots.map((a, i) => (\n          <a key={i} className=\"r-tracevu-shotlink\" href={a.url}>\n            <span className=\"r-tracevu-shotframe\">\n              <img className=\"r-tracevu-shot\" src={a.url} alt={a.label ?? s.label} loading=\"lazy\" />\n              {a.box && <span className=\"r-tracevu-box\" style={{ left: `${a.box.x * 100}%`, top: `${a.box.y * 100}%`, width: `${a.box.w * 100}%`, height: `${a.box.h * 100}%` }} aria-hidden=\"true\" />}\n            </span>\n          </a>\n        ))}\n      </span>\n    </div>\n  );\n}\n"
         }
       },
       {
@@ -433,8 +433,8 @@
             "    - panels",
             "      - TraceFlow.tsx"
           ],
-          "highlightStartLine": 24,
-          "highlightEndLine": 66,
+          "highlightStartLine": 1,
+          "highlightEndLine": 21,
           "captureKind": "actual-code-browser-shiki"
         },
         "mapCapture": {
@@ -444,9 +444,9 @@
         },
         "codeBlock": {
           "filePath": "src/ui/panels/TraceFlow.tsx",
-          "startLine": 24,
-          "endLine": 66,
-          "snippet": "  onOpenSource: (artifactId: string, elementId?: string) => void;\n}) {\n  const phases = useMemo(() => {\n    const seen: string[] = [];\n    for (const s of record.steps) { const g = s.group ?? \"Steps\"; if (!seen.includes(g)) seen.push(g); }\n    return seen;\n  }, [record]);\n\n  const { nodes, edges } = useMemo(() => {\n    const COL = 248, ROW = 88;\n    const rowOf: Record<string, number> = {};\n    const nodes: Node[] = record.steps.map((s) => {\n      const g = s.group ?? \"Steps\";\n      const col = phases.indexOf(g);\n      const row = (rowOf[g] = (rowOf[g] ?? -1) + 1);\n      const label = s.label.length > 30 ? `${s.label.slice(0, 30)}…` : s.label;\n      return {\n        id: String(s.idx),\n        position: { x: col * COL, y: row * ROW },\n        data: { label: `${s.idx}. ${label}` },\n        sourcePosition: Position.Right,\n        targetPosition: Position.Left,\n        style: {\n          width: 200,\n          fontSize: 11,\n          fontWeight: 500,\n          padding: \"8px 10px\",\n          borderRadius: 10,\n          border: `1px solid ${TONE[s.status]}`,\n          background: \"var(--bg-secondary)\",\n          color: \"var(--text-primary)\",\n          textAlign: \"left\" as const,\n        },\n      };\n    });\n    const edges: Edge[] = [];\n    for (let i = 0; i < record.steps.length - 1; i++) {\n      edges.push({ id: `f${i}`, source: String(record.steps[i].idx), target: String(record.steps[i + 1].idx), animated: true, style: { stroke: \"var(--line-strong)\" } });\n    }\n    return { nodes, edges };\n  }, [record, phases]);\n\n  const [sel, setSel] = useState<TraceStep | null>(null);"
+          "startLine": 1,
+          "endLine": 21,
+          "snippet": "\nexport function TraceFlow({ record, onOpenSource }) {\n  const phases = useMemo(() => {\n    const seen: string[] = [];\n    for (const s of record.steps) { const g = s.group ?? \"Steps\"; if (!seen.includes(g)) seen.push(g); }\n    return seen;\n  }, [record]);\n  const { nodes, edges } = useMemo(() => {\n    const COL = 248, ROW = 88;\n    const nodes = record.steps.map((s) => ({\n      id: String(s.idx),\n      position: { x: phases.indexOf(s.group ?? \"Steps\") * COL, y: s.idx * ROW },\n      data: { label: `${s.idx}. ${s.label}` },\n    }));\n    const edges = [];\n    for (let i = 0; i < record.steps.length - 1; i++) edges.push({ id: `f${i}`, source: String(record.steps[i].idx), target: String(record.steps[i + 1].idx) });\n    return { nodes, edges };\n  }, [record, phases]);\n  return <div className=\"r-tracevu-flow\" data-testid=\"trace-flow\" />;\n}\n"
         }
       },
       {
@@ -483,8 +483,8 @@
             "  - app",
             "    - styles.css"
           ],
-          "highlightStartLine": 929,
-          "highlightEndLine": 985,
+          "highlightStartLine": 1,
+          "highlightEndLine": 11,
           "captureKind": "actual-code-browser-shiki"
         },
         "mapCapture": {
@@ -494,9 +494,9 @@
         },
         "codeBlock": {
           "filePath": "src/app/styles.css",
-          "startLine": 929,
-          "endLine": 985,
-          "snippet": ".r-tracevu-rec-head { display: flex; align-items: center; gap: 6px; min-width: 0; }\n.r-tracevu-rec-title { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12.5px; font-weight: 700; color: var(--text-primary); }\n.r-tracevu-rec-sub { font-size: 11px; line-height: 1.35; color: var(--text-muted); display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }\n.r-tracevu-rec-meta { font-size: 10px; color: var(--text-tertiary); font-family: var(--font-mono); }\n.r-tracevu-pill { flex: none; margin-left: auto; padding: 1px 6px; border-radius: 999px; font-size: 9px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; }\n.r-tracevu-pill[data-tone=\"ok\"] { background: color-mix(in srgb, var(--success) 18%, transparent); color: var(--success-ink); }\n.r-tracevu-pill[data-tone=\"warn\"] { background: var(--warning-tint); color: var(--warning-ink); }\n.r-tracevu-pill[data-tone=\"risk\"] { background: var(--danger-tint); color: var(--danger-ink); }\n.r-tracevu-detail { flex: 1; min-width: 0; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }\n.r-tracevu-detail-head { flex: none; padding: 14px 16px 0; border-bottom: 1px solid var(--line); }\n.r-tracevu-detail-head strong { font-size: 15px; color: var(--text-primary); }\n.r-tracevu-detail-head p { margin: 3px 0 10px; font-size: 12px; color: var(--text-muted); line-height: 1.4; }\n.r-tracevu-tabs { display: flex; gap: 2px; }\n.r-tracevu-tabs button { padding: 6px 11px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--text-muted); font-size: 12px; font-weight: 600; cursor: pointer; }\n.r-tracevu-tabs button[data-on=\"true\"] { color: var(--accent-ink); border-bottom-color: var(--accent-primary); }\n.r-tracevu-tabs button:not([data-on=\"true\"]):hover { color: var(--text-secondary); }\n.r-tracevu-detail-body { flex: 1; min-height: 0; overflow-y: auto; padding: 16px; }\n.r-tracevu-overview { display: flex; flex-direction: column; gap: 18px; }\n.r-tracevu-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }\n.r-tracevu-facts .kicker { display: inline-flex; align-items: center; gap: 5px; margin-bottom: 8px; }\n.r-tracevu-facts dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; margin: 0; font-size: 12px; }\n.r-tracevu-facts dt { color: var(--text-muted); }\n.r-tracevu-facts dd { margin: 0; color: var(--text-primary); font-family: var(--font-mono); font-size: 11.5px; text-align: right; overflow: hidden; text-overflow: ellipsis; }\n.r-tracevu-verdict { display: inline-block; font-size: 12px; font-weight: 700; color: var(--text-primary); }\n.r-tracevu-verdict[data-tone=\"ok\"] { color: var(--success-ink); }\n.r-tracevu-attr { display: flex; flex-direction: column; gap: 8px; }\n.r-tracevu-attrbar { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--bg-secondary); }\n.r-tracevu-attrbar span[data-seg=\"ai\"] { background: var(--accent-primary); }\n.r-tracevu-attrbar span[data-seg=\"mixed\"] { background: var(--warning-ink); }\n.r-tracevu-attrbar span[data-seg=\"human\"] { background: var(--success); }\n.r-tracevu-attrkey { display: flex; gap: 16px; font-size: 11px; color: var(--text-muted); }\n.r-tracevu-attrkey span { display: inline-flex; align-items: center; gap: 5px; }\n.r-tracevu-attrkey span::before { content: \"\"; width: 8px; height: 8px; border-radius: 2px; }\n.r-tracevu-attrkey span[data-seg=\"ai\"]::before { background: var(--accent-primary); }\n.r-tracevu-attrkey span[data-seg=\"mixed\"]::before { background: var(--warning-ink); }\n.r-tracevu-attrkey span[data-seg=\"human\"]::before { background: var(--success); }\n.r-tracevu-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }\n.r-tracevu-step { width: 100%; display: flex; gap: 11px; text-align: left; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg-secondary); color: var(--text-secondary); }\nbutton.r-tracevu-step { cursor: pointer; transition: border-color var(--motion-fast), background var(--motion-fast); }\nbutton.r-tracevu-step:hover, button.r-tracevu-step:focus-visible { border-color: var(--accent-border); background: var(--accent-tint); outline: none; }\n.r-tracevu-step-idx { flex: none; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 6px; background: var(--bg-primary); color: var(--text-muted); font-size: 11px; font-weight: 700; font-family: var(--font-mono); }\n.r-tracevu-step[data-tone=\"ok\"] .r-tracevu-step-idx { color: var(--success-ink); }\n.r-tracevu-step[data-tone=\"warn\"] .r-tracevu-step-idx { color: var(--warning-ink); }\n.r-tracevu-step-body { min-width: 0; display: flex; flex-direction: column; gap: 5px; }\n.r-tracevu-step-label { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 650; color: var(--text-primary); }\n.r-tracevu-step-detail { font-size: 11.5px; line-height: 1.4; color: var(--text-muted); }\n.r-tracevu-shot { max-width: 100%; width: 440px; border-radius: 8px; border: 1px solid var(--line); margin-top: 2px; }\n.r-tracevu-metrics { display: flex; flex-wrap: wrap; gap: 5px 12px; font-size: 10.5px; color: var(--text-tertiary); font-family: var(--font-mono); }\n.r-tracevu-metrics b { color: var(--text-secondary); font-weight: 700; }\n.r-tracevu-raw { margin: 0; padding: 14px; border-radius: 10px; background: var(--bg-secondary); border: 1px solid var(--line); color: var(--text-secondary); font: 11px/1.5 var(--font-mono); white-space: pre-wrap; overflow-wrap: anywhere; }\n.r-tracetab { color: var(--text-muted); }\n.r-tracetab[data-active=\"true\"] { color: var(--accent-ink); }\n/* Scale: collapsible groups + content-visibility windowing keep hundreds of steps cheap. */\n.r-tracevu-groups { display: flex; flex-direction: column; gap: 8px; }\n.r-tracevu-group { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }\n.r-tracevu-group > summary { display: flex; align-items: center; gap: 8px; padding: 9px 12px; cursor: pointer; list-style: none; font-size: 12px; font-weight: 700; color: var(--text-secondary); background: var(--bg-secondary); }\n.r-tracevu-group > summary::-webkit-details-marker { display: none; }"
+          "startLine": 1,
+          "endLine": 11,
+          "snippet": "\n.r-tracevu-tabs { display: flex; gap: 2px; }\n.r-tracevu-tabs button { padding: 6px 11px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--text-muted); font-size: 12px; font-weight: 600; cursor: pointer; }\n.r-tracevu-tabs button[data-on=\"true\"] { color: var(--accent-ink); border-bottom-color: var(--accent-primary); }\n.r-tracevu-detail-body { flex: 1; min-height: 0; overflow-y: auto; padding: 16px; }\n.r-tracevu-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }\n.r-tracevu-step { width: 100%; display: flex; gap: 11px; text-align: left; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg-secondary); color: var(--text-secondary); }\n.r-tracevu-step-idx { flex: none; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 6px; background: var(--bg-primary); color: var(--text-muted); font-size: 11px; font-weight: 700; font-family: var(--font-mono); }\n.r-tracevu-shotframe { position: relative; display: inline-block; line-height: 0; }\n.r-tracevu-box { position: absolute; border: 2px solid var(--accent-primary); border-radius: 3px; background: color-mix(in srgb, var(--accent-primary) 16%, transparent); box-shadow: 0 0 0 1px var(--bg-primary); pointer-events: none; }\n"
         }
       }
     ],

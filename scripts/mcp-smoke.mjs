@@ -1,7 +1,13 @@
+import { mkdtempSync, rmSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StdioClientTransport } from "@modelcontextprotocol/sdk/client/stdio.js";
+import { createCaptureFixture } from "./capture-plan-fixture.mjs";
 
 const issues = [];
+const tempDir = mkdtempSync(join(tmpdir(), "nodetrace-mcp-smoke-"));
+const { planPath } = createCaptureFixture(tempDir);
 const client = new Client({ name: "nodetrace-mcp-smoke", version: "0.0.0" }, { capabilities: {} });
 const transport = new StdioClientTransport({
   command: process.execPath,
@@ -19,16 +25,17 @@ try {
   const result = await client.callTool({
     name: "validate_capture_plan",
     arguments: {
-      planPath: "examples/real-codebase-capture/noderoom.capture.json",
+      planPath,
       cwd: process.cwd(),
     },
   });
   const text = result.content?.[0]?.text ?? "";
-  if (!text.includes('"ok": true') || !text.includes('"steps": 6')) issues.push(`unexpected MCP validate result: ${text}`);
+  if (!text.includes('"ok": true') || !text.includes('"steps": 1')) issues.push(`unexpected MCP validate result: ${text}`);
 } catch (error) {
   issues.push(error instanceof Error ? error.message : String(error));
 } finally {
   await client.close().catch(() => undefined);
+  rmSync(tempDir, { recursive: true, force: true });
 }
 
 if (issues.length > 0) {

@@ -6,8 +6,8 @@ adopting a specific agent runtime.
 ## Autopilot Install
 
 ```bash
-npx github:HomenShum/nodetrace add --framework vite
-npx github:HomenShum/nodetrace add --framework next
+npx github:HomenShum/NodeTrace add --framework vite
+npx github:HomenShum/NodeTrace add --framework next
 ```
 
 The unscoped `nodetrace` npm name is already occupied by an unrelated package.

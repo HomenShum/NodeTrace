@@ -38,13 +38,13 @@ Open the Vite URL and Cmd/Ctrl-click any tagged surface to open Trace Lens.
 From a React/Vite app:
 
 ```bash
-npx github:HomenShum/nodetrace add --framework vite
+npx github:HomenShum/NodeTrace add --framework vite
 ```
 
 From a Next.js App Router app:
 
 ```bash
-npx github:HomenShum/nodetrace add --framework next
+npx github:HomenShum/NodeTrace add --framework next
 ```
 
 The unscoped `nodetrace` npm name is already occupied by an unrelated package.
@@ -149,6 +149,11 @@ repo's preferred package-manager command. npm installs use a target-local
 ## Visual Walkthrough
 
 The full screenshot walkthrough is in [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md).
+Storyboard first: the README media is governed by
+[`docs/FEATURE_PROOF_STORYBOARD.md`](docs/FEATURE_PROOF_STORYBOARD.md). It
+must prove no-key install, tagged surfaces, Trace Lens interaction,
+proof/runtime separation, and Builder safety before it is treated as
+publishable proof.
 
 ![NodeTrace MP4/GIF walkthrough](docs/walkthroughs/nodetrace-walkthrough.gif)
 
@@ -156,6 +161,12 @@ MP4 version: [`docs/walkthroughs/nodetrace-walkthrough.mp4`](docs/walkthroughs/n
 
 The walkthrough shows onboarding, the installer process, the finished no-key
 demo dashboard, and the Trace Lens overlay.
+
+Regenerate the README GIF/MP4 after storyboard or screenshot updates with:
+
+```bash
+npm run clip:capture
+```
 
 Cmd/Ctrl-click any tagged surface to open Trace Lens:
 
@@ -207,7 +218,7 @@ Use either attribute on clickable surfaces:
 
 ## Port Into Another App
 
-1. Run `npx github:HomenShum/nodetrace add --framework vite` or `--framework next`.
+1. Run `npx github:HomenShum/NodeTrace add --framework vite` or `--framework next`.
 2. Open `/nodetrace.html` for Vite or `/nodetrace` for Next and confirm the no-key demo works.
 3. Tag your visible surfaces with `data-nodetrace-surface`.
 4. Insert trace rows and proof cards from your app runtime.
