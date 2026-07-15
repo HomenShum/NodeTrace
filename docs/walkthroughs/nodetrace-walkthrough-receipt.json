@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "nodetrace.walkthrough-receipt/v1",
+  "sources": [
+    {
+      "path": "docs/screenshots/nodetrace-dashboard.png",
+      "durationSeconds": 2.8,
+      "sha256": "aa47a617e910ef8fc547295a6e79ab4a7ea1b654f3a03bbd8a199f3c86c2fcb4"
+    },
+    {
+      "path": "docs/screenshots/nodetrace-trace-lens.png",
+      "durationSeconds": 2.8,
+      "sha256": "876dbfe837a5104ca7592301b061ac2575d2996587a09c88f682423aff9c248d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "docs/walkthroughs/nodetrace-walkthrough.mp4",
+      "codec": "h264",
+      "width": 960,
+      "frameRate": 12,
+      "frameRateTolerance": 0.001,
+      "filter": "scale=960:-2,fps=12,format=yuv420p",
+      "options": [
+        "-movflags",
+        "+faststart"
+      ]
+    },
+    {
+      "path": "docs/walkthroughs/nodetrace-walkthrough.gif",
+      "codec": "gif",
+      "width": 720,
+      "frameRate": 8,
+      "frameRateTolerance": 0.5,
+      "filter": "fps=8,scale=720:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse",
+      "options": []
+    }
+  ],
+  "expectedDurationSeconds": 5.6,
+  "durationToleranceSeconds": 0.5
+}
