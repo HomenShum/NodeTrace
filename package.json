@@ -45,6 +45,10 @@
   ],
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "demo": "npm run happy-path",
+    "doctor": "npm run happy-path",
+    "check": "npm run prepush",
+    "proof": "npm run smoke",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "db:init": "node scripts/init-sqlite.mjs",
@@ -58,6 +62,7 @@
     "installer:next:e2e": "node scripts/installer-next-e2e-smoke.mjs",
     "package:dry-run": "npm pack --dry-run",
     "walkthroughs:render": "node scripts/render-walkthrough-media.mjs",
+    "walkthroughs:verify": "node scripts/render-walkthrough-media.mjs --verify-only",
     "clip:capture": "node scripts/render-walkthrough-media.mjs",
     "mcp:smoke": "node scripts/mcp-smoke.mjs",
     "smoke": "node scripts/smoke.mjs && node scripts/cli-smoke.mjs && node scripts/mcp-smoke.mjs",
