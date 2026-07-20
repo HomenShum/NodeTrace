@@ -45,6 +45,10 @@
   ],
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "demo": "npm run happy-path",
+    "doctor": "node --version",
+    "check": "npm run happy-path && npm run smoke && npm run build",
+    "proof": "npm run check",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
     "db:init": "node scripts/init-sqlite.mjs",

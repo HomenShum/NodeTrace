@@ -1,0 +1,39 @@
+schemaVersion: nodekit.repo/v1
+repository: HomenShum/NodeTrace
+lifecycle: preview
+support: active
+role: standalone-package
+commandProfile: application
+
+canonicalFor:
+  - nodetrace.trace-ui-store
+
+consumes:
+  - nodeplatform.repo-contract
+  - nodeagent.event-protocol
+  - nodeagent.trace-workpaper
+  - proofloop.certification
+
+commands:
+  dev: { script: dev, mode: service }
+  demo: { script: demo, mode: finite }
+  doctor: { script: doctor, mode: finite }
+  check: { script: check, mode: finite }
+  proof: { script: proof, mode: finite }
+
+noKey:
+  status: certified
+  command: npm run demo
+  externalAccountsRequired: 0
+  disclosure: The portable SQLite and Trace Lens happy path is deterministic and requires no model provider or cloud account; real external-app capture is a separate opt-in proof lane.
+
+environment:
+  contractVersion: nodeplatform.env/v1
+  status: migration-planned
+
+proof:
+  command: npm run proof
+  receiptSchema: null
+
+contractDeclarations: []
+architectureExceptions: []
