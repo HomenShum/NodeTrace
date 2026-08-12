@@ -33,6 +33,19 @@ Open the Vite URL and Cmd/Ctrl-click any tagged surface to open Trace Lens.
 
 ![NodeTrace dashboard overview](docs/screenshots/nodetrace-dashboard.png)
 
+## Live graph rail
+
+The dashboard renders every SQLite trace event into a
+[NodeGraph Live](https://github.com/HomenShum/NodeGraph) session as interaction
+history — faint constant-width traversal edges, never evidence, because traces
+are telemetry about what the system did, not curated claims about the world.
+Clicking a node lists the trace event ids that produced it. The build is
+vendored in `vendor/nodegraph-live/` until the `@homenshum/nodegraph-live` npm
+publish lands; `npm run capture:live-graph` regenerates the proof below and
+exits nonzero if the rail ingests zero entities.
+
+![Live graph rail ingesting real SQLite trace events as traversal-only interaction history](docs/screenshots/live-graph-rail.png)
+
 ## Add To An Existing App
 
 From a React/Vite app:

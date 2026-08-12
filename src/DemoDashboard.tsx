@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Activity, ArrowRight, CheckCircle2, CircleDot, Code2, Database, FileJson, Image, Layers3, ListChecks, Map, Network, Play, Route, Terminal } from "lucide-react";
 import { DEFAULT_SURFACES, TraceLensPanel, TraceLensProvider, type NodeTraceState, type TraceCoachState, type TraceCoachStep } from "./trace";
+import { LiveGraphRail } from "./trace/LiveGraphRail";
 
 type CoachTab = "overview" | "steps" | "flow" | "raw";
 
@@ -110,6 +111,8 @@ export function DemoDashboard() {
               setActiveStepId={setActiveCoachStepId}
             />
           ) : null}
+
+          {state.traces.length > 0 ? <LiveGraphRail traces={state.traces} /> : null}
 
         </section>
       </main>

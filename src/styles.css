@@ -785,3 +785,38 @@ button {
     flex-wrap: wrap;
   }
 }
+
+.liveGraphRail {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-primary);
+}
+
+.liveGraphRailHead {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.liveGraphRailHead small {
+  color: var(--text-muted);
+}
+
+.liveGraphRailReadout {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.liveGraphRailReadout ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.liveGraphRailReadout code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
