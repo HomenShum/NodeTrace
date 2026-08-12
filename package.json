@@ -66,6 +66,7 @@
     "walkthroughs:verify": "node scripts/render-walkthrough-media.mjs --verify-only",
     "clip:capture": "node scripts/render-walkthrough-media.mjs",
     "capture:live-graph": "node scripts/capture-live-graph-rail.mjs",
+    "record:live-graph": "node scripts/record-live-graph-rail.mjs",
     "mcp:smoke": "node scripts/mcp-smoke.mjs",
     "smoke": "node scripts/smoke.mjs && node scripts/cli-smoke.mjs && node scripts/mcp-smoke.mjs",
     "prepush": "npm run happy-path && npm run smoke && npm run builder:smoke && npm run agent:scale:smoke && npm run capture:plan:smoke && npm run trace-coach:sqlite && npm run installer:next:e2e && npm run build && npm run package:dry-run && npm audit --omit=dev"

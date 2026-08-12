@@ -2,6 +2,12 @@
 
 Portable Trace Lens UI and SQLite setup for agent-native apps.
 
+![Happy-path trace events rendered live as a graph rail](docs/screenshots/live-graph-rail.gif)
+
+Happy-path trace events rendered live as a traversal-only graph rail beside the
+dashboard; clicking a node lists the trace event ids that produced it.
+(Regenerate: `npm run record:live-graph`.)
+
 NodeTrace gives any coding agent a ready-to-port trace layer: tagged UI
 surfaces, a Review/Builder Trace Lens, business proof cards, bounded runtime
 trace rows, gated code ownership, and a local SQLite happy path. It is not bound
