@@ -82,6 +82,11 @@ const { values: options } = parseArgs({
 const startedAt = new Date();
 const startedMs = performance.now();
 const sourceRoot = resolve(options["source-root"] ?? process.env.NODETRACE_SOURCE_ROOT ?? "..");
+// Checked here, before resolvePluginRoot and preparePlugin: those clone an
+// external repository and run `pnpm install` + `pnpm build`, which costs
+// minutes. Reading the input we were given costs milliseconds, so a wrong
+// --source-root must fail before any of that, not after it.
+requireNodeRoomSourceRoot(sourceRoot);
 const workRoot = resolve(options.work ?? ".nodetrace/understand-anything-noderoom");
 const graphPath = resolve(options["graph-out"] ?? "public/captures/noderoom-trace-knowledge-graph.json");
 const reportPath = resolve(options["json-out"] ?? "docs/eval/nodetrace-understand-anything-noderoom.json");
@@ -195,9 +200,24 @@ function resolvePluginRoot(explicitRoot) {
   );
 }
 
+function requireNodeRoomSourceRoot(root) {
+  const missing = TRACE_FILES.map((file) => file.filePath).filter((path) => !existsSync(resolve(root, path)));
+  if (missing.length === 0) return;
+  console.error(
+    [
+      `NodeRoom source root not usable: ${root}`,
+      `${missing.length} of ${TRACE_FILES.length} trace files are missing there, starting with ${missing[0]}.`,
+      "Pass --source-root /path/to/noderoom, or set NODETRACE_SOURCE_ROOT. The default is the parent directory of this clone.",
+    ].join("\n"),
+  );
+  process.exit(1);
+}
+
 function preparePlugin(root) {
   const hasModules = existsSync(join(root, "node_modules"));
   const hasCoreBuild = existsSync(join(root, "packages", "core", "dist", "index.js"));
+  if (hasModules && hasCoreBuild) return;
+  console.log(`preparing Understand-Anything plugin at ${root} (first run: pnpm install and build, several minutes)`);
   if (!hasModules) runCommand("pnpm", ["install", "--frozen-lockfile"], root);
   if (!hasCoreBuild) runCommand("pnpm", ["--filter", "@understand-anything/core", "build"], root);
 }
@@ -208,6 +228,9 @@ function runNode(scriptPath, args) {
 }
 
 function runCommand(command, args, cwd) {
+  // Every subprocess here is slow and captured, so without this line the run
+  // is silent for as long as the slowest one takes.
+  console.log(`> ${command === process.execPath ? "node" : command} ${args.join(" ")}`);
   const useShell = process.platform === "win32" && command === "pnpm";
   const result = spawnSync(command, args, {
     cwd,
@@ -229,8 +252,8 @@ function selectTraceFiles(files) {
   return TRACE_FILES.map((target) => {
     const matched = byPath.get(target.filePath);
     if (matched) return matched;
+    // Existence was already required by requireNodeRoomSourceRoot.
     const livePath = resolve(sourceRoot, target.filePath);
-    if (!existsSync(livePath)) throw new Error(`NodeRoom trace file missing: ${livePath}`);
     return {
       path: target.filePath,
       language: target.filePath.endsWith(".css") ? "css" : "typescript",

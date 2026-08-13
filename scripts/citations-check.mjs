@@ -1,19 +1,27 @@
 /**
- * The CodeTour files in `.tours/` point at line numbers, and line numbers rot.
+ * Every citation in this repository — a `.tours/` step, a `file.ts:12` in a
+ * markdown document — points at a line number, and line numbers rot.
  *
- * So the tours are not hand-maintained: each step is written here as a file
- * plus a literal anchor string, and this script resolves the anchor to a line
- * number. Run it with no arguments to check the committed tours still match the
- * code (exit 1 if not); run it with `--write` after you have moved something.
+ * Checking that the number is *in range* proves nothing: the file still has a
+ * line 12, and the citation now describes the wrong code. So every citation
+ * here carries a literal anchor as well, and this script asserts the cited line
+ * CONTAINS that anchor.
  *
- *   npm run tours:check
- *   npm run tours:check -- --write
+ *   1. `.tours/*.tour` are generated: each step is a file plus an anchor, and
+ *      the line number is resolved from the anchor rather than typed.
+ *   2. Markdown citations are hand-written, so they are checked instead: every
+ *      `path:line` in backticks must be followed by (`anchor`), and the anchor
+ *      must appear in the cited line or range.
  *
- * A tour whose anchor no longer appears is a hard failure, not a warning: a
+ *   npm run citations:check
+ *   npm run citations:check -- --write     # regenerate .tours after a move
+ *
+ * A citation whose anchor no longer appears is a hard failure, not a warning: a
  * walkthrough that points at the wrong line is worse than no walkthrough.
  */
 
-import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
+import { join } from "node:path";
 import { parseArgs } from "node:util";
 
 const { values } = parseArgs({ options: { write: { type: "boolean" } } });
@@ -136,10 +144,59 @@ for (const tour of tours) {
   if (actual !== expected) issues.push(`${tour.file} is out of date; re-run with --write`);
 }
 
+// A markdown citation: `path:line` or `path:from-to`, then the anchor that the
+// cited line must contain, e.g. `src/main.tsx:6` (`createRoot(`).
+const citation = /`([\w./-]+\.[a-z]+):(\d+)(?:-(\d+))?`(?:\s*\(`([^`]+)`\))?/g;
+let citationCount = 0;
+
+for (const doc of markdownFiles(".")) {
+  const body = readFileSync(doc, "utf8");
+  // "the useEffect at line 33" is unguardable: nothing names the file, so
+  // nothing can be resolved. The form has to stay out of the documents.
+  for (const [prose] of body.matchAll(/\blines? ~?\d+/gi)) {
+    issues.push(`${doc}: "${prose}" — write citations as \`path:line\` (\`anchor\`) so the anchor can be checked`);
+  }
+  // `panel.tsx:73,91,99` is a citation the checker below cannot parse, so it
+  // would pass unchecked. One citation per line, or a from-to range.
+  for (const [loose] of body.matchAll(/`[\w./-]+\.[a-z]+:\d[^`]*`/g)) {
+    if (!new RegExp(`^${citation.source}$`).test(loose)) issues.push(`${doc}: ${loose} — one citation per line, \`path:line\` or \`path:from-to\``);
+  }
+  for (const [text, file, from, to, rawAnchor] of body.matchAll(citation)) {
+    citationCount += 1;
+    const where = `${doc}: ${text}`;
+    if (!existsSync(file)) {
+      issues.push(`${where} cites a file that does not exist`);
+      continue;
+    }
+    if (!rawAnchor) {
+      issues.push(`${where} carries no anchor; write \`${file}:${from}\` (\`some text on that line\`)`);
+      continue;
+    }
+    // Markdown tables escape pipes; the source line has the bare character.
+    const anchor = rawAnchor.replaceAll("\\|", "|");
+    const lines = readFileSync(file, "utf8").split(/\r?\n/).slice(Number(from) - 1, Number(to ?? from));
+    if (!lines.some((line) => line.includes(anchor))) {
+      issues.push(`${where} does not contain ${anchor} — the line moved, or the symbol did`);
+    }
+  }
+}
+
+function markdownFiles(dir) {
+  const found = [];
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name === ".git" || entry.name === "node_modules") continue;
+    const path = join(dir, entry.name).replaceAll("\\", "/");
+    if (entry.isDirectory()) found.push(...markdownFiles(path));
+    else if (entry.name.endsWith(".md")) found.push(path);
+  }
+  return found;
+}
+
 if (issues.length > 0) {
-  console.error("nodetrace tours check: FAIL");
+  console.error("nodetrace citations check: FAIL");
   for (const issue of issues) console.error(`  - ${issue}`);
   process.exitCode = 1;
 } else if (!values.write) {
-  console.log(`nodetrace tours check: PASS ${tours.length} tours, ${tours.reduce((n, t) => n + t.steps.length, 0)} steps`);
+  const steps = tours.reduce((n, tour) => n + tour.steps.length, 0);
+  console.log(`nodetrace citations check: PASS ${tours.length} tours, ${steps} steps, ${citationCount} markdown citations`);
 }

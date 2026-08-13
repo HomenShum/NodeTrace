@@ -47,8 +47,8 @@ because it installs NodeTrace into a throwaway Next.js app and builds it).
 ## Step 1 — The page loads and mounts one React component
 
 **File:** `src/main.tsx`
-**Symbol:** the top-level `createRoot(...).render(...)` call
-**Called by:** the browser, via `<script type="module" src="/src/main.tsx">` in `index.html:11`
+**Symbol:** `src/main.tsx:6` (`createRoot(document.getElementById("root")!)`)
+**Called by:** the browser, via `index.html:11` (`<script type="module" src="/src/main.tsx">`)
 **Calls next:** `DemoDashboard`
 
 **Why this exists**
@@ -66,7 +66,7 @@ createRoot(document.getElementById("root")!).render(
 );
 ```
 
-**Input** — the empty `<div id="root">` from `index.html:10`.
+**Input** — the empty root div, `index.html:10` (`<div id="root"></div>`).
 **Output** — a mounted React tree.
 **Failure behavior** — if `#root` is missing the non-null assertion throws and
 the page is blank. Nothing catches it; there is no error boundary.
@@ -77,7 +77,7 @@ the page is blank. Nothing catches it; there is no error boundary.
 ## Step 2 — The dashboard fetches the state file that everything else reads
 
 **File:** `src/DemoDashboard.tsx`
-**Symbol:** `DemoDashboard`, the `useEffect` at line 33
+**Symbol:** `DemoDashboard`, the state fetch at `src/DemoDashboard.tsx:33` (`useEffect(() => {`)
 **Called by:** `src/main.tsx`
 **Calls next:** `TraceLensProvider`, `LiveGraphRail`, `TraceLensPanel`
 
@@ -105,15 +105,16 @@ which is a placeholder with an empty surface list. The page still renders; the
 lens then has nothing to show and stays shut. There is no visible error message,
 which is a real weakness — see `docs/codebase/CONCERNS.md`.
 **Next** — the tagged regions this component renders are the click targets for
-Step 3. The one you will click is the header at line 52,
-`data-nodetrace-surface="shell.statusStrip"`.
+Step 3. The one you will click is the header at `src/DemoDashboard.tsx:52`
+(`data-nodetrace-surface="shell.statusStrip"`).
 
 ---
 
 ## Step 3 — Ctrl-click anywhere on the page is caught once, at the window
 
 **File:** `src/trace/TraceLensProvider.tsx`
-**Symbol:** the `onClick` listener inside `TraceLensProvider`, line 57
+**Symbol:** the `onClick` listener inside `TraceLensProvider`,
+`src/trace/TraceLensProvider.tsx:57` (`const onClick = (event: MouseEvent) => {`)
 **Called by:** the browser, on every click, in the capture phase
 **Calls next:** `resolveTraceHit`
 
@@ -150,7 +151,7 @@ the lens cannot be opened by keyboard or by touch, which is open defect **D4** i
 ## Step 4 — The click becomes a typed domain value
 
 **File:** `src/trace/TraceLensProvider.tsx`
-**Symbol:** `resolveTraceHit`, line 15
+**Symbol:** `src/trace/TraceLensProvider.tsx:15` (`export function resolveTraceHit`)
 **Called by:** the window click listener in Step 3
 **Calls next:** `openHit`, which stores the result in React state
 
@@ -173,7 +174,8 @@ export function resolveTraceHit(target: EventTarget | null): SurfaceHit | null {
 ```
 
 **Input** — `event.target`.
-**Output** — a `SurfaceHit` (`src/trace/types.ts:10`): `surfaceId` plus optional
+**Output** — a `SurfaceHit`, defined at `src/trace/types.ts:10`
+(`export interface SurfaceHit {`): `surfaceId` plus optional
 `artifactId`, `elementId`, `targetRef` read from the nearest enclosing element
 that carries them.
 **Failure behavior** — every unsupported shape returns `null` and the click is
@@ -186,8 +188,8 @@ left alone. `data-noderoom-surface` is accepted as well as
 ## Step 5 — Tool registration and invocation: the MCP server, not the panel
 
 **File:** `bin/nodetrace-mcp.mjs`
-**Symbol:** `server.registerTool("validate_capture_plan", ...)` line 22 and
-`server.registerTool("capture_codebase", ...)` line 49
+**Symbol:** `bin/nodetrace-mcp.mjs:22-23` (`"validate_capture_plan"`) and
+`bin/nodetrace-mcp.mjs:49-50` (`"capture_codebase"`)
 **Called by:** a coding agent over stdio MCP
 **Calls next:** `normalizeCapturePlan` / `captureCodebaseFromPlan` in
 `src/capture/codebaseCapture.mjs`
@@ -216,7 +218,8 @@ await server.connect(new StdioServerTransport());
 on disk.
 **Failure behavior** — a bad plan throws inside `normalizeCapturePlan` and the
 MCP call returns the error text. `editor.mode` other than `code-browser` is
-rejected by name (`src/capture/codebaseCapture.mjs:98`).
+rejected by name — `src/capture/codebaseCapture.mjs:98`
+(`Unsupported editor.mode`).
 **Next** — continue to Step 6; the capture writes a manifest, and the happy path
 writes the database.
 
@@ -225,8 +228,8 @@ writes the database.
 ## Step 6 — Persistence: the only place rows are created
 
 **File:** `scripts/init-sqlite.mjs`
-**Symbol:** the top-level `db.transaction(...)` at line 187 and the
-`writeFileSync(statePath, ...)` at line 227
+**Symbol:** `scripts/init-sqlite.mjs:187` (`db.transaction(() => {`) and
+`scripts/init-sqlite.mjs:227` (`writeFileSync(statePath,`)
 **Called by:** `npm run happy-path`, and by `scripts/nodetrace-init.mjs` inside
 any app the installer patched
 **Calls next:** nothing — it is a script; it exits
@@ -256,8 +259,9 @@ writeFileSync(statePath, `${JSON.stringify(clientState, null, 2)}\n`);
 **Output** — `.nodetrace/nodetrace.sqlite`, `public/nodetrace-state.json`, and an
 optional receipt JSON.
 **Failure behavior** — a missing `better-sqlite3` prints one instruction and
-exits 1 (line 10). Everything else throws with a stack trace. The transaction
-means a half-written database is not possible.
+exits 1 — `scripts/init-sqlite.mjs:10` (`Missing dependency: run`). Everything
+else throws with a stack trace. The transaction means a half-written database is
+not possible.
 **Next** — the JSON this step wrote is what Step 2 fetches. That is the loop.
 
 ---
@@ -265,9 +269,10 @@ means a half-written database is not possible.
 ## Step 7 — Rendering: the panel filters the state down to one surface
 
 **File:** `src/trace/TraceLensPanel.tsx`
-**Symbol:** `TraceLensPanel`, line 7
-**Called by:** `DemoDashboard` (`src/DemoDashboard.tsx:120`)
-**Calls next:** `filterByHit`, line 158
+**Symbol:** `src/trace/TraceLensPanel.tsx:7` (`export function TraceLensPanel({`)
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:120`
+(`<TraceLensPanel state={state} />`)
+**Calls next:** `src/trace/TraceLensPanel.tsx:158` (`function filterByHit`)
 
 **Why this exists**
 The panel holds no state of its own. It reads the current hit from context and
@@ -300,9 +305,9 @@ registry) and then Ctrl-clicking the header, which is still tagged
 ## Step 8 — The live graph rail turns trace rows into a picture
 
 **File:** `src/trace/LiveGraphRail.tsx`
-**Symbol:** `LiveGraphRail`, line 27
-**Called by:** `DemoDashboard` (`src/DemoDashboard.tsx:115`), only when
-`state.traces` is non-empty
+**Symbol:** `src/trace/LiveGraphRail.tsx:27` (`export function LiveGraphRail`)
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:115`
+(`<LiveGraphRail traces={state.traces} />`), only when `state.traces` is non-empty
 **Calls next:** `GraphSession.observe` and the `NodeGraph` renderer in
 `vendor/nodegraph-live/`
 
@@ -329,9 +334,9 @@ const snapshot = useSyncExternalStore(session.subscribe, session.getSnapshot, se
 attributes, which is how the browser probes assert on it without reading pixels.
 **Failure behavior** — this component needs WebGL and mounts nothing useful on a
 server. That is why the installer loads the dashboard through
-`next/dynamic(..., { ssr: false })` in a Next.js target
-(`bin/nodetrace.mjs:304`); without it, `next build` dies in prerender with
-`WebGL2RenderingContext is not defined`.
+`next/dynamic(..., { ssr: false })` in a Next.js target — `bin/nodetrace.mjs:304`
+(`function nextPage(importPath)`). Without it, `next build` dies in prerender
+with `WebGL2RenderingContext is not defined`.
 **Next** — continue to failure and recovery in Step 9.
 
 ---
@@ -339,8 +344,10 @@ server. That is why the installer loads the dashboard through
 ## Step 9 — Failure and recovery live in the installer, not the UI
 
 **File:** `bin/nodetrace.mjs`
-**Symbol:** `runCommand`, line 204, and the receipt written at line 120
-**Called by:** `addNodeTrace`, line 31, i.e. `npx @homenshum/nodetrace add`
+**Symbol:** `bin/nodetrace.mjs:204` (`function runCommand`), and the receipt
+written at `bin/nodetrace.mjs:120` (`setup-receipt.json`)
+**Called by:** `bin/nodetrace.mjs:31` (`function addNodeTrace`), i.e.
+`npx @homenshum/nodetrace add`
 **Calls next:** nothing — it writes the receipt and sets the exit code
 
 **Why this exists**
@@ -363,7 +370,8 @@ const status = timedOut ? `TIMEOUT after ${formatMs(options.timeoutMs)}` : ok ? 
 code 0 or 1.
 **Failure behavior** — the receipt is written whether or not the phases passed,
 so a failed install is inspectable rather than silent. `writeText` refuses to
-overwrite an existing file unless `--force` is given (line 156), so re-running
+overwrite an existing file unless `--force` is given — `bin/nodetrace.mjs:156`
+(`Refusing to overwrite`) — so re-running
 `add` cannot quietly clobber a customised copy.
 **Next** — continue to the tests in Step 10.
 
@@ -373,8 +381,8 @@ overwrite an existing file unless `--force` is given (line 156), so re-running
 
 **File:** `scripts/cli-smoke.mjs`, `scripts/capture-plan-smoke.mjs`,
 `scripts/mcp-smoke.mjs`, `scripts/smoke.mjs`
-**Symbol:** `validateInstalledImports` (`scripts/cli-smoke.mjs:116`) and
-`checkRealCapture` (`scripts/capture-plan-smoke.mjs:52`)
+**Symbol:** `scripts/cli-smoke.mjs:116` (`function validateInstalledImports`)
+and `scripts/capture-plan-smoke.mjs:52` (`async function checkRealCapture`)
 **Called by:** `npm run smoke`, `npm run capture:plan:smoke`, both members of
 `npm run check`
 **Calls next:** the real binaries, as subprocesses
@@ -418,12 +426,13 @@ change anything it names.
 
 Say you want the panel to also show *who approved* a surface.
 
-1. Add the field to `src/trace/types.ts` (`TraceProof`, line 17).
-2. Add the column to `db/schema.sql` (`trace_proofs`, line 16).
+1. Add the field to `src/trace/types.ts:17` (`export interface TraceProof`).
+2. Add the column to `db/schema.sql:16` (`create table if not exists trace_proofs`).
 3. Write it in `scripts/init-sqlite.mjs` — both the `proofs` array and the
    `insertProof` prepared statement, which must stay in sync by hand.
 4. Render it in `src/trace/TraceLensPanel.tsx`, inside the Business proof region.
-5. Add the column name to the schema assertion list in `scripts/smoke.mjs:47`,
+5. Add the column name to the schema assertion list in `scripts/smoke.mjs:47`
+   (`step_label`),
    or the smoke will not notice if you delete it later.
 
 Steps 1-4 are the flow. Step 5 is the tax this repository charges, and it is the

@@ -16,6 +16,7 @@ scripts asserts — see the last section.
 |---|---|---|
 | `npm run happy-path` | ~1s | SQLite applies, rows insert, the client JSON is written. |
 | `npm run smoke` | ~15s | Three scripts: `smoke.mjs`, `cli-smoke.mjs`, `mcp-smoke.mjs`. |
+| `npm run citations:check` | <1s | Every `.tours/` step and every `path:line` in a markdown file still names the line it claims, checked by anchor and not by line number. |
 | `npm run capture:plan:smoke` | ~10s | A plan parses **and** one real headless capture runs end to end. |
 | `npm run builder:smoke` | ~1s | The privileged-ownership example route gates on its token. |
 | `npm run agent:scale:smoke` | ~2s | 125 trace rows insert and read back. |
@@ -25,14 +26,14 @@ scripts asserts — see the last section.
 | `npm run package:dry-run` | ~2s | The published tarball's file list. |
 | `npm audit --omit=dev` | ~3s | No production advisories. |
 | `npm run promotion:j4` | ~5min | Installs, builds, serves and photographs `/nodetrace` in headless Chromium. Not in `check`. |
-| `npm run tours:check` | <1s | Every `.tours/` step still points at a real line. Not in `check`. |
 
 `npm run check` (alias for `prepush`) is the declared green bar. It runs the
-first ten rows above, `&&`-chained, so its exit code is the whole thing.
+first eleven rows above, `&&`-chained, so its exit code is the whole thing.
 
-**Measured 2026-08-13, this commit: `npm run check` exits 0.** At the Wave 1
-baseline it exited 1 at two members; after the promotion loop's iteration 1, at
-one (`npm audit`). It is now green end to end for the first time.
+**Measured 2026-08-13, this commit: `npm run check` exits 0 in 249s**, on a
+fresh clone under Windows 11 / Node v22.22.2 / npm 10.9.7. At the Wave 1 baseline
+it exited 1 at two members; after the promotion loop's iteration 1, at one
+(`npm audit`, since closed by a lockfile bump). It is green end to end.
 
 ## The checks worth knowing about
 

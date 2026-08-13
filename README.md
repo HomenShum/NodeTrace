@@ -19,8 +19,8 @@ user action — Ctrl-clicking a tagged region — through the code in the order 
 code runs, and it names the open defects on that path rather than routing around
 them. Then [`docs/codebase/`](docs/codebase/) for stack, structure, architecture,
 conventions, integrations, testing and known concerns, and `.tours/` for the same
-three walkthroughs inside VS Code (`npm run tours:check` proves they still point
-at real lines).
+three walkthroughs inside VS Code (`npm run citations:check` proves every tour
+step and every `path:line` in these documents still names the line it claims).
 
 Agent-trace injection guide: [`docs/AGENT_TRACE_ADOPTION.md`](docs/AGENT_TRACE_ADOPTION.md).
 Workpaper standard: [`docs/TRACE_WORKPAPER_STANDARD.md`](docs/TRACE_WORKPAPER_STANDARD.md).

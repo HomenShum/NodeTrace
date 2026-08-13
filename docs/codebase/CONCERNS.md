@@ -42,11 +42,11 @@ docs check on its own merits.
 
 Two silent failures on the same path.
 
-`src/DemoDashboard.tsx:34` — if `public/nodetrace-state.json` is missing or
+`src/DemoDashboard.tsx:34` (`fetch("./nodetrace-state.json"`) — if `public/nodetrace-state.json` is missing or
 unparseable, the `.catch` swaps in a placeholder with an empty surface list. The
 page renders normally. Nothing tells the user that no data loaded.
 
-`src/trace/TraceLensPanel.tsx:17-19` — if the clicked surface id is not in
+`src/trace/TraceLensPanel.tsx:17-19` (`state.surfaces.find`) — if the clicked surface id is not in
 `state.surfaces`, the component returns `null`. The click was consumed
 (`preventDefault` + `stopPropagation` already ran), so the user gets no panel, no
 message, and no cursor change. **This is defect D1**, and it is reachable from the
@@ -61,7 +61,7 @@ preserved" claim unverifiable.
 
 ## 3. The lens can only be opened with a mouse — D4
 
-`src/trace/TraceLensProvider.tsx:58` requires `metaKey || ctrlKey` plus
+`src/trace/TraceLensProvider.tsx:58` (`event.metaKey || event.ctrlKey`) requires `metaKey || ctrlKey` plus
 `button === 0`. Measured at the Wave 1 baseline: 25 consecutive Tab presses reach
 no opener; a tap at 375x812 with touch emulation leaves `.nt-panel` null. Once
 open, the dialog has `role="dialog"` without `aria-modal`, focus stays on `BODY`,
@@ -88,7 +88,7 @@ both are printed on the demo page as instructions to run.
 
 ## 5. The page claims provenance the receipt denies — D3, second half
 
-`src/DemoDashboard.tsx:138` maps any `sourceMode` that is not `"live"` to the
+`src/DemoDashboard.tsx:138` (`sourceModeLabel`) maps any `sourceMode` that is not `"live"` to the
 words **"full local checkout"**. After `npm run trace-coach:sqlite` on a fresh
 clone, `docs/eval/nodetrace-trace-coach-sqlite.json` records
 `"sourceMode": "snapshot"` — there is no checkout — and the page nonetheless
@@ -113,8 +113,9 @@ package does not declare what its own CLI needs. Either move `playwright` to
 
 ## 7. Smaller things, listed so nobody rediscovers them
 
-- **The surface registry exists in two places.** `scripts/init-sqlite.mjs:40` and
-  `scripts/trace-coach-sqlite.mjs:57` each hold their own list. A third copy in
+- **The surface registry exists in two places.** `scripts/init-sqlite.mjs:40`
+  (`const surfaces = [`) and `scripts/trace-coach-sqlite.mjs:57`
+  (`const surfaces = [`) each hold their own list. A third copy in
   `src/trace/surfaces.ts` was deleted in the Wave 3 reduction. The remaining two
   describe genuinely different sets, so they are not duplicates — but nothing
   checks that a surface tagged in the DOM is registered by whichever script last

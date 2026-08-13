@@ -66,7 +66,7 @@ them so nothing dangles.
 
 **2. `src/trace/surfaces.ts` (39 lines, 1 file, 2 public exports).**
 `DEFAULT_SURFACES` was a byte-identical copy of the surface list in
-`scripts/init-sqlite.mjs:40`, used for one thing: to populate the placeholder
+`scripts/init-sqlite.mjs:40` (`const surfaces = [`), used for one thing: to populate the placeholder
 state during the millisecond before the real state file arrives. Claiming five
 registered surfaces before any data has loaded is wrong information, so the
 placeholder now says `surfaces: []`, which is true. `surfaceMeta` was a
@@ -150,11 +150,16 @@ the manifest recorded `actual-code-browser-shiki`, `actual-app-playwright`, a re
 DOMRect, and PNGs over 1 kB. Verified by knockout: changing the recorded
 `captureKind` to `generated-placeholder` turns it red.
 
-**2. `scripts/tours-check.mjs` and `npm run tours:check`.** The CodeTour files
-point at line numbers, and line numbers rot. So the tours are generated from a
-table of (file, literal anchor, description) and this script re-resolves every
-anchor; a moved anchor is a hard failure. Verified by knockout: renaming
-`const meta = state.surfaces.find` turns it red with the file and anchor named.
+**2. `scripts/citations-check.mjs` and `npm run citations:check`.** Tour steps
+and markdown citations point at line numbers, and line numbers rot. So the tours
+are generated from a table of (file, literal anchor, description) and this script
+re-resolves every anchor, and every `path:line` in a markdown file must carry the
+anchor its line contains. A line number that is merely in range is not enough:
+that is how `promotion/PROMOTION_LOG.md` came to cite a helper that had been
+inlined away. Verified by knockout twice: renaming `const meta =
+state.surfaces.find` turns it red with the file and anchor named, and moving one
+citation to a different in-range line turns it red naming the anchor the line
+does not contain.
 
 **3. This documentation packet** — `docs/START_HERE.md`,
 `docs/SIMPLIFICATION_REPORT.md`, `docs/codebase/*.md`, `.tours/*.tour`. No

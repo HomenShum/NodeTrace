@@ -76,14 +76,14 @@ reproduction; a hunch is not a defect.
 
 | # | Severity | Journey | Reproduction | Status |
 |---|----------|---------|--------------|--------|
-| D1 | Major | J2 | **The header is a tagged surface that does nothing.** After `npm run trace-coach:sqlite`, load `http://127.0.0.1:5187/` at 1280x900 and Ctrl-click anywhere in the hero — the `<h1>`, the launch card, any point inside `[data-nodetrace-surface="shell.statusStrip"]` (1236x330 px, the largest tagged region on the page). No panel, no message, no cursor change: `document.querySelector(".nt-panel")` stays null. Root cause, traced not guessed: `DemoDashboard.tsx:52` hardcodes the id `shell.statusStrip`, but `trace-coach-sqlite.mjs` replaces `state.surfaces` with six `workSurface.trace*` ids; `TraceLensPanel.tsx:16-18` does `surfaceMeta(state.surfaces, hit.surfaceId)` and returns `null` when it misses. The click resolves, the panel refuses, nothing tells the user. Contrast: the same click on `workSurface.traceStrip` works. In the happy-path state — where `surfaces` still contains `shell.statusStrip` — the same click also works, so the failure only appears after the README's own Trace Coach commands. | Open |
-| D2 | Major | J4 | ~~**The installer ships a target that cannot build.**~~ **FIXED in iteration 1**, and it had a second layer the baseline could not see: with the vendored renderer copied, `next build` compiled and then died in *prerender* with `ReferenceError: WebGL2RenderingContext is not defined`. See iteration 1 below. Original reproduction, preserved: `npm run installer:next:e2e` → phases 1-3 pass (`happy path PASS 2.59s`, `smoke PASS 3.15s`), phase 4 fails after 39.00s: `./src/nodetrace/LiveGraphRail.tsx  Module not found: Can't resolve '../../vendor/nodegraph-live/index.js'` and the same for `react.js`; `Build failed because of webpack errors`; exit 1. Root cause: `src/trace/LiveGraphRail.tsx:11-12` imports the vendored NodeGraph Live build by relative path, but `bin/nodetrace.mjs:48` copies **only** `src/trace/` into the target — nothing copies `vendor/nodegraph-live/`, so `../../vendor/...` resolves to a path that does not exist in the target. The repo's own suites stay green because the repo itself has `vendor/`. This makes the README's headline `npx github:HomenShum/NodeTrace add` produce a broken application. | **Fixed** (iteration 1) |
-| D3 | Major | J3 | **The UI claims provenance the receipt denies.** On a fresh clone the two documented prerequisites fail: `npm run understand:noderoom` throws `Error: NodeRoom trace file missing: <parent>/src/ui/panels/Artifact.tsx` with a raw stack trace, and `npm run capture:noderoom:real` prints `NodeRoom source root not found: <parent>`. Both resolve the NodeRoom checkout from `sourceRoot = resolve(options["source-root"] ?? env.NODETRACE_SOURCE_ROOT ?? "..")` — i.e. they assume NodeRoom is a sibling directory of the clone, which the README never states, and the README's promised auto-clone covers the Understand-Anything tool, not the NodeRoom source. `npm run trace-coach:sqlite` then succeeds anyway and prints `(snapshot)`; `docs/eval/nodetrace-trace-coach-sqlite.json` records `"sourceMode": "snapshot"`. But `DemoDashboard.tsx:138` maps anything that is not `"live"` to the string **"full local checkout"**, so the rendered page asserts `full local checkout - HomenShum/noderoom` for a checkout that is not present — visible in `promotion/evidence/trace-coach-desktop-1280.png`. The same receipt asserts `captureModel: "actual code-browser source screenshots from real filesystem … + actual running NodeRoom Playwright screenshots"` in a run where the capture step exited 1; the assets are real but checked in from an earlier run, and no field separates "produced now" from "committed earlier". In a product whose entire pitch is provenance, this is the worst possible place to overstate. | Open |
-| D4 | Major | J2, J3 | **The only way in is a modified mouse click.** `TraceLensProvider.tsx:58` gates on `event.metaKey \|\| event.ctrlKey` and `event.button === 0`. Keyboard: 25 consecutive Tab presses at 1280x900 never reach anything that opens the lens — 17 landed stops in the happy-path state, 24 in the trace-coach state (12 focusable elements, cycled), and not one of them is an opener. Touch: at 375x812 with Chromium `hasTouch: true, isMobile: true`, tapping `[data-nodetrace-surface="workSurface.traceStrip"]` leaves `.nt-panel` null and no affordance is drawn (`j2-mobile-tap-no-lens.png`). Once open by mouse, the dialog is still not keyboard-usable: `role="dialog"` with no `aria-modal`, focus stays on `BODY`, and 6 further Tabs all land on `button.r-tracevu-rec` behind the panel (`a11y-lens-open-focus.png`). | Open |
+| D1 | Major | J2 | **The header is a tagged surface that does nothing.** After `npm run trace-coach:sqlite`, load `http://127.0.0.1:5187/` at 1280x900 and Ctrl-click anywhere in the hero — the `<h1>`, the launch card, any point inside `[data-nodetrace-surface="shell.statusStrip"]` (1236x330 px, the largest tagged region on the page). No panel, no message, no cursor change: `document.querySelector(".nt-panel")` stays null. Root cause, traced not guessed: `src/DemoDashboard.tsx:52` (`data-nodetrace-surface="shell.statusStrip"`) hardcodes the id, but `trace-coach-sqlite.mjs` replaces `state.surfaces` with six `workSurface.trace*` ids; `src/trace/TraceLensPanel.tsx:16-18` (`state.surfaces.find`) looks the id up in the registry and returns `null` when it misses. The click resolves, the panel refuses, nothing tells the user. Contrast: the same click on `workSurface.traceStrip` works. In the happy-path state — where `surfaces` still contains `shell.statusStrip` — the same click also works, so the failure only appears after the README's own Trace Coach commands. | Open |
+| D2 | Major | J4 | ~~**The installer ships a target that cannot build.**~~ **FIXED in iteration 1**, and it had a second layer the baseline could not see: with the vendored renderer copied, `next build` compiled and then died in *prerender* with `ReferenceError: WebGL2RenderingContext is not defined`. See iteration 1 below. Original reproduction, preserved: `npm run installer:next:e2e` → phases 1-3 pass (`happy path PASS 2.59s`, `smoke PASS 3.15s`), phase 4 fails after 39.00s: `./src/nodetrace/LiveGraphRail.tsx  Module not found: Can't resolve '../../vendor/nodegraph-live/index.js'` and the same for `react.js`; `Build failed because of webpack errors`; exit 1. Root cause: `src/trace/LiveGraphRail.tsx:11-12` (`../../vendor/nodegraph-live/index.js`) imports the vendored NodeGraph Live build by relative path, but `bin/nodetrace.mjs:52-75` (`copyDir(join(packageRoot, "src", "trace")`) copies **only** `src/trace/` into the target — nothing copies `vendor/nodegraph-live/`, so `../../vendor/...` resolves to a path that does not exist in the target. The repo's own suites stay green because the repo itself has `vendor/`. This makes the README's headline `npx github:HomenShum/NodeTrace add` produce a broken application. | **Fixed** (iteration 1) |
+| D3 | Major | J3 | **The UI claims provenance the receipt denies.** On a fresh clone the two documented prerequisites fail: `npm run understand:noderoom` exits 1 with `NodeRoom source root not usable: <parent>` and names the missing trace files (until iteration 2 below it threw a raw stack trace instead, and only after cloning and installing an external plugin first), and `npm run capture:noderoom:real` prints `NodeRoom source root not found: <parent>`. Both resolve the NodeRoom checkout from `sourceRoot = resolve(options["source-root"] ?? env.NODETRACE_SOURCE_ROOT ?? "..")` — i.e. they assume NodeRoom is a sibling directory of the clone, which the README never states, and the README's promised auto-clone covers the Understand-Anything tool, not the NodeRoom source. `npm run trace-coach:sqlite` then succeeds anyway and prints `(snapshot)`; `docs/eval/nodetrace-trace-coach-sqlite.json` records `"sourceMode": "snapshot"`. But `src/DemoDashboard.tsx:138` (`sourceModeLabel`) maps anything that is not `"live"` to the string **"full local checkout"**, so the rendered page asserts `full local checkout - HomenShum/noderoom` for a checkout that is not present — visible in `promotion/evidence/trace-coach-desktop-1280.png`. The same receipt asserts `captureModel: "actual code-browser source screenshots from real filesystem … + actual running NodeRoom Playwright screenshots"` in a run where the capture step exited 1; the assets are real but checked in from an earlier run, and no field separates "produced now" from "committed earlier". In a product whose entire pitch is provenance, this is the worst possible place to overstate. | Open |
+| D4 | Major | J2, J3 | **The only way in is a modified mouse click.** `src/trace/TraceLensProvider.tsx:58` (`event.metaKey \|\| event.ctrlKey`) gates on the modifier keys and `event.button === 0`. Keyboard: 25 consecutive Tab presses at 1280x900 never reach anything that opens the lens — 17 landed stops in the happy-path state, 24 in the trace-coach state (12 focusable elements, cycled), and not one of them is an opener. Touch: at 375x812 with Chromium `hasTouch: true, isMobile: true`, tapping `[data-nodetrace-surface="workSurface.traceStrip"]` leaves `.nt-panel` null and no affordance is drawn (`j2-mobile-tap-no-lens.png`). Once open by mouse, the dialog is still not keyboard-usable: `role="dialog"` with no `aria-modal`, focus stays on `BODY`, and 6 further Tabs all land on `button.r-tracevu-rec` behind the panel (`a11y-lens-open-focus.png`). | Open |
 | D5 | Minor | — | **Known API gap, carried in from the Wave 1 context note, confirmed by reading `db/schema.sql`.** `trace_proofs` has `source_label` and `source_url` but no `source_release`, `subject_id` or `object_id`, so a proof card cannot say which release of a source it came from, nor name the subject and object of the claim it is backing. Reproduce: `sqlite3 .nodetrace/nodetrace.sqlite '.schema trace_proofs'`, or read `public/nodetrace-state.json` — every proof row carries `sourceLabel`/`sourceUrl` and nothing else. Not user-visible today because no surface renders those fields; listed so Wave 2 does not rediscover it. | Open |
-| D6 | Minor | J1 | **Production dependency advisories, and they gate the repo's own prepush.** `npm audit --omit=dev` exits 1 with 4 advisories (2 high, 2 moderate), including GHSA-22jq-vg5j-6vgg in `ip-address` — IPv4-mapped/NAT64 misclassification that can bypass SSRF checks. `npm audit --omit=dev` is the last link in the `prepush` chain, so this alone makes `npm run check` red. `npm audit fix` is offered. | Open |
+| D6 | Minor | J1 | ~~**Production dependency advisories, and they gate the repo's own prepush.**~~ **CLOSED, re-measured 2026-08-13** on a fresh `git clone --depth 20` of `main` at `3deb3a8`, Windows 11 / Node v22.22.2 / npm 10.9.7: `npm audit --omit=dev` exits **0** and prints `found 0 vulnerabilities`. Original reproduction, preserved: exit 1 with 4 advisories (2 high, 2 moderate), including GHSA-22jq-vg5j-6vgg in `ip-address` — IPv4-mapped/NAT64 misclassification that can bypass SSRF checks — and because `npm audit --omit=dev` is the last link in the `prepush` chain, that alone made `npm run check` red. What closed it: the `npm audit fix` lockfile bump recorded in `docs/SIMPLIFICATION_REPORT.md`, commit `633f1d6`, which moved `ip-address` 10.2.0 -> 10.5.0 and `hono` 4.12.25 -> 4.13.2 against advisory ranges `<=10.3.0` and `<=4.12.33`. The baseline row above still reproduces against the tree it describes: `npm audit --omit=dev --package-lock-only` over `8be0092`'s `package-lock.json` still prints all 4. Nothing here was fixed by this entry; the row was never re-run after the bump. | **Closed** (re-measured 2026-08-13) |
 | D7 | Minor | J1, J3 | **Graph labels collide.** In the Live graph rail at 1280x900 in the happy-path state, `demo-artifact` and `workSurface.evidenceCarousel` overlap into unreadable text; at 375x812 `copilot.agentOperations` and `shell.status…` overlap. ForceAtlas2 places nodes without label-collision avoidance and the labels are not truncated. Visible in `happy-path-desktop-1280.png` and `happy-path-mobile-375.png`. | Open |
-| D8 | Minor | J1 | **Nothing marks the missing Trace Coach.** Run only the README Happy Path (`npm install`, `npm run happy-path`, `npm run dev`) and load the page: `state.coach` is absent so `DemoDashboard.tsx:105` renders nothing between the hero and the graph rail, while the hero says "Coach steps **0**" and, one line below, "Seeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots, and flow metadata" — a static string at `DemoDashboard.tsx:100` that is rendered whether or not any of that is true. No empty state, and no pointer to `npm run trace-coach:sqlite`. | Open |
+| D8 | Minor | J1 | **Nothing marks the missing Trace Coach.** Run only the README Happy Path (`npm install`, `npm run happy-path`, `npm run dev`) and load the page: `state.coach` is absent so `src/DemoDashboard.tsx:105` (`{coach && activeCoachStep ? (`) renders nothing between the hero and the graph rail, while the hero says "Coach steps **0**" and, one line below, "Seeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots, and flow metadata" — a static string at `src/DemoDashboard.tsx:100` (`Seeded from real NodeRoom files`) that is rendered whether or not any of that is true. No empty state, and no pointer to `npm run trace-coach:sqlite`. | Open |
 
 ## Iterations
 
@@ -101,13 +101,15 @@ reproduction; a hunch is not a defect.
   recorded `ok: false` with `build.ok: false`. Exactly as the ledger describes.
 
 - **Root cause, traced upstream rather than patched at the symptom.** The
-  installer copies a hand-maintained list of paths (`bin/nodetrace.mjs:48`).
+  installer copies a hand-maintained list of paths — `bin/nodetrace.mjs:52-75`
+  (`copyDir(join(packageRoot, "src", "trace")`).
   Anything the copied code reaches for *outside* that list resolves in this
   repository and nowhere else, and the target only discovers it at build time.
   Three distinct things were missing, and only the first was known:
 
-  1. **A file that is imported was never copied.** `LiveGraphRail.tsx:11-12`
-     imports `../../vendor/nodegraph-live/{index,react}.js`; nothing copied
+  1. **A file that is imported was never copied.**
+     `src/trace/LiveGraphRail.tsx:11-12` (`../../vendor/nodegraph-live/react.js`)
+     imports the vendored renderer; nothing copied
      `vendor/`.
   2. **Packages that are imported were never declared.** The vendored renderer
      itself imports `sigma`, `graphology`, `graphology-layout-forceatlas2` and
@@ -175,16 +177,75 @@ reproduction; a hunch is not a defect.
   (`tsc --noEmit` + vite build, 431.79 kB), `package:dry-run` 0 (111 files),
   `promotion:j4` 0. `npm audit --omit=dev` still exits 1 — that is D6, untouched
   and still open, so `npm run prepush` is still red at one of its ten members
-  instead of two.
+  instead of two. *(Superseded: D6 closed later the same day, and `npm audit
+  --omit=dev` now exits 0. See the second Correction below.)*
 
 - **Conditions newly PASS:** 12. Conditions 1, 2 and 11 improve but do not pass:
   J1-J3 defects D1, D3, D4, D8 are still open, and `prepush` is still red at
-  `npm audit`.
+  `npm audit`. *(Superseded for condition 11: `npm audit` is green and the whole
+  `prepush` chain now exits 0. See the second Correction below.)*
 
 - **Not fixed, and deliberately so:** the vite target is covered by the new
   import check but still has no end-to-end build proof in this repo; only the
   next target is built. Vite has no server render, so layer 3 cannot bite it,
   but that is reasoning, not a measurement.
+
+### Iteration 2 — 2026-08-13 — J3's first prerequisite failed slowly, and in silence
+
+- **Journey exercised:** J3 "Understand a codebase I did not write." Its first
+  documented step is `npm run understand:noderoom`, which reads a NodeRoom
+  checkout this repository does not contain.
+
+- **Observed (reproduced first, before any edit).** An independent reader who had
+  only this repository ran that command and watched it print nothing for minutes
+  before failing. Reproduced here with the pre-fix script, a deliberately wrong
+  `--source-root`, and a home directory holding no cached plugin: **12s wall
+  clock, 0 bytes on stdout, exit 1** — and in those 12 seconds it had cloned
+  `Egonex-AI/Understand-Anything` and run `pnpm install --frozen-lockfile` inside
+  it. The cost is not bounded at 12s: a cold pnpm store adds the downloads and
+  the `@understand-anything/core` build. None of that work could have helped,
+  because the source root it was handed was already wrong.
+
+- **Root cause, traced upstream rather than patched at the symptom.** Not a
+  missing check — the check existed, in `selectTraceFiles`, and it produced the
+  message the D3 row used to quote. It ran in the wrong order: `resolvePluginRoot` (which
+  may clone) and `preparePlugin` (which installs and builds) sit at the top of
+  the module, and the input those steps exist to serve was not read until after
+  they had finished. The sibling script `scripts/capture-noderoom-real-assets.mjs`
+  already validates its source root first and exits with one line; this script was
+  the outlier.
+
+- **Fixed** (`scripts/understand-anything-noderoom.mjs`, no new dependency, no new
+  abstraction):
+  - `requireNodeRoomSourceRoot` runs immediately after `--source-root` is
+    resolved, before anything external is touched. It names the resolved path,
+    how many of the six trace files are missing there, the first one, and the flag
+    to pass — then exits 1 without a stack, the way `scripts/init-sqlite.mjs`
+    already handles a missing native module.
+  - The duplicate existence check inside `selectTraceFiles` is deleted. The rule
+    is enforced once, at the earliest layer this script owns.
+  - `runCommand` echoes `> pnpm install --frozen-lockfile` before it spawns. Every
+    subprocess here is slow and has its output captured, so without that line the
+    run is silent for as long as the slowest one takes.
+  - `preparePlugin` announces the first-run install and build — the minutes-long
+    step — and returns early when both are already present.
+
+- **Re-proved by running it, both ways.** Wrong source root:
+  `node scripts/understand-anything-noderoom.mjs --source-root <a directory that
+  is not NodeRoom>` exits 1 in **142 ms** with the three-line message, and the
+  bootstrap directory is never created — nothing was cloned. Right source root,
+  against a real NodeRoom checkout: `understand-anything noderoom: PASS 6 trace
+  files`, exit 0, 76s, with each of the three Understand-Anything scripts now
+  visible as it runs. (Run with `--work`, `--graph-out` and `--json-out` pointed
+  at a scratch directory, so the committed receipt still describes the committed
+  run.)
+
+- **Tests:** `npm run check` exit 0 in 249s, all eleven members — see the second
+  Correction below.
+
+- **Not fixed, and deliberately so:** D3's other half. The page still renders
+  "full local checkout" for a snapshot (`src/DemoDashboard.tsx:138`
+  (`sourceModeLabel`)), and this entry does not touch it.
 
 ## Correction — 2026-08-13
 
@@ -238,3 +299,70 @@ committed probes under `promotion/` writing committed output under
 seeded states, a console-and-network log across the J1/J2/J3 drive, and a
 navigation-timing capture. Re-measuring without committing the tool would
 reproduce exactly the failure this entry records.
+
+## Correction — 2026-08-13, second
+
+An independent reader who had never seen this repository ran it cold and traced
+it end to end. They found three things wrong. One was a product defect, fixed in
+iteration 2 above. **Two were this file describing a repository that no longer
+exists** — which is the failure a promotion log is supposed to be immune to.
+
+**1. D6 was fixed and this ledger never noticed.** The row said `npm audit
+--omit=dev` exits 1 with 4 advisories, and that this alone kept `npm run check`
+red. Re-run on a fresh `git clone --depth 20` of `main` at `3deb3a8`, Windows 11
+/ Node v22.22.2 / npm 10.9.7: **exit 0, `found 0 vulnerabilities`.** Nothing in
+this entry fixed it — commit `633f1d6` ran `npm audit fix`, moving `ip-address`
+10.2.0 -> 10.5.0 and `hono` 4.12.25 -> 4.13.2 past the advisory ranges `<=10.3.0`
+and `<=4.12.33`, and `docs/SIMPLIFICATION_REPORT.md` recorded that while this
+ledger did not. The baseline row above is not wrong: `npm audit --omit=dev
+--package-lock-only` over `8be0092`'s lockfile still prints all 4, so the
+baseline still reproduces against the tree it describes. Only the open/closed
+status was stale. Consequence: condition 11 in [PRODUCT_GOAL.md](PRODUCT_GOAL.md)
+moves FAIL -> PASS and the scorecard reads 2/12.
+
+**2. A citation named a helper that had been inlined away.** D1's root-cause
+sentence cited `TraceLensPanel.tsx` doing `surfaceMeta(state.surfaces,
+hit.surfaceId)`. The line range was still right; the symbol has not existed since
+that lookup was inlined to `src/trace/TraceLensPanel.tsx:16-18`
+(`state.surfaces.find`). A reader who opened the file to check the claim found no
+such function, and no way to tell whether the defect had been fixed or the note
+had rotted.
+
+**Why nothing caught it, and what does now.** `npm run tours:check` verified the
+three `.tours/` walkthroughs and nothing else: markdown citations were unchecked,
+and the command was not in `prepush`. Both are fixed, and the mechanism is the
+part worth copying — **a citation is checked against the text of the line it
+names, never against the line number alone.** A line number that is merely in
+range proves only that the file still has that many lines, which is exactly what
+a rotted citation looks like.
+
+- `scripts/tours-check.mjs` is now `scripts/citations-check.mjs`, run as
+  `npm run citations:check`, and it is the third member of `prepush`.
+- Every `path:line` in a markdown file here must be followed by the anchor that
+  line contains, as `` `src/trace/TraceLensPanel.tsx:17` (`state.surfaces.find`) ``.
+  The checker resolves the path, reads the cited lines, and fails when the anchor
+  is not in them.
+- Two forms that cannot be checked are rejected outright: prose line numbers
+  ("the `useEffect` at line N", which names no file) and comma lists
+  (**panel.tsx:73,91,99**, which the parser cannot resolve).
+- Proved by knockout, both halves. Moving D1's citation to **21-23** — a range
+  that exists in the file — fails with *"does not contain state.surfaces.find"*.
+  Hand-editing a `.tours/` step's line from 17 to 19 fails with *"is out of
+  date"*. Both restored; both green after.
+
+**What the guard found that the reader had not.** It parsed 36 citations across
+8 markdown files. Two more claims were wrong. **bin/nodetrace.mjs:48**, cited
+twice as the installer's hand-maintained copy list, is a blank line — the list is
+`bin/nodetrace.mjs:52-75` (`copyDir(join(packageRoot, "src", "trace")`). And
+**TraceLensPanel.tsx:73,91,99** in [PRODUCT_GOAL.md](PRODUCT_GOAL.md) named the
+`) : (` line above each `nt-empty` row rather than the rows themselves. Nine of
+the 36 named a bare basename (**DemoDashboard.tsx:52**) that resolves to no file
+from the repository root; they are written as full paths now, so a reader can
+paste one into an editor and land on the line. All 62 citations this repository
+now contains carry an anchor and are checked on every `npm run check`.
+
+Nothing else moved. No product behaviour changed in this correction; the
+iteration-2 script change is the only executable difference. The open rows of the
+defect ledger (D1, D3, D4, D5, D7, D8) were re-read for stale citations and left
+standing — they were **not** re-driven in a browser for this entry, so nothing
+here is new evidence for or against them.

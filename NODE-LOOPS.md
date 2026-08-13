@@ -68,11 +68,11 @@ non-zero exit + an enumerated `issues[]` list otherwise.
 There is no autonomous retrain loop. The outer loop is **agent-in-the-loop
 self-heal**, driven by receipts:
 
-- **How failures feed back.** A failing verifier prints each issue and exits non-zero ([`scripts/smoke.mjs`](scripts/smoke.mjs) lines ~198-204), so the coding agent (or `prepush`) sees the exact missing surface/table/asset and edits the producing script, schema, or doc to close it.
+- **How failures feed back.** A failing verifier prints each issue and exits non-zero (`scripts/smoke.mjs:198-204` (`process.exitCode = 1`)), so the coding agent (or `prepush`) sees the exact missing surface/table/asset and edits the producing script, schema, or doc to close it.
 - **Installer self-heal with receipts.** `bin/nodetrace.mjs add` writes `.nodetrace/setup-receipt.json` and `.nodetrace/setup-log.txt` (every command, output tail, duration, timeout). On a slow/locked-down target it **fails with a receipt instead of hanging**; the agent retries with `NODETRACE_PHASE_TIMEOUT_MS`, `--skip-install`, or a target-local npm cache ([`README.md`](README.md) "Add To An Existing App").
 - **What's edited.** Producer scripts, [`db/schema.sql`](db/schema.sql), the panel/provider, docs, and capture plans ([`examples/real-codebase-capture/noderoom.capture.json`](examples/real-codebase-capture/noderoom.capture.json)). The trace surface contract itself stays portable (no app store / agent runtime imports — [`AGENTS.md`](AGENTS.md) rules).
-- **Promotion gate.** [`package.json`](package.json) `prepush`: `happy-path && smoke && builder:smoke && agent:scale:smoke && capture:plan:smoke && trace-coach:sqlite && installer:next:e2e && build && package:dry-run && npm audit --omit=dev`. All green or no push.
-- **Kill criteria.** Generated/mocked captures are forbidden in public docs and release proof — only an explicit `--allow-generated-captures` debug fallback may stand in, never for a release ([`AGENTS.md`](AGENTS.md)). A hand-modeled knowledge graph is rejected: the graph must be produced by Understand-Anything deterministic scripts or smoke fails ([`scripts/smoke.mjs`](scripts/smoke.mjs) lines ~114-119).
+- **Promotion gate.** [`package.json`](package.json) `prepush`: `happy-path && smoke && citations:check && builder:smoke && agent:scale:smoke && capture:plan:smoke && trace-coach:sqlite && installer:next:e2e && build && package:dry-run && npm audit --omit=dev`. All green or no push.
+- **Kill criteria.** Generated/mocked captures are forbidden in public docs and release proof — only an explicit `--allow-generated-captures` debug fallback may stand in, never for a release ([`AGENTS.md`](AGENTS.md)). A hand-modeled knowledge graph is rejected: the graph must be produced by Understand-Anything deterministic scripts or smoke fails (`scripts/smoke.mjs:114-119` (`trace coach graph is not backed by Understand-Anything output`)).
 
 ---
 

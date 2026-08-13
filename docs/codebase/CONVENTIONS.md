@@ -97,9 +97,9 @@ Output lines are `<name>: PASS` or `<name>: FAIL` followed by indented
 Sparse, and where they exist they explain **why**, usually naming the failure
 that forced the code. Examples worth imitating:
 
-- `bin/nodetrace.mjs:49` — why the vendored renderer is copied and its import rewritten
-- `scripts/cli-smoke.mjs:113` — why the installed-import check exists
-- `src/trace/LiveGraphRail.tsx:1` — why every edge is `traversal` and never `evidence`
+- `bin/nodetrace.mjs:49` (`reaches outside src/trace`) — why the vendored renderer is copied and its import rewritten
+- `scripts/cli-smoke.mjs:113` (`hand-listed set of paths`) — why the installed-import check exists
+- `src/trace/LiveGraphRail.tsx:2-6` (`never calls assertEdge`) — why every edge is `traversal` and never `evidence`
 
 Do not add comments that restate the code. Do add one when the answer to "why is
 this here" is a bug that already happened.

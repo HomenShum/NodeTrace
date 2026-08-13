@@ -53,7 +53,8 @@ Each journey states, in this order:
 - **Steps:**
   1. With the dev server up, Ctrl-click (Cmd-click on macOS) a region carrying
      `data-nodetrace-surface` — the resolver is
-     `src/trace/TraceLensProvider.tsx:55-67`.
+     `src/trace/TraceLensProvider.tsx:55-67`
+     (`window.addEventListener("click", onClick, true)`).
   2. Read the panel `src/trace/TraceLensPanel.tsx` renders: Business proof,
      Runtime trace, Code ownership.
   3. Press Escape to dismiss.
@@ -84,7 +85,8 @@ Each journey states, in this order:
   3. `npm run trace-coach:sqlite` (`scripts/trace-coach-sqlite.mjs`)
   4. Reload `http://127.0.0.1:5187/` and work through the step list, then the
      Overview / Steps / Minimap / Raw JSON tabs
-     (`src/DemoDashboard.tsx:141-146`).
+     (`src/DemoDashboard.tsx:141-146`
+     (`{ id: "flow", label: "Minimap", Icon: Network }`)).
 - **Done when:** Six ordered steps render, each naming a real NodeRoom file and
   line range, a code-browser source screenshot, a UI selector with its DOMRect,
   and a running-app screenshot — and `docs/eval/nodetrace-trace-coach-sqlite.json`

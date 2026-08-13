@@ -1,8 +1,8 @@
 {
   "ok": true,
-  "startedAt": "2026-08-13T19:06:59.482Z",
-  "completedAt": "2026-08-13T19:06:59.655Z",
-  "durationMs": 174,
+  "startedAt": "2026-08-13T21:18:20.181Z",
+  "completedAt": "2026-08-13T21:18:20.415Z",
+  "durationMs": 234,
   "apiKeysRequired": false,
   "scenario": "long-running 125-step QA agent",
   "traceRows": 125,

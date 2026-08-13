@@ -47,7 +47,7 @@ If you read nothing else, read these. Together they are under 600 lines.
     promotion/                 the product-readiness loop: goal, journeys, defect ledger, probes
     docs/                      this packet, plus adoption/porting guides and evidence receipts
     public/captures/           committed PNG/SVG evidence the demo page renders
-    .tours/                    CodeTour walkthroughs; `npm run tours:check` verifies them
+    .tours/                    CodeTour walkthroughs; `npm run citations:check` verifies them
 
 ## The scripts directory, grouped by what it is for
 
@@ -66,7 +66,7 @@ Sixteen files, which is a lot. They fall into four groups.
 - `builder-access-smoke.mjs`, `agent-trace-scale-smoke.mjs`
 - `installer-next-e2e-smoke.mjs` — installs into a throwaway Next app, runs `next build`
 - `capture-plan-fixture.mjs` — shared throwaway fixture; not a script you run
-- `tours-check.mjs` — verifies `.tours/` still points at real lines
+- `citations-check.mjs` — verifies every `.tours/` step and every markdown `path:line` still names the line it claims
 
 **Produce evidence (you will probably not run these):**
 
@@ -87,7 +87,8 @@ README says to create it. This is open defect **D3**; neither script is part of
 ## What `nodetrace add` copies into a target
 
 Useful to know before you move a file, because moving one silently changes what
-other people's applications receive (`bin/nodetrace.mjs:52-75`):
+other people's applications receive — `bin/nodetrace.mjs:52-75`
+(`copyDir(join(packageRoot, "src", "trace")`):
 
     src/trace/**                 -> <target>/src/nodetrace/
     vendor/nodegraph-live/**     -> <target>/src/nodetrace/vendor/nodegraph-live/
