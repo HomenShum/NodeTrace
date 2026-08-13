@@ -1,32 +1,31 @@
 {
   "ok": true,
-  "startedAt": "2026-08-13T11:59:00.630Z",
-  "completedAt": "2026-08-13T12:02:04.423Z",
-  "totalMs": 183793,
+  "startedAt": "2026-08-13T19:00:24.504Z",
+  "completedAt": "2026-08-13T19:04:44.810Z",
+  "totalMs": 260306,
   "apiKeysRequired": false,
   "framework": "next",
-  "targetDir": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-GVZq6z",
   "timeoutMs": 600000,
   "phases": [
     {
       "name": "install dependencies",
       "ok": true,
-      "durationMs": 101046
+      "durationMs": 123555
     },
     {
       "name": "happy path",
       "ok": true,
-      "durationMs": 1294
+      "durationMs": 1432
     },
     {
       "name": "smoke",
       "ok": true,
-      "durationMs": 1031
+      "durationMs": 1021
     },
     {
       "name": "build",
       "ok": true,
-      "durationMs": 80113
+      "durationMs": 122972
     }
   ],
   "issues": []

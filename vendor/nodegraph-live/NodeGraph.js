@@ -579,4 +579,3 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
                                     }, title: `${e.receipt?.subjectId} → ${e.receipt?.objectId}`, children: [e.other, " \u00B7 ", e.receipt?.source, " ", e.receipt?.release, " \u00B7", " ", _jsx("a", { href: e.receipt?.url, target: "_blank", rel: "noreferrer", style: { color: "inherit" }, children: "receipt" })] }, i))) })] }))] }))] }));
 }
 export default NodeGraph;
-//# sourceMappingURL=NodeGraph.js.map

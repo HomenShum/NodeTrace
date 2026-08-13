@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Activity, ArrowRight, CheckCircle2, CircleDot, Code2, Database, FileJson, Image, Layers3, ListChecks, Map, Network, Play, Route, Terminal } from "lucide-react";
-import { DEFAULT_SURFACES, TraceLensPanel, TraceLensProvider, type NodeTraceState, type TraceCoachState, type TraceCoachStep } from "./trace";
+import { TraceLensPanel, TraceLensProvider, type NodeTraceState, type TraceCoachState, type TraceCoachStep } from "./trace";
 import { LiveGraphRail } from "./trace/LiveGraphRail";
 
 type CoachTab = "overview" | "steps" | "flow" | "raw";
@@ -14,7 +14,7 @@ const seedState: NodeTraceState = {
     summary: "Loading public/nodetrace-state.json",
   },
   builderCapable: false,
-  surfaces: DEFAULT_SURFACES,
+  surfaces: [],
   proofs: [],
   traces: [],
   codeOwnership: [],

@@ -38,4 +38,3 @@ export type NodeGraphProps = {
 };
 export declare function NodeGraph({ nodes, edges, visits, dark, height, kindColors, onNode, onContext, }: NodeGraphProps): import("react").JSX.Element;
 export default NodeGraph;
-//# sourceMappingURL=NodeGraph.d.ts.map

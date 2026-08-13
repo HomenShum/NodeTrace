@@ -1,14 +1,25 @@
-import { createHash } from "node:crypto";
-import { existsSync, mkdirSync, readdirSync, readFileSync, symlinkSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename, dirname, extname, relative, resolve } from "node:path";
-import { tmpdir } from "node:os";
 import { spawn, spawnSync } from "node:child_process";
 import net from "node:net";
 import { setTimeout as delay } from "node:timers/promises";
+import { parseArgs } from "node:util";
 
 export async function runCaptureCli(args, context = {}) {
-  const options = parseArgs(args);
-  if (options.help || options.h || args.length === 0) {
+  const { values: options } = parseArgs({
+    args,
+    options: {
+      plan: { type: "string" },
+      "dry-run": { type: "boolean" },
+      "source-root": { type: "string" },
+      "capture-root": { type: "string" },
+      manifest: { type: "string" },
+      "timeout-ms": { type: "string" },
+      "app-url": { type: "string" },
+      help: { type: "boolean", short: "h" },
+    },
+  });
+  if (options.help || args.length === 0) {
     printCaptureHelp();
     return;
   }
@@ -52,24 +63,13 @@ export async function captureCodebaseFromPlan(rawPlan, context = {}) {
   const browser = await chromium.launch({ headless: plan.headless });
   try {
     const appBaseUrl = await resolveAppBaseUrl(plan, childProcesses);
-    const vscodeBaseUrl = await resolveEditorBaseUrl(plan, childProcesses);
-
-    if (plan.editor.mode === "code-browser") {
-      const codePage = await browser.newPage({ viewport: plan.editor.viewport, deviceScaleFactor: 1 });
-      await captureCodeBrowserSteps({ page: codePage, plan });
-    } else if (plan.editor.mode === "web") {
-      const vscodePage = await browser.newPage({ viewport: plan.editor.viewport, deviceScaleFactor: 1 });
-      await captureVsCodeWebSteps({ page: vscodePage, vscodeBaseUrl, plan });
-    } else if (plan.editor.mode === "desktop") {
-      await captureVsCodeDesktopSteps({ plan });
-    } else {
-      throw new Error(`Unsupported editor capture mode: ${plan.editor.mode}. Use code-browser, desktop, or web.`);
-    }
+    const codePage = await browser.newPage({ viewport: plan.editor.viewport, deviceScaleFactor: 1 });
+    await captureCodeBrowserSteps({ page: codePage, plan });
 
     const appPage = await browser.newPage({ viewport: plan.app.viewport, deviceScaleFactor: 1 });
     await captureAppSteps({ page: appPage, appBaseUrl, plan });
 
-    const manifest = buildManifest(plan, appBaseUrl, vscodeBaseUrl);
+    const manifest = buildManifest(plan, appBaseUrl);
     writeJson(plan.manifestPath, manifest);
     return {
       manifest,
@@ -94,7 +94,9 @@ export function normalizeCapturePlan(rawPlan, context = {}) {
   const manifestPath = resolveFrom(plan.manifestPath ?? plan.manifest ?? `${captureRoot}/${id}-manifest.json`, planDir);
   const timeoutMs = Number(plan.timeoutMs ?? 120_000);
   const editorMode = plan.editor?.mode ?? plan.editor?.capture ?? "code-browser";
-  const vscodeSourceRoot = prepareEditorSourceRoot(sourceRoot, id);
+  if (editorMode !== "code-browser") {
+    throw new Error(`Unsupported editor.mode "${editorMode}". NodeTrace renders source slices itself with Shiki; "code-browser" is the only mode.`);
+  }
   const steps = normalizeSteps(plan.steps ?? [], { sourceRoot, captureRoot, assetPathPrefix: plan.assetPathPrefix ?? "captures" });
   if (steps.length === 0) throw new Error("Capture plan must include at least one step.");
   return {
@@ -109,13 +111,6 @@ export function normalizeCapturePlan(rawPlan, context = {}) {
     headless: plan.headless !== false,
     editor: {
       mode: editorMode,
-      codeCli: plan.editor?.codeCli ?? process.env.NODETRACE_CODE_CLI ?? "code",
-      url: plan.editor?.url,
-      host: plan.editor?.host ?? "127.0.0.1",
-      port: Number(plan.editor?.port ?? 5199),
-      sourceRoot: vscodeSourceRoot,
-      userDataDir: resolveFrom(plan.editor?.userDataDir ?? resolve(tmpdir(), `nodetrace-vscode-user-data-${slug(id)}`), planDir),
-      extensionsDir: resolveFrom(plan.editor?.extensionsDir ?? resolve(tmpdir(), `nodetrace-vscode-extensions-${slug(id)}`), planDir),
       viewport: plan.editor?.viewport ?? { width: 1440, height: 920 },
     },
     app: {
@@ -215,33 +210,6 @@ async function resolveAppBaseUrl(plan, childProcesses) {
   child.stderr?.on("data", (chunk) => process.stderr.write(`[${plan.app.name}] ${chunk}`));
   const url = plan.app.waitUrl ?? `http://${plan.app.host}:${port}/`;
   await waitForHttp(url, plan.timeoutMs, `${plan.app.name} dev server`);
-  return url;
-}
-
-async function resolveEditorBaseUrl(plan, childProcesses) {
-  if (plan.editor.mode !== "web") return null;
-  if (plan.editor.url) return plan.editor.url;
-  const port = plan.editor.port || await findFreePort(5199, plan.editor.host);
-  const child = spawnPortable(plan.editor.codeCli, [
-    "serve-web",
-    "--without-connection-token",
-    "--accept-server-license-terms",
-    "--disable-telemetry",
-    "--host",
-    plan.editor.host,
-    "--port",
-    String(port),
-    "--default-folder",
-    toVsCodeWebPath(plan.editor.sourceRoot),
-  ], {
-    stdio: ["ignore", "pipe", "pipe"],
-    windowsHide: true,
-  });
-  childProcesses.push(child);
-  child.stdout?.on("data", (chunk) => process.stdout.write("[vscode] " + chunk));
-  child.stderr?.on("data", (chunk) => process.stderr.write("[vscode] " + chunk));
-  const url = `http://${plan.editor.host}:${port}/`;
-  await waitForHttp(url, plan.timeoutMs, "VS Code web server");
   return url;
 }
 
@@ -385,48 +353,6 @@ function fileIcon(name) {
   return "·";
 }
 
-async function captureVsCodeWebSteps({ page, vscodeBaseUrl, plan }) {
-  await page.goto(vscodeBaseUrl, { waitUntil: "domcontentloaded", timeout: plan.timeoutMs });
-  await page.locator(".monaco-workbench").waitFor({ state: "visible", timeout: plan.timeoutMs });
-  await prepareVsCodeWebWorkspace(page, plan.timeoutMs);
-
-  for (const step of plan.steps) {
-    console.log(`capturing VS Code web: ${step.id} ${step.sourceView.filePath}:${step.sourceView.startLine}`);
-    await openVsCodeWebFile(page, step.sourceView.filePath, plan.timeoutMs);
-    await goToVsCodeWebLine(page, step.sourceView.startLine, plan.timeoutMs);
-    await waitForVsCodeFile(page, step.sourceView, plan.timeoutMs);
-    await delay(450);
-    await page.screenshot({ path: step.sourceView.outputPath, fullPage: false });
-    step.sourceView.captureKind = "actual-vscode-web";
-  }
-}
-
-async function captureVsCodeDesktopSteps({ plan }) {
-  if (process.platform !== "win32") throw new Error("VS Code desktop capture is currently implemented for Windows. Use editor.mode=web on other platforms.");
-  mkdirSync(plan.editor.userDataDir, { recursive: true });
-  mkdirSync(plan.editor.extensionsDir, { recursive: true });
-  for (const step of plan.steps) {
-    console.log(`capturing VS Code desktop: ${step.id} ${step.sourceView.filePath}:${step.sourceView.startLine}`);
-    const target = `${resolve(plan.editor.sourceRoot, step.sourceView.filePath)}:${step.sourceView.startLine}`;
-    const titleHint = step.sourceView.filePath.split("/").at(-1);
-    let lastError;
-    for (let attempt = 1; attempt <= 3; attempt += 1) {
-      try {
-        openVsCodeDesktopFile(plan.editor.codeCli, target, plan.timeoutMs, plan.editor.userDataDir, plan.editor.extensionsDir);
-        await delay(2500 + attempt * 700);
-        captureVsCodeWindowPng(step.sourceView.outputPath, titleHint, plan.timeoutMs, plan.editor.userDataDir);
-        lastError = null;
-        break;
-      } catch (error) {
-        lastError = error;
-        if (!String(error instanceof Error ? error.message : error).includes("expected file title")) throw error;
-      }
-    }
-    if (lastError) throw lastError;
-    step.sourceView.captureKind = "actual-vscode-desktop";
-  }
-}
-
 async function captureAppSteps({ page, appBaseUrl, plan }) {
   await runActions(page, plan.app.setupActions, { appBaseUrl, timeoutMs: plan.timeoutMs });
   for (const step of plan.steps) {
@@ -528,169 +454,8 @@ async function waitForLoadedImage(locator, timeoutMs) {
   );
 }
 
-async function openVsCodeFile(page, fileWithLine, timeoutMs) {
-  await page.keyboard.press(process.platform === "darwin" ? "Meta+P" : "Control+P");
-  await fillVsCodeQuickInput(page, fileWithLine, timeoutMs);
-}
-
-async function runVsCodeCommand(page, command, timeoutMs) {
-  await page.keyboard.press("F1");
-  await fillVsCodeQuickInput(page, command, timeoutMs);
-}
-
-async function fillVsCodeQuickInput(page, value, timeoutMs) {
-  const input = page.locator(".quick-input-widget:visible input").first();
-  await input.waitFor({ state: "visible", timeout: timeoutMs });
-  await input.fill(value);
-  await page.keyboard.press("Enter");
-}
-
-async function prepareVsCodeWebWorkspace(page, timeoutMs) {
-  await dismissVsCodeDialog(page, Math.min(timeoutMs, 45_000));
-  await page.locator(".monaco-workbench").waitFor({ state: "visible", timeout: timeoutMs });
-  await revealVsCodeExplorer(page, timeoutMs);
-  await page.locator('.monaco-list-row[aria-level="1"]').first().waitFor({ state: "visible", timeout: timeoutMs });
-  const bodyText = await page.locator("body").innerText({ timeout: 1000 }).catch(() => "");
-  if (/Do you trust the authors/i.test(bodyText)) {
-    throw new Error("VS Code web capture is blocked by workspace trust.");
-  }
-}
-
-async function dismissVsCodeDialog(page, probeTimeoutMs = 700) {
-  let clicked = false;
-  const trustText = page.locator('text="Yes, I trust the authors"').first();
-  if (await trustText.waitFor({ state: "visible", timeout: probeTimeoutMs }).then(() => true).catch(() => false)) {
-    await trustText.click({ timeout: 5000 }).catch(() => undefined);
-    clicked = true;
-    await page.locator('text="Do you trust the authors of the files in this folder?"').first().waitFor({ state: "hidden", timeout: 15_000 }).catch(() => undefined);
-    await delay(800);
-  }
-  const selectors = [
-    'button:has-text("I Trust the Authors")',
-    'button:has-text("Mark Done")',
-    'button:has-text("Continue")',
-  ];
-  for (const selector of selectors) {
-    const button = page.locator(selector).first();
-    if (await button.isVisible({ timeout: probeTimeoutMs }).catch(() => false)) {
-      await button.click({ timeout: 5000 }).catch(() => undefined);
-      clicked = true;
-      await delay(250);
-    }
-  }
-  return clicked;
-}
-
-async function revealVsCodeExplorer(page, timeoutMs) {
-  if (await page.locator('.monaco-list-row[aria-level="1"]').first().isVisible().catch(() => false)) return;
-  const explorerButton = page.locator('.activitybar [aria-label*="Explorer"]').first();
-  if (await explorerButton.isVisible({ timeout: 3000 }).catch(() => false)) {
-    await explorerButton.click({ timeout: timeoutMs }).catch(() => undefined);
-  }
-}
-
-async function openVsCodeWebFile(page, filePath, timeoutMs) {
-  const parts = filePath.split(/[\\/]/).filter(Boolean);
-  if (parts.length === 0) throw new Error(`Invalid VS Code web file path: ${filePath}`);
-  await scrollVsCodeExplorerToTop(page);
-  for (let index = 0; index < parts.length - 1; index += 1) {
-    await scrollUntilVsCodeExplorerRow(page, parts[index], index + 1, timeoutMs);
-    await expandVsCodeExplorerFolder(page, parts[index], index + 1, timeoutMs);
-  }
-  const fileName = parts.at(-1);
-  await scrollUntilVsCodeExplorerRow(page, fileName, parts.length, timeoutMs);
-  const row = vscodeExplorerRow(page, fileName, parts.length);
-  await row.dblclick({ position: { x: 140, y: 11 }, timeout: timeoutMs });
-  await page.locator(".monaco-editor .view-lines").first().waitFor({ state: "visible", timeout: timeoutMs });
-}
-
-async function goToVsCodeWebLine(page, line, timeoutMs) {
-  await page.locator(".monaco-editor").first().click({ position: { x: 400, y: 300 }, timeout: timeoutMs }).catch(() => undefined);
-  await page.keyboard.press(process.platform === "darwin" ? "Meta+P" : "Control+P");
-  await fillVsCodeQuickInput(page, `:${line}`, timeoutMs);
-  await delay(500);
-}
-
-async function expandVsCodeExplorerFolder(page, name, level, timeoutMs) {
-  const row = vscodeExplorerRow(page, name, level);
-  await row.waitFor({ state: "visible", timeout: timeoutMs });
-  if ((await row.getAttribute("aria-expanded")) === "true") return;
-  await row.click({ position: { x: 18, y: 11 }, timeout: timeoutMs });
-  await page.locator(`.monaco-list-row[aria-label="${cssAttr(name)}"][aria-level="${level}"][aria-expanded="true"]`).first().waitFor({ state: "visible", timeout: timeoutMs });
-  await delay(400);
-}
-
-async function scrollUntilVsCodeExplorerRow(page, name, level, timeoutMs) {
-  const started = Date.now();
-  while (Date.now() - started < timeoutMs) {
-    if (await vscodeExplorerRow(page, name, level).isVisible().catch(() => false)) return;
-    await scrollVsCodeExplorerBy(page, 240);
-    await delay(200);
-  }
-  throw new Error(`VS Code explorer row not visible: ${name} at level ${level}`);
-}
-
-async function scrollVsCodeExplorerToTop(page) {
-  await setVsCodeExplorerScrollTop(page, 0);
-  await delay(300);
-}
-
-async function scrollVsCodeExplorerBy(page, delta) {
-  await page.evaluate((scrollDelta) => {
-    const element = Array.from(document.querySelectorAll(".monaco-scrollable-element"))
-      .find((candidate) => candidate.querySelector(".monaco-list-rows") && candidate.scrollHeight > candidate.clientHeight);
-    if (!element) throw new Error("VS Code explorer scroll element not found.");
-    element.scrollTop = Math.max(0, Math.min(element.scrollTop + scrollDelta, element.scrollHeight));
-    element.dispatchEvent(new Event("scroll", { bubbles: true }));
-  }, delta);
-  await page.mouse.move(200, 820);
-  await page.mouse.wheel(0, delta);
-}
-
-async function setVsCodeExplorerScrollTop(page, top) {
-  await page.evaluate((scrollTop) => {
-    const element = Array.from(document.querySelectorAll(".monaco-scrollable-element"))
-      .find((candidate) => candidate.querySelector(".monaco-list-rows") && candidate.scrollHeight > candidate.clientHeight);
-    if (!element) throw new Error("VS Code explorer scroll element not found.");
-    element.scrollTop = Math.max(0, scrollTop);
-    element.dispatchEvent(new Event("scroll", { bubbles: true }));
-  }, top);
-  await page.mouse.move(200, 500);
-  await page.mouse.wheel(0, top <= 0 ? -20_000 : top);
-}
-
-function vscodeExplorerRow(page, name, level) {
-  return page.locator(`.monaco-list-row[aria-label="${cssAttr(name)}"][aria-level="${level}"]`).first();
-}
-
-function cssAttr(value) {
-  return String(value).replaceAll("\\", "\\\\").replaceAll('"', '\\"');
-}
-
-async function waitForVsCodeFile(page, sourceView, timeoutMs) {
-  await page.locator(".monaco-editor .view-lines").first().waitFor({ state: "visible", timeout: timeoutMs });
-  const started = Date.now();
-  let title = "";
-  let bodyText = "";
-  while (Date.now() - started < timeoutMs) {
-    title = await page.title();
-    bodyText = await page.locator("body").innerText({ timeout: 1000 }).catch(() => "");
-    if (title.includes(sourceView.titleHint) && (!sourceView.textHint || bodyText.includes(sourceView.textHint))) break;
-    await delay(500);
-  }
-  if (!title.includes(sourceView.titleHint) || (sourceView.textHint && !bodyText.includes(sourceView.textHint))) {
-    const excerpt = bodyText.replace(/\s+/g, " ").slice(0, 500);
-    throw new Error(`VS Code web did not show ${sourceView.filePath}; title="${title}"; expected text="${sourceView.textHint}"; visible="${excerpt}"`);
-  }
-  if (/Do you trust the authors/i.test(bodyText)) {
-    throw new Error(`VS Code web capture is blocked by workspace trust for ${sourceView.filePath}`);
-  }
-}
-
-function buildManifest(plan, appBaseUrl, vscodeBaseUrl) {
-  const sourceCaptureModel = plan.editor.mode === "code-browser"
-    ? "actual code-browser source screenshots from real filesystem using Shiki"
-    : `actual ${plan.editor.mode} editor screenshots`;
+function buildManifest(plan, appBaseUrl) {
+  const sourceCaptureModel = "actual code-browser source screenshots from real filesystem using Shiki";
   const appCaptureModel = `actual running ${plan.app.name} Playwright screenshots`;
   return {
     generator: plan.generator,
@@ -698,7 +463,7 @@ function buildManifest(plan, appBaseUrl, vscodeBaseUrl) {
     sourceRepo: plan.sourceRepo,
     sourceRoot: relativePath(plan.sourceRoot),
     appUrl: appBaseUrl,
-    sourceViewUrl: plan.editor.mode === "code-browser" ? "inline:nodetrace-code-browser" : vscodeBaseUrl ?? "desktop:code --goto",
+    sourceViewUrl: "inline:nodetrace-code-browser",
     captureModel: `${sourceCaptureModel} + ${appCaptureModel}`,
     steps: plan.steps.map((step) => ({
       id: step.id,
@@ -745,92 +510,6 @@ function spawnPortable(command, args, options) {
   return spawn("cmd.exe", ["/d", "/s", "/c", [command, ...args].map(quoteCmdArg).join(" ")], options);
 }
 
-function openVsCodeDesktopFile(codeCli, target, timeoutMs, userDataDir, extensionsDir) {
-  const command = `
-$ErrorActionPreference = 'Stop'
-$Target = '${quotePowerShell(target)}'
-$UserData = '${quotePowerShell(userDataDir)}'
-$Extensions = '${quotePowerShell(extensionsDir)}'
-& ${quotePowerShellCommand(codeCli)} --user-data-dir $UserData --extensions-dir $Extensions --disable-extensions --new-window --goto $Target
-`;
-  const result = spawnSync("powershell.exe", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", command], {
-    encoding: "utf8",
-    timeout: timeoutMs,
-  });
-  if (result.status !== 0) throw new Error(`VS Code goto failed: ${[result.stdout, result.stderr].join("\n").slice(-1200)}`);
-}
-
-function captureVsCodeWindowPng(outputPath, titleHint, timeoutMs, userDataDir) {
-  const script = `
-$ErrorActionPreference = 'Stop'
-$Out = '${quotePowerShell(outputPath)}'
-$Title = '${quotePowerShell(titleHint)}'
-$UserData = '${quotePowerShell(userDataDir)}'
-Add-Type -AssemblyName System.Windows.Forms
-Add-Type -AssemblyName System.Drawing
-Add-Type @'
-using System;
-using System.Runtime.InteropServices;
-public static class Win32 {
-  [StructLayout(LayoutKind.Sequential)]
-  public struct RECT { public int Left; public int Top; public int Right; public int Bottom; }
-  [DllImport("user32.dll")] public static extern bool GetWindowRect(IntPtr hWnd, out RECT rect);
-  [DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd);
-  [DllImport("user32.dll")] public static extern bool ShowWindow(IntPtr hWnd, int nCmdShow);
-  [DllImport("user32.dll")] public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
-}
-'@
-$deadline = (Get-Date).AddMilliseconds(${Math.min(timeoutMs, 60_000)})
-$handle = [IntPtr]::Zero
-while ((Get-Date) -lt $deadline) {
-  $codeProcessIds = @(Get-CimInstance Win32_Process -Filter "Name = 'Code.exe'" -ErrorAction SilentlyContinue |
-    Where-Object { $_.CommandLine -like "*$UserData*" } |
-    ForEach-Object { [int]$_.ProcessId })
-  $candidate = Get-Process Code -ErrorAction SilentlyContinue |
-    Where-Object { $_.MainWindowHandle -ne 0 -and $_.MainWindowTitle -like "*$Title*" -and ($codeProcessIds.Count -eq 0 -or $codeProcessIds -contains $_.Id) } |
-    Select-Object -First 1
-  if ($candidate) { $handle = [IntPtr]$candidate.MainWindowHandle; break }
-  Start-Sleep -Milliseconds 250
-}
-if ($handle -eq [IntPtr]::Zero) { throw "no VS Code window found for expected file title: $Title" }
-[Win32]::ShowWindow($handle, 9) | Out-Null
-[Win32]::SetForegroundWindow($handle) | Out-Null
-$HWND_TOPMOST = [IntPtr]::new(-1)
-$HWND_NOTOPMOST = [IntPtr]::new(-2)
-$SWP_NOSIZE = 0x0001
-$SWP_NOMOVE = 0x0002
-$SWP_SHOWWINDOW = 0x0040
-$flags = $SWP_NOSIZE -bor $SWP_NOMOVE -bor $SWP_SHOWWINDOW
-[Win32]::SetWindowPos($handle, $HWND_TOPMOST, 0, 0, 0, 0, $flags) | Out-Null
-Start-Sleep -Milliseconds 550
-$rect = New-Object Win32+RECT
-if (-not [Win32]::GetWindowRect($handle, [ref]$rect)) { throw "could not read VS Code window rect" }
-$width = $rect.Right - $rect.Left
-$height = $rect.Bottom - $rect.Top
-if ($width -lt 400 -or $height -lt 300) { throw ("VS Code window rect too small: " + $width + "x" + $height) }
-$bitmap = New-Object System.Drawing.Bitmap $width, $height
-$graphics = [System.Drawing.Graphics]::FromImage($bitmap)
-$graphics.CopyFromScreen($rect.Left, $rect.Top, 0, 0, $bitmap.Size)
-$bitmap.Save($Out, [System.Drawing.Imaging.ImageFormat]::Png)
-[Win32]::SetWindowPos($handle, $HWND_NOTOPMOST, 0, 0, 0, 0, $flags) | Out-Null
-$graphics.Dispose()
-$bitmap.Dispose()
-`;
-  const result = spawnSync("powershell.exe", ["-NoProfile", "-ExecutionPolicy", "Bypass", "-Command", script], {
-    encoding: "utf8",
-    timeout: timeoutMs,
-  });
-  if (result.status !== 0) throw new Error(`VS Code window capture failed: ${[result.stdout, result.stderr].join("\n").slice(-1200)}`);
-}
-
-function prepareEditorSourceRoot(root, id) {
-  if (process.platform !== "win32" || !/\s/.test(root)) return root;
-  const linkPath = resolve(tmpdir(), `nodetrace-vscode-source-${slug(id)}-${hash(root).slice(0, 8)}`);
-  mkdirSync(dirname(linkPath), { recursive: true });
-  if (!existsSync(linkPath)) symlinkSync(root, linkPath, "junction");
-  return linkPath;
-}
-
 async function waitForHttp(url, timeoutMs, label) {
   const started = Date.now();
   while (Date.now() - started < timeoutMs) {
@@ -865,31 +544,10 @@ function applyCaptureOverrides(plan, options) {
   if (options["capture-root"]) next.captureRoot = options["capture-root"];
   if (options.manifest) next.manifestPath = options.manifest;
   if (options["timeout-ms"]) next.timeoutMs = Number(options["timeout-ms"]);
-  if (options["editor-capture"]) next.editor = { ...(next.editor ?? {}), mode: options["editor-capture"] };
-  if (options["code-cli"]) next.editor = { ...(next.editor ?? {}), codeCli: options["code-cli"] };
   if (options["app-url"]) next.app = { ...(next.app ?? {}), url: options["app-url"] };
   return next;
 }
 
-function parseArgs(args) {
-  const parsed = {};
-  for (let index = 0; index < args.length; index += 1) {
-    const arg = args[index];
-    if (!arg.startsWith("--")) continue;
-    const [rawKey, inlineValue] = arg.slice(2).split("=", 2);
-    if (inlineValue !== undefined) {
-      parsed[rawKey] = inlineValue;
-      continue;
-    }
-    const next = args[index + 1];
-    if (!next || next.startsWith("--")) parsed[rawKey] = "true";
-    else {
-      parsed[rawKey] = next;
-      index += 1;
-    }
-  }
-  return parsed;
-}
 
 function printCaptureHelp() {
   console.log(`NodeTrace capture
@@ -902,7 +560,6 @@ Common overrides:
   --source-root <dir>        Source repo root for code-browser captures
   --capture-root <dir>       Directory for PNG outputs
   --manifest <file>          Manifest output path
-  --editor-capture <mode>    code-browser, desktop, or web
   --app-url <url>            Reuse a running app instead of starting one
   --timeout-ms <ms>          Capture timeout
 
@@ -918,26 +575,6 @@ function assetPath(prefix, name) {
   return prefix ? `${String(prefix).replace(/\/$/, "")}/${name}` : name;
 }
 
-function quoteCmdArg(value) {
-  const text = String(value);
-  if (/^[A-Za-z0-9_./:=@-]+$/.test(text)) return text;
-  return `"${text.replaceAll('"', '\\"')}"`;
-}
-
-function quotePowerShell(value) {
-  return String(value).replaceAll("'", "''");
-}
-
-function quotePowerShellCommand(value) {
-  const text = String(value);
-  if (/^[A-Za-z0-9_.:/\\-]+$/.test(text)) return text;
-  return `'${quotePowerShell(text)}'`;
-}
-
-function toVsCodeWebPath(path) {
-  return process.platform === "win32" ? String(path).replaceAll("\\", "/") : path;
-}
-
 function escapeHtml(value) {
   return String(value)
     .replaceAll("&", "&amp;")
@@ -949,14 +586,6 @@ function escapeHtml(value) {
 
 function isTruthy(value) {
   return value === true || value === "true" || value === "1" || value === "yes";
-}
-
-function slug(value) {
-  return String(value).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 48) || "capture";
-}
-
-function hash(value) {
-  return createHash("sha1").update(String(value)).digest("hex");
 }
 
 function writeJson(path, value) {

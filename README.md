@@ -135,7 +135,7 @@ Reusable capture tool:
 - `nodetrace-capture --plan <capture-plan.json>` is the same tool as a dedicated binary.
 - `nodetrace-mcp` exposes `validate_capture_plan` and `capture_codebase` over stdio MCP for local coding agents.
 - [`examples/real-codebase-capture/noderoom.capture.json`](examples/real-codebase-capture/noderoom.capture.json) is the copyable plan format.
-- The default `editor.mode` is `code-browser`: NodeTrace renders real repo files with Shiki in a local browser view, so no VS Code profile, workspace trust, or desktop automation is required. `desktop` and `web` remain optional escape hatches.
+- `editor.mode` is `code-browser`, and that is the only mode: NodeTrace renders real repo files with Shiki in a local browser view, so no VS Code profile, workspace trust, or desktop automation is required.
 
 Default `add` behavior:
 

@@ -1,6 +1,5 @@
 import { Activity, ArrowUpRight, FileSearch, Lock, ShieldCheck, X } from "lucide-react";
 import type { ReactNode } from "react";
-import { surfaceMeta } from "./surfaces";
 import type { CodeOwnershipReceipt, NodeTraceState, TraceProof } from "./types";
 import { useTraceLens } from "./TraceLensProvider";
 import "./trace.css";
@@ -13,7 +12,9 @@ export function TraceLensPanel({
   state: NodeTraceState;
 }) {
   const { builderCapable, close, hit, mode, open, setMode } = useTraceLens();
-  const meta = surfaceMeta(state.surfaces, hit?.surfaceId);
+  // The panel reads its title and blurb from the surface registry that came
+  // with the state file. An id the registry does not list has nothing to show.
+  const meta = state.surfaces.find((surface) => surface.id === hit?.surfaceId) ?? null;
 
   if (!open || !hit || !meta) return null;
 

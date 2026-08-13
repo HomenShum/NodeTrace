@@ -1,6 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { performance } from "node:perf_hooks";
+import { parseArgs } from "node:util";
 
 let Database;
 try {
@@ -10,7 +11,9 @@ try {
   process.exit(1);
 }
 
-const options = parseArgs(process.argv.slice(2));
+const { values: options } = parseArgs({
+  options: { db: { type: "string" }, state: { type: "string" }, "json-out": { type: "string" } },
+});
 const dbPath = resolve(options.db ?? process.env.NODETRACE_DB_PATH ?? ".nodetrace/nodetrace.sqlite");
 const statePath = resolve(options.state ?? process.env.NODETRACE_STATE_PATH ?? "public/nodetrace-state.json");
 const jsonOutPath = options["json-out"] ? resolve(options["json-out"]) : undefined;
@@ -25,7 +28,6 @@ if (jsonOutPath) mkdirSync(dirname(jsonOutPath), { recursive: true });
 const db = new Database(dbPath);
 db.pragma("journal_mode = WAL");
 db.exec(readFileSync(new URL("../db/schema.sql", import.meta.url), "utf8"));
-ensureOwnershipColumns(db);
 
 const session = {
   id: `nodetrace-${startedAt.toISOString().replace(/[:.]/g, "-")}`,
@@ -243,34 +245,7 @@ console.log(`nodetrace happy path: PASS ${report.durationMs}ms`);
 console.log(`wrote ${report.databasePath}`);
 console.log(`wrote ${report.statePath}`);
 
-function parseArgs(args) {
-  const parsed = {};
-  for (let index = 0; index < args.length; index += 1) {
-    const arg = args[index];
-    if (!arg.startsWith("--")) continue;
-    const key = arg.slice(2);
-    const next = args[index + 1];
-    if (!next || next.startsWith("--")) {
-      parsed[key] = "true";
-    } else {
-      parsed[key] = next;
-      index += 1;
-    }
-  }
-  return parsed;
-}
 
 function relativePath(path) {
   return path.replace(`${process.cwd()}\\`, "").replace(`${process.cwd()}/`, "").replaceAll("\\", "/");
-}
-
-function ensureOwnershipColumns(database) {
-  const existing = new Set(database.prepare("pragma table_info(trace_code_ownership)").all().map((row) => row.name));
-  for (const [name, fallback] of [
-    ["query_ref", "'server-only/query-ref'"],
-    ["mutation_ref", "'server-only/mutation-ref'"],
-    ["skill_ref", "'server-only/skill-ref'"],
-  ]) {
-    if (!existing.has(name)) database.exec(`alter table trace_code_ownership add column ${name} text not null default ${fallback}`);
-  }
 }

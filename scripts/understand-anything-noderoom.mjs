@@ -3,6 +3,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { performance } from "node:perf_hooks";
+import { parseArgs } from "node:util";
 
 const TRACE_FILES = [
   {
@@ -68,7 +69,16 @@ const TRACE_FILES = [
 ];
 const UNDERSTAND_ANYTHING_REPO = "https://github.com/Egonex-AI/Understand-Anything.git";
 
-const options = parseArgs(process.argv.slice(2));
+const { values: options } = parseArgs({
+  options: {
+    "source-root": { type: "string" },
+    work: { type: "string" },
+    "graph-out": { type: "string" },
+    "json-out": { type: "string" },
+    "plugin-root": { type: "string" },
+    "bootstrap-root": { type: "string" },
+  },
+});
 const startedAt = new Date();
 const startedMs = performance.now();
 const sourceRoot = resolve(options["source-root"] ?? process.env.NODETRACE_SOURCE_ROOT ?? "..");
@@ -329,22 +339,6 @@ function buildLayers(nodes) {
   return [...byLayer.values()];
 }
 
-function parseArgs(args) {
-  const parsed = {};
-  for (let index = 0; index < args.length; index += 1) {
-    const arg = args[index];
-    if (!arg.startsWith("--")) continue;
-    const key = arg.slice(2);
-    const next = args[index + 1];
-    if (!next || next.startsWith("--")) {
-      parsed[key] = "true";
-    } else {
-      parsed[key] = next;
-      index += 1;
-    }
-  }
-  return parsed;
-}
 
 function readJson(path) {
   return JSON.parse(readFileSync(path, "utf8"));

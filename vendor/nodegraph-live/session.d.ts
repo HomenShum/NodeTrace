@@ -79,4 +79,3 @@ export declare class GraphSession {
     visitsById(): Record<string, number>;
     stats(): SessionStats;
 }
-//# sourceMappingURL=session.d.ts.map

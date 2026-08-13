@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, relative, resolve } from "node:path";
 import { performance } from "node:perf_hooks";
+import { parseArgs } from "node:util";
 
 let Database;
 try {
@@ -10,7 +11,17 @@ try {
   process.exit(1);
 }
 
-const options = parseArgs(process.argv.slice(2));
+const { values: options } = parseArgs({
+  options: {
+    db: { type: "string" },
+    state: { type: "string" },
+    "json-out": { type: "string" },
+    "capture-root": { type: "string" },
+    "source-root": { type: "string" },
+    "real-capture-manifest": { type: "string" },
+    "allow-generated-captures": { type: "boolean" },
+  },
+});
 const dbPath = resolve(options.db ?? process.env.NODETRACE_DB_PATH ?? ".nodetrace/trace-coach.sqlite");
 const statePath = resolve(options.state ?? process.env.NODETRACE_STATE_PATH ?? "public/nodetrace-state.json");
 const reportPath = resolve(options["json-out"] ?? "docs/eval/nodetrace-trace-coach-sqlite.json");
@@ -33,7 +44,6 @@ db.pragma("foreign_keys = ON");
 db.pragma("journal_mode = WAL");
 const schemaSql = readFileSync(new URL("../db/schema.sql", import.meta.url), "utf8");
 db.exec(schemaSql);
-ensureCoachSchema(db, schemaSql);
 
 const session = {
   id: "trace-coach-noderoom-sqlite",
@@ -519,37 +529,6 @@ function readNodeRoomSource(filePath) {
   throw new Error(`NodeRoom source file not found: ${livePath}`);
 }
 
-function ensureCoachSchema(database, schema) {
-  const columns = database.prepare("pragma table_info(trace_coach_steps)").all();
-  if (columns.some((column) => column.name === "step_label")) return;
-  database.exec(`
-    drop table if exists trace_coach_graph_edges;
-    drop table if exists trace_coach_graph_nodes;
-    drop table if exists trace_coach_steps;
-  `);
-  database.exec(schema);
-}
-
-function parseArgs(args) {
-  const parsed = {};
-  for (let index = 0; index < args.length; index += 1) {
-    const arg = args[index];
-    if (!arg.startsWith("--")) continue;
-    const [key, inlineValue] = arg.slice(2).split("=", 2);
-    if (inlineValue !== undefined) {
-      parsed[key] = inlineValue;
-      continue;
-    }
-    const next = args[index + 1];
-    if (!next || next.startsWith("--")) {
-      parsed[key] = "true";
-    } else {
-      parsed[key] = next;
-      index += 1;
-    }
-  }
-  return parsed;
-}
 
 function isTruthy(value) {
   return ["1", "true", "yes", "on"].includes(String(value ?? "").toLowerCase());

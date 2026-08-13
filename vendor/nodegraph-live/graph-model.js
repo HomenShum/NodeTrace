@@ -366,4 +366,3 @@ export function patchGraph(g, nodes, edges, opts = {}) {
         removedEdgeKeys,
     };
 }
-//# sourceMappingURL=graph-model.js.map

@@ -54,6 +54,6 @@ The MCP server exposes:
 6. Run `--dry-run`, then run the full capture.
 7. Inspect PNGs before committing the manifest.
 
-The default `editor.mode` is `code-browser`, which renders real repository files
-with Shiki in a local browser page. Use `desktop` or `web` only when you
-specifically need a VS Code/Cursor-style editor capture.
+`editor.mode` is `code-browser`, and that is the only mode. It renders real
+repository files with Shiki in a local browser page, so a capture needs no
+editor installed and runs the same headless in CI as on a laptop.

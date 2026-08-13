@@ -141,4 +141,3 @@ export type PatchResult = {
 };
 export declare function patchGraph(g: Graph, nodes: readonly GraphNode[], edges: readonly GraphEdge[], opts?: BuildOptions): PatchResult;
 export {};
-//# sourceMappingURL=graph-model.d.ts.map
