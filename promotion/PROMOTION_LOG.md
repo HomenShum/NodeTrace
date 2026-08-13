@@ -38,8 +38,10 @@ The only files added are the four under `promotion/` and the captures in
 - **Journeys drivable:** **2 of 4 clean.** J1 and J2 complete end-to-end. J3
   reaches its screen only through an undocumented fallback after both documented
   prerequisites fail. J4 never reaches a browser at all.
-- **Scorecard at baseline:** 3/12 PASS — see [PRODUCT_GOAL.md](PRODUCT_GOAL.md).
-  PASS on 4, 9, 10. FAIL on 1, 2, 3, 5, 6, 11. UNVERIFIED on 7, 8, 12.
+- **Scorecard at baseline:** first recorded as 3/12 PASS (PASS on 4, 9, 10);
+  **corrected the same day to 0/12 PASS** — see [PRODUCT_GOAL.md](PRODUCT_GOAL.md)
+  and the Correction section at the bottom of this file. FAIL on 1, 2, 3, 5, 6,
+  11. UNVERIFIED on 4, 7, 8, 9, 10, 12. No condition passes.
 - **Not marked DEFERRED** in the Wave 1 context note for this repo. The note
   flagged one known API gap, recorded below as D5.
 
@@ -56,12 +58,12 @@ The only files added are the four under `promotion/` and the captures in
 | `npm run agent:scale:smoke` | 0 | `PASS 125 rows`. |
 | `npm run capture:plan:smoke` | 0 | `capture plan smoke: PASS`. |
 | `npm run trace-coach:sqlite` | 0 | `PASS 6 NodeRoom codebase steps (snapshot)` — see D3. |
-| `npm run package:dry-run` | 0 | 112 files. |
+| `npm run package:dry-run` | 0 | **111 files.** First recorded as 112; a re-run on a fresh clone reports `total files: 111` and exit 0. The exit code reproduces, the count did not. See the Correction below. |
 | `npm run understand:noderoom` | **1** | Uncaught `Error: NodeRoom trace file missing: …` + raw stack. See D3. |
 | `npm run capture:noderoom:real` | **1** | `NodeRoom source root not found: …`. See D3. |
 | `npm run installer:next:e2e` | **1** | Target `next build` fails, 39.00s. See D2. |
 | `npm audit --omit=dev` | **1** | 4 production advisories, 2 high / 2 moderate. See D6. |
-| `node promotion/... playwright drives` | 0 | Three drives: overflow sweep, lens probe, a11y probe. |
+| _three ad-hoc Playwright drives — overflow sweep, lens probe, a11y probe_ | 0 | **Not retained, and therefore not a command anyone can run.** This row originally named a file path that was literally an ellipsis, because there was no file to name: the three drives were throwaway scripts written to a scratch directory outside the clone, never committed, and they no longer exist. They produced the screenshots in `promotion/evidence/`, which survive, but the numeric readouts they printed do not. This is why conditions 4, 9 and 10 are UNVERIFIED. |
 
 `npm run prepush` (aliased `npm run check`) chains ten of these with `&&`. Two
 members are red, so the repo's own declared green bar is red. It was not re-run
@@ -86,3 +88,56 @@ reproduction; a hunch is not a defect.
 ## Iterations
 
 _none yet — Wave 1 is measurement only._
+
+## Correction — 2026-08-13
+
+Someone who did not run the baseline — a reviewer, an auditor, the next agent
+picking this up cold — has to be able to check a claim without taking anyone's
+word for it. That means they need two things for every number on the scorecard:
+the recorded result, and the tool that produced it, both sitting in the
+repository they just cloned. The baseline published three passing rows that
+carried neither. Conditions 4, 9 and 10 stated their numbers in the reason
+column and pointed at nothing: no screenshot, no JSON, no script. The commands
+that measured them were written to a scratch directory outside the clone and
+thrown away afterwards, so nobody — including the author — can run them again.
+In gate terms, a measurement whose producer was not retained is **UNVERIFIED**,
+never PASS: the measurement was real, the evidence is not. **Put plainly: a
+number you cannot hand someone the means to re-check is a claim, not a result,
+and it does not earn a pass.**
+
+An adversarial re-run against the pushed tree confirmed 0 of the 3 PASS rows.
+What changed, and why:
+
+| Condition | Was | Now | Why |
+|---|---|---|---|
+| 4 — no horizontal overflow | PASS | UNVERIFIED | Claimed `scrollWidth - clientWidth` = 0 at 360/375/414/768/1024/1280/1440 px in two states — fourteen measurements — with no capture, no JSON and no script. Measured 0 overflow at those widths; sweep probe not retained. One of the fourteen is corroborated by the committed `happy-path-mobile-375.png` and `trace-coach-mobile-375.png`, which do show a clean single column at 375 px. Two screenshots are not a seven-width two-state sweep. |
+| 9 — no unexplained console errors or failed requests | PASS | UNVERIFIED | Claimed 0 console errors, 0 `pageerror`, 0 failed requests, 0 HTTP >= 400 with nothing attached. Measured those zeroes across both states and the J1/J2/J3 drive; console and network probe not retained. Downgraded to UNVERIFIED rather than FAIL because nothing observed contradicted the zeroes — the failure is missing evidence, not a missed defect. |
+| 10 — performance does not obstruct interaction | PASS | UNVERIFIED | Claimed DOMContentLoaded 290 ms / load 292 ms and 414 ms / 416 ms with nothing attached. Measured those timings on the two seeded states; navigation-timing probe not retained. |
+
+**Scorecard: 3/12 PASS -> 0/12 PASS.** PASS none; FAIL 1, 2, 3, 5, 6, 11;
+UNVERIFIED 4, 7, 8, 9, 10, 12.
+
+Also corrected, and not part of the three rows:
+
+- `npm run package:dry-run` was recorded as "0 | 112 files". Re-run on a fresh
+  `git clone --depth 5` of `main`: exit 0, `total files: 111`. The exit code
+  reproduces; the count does not. The count was taken from a working tree that
+  had been used to run the whole suite, so it described that tree rather than
+  the repository. Recorded as 111 above, with the original figure kept visible.
+- The evidence row for the Playwright drives named a command whose filename was
+  an ellipsis — `node promotion/... playwright drives`. A path nobody can type
+  is not a command. It is now written out as what it actually was: three
+  throwaway drives, not retained.
+
+Nothing else moved. The six FAIL rows and the eight-entry defect ledger were
+re-checked and reproduce as written; condition 7's refusal to count ad-hoc
+observations as a Web Interface Guidelines review stands, and is the same rule
+that produced these three downgrades. No product code was touched: this
+correction changes what the scorecard claims, not what the application does.
+
+What Wave 2 owes as a result: if conditions 4, 9 and 10 are to pass, they need
+committed probes under `promotion/` writing committed output under
+`promotion/evidence/` — an overflow sweep across the seven widths in both
+seeded states, a console-and-network log across the J1/J2/J3 drive, and a
+navigation-timing capture. Re-measuring without committing the tool would
+reproduce exactly the failure this entry records.
