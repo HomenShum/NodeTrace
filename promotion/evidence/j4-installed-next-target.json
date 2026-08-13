@@ -1,8 +1,8 @@
 {
   "ok": true,
   "journey": "J4 - install into an existing Next app and open /nodetrace",
-  "completedAt": "2026-08-13T11:52:29.106Z",
-  "totalMs": 190031,
+  "completedAt": "2026-08-13T12:02:20.687Z",
+  "totalMs": 200178,
   "apiKeysRequired": false,
   "url": "http://127.0.0.1:4302/nodetrace",
   "viewport": {
@@ -13,22 +13,22 @@
     {
       "name": "install dependencies",
       "ok": true,
-      "durationMs": 78724
+      "durationMs": 101046
     },
     {
       "name": "happy path",
       "ok": true,
-      "durationMs": 1201
+      "durationMs": 1294
     },
     {
       "name": "smoke",
       "ok": true,
-      "durationMs": 1407
+      "durationMs": 1031
     },
     {
       "name": "build",
       "ok": true,
-      "durationMs": 92774
+      "durationMs": 80113
     }
   ],
   "observed": {
