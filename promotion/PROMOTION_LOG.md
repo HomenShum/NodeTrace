@@ -351,6 +351,15 @@ reproduction; a hunch is not a defect.
 - **Tests:** `npm run citations:check` exit 0, `npm run smoke` exit 0,
   `npm run build` exit 0. `npm run promotion:capture-identity` exit 0.
 
+- **One mistake in this iteration, recorded rather than quietly fixed.** The
+  first commit (`5a9345f`) shipped `promotion/evidence/capture-identity-regression.json`
+  with `ok: false` — byte-identical to the `-prefix.json` beside it. The pre-fix
+  run writes to the same path; it was copied to `-prefix.json` and never
+  regenerated. Caught by reading the file back from the remote with
+  `gh api …/contents/…`, not by trusting the push. Corrected in `a83bd29` by
+  re-running the probe. The lesson is the same one this iteration is about: an
+  evidence file is a claim until somebody re-reads it.
+
 - **What this does NOT overturn.** The committed
   `docs/screenshots/live-graph-rail.png` at `062b19b` was checked against this
   finding and is genuine: it shows 10 entities / 15 relationships with this
