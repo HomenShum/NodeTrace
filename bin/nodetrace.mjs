@@ -7,7 +7,8 @@ import { fileURLToPath } from "node:url";
 import { performance } from "node:perf_hooks";
 
 const packageRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const version = readJson(join(packageRoot, "package.json")).version;
+const packageManifest = readJson(join(packageRoot, "package.json"));
+const version = packageManifest.version;
 const defaultPhaseTimeoutMs = readPositiveInteger(process.env.NODETRACE_PHASE_TIMEOUT_MS, 300000);
 const args = process.argv.slice(2);
 const command = args[0] ?? "help";
@@ -45,7 +46,14 @@ function addNodeTrace(options) {
   const logPath = join(targetDir, ".nodetrace", "setup-log.txt");
   writeText(logPath, `NodeTrace setup log\nstartedAt=${new Date(startedAtMs).toISOString()}\ntargetDir=${targetDir}\nframework=${framework}\n\n`, { force: true });
 
-  copyDir(join(packageRoot, "src", "trace"), join(targetDir, "src", "nodetrace"), { force });
+  // LiveGraphRail.tsx reaches outside src/trace for the vendored NodeGraph Live
+  // build. Ship it inside the copied tree and repoint the import: `../../vendor`
+  // is only correct in this repo, and resolves to nothing once the components move.
+  copyDir(join(packageRoot, "src", "trace"), join(targetDir, "src", "nodetrace"), {
+    force,
+    replacements: [["../../vendor/nodegraph-live/", "./vendor/nodegraph-live/"]],
+  });
+  copyDir(join(packageRoot, "vendor", "nodegraph-live"), join(targetDir, "src", "nodetrace", "vendor", "nodegraph-live"), { force });
   copyText(join(packageRoot, "db", "schema.sql"), join(targetDir, "db", "nodetrace.schema.sql"), { force });
   copyText(join(packageRoot, "scripts", "init-sqlite.mjs"), join(targetDir, "scripts", "nodetrace-init.mjs"), {
     force,
@@ -159,25 +167,38 @@ function updatePackageJson(targetDir, framework) {
     "nodetrace:happy-path": "node scripts/nodetrace-init.mjs --json-out docs/eval/nodetrace-happy-path.json",
     "nodetrace:smoke": "node scripts/nodetrace-smoke.mjs",
   };
-  pkg.dependencies = {
-    ...pkg.dependencies,
-    "better-sqlite3": pkg.dependencies?.["better-sqlite3"] ?? "^12.11.1",
-    "lucide-react": pkg.dependencies?.["lucide-react"] ?? "^0.515.0",
-    react: pkg.dependencies?.react ?? "^19.0.0",
-    "react-dom": pkg.dependencies?.["react-dom"] ?? "^19.0.0",
-  };
-  pkg.devDependencies = {
-    ...pkg.devDependencies,
-    "@types/node": pkg.devDependencies?.["@types/node"] ?? "^22.10.0",
-    "@types/react": pkg.devDependencies?.["@types/react"] ?? "^19.0.0",
-    "@types/react-dom": pkg.devDependencies?.["@types/react-dom"] ?? "^19.0.0",
-    typescript: pkg.devDependencies?.typescript ?? "^5.7.2",
-  };
-  if (framework !== "next") {
-    pkg.devDependencies["@vitejs/plugin-react"] = pkg.devDependencies?.["@vitejs/plugin-react"] ?? "^4.3.4";
-    pkg.devDependencies.vite = pkg.devDependencies?.vite ?? "^6.0.7";
-  }
+  // Ranges come from this package's own manifest rather than a second list
+  // maintained by hand here: a copied file whose dependency was never declared
+  // is the same defect as a copied file whose import was never copied.
+  // @sigma/*, graphology* and sigma are what vendor/nodegraph-live imports.
+  pkg.dependencies = withOwnRanges(pkg.dependencies, "dependencies", [
+    "@sigma/node-border",
+    "better-sqlite3",
+    "graphology",
+    "graphology-layout-forceatlas2",
+    "lucide-react",
+    "react",
+    "react-dom",
+    "sigma",
+  ]);
+  pkg.devDependencies = withOwnRanges(pkg.devDependencies, "devDependencies", [
+    "@types/node",
+    "@types/react",
+    "@types/react-dom",
+    "typescript",
+    ...(framework === "next" ? [] : ["@vitejs/plugin-react", "vite"]),
+  ]);
   writeFileSync(path, `${JSON.stringify(pkg, null, 2)}\n`);
+}
+
+function withOwnRanges(existing, field, names) {
+  const patched = { ...existing };
+  for (const name of names) {
+    const range = packageManifest[field]?.[name];
+    if (!range) throw new Error(`NodeTrace ${field} is missing ${name}; the installed target would not build.`);
+    patched[name] = patched[name] ?? range;
+  }
+  return patched;
 }
 
 function runCommand(cwd, name, command, options) {
@@ -283,8 +304,13 @@ function writeJson(path, value) {
 function nextPage(importPath) {
   return `"use client";
 
-import { DemoDashboard } from "${importPath}";
+import dynamic from "next/dynamic";
 import "${importPath.replace(/DemoDashboard$/, "styles.css")}";
+
+// The dashboard mounts a WebGL graph renderer and fetches its state in an
+// effect, so it has nothing to say on the server. Static prerendering it fails
+// the build with \`WebGL2RenderingContext is not defined\`; load it client-side.
+const DemoDashboard = dynamic(() => import("${importPath}").then((module) => module.DemoDashboard), { ssr: false });
 
 export default function NodeTracePage() {
   return <DemoDashboard />;
@@ -341,7 +367,7 @@ Open \`${route}\` in the dev server.
 
 ## Files Added
 
-- \`src/nodetrace/\`: portable Trace Lens components and types.
+- \`src/nodetrace/\`: portable Trace Lens components and types, plus the vendored NodeGraph Live renderer they import (\`src/nodetrace/vendor/nodegraph-live/\`).
 - \`src/nodetrace-demo/\`: no-key demo dashboard entry.
 - \`db/nodetrace.schema.sql\`: generic SQLite trace schema.
 - \`scripts/nodetrace-init.mjs\`: local SQLite/state initializer.

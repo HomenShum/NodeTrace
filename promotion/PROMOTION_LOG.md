@@ -77,7 +77,7 @@ reproduction; a hunch is not a defect.
 | # | Severity | Journey | Reproduction | Status |
 |---|----------|---------|--------------|--------|
 | D1 | Major | J2 | **The header is a tagged surface that does nothing.** After `npm run trace-coach:sqlite`, load `http://127.0.0.1:5187/` at 1280x900 and Ctrl-click anywhere in the hero — the `<h1>`, the launch card, any point inside `[data-nodetrace-surface="shell.statusStrip"]` (1236x330 px, the largest tagged region on the page). No panel, no message, no cursor change: `document.querySelector(".nt-panel")` stays null. Root cause, traced not guessed: `DemoDashboard.tsx:52` hardcodes the id `shell.statusStrip`, but `trace-coach-sqlite.mjs` replaces `state.surfaces` with six `workSurface.trace*` ids; `TraceLensPanel.tsx:16-18` does `surfaceMeta(state.surfaces, hit.surfaceId)` and returns `null` when it misses. The click resolves, the panel refuses, nothing tells the user. Contrast: the same click on `workSurface.traceStrip` works. In the happy-path state — where `surfaces` still contains `shell.statusStrip` — the same click also works, so the failure only appears after the README's own Trace Coach commands. | Open |
-| D2 | Major | J4 | **The installer ships a target that cannot build.** `npm run installer:next:e2e` → phases 1-3 pass (`happy path PASS 2.59s`, `smoke PASS 3.15s`), phase 4 fails after 39.00s: `./src/nodetrace/LiveGraphRail.tsx  Module not found: Can't resolve '../../vendor/nodegraph-live/index.js'` and the same for `react.js`; `Build failed because of webpack errors`; exit 1. Root cause: `src/trace/LiveGraphRail.tsx:11-12` imports the vendored NodeGraph Live build by relative path, but `bin/nodetrace.mjs:48` copies **only** `src/trace/` into the target — nothing copies `vendor/nodegraph-live/`, so `../../vendor/...` resolves to a path that does not exist in the target. The repo's own suites stay green because the repo itself has `vendor/`. This makes the README's headline `npx github:HomenShum/NodeTrace add` produce a broken application. | Open |
+| D2 | Major | J4 | ~~**The installer ships a target that cannot build.**~~ **FIXED in iteration 1**, and it had a second layer the baseline could not see: with the vendored renderer copied, `next build` compiled and then died in *prerender* with `ReferenceError: WebGL2RenderingContext is not defined`. See iteration 1 below. Original reproduction, preserved: `npm run installer:next:e2e` → phases 1-3 pass (`happy path PASS 2.59s`, `smoke PASS 3.15s`), phase 4 fails after 39.00s: `./src/nodetrace/LiveGraphRail.tsx  Module not found: Can't resolve '../../vendor/nodegraph-live/index.js'` and the same for `react.js`; `Build failed because of webpack errors`; exit 1. Root cause: `src/trace/LiveGraphRail.tsx:11-12` imports the vendored NodeGraph Live build by relative path, but `bin/nodetrace.mjs:48` copies **only** `src/trace/` into the target — nothing copies `vendor/nodegraph-live/`, so `../../vendor/...` resolves to a path that does not exist in the target. The repo's own suites stay green because the repo itself has `vendor/`. This makes the README's headline `npx github:HomenShum/NodeTrace add` produce a broken application. | **Fixed** (iteration 1) |
 | D3 | Major | J3 | **The UI claims provenance the receipt denies.** On a fresh clone the two documented prerequisites fail: `npm run understand:noderoom` throws `Error: NodeRoom trace file missing: <parent>/src/ui/panels/Artifact.tsx` with a raw stack trace, and `npm run capture:noderoom:real` prints `NodeRoom source root not found: <parent>`. Both resolve the NodeRoom checkout from `sourceRoot = resolve(options["source-root"] ?? env.NODETRACE_SOURCE_ROOT ?? "..")` — i.e. they assume NodeRoom is a sibling directory of the clone, which the README never states, and the README's promised auto-clone covers the Understand-Anything tool, not the NodeRoom source. `npm run trace-coach:sqlite` then succeeds anyway and prints `(snapshot)`; `docs/eval/nodetrace-trace-coach-sqlite.json` records `"sourceMode": "snapshot"`. But `DemoDashboard.tsx:138` maps anything that is not `"live"` to the string **"full local checkout"**, so the rendered page asserts `full local checkout - HomenShum/noderoom` for a checkout that is not present — visible in `promotion/evidence/trace-coach-desktop-1280.png`. The same receipt asserts `captureModel: "actual code-browser source screenshots from real filesystem … + actual running NodeRoom Playwright screenshots"` in a run where the capture step exited 1; the assets are real but checked in from an earlier run, and no field separates "produced now" from "committed earlier". In a product whose entire pitch is provenance, this is the worst possible place to overstate. | Open |
 | D4 | Major | J2, J3 | **The only way in is a modified mouse click.** `TraceLensProvider.tsx:58` gates on `event.metaKey \|\| event.ctrlKey` and `event.button === 0`. Keyboard: 25 consecutive Tab presses at 1280x900 never reach anything that opens the lens — 17 landed stops in the happy-path state, 24 in the trace-coach state (12 focusable elements, cycled), and not one of them is an opener. Touch: at 375x812 with Chromium `hasTouch: true, isMobile: true`, tapping `[data-nodetrace-surface="workSurface.traceStrip"]` leaves `.nt-panel` null and no affordance is drawn (`j2-mobile-tap-no-lens.png`). Once open by mouse, the dialog is still not keyboard-usable: `role="dialog"` with no `aria-modal`, focus stays on `BODY`, and 6 further Tabs all land on `button.r-tracevu-rec` behind the panel (`a11y-lens-open-focus.png`). | Open |
 | D5 | Minor | — | **Known API gap, carried in from the Wave 1 context note, confirmed by reading `db/schema.sql`.** `trace_proofs` has `source_label` and `source_url` but no `source_release`, `subject_id` or `object_id`, so a proof card cannot say which release of a source it came from, nor name the subject and object of the claim it is backing. Reproduce: `sqlite3 .nodetrace/nodetrace.sqlite '.schema trace_proofs'`, or read `public/nodetrace-state.json` — every proof row carries `sourceLabel`/`sourceUrl` and nothing else. Not user-visible today because no surface renders those fields; listed so Wave 2 does not rediscover it. | Open |
@@ -87,7 +87,104 @@ reproduction; a hunch is not a defect.
 
 ## Iterations
 
-_none yet — Wave 1 is measurement only._
+### Iteration 1 — 2026-08-13 — D2, the installed target could not build
+
+- **Journey exercised:** J4 "Put it in the app I already have, without me
+  hand-wiring it."
+
+- **Observed (reproduced first, before any edit):** `npm run installer:next:e2e`
+  on a fresh clone of `8004d9a`, Windows 11 / Node v22.22.2 / Next 15.5.23.
+  Phases 1-3 pass (install 46.71s, happy path 1.13s, smoke 664ms); phase 4 fails
+  after 31.37s with `./src/nodetrace/LiveGraphRail.tsx Module not found: Can't
+  resolve '../../vendor/nodegraph-live/index.js'`, the same for `react.js`, and
+  `Build failed because of webpack errors`. `docs/eval/nodetrace-next-e2e-smoke.json`
+  recorded `ok: false` with `build.ok: false`. Exactly as the ledger describes.
+
+- **Root cause, traced upstream rather than patched at the symptom.** The
+  installer copies a hand-maintained list of paths (`bin/nodetrace.mjs:48`).
+  Anything the copied code reaches for *outside* that list resolves in this
+  repository and nowhere else, and the target only discovers it at build time.
+  Three distinct things were missing, and only the first was known:
+
+  1. **A file that is imported was never copied.** `LiveGraphRail.tsx:11-12`
+     imports `../../vendor/nodegraph-live/{index,react}.js`; nothing copied
+     `vendor/`.
+  2. **Packages that are imported were never declared.** The vendored renderer
+     itself imports `sigma`, `graphology`, `graphology-layout-forceatlas2` and
+     `@sigma/node-border`. `updatePackageJson` added only `better-sqlite3`,
+     `lucide-react`, `react` and `react-dom`, so fixing (1) alone just moves the
+     failure to `Can't resolve 'sigma'`. This is the same defect wearing a
+     different hat: a second dependency list maintained by hand, next to the
+     first one.
+  3. **The generated Next page prerenders a browser-only renderer.** Once (1)
+     and (2) were fixed the build compiled and then failed in *export*:
+     `ReferenceError: WebGL2RenderingContext is not defined` while statically
+     prerendering `/nodetrace`. This layer was invisible at baseline because the
+     build never got far enough to reach it, and it cannot appear in this repo at
+     all — the repo is Vite, which has no server render.
+
+  Why the bug existed, in one sentence: **the installer's idea of "what NodeTrace
+  is made of" was three hand-written lists that nothing checked against the code
+  they were describing, and the repo's own green build could never disagree with
+  them, because the repo has everything already.**
+
+- **Fixed** (`bin/nodetrace.mjs`, no new dependency, no new abstraction):
+  - `copyDir` now also ships `vendor/nodegraph-live/` into
+    `<target>/src/nodetrace/vendor/nodegraph-live/`, and rewrites the import to
+    `./vendor/nodegraph-live/` on the way, so the whole transplant stays inside
+    the one directory the receipt already names.
+  - `updatePackageJson` reads its version ranges from NodeTrace's own
+    `package.json` (`withOwnRanges`) instead of a second list, and adds the four
+    renderer packages. A missing range now throws at install time rather than
+    shipping a target that cannot build.
+  - The generated `/nodetrace` page loads the dashboard through
+    `next/dynamic(..., { ssr: false })`. It fetches its state in an effect and
+    draws with WebGL, so it had nothing to say on the server to begin with.
+
+- **Re-proved in a real run and a real browser** —
+  `node promotion/probes/j4-installed-target-proof.mjs` (`npm run promotion:j4`),
+  which installs into a throwaway Next App Router app, runs the real `next
+  build`, serves the built target with `next start` on 127.0.0.1:4302 and
+  photographs `/nodetrace` in headless Chromium at 1280x900:
+  - `promotion/evidence/j4-installed-next-target-1280.png` — the transplanted
+    dashboard rendering inside a foreign Next application: hero, live sample
+    card, and the Live graph rail drawing a real Sigma canvas.
+  - `promotion/evidence/j4-installed-next-target.json` — all four installer
+    phases `ok: true`, HTTP 200, `liveGraphRailPresent: true`, 10 entities /
+    15 edges, 8 canvases, 0 console errors, 0 failed requests, 0 px horizontal
+    overflow.
+  This is the first time journey step 3 — "open `/nodetrace` in the target
+  application" — has been reached at all; at baseline no target was ever built to
+  open.
+
+- **Regression check, confirmed failing before the fix.**
+  `scripts/cli-smoke.mjs` now walks everything the installer copied and asserts
+  every relative import resolves *inside the target*. Confirmed by stashing only
+  `bin/nodetrace.mjs` back to `8004d9a` and re-running: `nodetrace cli smoke:
+  FAIL`, exit 1, four issues — the two dangling imports in **both** the vite and
+  the next target. Restored: `nodetrace cli smoke: PASS`, exit 0. It is a
+  property check, not a check for this one file, so the next component added to
+  `src/trace/` with an outside-the-copy import fails the smoke instead of the
+  user's build; and it covers the vite target, which no suite built.
+  `npm run installer:next:e2e` remains the end-to-end check and was red before
+  and green after.
+
+- **Tests:** `happy-path` 0, `smoke` 0 (3 suites, includes the new check),
+  `builder:smoke` 0, `agent:scale:smoke` 0 (125 rows), `capture:plan:smoke` 0,
+  `trace-coach:sqlite` 0, `installer:next:e2e` **0** (was 1), `build` 0
+  (`tsc --noEmit` + vite build, 431.79 kB), `package:dry-run` 0 (111 files),
+  `promotion:j4` 0. `npm audit --omit=dev` still exits 1 — that is D6, untouched
+  and still open, so `npm run prepush` is still red at one of its ten members
+  instead of two.
+
+- **Conditions newly PASS:** 12. Conditions 1, 2 and 11 improve but do not pass:
+  J1-J3 defects D1, D3, D4, D8 are still open, and `prepush` is still red at
+  `npm audit`.
+
+- **Not fixed, and deliberately so:** the vite target is covered by the new
+  import check but still has no end-to-end build proof in this repo; only the
+  next target is built. Vite has no server render, so layer 3 cannot bite it,
+  but that is reasoning, not a measurement.
 
 ## Correction — 2026-08-13
 

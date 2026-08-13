@@ -113,13 +113,19 @@ Each journey states, in this order:
 - **Done when:** The throwaway Next target installs, runs NodeTrace's happy path
   and its own smoke, completes a real `next build`, and writes
   `.nodetrace/setup-receipt.json`.
-- **Status:** **FAIL** (defect D2). Phases 2 and 3 pass (`happy path PASS 2.59s`,
-  `smoke PASS 3.15s`); phase 4 fails after 39.00 s with
-  `Module not found: Can't resolve '../../vendor/nodegraph-live/index.js'` and
-  the same for `react.js`. `npm run installer:next:e2e` exits 1. Not driven in a
-  browser, because no target application was ever built to open.
-- **Evidence:** _none — the journey never reaches a browser._ Reproduction is in
-  the defect ledger.
+- **Status:** **PASS** as of iteration 1 (2026-08-13). Was FAIL at baseline
+  (defect D2): phase 4 failed with
+  `Module not found: Can't resolve '../../vendor/nodegraph-live/index.js'`, and
+  once that was fixed the build compiled and then failed in prerender with
+  `ReferenceError: WebGL2RenderingContext is not defined`. Both are fixed in
+  `bin/nodetrace.mjs`. All four installer phases now pass, and step 3 — open
+  `/nodetrace` in the target application — has been driven for the first time:
+  the built target was served with `next start` on 127.0.0.1:4302 and the page
+  returned HTTP 200 with the Live graph rail drawing 10 entities / 15 edges,
+  0 console errors and 0 failed requests.
+- **Evidence:** `promotion/evidence/j4-installed-next-target-1280.png` and
+  `promotion/evidence/j4-installed-next-target.json`, produced by
+  `npm run promotion:j4` (`promotion/probes/j4-installed-target-proof.mjs`).
 
 ---
 

@@ -61,6 +61,13 @@ Scored 2026-08-13 against commit `8be0092`, in headless Chromium via Playwright
 1.61 against `npm run dev` on `http://127.0.0.1:5187/`, on Windows 11 / Node
 v22.22.2. Screenshots referenced below are in `promotion/evidence/`.
 
+**Updated 2026-08-13 after iteration 1** (D2 fixed; see
+[PROMOTION_LOG.md](PROMOTION_LOG.md)). Rows 1, 2, 11 and 12 moved. Only row 12
+changed status, to PASS, and only because both halves of the artifact rule hold:
+`promotion/probes/j4-installed-target-proof.mjs` is committed and re-runnable,
+and it writes the committed `promotion/evidence/j4-installed-next-target-1280.png`
+and `promotion/evidence/j4-installed-next-target.json`.
+
 **Corrected 2026-08-13** after an adversarial re-run. A row may only be PASS
 when both halves of the artifact rule hold: the output is committed at a path
 this row names, *and* the script that produced it is committed and re-runnable
@@ -72,8 +79,8 @@ were real; the evidence is not. See the Correction section of
 
 | # | Condition | Status | Evidence / reason |
 |---|-----------|--------|-------------------|
-| 1 | Journeys succeed end-to-end in a real browser | FAIL | J1 and J2 drive to completion (`happy-path-desktop-1280.png`, `j2-lens-tracestrip-desktop.png`). J3 reaches its screen only through an undocumented snapshot fallback — both prerequisite commands the README names fail (`npm run understand:noderoom` exit 1, `npm run capture:noderoom:real` exit 1). J4 fails outright: `npm run installer:next:e2e` exit 1, target `next build` cannot resolve `../../vendor/nodegraph-live/index.js`. Defects D1–D4 in PROMOTION_LOG.md. |
-| 2 | No critical or major usability defect open | FAIL | Four majors open with reproductions: D1 the header surface is a silent no-op on Ctrl-click, D2 the installed target cannot build, D3 the UI claims a "full local checkout" the receipt calls `"snapshot"`, D4 the Trace Lens has no keyboard or touch path. See the defect ledger. |
+| 1 | Journeys succeed end-to-end in a real browser | FAIL | J1, J2 and now **J4** drive to completion (`happy-path-desktop-1280.png`, `j2-lens-tracestrip-desktop.png`, `j4-installed-next-target-1280.png`). J3 still reaches its screen only through an undocumented snapshot fallback — both prerequisite commands the README names fail (`npm run understand:noderoom` exit 1, `npm run capture:noderoom:real` exit 1). Defects D1, D3, D4 in PROMOTION_LOG.md. |
+| 2 | No critical or major usability defect open | FAIL | Three majors still open with reproductions: D1 the header surface is a silent no-op on Ctrl-click, D3 the UI claims a "full local checkout" the receipt calls `"snapshot"`, D4 the Trace Lens has no keyboard or touch path. D2 (the installed target could not build) is fixed in iteration 1. See the defect ledger. |
 | 3 | Mobile and desktop both intentional | FAIL | Layout is genuinely responsive — single column at 375px, zero overflow (`happy-path-mobile-375.png`, `trace-coach-mobile-375.png`). But the product's only interaction is `metaKey/ctrlKey`-modified mouse click (`src/trace/TraceLensProvider.tsx:58`), which a touch device cannot produce. Tapping a tagged surface under Chromium touch emulation (375x812, `hasTouch`, `isMobile`) leaves the panel closed and shows no affordance: `j2-mobile-tap-no-lens.png`. Mobile is reflowed, not designed. |
 | 4 | No horizontal overflow at supported widths | UNVERIFIED | Measured 0 px of `documentElement.scrollWidth - clientWidth` at 360, 375, 414, 768, 1024, 1280 and 1440 px in both the happy-path and trace-coach states — fourteen measurements — but **the sweep probe was not retained**: no script, no JSON, nothing committed, so no third party can re-run a single one of them. Corroborated at exactly one of the fourteen by committed captures: `happy-path-mobile-375.png` and `trace-coach-mobile-375.png` show a clean single column with no horizontal cut-off at 375 px. Two screenshots are not a seven-width two-state sweep. Downgraded from PASS 2026-08-13. |
 | 5 | Loading/empty/success/error/agent-running designed | FAIL | Success and locked states are deliberate (`nt-locked` code-ownership notice, `nt-empty` rows in `TraceLensPanel.tsx:73,91,99`), and a loading seed exists (`DemoDashboard.tsx:8-21`). The empty state is not: after the README's own Happy Path, `state.coach` is absent, so `DemoDashboard.tsx:105` renders **nothing at all** where the Trace Coach belongs — while the hero above it simultaneously reads "Coach steps 0" and "Seeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots". Nothing tells the reader to run `npm run trace-coach:sqlite`. See `happy-path-desktop-1280.png`. |
@@ -82,11 +89,19 @@ were real; the evidence is not. See the Correction section of
 | 8 | Web-quality audit: no major unresolved | UNVERIFIED | No Lighthouse / axe / Core Web Vitals audit was run. Installing an audit toolchain was out of scope for a baseline that must not modify the tree. Navigation timings were captured (see condition 10) but a timing is not an audit. |
 | 9 | No unexplained console errors or failed requests | UNVERIFIED | Measured 0 console errors, 0 `pageerror`, 0 failed requests and 0 HTTP >= 400 across both states and the full J1/J2/J3 drive, with the only console output being 4 WebGL performance warnings — `GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels` — from Sigma's renderer inside the Live graph rail, self-silencing after the fourth. **The console and network probe was not retained** and no console or request log was committed, so the four zeroes and the four warnings are prose, not evidence. Downgraded from PASS 2026-08-13. |
 | 10 | Performance does not obstruct interaction | UNVERIFIED | Measured navigation timing of DOMContentLoaded 290 ms / load 292 ms in the happy-path state and 414 ms / 416 ms with the 6-step Trace Coach mounted; the graph rail laid out 10 entities / 15 edges and then 14 entities / 31 edges without blocking paint, and Overview/Steps/Minimap/Raw switching and seven viewport resizes were all immediate. **The navigation-timing probe was not retained** and no timing JSON was committed, so every number here is unciteable and nobody can re-measure the drive. Downgraded from PASS 2026-08-13. |
-| 11 | Tests and build green | FAIL | Tests and build individually pass — `happy-path` 0, `smoke` 0 (3 suites), `builder:smoke` 0, `agent:scale:smoke` 0 (125 rows), `capture:plan:smoke` 0, `trace-coach:sqlite` 0, `build` 0 (tsc --noEmit + vite build, 1675 modules), `package:dry-run` 0. But the repo's own declared gate, `npm run prepush` (aliased `npm run check`), is red at two of its ten members: `installer:next:e2e` exits 1 (D2) and `npm audit --omit=dev` exits 1 with 4 production advisories, 2 high / 2 moderate, including GHSA-22jq-vg5j-6vgg in `ip-address`. |
-| 12 | Verified in the rendered app, not inferred from code | UNVERIFIED | Nothing to score: this is a baseline and contains no improvements. Every FAIL above was observed in the rendered application rather than inferred, but the condition asks about verified *improvements*, and there are none yet. Wave 2 makes this scoreable. |
+| 11 | Tests and build green | FAIL | Tests and build individually pass — `happy-path` 0, `smoke` 0 (3 suites), `builder:smoke` 0, `agent:scale:smoke` 0 (125 rows), `capture:plan:smoke` 0, `trace-coach:sqlite` 0, `installer:next:e2e` **0 (was 1, fixed in iteration 1)**, `build` 0 (tsc --noEmit + vite build, 1675 modules), `package:dry-run` 0, `promotion:j4` 0. The repo's own declared gate, `npm run prepush` (aliased `npm run check`), is now red at **one** of its ten members instead of two: `npm audit --omit=dev` exits 1 with 4 production advisories, 2 high / 2 moderate, including GHSA-22jq-vg5j-6vgg in `ip-address` (D6). One red member is still red. |
+| 12 | Verified in the rendered app, not inferred from code | **PASS** | Iteration 1 fixed D2 and re-proved it by *running the installed application*, not by reading the diff: `promotion/probes/j4-installed-target-proof.mjs` installs NodeTrace into a throwaway Next App Router app, runs the real `next build`, serves the built output with `next start` on 127.0.0.1:4302 and photographs `/nodetrace` in headless Chromium. Output `promotion/evidence/j4-installed-next-target-1280.png` (the dashboard and a live Sigma canvas rendering inside a foreign application) and `promotion/evidence/j4-installed-next-target.json` (four installer phases ok, HTTP 200, 10 entities / 15 edges, 0 console errors, 0 failed requests). Producer and output are both committed and re-runnable from a fresh clone as `npm run promotion:j4`. |
 
-**Status: NOT PROMOTED** — 0/12 PASS.
+**Status: NOT PROMOTED** — 1/12 PASS.
 
-PASS: none. FAIL: 1, 2, 3, 5, 6, 11. UNVERIFIED: 4, 7, 8, 9, 10, 12.
+PASS: 12. FAIL: 1, 2, 3, 5, 6, 11. UNVERIFIED: 4, 7, 8, 9, 10.
 (Was recorded as 3/12 on 2026-08-13 with 4, 9 and 10 PASS; corrected the same
-day when a re-run found no committed producer or output behind any of them.)
+day to 0/12 when a re-run found no committed producer or output behind any of
+them. Iteration 1, the same day, earned 12 with both halves committed.)
+
+Iteration 1 also measured, inside the installed Next target only, 0 px of
+horizontal overflow at 1280 px and 0 console errors / 0 failed requests — both
+with a committed producer and committed output. Conditions 4 and 9 stay
+UNVERIFIED anyway: 4 asks for a seven-width two-state sweep of this product's own
+surfaces and 9 asks for the whole J1/J2/J3 drive, and one width on one page of a
+different application is neither.

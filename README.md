@@ -139,7 +139,8 @@ Reusable capture tool:
 
 Default `add` behavior:
 
-- copies `src/nodetrace/`
+- copies `src/nodetrace/`, including the vendored NodeGraph Live renderer it
+  imports (`src/nodetrace/vendor/nodegraph-live/`)
 - creates `src/nodetrace-demo/`
 - creates `nodetrace.html` for Vite or `/nodetrace` App Router page for Next
 - copies the SQLite schema and init/smoke scripts
