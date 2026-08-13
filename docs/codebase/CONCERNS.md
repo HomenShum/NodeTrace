@@ -130,13 +130,15 @@ package does not declare what its own CLI needs. Either move `playwright` to
   two committed PNGs, and CI installs `ffmpeg` and enforces byte-identical
   regeneration to keep it. The genuinely informative recording is
   `docs/screenshots/live-graph-rail.gif`, which shows the app running.
-- **`knip` reports 5 unused files and 31 unused exports.** All of them are
-  explained: the 5 files and 21 of the exports are inside
+- **`knip` reports 6 unused files and 31 unused exports.** All of them are
+  explained: five of the files and 21 of the exports are inside
   `vendor/nodegraph-live/`, a pre-built third-party bundle, and its `.d.ts` files
   are load-bearing for `tsc` even though knip cannot see it. The remaining
   exports and all 10 unused types are `src/trace/index.ts`, which is the public
   API of a library meant to be copied into another repository — a consumer
-  building a `NodeTraceState` needs those types. Neither group is dead code.
+  building a `NodeTraceState` needs those types. The sixth file is
+  `.dependency-cruiser.cjs`, a tool config knip does not recognise as one.
+  None of it is dead code.
 - **No error boundary anywhere.** A throw inside `DemoDashboard` blanks the page.
 - **The Vite installer target is never built.** Only the Next target has an
   end-to-end build proof; the Vite path is covered by the import check alone.

@@ -13,30 +13,31 @@ Where a tool does not fit this stack the row says so instead of being blank.
 | Hand-written production files | 36 | 36 | 0 | `git ls-files -- src bin db scripts examples promotion/probes \| wc -l` |
 | Hand-written production lines | 7492 | 7241 | -251 | `git ls-files -- src bin db scripts examples promotion/probes \| xargs wc -l \| tail -1` |
 | Vendored third-party files | 21 | 11 | -10 | `git ls-files -- vendor \| wc -l` |
-| Vendored third-party bytes | 128,729 | 70,731 | -57,998 | `git ls-files -- vendor \| xargs wc -c \| tail -1` |
+| Vendored third-party bytes | 130,254 | 72,256 | -57,998 | `git ls-files -- vendor \| xargs wc -c \| tail -1` |
 | Direct dependencies | 18 | 18 | 0 | `node -e "const p=require('./package.json');console.log(Object.keys(p.dependencies).length+Object.keys(p.devDependencies).length)"` |
-| Unused files | 5 | 5 | 0 | `npx knip` |
+| Unused files | 5 | 6 | +1 | `npx knip` — the extra one is `.dependency-cruiser.cjs`, a tool config knip does not recognise. See below. |
 | Unused exports | 22 | 21 | -1 | `npx knip` |
 | Unused exported types | 10 | 10 | 0 | `npx knip` |
 | Duplicate blocks | 16 | 11 | -5 | `npx jscpd src bin scripts db examples` |
 | Duplicate percentage (JavaScript) | 3.49% | 2.30% | -1.19pp | `npx jscpd src bin scripts db examples` |
 | Duplicate percentage (all formats) | 2.36% | 1.54% | -0.82pp | `npx jscpd src bin scripts db examples` |
-| Circular dependencies | 0 | 0 | 0 | `npx dependency-cruiser --config dc.cjs --output-type err src bin scripts db examples promotion` (rule: `{to:{circular:true}}`) |
-| Capture editor modes | 3 | 1 | -2 | `grep -c 'plan.editor.mode ===' src/capture/codebaseCapture.mjs` |
+| Circular dependencies | 0 | 0 | 0 | `npx dependency-cruiser --validate .dependency-cruiser.cjs --output-type err src bin scripts db examples promotion` |
+| Capture editor-mode branches | 5 | 1 | -4 | `grep -cE 'editor\.mode ===\|editorMode !==' src/capture/codebaseCapture.mjs` (three accepted modes plus two manifest branches, now one guard) |
 | Capture `editor` config knobs | 9 | 2 | -7 | `sed -n '/^    editor: {/,/^    },/p' src/capture/codebaseCapture.mjs` |
-| Hand-rolled CLI argument parsers | 5 | 0 | -5 | `grep -rl 'function parseArgs' src scripts bin` |
+| Hand-rolled CLI argument parsers | 5 | 0 | -5 | `grep -rl 'function parseArgs' src scripts bin \| wc -l` |
 | Production advisories | 4 (2 high, 2 moderate) | 0 | -4 | `npm audit --omit=dev` |
 | Canonical workflow suite | exit 1 | **exit 0** | green | `npm run check` |
 | Browser workflow probe | pass | pass | — | `npm run promotion:j4` |
 | Production bundle, JS | 431.79 kB | 431.06 kB | -0.73 kB | `npm run build` |
 | Production bundle, CSS | 15.07 kB | 15.07 kB | 0 | `npm run build` |
-| Published package files | 111 | 109 | -2 | `npm run package:dry-run` |
-| Additions / deletions | — | +1712 / -654 | — | `git diff --shortstat f24dfd5 HEAD` |
+| Published package files | 111 | 110 | -1 | `npm run package:dry-run` |
+| Additions / deletions, code | — | +322 / -592 | net -270 | `git diff --shortstat f24dfd5 HEAD -- src bin scripts db examples vendor promotion/probes package.json` |
+| Additions / deletions, docs and tours | — | +1600 / -23 | this packet | `git diff --shortstat f24dfd5 HEAD -- docs .tours` |
 
 Two rows need reading carefully.
 
-**Published package files went down by only 2** because eleven code and sourcemap
-files left and nine documentation files arrived. `docs/` is in the package's
+**Published package files went down by only 1** because eleven code and sourcemap
+files left and ten documentation files arrived. `docs/` is in the package's
 `files` list, so this packet ships. Code shipped: -11.
 
 **`npm run check` is the headline.** It chains ten commands with `&&`, so exit 0
@@ -137,7 +138,7 @@ named.
 
 ## What was added, and why each addition was necessary
 
-Additions are debt unless they buy something. Three were made.
+Additions are debt unless they buy something. Four were made.
 
 **1. A real end-to-end check of the capture engine** (`checkRealCapture` in
 `scripts/capture-plan-smoke.mjs`, ~45 lines). Required by the refactoring rule:
@@ -159,6 +160,12 @@ anchor; a moved anchor is a hard failure. Verified by knockout: renaming
 `docs/SIMPLIFICATION_REPORT.md`, `docs/codebase/*.md`, `.tours/*.tour`. No
 documentation application, no Docusaurus, no Storybook. Markdown and validated
 tours.
+
+**4. `.dependency-cruiser.cjs`** (13 lines). The circular-dependency row above
+is only a measurement if somebody else can run it, and `dependency-cruiser`
+needs a rules file. Committing it costs one `knip` false positive — knip counts
+it as an unused file because it does not recognise the tool — which is why the
+unused-files row goes from 5 to 6 rather than being quietly rescoped.
 
 ## Findings left unresolved, with the reason
 
