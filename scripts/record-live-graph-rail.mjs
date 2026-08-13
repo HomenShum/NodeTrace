@@ -10,16 +10,32 @@
  */
 
 import { copyFileSync, mkdirSync, statSync } from "node:fs";
-import { spawn, spawnSync } from "node:child_process";
+import { spawnSync } from "node:child_process";
 import { chromium } from "playwright";
+import {
+  PORT_ENV,
+  assertPageIsThisTree,
+  assertPortFree,
+  killTree,
+  startVite,
+  waitForServer,
+} from "./lib/proof-server.mjs";
 
-const PORT = 5299; // not 5173/5187: other checkouts may hold the defaults
+// not 5173/5187: other checkouts may hold the defaults. If this one is held
+// too, the recording refuses rather than filming somebody else's checkout.
+const PORT = Number(process.env[PORT_ENV] ?? 5299);
 const URL = `http://127.0.0.1:${PORT}/`;
 const WEBM = ".nodetrace/live-graph-rail.webm";
 const GIF = "docs/screenshots/live-graph-rail.gif";
 const VIEWPORT = { width: 1400, height: 860 };
 const npmCmd = process.platform === "win32" ? "npm.cmd" : "npm";
-const npxCmd = process.platform === "win32" ? "npx.cmd" : "npx";
+
+try {
+  await assertPortFree(PORT);
+} catch (error) {
+  console.error(`live graph rail recording: FAIL (${error.message})`);
+  process.exit(1);
+}
 
 const happy = spawnSync(npmCmd, ["run", "happy-path"], {
   stdio: "inherit",
@@ -30,10 +46,7 @@ if (happy.status !== 0) {
   process.exit(1);
 }
 
-const server = spawn(npxCmd, ["vite", "--host", "127.0.0.1", "--port", String(PORT), "--strictPort"], {
-  stdio: "pipe",
-  shell: process.platform === "win32",
-});
+const server = startVite(PORT);
 let browser;
 let failure = null;
 let videoPath = null;
@@ -48,6 +61,7 @@ try {
   });
   const page = await context.newPage();
   await page.goto(URL, { waitUntil: "load" });
+  await assertPageIsThisTree(page); // filming this tree, not another checkout
   await page.waitForTimeout(2_500); // dashboard visible before any motion
 
   const rail = page.locator('[data-testid="live-graph-rail"]');
@@ -192,25 +206,3 @@ for (const vf of attempts) {
   console.log(`gif ${mb.toFixed(1)}MB > 8MB with ${vf.split(",")[0]}, retrying smaller`);
 }
 if (!converted) process.exitCode = process.exitCode ?? 0;
-
-async function waitForServer(url, timeoutMs) {
-  const deadline = Date.now() + timeoutMs;
-  while (Date.now() < deadline) {
-    try {
-      const response = await fetch(url);
-      if (response.ok) return;
-    } catch {
-      // not up yet
-    }
-    await new Promise((resolve) => setTimeout(resolve, 300));
-  }
-  throw new Error(`dev server did not answer at ${url} within ${timeoutMs}ms`);
-}
-
-function killTree(child) {
-  if (process.platform === "win32") {
-    spawnSync("taskkill", ["/pid", String(child.pid), "/T", "/F"], { stdio: "ignore" });
-  } else {
-    child.kill("SIGTERM");
-  }
-}

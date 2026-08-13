@@ -62,6 +62,7 @@
     "trace-coach:sqlite": "node scripts/trace-coach-sqlite.mjs --json-out docs/eval/nodetrace-trace-coach-sqlite.json",
     "installer:next:e2e": "node scripts/installer-next-e2e-smoke.mjs",
     "promotion:j4": "node promotion/probes/j4-installed-target-proof.mjs",
+    "promotion:capture-identity": "node promotion/probes/capture-identity-regression.mjs",
     "package:dry-run": "npm pack --dry-run",
     "walkthroughs:render": "node scripts/render-walkthrough-media.mjs",
     "walkthroughs:verify": "node scripts/render-walkthrough-media.mjs --verify-only",

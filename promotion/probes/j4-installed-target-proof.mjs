@@ -20,6 +20,7 @@ import { spawn, spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { chromium } from "playwright";
+import { assertPortFree } from "../../scripts/lib/proof-server.mjs";
 
 const PORT = Number(process.env.NODETRACE_PROOF_PORT ?? 4302);
 const HOST = "127.0.0.1";
@@ -35,6 +36,11 @@ let installerPhases = [];
 let observed = {};
 
 try {
+  // Same rule as the capture scripts: photograph only a server this process
+  // started. A foreign listener on PORT would otherwise be measured as "the
+  // installed target" and reported as proof.
+  await assertPortFree(PORT, HOST);
+
   console.log("[1/3] nodetrace add into a throwaway Next target (install, seed, smoke, next build)");
   const installer = spawnSync(process.execPath, ["scripts/installer-next-e2e-smoke.mjs"], {
     cwd: process.cwd(),

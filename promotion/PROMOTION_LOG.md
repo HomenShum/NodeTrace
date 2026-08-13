@@ -84,6 +84,7 @@ reproduction; a hunch is not a defect.
 | D6 | Minor | J1 | ~~**Production dependency advisories, and they gate the repo's own prepush.**~~ **CLOSED, re-measured 2026-08-13** on a fresh `git clone --depth 20` of `main` at `3deb3a8`, Windows 11 / Node v22.22.2 / npm 10.9.7: `npm audit --omit=dev` exits **0** and prints `found 0 vulnerabilities`. Original reproduction, preserved: exit 1 with 4 advisories (2 high, 2 moderate), including GHSA-22jq-vg5j-6vgg in `ip-address` — IPv4-mapped/NAT64 misclassification that can bypass SSRF checks — and because `npm audit --omit=dev` is the last link in the `prepush` chain, that alone made `npm run check` red. What closed it: the `npm audit fix` lockfile bump recorded in `docs/SIMPLIFICATION_REPORT.md`, commit `633f1d6`, which moved `ip-address` 10.2.0 -> 10.5.0 and `hono` 4.12.25 -> 4.13.2 against advisory ranges `<=10.3.0` and `<=4.12.33`. The baseline row above still reproduces against the tree it describes: `npm audit --omit=dev --package-lock-only` over `8be0092`'s `package-lock.json` still prints all 4. Nothing here was fixed by this entry; the row was never re-run after the bump. | **Closed** (re-measured 2026-08-13) |
 | D7 | Minor | J1, J3 | **Graph labels collide.** In the Live graph rail at 1280x900 in the happy-path state, `demo-artifact` and `workSurface.evidenceCarousel` overlap into unreadable text; at 375x812 `copilot.agentOperations` and `shell.status…` overlap. ForceAtlas2 places nodes without label-collision avoidance and the labels are not truncated. Visible in `happy-path-desktop-1280.png` and `happy-path-mobile-375.png`. | Open |
 | D8 | Minor | J1 | **Nothing marks the missing Trace Coach.** Run only the README Happy Path (`npm install`, `npm run happy-path`, `npm run dev`) and load the page: `state.coach` is absent so `src/DemoDashboard.tsx:105` (`{coach && activeCoachStep ? (`) renders nothing between the hero and the graph rail, while the hero says "Coach steps **0**" and, one line below, "Seeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots, and flow metadata" — a static string at `src/DemoDashboard.tsx:100` (`Seeded from real NodeRoom files`) that is rendered whether or not any of that is true. No empty state, and no pointer to `npm run trace-coach:sqlite`. | Open |
+| D9 | **Critical** | proof pipeline | ~~**The capture script photographed a different checkout and reported PASS.**~~ **FIXED in iteration 3.** Reproduction, preserved and re-runnable as `npm run promotion:capture-identity`: with any other process holding 127.0.0.1:5187 — in the observed case a second NodeTrace checkout left running from an earlier session — `node scripts/capture-live-graph-rail.mjs` spawned `npm run dev`, which honours `vite.config.ts:9` (`port: 5187,`) **without `--strictPort`**, so vite moved to 5188 while the script kept fetching 5187. It then asserted only things true of any NodeTrace (`[data-testid="live-graph-rail"]` visible, `data-entity-count > 0`), printed `live graph rail capture: PASS (14 entities, 31 traversal edges)` — the *other* tree's counts, against this tree's real 10 / 15 — exited 0 and overwrote `docs/screenshots/live-graph-rail.png` with a picture of the other application. The evidence artifact was indistinguishable from a real one. `scripts/record-live-graph-rail.mjs` and `promotion/probes/j4-installed-target-proof.mjs` shared the hole; `--strictPort` alone does not close it, because when vite exits the foreign server still answers. | **Fixed** (iteration 3) |
 
 ## Iterations
 
@@ -246,6 +247,116 @@ reproduction; a hunch is not a defect.
 - **Not fixed, and deliberately so:** D3's other half. The page still renders
   "full local checkout" for a snapshot (`src/DemoDashboard.tsx:138`
   (`sourceModeLabel`)), and this entry does not touch it.
+
+### Iteration 3 — 2026-08-13 — D9, the capture script photographed a different checkout and called it PASS
+
+- **Journey exercised:** none of J1-J4 directly. This is the pipeline every
+  journey's proof runs through, which is why it is the worst place in the
+  repository for a silent lie.
+
+- **The human situation, before any jargon.** Somebody wants to know whether the
+  live graph rail really works. They cannot watch it themselves, so they trust a
+  screenshot and a line of output. A script starts the app, photographs the rail,
+  and prints how many entities it saw. If that script photographs *a different
+  copy of the app* — a second checkout the same person left running in another
+  window — the screenshot still looks right, the counts still look plausible, and
+  nothing anywhere says the picture is of the wrong tree. The reader ends up
+  trusting a measurement of code they never changed.
+
+- **Observed (reproduced first, before any edit), on this machine, in the wild.**
+  Port 5187 was already held by a *second checkout of NodeTrace* from an earlier
+  session (`…/scratchpad/wave3/coldread-NodeTrace`, pid 10652, serving its own
+  Trace Coach state). In this clone, `node scripts/capture-live-graph-rail.mjs`
+  printed:
+
+      live graph rail capture: PASS (14 entities, 31 traversal edges -> docs/screenshots/live-graph-rail.png)
+
+  exit **0**, and rewrote `docs/screenshots/live-graph-rail.png`
+  (sha256 `9e77647176…` → `1ed894e78d…`). Independently measured on the same
+  tree, at the same minute, on a port this process owned: **this checkout renders
+  10 entities and 15 traversal edges**, and the state file the other server
+  answered with (`sha256:003ed7d6e755…`, session `trace-coach-noderoom-sqlite`)
+  is not the one on disk here (`sha256:9bb92d22ae06…`). The picture is committed
+  as `promotion/evidence/capture-identity-before-foreign-checkout.png` — it says
+  "14 entities · 31 of 31 relationships" and its node labels (`trace-coach`,
+  `trace-tabs`, `workSurface.traceSteps`) belong to the other tree's state.
+
+- **Root cause, traced upstream rather than patched at the symptom.** Three
+  layers, all of which had to hold for the lie to be silent:
+  1. `vite.config.ts:9` (`port: 5187,`) sets a default port, and the capture
+     script spawned `npm run dev`, which honours it **without `--strictPort`**.
+     Vite's documented behaviour when the port is busy is to take the next free
+     one, printing a notice to a pipe nobody read. Our server went to 5188.
+  2. The script then fetched `http://127.0.0.1:5187/` — the port it *asked* for,
+     not the port it *got* — so every assertion after that point was measured
+     against whatever else was listening.
+  3. Every assertion it made (`[data-testid="live-graph-rail"]` visible,
+     `data-entity-count > 0`) is true of any NodeTrace, including someone else's.
+     Nothing asserted identity, so nothing could tell two checkouts apart.
+
+  `--strictPort` alone does not close this. `scripts/record-live-graph-rail.mjs`
+  already passed it and was still exposed: with the port busy, vite exits, and
+  the script's `waitForServer` is answered by the foreign process instead. The
+  guard has to be *"nothing else may hold this port"*, not *"our server must have
+  this port or die"*.
+
+- **Fixed at the seam all three callers route through** — one new module,
+  `scripts/lib/proof-server.mjs`, replacing three copies of `waitForServer` and
+  three of `killTree`:
+  - `assertPortFree(port)` — bind it first; `EADDRINUSE` fails the run with a
+    one-line message naming the port and the `NODETRACE_CAPTURE_PORT` escape
+    hatch. Nothing external is started, no artifact is touched.
+  - `startVite(port)` — always `--strictPort`, so our server owns the port it
+    names or never starts.
+  - `assertPageIsThisTree(page)` — the positive identity assertion, run before
+    any artifact is written or any PASS is printed. `document.title` must be
+    `NodeTrace`, and the `public/nodetrace-state.json` **the captured page itself
+    fetched** must be byte-identical to the one on disk in this working tree.
+    Title alone is useless here: the impostor was the same product, with the same
+    title and the same testids. The state file carries a fresh millisecond
+    timestamp from every `npm run happy-path`, so no other checkout can match it.
+  - Callers: `scripts/capture-live-graph-rail.mjs` and
+    `scripts/record-live-graph-rail.mjs` use all three;
+    `promotion/probes/j4-installed-target-proof.mjs` takes `assertPortFree`,
+    because it photographs an installed Next target on 4302 and had the same hole.
+
+- **Re-proved by re-running the identical probe.** Same command, same machine,
+  same foreign checkout still on 5187: `node scripts/capture-live-graph-rail.mjs`
+  now exits **1** with *"port 5187 is already in use by another process —
+  refusing to capture a page this checkout did not serve"*, and the artifact's
+  sha256 is unchanged. With a port this process owns,
+  `NODETRACE_CAPTURE_PORT=4702 node scripts/capture-live-graph-rail.mjs` exits 0:
+  **`PASS (10 entities, 15 traversal edges)`** — this tree's real numbers, the
+  same 10/15 the scorecard records for the happy-path state — and the picture,
+  committed as `promotion/evidence/capture-identity-after-this-checkout.png`,
+  shows this checkout's nodes (`nodetrace`, `schema`, `state`, `events`,
+  `workSurface.evidenceCarousel`).
+
+- **Regression check, and it was confirmed failing on the pre-fix tree.**
+  `npm run promotion:capture-identity` runs
+  `promotion/probes/capture-identity-regression.mjs`, which puts an impostor on
+  the capture port — same title, same testid, `data-entity-count="4242"` — runs
+  the real capture script against it, and requires a nonzero exit and an
+  untouched artifact. Second phase, because a layer nobody watched run is a layer
+  nobody has proved: it drives a real browser at the impostor and at a server
+  started from this tree, and requires `assertPageIsThisTree` to throw on the
+  first and pass on the second. Confirmed both ways by stashing **only** the
+  three source edits and re-running: pre-fix **FAIL** (`exit 0`, `PASS (14
+  entities, 31 traversal edges)`, artifact rewritten) — committed verbatim as
+  `promotion/evidence/capture-identity-regression-prefix.json`; post-fix **PASS**
+  — `promotion/evidence/capture-identity-regression.json`, which also records the
+  identity assertion rejecting the impostor on a sha mismatch and accepting this
+  tree.
+
+- **Tests:** `npm run citations:check` exit 0, `npm run smoke` exit 0,
+  `npm run build` exit 0. `npm run promotion:capture-identity` exit 0.
+
+- **What this does NOT overturn.** The committed
+  `docs/screenshots/live-graph-rail.png` at `062b19b` was checked against this
+  finding and is genuine: it shows 10 entities / 15 relationships with this
+  tree's node labels, which is what a correct capture of the happy-path state
+  produces. No committed evidence in this repository is known to be foreign. The
+  defect is that nothing *prevented* it, and for one run on 2026-08-13 nothing did.
 
 ## Correction — 2026-08-13
 

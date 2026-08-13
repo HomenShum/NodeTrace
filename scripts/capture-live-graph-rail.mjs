@@ -1,18 +1,35 @@
 /**
  * Capture proof for the live graph rail: run the real happy path (SQLite ->
- * public/nodetrace-state.json), start the dev server, and require the rail to
- * report >0 entities ingested from those real trace events before taking the
- * screenshot. An empty rail exits nonzero — no capture, no claim.
+ * public/nodetrace-state.json), start the dev server on a port this process
+ * owns, prove the page in front of the camera is this working tree, and require
+ * the rail to report >0 entities ingested from those real trace events before
+ * taking the screenshot. A busy port, a foreign page or an empty rail exits
+ * nonzero — no capture, no claim.
  */
 
 import { mkdirSync } from "node:fs";
-import { spawn, spawnSync } from "node:child_process";
+import { spawnSync } from "node:child_process";
 import { chromium } from "playwright";
+import {
+  PORT_ENV,
+  assertPageIsThisTree,
+  assertPortFree,
+  killTree,
+  startVite,
+  waitForServer,
+} from "./lib/proof-server.mjs";
 
-const PORT = 5187;
+const PORT = Number(process.env[PORT_ENV] ?? 5187);
 const URL = `http://127.0.0.1:${PORT}/`;
 const SCREENSHOT = "docs/screenshots/live-graph-rail.png";
 const npmCmd = process.platform === "win32" ? "npm.cmd" : "npm";
+
+try {
+  await assertPortFree(PORT);
+} catch (error) {
+  console.error(`live graph rail capture: FAIL (${error.message})`);
+  process.exit(1);
+}
 
 const happy = spawnSync(npmCmd, ["run", "happy-path"], {
   stdio: "inherit",
@@ -23,10 +40,7 @@ if (happy.status !== 0) {
   process.exit(1);
 }
 
-const server = spawn(npmCmd, ["run", "dev"], {
-  stdio: "pipe",
-  shell: process.platform === "win32",
-});
+const server = startVite(PORT);
 let browser;
 let failure = null;
 
@@ -35,6 +49,8 @@ try {
   browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1440, height: 960 } });
   await page.goto(URL, { waitUntil: "load" });
+  // The other gate: this must be our page, not whatever else answered.
+  await assertPageIsThisTree(page);
 
   const rail = page.locator('[data-testid="live-graph-rail"]');
   await rail.waitFor({ state: "visible", timeout: 20_000 });
@@ -68,26 +84,4 @@ try {
 if (failure) {
   console.error(`live graph rail capture: FAIL (${failure.message})`);
   process.exit(1);
-}
-
-async function waitForServer(url, timeoutMs) {
-  const deadline = Date.now() + timeoutMs;
-  while (Date.now() < deadline) {
-    try {
-      const response = await fetch(url);
-      if (response.ok) return;
-    } catch {
-      // not up yet
-    }
-    await new Promise((resolve) => setTimeout(resolve, 300));
-  }
-  throw new Error(`dev server did not answer at ${url} within ${timeoutMs}ms`);
-}
-
-function killTree(child) {
-  if (process.platform === "win32") {
-    spawnSync("taskkill", ["/pid", String(child.pid), "/T", "/F"], { stdio: "ignore" });
-  } else {
-    child.kill("SIGTERM");
-  }
 }

@@ -102,6 +102,22 @@ them. Iteration 1, the same day, earned 12 with both halves committed. Condition
 `633f1d6` and nothing re-ran it — see the second Correction in
 [PROMOTION_LOG.md](PROMOTION_LOG.md).)
 
+**Iteration 3 — 2026-08-13 — no row moves, and that is the honest answer.**
+Every capture script in this repository could photograph a *different checkout*
+of this same application and report PASS with that other tree's numbers (D9,
+fixed in iteration 3). The capture scripts and `promotion/probes/j4-installed-target-proof.mjs`
+now refuse a port they do not own, and the two rail scripts additionally require
+the captured page to have loaded this tree's own `public/nodetrace-state.json`
+before any artifact is written. This makes the evidence behind rows 4, 9, 10 and
+12 *harder to fake*; it does not add evidence, so no status changes. The
+committed `docs/screenshots/live-graph-rail.png` was checked against the finding
+and is genuine (10 entities / 15 relationships, this tree's node labels). New
+producer and outputs, both committed and re-runnable from a fresh clone as
+`npm run promotion:capture-identity`: `promotion/probes/capture-identity-regression.mjs`,
+`promotion/evidence/capture-identity-regression.json` (post-fix) and
+`promotion/evidence/capture-identity-regression-prefix.json` (the same probe on
+the pre-fix tree, `ok: false`).
+
 Iteration 1 also measured, inside the installed Next target only, 0 px of
 horizontal overflow at 1280 px and 0 console errors / 0 failed requests — both
 with a committed producer and committed output. Conditions 4 and 9 stay
