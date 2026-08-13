@@ -14,6 +14,14 @@ trace rows, gated code ownership, and a local SQLite happy path. It is not bound
 to NodeAgent's agent architecture. Bring your own agent, tools, queue, database,
 or model provider.
 
+**New here? Read [`docs/START_HERE.md`](docs/START_HERE.md).** It follows one real
+user action — Ctrl-clicking a tagged region — through the code in the order the
+code runs, and it names the open defects on that path rather than routing around
+them. Then [`docs/codebase/`](docs/codebase/) for stack, structure, architecture,
+conventions, integrations, testing and known concerns, and `.tours/` for the same
+three walkthroughs inside VS Code (`npm run tours:check` proves they still point
+at real lines).
+
 Agent-trace injection guide: [`docs/AGENT_TRACE_ADOPTION.md`](docs/AGENT_TRACE_ADOPTION.md).
 Workpaper standard: [`docs/TRACE_WORKPAPER_STANDARD.md`](docs/TRACE_WORKPAPER_STANDARD.md).
 

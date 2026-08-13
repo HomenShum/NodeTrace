@@ -1,0 +1,63 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "1. Ctrl-click a surface, get its proof",
+  "description": "The one user action this product exists for, from the browser event to the rendered panel. Run `npm run happy-path && npm run dev` first so there is state to show.",
+  "ref": "main",
+  "steps": [
+    {
+      "file": "index.html",
+      "line": 11,
+      "description": "One page, one script. There is no router in this repository and looking for one is a dead end."
+    },
+    {
+      "file": "src/main.tsx",
+      "line": 6,
+      "description": "One React root, one component. Everything below hangs off `DemoDashboard`."
+    },
+    {
+      "file": "src/DemoDashboard.tsx",
+      "line": 34,
+      "description": "Everything the panel can ever say arrives here, as one static JSON file. The browser never opens SQLite -- that is what makes the panel droppable into any app.\n\nIf the file is missing, the `.catch` below falls back to a placeholder with an empty surface list, and nothing on screen says so."
+    },
+    {
+      "file": "src/DemoDashboard.tsx",
+      "line": 52,
+      "description": "This attribute is the entire adoption cost. A region of interface says: I am the surface called shell.statusStrip. That string is the only thing the interface and the database have to agree on.\n\nThis particular tag is also open defect D1: after `npm run trace-coach:sqlite` the state file no longer registers `shell.statusStrip`, so Ctrl-clicking here silently does nothing."
+    },
+    {
+      "file": "src/trace/TraceLensProvider.tsx",
+      "line": 58,
+      "description": "One listener on `window`, in the capture phase, gated on Ctrl or Cmd plus a plain left click. This is why adopting NodeTrace needs no changes to existing components.\n\nIt is also why the lens cannot be opened by keyboard or by touch -- open defect D4."
+    },
+    {
+      "file": "src/trace/TraceLensProvider.tsx",
+      "line": 15,
+      "description": "The trust boundary. Above this line there is a DOM event, which could be anything; below it there is a `SurfaceHit`, which is four optional strings and nothing else. No DOM node crosses.\n\n`data-noderoom-surface` is accepted as well as `data-nodetrace-surface`, so an app already tagged for NodeRoom works unchanged."
+    },
+    {
+      "file": "src/trace/types.ts",
+      "line": 10,
+      "description": "`SurfaceHit` -- the domain value the rest of the panel is written against. Four strings, three of them optional."
+    },
+    {
+      "file": "src/trace/TraceLensPanel.tsx",
+      "line": 17,
+      "description": "The panel looks the clicked id up in the registry that came with the state file. A miss makes `meta` null, and the next line returns null: the click was swallowed and nothing appears.\n\nThat is defect D1's mechanism, in two lines."
+    },
+    {
+      "file": "src/trace/TraceLensPanel.tsx",
+      "line": 158,
+      "description": "Narrowing, with a deliberate fallback: match on the exact element first, and if nothing matches, show everything for the surface. A click on a region with no per-element evidence still shows the region's evidence rather than an empty panel."
+    },
+    {
+      "file": "src/trace/TraceLensPanel.tsx",
+      "line": 97,
+      "description": "Code ownership -- component, query, mutation, skill and test paths -- renders only when the host app has declared itself builder-capable."
+    },
+    {
+      "file": "scripts/init-sqlite.mjs",
+      "line": 222,
+      "description": "And here is why that is more than a UI toggle: the happy path strips ownership rows out of the published JSON entirely unless `NODETRACE_BUILDER_CAPABLE=true`. The client cannot leak what it never received. This is the single security-relevant line in the browser path."
+    }
+  ]
+}

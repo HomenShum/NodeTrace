@@ -1,0 +1,63 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "3. When it breaks: receipts, timeouts and the tests",
+  "description": "Where failures surface, what they write down, and which check catches which class of bug.",
+  "ref": "main",
+  "steps": [
+    {
+      "file": "src/DemoDashboard.tsx",
+      "line": 37,
+      "description": "Failure one, and the weakest: a missing or unparseable state file silently becomes the placeholder. The page renders, the lens opens nothing, and no message is shown. Fixing this is the cheapest user-visible improvement available."
+    },
+    {
+      "file": "src/trace/TraceLensProvider.tsx",
+      "line": 72,
+      "description": "The only keyboard affordance in the product. Escape closes the panel; nothing opens it."
+    },
+    {
+      "file": "scripts/init-sqlite.mjs",
+      "line": 10,
+      "description": "Failure two, and the friendliest: `better-sqlite3` is a native module that has to compile. When it has not, this prints one instruction instead of a stack trace."
+    },
+    {
+      "file": "bin/nodetrace.mjs",
+      "line": 204,
+      "description": "The riskiest thing this project does is modify somebody else's repository. Every phase of `nodetrace add` runs through here: timed, timeout-bounded, appended to `.nodetrace/setup-log.txt`, and reduced to `{ ok, durationMs, detail }`."
+    },
+    {
+      "file": "bin/nodetrace.mjs",
+      "line": 88,
+      "description": "The chain stops at the first failed phase instead of continuing to change the target. A broken install never reaches the build."
+    },
+    {
+      "file": "bin/nodetrace.mjs",
+      "line": 120,
+      "description": "The receipt is written whether or not the phases passed, so a failed install is inspectable rather than silent."
+    },
+    {
+      "file": "bin/nodetrace.mjs",
+      "line": 156,
+      "description": "Re-running `add` cannot quietly clobber a copy somebody customised. `--force` is the explicit opt-in."
+    },
+    {
+      "file": "bin/nodetrace.mjs",
+      "line": 194,
+      "description": "This function exists because of defect D2. The installer used to keep its own hand-written list of dependency version ranges next to the real one in `package.json`; the two drifted, and every installed app failed to build while this repository stayed green. Now a missing range throws at install time."
+    },
+    {
+      "file": "scripts/cli-smoke.mjs",
+      "line": 116,
+      "description": "The regression check for the other half of D2: walk every file the installer copied and assert each relative import resolves inside the target. It is a property check, not a check for one file, so the next component added with an outside-the-copy import fails here instead of in a user's build."
+    },
+    {
+      "file": "scripts/smoke.mjs",
+      "line": 81,
+      "description": "Now the uncomfortable part. Roughly 170 of this file's 212 lines are assertions that documentation and source contain particular literal strings.\n\nRenaming a function or rewording a README sentence turns `npm run smoke` red. It is the single largest obstacle to changing anything here, and it is why the Wave 3 reduction deleted only things this file does not name. See docs/codebase/CONCERNS.md."
+    },
+    {
+      "file": "scripts/installer-next-e2e-smoke.mjs",
+      "line": 72,
+      "description": "The end-to-end proof: install NodeTrace into a throwaway Next.js app and run the real `next build`. Roughly four minutes, and the only check that would have caught D2 before a user did."
+    }
+  ]
+}

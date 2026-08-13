@@ -70,7 +70,8 @@
     "record:live-graph": "node scripts/record-live-graph-rail.mjs",
     "mcp:smoke": "node scripts/mcp-smoke.mjs",
     "smoke": "node scripts/smoke.mjs && node scripts/cli-smoke.mjs && node scripts/mcp-smoke.mjs",
-    "prepush": "npm run happy-path && npm run smoke && npm run builder:smoke && npm run agent:scale:smoke && npm run capture:plan:smoke && npm run trace-coach:sqlite && npm run installer:next:e2e && npm run build && npm run package:dry-run && npm audit --omit=dev"
+    "prepush": "npm run happy-path && npm run smoke && npm run builder:smoke && npm run agent:scale:smoke && npm run capture:plan:smoke && npm run trace-coach:sqlite && npm run installer:next:e2e && npm run build && npm run package:dry-run && npm audit --omit=dev",
+    "tours:check": "node scripts/tours-check.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
