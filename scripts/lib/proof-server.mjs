@@ -59,6 +59,20 @@ export function startVite(port, host = "127.0.0.1") {
   });
 }
 
+/**
+ * The BUILT bundle on exactly this port, or not at all. Same discipline as
+ * `startVite`, different server: an audit or a guidelines review has to look at
+ * what a stranger actually downloads, and a dev server ships unminified modules
+ * over HMR — its timings and its DOM describe vite, not this product.
+ */
+export function startPreview(port, host = "127.0.0.1") {
+  const npxCmd = process.platform === "win32" ? "npx.cmd" : "npx";
+  return spawn(npxCmd, ["vite", "preview", "--host", host, "--port", String(port), "--strictPort"], {
+    stdio: "pipe",
+    shell: process.platform === "win32",
+  });
+}
+
 export async function waitForServer(url, timeoutMs = 30_000) {
   const deadline = Date.now() + timeoutMs;
   while (Date.now() < deadline) {

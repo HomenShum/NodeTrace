@@ -462,6 +462,126 @@ reproduction; a hunch is not a defect.
   repository could tell an empty picture from a full one until now. Every capture
   taken before this iteration was gated on numbers alone.
 
+### Iteration 5 — 2026-08-14 — the two audits nobody had run, and the three probes nobody had kept
+
+- **Journey exercised:** J1 and J3's screens, at eight widths and in both seeded
+  states, plus the J2 drive. No product code was touched. This is a measurement
+  iteration; a measurement pass that repairs what it finds cannot be re-run
+  against the tree it described.
+
+- **The human situation, before any jargon.** Five rows of this scorecard said
+  UNVERIFIED. Two of them (7 and 8) said it because the checks had never been
+  done: nobody had opened the product with an interface checklist beside them,
+  and nobody had run the standard page-quality tools over it. Three of them
+  (4, 9 and 10) said it for the opposite reason — the numbers had been measured
+  and were probably right, but the little scripts that produced them were written
+  to a scratch directory and thrown away, so no reader could check a single one.
+  Both are the same failure wearing different clothes: **nobody outside the room
+  could confirm anything.** This iteration closes both, and the honest result is
+  that two of the five rows come back FAIL.
+
+- **What was run, and what it found.**
+
+  | Row | Was | Now | The measurement |
+  |---|---|---|---|
+  | 4 | UNVERIFIED | **PASS** | 0 px of `scrollWidth - clientWidth` at 360/375/414/768/1024/1280/1440/**2560** px, in both seeded states, and again at all eight **with the lens dialog open** — 32 measurements, max 0. |
+  | 7 | UNVERIFIED | **FAIL** | Vercel Web Interface Guidelines review: **7 major of 17 checks**. |
+  | 8 | UNVERIFIED | **FAIL** | Lighthouse 13.4.1 + axe-core 4.13.0 over the built bundle in both states: **4 major** — `color-contrast` (serious) on 6 then 19 nodes, and TBT 774 ms / 687 ms. |
+  | 9 | UNVERIFIED | **PASS** | 0 unexplained console messages, 0 page errors, 0 failed requests, 0 HTTP >= 400 across the J1/J2/J3 drive in both states. |
+  | 10 | UNVERIFIED | **PASS** | DCL 216/257 ms, longest main-thread task 74/67 ms, Ctrl-click to panel 77/76 ms, tab switch 72 ms. |
+
+  Rows 3, 5 and 6 stay FAIL and did not move, but each stops resting on prose:
+  6 of 12 controls under 44 px at 375 px (row 3), an 18 px empty coach slot with
+  the panel absent from the DOM (row 5), and 0-of-12 keyboard openers plus axe's
+  serious contrast violation (row 6) are now committed measurements.
+
+- **Condition 7 is a review, not a score, and the distinction is load-bearing.**
+  The checklist was fetched live from `https://vercel.com/design/guidelines`
+  (HTTP 200, 534124 bytes) and is committed verbatim at
+  `promotion/evidence/web-interface-guidelines.txt`, so a reader can see what was
+  reviewed against rather than trusting a summary of it. **Six of the seven
+  majors score a clean 1.00 in every Lighthouse category** — a product whose only
+  interaction is a modified mouse click, whose dialog leaves focus behind it,
+  whose 407803 px² hero swallows clicks, whose four tabs cannot be linked or
+  refreshed, and which renders nothing where its main feature belongs, is
+  invisible to Lighthouse. Its accessibility score here is 0.92–0.95. No
+  Lighthouse number was used to reach any WIG finding; the write-up is
+  [WIG_REVIEW.md](WIG_REVIEW.md).
+
+- **One thing measured wrong first, and corrected before it was committed.** The
+  first contrast pass read `.r-tracevu-rec-meta` at **1.23:1**, which would have
+  been the worst contrast finding in the repository. It was wrong: the backdrop
+  lookup took the first ancestor with a non-transparent `background-color` and
+  read `rgba(15, 23, 42, 0.04)` as if it were opaque `rgb(15, 23, 42)`, turning a
+  pale card into near-black. Compositing the layer stack over white gives
+  **2.48:1** on `rgb(239, 230, 231)` — still a failure, and the same order as the
+  baseline's hand-computed 3.0:1 on white. Recorded here rather than silently
+  fixed: a contrast number without the pair of colours it came from is a claim,
+  which is why the probe now emits both.
+
+- **Two smaller measurement bugs, same pass, same reason.** The icon-only-button
+  check ran with the lens closed and reported "0 of 0 unnamed" — a pass earned by
+  not looking; it now opens the panel first and reports 0 of 1. And
+  "buttons used as links" matched **"Overview"** on the substring `view`, which is
+  why that check is now stated as the measurable fact instead: the URL never
+  changes, so there is no navigation here to have got wrong.
+
+- **New producers, all committed, all runnable from a fresh clone:**
+  - `npm run promotion:sweep` — `promotion/probes/surface-sweep.mjs` ->
+    `promotion/evidence/surface-sweep.json` (rows 4, 9, 10).
+  - `npm run promotion:wig` — `promotion/probes/wig-review.mjs` ->
+    `promotion/evidence/wig-review.json`, `wig-keyboard-no-opener.png`,
+    `wig-lens-open-focus-outside.png`, `wig-happy-path-empty-coach-slot.png`
+    (row 7).
+  - `npm run promotion:web-quality` — `promotion/probes/web-quality-audit.mjs` ->
+    `promotion/evidence/lighthouse-happy-path.json`, `lighthouse-trace-coach.json`,
+    `axe-happy-path.json`, `axe-trace-coach.json`, `web-quality-audit.json`
+    (row 8). The summary carries the exact `npx lighthouse@13.4.1 …` and
+    `npx @axe-core/cli@4.13.0 …` command lines that produced each file.
+
+  All three take `startPreview` from `scripts/lib/proof-server.mjs` — the seam
+  the capture scripts already route through — so they inherit `assertPortFree`,
+  `--strictPort` and the this-tree identity check, and the two that screenshot
+  also call `waitForPaintedGraph`. An audit of somebody else's checkout, or a
+  screenshot of a dead canvas, fails the same way a capture does.
+
+- **Audited surface: the built bundle, not the dev server.** All three probes
+  serve `dist/` with `vite preview`. A dev server ships unminified modules over
+  HMR; its timings and its bundle describe vite, not this product.
+
+- **Tests:** `npm run citations:check` exit 0 (68 markdown citations, up from 62 —
+  the new ones are checked like the rest), `npm run build` exit 0,
+  `npm run smoke` exit 0, `npm run promotion:capture-identity` exit 0,
+  `NODETRACE_CAPTURE_PORT=4911 npm run promotion:capture-paint` exit 0
+  (4 rail photographers found, all gated — the fourth is this iteration's
+  `promotion/probes/wig-review.mjs`, which the scan caught on its own because it
+  queries `[data-testid="live-graph-rail"]` and writes a screenshot). The three new probes exit 0, 1
+  and 1 by design: `promotion:sweep` passes, and `promotion:wig` and
+  `promotion:web-quality` exit nonzero because the product fails them. They are
+  deliberately **not** added to `prepush` — a gate whose red rows block the
+  build is a gate somebody will delete.
+
+- **D9's guard fired for real, again, on this machine.** `npm run
+  promotion:capture-paint` without an explicit port exits 1 with *"port 5187 is
+  already in use by another process"*: the foreign checkout iteration 3 describes
+  — same pid, 10652, still serving its own Trace Coach state on 5187 — is still
+  up. It was **not** killed, and nothing was captured against it. That is the
+  guard doing exactly its job two iterations later, and it is why the run above
+  names `NODETRACE_CAPTURE_PORT=4911`. The re-run also rewrote
+  `promotion/evidence/capture-identity-regression.json`, and its `impostor` field
+  now reads *"a foreign process already held the port"* rather than *"started by
+  this probe"* — a stronger demonstration than the synthetic one, so it is kept.
+
+- **Conditions newly PASS:** 4, 9, 10. **Conditions newly FAIL:** 7, 8. Scorecard
+  2/12 -> 5/12, with no row left UNVERIFIED.
+
+- **Not fixed, and deliberately so:** all seven WIG majors and all four
+  web-quality majors. Four of them are the ledger's existing D1, D4 and D8; three
+  (URL as state, tabs without tabpanels, and the specific contrast pairs) are new
+  and are recorded in [WIG_REVIEW.md](WIG_REVIEW.md) rather than the defect
+  ledger, because the ledger's entries carry browser reproductions and these
+  carry a probe — the probe is the reproduction.
+
 ## Correction — 2026-08-13
 
 Someone who did not run the baseline — a reviewer, an auditor, the next agent

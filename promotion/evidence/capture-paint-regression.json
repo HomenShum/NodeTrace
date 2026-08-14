@@ -1,12 +1,13 @@
 {
   "ok": true,
   "probe": "capture-paint — no artifact may be written of a graph canvas that never painted",
-  "completedAt": "2026-08-14T00:20:23.324Z",
+  "completedAt": "2026-08-14T02:07:04.162Z",
   "observed": {
     "railPhotographers": [
       "scripts/capture-live-graph-rail.mjs",
       "scripts/record-live-graph-rail.mjs",
-      "promotion/probes/j4-installed-target-proof.mjs"
+      "promotion/probes/j4-installed-target-proof.mjs",
+      "promotion/probes/wig-review.mjs"
     ],
     "ungated": [],
     "hollow": {

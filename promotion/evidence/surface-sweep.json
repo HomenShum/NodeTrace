@@ -1,0 +1,357 @@
+{
+  "ok": true,
+  "conditions": [
+    4,
+    9,
+    10
+  ],
+  "generatedAt": "2026-08-14T01:46:50.694Z",
+  "servedFrom": "vite preview over dist/ (the built bundle, not the dev server)",
+  "failures": [],
+  "results": [
+    {
+      "state": "happy-path",
+      "condition4": {
+        "widthsPx": [
+          360,
+          375,
+          414,
+          768,
+          1024,
+          1280,
+          1440,
+          2560
+        ],
+        "overflow": [
+          {
+            "width": 360,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 360
+          },
+          {
+            "width": 375,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 375
+          },
+          {
+            "width": 414,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 414
+          },
+          {
+            "width": 768,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 768
+          },
+          {
+            "width": 1024,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1024
+          },
+          {
+            "width": 1280,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1280
+          },
+          {
+            "width": 1440,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1440
+          },
+          {
+            "width": 2560,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 2560
+          }
+        ],
+        "overflowWithLensOpen": [
+          {
+            "width": 360,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 360
+          },
+          {
+            "width": 375,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 375
+          },
+          {
+            "width": 414,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 414
+          },
+          {
+            "width": 768,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 768
+          },
+          {
+            "width": 1024,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1024
+          },
+          {
+            "width": 1280,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1280
+          },
+          {
+            "width": 1440,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1440
+          },
+          {
+            "width": 2560,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 2560
+          }
+        ],
+        "maxOverflowPx": 0
+      },
+      "condition9": {
+        "journeyDriven": "J1 load + painted rail, J2 Ctrl-click lens open/read/Escape, J3 all four coach tabs",
+        "consoleMessages": 4,
+        "consoleByType": {
+          "warning": 4
+        },
+        "pageErrors": [],
+        "failedRequests": [],
+        "httpErrors": [],
+        "explained": [
+          {
+            "pattern": "/GPU stall due to ReadPixels|GL Driver Message/i",
+            "why": "Sigma's WebGL renderer reading pixels back for hit-testing; a driver performance notice, not an error, and it self-silences after the fourth.",
+            "matched": 4
+          },
+          {
+            "pattern": "/Download the React DevTools/i",
+            "why": "React's own development banner.",
+            "matched": 0
+          }
+        ],
+        "unexplained": []
+      },
+      "condition10": {
+        "domContentLoadedMs": 216,
+        "loadMs": 216,
+        "longTaskCount": 2,
+        "longestTaskMs": 74,
+        "totalLongTaskMs": 146,
+        "lensOpenMs": 77,
+        "tabSwitchMs": null
+      }
+    },
+    {
+      "state": "trace-coach",
+      "condition4": {
+        "widthsPx": [
+          360,
+          375,
+          414,
+          768,
+          1024,
+          1280,
+          1440,
+          2560
+        ],
+        "overflow": [
+          {
+            "width": 360,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 360
+          },
+          {
+            "width": 375,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 375
+          },
+          {
+            "width": 414,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 414
+          },
+          {
+            "width": 768,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 768
+          },
+          {
+            "width": 1024,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1024
+          },
+          {
+            "width": 1280,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1280
+          },
+          {
+            "width": 1440,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1440
+          },
+          {
+            "width": 2560,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 2560
+          }
+        ],
+        "overflowWithLensOpen": [
+          {
+            "width": 360,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 360
+          },
+          {
+            "width": 375,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 375
+          },
+          {
+            "width": 414,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 414
+          },
+          {
+            "width": 768,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 768
+          },
+          {
+            "width": 1024,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1024
+          },
+          {
+            "width": 1280,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1280
+          },
+          {
+            "width": 1440,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 1440
+          },
+          {
+            "width": 2560,
+            "lensOpen": true,
+            "overflowPx": 0,
+            "bodyOverflowPx": 0,
+            "widestElement": "html.",
+            "widestRightPx": 2560
+          }
+        ],
+        "maxOverflowPx": 0
+      },
+      "condition9": {
+        "journeyDriven": "J1 load + painted rail, J2 Ctrl-click lens open/read/Escape, J3 all four coach tabs",
+        "consoleMessages": 4,
+        "consoleByType": {
+          "warning": 4
+        },
+        "pageErrors": [],
+        "failedRequests": [],
+        "httpErrors": [],
+        "explained": [
+          {
+            "pattern": "/GPU stall due to ReadPixels|GL Driver Message/i",
+            "why": "Sigma's WebGL renderer reading pixels back for hit-testing; a driver performance notice, not an error, and it self-silences after the fourth.",
+            "matched": 4
+          },
+          {
+            "pattern": "/Download the React DevTools/i",
+            "why": "React's own development banner.",
+            "matched": 0
+          }
+        ],
+        "unexplained": []
+      },
+      "condition10": {
+        "domContentLoadedMs": 257,
+        "loadMs": 257,
+        "longTaskCount": 2,
+        "longestTaskMs": 67,
+        "totalLongTaskMs": 125,
+        "lensOpenMs": 76,
+        "tabSwitchMs": 72
+      }
+    }
+  ]
+}
