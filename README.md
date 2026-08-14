@@ -56,7 +56,9 @@ are telemetry about what the system did, not curated claims about the world.
 Clicking a node lists the trace event ids that produced it. The build is
 vendored in `vendor/nodegraph-live/` until the `@homenshum/nodegraph-live` npm
 publish lands; `npm run capture:live-graph` regenerates the proof below and
-exits nonzero if the rail ingests zero entities.
+exits nonzero if the rail ingests zero entities, or if the graph canvas has not
+actually painted node rings — the counts in the DOM stay right through a dead
+WebGL context, so the picture is checked in pixels before it is written.
 
 ![Live graph rail ingesting real SQLite trace events as traversal-only interaction history](docs/screenshots/live-graph-rail.png)
 

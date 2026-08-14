@@ -118,6 +118,22 @@ producer and outputs, both committed and re-runnable from a fresh clone as
 `promotion/evidence/capture-identity-regression-prefix.json` (the same probe on
 the pre-fix tree, `ok: false`).
 
+**Iteration 4 — 2026-08-14 — no row moves either, for the same reason.** The
+capture scripts checked the rail's numbers and then slept for the layout, so a
+graph canvas that never painted was photographed and reported as PASS — the
+numbers are React state and stay right through a dead WebGL context (D10, found
+by the verifier of D9 and fixed in iteration 4). All three scripts that
+photograph the rail now count the node rings in the pixels before anything is
+written. Again this makes the evidence harder to fake rather than adding any, so
+no status changes; what it does change is that `docs/screenshots/live-graph-rail.png`
+and `promotion/evidence/j4-installed-next-target-1280.png` are now regenerated
+by runs that reported 10 painted rings, not 10 counted entities. New producer and
+outputs, committed and re-runnable as `npm run promotion:capture-paint`:
+`promotion/probes/capture-paint-regression.mjs`,
+`promotion/evidence/capture-paint-regression.json` (post-fix) and
+`promotion/evidence/capture-paint-regression-prefix.json` (the same probe on the
+pre-fix tree, `ok: false`, seven issues).
+
 Iteration 1 also measured, inside the installed Next target only, 0 px of
 horizontal overflow at 1280 px and 0 console errors / 0 failed requests — both
 with a committed producer and committed output. Conditions 4 and 9 stay

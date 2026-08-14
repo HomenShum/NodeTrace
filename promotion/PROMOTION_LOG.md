@@ -85,6 +85,7 @@ reproduction; a hunch is not a defect.
 | D7 | Minor | J1, J3 | **Graph labels collide.** In the Live graph rail at 1280x900 in the happy-path state, `demo-artifact` and `workSurface.evidenceCarousel` overlap into unreadable text; at 375x812 `copilot.agentOperations` and `shell.status…` overlap. ForceAtlas2 places nodes without label-collision avoidance and the labels are not truncated. Visible in `happy-path-desktop-1280.png` and `happy-path-mobile-375.png`. | Open |
 | D8 | Minor | J1 | **Nothing marks the missing Trace Coach.** Run only the README Happy Path (`npm install`, `npm run happy-path`, `npm run dev`) and load the page: `state.coach` is absent so `src/DemoDashboard.tsx:105` (`{coach && activeCoachStep ? (`) renders nothing between the hero and the graph rail, while the hero says "Coach steps **0**" and, one line below, "Seeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots, and flow metadata" — a static string at `src/DemoDashboard.tsx:100` (`Seeded from real NodeRoom files`) that is rendered whether or not any of that is true. No empty state, and no pointer to `npm run trace-coach:sqlite`. | Open |
 | D9 | **Critical** | proof pipeline | ~~**The capture script photographed a different checkout and reported PASS.**~~ **FIXED in iteration 3.** Reproduction, preserved and re-runnable as `npm run promotion:capture-identity`: with any other process holding 127.0.0.1:5187 — in the observed case a second NodeTrace checkout left running from an earlier session — `node scripts/capture-live-graph-rail.mjs` spawned `npm run dev`, which honours `vite.config.ts:9` (`port: 5187,`) **without `--strictPort`**, so vite moved to 5188 while the script kept fetching 5187. It then asserted only things true of any NodeTrace (`[data-testid="live-graph-rail"]` visible, `data-entity-count > 0`), printed `live graph rail capture: PASS (14 entities, 31 traversal edges)` — the *other* tree's counts, against this tree's real 10 / 15 — exited 0 and overwrote `docs/screenshots/live-graph-rail.png` with a picture of the other application. The evidence artifact was indistinguishable from a real one. `scripts/record-live-graph-rail.mjs` and `promotion/probes/j4-installed-target-proof.mjs` shared the hole; `--strictPort` alone does not close it, because when vite exits the foreign server still answers. | **Fixed** (iteration 3) |
+| D10 | **Critical** | proof pipeline | ~~**The capture script photographed an empty canvas and reported PASS.**~~ **FIXED in iteration 4.** Found by the independent verifier of D9: the port fix held, and one of their three post-fix runs still wrote `docs/screenshots/live-graph-rail.png` with the node labels drawn, no node rings, no edges and Chromium's broken-image placeholder over the canvas box, while printing `live graph rail capture: PASS (10 entities, 15 traversal edges)`. Reproduction, preserved and re-runnable as `npm run promotion:capture-paint`: with the browser's WebGL contexts made to initialise and then draw nothing (`promotion/probes/lose-webgl-context.mjs`), the pre-fix `node scripts/capture-live-graph-rail.mjs` exits **0**, prints that same PASS line, and overwrites the artifact with a picture containing **0 coloured pixels** where a real one has 438 in 10 rings. Root cause: both checks it made were DOM checks — `data-entity-count` is React state and is right whether or not a pixel was drawn — and what followed them was `waitForTimeout(1_500)`, a sleep that cannot tell a settled graph from an empty one. It is not rare: the canvas came up dead on 7 of 14 loads here, because React StrictMode mounts the renderer, kills it and mounts it again, and the surviving instance is left with `isContextLost() === true`. `scripts/record-live-graph-rail.mjs` and `promotion/probes/j4-installed-target-proof.mjs` shared the hole, the latter with the same attribute-read-then-sleep. The committed `promotion/evidence/capture-identity-before-foreign-checkout.png` is empty in exactly this way. | **Fixed** (iteration 4) |
 
 ## Iterations
 
@@ -366,6 +367,100 @@ reproduction; a hunch is not a defect.
   tree's node labels, which is what a correct capture of the happy-path state
   produces. No committed evidence in this repository is known to be foreign. The
   defect is that nothing *prevented* it, and for one run on 2026-08-13 nothing did.
+
+### Iteration 4 — 2026-08-14 — D10, the capture script photographed an empty canvas and called it PASS
+
+- **Journey exercised:** the proof pipeline, the same one D9 lives in. Found by
+  the independent verifier of iteration 3: the port fix held, and one of their
+  three post-fix runs still produced a screenshot with no graph in it.
+
+- **The human situation, before any jargon.** Somebody wants to know whether the
+  live graph rail really works, and they are looking at a screenshot because they
+  cannot watch it themselves. The graph is drawn by the graphics card, on a
+  canvas; the numbers beside it ("10 entities") are ordinary web page text. Those
+  two can come apart. When the graphics context dies, the text stays exactly
+  right and the canvas goes blank — so the script reads "10 entities", sleeps a
+  second and a half for the layout to settle, photographs a white rectangle, and
+  prints PASS. The reader sees numbers that match, a picture with nothing in it,
+  and no reason to think the two disagree.
+
+- **Observed (reproduced first, before any edit).** With the WebGL contexts made
+  to initialise and then draw nothing — the injector at
+  `promotion/probes/lose-webgl-context.mjs`, so the script under test is the one
+  that ships — the pre-fix capture printed:
+
+      live graph rail capture: PASS (10 entities, 15 traversal edges -> docs/screenshots/live-graph-rail.png)
+
+  exit **0**, and overwrote the artifact with a picture containing **0 coloured
+  pixels**: the labels drawn, no node rings, no edges. A real capture of the same
+  state has 438 coloured pixels in exactly 10 rings. The committed
+  `promotion/evidence/capture-identity-before-foreign-checkout.png` — kept in
+  iteration 3 as the picture of the *wrong tree* — is empty in the same way, and
+  is now also the exhibit for this defect: it has 0 coloured pixels and Chromium's
+  broken-image placeholder in the corner of the canvas box.
+
+- **How often it happens for real, measured rather than assumed.** Loading the
+  dashboard 14 times in headless Chromium, the graph canvas came up dead **7
+  times**. React StrictMode mounts the renderer, kills it and mounts it again,
+  and that WebGL churn leaves the surviving instance with
+  `isContextLost() === true` about half the time on this machine. Of the 8 loads
+  allowed to reload, all 8 painted — 3 after exactly one reload, none needing a
+  second.
+
+- **Root cause, traced upstream rather than patched at the symptom.** Two layers:
+  1. Both checks the script made are DOM checks. `data-entity-count` is React
+     state, set from the trace events; it is right whether or not a pixel was
+     ever drawn. The rail element is visible for the same reason.
+  2. What followed the checks was `waitForTimeout(1_500)` — a sleep, chosen to
+     out-wait ForceAtlas2 (`settleMs(10)` = 1020 ms). A sleep cannot distinguish
+     a settled graph from an empty one; nothing in the script ever looked at the
+     canvas.
+
+- **Fixed, once, at the seam all three callers already route through.**
+  `waitForPaintedGraph` in `scripts/lib/proof-server.mjs` screenshots the canvas
+  box and counts the node rings *in the pixels*: they are the only coloured ink
+  there, since labels are near-black and the edges and dot grid are grey. It
+  waits for painted **and still** — the same rings in the same places two polls
+  apart — which is the condition the 1500 ms sleep was guessing at, and it
+  reloads the page up to twice when the canvas is dead, because that is measured
+  to recover it. The three callers the scan found now use it:
+  `scripts/capture-live-graph-rail.mjs`, `scripts/record-live-graph-rail.mjs` and
+  `promotion/probes/j4-installed-target-proof.mjs`. The recorder gets its click
+  targets from the same read — the ring centres — which deleted its
+  label-pixel-clustering block: whatever is painted is what is clickable.
+
+- **Re-proved.** `NODETRACE_CAPTURE_PORT=4803 node scripts/capture-live-graph-rail.mjs`
+  exits 0 and prints `PASS (10 entities, 15 traversal edges, 10 node rings
+  painted)`; the artifact it wrote, decoded, has 438 coloured pixels in 10 rings.
+  `npm run record:live-graph` exits 0 with `10 node rings painted, node readout
+  shown`. `npm run promotion:j4` exits 0 after 111 s and its report now carries
+  `"paintedNodes": 10` beside `"entities": "10"` — read off the canvas, not out
+  of the attribute.
+
+- **Regression check, and it was confirmed failing on the pre-fix tree.**
+  `npm run promotion:capture-paint` runs `promotion/probes/capture-paint-regression.mjs`:
+  it **finds** the scripts that photograph the rail rather than consulting a list
+  of them (any `.mjs` under `scripts/` or `promotion/probes/` that names the rail
+  and writes a screenshot file or a video must call the gate), then runs the real
+  capture script twice — once against the drawing-nothing browser, which must
+  exit nonzero and leave the artifact byte-identical, and once untouched, which
+  must exit 0 and report painted rings. A list would have missed
+  `promotion/probes/j4-installed-target-proof.mjs`; the scan named it. Confirmed
+  by stashing **only** the four source edits and re-running: pre-fix **FAIL**
+  with seven issues — three ungated photographers, `exit 0`, `PASS (10 entities,
+  15 traversal edges)` over an empty canvas, the artifact rewritten, and 0 rings
+  reported on the healthy run — then post-fix **PASS**
+  (`promotion/evidence/capture-paint-regression.json`).
+
+- **Tests:** `npm run promotion:capture-paint` exit 0,
+  `npm run promotion:capture-identity` exit 0 (iteration 3's gate still holds),
+  `npm run promotion:j4` exit 0, `npm run smoke` exit 0,
+  `npm run citations:check` exit 0, `npm run build` exit 0.
+
+- **What this overturns.** Iteration 3 said of the foreign-checkout picture only
+  that it belongs to another tree. It is also empty, and nothing in this
+  repository could tell an empty picture from a full one until now. Every capture
+  taken before this iteration was gated on numbers alone.
 
 ## Correction — 2026-08-13
 

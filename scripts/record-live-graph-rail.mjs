@@ -2,8 +2,9 @@
  * Record the live graph rail working, end to end, on the repo's own demo
  * path: run the real happy path (SQLite -> public/nodetrace-state.json),
  * start Vite, load the dashboard in a recorded Chromium context, watch the
- * rail populate from the real trace events, then click a graph node until
- * the trace-event-id readout appears. No readout, no clip — exits 1.
+ * rail populate from the real trace events, wait for the graph canvas to paint
+ * node rings, then click one until the trace-event-id readout appears. An
+ * unpainted canvas or no readout means no clip — exits 1.
  *
  * Output: .nodetrace/live-graph-rail.webm, converted (when ffmpeg is on
  * PATH) to docs/screenshots/live-graph-rail.gif.
@@ -13,11 +14,13 @@ import { copyFileSync, mkdirSync, statSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { chromium } from "playwright";
 import {
+  GRAPH_CANVAS,
   PORT_ENV,
   assertPageIsThisTree,
   assertPortFree,
   killTree,
   startVite,
+  waitForPaintedGraph,
   waitForServer,
 } from "./lib/proof-server.mjs";
 
@@ -88,57 +91,27 @@ try {
     await page.mouse.wheel(0, 300);
     await page.waitForTimeout(250);
   }
-  await page.waitForTimeout(2_500); // let the force layout settle on camera
+  // The gate, and the click targets, in one read: wait for painted node rings
+  // instead of a fixed settle time, and take the ring centres as the places to
+  // click. Sigma draws to canvas, so nodes have no DOM — but whatever is
+  // painted is exactly what is clickable. Runs before the first hover: hovering
+  // dims every non-neighbour to grey, which would hide rings from the count.
+  const painted = await waitForPaintedGraph(page);
 
-  // Hover across the canvas, then grid-click until a node answers with its
-  // trace-event-id readout. Sigma draws to canvas, so nodes have no DOM.
-  const canvas = rail.locator('[data-testid="nodegraph-canvas"]');
+  const canvas = rail.locator(GRAPH_CANVAS);
   const box = await canvas.boundingBox();
   if (!box) throw new Error("nodegraph canvas has no bounding box");
   for (const fx of [0.3, 0.5, 0.7]) {
     await page.mouse.move(box.x + box.width * fx, box.y + box.height * 0.5, { steps: 12 });
     await page.waitForTimeout(300);
   }
-  // Sigma draws each node's label just right of the node on the 2d labels
-  // canvas, so opaque label pixels give us clickable node positions.
-  const candidates = await page.evaluate(() => {
-    const canvas = document.querySelector(
-      '[data-testid="live-graph-rail"] [data-testid="nodegraph-canvas"] canvas.sigma-labels',
-    );
-    if (!canvas) return [];
-    const ctx = canvas.getContext("2d");
-    const { width, height } = canvas;
-    const data = ctx.getImageData(0, 0, width, height).data;
-    const clusters = [];
-    for (let y = 0; y < height; y += 2) {
-      for (let x = 0; x < width; x += 2) {
-        if (data[(y * width + x) * 4 + 3] <= 32) continue;
-        let c = clusters.find(
-          (k) => x >= k.minX - 14 && x <= k.maxX + 14 && y >= k.minY - 8 && y <= k.maxY + 8,
-        );
-        if (!c) clusters.push((c = { minX: x, maxX: x, minY: y, maxY: y }));
-        c.minX = Math.min(c.minX, x);
-        c.maxX = Math.max(c.maxX, x);
-        c.minY = Math.min(c.minY, y);
-        c.maxY = Math.max(c.maxY, y);
-      }
-    }
-    const rect = canvas.getBoundingClientRect();
-    const sx = rect.width / width;
-    const sy = rect.height / height;
-    return clusters.map((c) => ({
-      x: rect.left + c.minX * sx, // label starts right of the node circle
-      y: rect.top + ((c.minY + c.maxY) / 2) * sy,
-    }));
-  });
-  if (candidates.length === 0) throw new Error("no node labels found on the sigma labels canvas");
 
   const readout = page.locator('[data-testid="live-graph-node-events"]');
   let clicked = false;
-  outer: for (const point of candidates) {
-    for (const dx of [-9, -6, -12, -15]) {
-      await page.mouse.move(point.x + dx, point.y, { steps: 8 });
-      await page.mouse.click(point.x + dx, point.y);
+  outer: for (const point of painted.points) {
+    for (const [dx, dy] of [[0, 0], [-2, 0], [2, 0], [0, -2]]) {
+      await page.mouse.move(point.x + dx, point.y + dy, { steps: 8 });
+      await page.mouse.click(point.x + dx, point.y + dy);
       await page.waitForTimeout(350);
       if (await readout.isVisible()) {
         clicked = true;
@@ -167,7 +140,8 @@ try {
   videoPath = await video.path();
   copyFileSync(videoPath, WEBM);
   console.log(
-    `live graph rail recording: PASS (${entityCount} entities, ${edgeCount} traversal edges, node readout shown -> ${WEBM})`,
+    `live graph rail recording: PASS (${entityCount} entities, ${edgeCount} traversal edges, ` +
+      `${painted.nodes} node rings painted, node readout shown -> ${WEBM})`,
   );
 } catch (error) {
   failure = error;

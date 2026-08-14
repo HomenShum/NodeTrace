@@ -1,0 +1,25 @@
+{
+  "ok": true,
+  "probe": "capture-paint — no artifact may be written of a graph canvas that never painted",
+  "completedAt": "2026-08-14T00:20:23.324Z",
+  "observed": {
+    "railPhotographers": [
+      "scripts/capture-live-graph-rail.mjs",
+      "scripts/record-live-graph-rail.mjs",
+      "promotion/probes/j4-installed-target-proof.mjs"
+    ],
+    "ungated": [],
+    "hollow": {
+      "exitCode": 1,
+      "lastLine": "live graph rail capture: FAIL (the graph canvas painted 0 node rings in 3 loads of 10000ms (0 coloured pixels in [data-testid=\"nodegraph-canvas\"]) — the DOM counts survive a dead canvas, so this artifact would have been an empty picture with the right numbers next to it)",
+      "artifactRewritten": false
+    },
+    "real": {
+      "exitCode": 0,
+      "lastLine": "live graph rail capture: PASS (10 entities, 15 traversal edges, 10 node rings painted -> docs/screenshots/live-graph-rail.png)",
+      "artifactRewritten": true,
+      "paintedNodes": 10
+    }
+  },
+  "issues": []
+}

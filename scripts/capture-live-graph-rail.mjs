@@ -1,10 +1,11 @@
 /**
  * Capture proof for the live graph rail: run the real happy path (SQLite ->
  * public/nodetrace-state.json), start the dev server on a port this process
- * owns, prove the page in front of the camera is this working tree, and require
- * the rail to report >0 entities ingested from those real trace events before
- * taking the screenshot. A busy port, a foreign page or an empty rail exits
- * nonzero — no capture, no claim.
+ * owns, prove the page in front of the camera is this working tree, require the
+ * rail to report >0 entities ingested from those real trace events, and require
+ * the graph canvas to have actually painted node rings before taking the
+ * screenshot. A busy port, a foreign page, an empty rail or an unpainted canvas
+ * exits nonzero — no capture, no claim.
  */
 
 import { mkdirSync } from "node:fs";
@@ -16,6 +17,7 @@ import {
   assertPortFree,
   killTree,
   startVite,
+  waitForPaintedGraph,
   waitForServer,
 } from "./lib/proof-server.mjs";
 
@@ -68,11 +70,14 @@ try {
   if (!(entityCount > 0)) throw new Error(`empty rail: entity count ${entityCount}`);
 
   await rail.scrollIntoViewIfNeeded();
-  await page.waitForTimeout(1_500); // let the force layout settle
+  // The last gate: wait for painted node rings, not for a fixed number of
+  // milliseconds. A sleep cannot tell a settled layout from a dead canvas.
+  const painted = await waitForPaintedGraph(page);
   mkdirSync("docs/screenshots", { recursive: true });
   await rail.screenshot({ path: SCREENSHOT });
   console.log(
-    `live graph rail capture: PASS (${entityCount} entities, ${edgeCount} traversal edges -> ${SCREENSHOT})`,
+    `live graph rail capture: PASS (${entityCount} entities, ${edgeCount} traversal edges, ` +
+      `${painted.nodes} node rings painted -> ${SCREENSHOT})`,
   );
 } catch (error) {
   failure = error;

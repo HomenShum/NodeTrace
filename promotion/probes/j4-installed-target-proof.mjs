@@ -20,7 +20,7 @@ import { spawn, spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { chromium } from "playwright";
-import { assertPortFree } from "../../scripts/lib/proof-server.mjs";
+import { assertPortFree, waitForPaintedGraph } from "../../scripts/lib/proof-server.mjs";
 
 const PORT = Number(process.env.NODETRACE_PROOF_PORT ?? 4302);
 const HOST = "127.0.0.1";
@@ -117,8 +117,14 @@ async function capture(url) {
   const response = await page.goto(url, { waitUntil: "networkidle" });
   const rail = page.locator('[data-testid="live-graph-rail"]');
   const liveGraphRailPresent = await rail.count() > 0;
-  if (liveGraphRailPresent) await rail.waitFor({ state: "visible", timeout: 15000 });
-  await page.waitForTimeout(1500); // let ForceAtlas2 settle before the photograph
+  let paintedNodes = 0;
+  if (liveGraphRailPresent) {
+    await rail.waitFor({ state: "visible", timeout: 15000 });
+    // Wait for painted node rings, not for ForceAtlas2 to have probably
+    // settled: the installed target's rail reports its counts in the DOM
+    // whether or not its canvas ever drew a pixel.
+    paintedNodes = (await waitForPaintedGraph(page)).nodes;
+  }
   mkdirSync(dirname(screenshotPath), { recursive: true });
   await page.screenshot({ path: screenshotPath, fullPage: true });
 
@@ -128,6 +134,9 @@ async function capture(url) {
     liveGraphRailPresent,
     entities: liveGraphRailPresent ? await rail.getAttribute("data-entity-count") : null,
     edges: liveGraphRailPresent ? await rail.getAttribute("data-edge-count") : null,
+    // Read off the canvas pixels, not out of an attribute: the two disagree
+    // exactly when the picture is empty.
+    paintedNodes,
     traceRecords: await page.locator('[data-testid="trace-record"]').count(),
     canvases: await page.locator('[data-testid="live-graph-rail"] canvas').count(),
     horizontalOverflowPx: await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth),

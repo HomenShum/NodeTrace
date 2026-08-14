@@ -26,6 +26,8 @@ scripts asserts — see the last section.
 | `npm run package:dry-run` | ~2s | The published tarball's file list. |
 | `npm audit --omit=dev` | ~3s | No production advisories. |
 | `npm run promotion:j4` | ~5min | Installs, builds, serves and photographs `/nodetrace` in headless Chromium. Not in `check`. |
+| `npm run promotion:capture-identity` | ~1min | The capture script refuses a port it does not own, and refuses a page serving a different `public/nodetrace-state.json` than this tree. Not in `check`. |
+| `npm run promotion:capture-paint` | ~1min | Every script that photographs the rail waits for painted node rings, counted in the pixels; the capture script refuses a canvas that drew nothing and passes on one that drew. Not in `check`. |
 
 `npm run check` (alias for `prepush`) is the declared green bar. It runs the
 first eleven rows above, `&&`-chained, so its exit code is the whole thing.
