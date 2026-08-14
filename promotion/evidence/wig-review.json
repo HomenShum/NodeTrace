@@ -6,7 +6,7 @@
   "guidelinesCopy": "promotion/evidence/web-interface-guidelines.txt",
   "guidelinesFetched": "2026-08-13, HTTP 200",
   "notALighthouseRun": "Every major below is invisible to Lighthouse and axe: they are interaction and state-model findings, not machine-checkable WCAG rules.",
-  "generatedAt": "2026-08-14T02:00:24.179Z",
+  "generatedAt": "2026-08-14T02:37:53.773Z",
   "servedFrom": "vite preview over dist/ (the built bundle, not the dev server)",
   "viewport": "1280x900, plus a 375x812 pass for touch hit targets",
   "majorCount": 7,

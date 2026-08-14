@@ -40,13 +40,16 @@ machine-checkable WCAG rule, and how fast does it load*. This review asks a
 different question — *is this interface built the way a careful team builds one*
 — and most of the answers are not machine-checkable at all.
 
-Six of the seven majors below score a clean 1.00 in every Lighthouse category:
-Lighthouse has no opinion about a product whose only interaction is a modified
-mouse click, a dialog that leaves focus behind it, a 407803 px² region that
-swallows clicks, four tabs whose state cannot be linked or refreshed, a tablist
-with no panels, or a screen that renders nothing where its main feature belongs.
-NodeTrace's accessibility score is 0.92–0.95 **while** its one flow is
-unreachable without a mouse.
+**Six of the seven majors below are reported by neither tool**, and that is
+checkable rather than rhetorical: for the same page in the same state, the
+committed `lighthouse-happy-path.json` has exactly two failing accessibility
+audits — `color-contrast` and `heading-order` — and the committed
+`axe-happy-path.json` has exactly two violations, the same two. Neither names a
+product whose only interaction is a modified mouse click, a dialog that leaves
+focus behind it, a 407803 px² region that swallows clicks, four tabs whose state
+cannot be linked or refreshed, a tablist with no panels, or a screen that renders
+nothing where its main feature belongs. NodeTrace's Lighthouse accessibility
+score is 0.92–0.95 **while** its one flow is unreachable without a mouse.
 
 The one place the two overlap is contrast, and even there they are separate
 measurements: axe reports it as a WCAG violation, and the review computes the

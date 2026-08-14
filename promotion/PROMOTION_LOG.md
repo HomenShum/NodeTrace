@@ -500,11 +500,14 @@ reproduction; a hunch is not a defect.
   (HTTP 200, 534124 bytes) and is committed verbatim at
   `promotion/evidence/web-interface-guidelines.txt`, so a reader can see what was
   reviewed against rather than trusting a summary of it. **Six of the seven
-  majors score a clean 1.00 in every Lighthouse category** — a product whose only
+  majors are reported by neither tool**, and that is checkable: for the same page
+  in the same state, `promotion/evidence/lighthouse-happy-path.json` has exactly
+  two failing accessibility audits, `color-contrast` and `heading-order`, and
+  `axe-happy-path.json` has exactly the same two violations. A product whose only
   interaction is a modified mouse click, whose dialog leaves focus behind it,
   whose 407803 px² hero swallows clicks, whose four tabs cannot be linked or
   refreshed, and which renders nothing where its main feature belongs, is
-  invisible to Lighthouse. Its accessibility score here is 0.92–0.95. No
+  invisible to both. Its Lighthouse accessibility score here is 0.92–0.95. No
   Lighthouse number was used to reach any WIG finding; the write-up is
   [WIG_REVIEW.md](WIG_REVIEW.md).
 

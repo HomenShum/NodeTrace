@@ -21,9 +21,10 @@
  * way a careful team builds one" — and most of the answers are not
  * machine-checkable at all. Six of the findings this script measures
  * (no keyboard opener, no focus management in the dialog, dead tagged regions,
- * no URL state, tabs with no tabpanel, the missing empty state) score a clean
- * 1.00 in every Lighthouse category. Condition 8 is the audit; this is the
- * review; passing one says nothing about the other.
+ * no URL state, tabs with no tabpanel, the missing empty state) are reported by
+ * NEITHER tool: for the same page and state, condition 8's committed reports
+ * name exactly two problems, color-contrast and heading-order. Condition 8 is
+ * the audit; this is the review; passing one says nothing about the other.
  *
  * WHAT IT MEASURES RATHER THAN ASSERTS. Every finding carries a number or a
  * screenshot read out of the rendered page: focusable counts, how many of them
