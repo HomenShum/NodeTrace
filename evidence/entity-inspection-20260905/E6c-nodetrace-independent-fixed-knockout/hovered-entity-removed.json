@@ -1,0 +1,81 @@
+{
+  "selection": "Choose an entity",
+  "vendor": null,
+  "readout": null,
+  "visits": null,
+  "labels": [
+    {
+      "text": "workSurface.traceData",
+      "x": 60.85573600388505,
+      "y": 87.9450039151169,
+      "width": 134.47705078125,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "entry",
+      "x": 217.93861176323605,
+      "y": 53.25907606176323,
+      "width": 31.52099609375,
+      "height": 12,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "data-model",
+      "x": 53.99999749660492,
+      "y": 122.46626029082796,
+      "width": 68.3427734375,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "trace-coach",
+      "x": 175.21219515578673,
+      "y": 153.02386327889857,
+      "width": 69.15966796875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "look-and-feel",
+      "x": 208.55688726902008,
+      "y": 127.21992971156169,
+      "width": 78.88623046875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "steps",
+      "x": 93.7231727827616,
+      "y": 207.45491877222685,
+      "width": 30.96533203125,
+      "height": 12,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "flow",
+      "x": 187.30220445153276,
+      "y": 231.35774708111168,
+      "width": 25.640625,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "overflow": false,
+  "panels": [],
+  "entityCount": "12"
+}

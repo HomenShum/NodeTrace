@@ -1,0 +1,14 @@
+function nodeMessage(graph, enabledTypes, id) {
+    if (id === null || !graph.hasNode(id)) return null;
+    const node = graph.getNodeAttributes(id);
+    const edges = [];
+    graph.forEachEdge(id, (_key, edge, source, target) => {
+        const type = edge[EDGE_TYPE_ATTR];
+        if (!enabledTypes.has(type)) return;
+        const other = source === id ? target : source;
+        edges.push({ other: graph.getNodeAttribute(other, "label"), weight: edge.weight, type,
+            ...(edge.receipt ? { receipt: edge.receipt } : {}) });
+    });
+    return { source: "nodegraph", kind: "node", id, label: node.label, nodeKind: node.kind,
+        ...(typeof node.count === "number" ? { count: node.count } : {}), edges };
+}

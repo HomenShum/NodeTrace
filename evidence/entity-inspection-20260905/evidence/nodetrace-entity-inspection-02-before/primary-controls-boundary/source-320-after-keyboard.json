@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+  "viewport": {
+    "width": 320,
+    "height": 800
+  },
+  "theme": "rgb(245, 247, 251)",
+  "scroll": {
+    "x": 0,
+    "y": 1999
+  },
+  "overflow": 0,
+  "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+  "entityCount": "14",
+  "edgeCount": "31",
+  "modal": false,
+  "fit": {
+    "x": 44,
+    "y": 425.6875,
+    "width": 27.84375,
+    "height": 21.9375,
+    "documentY": 2424.6875
+  },
+  "controls": {
+    "x": 44,
+    "y": 425.6875,
+    "width": 232,
+    "height": 21.9375,
+    "documentY": 2424.6875
+  },
+  "canvas": {
+    "x": 45,
+    "y": 456.625,
+    "width": 230,
+    "height": 298,
+    "documentY": 2455.625
+  },
+  "result": null,
+  "graphControls": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "fit",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "name": "traversal(31)· local",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 87.84375,
+        "y": 430.15625,
+        "width": 13,
+        "height": 13,
+        "documentY": 2429.15625
+      }
+    }
+  ],
+  "readout": null
+}

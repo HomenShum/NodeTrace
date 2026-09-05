@@ -1,0 +1,7 @@
+
+> nodetrace:happy-path
+> node scripts/nodetrace-init.mjs --json-out docs/eval/nodetrace-happy-path.json
+
+nodetrace happy path: PASS 12ms
+wrote .nodetrace/nodetrace.sqlite
+wrote public/nodetrace-state.json

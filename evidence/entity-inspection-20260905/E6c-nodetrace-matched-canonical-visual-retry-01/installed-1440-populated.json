@@ -1,0 +1,239 @@
+{
+  "url": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "scroll": {
+    "x": 0,
+    "y": 24
+  },
+  "overflow": 0,
+  "theme": "rgb(245, 247, 251)",
+  "entityCount": "10",
+  "edgeCount": "15",
+  "canvas": {
+    "x": 55,
+    "y": 755.09375,
+    "width": 1330,
+    "height": 298,
+    "documentY": 779.09375
+  },
+  "selector": {
+    "x": 37,
+    "y": 575.484375,
+    "width": 1366,
+    "height": 44,
+    "documentY": 599.484375
+  },
+  "fit": {
+    "x": 54,
+    "y": 702.09375,
+    "width": 44,
+    "height": 44,
+    "documentY": 726.09375
+  },
+  "readout": null,
+  "selection": null,
+  "protected": [
+    {
+      "selector": ".showcase",
+      "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+      "bounds": {
+        "x": 22,
+        "y": -2,
+        "width": 1396,
+        "height": 319.359375,
+        "documentY": 22
+      }
+    },
+    {
+      "selector": "[aria-label=\"Trace Coach launch path\"]",
+      "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+      "bounds": {
+        "x": 997,
+        "y": 19,
+        "width": 400,
+        "height": 277.359375,
+        "documentY": 43
+      }
+    },
+    {
+      "selector": ".liveGraphRailHead",
+      "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+      "bounds": {
+        "x": 37,
+        "y": 498.140625,
+        "width": 1366,
+        "height": 44.5,
+        "documentY": 522.140625
+      }
+    }
+  ],
+  "frame": [
+    {
+      "text": "demo-artifact",
+      "x": 565.2234773337841,
+      "y": 42.13215916586958,
+      "width": 81.68603515625,
+      "height": 10,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "workSurface.evidenceCarousel",
+      "x": 514.5588844899665,
+      "y": 24.00000225666087,
+      "width": 180.01416015625,
+      "height": 10,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "schema",
+      "x": 759.5585644959506,
+      "y": 49.36847570355231,
+      "width": 44.705078125,
+      "height": 10,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "nodetrace",
+      "x": 680.4562676715902,
+      "y": 136.59597393247918,
+      "width": 59.4951171875,
+      "height": 10,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "copilot.agentOperationStream",
+      "x": 609.7558661652712,
+      "y": 228.89368411532752,
+      "width": 178.298828125,
+      "height": 13,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "events",
+      "x": 646.4523651790828,
+      "y": 249.49999774333912,
+      "width": 38.5888671875,
+      "height": 9,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "state",
+      "x": 782.4148769224274,
+      "y": 195.50087066184193,
+      "width": 28.708984375,
+      "height": 9,
+      "canvasWidth": 1330,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "pixelProof": [
+    {
+      "path": "installed-1440-populated.png",
+      "sha256": "21f879b40d0faedb215b474b75b77dca44a5031cabdb5ff22f120c2683adc9db",
+      "attempts": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-populated-paint-attempt-1.png",
+          "sha256": "21f879b40d0faedb215b474b75b77dca44a5031cabdb5ff22f120c2683adc9db",
+          "darkGraphPixels": 1074,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            758,
+            1382,
+            960
+          ],
+          "rasterSize": [
+            1440,
+            960
+          ]
+        }
+      ],
+      "checkedExactSavedBytes": true
+    },
+    {
+      "path": "installed-1440-populated-full.png",
+      "sha256": "c022e8b4b86d8d3f6c1296624aa2fd8e49c45d93466134820d4d2a2863d21b2f",
+      "attempts": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-populated-full-paint-attempt-1.png",
+          "sha256": "c022e8b4b86d8d3f6c1296624aa2fd8e49c45d93466134820d4d2a2863d21b2f",
+          "darkGraphPixels": 1693,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            782,
+            1382,
+            1074
+          ],
+          "rasterSize": [
+            1440,
+            1132
+          ]
+        }
+      ],
+      "checkedExactSavedBytes": true
+    },
+    {
+      "path": "installed-1440-populated-change-boundary.png",
+      "sha256": "bcaadd1daf5e98773f5ee6e46019283c77ea46ef908f6a0001a3bf33e14055ce",
+      "attempts": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-populated-change-boundary-paint-attempt-1.png",
+          "sha256": "bcaadd1daf5e98773f5ee6e46019283c77ea46ef908f6a0001a3bf33e14055ce",
+          "darkGraphPixels": 1047,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            760,
+            1382,
+            960
+          ],
+          "rasterSize": [
+            1440,
+            960
+          ]
+        }
+      ],
+      "checkedExactSavedBytes": true
+    }
+  ],
+  "boundary": [
+    {
+      "label": "CHANGE A Â· Entity controls and local graph heading",
+      "x": 37,
+      "y": 554.640625,
+      "width": 1366,
+      "height": 193.453125,
+      "documentY": 578.640625,
+      "borderWidth": 3
+    },
+    {
+      "label": "CHANGE B Â· Graph and entity result",
+      "x": 38,
+      "y": 757.09375,
+      "width": 1364,
+      "height": 298,
+      "documentY": 781.09375,
+      "borderWidth": 3
+    }
+  ]
+}

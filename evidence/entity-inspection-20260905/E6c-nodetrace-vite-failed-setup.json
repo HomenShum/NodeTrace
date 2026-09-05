@@ -1,0 +1,58 @@
+{
+  "ok": false,
+  "startedAt": "2026-09-05T04:11:04.865Z",
+  "completedAt": "2026-09-05T04:11:29.844Z",
+  "totalMs": 24979,
+  "targetDir": "D:\\ProjectRecovery\\nodetrace-entity-vite-consumer-20260905",
+  "framework": "vite",
+  "apiKeysRequired": false,
+  "setupLog": ".nodetrace/setup-log.txt",
+  "files": [
+    "src/nodetrace",
+    "src/nodetrace-demo",
+    "db/nodetrace.schema.sql",
+    "scripts/nodetrace-init.mjs",
+    "scripts/nodetrace-smoke.mjs",
+    "nodetrace.html",
+    "docs/NODETRACE_INTEGRATION.md"
+  ],
+  "phases": [
+    {
+      "name": "install dependencies",
+      "command": "cmd.exe /d /s /c npm.cmd install --cache .nodetrace/npm-cache --prefer-offline --no-audit --fund=false --progress=false",
+      "ok": true,
+      "durationMs": 17338,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    },
+    {
+      "name": "happy path",
+      "command": "cmd.exe /d /s /c npm.cmd run nodetrace:happy-path",
+      "ok": true,
+      "durationMs": 1126,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    },
+    {
+      "name": "smoke",
+      "command": "cmd.exe /d /s /c npm.cmd run nodetrace:smoke",
+      "ok": true,
+      "durationMs": 561,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    },
+    {
+      "name": "build",
+      "command": "cmd.exe /d /s /c npm.cmd run build",
+      "ok": false,
+      "durationMs": 5879,
+      "timeoutMs": 300000,
+      "detail": "> build > tsc --noEmit && vite build src/nodetrace-demo/main.tsx(6,12): error TS2345: Argument of type 'HTMLElement | null' is not assignable to parameter of type 'Container'. Type 'null' is not assignable to type 'Container'."
+    }
+  ],
+  "nextSteps": [
+    "npm run nodetrace:dev",
+    "Open /nodetrace.html",
+    "Copy TraceLensProvider and TraceLensPanel into your app shell when ready."
+  ]
+}

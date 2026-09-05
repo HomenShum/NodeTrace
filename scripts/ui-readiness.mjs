@@ -7,12 +7,14 @@ import path from "node:path";
 import { chromium } from "playwright";
 import { assertPortFree, assertPageIsThisTree, startPreview, waitForServer, waitForPaintedGraph, killTree } from "./lib/proof-server.mjs";
 
+import { recordEntityCanvas, inspectEntityJob } from "./lib/entity-inspection-proof.mjs";
+
 const port = Number(process.env.NODETRACE_CAPTURE_PORT ?? 4917);
 const url = `http://127.0.0.1:${port}/`;
 const out = path.resolve(process.env.NODETRACE_UI_EVIDENCE ?? `evidence/ui-readiness/runs/${new Date().toISOString().replaceAll(":", "-")}`);
 mkdirSync(out, { recursive: true });
 const sizes = [[320, 800], [360, 800], [390, 844], [768, 1024], [1024, 768], [1440, 960], [1920, 1080]];
-const files = ["src/DemoDashboard.tsx", "src/demoNavigation.ts", "src/demoState.ts", "src/styles.css", "src/trace/TraceLensPanel.tsx", "src/trace/TraceLensProvider.tsx", "src/trace/trace.css", "src/trace/LiveGraphRail.tsx", "package.json", "package-lock.json", "scripts/ui-readiness.mjs", "bin/nodetrace.mjs", ".gitattributes"];
+const files = ["vendor/nodegraph-live/NodeGraph.d.ts", "scripts/lib/entity-inspection-proof.mjs", "vendor/nodegraph-live/NodeGraph.js", "src/DemoDashboard.tsx", "src/demoNavigation.ts", "src/demoState.ts", "src/styles.css", "src/trace/TraceLensPanel.tsx", "src/trace/TraceLensProvider.tsx", "src/trace/trace.css", "src/trace/LiveGraphRail.tsx", "package.json", "package-lock.json", "scripts/ui-readiness.mjs", "bin/nodetrace.mjs", ".gitattributes"];
 const sha = (bytes) => createHash("sha256").update(bytes).digest("hex");
 const sources = Object.fromEntries(files.map((file) => [file, sha(readFileSync(file))]));
 const checks = [], captures = [], inputs = [];
@@ -50,6 +52,7 @@ try {
     writeFileSync(path.join(out, `${seed.replace(":", "-")}-input.json`), bytes);
     server = startPreview(port); await waitForServer(url);
     const context = await browser.newContext();
+    await recordEntityCanvas(context);
     const page = activePage = await context.newPage();
     page.on("pageerror", (error) => errors.push(error.message));
     for (const [width, height] of sizes) {
@@ -58,6 +61,7 @@ try {
       await assertPageIsThisTree(page); await waitForPaintedGraph(page);
       const label = `${seed.replace(":", "-")}-${width}`;
       await snap(page, `${label}-overview`);
+      await inspectEntityJob(page, state, { check, snap, label });
       check(`${label}: graph remains traversal history`, await page.locator(".liveGraphRailHead").innerText().then((text) => text.includes("never evidence")));
       if (state.coach) {
         check(`${label}: truthful snapshot`, (await page.locator(".coachSource").innerText()).includes("bundled snapshot"));
@@ -95,6 +99,26 @@ try {
       await page.goBack(); await page.locator("dialog:modal").waitFor();
       await page.goForward(); await closed(page);
       check(`${label}: browser Back and Forward restore open/closed lens`, !new URL(page.url()).searchParams.has("surface"));
+    }
+    if (state.coach) {
+      const long = structuredClone(state);
+      long.traces[0] = { ...long.traces[0], actor: "Reviewer_" + "long-identifier-".repeat(14),
+        surfaceId: "tool:" + "供应商🙂/".repeat(35), artifactId: "artifact_" + "a".repeat(520),
+        id: "event_" + "e".repeat(510) };
+      writeFileSync(path.join(out, "long-entity-input.json"), JSON.stringify(long, null, 2));
+      for (const [width, height] of sizes) {
+        await page.setViewportSize({ width, height });
+        await page.route("**/nodetrace-state.json", route => route.fulfill({ json: long }));
+        await page.goto(url); await ready(page); await waitForPaintedGraph(page);
+        await inspectEntityJob(page, long, { check, snap, label: `long-entities-${width}` });
+        await page.unrouteAll({ behavior: "wait" });
+      }
+      const empty = { ...state, traces: [] };
+      await page.route("**/nodetrace-state.json", route => route.fulfill({ json: empty }));
+      await page.goto(url); await ready(page);
+      check("empty trace has no fictional graph or retained entity readout", await page.getByTestId("live-graph-rail").count() === 0 && await page.getByTestId("live-graph-node-events").count() === 0);
+      await snap(page, "empty-trace-entities");
+      await page.unrouteAll({ behavior: "wait" });
     }
     await page.setViewportSize({ width: 1440, height: 960 });
     await page.goto(`${url}?surface=not-registered`); await ready(page); await page.locator("dialog:modal").waitFor();

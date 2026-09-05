@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img">
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif}.mono{font-family:Consolas,Menlo,monospace}</style>
+
+    <rect width="1200" height="720" rx="24" fill="#080a0d"/>
+    <rect x="32" y="32" width="1136" height="656" rx="22" fill="#101317" stroke="#2b333d"/>
+    <text x="62" y="74" fill="#f2f4f7" font-size="18" font-weight="800">NodeRoom trace knowledge minimap</text>
+    <text x="62" y="98" fill="#99a3ae" font-size="12">Understand-Anything-backed graph: layers, files, guided tour node, and current trace focus.</text>
+    <rect x="60" y="126" width="884" height="492" rx="18" fill="#0d1117" stroke="#252b33"/>
+    <path d="M228 284 C282 284, 294 210, 332 210" stroke="#3d4652" stroke-width="3" fill="none"/><text x="258" y="237" fill="#7f8994" font-size="10">imports</text>
+<path d="M448 210 C502 210, 294 416, 332 416" stroke="#3d4652" stroke-width="3" fill="none"/><text x="368" y="303" fill="#7f8994" font-size="10">imports</text>
+<path d="M448 210 C502 210, 746 224, 784 224" stroke="#3d4652" stroke-width="3" fill="none"/><text x="594" y="207" fill="#7f8994" font-size="10">imports</text>
+<path d="M448 210 C502 210, 522 320, 560 320" stroke="#3d4652" stroke-width="3" fill="none"/><text x="482" y="255" fill="#7f8994" font-size="10">imports</text>
+<path d="M676 320 C730 320, 294 416, 332 416" stroke="#3d4652" stroke-width="3" fill="none"/><text x="482" y="358" fill="#7f8994" font-size="10">imports</text>
+<path d="M900 224 C954 224, 294 416, 332 416" stroke="#3d4652" stroke-width="3" fill="none"/><text x="594" y="310" fill="#7f8994" font-size="10">imports</text>
+<path d="M900 224 C954 224, 522 320, 560 320" stroke="#3d4652" stroke-width="3" fill="none"/><text x="708" y="262" fill="#7f8994" font-size="10">imports</text>
+<path d="M448 210 C502 210, 752 440, 790 440" stroke="#3d4652" stroke-width="3" fill="none"/><text x="597" y="315" fill="#7f8994" font-size="10">uses trace CSS</text>
+    <g>
+        <rect x="112" y="250" width="156" height="70" rx="14" fill="#171b21" stroke="#333b46" stroke-width="1"/>
+        <text x="126" y="274" fill="#f2f4f7" font-size="13" font-weight="800">Artifact shell</text>
+        <text x="126" y="294" fill="#99a3ae" font-size="10">UI entry</text>
+        <text x="126" y="310" fill="#7cc7ff" font-size="9">src/ui/panels/Artifact.tsx</text>
+      </g>
+<g>
+        <rect x="332" y="176" width="156" height="70" rx="14" fill="#171b21" stroke="#333b46" stroke-width="1"/>
+        <text x="346" y="200" fill="#f2f4f7" font-size="13" font-weight="800">TraceSurface</text>
+        <text x="346" y="220" fill="#99a3ae" font-size="10">Trace UI</text>
+        <text x="346" y="236" fill="#7cc7ff" font-size="9">src/ui/panels/TraceSurface.tsx</text>
+      </g>
+<g>
+        <rect x="332" y="382" width="156" height="70" rx="14" fill="#171b21" stroke="#333b46" stroke-width="1"/>
+        <text x="346" y="406" fill="#f2f4f7" font-size="13" font-weight="800">traceData</text>
+        <text x="346" y="426" fill="#99a3ae" font-size="10">Data model</text>
+        <text x="346" y="442" fill="#7cc7ff" font-size="9">src/ui/panels/traceData.ts</text>
+      </g>
+<g>
+        <rect x="560" y="286" width="156" height="70" rx="14" fill="rgba(232,120,85,0.22)" stroke="#e87855" stroke-width="3"/>
+        <text x="574" y="310" fill="#ffb195" font-size="13" font-weight="800">TraceStepRow</text>
+        <text x="574" y="330" fill="#99a3ae" font-size="10">Evidence UI</text>
+        <text x="574" y="346" fill="#7cc7ff" font-size="9">src/ui/panels/TraceStepRow.tsx</text>
+      </g>
+<g>
+        <rect x="784" y="190" width="156" height="70" rx="14" fill="#171b21" stroke="#333b46" stroke-width="1"/>
+        <text x="798" y="214" fill="#f2f4f7" font-size="13" font-weight="800">TraceFlow</text>
+        <text x="798" y="234" fill="#99a3ae" font-size="10">Graph UI</text>
+        <text x="798" y="250" fill="#7cc7ff" font-size="9">src/ui/panels/TraceFlow.tsx</text>
+      </g>
+<g>
+        <rect x="790" y="406" width="156" height="70" rx="14" fill="#171b21" stroke="#333b46" stroke-width="1"/>
+        <text x="804" y="430" fill="#f2f4f7" font-size="13" font-weight="800">Trace CSS</text>
+        <text x="804" y="450" fill="#99a3ae" font-size="10">Visual system</text>
+        <text x="804" y="466" fill="#7cc7ff" font-size="9">src/app/styles.css</text>
+      </g>
+    <rect x="972" y="126" width="150" height="492" rx="16" fill="#0d1014" stroke="#252b33"/>
+    <text x="992" y="160" fill="#ffb195" font-size="12" font-weight="800">MINIMAP</text>
+    <rect x="996" y="186" width="102" height="250" rx="10" fill="#111820" stroke="#333b46"/>
+    <circle cx="1019.2" cy="223" r="4" fill="#7cc7ff"/>
+<circle cx="1041.2" cy="215.6" r="4" fill="#7cc7ff"/>
+<circle cx="1041.2" cy="236.2" r="4" fill="#7cc7ff"/>
+<circle cx="1064" cy="226.6" r="6" fill="#e87855"/>
+<circle cx="1086.4" cy="217" r="4" fill="#7cc7ff"/>
+<circle cx="1087" cy="238.6" r="4" fill="#7cc7ff"/>
+    <rect x="1000" y="210" width="78" height="86" rx="7" fill="rgba(232,120,85,0.12)" stroke="#e87855"/>
+    <text x="992" y="472" fill="#f2f4f7" font-size="12" font-weight="800">Active node</text>
+    <text x="992" y="494" fill="#ffb195" font-size="12">steps</text>
+    <text x="62" y="654" fill="#7cc7ff" font-size="12">Graph JSON: captures/noderoom-trace-knowledge-graph.json. Refresh with npm run understand:noderoom.</text>
+  
+</svg>

@@ -1,0 +1,3 @@
+# NodeTrace component review profile
+
+Mode: READ-ONLY DIAGNOSTIC against an exact-byte temporary component host. Anonymous isolated Chromium session named nodetrace-entity-independent. No provider, auth, persistence, production or port 4173. Actual LiveGraphRail and vendor source, initial real six-event snapshot, same-mount test prop replacement. Source app and installed end-to-end evidence remain separate. Journeys: pointer/native selection, removal/replacement, empty/recovery, long/dense label paint, pan/hover/Fit. Capture DOM, console and pixels per viewport. No full product grade.

@@ -1,0 +1,90 @@
+{
+  "selection": "tool: workSurface.trace",
+  "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+  "readout": "tool: workSurface.trace\nproduced by trace event:\nreplacement-coach-step-02-detail-tabs-trace",
+  "visits": "1 — interaction frequency, not evidence strength",
+  "labels": [
+    {
+      "text": "workSurface.traceStrip",
+      "x": 86.00182269731197,
+      "y": 83.63077439011089,
+      "width": 134.27734375,
+      "height": 13,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "workSurface.traceData",
+      "x": 104.14182059647035,
+      "y": 64.47051703755818,
+      "width": 134.47705078125,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "look-and-feel",
+      "x": 85.2977170000018,
+      "y": 175.1608673253294,
+      "width": 78.88623046875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "trace-coach",
+      "x": 158.71237108483245,
+      "y": 151.73959096582212,
+      "width": 69.15966796875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "data-model",
+      "x": 193.20917336386637,
+      "y": 184.03457115025773,
+      "width": 68.3427734375,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "workSurface.trace",
+      "x": 115.01485358333635,
+      "y": 235.8764994996117,
+      "width": 106.76318359375,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "entry",
+      "x": 247.9854573410366,
+      "y": 207.52781936431523,
+      "width": 31.52099609375,
+      "height": 12,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "overflow": false,
+  "panels": [
+    {
+      "width": 294,
+      "scroll": 294
+    },
+    {
+      "width": 328,
+      "scroll": 328
+    }
+  ],
+  "entityCount": "14"
+}

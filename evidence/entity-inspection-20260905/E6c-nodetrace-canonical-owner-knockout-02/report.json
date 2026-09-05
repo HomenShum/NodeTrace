@@ -1,0 +1,308 @@
+{
+  "host": "D:/ProjectRecovery/nodetrace-canonical-owner-review-02-20260905",
+  "port": 5173,
+  "sourceHash": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+  "baseSourceHash": "892ca69f298b3c25c69e385c8c00cd9265f2612479caaf9320cb73c07dd629c5",
+  "graphModelHash": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+  "input": {
+    "nodes": [
+      {
+        "id": "a",
+        "label": "Supplier A",
+        "type": "supplier"
+      },
+      {
+        "id": "b",
+        "label": "Product B",
+        "type": "product"
+      }
+    ],
+    "edges": [
+      {
+        "source": "a",
+        "target": "b",
+        "type": "assertion",
+        "weight": 1,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "reviewed-first",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/reviewed-first"
+        }
+      },
+      {
+        "source": "b",
+        "target": "a",
+        "type": "assertion",
+        "weight": 99,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "duplicate-should-not-appear",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/duplicate-should-not-appear"
+        }
+      },
+      {
+        "source": "a",
+        "target": "missing",
+        "type": "assertion",
+        "weight": 23,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "missing-endpoint-should-not-appear",
+          "subjectId": "a",
+          "objectId": "missing",
+          "url": "https://example.invalid/missing-endpoint-should-not-appear"
+        }
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "before canonical callback",
+      "pass": true,
+      "detail": [
+        {
+          "other": "Supplier A",
+          "weight": 99,
+          "type": "assertion",
+          "receipt": {
+            "source": "Independent contract fixture",
+            "release": "duplicate-should-not-appear",
+            "subjectId": "a",
+            "objectId": "b",
+            "url": "https://example.invalid/duplicate-should-not-appear"
+          }
+        }
+      ]
+    },
+    {
+      "name": "before only one canonical relationship",
+      "pass": true
+    },
+    {
+      "name": "before initial visits3",
+      "pass": true
+    },
+    {
+      "name": "before metadata preserves off filter",
+      "pass": true
+    },
+    {
+      "name": "before current canonical callback after actual click",
+      "pass": true,
+      "detail": [
+        {
+          "other": "Supplier A",
+          "weight": 121,
+          "type": "assertion",
+          "receipt": {
+            "source": "Independent contract fixture",
+            "release": "current-1",
+            "subjectId": "a",
+            "objectId": "b",
+            "url": "https://example.invalid/duplicate-should-not-appear"
+          }
+        }
+      ]
+    },
+    {
+      "name": "before measured count42 after new click",
+      "pass": true
+    },
+    {
+      "name": "before visits7 after new click",
+      "pass": true
+    },
+    {
+      "name": "before omitted visits preserves actual graph owner",
+      "pass": true,
+      "detail": {
+        "displayed": "7 — interaction frequency, not evidence strength",
+        "graph": 7
+      }
+    },
+    {
+      "name": "after canonical callback",
+      "pass": true,
+      "detail": [
+        {
+          "other": "Supplier A",
+          "weight": 99,
+          "type": "assertion",
+          "receipt": {
+            "source": "Independent contract fixture",
+            "release": "duplicate-should-not-appear",
+            "subjectId": "a",
+            "objectId": "b",
+            "url": "https://example.invalid/duplicate-should-not-appear"
+          }
+        }
+      ]
+    },
+    {
+      "name": "after only one canonical relationship",
+      "pass": true
+    },
+    {
+      "name": "after initial visits3",
+      "pass": true
+    },
+    {
+      "name": "after metadata preserves off filter",
+      "pass": true
+    },
+    {
+      "name": "after detail count current without click",
+      "pass": true
+    },
+    {
+      "name": "after visits current without click",
+      "pass": true
+    },
+    {
+      "name": "after hidden assertions removed from current detail",
+      "pass": true
+    },
+    {
+      "name": "after current canonical callback after actual click",
+      "pass": true,
+      "detail": [
+        {
+          "other": "Supplier A",
+          "weight": 121,
+          "type": "assertion",
+          "receipt": {
+            "source": "Independent contract fixture",
+            "release": "current-1",
+            "subjectId": "a",
+            "objectId": "b",
+            "url": "https://example.invalid/duplicate-should-not-appear"
+          }
+        }
+      ]
+    },
+    {
+      "name": "after measured count42 after new click",
+      "pass": true
+    },
+    {
+      "name": "after visits7 after new click",
+      "pass": true
+    },
+    {
+      "name": "after omitted visits preserves actual graph owner",
+      "pass": true,
+      "detail": {
+        "displayed": "7 — interaction frequency, not evidence strength",
+        "graph": 7
+      }
+    }
+  ],
+  "states": [
+    {
+      "mode": "before",
+      "name": "initial-pointer",
+      "body": "Before: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 1 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+      "visits": "3 — interaction frequency, not evidence strength",
+      "count": "unknown — not measured",
+      "assertionOn": true,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "before",
+      "name": "filter-off",
+      "body": "Before: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 0 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+      "visits": "3 — interaction frequency, not evidence strength",
+      "count": "unknown — not measured",
+      "assertionOn": false,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "before",
+      "name": "metadata-filter-off",
+      "body": "Before: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 0 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+      "visits": "3 — interaction frequency, not evidence strength",
+      "count": "unknown — not measured",
+      "assertionOn": false,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "before",
+      "name": "metadata-new-pointer",
+      "body": "Before: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 1 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt",
+      "visits": "7 — interaction frequency, not evidence strength",
+      "count": "42",
+      "assertionOn": true,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "before",
+      "name": "visits-omitted-new-pointer",
+      "body": "Before: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 1 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt",
+      "visits": "7 — interaction frequency, not evidence strength",
+      "count": "42",
+      "assertionOn": true,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "after",
+      "name": "initial-pointer",
+      "body": "Candidate: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 1 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+      "visits": "3 — interaction frequency, not evidence strength",
+      "count": "unknown — not measured",
+      "assertionOn": true,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "after",
+      "name": "filter-off",
+      "body": "Candidate: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 0 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n3 — interaction frequency, not evidence strength",
+      "visits": "3 — interaction frequency, not evidence strength",
+      "count": "unknown — not measured",
+      "assertionOn": false,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "after",
+      "name": "metadata-filter-off",
+      "body": "Candidate: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 0 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength",
+      "visits": "7 — interaction frequency, not evidence strength",
+      "count": "42",
+      "assertionOn": false,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 99,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"duplicate-should-not-appear\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "after",
+      "name": "metadata-new-pointer",
+      "body": "Candidate: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 1 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt",
+      "visits": "7 — interaction frequency, not evidence strength",
+      "count": "42",
+      "assertionOn": true,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    },
+    {
+      "mode": "after",
+      "name": "visits-omitted-new-pointer",
+      "body": "Candidate: graph owner compatibility\n\nThe selected detail must describe the existing graph model.\n\nRelationship graph\n\n2 entities · 1 of 1 relationships shown\n\nfit\nassertion\n(1)\n· curated\nentity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt\n{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}",
+      "detail": "entity\nProduct B · product\ncount\n42\nvisits\n7 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture current-1 · receipt",
+      "visits": "7 — interaction frequency, not evidence strength",
+      "count": "42",
+      "assertionOn": true,
+      "callback": "{\n  \"source\": \"nodegraph\",\n  \"kind\": \"node\",\n  \"id\": \"b\",\n  \"label\": \"Product B\",\n  \"nodeKind\": \"product\",\n  \"count\": 42,\n  \"edges\": [\n    {\n      \"other\": \"Supplier A\",\n      \"weight\": 121,\n      \"type\": \"assertion\",\n      \"receipt\": {\n        \"source\": \"Independent contract fixture\",\n        \"release\": \"current-1\",\n        \"subjectId\": \"a\",\n        \"objectId\": \"b\",\n        \"url\": \"https://example.invalid/duplicate-should-not-appear\"\n      }\n    }\n  ]\n}"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": []
+}

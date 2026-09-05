@@ -1,0 +1,8 @@
+{
+  "error": "Error: actual Vite raw source equals installed source src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+  "stack": "Error: actual Vite raw source equals installed source src/nodetrace/vendor/nodegraph-live/NodeGraph.js\n    at check (file:///C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6c-nodetrace-installed-vite-entity-replay.mjs:16:88)\n    at file:///C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6c-nodetrace-installed-vite-entity-replay.mjs:71:198\n    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)",
+  "cause": null,
+  "childEvents": [],
+  "childExitCode": null,
+  "childSignalCode": null
+}

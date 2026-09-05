@@ -1,0 +1,38 @@
+{
+  "ok": false,
+  "probe": "capture-paint — no artifact may be written of a graph canvas that never painted",
+  "completedAt": "2026-08-14T00:07:24.568Z",
+  "observed": {
+    "railPhotographers": [
+      "scripts/capture-live-graph-rail.mjs",
+      "scripts/record-live-graph-rail.mjs",
+      "promotion/probes/j4-installed-target-proof.mjs"
+    ],
+    "ungated": [
+      "scripts/capture-live-graph-rail.mjs",
+      "scripts/record-live-graph-rail.mjs",
+      "promotion/probes/j4-installed-target-proof.mjs"
+    ],
+    "hollow": {
+      "exitCode": 0,
+      "lastLine": "live graph rail capture: PASS (10 entities, 15 traversal edges -> docs/screenshots/live-graph-rail.png)",
+      "artifactRewritten": true,
+      "artifactRestored": true
+    },
+    "real": {
+      "exitCode": 0,
+      "lastLine": "live graph rail capture: PASS (10 entities, 15 traversal edges -> docs/screenshots/live-graph-rail.png)",
+      "artifactRewritten": true,
+      "paintedNodes": 0
+    }
+  },
+  "issues": [
+    "scripts/capture-live-graph-rail.mjs writes an artifact of the graph canvas without calling waitForPaintedGraph",
+    "scripts/record-live-graph-rail.mjs writes an artifact of the graph canvas without calling waitForPaintedGraph",
+    "promotion/probes/j4-installed-target-proof.mjs writes an artifact of the graph canvas without calling waitForPaintedGraph",
+    "capture script exited 0 with a graph canvas that painted nothing",
+    "capture script printed PASS over an empty canvas",
+    "docs\\screenshots\\live-graph-rail.png was rewritten from a canvas that painted nothing",
+    "capture script passed without reporting any painted node rings"
+  ]
+}

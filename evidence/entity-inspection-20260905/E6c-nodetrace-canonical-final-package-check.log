@@ -1,0 +1,206 @@
+
+> @homenshum/nodetrace@0.1.0 check
+> npm run prepush
+
+
+> @homenshum/nodetrace@0.1.0 prepush
+> npm run happy-path && npm run smoke && npm run citations:check && npm run builder:smoke && npm run agent:scale:smoke && npm run capture:plan:smoke && npm run trace-coach:sqlite && npm run installer:next:e2e && npm run build && npm run package:dry-run && npm audit --omit=dev
+
+
+> @homenshum/nodetrace@0.1.0 happy-path
+> node scripts/init-sqlite.mjs --json-out docs/eval/nodetrace-happy-path.json
+
+nodetrace happy path: PASS 10ms
+wrote .nodetrace/nodetrace.sqlite
+wrote public/nodetrace-state.json
+
+> @homenshum/nodetrace@0.1.0 smoke
+> node scripts/smoke.mjs && node scripts/cli-smoke.mjs && node scripts/mcp-smoke.mjs
+
+nodetrace smoke: PASS
+nodetrace cli smoke: PASS
+nodetrace mcp smoke: PASS
+
+> @homenshum/nodetrace@0.1.0 citations:check
+> node scripts/citations-check.mjs
+
+nodetrace citations check: PASS 3 tours, 35 steps, 54 markdown citations
+
+> @homenshum/nodetrace@0.1.0 builder:smoke
+> node scripts/builder-access-smoke.mjs
+
+nodetrace builder access smoke: PASS
+
+> @homenshum/nodetrace@0.1.0 agent:scale:smoke
+> node scripts/agent-trace-scale-smoke.mjs
+
+nodetrace agent scale smoke: PASS 125 rows
+
+> @homenshum/nodetrace@0.1.0 capture:plan:smoke
+> node scripts/capture-plan-smoke.mjs
+
+nodetrace capture plan smoke: PASS (real capture: passed)
+
+> @homenshum/nodetrace@0.1.0 trace-coach:sqlite
+> node scripts/trace-coach-sqlite.mjs --json-out docs/eval/nodetrace-trace-coach-sqlite.json
+
+nodetrace trace coach sqlite: PASS 6 NodeRoom codebase steps (snapshot)
+wrote .nodetrace/trace-coach.sqlite
+wrote public/nodetrace-state.json
+
+> @homenshum/nodetrace@0.1.0 installer:next:e2e
+> node scripts/installer-next-e2e-smoke.mjs
+
+nodetrace next e2e smoke: PASS 104s
+
+> @homenshum/nodetrace@0.1.0 build
+> tsc --noEmit && vite build
+
+[36mvite v6.4.3 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 1755 modules transformed.
+rendering chunks...
+computing gzip size...
+[2mdist/[22m[32mindex.html                 [39m[1m[2m  0.48 kB[22m[1m[22m[2m │ gzip:   0.30 kB[22m
+[2mdist/[22m[35massets/index-ChpLb_-N.css  [39m[1m[2m 17.07 kB[22m[1m[22m[2m │ gzip:   3.99 kB[22m
+[2mdist/[22m[36massets/index-CKk4ZGQ4.js   [39m[1m[33m512.70 kB[39m[22m[2m │ gzip: 145.49 kB[22m
+[33m
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 3.91s[39m
+
+> @homenshum/nodetrace@0.1.0 package:dry-run
+> npm pack --dry-run
+
+npm notice
+npm notice package: @homenshum/nodetrace@0.1.0
+npm notice Tarball Contents
+npm notice 249B .claude/skills/real-codebase-captures/agents/openai.yaml
+npm notice 4.5kB .claude/skills/real-codebase-captures/SKILL.md
+npm notice 1.1kB LICENSE
+npm notice 12.4kB README.md
+npm notice 283B bin/nodetrace-capture.mjs
+npm notice 2.9kB bin/nodetrace-mcp.mjs
+npm notice 20.5kB bin/nodetrace.mjs
+npm notice 3.1kB db/schema.sql
+npm notice 3.8kB docs/AGENT_TRACE_ADOPTION.md
+npm notice 6.1kB docs/codebase/ARCHITECTURE.md
+npm notice 8.9kB docs/codebase/CONCERNS.md
+npm notice 5.0kB docs/codebase/CONVENTIONS.md
+npm notice 4.7kB docs/codebase/INTEGRATIONS.md
+npm notice 3.4kB docs/codebase/STACK.md
+npm notice 5.9kB docs/codebase/STRUCTURE.md
+npm notice 7.5kB docs/codebase/TESTING.md
+npm notice 2B docs/eval/.gitkeep
+npm notice 433B docs/eval/nodetrace-agent-scale-smoke.json
+npm notice 181B docs/eval/nodetrace-builder-access-smoke.json
+npm notice 151B docs/eval/nodetrace-capture-plan-smoke.json
+npm notice 152B docs/eval/nodetrace-cli-smoke.json
+npm notice 441B docs/eval/nodetrace-happy-path.json
+npm notice 570B docs/eval/nodetrace-next-e2e-smoke.json
+npm notice 149B docs/eval/nodetrace-smoke.json
+npm notice 330.4kB docs/eval/nodetrace-trace-coach-minimap.png
+npm notice 1.0kB docs/eval/nodetrace-trace-coach-sqlite.json
+npm notice 323.7kB docs/eval/nodetrace-trace-coach-sqlite.png
+npm notice 939B docs/eval/nodetrace-understand-anything-noderoom.json
+npm notice 2.4kB docs/FEATURE_PROOF_STORYBOARD.md
+npm notice 10.4kB docs/GRAPH_INTEGRATION.md
+npm notice 6.8kB docs/PORTING.md
+npm notice 2.2MB docs/screenshots/live-graph-rail.gif
+npm notice 39.4kB docs/screenshots/live-graph-rail.png
+npm notice 74.9kB docs/screenshots/nodetrace-dashboard.png
+npm notice 99.3kB docs/screenshots/nodetrace-trace-lens.png
+npm notice 14.7kB docs/SIMPLIFICATION_REPORT.md
+npm notice 21.4kB docs/START_HERE.md
+npm notice 1.8kB docs/TRACE_WORKPAPER_STANDARD.md
+npm notice 5.8kB docs/WALKTHROUGH.md
+npm notice 1.2kB docs/walkthroughs/nodetrace-walkthrough-receipt.json
+npm notice 186.4kB docs/walkthroughs/nodetrace-walkthrough.gif
+npm notice 70.3kB docs/walkthroughs/nodetrace-walkthrough.mp4
+npm notice 3.8kB examples/builder-access/server-route.mjs
+npm notice 1.8kB examples/qa-agent/README.md
+npm notice 4.5kB examples/real-codebase-capture/noderoom.capture.json
+npm notice 2.0kB examples/real-codebase-capture/README.md
+npm notice 5.3kB examples/trace-coach-sqlite/README.md
+npm notice 374B index.html
+npm notice 3.8kB package.json
+npm notice 102.1kB public/captures/coach-step-01-artifact-entry-ide.png
+npm notice 5.4kB public/captures/coach-step-01-artifact-entry-minimap.svg
+npm notice 3.4kB public/captures/coach-step-01-artifact-entry-ui.png
+npm notice 105.3kB public/captures/coach-step-02-detail-tabs-ide.png
+npm notice 5.4kB public/captures/coach-step-02-detail-tabs-minimap.svg
+npm notice 4.7kB public/captures/coach-step-02-detail-tabs-ui.png
+npm notice 74.2kB public/captures/coach-step-03-trace-data-ide.png
+npm notice 5.4kB public/captures/coach-step-03-trace-data-minimap.svg
+npm notice 9.7kB public/captures/coach-step-03-trace-data-ui.png
+npm notice 94.7kB public/captures/coach-step-04-step-row-ide.png
+npm notice 5.4kB public/captures/coach-step-04-step-row-minimap.svg
+npm notice 33.2kB public/captures/coach-step-04-step-row-ui.png
+npm notice 79.9kB public/captures/coach-step-05-flow-ide.png
+npm notice 5.4kB public/captures/coach-step-05-flow-minimap.svg
+npm notice 17.2kB public/captures/coach-step-05-flow-ui.png
+npm notice 137.5kB public/captures/coach-step-06-style-ide.png
+npm notice 5.4kB public/captures/coach-step-06-style-minimap.svg
+npm notice 95.7kB public/captures/coach-step-06-style-ui.png
+npm notice 4.3kB public/captures/noderoom-real-capture-manifest.json
+npm notice 14.2kB public/captures/noderoom-trace-knowledge-graph.json
+npm notice 311B public/favicon.svg
+npm notice 27.8kB public/nodetrace-state.json
+npm notice 7.1kB scripts/agent-trace-scale-smoke.mjs
+npm notice 3.6kB scripts/builder-access-smoke.mjs
+npm notice 3.2kB scripts/capture-live-graph-rail.mjs
+npm notice 6.6kB scripts/capture-noderoom-real-assets.mjs
+npm notice 2.3kB scripts/capture-plan-fixture.mjs
+npm notice 4.6kB scripts/capture-plan-smoke.mjs
+npm notice 16.1kB scripts/citations-check.mjs
+npm notice 6.0kB scripts/cli-smoke.mjs
+npm notice 8.3kB scripts/init-sqlite.mjs
+npm notice 3.8kB scripts/installer-next-e2e-smoke.mjs
+npm notice 8.9kB scripts/lib/entity-inspection-proof.mjs
+npm notice 10.8kB scripts/lib/proof-server.mjs
+npm notice 1.7kB scripts/mcp-smoke.mjs
+npm notice 6.8kB scripts/record-live-graph-rail.mjs
+npm notice 5.8kB scripts/render-walkthrough-media.mjs
+npm notice 11.7kB scripts/smoke.mjs
+npm notice 43.7kB scripts/trace-coach-sqlite.mjs
+npm notice 17.7kB scripts/ui-readiness.mjs
+npm notice 14.3kB scripts/understand-anything-noderoom.mjs
+npm notice 28.0kB src/capture/codebaseCapture.mjs
+npm notice 17.1kB src/DemoDashboard.tsx
+npm notice 3.7kB src/demoNavigation.ts
+npm notice 3.7kB src/demoState.ts
+npm notice 269B src/main.tsx
+npm notice 17.1kB src/styles.css
+npm notice 406B src/trace/index.ts
+npm notice 4.3kB src/trace/LiveGraphRail.tsx
+npm notice 3.9kB src/trace/trace.css
+npm notice 9.0kB src/trace/TraceLensPanel.tsx
+npm notice 3.4kB src/trace/TraceLensProvider.tsx
+npm notice 3.5kB src/trace/types.ts
+npm notice 627B tsconfig.json
+npm notice 7.0kB vendor/nodegraph-live/graph-model.d.ts
+npm notice 16.6kB vendor/nodegraph-live/graph-model.js
+npm notice 513B vendor/nodegraph-live/index.d.ts
+npm notice 274B vendor/nodegraph-live/index.js
+npm notice 1.4kB vendor/nodegraph-live/NodeGraph.d.ts
+npm notice 34.9kB vendor/nodegraph-live/NodeGraph.js
+npm notice 154B vendor/nodegraph-live/react.d.ts
+npm notice 89B vendor/nodegraph-live/react.js
+npm notice 182B vendor/nodegraph-live/README.md
+npm notice 2.9kB vendor/nodegraph-live/session.d.ts
+npm notice 12.0kB vendor/nodegraph-live/session.js
+npm notice 217B vite.config.ts
+npm notice Tarball Details
+npm notice name: @homenshum/nodetrace
+npm notice version: 0.1.0
+npm notice filename: homenshum-nodetrace-0.1.0.tgz
+npm notice package size: 4.1 MB
+npm notice unpacked size: 4.7 MB
+npm notice shasum: e7aa586a20ff8c7348928be16051750ac506a1e3
+npm notice integrity: sha512-UjwDjGDx787d/[...]MdLNNHYegG3/w==
+npm notice total files: 115
+npm notice
+homenshum-nodetrace-0.1.0.tgz
+found 0 vulnerabilities

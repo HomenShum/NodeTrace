@@ -1,0 +1,7 @@
+# Matched NodeTrace entity inspection
+
+Six completed cells compare the final source and installed Next application with their exact original six-event and four-event fixtures at 320, 390 and 1440 pixels. They preserve URLs, scroll positions, protected copy and original pointer identity while adding native keyboard selection. Twelve captures contain 36 canonical PNGs. Every saved PNG is byte-identical to the image checked by PIL for more than 40 dark pixels inside the current canvas.
+
+The first run passed five cells, then failed the installed 1440 overview current-frame label assertion. That entire failure is retained. A diagnostic retry showed graph pixels and seven current labels but a probe encoding mistake changed the expected middle dot. Its failure is retained too. The second retry uses exact UTF-8 and succeeds for the same cell. A bounded current-frame wait is available but was not needed in that successful retry; no application rendering was changed. Successful cells are combined only after exact source/index/installed/original-fixture equality checks. The failed full run is never relabeled passed.
+
+This is routed input replay, not a fresh backend generation. The source and installed code/build/public state were unchanged. Whole-product grades remain null.

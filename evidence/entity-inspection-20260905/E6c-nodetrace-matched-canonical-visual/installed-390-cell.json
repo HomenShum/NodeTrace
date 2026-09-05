@@ -1,0 +1,570 @@
+{
+  "name": "installed-390",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+  "traceRecords": 4,
+  "route": "/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "replay": "byte-exact original response through browser routing; not fresh backend output",
+  "captures": [
+    {
+      "name": "installed-390-populated",
+      "url": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll": {
+        "x": 0,
+        "y": 777
+      },
+      "overflow": 0,
+      "theme": "rgb(245, 247, 251)",
+      "entityCount": "10",
+      "edgeCount": "15",
+      "canvas": {
+        "x": 45,
+        "y": 647,
+        "width": 300,
+        "height": 298,
+        "documentY": 1424
+      },
+      "selector": {
+        "x": 27,
+        "y": 426.6875,
+        "width": 336,
+        "height": 44,
+        "documentY": 1203.6875
+      },
+      "fit": {
+        "x": 44,
+        "y": 594,
+        "width": 44,
+        "height": 44,
+        "documentY": 1371
+      },
+      "readout": null,
+      "selection": null,
+      "protected": [
+        {
+          "selector": ".showcase",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+          "bounds": {
+            "x": 12,
+            "y": -765,
+            "width": 366,
+            "height": 802.1875,
+            "documentY": 12
+          }
+        },
+        {
+          "selector": "[aria-label=\"Trace Coach launch path\"]",
+          "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+          "bounds": {
+            "x": 29,
+            "y": -421.15625,
+            "width": 332,
+            "height": 441.34375,
+            "documentY": 355.84375
+          }
+        },
+        {
+          "selector": ".liveGraphRailHead",
+          "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+          "bounds": {
+            "x": 27,
+            "y": 310.71875,
+            "width": 336,
+            "height": 83.125,
+            "documentY": 1087.71875
+          }
+        }
+      ],
+      "frame": [
+        {
+          "text": "demo-artifact",
+          "x": 54.295305013656616,
+          "y": 45.8520839578807,
+          "width": 81.68603515625,
+          "height": 10,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "schema",
+          "x": 241.42212060865617,
+          "y": 52.906046470884924,
+          "width": 44.705078125,
+          "height": 10,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "nodetrace",
+          "x": 165.2301685422967,
+          "y": 136.85958148594906,
+          "width": 59.4951171875,
+          "height": 10,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "state",
+          "x": 263.4306473398171,
+          "y": 193.5651201232161,
+          "width": 28.708984375,
+          "height": 9,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "copilot.agentOperationStream",
+          "x": 97.17589973570334,
+          "y": 225.71666963152785,
+          "width": 178.298828125,
+          "height": 13,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "events",
+          "x": 132.51135495893175,
+          "y": 245.62527046602943,
+          "width": 38.5888671875,
+          "height": 9,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "pixelProof": [
+        {
+          "path": "installed-390-populated.png",
+          "sha256": "0a2feef00498e3894ebcecd245c9941eb7de3b9fa8b9d56b77b1db7227ebc418",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "installed-390-populated-paint-attempt-1.png",
+              "sha256": "0a2feef00498e3894ebcecd245c9941eb7de3b9fa8b9d56b77b1db7227ebc418",
+              "darkGraphPixels": 544,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                650,
+                342,
+                844
+              ],
+              "rasterSize": [
+                390,
+                844
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "installed-390-populated-full.png",
+          "sha256": "99255b9a5ff40d8d1badc05e05513e2ca4d9bd5ede455799091f5a83a20b1067",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "installed-390-populated-full-paint-attempt-1.png",
+              "sha256": "99255b9a5ff40d8d1badc05e05513e2ca4d9bd5ede455799091f5a83a20b1067",
+              "darkGraphPixels": 1216,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                1427,
+                342,
+                1719
+              ],
+              "rasterSize": [
+                390,
+                1767
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "installed-390-populated-change-boundary.png",
+          "sha256": "bb4737cd1ff87da7de49d49a88387b98dee0baaf9ec7cda758a6ed4fbd32da31",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "installed-390-populated-change-boundary-paint-attempt-1.png",
+              "sha256": "bb4737cd1ff87da7de49d49a88387b98dee0baaf9ec7cda758a6ed4fbd32da31",
+              "darkGraphPixels": 525,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                652,
+                342,
+                844
+              ],
+              "rasterSize": [
+                390,
+                844
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        }
+      ],
+      "boundary": [
+        {
+          "label": "CHANGE A · Entity controls and local graph heading",
+          "x": 27,
+          "y": 405.84375,
+          "width": 336,
+          "height": 234.15625,
+          "documentY": 1182.84375,
+          "borderWidth": 3
+        },
+        {
+          "label": "CHANGE B · Graph and entity result",
+          "x": 28,
+          "y": 649,
+          "width": 334,
+          "height": 298,
+          "documentY": 1426,
+          "borderWidth": 3
+        }
+      ]
+    },
+    {
+      "name": "installed-390-native-selected",
+      "url": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "scroll": {
+        "x": 0,
+        "y": 1056
+      },
+      "overflow": 0,
+      "theme": "rgb(245, 247, 251)",
+      "entityCount": "10",
+      "edgeCount": "15",
+      "canvas": {
+        "x": 45,
+        "y": 370,
+        "width": 300,
+        "height": 298,
+        "documentY": 1426
+      },
+      "selector": {
+        "x": 27,
+        "y": 149.6875,
+        "width": 336,
+        "height": 44,
+        "documentY": 1205.6875
+      },
+      "fit": {
+        "x": 44,
+        "y": 317,
+        "width": 44,
+        "height": 44,
+        "documentY": 1373
+      },
+      "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002",
+      "selection": "entityworkSurface.evidenceCarousel · toolcountunknown — not measuredvisits1 — interaction frequency, not evidence strength",
+      "protected": [
+        {
+          "selector": ".showcase",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+          "bounds": {
+            "x": 12,
+            "y": -1044,
+            "width": 366,
+            "height": 802.1875,
+            "documentY": 12
+          }
+        },
+        {
+          "selector": "[aria-label=\"Trace Coach launch path\"]",
+          "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+          "bounds": {
+            "x": 29,
+            "y": -700.15625,
+            "width": 332,
+            "height": 441.34375,
+            "documentY": 355.84375
+          }
+        },
+        {
+          "selector": ".liveGraphRailHead",
+          "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+          "bounds": {
+            "x": 27,
+            "y": 33.71875,
+            "width": 336,
+            "height": 83.125,
+            "documentY": 1089.71875
+          }
+        }
+      ],
+      "frame": [
+        {
+          "text": "demo-artifact",
+          "x": 54.295305013656616,
+          "y": 45.85069159341223,
+          "width": 81.68603515625,
+          "height": 10,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "schema",
+          "x": 241.42212060865617,
+          "y": 52.90829776148649,
+          "width": 44.705078125,
+          "height": 10,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "nodetrace",
+          "x": 165.22895135354042,
+          "y": 136.85951141565926,
+          "width": 59.4951171875,
+          "height": 10,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "state",
+          "x": 263.4306473398171,
+          "y": 193.56308582447974,
+          "width": 28.708984375,
+          "height": 9,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "copilot.agentOperationStream",
+          "x": 97.17589973570334,
+          "y": 225.71892092212946,
+          "width": 178.298828125,
+          "height": 13,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "events",
+          "x": 132.51135495893175,
+          "y": 245.6258762349865,
+          "width": 38.5888671875,
+          "height": 9,
+          "canvasWidth": 300,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "pixelProof": [
+        {
+          "path": "installed-390-native-selected.png",
+          "sha256": "893e4318718cf52e78214d2de8d96871bfae487c63316b4c91f1fda6a128772d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "installed-390-native-selected-paint-attempt-1.png",
+              "sha256": "893e4318718cf52e78214d2de8d96871bfae487c63316b4c91f1fda6a128772d",
+              "darkGraphPixels": 1216,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                373,
+                342,
+                665
+              ],
+              "rasterSize": [
+                390,
+                844
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "installed-390-native-selected-full.png",
+          "sha256": "ef4e0e6c322f1bb2fb1b9b63e49ed7fae332564ef21f6e973637172fac9cca93",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "installed-390-native-selected-full-paint-attempt-1.png",
+              "sha256": "ef4e0e6c322f1bb2fb1b9b63e49ed7fae332564ef21f6e973637172fac9cca93",
+              "darkGraphPixels": 1215,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                1429,
+                342,
+                1721
+              ],
+              "rasterSize": [
+                390,
+                1900
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "installed-390-native-selected-change-boundary.png",
+          "sha256": "1933f6b814c0da658d8fea00e9ab0f089969d6ebcdd8c1c78a047ba8d4c24d80",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "installed-390-native-selected-change-boundary-paint-attempt-1.png",
+              "sha256": "1933f6b814c0da658d8fea00e9ab0f089969d6ebcdd8c1c78a047ba8d4c24d80",
+              "darkGraphPixels": 1216,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                373,
+                342,
+                665
+              ],
+              "rasterSize": [
+                390,
+                844
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        }
+      ],
+      "boundary": [
+        {
+          "label": "CHANGE A · Entity controls and local graph heading",
+          "x": 27,
+          "y": 126.84375,
+          "width": 336,
+          "height": 234.15625,
+          "documentY": 1182.84375,
+          "borderWidth": 3
+        },
+        {
+          "label": "CHANGE B · Graph and entity result",
+          "x": 28,
+          "y": 370,
+          "width": 334,
+          "height": 446.890625,
+          "documentY": 1426,
+          "borderWidth": 3
+        }
+      ]
+    }
+  ],
+  "console": [],
+  "network": [
+    {
+      "url": "http://127.0.0.1:54274/_next/static/css/0d00b21c23ed86e9.css",
+      "status": 200,
+      "bytes": 14142,
+      "sha256": "9e0fd0ce60b07262d570e1856491550979b7d940c0dc1771a27a6f097aa9ae59",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\css\\0d00b21c23ed86e9.css",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/webpack-89e0ae3b0ef9446a.js",
+      "status": 200,
+      "bytes": 4842,
+      "sha256": "3af02a78b5750a3d51fca8d83e27c1143bff21c974aa70bfdd561baa7348e849",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\webpack-89e0ae3b0ef9446a.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/main-app-37366d700e32e570.js",
+      "status": 200,
+      "bytes": 557,
+      "sha256": "e64e9c3f560e09ce1d58e410e8854a8e340186fa27a816ebabc91e5c91b0524c",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\main-app-37366d700e32e570.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/app/nodetrace/page-be7c7f5371dc7b35.js",
+      "status": 200,
+      "bytes": 3487,
+      "sha256": "984e509fed442856130ef168017559f81e06cfc2295d81c97d7ebfb2e4d5ae13",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\app\\nodetrace\\page-be7c7f5371dc7b35.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\255-37e0f0325134c4d7.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\4bd1b696-c023c6e3521b1417.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\css\\1383a2b9f3290658.css",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\5a255377.58c8dcfdf915e228.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/484.e4f343b70676fc81.js",
+      "status": 200,
+      "bytes": 51510,
+      "sha256": "b1a80e55c55ae6d28f7e1970218d3eb41d86dd49aecf9fc81dc5fe52aadf8fee",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\484.e4f343b70676fc81.js",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:54274/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\941.b31d29c9d2dae6db.js",
+      "builtBytesMatch": true
+    }
+  ],
+  "focus": [
+    {
+      "tag": "BUTTON",
+      "text": "Inspect trace"
+    },
+    {
+      "tag": "SELECT",
+      "text": "EntityChoose an entityactor: nodetracetool: workSurface.traceStripstep: schematool: workSurface.evidenceCarouselartifact: demo-artifactstep: prooftool: copilot.agentOperationStreamstep: eventstool: shell.statusStripstep: state"
+    }
+  ],
+  "selectedTarget": "tool: workSurface.evidenceCarousel",
+  "expectedEvents": [
+    "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+  ]
+}

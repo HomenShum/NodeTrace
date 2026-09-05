@@ -1,0 +1,40 @@
+{
+  "body": "Independent component review\nLive graph rail\n14 entities from 6 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.\nEntity\nChoose an entity\nactor: trace-coach\ntool: workSurface.traceStrip\nartifact: noderoom-codebase-trace\nstep: entry\ntool: workSurface.trace\nstep: trace-tabs\ntool: workSurface.traceData\nstep: data-model\ntool: workSurface.traceSteps\nstep: steps\ntool: workSurface.traceFlow\nstep: flow\ntool: workSurface.traceStyle\nstep: look-and-feel\nChoose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.\nRelationship graph\n\n14 entities · 31 of 31 relationships shown\n\nfit\ntraversal\n(31)\n· local\nentity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength\nactor: trace-coachproduced by trace events:\nreplacement-coach-step-01-artifact-entry-trace\nreplacement-coach-step-02-detail-tabs-trace\nreplacement-coach-step-03-trace-data-trace\nreplacement-coach-step-04-step-row-trace\nreplacement-coach-step-05-flow-trace\nreplacement-coach-step-06-style-trace",
+  "selector": "actor: trace-coach",
+  "readout": "actor: trace-coachproduced by trace events:\nreplacement-coach-step-01-artifact-entry-trace\nreplacement-coach-step-02-detail-tabs-trace\nreplacement-coach-step-03-trace-data-trace\nreplacement-coach-step-04-step-row-trace\nreplacement-coach-step-05-flow-trace\nreplacement-coach-step-06-style-trace",
+  "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+  "count": "14",
+  "overflow": false,
+  "labels": [
+    {
+      "text": "noderoom-codebase-trace",
+      "x": 46.808202328280345,
+      "y": 66.47568417274535,
+      "width": 157.2744140625,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "trace-coach",
+      "x": 158.71237108483245,
+      "y": 151.73959096582212,
+      "width": 69.15966796875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "workSurface.trace",
+      "x": 115.01485358333635,
+      "y": 235.8764994996117,
+      "width": 106.76318359375,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ]
+}

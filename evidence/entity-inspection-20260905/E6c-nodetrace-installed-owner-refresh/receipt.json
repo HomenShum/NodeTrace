@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-05T04:55:26.308165+00:00",
+  "complete": true,
+  "lanes": [
+    {
+      "kind": "next",
+      "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-BzFZOC",
+      "exitCode": 0,
+      "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "changes": [
+        ".next/BUILD_ID",
+        ".next/app-build-manifest.json",
+        ".next/build-manifest.json",
+        ".next/cache/webpack/client-production/0.pack",
+        ".next/cache/webpack/client-production/1.pack",
+        ".next/cache/webpack/client-production/2.pack",
+        ".next/cache/webpack/client-production/index.pack",
+        ".next/cache/webpack/client-production/index.pack.old",
+        ".next/cache/webpack/server-production/0.pack",
+        ".next/cache/webpack/server-production/1.pack",
+        ".next/cache/webpack/server-production/index.pack",
+        ".next/cache/webpack/server-production/index.pack.old",
+        ".next/prerender-manifest.json",
+        ".next/react-loadable-manifest.json",
+        ".next/server/app/_not-found.html",
+        ".next/server/app/_not-found.rsc",
+        ".next/server/app/index.html",
+        ".next/server/app/index.rsc",
+        ".next/server/app/nodetrace.html",
+        ".next/server/app/nodetrace.rsc",
+        ".next/server/middleware-build-manifest.js",
+        ".next/server/middleware-react-loadable-manifest.js",
+        ".next/server/pages/404.html",
+        ".next/server/pages/500.html",
+        ".next/static/1ISnjmozD6ZUDJdfC08N-/_buildManifest.js",
+        ".next/static/1ISnjmozD6ZUDJdfC08N-/_ssgManifest.js",
+        ".next/static/MAaIkKoQX_oKDloU4ieQR/_buildManifest.js",
+        ".next/static/MAaIkKoQX_oKDloU4ieQR/_ssgManifest.js",
+        ".next/static/chunks/484.e4f343b70676fc81.js",
+        ".next/static/chunks/484.fd62990140bbdf58.js",
+        ".next/static/chunks/webpack-3c58612e31ce3065.js",
+        ".next/static/chunks/webpack-89e0ae3b0ef9446a.js",
+        ".next/trace",
+        "src/nodetrace/vendor/nodegraph-live/NodeGraph.js"
+      ],
+      "unexpectedChanges": [],
+      "priorBuildSha256": "24821f79ea7d5c69df80154e2db2293bee18544d9ae227d6be8d03920f0a4eaf",
+      "priorRendererSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "beforeIdentitySha256": "ecad277c021a814a4b99b589870e59f065e1cb9c0a50f7afebaecf0e000362d2",
+      "afterIdentitySha256": "42eb1b630f142630b084bce09fbaf647e8f8dcd9f25fe860a6e27ea2c87c6cc5"
+    },
+    {
+      "kind": "vite",
+      "consumer": "D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905",
+      "exitCode": 0,
+      "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "changes": [
+        "dist/nodetrace-state.json",
+        "src/nodetrace/vendor/nodegraph-live/NodeGraph.js"
+      ],
+      "unexpectedChanges": [],
+      "priorBuildSha256": "90b3def865d1a0e625fd0f14898a142d891c2bab51144dd9b07f89fd7d021d12",
+      "priorRendererSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "beforeIdentitySha256": "28c776bbb57b495542f9601d567c698113a78288f3fac18f47ff22b260f2542f",
+      "afterIdentitySha256": "c21b9a9e680baabc04d5ae174f895e9110ad58b3f4298c6a2d60c119aebebb6e"
+    }
+  ],
+  "sourceStayedExact": true
+}

@@ -23,7 +23,7 @@ import { jsx as _jsx, jsxs as _jsxs, Fragment as _Fragment } from "react/jsx-run
  * opacity, which are where measured magnitudes live. Same rule inside the
  * model: only `evidence` weights get the edge width channel.
  */
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Sigma from "sigma";
 // Ringed nodes — a light disc with a coloured border — read as ENTITIES;
 // a filled disc reads as a scatter point. Official sigma program.
@@ -39,8 +39,94 @@ import { buildGraph, patchGraph, EDGE_TYPE_ATTR, edgeTypeCounts, edgeTypesPresen
 const settleMs = (order) => Math.min(1000 + order * 2, 6000);
 const syncIterations = (order) => (order > 1200 ? 120 : 300);
 const labelThreshold = (order) => (order <= 150 ? 0 : 8);
-export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, kindColors, onNode, onContext, }) {
+// Local NodeTrace rendering delta: glyph bounds, rather than anchor positions,
+// decide whether a label fits. This map contains only the current canvas frame.
+// The owning rail supplies every complete identity through its native selector.
+function frameLabels(dark) {
+    const occupied = new Map();
+    const gap = 4;
+    const intersects = (a, b) => a.x < b.x + b.width + gap && a.x + a.width + gap > b.x &&
+        a.y < b.y + b.height + gap && a.y + a.height + gap > b.y;
+    function place(ctx, data, settings) {
+        if (!data.label) return null;
+        const { width, height } = ctx.canvas.getBoundingClientRect();
+        if (data.x < 0 || data.y < 0 || data.x > width || data.y > height) return null;
+        ctx.font = `${settings.labelWeight} ${settings.labelSize}px ${settings.labelFont}`;
+        ctx.textAlign = "left";
+        ctx.textBaseline = "alphabetic";
+        let text = data.label;
+        const measure = (value) => {
+            const m = ctx.measureText(value);
+            return { left: m.actualBoundingBoxLeft, width: m.actualBoundingBoxLeft + m.actualBoundingBoxRight,
+                ascent: m.actualBoundingBoxAscent, height: m.actualBoundingBoxAscent + m.actualBoundingBoxDescent };
+        };
+        let m = measure(text);
+        if (m.width > width - gap * 2) {
+            const points = Array.from(text);
+            let lo = 0, hi = points.length;
+            while (lo < hi) {
+                const mid = Math.ceil((lo + hi) / 2);
+                if (measure(points.slice(0, mid).join("") + "…").width <= width - gap * 2) lo = mid;
+                else hi = mid - 1;
+            }
+            if (!lo) return null;
+            text = points.slice(0, lo).join("") + "…";
+            m = measure(text);
+        }
+        const offset = data.size + gap;
+        const candidates = [
+            [data.x + offset, data.y - m.height / 2],
+            [data.x - offset - m.width, data.y - m.height / 2],
+            [Math.max(gap, Math.min(width - gap - m.width, data.x - m.width / 2)), data.y - offset - m.height],
+            [Math.max(gap, Math.min(width - gap - m.width, data.x - m.width / 2)), data.y + offset],
+        ];
+        for (const [x, y] of candidates) {
+            const rect = { x, y, width: m.width, height: m.height };
+            if (x < gap || y < gap || x + m.width > width - gap || y + m.height > height - gap) continue;
+            if ([...occupied].some(([key, other]) => key !== data.key && intersects(rect, other))) continue;
+            const result = { ...rect, text, drawX: x + m.left, drawY: y + m.ascent };
+            occupied.set(data.key, result);
+            return result;
+        }
+        return null;
+    }
+    function draw(ctx, data, settings, hover) {
+        ctx.save();
+        ctx.font = `${settings.labelWeight} ${settings.labelSize}px ${settings.labelFont}`;
+        ctx.textAlign = "left";
+        ctx.textBaseline = "alphabetic";
+        const label = (hover && occupied.get(data.key)) || place(ctx, data, settings);
+        if (label) {
+            if (hover) {
+                ctx.fillStyle = dark ? "#141619" : "#ffffff";
+                ctx.fillRect(label.x - 2, label.y - 2, label.width + 4, label.height + 4);
+            }
+            ctx.fillStyle = dark ? "#e2e6e9" : "#15181a";
+            ctx.fillText(label.text, label.drawX, label.drawY);
+        }
+        ctx.restore();
+    }
+    return { clear: () => occupied.clear(), label: (ctx, data, settings) => draw(ctx, data, settings, false),
+        hover: (ctx, data, settings) => draw(ctx, data, settings, true) };
+}
+// Detail and pointer callbacks describe the same reconciled graph as the canvas.
+function nodeMessage(graph, enabledTypes, id) {
+    if (id === null || !graph.hasNode(id)) return null;
+    const node = graph.getNodeAttributes(id);
+    const edges = [];
+    graph.forEachEdge(id, (_key, edge, source, target) => {
+        const type = edge[EDGE_TYPE_ATTR];
+        if (!enabledTypes.has(type)) return;
+        const other = source === id ? target : source;
+        edges.push({ other: graph.getNodeAttribute(other, "label"), weight: edge.weight, type,
+            ...(edge.receipt ? { receipt: edge.receipt } : {}) });
+    });
+    return { source: "nodegraph", kind: "node", id, label: node.label, nodeKind: node.kind,
+        ...(typeof node.count === "number" ? { count: node.count } : {}), edges };
+}
+export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, kindColors, selectedNodeId, onNode, onContext, }) {
     const containerRef = useRef(null);
+    const hoverRef = useRef(null);
     const sigmaRef = useRef(null);
     // Read through a ref inside the Sigma handlers: re-subscribing the renderer
     // every time a parent re-renders would drop clicks mid-gesture.
@@ -62,7 +148,8 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
     // eslint-disable-next-line react-hooks/exhaustive-deps -- initial build only
     const graph = useMemo(() => buildGraph(nodes, edges, { dark, visits, kindColors }), [dark]);
     const [rev, setRev] = useState(0);
-    useEffect(() => {
+    useLayoutEffect(() => {
+        hoverRef.current = null;
         const patch = patchGraph(graph, nodes, edges, { dark, visits, kindColors });
         const added = patch.added;
         for (const id of patch.removedNodeIds)
@@ -86,18 +173,22 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
                 clearTimeout(settleTimer.current);
             settleTimer.current = setTimeout(() => layoutRef.current?.stop(), Math.min(600 + added * 40, 2000));
         }
-        if (patch.added > 0 || patch.removed > 0)
-            setRev((r) => r + 1);
+        // Attribute-only patches also change the selected detail and callbacks.
+        setRev((r) => r + 1);
         sigmaRef.current?.setSetting("labelRenderedSizeThreshold", labelThreshold(graph.order));
         sigmaRef.current?.refresh();
     }, [graph, nodes, edges, dark, visits, kindColors]);
     const types = useMemo(() => edgeTypesPresent(graph), [graph, rev]);
     const counts = useMemo(() => edgeTypeCounts(graph), [graph, rev]);
     const [on, setOn] = useState(() => new Set(types));
-    const [selected, setSelected] = useState(null);
+    const [selectedId, setSelectedId] = useState(null);
+    const selectionInputs = useRef({ on });
+    selectionInputs.current = { on };
+    const selected = nodeMessage(graph, on, selectedNodeId === undefined ? selectedId : selectedNodeId);
     // A rebuilt graph brings a different set of types; keep every one switched
     // on rather than carrying a stale filter across a payload change.
-    useEffect(() => setOn(new Set(types)), [types]);
+    const typeSignature = types.join(",");
+    useEffect(() => setOn(new Set(types)), [typeSignature]);
     /**
      * Which elements the current filter hides. Computed once per filter change
      * (O(V+E)) instead of inside the reducers, which Sigma calls per element per
@@ -152,10 +243,12 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
         // everything else drops to a whisper. A ref, not state — reducers run per
         // frame and a setState per hover would re-render React for every pixel
         // the cursor crosses.
-        const hoverRef = { current: null };
         const DIM = dark ? "#2a2e33" : "#e2e5e7";
+        const labels = frameLabels(dark);
         const renderer = new Sigma(graph, el, {
             renderLabels: true,
+            defaultDrawNodeLabel: labels.label,
+            defaultDrawNodeHover: labels.hover,
             // At a few thousand nodes every label is noise and a per-frame cost.
             labelRenderedSizeThreshold: labelThreshold(graph.order),
             labelFont: "ui-sans-serif, system-ui, sans-serif",
@@ -197,6 +290,7 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
                 return { ...data, zIndex: 1 };
             },
         });
+        renderer.on("beforeRender", labels.clear);
         renderer.on("enterNode", ({ node }) => {
             hoverRef.current = node;
             renderer.refresh();
@@ -207,27 +301,10 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
         });
         sigmaRef.current = renderer;
         const emitNode = (id) => {
-            const a = graph.getNodeAttributes(id);
-            const msg = {
-                source: "nodegraph",
-                kind: "node",
-                id,
-                label: a.label,
-                nodeKind: a.kind,
-                ...(typeof a.count === "number" ? { count: a.count } : {}),
-                edges: graph
-                    .edges(id)
-                    .filter((e) => !hiddenRef.current.hiddenEdges.has(e))
-                    .map((e) => ({
-                    other: graph.getNodeAttribute(graph.opposite(id, e), "label"),
-                    weight: graph.getEdgeAttribute(e, "weight"),
-                    type: graph.getEdgeAttribute(e, EDGE_TYPE_ATTR),
-                    ...(graph.getEdgeAttribute(e, "receipt")
-                        ? { receipt: graph.getEdgeAttribute(e, "receipt") }
-                        : {}),
-                })),
-            };
-            setSelected(msg);
+            const current = selectionInputs.current;
+            const msg = nodeMessage(graph, current.on, id);
+            if (!msg) return;
+            setSelectedId(id);
             handlers.current.onNode?.(msg);
         };
         renderer.on("clickNode", ({ node }) => emitNode(node));
@@ -246,7 +323,7 @@ export function NodeGraph({ nodes, edges, visits, dark = false, height = 480, ki
             };
             handlers.current.onContext?.(msg);
         });
-        renderer.on("clickStage", () => setSelected(null));
+        renderer.on("clickStage", () => setSelectedId(null));
         // DRAG. A held node follows the pointer; the layout pauses so physics
         // does not fight the hand, and it stays paused after release — a reader
         // who placed a node has expressed an opinion the next settle should not

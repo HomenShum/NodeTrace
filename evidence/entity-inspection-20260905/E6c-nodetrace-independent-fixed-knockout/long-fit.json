@@ -1,0 +1,80 @@
+{
+  "selection": "artifact: artifact-0",
+  "vendor": "entity\nartifact-0 · artifact\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+  "readout": "artifact: artifact-0\nproduced by trace event:\ndense-0",
+  "visits": "1 — interaction frequency, not evidence strength",
+  "labels": [
+    {
+      "text": "surface-0",
+      "x": 86.79792965554005,
+      "y": 52.18003023610974,
+      "width": 55.79150390625,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "International supplier review International sup…",
+      "x": 4,
+      "y": 69.36229289887724,
+      "width": 282.43505859375,
+      "height": 13,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "International supplier review International sup…",
+      "x": 4,
+      "y": 127.50730944618422,
+      "width": 282.43505859375,
+      "height": 13,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "International supplier review International sup…",
+      "x": 5.56494140625,
+      "y": 174.57037464322275,
+      "width": 282.43505859375,
+      "height": 13,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "International supplier review International sup…",
+      "x": 5.56494140625,
+      "y": 198.49611373973522,
+      "width": 282.43505859375,
+      "height": 13,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "surface-3",
+      "x": 55.40846739448084,
+      "y": 223.42640793469957,
+      "width": 54.79150390625,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "overflow": false,
+  "panels": [
+    {
+      "width": 294,
+      "scroll": 294
+    },
+    {
+      "width": 328,
+      "scroll": 328
+    }
+  ],
+  "entityCount": "40"
+}

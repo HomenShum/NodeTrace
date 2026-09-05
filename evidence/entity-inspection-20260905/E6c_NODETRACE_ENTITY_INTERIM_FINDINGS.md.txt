@@ -1,0 +1,39 @@
+PRE-FIX CANDIDATE REFUTED — three same-mount state failures require correction; final review remains pending.
+
+**Re your request:** verify visual, responsive and interaction readiness for handoff. This independent component replay checks the advertised entity-inspection job.
+
+Reviewer context: I did not author the repair. A fresh agent could not be spawned because the tool reported its thread limit; this reviewer was reused after unrelated backend work. That limit is disclosed rather than treating this as a fresh-context review.
+
+P1 · Native and pointer selection leave contradictory entity readouts
+
+Pointer select tool workSurface.trace, then native-select actor trace-coach. The owned producing-event readout changes, while the vendor entity/count/visits panel keeps the tool. Root cause: Owner selectedId and vendor selected message are separate state; native selection never updates the vendor state.
+
+Evidence: `E6c-nodetrace-independent-host/pointer-then-native-other.png`, `E6c-nodetrace-independent-host/pointer-then-native-other.json`.
+
+Required knockout: Pointer to native to clear to a new selection must update every readout to the same current entity in source and installed consumer.
+
+P1 · Same-ID data growth leaves old visit metadata
+
+After replacing six traces with twelve using new event IDs and unchanged entity identities, the selected tool has two producing events but its visits panel stays at one. Root cause: The vendor reads mutable graph attributes during render before its effect patches attributes; same-ID changes do not increment rev, so there is no follow-up render for the changed visit count.
+
+Evidence: `E6c-nodetrace-independent-metadata-replay/same-entities-extra-events.png`, `E6c-nodetrace-independent-metadata-replay/same-entities-extra-events.json`.
+
+Required knockout: Retain selection across same-ID props replacement; event IDs and visit count must both describe the new snapshot without another user action.
+
+P1 · Removing the hovered node leaves the whole graph dimmed
+
+After removing the currently hovered tool, the remaining twelve entities all turn grey and labels disappear. Pointer-out and Fit do not recover the state. Root cause: The renderer closure retains hoverRef.current after that ID disappears from the graph. Every remaining node fails the stale-neighbor predicate and is dimmed; the stale hover is not cleared by the graph patch.
+
+Evidence: `E6c-nodetrace-independent-hover-isolation/hovered-entity-removed.png`, `E6c-nodetrace-independent-hover-isolation/removed-entity-pointer-out.png`, `E6c-nodetrace-independent-hover-isolation/removed-entity-fit.png`.
+
+Required knockout: Remove/replace the hovered entity during the same mount, keep the pointer still, then move out and Fit; remaining nodes and labels must return to their normal state.
+
+The runs use an exact copied source/vendor host, the actual six-event snapshot, same-mount prop updates and rendered Chromium pixels at 390×844 with reduced motion. They do not replace the final source-app, installed-consumer or normal-motion responsive matrix. The primary source read guard has closed so the author can repair the findings while the retained copy preserves the failing state.
+
+A diagnostic trap was also exposed: the shared paint helper counts colored ring pixels, so a graph whose stale hover dims all nodes grey is reported as an empty canvas. Actual screenshots show the grey graph; no page or console crash occurred. This is not proof of a dead WebGL context. Both the failed helper output and the pixels are retained.
+
+The 160-entity dense fixture kept full selected text and the document within bounds, but its labels were suppressed and the requested hover was not confirmed on an actual node. I grant no positive dense-label/hover coverage from that case.
+
+Independent current npm audit reports zero vulnerabilities. The lock diff changes six compatible browserslist-related entries. That technical check does not close the three UI failures or certify the complete product.
+
+The final judge will require the repaired raw source bindings, seven-width source and installed evidence, the same-mount failure knockouts, console output and protected-neighbor comparison. Full dimension and overall grades remain unassigned.

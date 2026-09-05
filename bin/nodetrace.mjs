@@ -327,7 +327,7 @@ import { createRoot } from "react-dom/client";
 import { DemoDashboard } from "./DemoDashboard";
 import "./styles.css";
 
-createRoot(document.getElementById("root")).render(
+createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <DemoDashboard installed />
   </React.StrictMode>,

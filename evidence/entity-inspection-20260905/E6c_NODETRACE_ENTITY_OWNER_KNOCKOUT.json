@@ -1,0 +1,376 @@
+{
+  "at": "2026-09-05T04:57:08.298308+00:00",
+  "verdict": "TARGETED_OWNER_CORRECTION_VERIFIED",
+  "finalPacketJudge": "PENDING_FINAL_INSTALLED_SOURCE_STAGED_AND_PORTABLE_BINDINGS",
+  "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+  "sourceBindings": {
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501"
+  },
+  "sourceStayedExact": true,
+  "checks": {
+    "genericRenderer": 19,
+    "liveRail": 108
+  },
+  "errors": [],
+  "findings": [
+    {
+      "id": "NT-ENTITY-01",
+      "status": "CLOSED_ON_NEW_BYTES",
+      "proof": "Actual pointer tool selection to native actor to Home clear to reselect; both panels agree."
+    },
+    {
+      "id": "NT-ENTITY-02",
+      "status": "CLOSED_ON_NEW_BYTES",
+      "proof": "Six to twelve events, same entity IDs; current producing IDs and visits1 to2 without remount or pointer reselection."
+    },
+    {
+      "id": "NT-ENTITY-03",
+      "status": "CLOSED_ON_NEW_BYTES",
+      "proof": "Actually hovered tool removed; both panels clear and remaining12entities retain positive glyph paint; pointerout/Fit/recovery work."
+    },
+    {
+      "id": "NT-ENTITY-04",
+      "status": "CLOSED_ON_NEW_BYTES",
+      "proof": "Actual uncontrolled renderer with duplicate reversed typed edge and missing-endpoint row yields one patched canonical relationship and one callback/badge. No graph-model policy change."
+    },
+    {
+      "id": "NT-ENTITY-04-omitted-visits-followup",
+      "status": "CLOSED_ON_NEW_BYTES",
+      "proof": "After visits3 to7 then optional map omission, displayed7 matches actual mounted baseline and patchGraph. Intermediatef19fbeffsource wrongly displayed0; rawfailure retained."
+    }
+  ],
+  "currentMetadata": {
+    "offFilterPreserved": true,
+    "countCurrentWithoutClick": 42,
+    "visitsCurrentWithoutClick": 7,
+    "hiddenAssertionBadgesAbsent": true,
+    "freshPointerCallbackMatchesPatchedReceiptAndWeight": true,
+    "callbackAutoEmittedOnPropChanges": false,
+    "callbackExplanation": "Retained callback log is an event receipt. Current detail updates without requiring a fabricated click callback."
+  },
+  "longAndRecorder": {
+    "entities": 40,
+    "positivePaint": true,
+    "currentGlyphBoundsAndNoCollisions": true,
+    "pointerPanFit": true,
+    "fullIdentityAndEventPanelsFit": true,
+    "actualCanvasClearZeroAlphaAndRecorderZeroThenFreshPaint": true
+  },
+  "preservedFailures": [
+    "E6c_NODETRACE_ENTITY_INTERIM_FINDINGS.json",
+    "E6c_NODETRACE_ENTITY_CANONICAL_EDGE_FINDING.json",
+    "E6c-nodetrace-canonical-owner-knockout-01/report.json"
+  ],
+  "viewedCurrentScreenshots": [
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-filter-off.png",
+    "E6c-nodetrace-canonical-owner-knockout-02/after-visits-omitted-new-pointer.png",
+    "E6c-nodetrace-independent-owner-knockout/same-entities-extra-events.png",
+    "E6c-nodetrace-independent-owner-knockout/hovered-entity-removed.png"
+  ],
+  "limits": [
+    "Independent of repair authorship, reused reviewer context after fresh-agent thread-limit rejection.",
+    "Targeted anonymous Chromium;900x1100generic host and390x844railhost, reducedmotion. Full normal-motion seven-width source/Next/Vite proofs remain distinct.",
+    "BuildGraph first-wins versus mounted patchGraph last-wins remains an inherited policy discrepancy. This repair follows actual graph owner; does not silently change model policy.",
+    "No primary source, index, ref, build, fixture, production, credential or4173 actions. Exact isolated source copies retained."
+  ],
+  "artifacts": {
+    "E6c-nodetrace-canonical-owner-knockout-02/after-filter-off.html": {
+      "sha256": "fadf39314647173afa05de6a240a35e6c69401d4de312aa193e9e162181db8c2",
+      "bytes": 4359
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-filter-off.json": {
+      "sha256": "e81972c224f12e19014a995128d7daa6446f995ead91aae3f79904918aaa8f1b",
+      "bytes": 1693
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-filter-off.png": {
+      "sha256": "8d6b2bea3f770dfea3a659a82adc777b342fc2016a1fe887a3191a57cfc99092",
+      "bytes": 35695
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-initial-pointer.html": {
+      "sha256": "7ccfb43a78010cf29562acc5c8b2ee024958c9455e7ac85c989f19ac4fe52ceb",
+      "bytes": 4844
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-initial-pointer.json": {
+      "sha256": "cc433bce852aa0b244e8e60db9f13300960713c4b2010ef81d3aa98c9896f593",
+      "bytes": 1882
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-initial-pointer.png": {
+      "sha256": "4c62d65610ccfeb1b38938902613d50e4ef26099ee4b4af163fabb71ea90fd0f",
+      "bytes": 42983
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-filter-off.html": {
+      "sha256": "55e62c2ced57aebda668ed68bf24fd10d9408adb2823999b8192c8b34526c30c",
+      "bytes": 4337
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-filter-off.json": {
+      "sha256": "b94698208ca8b614c49b0af49927d6c64e60100825efe1e392cd5d93a19161ad",
+      "bytes": 1627
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-filter-off.png": {
+      "sha256": "548f86e3e12b5efbc59a272945dc94ce676160205f65ef930fffb63f6d776fd9",
+      "bytes": 35038
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-new-pointer.html": {
+      "sha256": "0aa250e118d7ff615695f4ba40fb0a090c1d173f689d101af682aee967fada83",
+      "bytes": 4802
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-new-pointer.json": {
+      "sha256": "222cdf78e87b1581487f60e69a8796cf96bbe434a18b0572ac3e56f263380489",
+      "bytes": 1782
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-metadata-new-pointer.png": {
+      "sha256": "9dca268c2c1ba6e47aca43af75f3206d0c7df33bdc4f7e91134dfabbcafa0139",
+      "bytes": 43932
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-visits-omitted-new-pointer.html": {
+      "sha256": "0aa250e118d7ff615695f4ba40fb0a090c1d173f689d101af682aee967fada83",
+      "bytes": 4802
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-visits-omitted-new-pointer.json": {
+      "sha256": "222cdf78e87b1581487f60e69a8796cf96bbe434a18b0572ac3e56f263380489",
+      "bytes": 1782
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/after-visits-omitted-new-pointer.png": {
+      "sha256": "9dca268c2c1ba6e47aca43af75f3206d0c7df33bdc4f7e91134dfabbcafa0139",
+      "bytes": 43932
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-filter-off.html": {
+      "sha256": "743be140946f508dee9a9d75f5d8e75aaa2dedf56c08aad35c3629665d2491ab",
+      "bytes": 4841
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-filter-off.json": {
+      "sha256": "bf9f4e3c859e075a8c9e92d158c1ab8b9b6e519ebf67bc0f435479910c420e47",
+      "bytes": 1880
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-filter-off.png": {
+      "sha256": "d703737de0bc12ceaeaeb37fc4f9ece3561f3732d99398c8da02279c2d591f0d",
+      "bytes": 38535
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-initial-pointer.html": {
+      "sha256": "7914edd80504d2b073bad2668bee3206d84db44ab71aea79aa382b8b78434c55",
+      "bytes": 4841
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-initial-pointer.json": {
+      "sha256": "2850943dfe9bb97332bf0f62c73450ff25e37e51b2d28b842483cdd8a91cb6d5",
+      "bytes": 1879
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-initial-pointer.png": {
+      "sha256": "81c50cbce848b52dca20f8c7c2518d55e4c4a8d4e54b65ba007d456ae1a85914",
+      "bytes": 43666
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-metadata-filter-off.html": {
+      "sha256": "743be140946f508dee9a9d75f5d8e75aaa2dedf56c08aad35c3629665d2491ab",
+      "bytes": 4841
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-metadata-filter-off.json": {
+      "sha256": "bf9f4e3c859e075a8c9e92d158c1ab8b9b6e519ebf67bc0f435479910c420e47",
+      "bytes": 1880
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-metadata-filter-off.png": {
+      "sha256": "d703737de0bc12ceaeaeb37fc4f9ece3561f3732d99398c8da02279c2d591f0d",
+      "bytes": 38535
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-metadata-new-pointer.html": {
+      "sha256": "338d84b205c957a72ced25a366f5691bd84e52160f6fd777def3fd20c789c20e",
+      "bytes": 4799
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-metadata-new-pointer.json": {
+      "sha256": "b39710cffcb27436ec521dcb4549e39321298c4829ca306a9b09fc802c9152cd",
+      "bytes": 1779
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-metadata-new-pointer.png": {
+      "sha256": "d756dd38eea79f693c26b41dddb2be36bb9dff888fb82c4e78d2b7e2b6831f51",
+      "bytes": 46558
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-visits-omitted-new-pointer.html": {
+      "sha256": "338d84b205c957a72ced25a366f5691bd84e52160f6fd777def3fd20c789c20e",
+      "bytes": 4799
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-visits-omitted-new-pointer.json": {
+      "sha256": "b39710cffcb27436ec521dcb4549e39321298c4829ca306a9b09fc802c9152cd",
+      "bytes": 1779
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/before-visits-omitted-new-pointer.png": {
+      "sha256": "d756dd38eea79f693c26b41dddb2be36bb9dff888fb82c4e78d2b7e2b6831f51",
+      "bytes": 46558
+    },
+    "E6c-nodetrace-canonical-owner-knockout-02/report.json": {
+      "sha256": "cbb92d351e6c745096a7c8d012723b7d959a67720261f8cac28403ea1c37b3bb",
+      "bytes": 24196
+    },
+    "E6c-nodetrace-independent-owner-knockout/clear.json": {
+      "sha256": "de0b4df148c6edcb72378787e9fa2cd81ebb7981be8c870e5d70e0c4fa70d3ac",
+      "bytes": 2071
+    },
+    "E6c-nodetrace-independent-owner-knockout/clear.png": {
+      "sha256": "4b9a4fc2afe49c70e7bbc0be674de2e518f76aa10d644974df442e4509c928a4",
+      "bytes": 58970
+    },
+    "E6c-nodetrace-independent-owner-knockout/empty.json": {
+      "sha256": "78b675633f7ce5f0e0b408b9e00af4959a4f4425c4e02fce2717da9f8be25650",
+      "bytes": 168
+    },
+    "E6c-nodetrace-independent-owner-knockout/empty.png": {
+      "sha256": "999b2c32dd49208dc5baf338204ec63ff4edcb5d35b9154543eb5cf2c2e801fb",
+      "bytes": 29051
+    },
+    "E6c-nodetrace-independent-owner-knockout/entity-inspection-proof.mjs": {
+      "sha256": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+      "bytes": 8918
+    },
+    "E6c-nodetrace-independent-owner-knockout/fixture.json": {
+      "sha256": "defad41b48e3b0ff4784b234634921e490d81b8a7d548259f95cf22729a24cd2",
+      "bytes": 1709
+    },
+    "E6c-nodetrace-independent-owner-knockout/hover-before-removal.json": {
+      "sha256": "7f1217119669358b4e24afe08e5b3725123832c3af3e9054d55ec2e76e0bf140",
+      "bytes": 2479
+    },
+    "E6c-nodetrace-independent-owner-knockout/hover-before-removal.png": {
+      "sha256": "84854ea70ed6dd404bb6ccfd938bdd49cee33e366e9291599982bada2f850c17",
+      "bytes": 69392
+    },
+    "E6c-nodetrace-independent-owner-knockout/hovered-entity-removed.json": {
+      "sha256": "b585e7e1146a56400911ebc4ef679edc88208d27deeacc722fd8a5e88adf42fc",
+      "bytes": 1837
+    },
+    "E6c-nodetrace-independent-owner-knockout/hovered-entity-removed.png": {
+      "sha256": "e195af6c58756dda4217dba090a647b0452285c5cd885b4d24d8421648a2ecf2",
+      "bytes": 55638
+    },
+    "E6c-nodetrace-independent-owner-knockout/initial.json": {
+      "sha256": "5c1ddf2b1f772245c1a14c27cfb322f8951ce3c385ded783da331db904d13a44",
+      "bytes": 1826
+    },
+    "E6c-nodetrace-independent-owner-knockout/initial.png": {
+      "sha256": "d5d0341f0743a865a8f4520e2bf137ce206f25b2e0c040ad37def5fca73f3579",
+      "bytes": 56595
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-confirmed-pointer-hover.json": {
+      "sha256": "ffbe8cb5c0afa1f9f7a00ab49befb6340ae5b3bd237ea3c0c1390d2649c0fe8b",
+      "bytes": 2296
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-confirmed-pointer-hover.png": {
+      "sha256": "1bbe1701015f3429eefe9318b67c07044300ae5e715c39742f0c4929e5a92373",
+      "bytes": 74604
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-fit.json": {
+      "sha256": "869f22f5a5c39db6ba7faa3c0f3604a1a04860105d0b6ad3ad0ff6d9558d6cce",
+      "bytes": 2058
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-fit.png": {
+      "sha256": "2848e08709c32c8f6946500b88bac2ce4188f04917bdf8ae54b6b45f486e2eb0",
+      "bytes": 73902
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-forty-entities.json": {
+      "sha256": "698674f2b86bc126624fa288b27fc85126b3ed0d20ce45f9b5396ef936504c77",
+      "bytes": 1724
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-forty-entities.png": {
+      "sha256": "f8a9bf59ac46cdd562f9615dcf7a7c17df01ddbb34fb9db9e6b5dd11f0158193",
+      "bytes": 66735
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-full-selected.json": {
+      "sha256": "4989ade56500dfd198bc31689c82d1cb9554685a8662d97c29598f090d9ea34b",
+      "bytes": 5172
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-full-selected.png": {
+      "sha256": "712f97c29fecf8eeb8caf299afeac126b189e8553a999c08b647beaad339bd38",
+      "bytes": 121804
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-pan.json": {
+      "sha256": "776075c3465235588cee255ab4bb944bbbad288efac7531dfb3912ea67ea8416",
+      "bytes": 1495
+    },
+    "E6c-nodetrace-independent-owner-knockout/long-pan.png": {
+      "sha256": "837deced27b5a55dc19246616ee2f21c6b5e9104d7baa889d42ae2f33654f20a",
+      "bytes": 41140
+    },
+    "E6c-nodetrace-independent-owner-knockout/pointer-selected.json": {
+      "sha256": "7ea82c8c3d2312cba7338d4ca0934356933ee0189c70ef704531b81a2e03d51f",
+      "bytes": 2438
+    },
+    "E6c-nodetrace-independent-owner-knockout/pointer-selected.png": {
+      "sha256": "deb96f9aaa4a4e8e529963154635c43412b1a1211b2e85a8240833cc8b3ef828",
+      "bytes": 67256
+    },
+    "E6c-nodetrace-independent-owner-knockout/pointer-to-native.json": {
+      "sha256": "98148c75e6c72ddf023339fccfa11ee9d9034eb9b22bdaccfa3ab51297463fde",
+      "bytes": 2575
+    },
+    "E6c-nodetrace-independent-owner-knockout/pointer-to-native.png": {
+      "sha256": "10dc4b816b4167b85d9cfb3ffc1433395999125bd4a69498755360f4282e2524",
+      "bytes": 69668
+    },
+    "E6c-nodetrace-independent-owner-knockout/prior-four-event-host-main.tsx": {
+      "sha256": "1e7091b8770b9e3111525a6c8c515f8a7f94eae66b458ea1f3be799a0b4b51b4",
+      "bytes": 2221
+    },
+    "E6c-nodetrace-independent-owner-knockout/proof-server.mjs": {
+      "sha256": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd",
+      "bytes": 10818
+    },
+    "E6c-nodetrace-independent-owner-knockout/recorder-fresh-frame-recovery.json": {
+      "sha256": "869f22f5a5c39db6ba7faa3c0f3604a1a04860105d0b6ad3ad0ff6d9558d6cce",
+      "bytes": 2058
+    },
+    "E6c-nodetrace-independent-owner-knockout/recorder-fresh-frame-recovery.png": {
+      "sha256": "2848e08709c32c8f6946500b88bac2ce4188f04917bdf8ae54b6b45f486e2eb0",
+      "bytes": 73902
+    },
+    "E6c-nodetrace-independent-owner-knockout/recovered-current-events.json": {
+      "sha256": "b61219bd6709e5f2b5a566430d0a65ff7339c17f97e46de1b8244526e047a8ff",
+      "bytes": 2249
+    },
+    "E6c-nodetrace-independent-owner-knockout/recovered-current-events.png": {
+      "sha256": "0293acd1756be9be3ef2e59f31f6676c5f9d0e00ca973b5bf6e52e533133b9e9",
+      "bytes": 72953
+    },
+    "E6c-nodetrace-independent-owner-knockout/removed-entity-fit.json": {
+      "sha256": "b585e7e1146a56400911ebc4ef679edc88208d27deeacc722fd8a5e88adf42fc",
+      "bytes": 1837
+    },
+    "E6c-nodetrace-independent-owner-knockout/removed-entity-fit.png": {
+      "sha256": "a173cfaa52409458494de4a2aa85ce6008105d5721e1c5c04bb31b0b4e7d682a",
+      "bytes": 54749
+    },
+    "E6c-nodetrace-independent-owner-knockout/removed-entity-pointer-out.json": {
+      "sha256": "b585e7e1146a56400911ebc4ef679edc88208d27deeacc722fd8a5e88adf42fc",
+      "bytes": 1837
+    },
+    "E6c-nodetrace-independent-owner-knockout/removed-entity-pointer-out.png": {
+      "sha256": "e195af6c58756dda4217dba090a647b0452285c5cd885b4d24d8421648a2ecf2",
+      "bytes": 55638
+    },
+    "E6c-nodetrace-independent-owner-knockout/report.json": {
+      "sha256": "5dcbcdbbd8d13318f83fefb7e5c7e630a6c22a73425082cfbde1cb90650ccf9e",
+      "bytes": 55640
+    },
+    "E6c-nodetrace-independent-owner-knockout/reselect.json": {
+      "sha256": "7ea82c8c3d2312cba7338d4ca0934356933ee0189c70ef704531b81a2e03d51f",
+      "bytes": 2438
+    },
+    "E6c-nodetrace-independent-owner-knockout/reselect.png": {
+      "sha256": "609e9e5da7cdd9007d19ddf372be2f845e3ab30a46103dc8edefaa5fa0c77cc8",
+      "bytes": 68117
+    },
+    "E6c-nodetrace-independent-owner-knockout/same-entities-extra-events.json": {
+      "sha256": "7f1217119669358b4e24afe08e5b3725123832c3af3e9054d55ec2e76e0bf140",
+      "bytes": 2479
+    },
+    "E6c-nodetrace-independent-owner-knockout/same-entities-extra-events.png": {
+      "sha256": "84854ea70ed6dd404bb6ccfd938bdd49cee33e366e9291599982bada2f850c17",
+      "bytes": 69392
+    },
+    "E6c-nodetrace-independent-owner-knockout/source-bindings.json": {
+      "sha256": "105c5f4fc756498baf48b2289ee5e36f8a4249690ef9fa76f90e474b843b7a64",
+      "bytes": 727
+    }
+  }
+}

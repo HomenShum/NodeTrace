@@ -1,0 +1,457 @@
+{
+  "name": "installed-1440",
+  "browser": "149.0.7827.55",
+  "fixtureRoot": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+  "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+  "traceRecords": 4,
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "captures": [
+    {
+      "name": "installed-1440-populated",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 24
+      },
+      "overflow": 0,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verifi",
+      "entityCount": "10",
+      "edgeCount": "15",
+      "modal": false,
+      "fit": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 621.9375
+      },
+      "controls": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 1332,
+        "height": 21.9375,
+        "documentY": 621.9375
+      },
+      "canvas": {
+        "x": 55,
+        "y": 628.875,
+        "width": 1330,
+        "height": 298,
+        "documentY": 652.875
+      },
+      "result": null,
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 621.9375
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(15)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 97.84375,
+            "y": 602.40625,
+            "width": 13,
+            "height": 13,
+            "documentY": 626.40625
+          }
+        }
+      ],
+      "readout": null,
+      "boundary": [
+        {
+          "id": "CHANGE A",
+          "title": "Entity controls and local graph heading",
+          "x": 37,
+          "y": 554.640625,
+          "width": 1366,
+          "height": 67.234375,
+          "borderWidth": 3,
+          "documentY": 578.640625
+        },
+        {
+          "id": "CHANGE B",
+          "title": "Graph and entity result",
+          "x": 38,
+          "y": 630.875,
+          "width": 1364,
+          "height": 298,
+          "borderWidth": 3,
+          "documentY": 654.875
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-keyboard-fit",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 26
+      },
+      "overflow": 0,
+      "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+      "entityCount": "10",
+      "edgeCount": "15",
+      "modal": false,
+      "fit": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 623.9375
+      },
+      "controls": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 1332,
+        "height": 21.9375,
+        "documentY": 623.9375
+      },
+      "canvas": {
+        "x": 55,
+        "y": 628.875,
+        "width": 1330,
+        "height": 298,
+        "documentY": 654.875
+      },
+      "result": null,
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 623.9375
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(15)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 97.84375,
+            "y": 602.40625,
+            "width": 13,
+            "height": 13,
+            "documentY": 628.40625
+          }
+        }
+      ],
+      "readout": null
+    },
+    {
+      "name": "installed-1440-after-keyboard",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 26
+      },
+      "overflow": 0,
+      "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+      "entityCount": "10",
+      "edgeCount": "15",
+      "modal": false,
+      "fit": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 623.9375
+      },
+      "controls": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 1332,
+        "height": 21.9375,
+        "documentY": 623.9375
+      },
+      "canvas": {
+        "x": 55,
+        "y": 628.875,
+        "width": 1330,
+        "height": 298,
+        "documentY": 654.875
+      },
+      "result": null,
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 623.9375
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(15)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 97.84375,
+            "y": 602.40625,
+            "width": 13,
+            "height": 13,
+            "documentY": 628.40625
+          }
+        }
+      ],
+      "readout": null
+    },
+    {
+      "name": "installed-1440-pointer-selected",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 26
+      },
+      "overflow": 0,
+      "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" ari",
+      "entityCount": "10",
+      "edgeCount": "15",
+      "modal": false,
+      "fit": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 623.9375
+      },
+      "controls": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 1332,
+        "height": 21.9375,
+        "documentY": 623.9375
+      },
+      "canvas": {
+        "x": 55,
+        "y": 628.875,
+        "width": 1330,
+        "height": 298,
+        "documentY": 654.875
+      },
+      "result": {
+        "x": 37,
+        "y": 1019.046875,
+        "width": 1366,
+        "height": 39.328125,
+        "documentY": 1045.046875
+      },
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 623.9375
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(15)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 97.84375,
+            "y": 602.40625,
+            "width": 13,
+            "height": 13,
+            "documentY": 628.40625
+          }
+        }
+      ],
+      "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002",
+      "boundary": [
+        {
+          "id": "CHANGE A",
+          "title": "Entity controls and local graph heading",
+          "x": 37,
+          "y": 552.640625,
+          "width": 1366,
+          "height": 67.234375,
+          "borderWidth": 3,
+          "documentY": 578.640625
+        },
+        {
+          "id": "CHANGE B",
+          "title": "Graph and entity result",
+          "x": 38,
+          "y": 628.875,
+          "width": 1364,
+          "height": 429.5,
+          "borderWidth": 3,
+          "documentY": 654.875
+        }
+      ]
+    }
+  ],
+  "console": [],
+  "painted": {
+    "nodes": 10,
+    "chromaticPixels": 404,
+    "points": [
+      {
+        "x": 659,
+        "y": 673.2261705685619
+      },
+      {
+        "x": 609.5,
+        "y": 676.2161371237459
+      },
+      {
+        "x": 804,
+        "y": 683.1927257525084
+      },
+      {
+        "x": 829.5,
+        "y": 716.0823578595317
+      },
+      {
+        "x": 616.5,
+        "y": 725.0522575250836
+      },
+      {
+        "x": 725,
+        "y": 770.4000836120401
+      },
+      {
+        "x": 827,
+        "y": 828.7044314381271
+      },
+      {
+        "x": 800.5,
+        "y": 860.0990802675585
+      },
+      {
+        "x": 654.5,
+        "y": 864.0857023411371
+      },
+      {
+        "x": 691,
+        "y": 882.5238294314381
+      }
+    ]
+  },
+  "keyboard": {
+    "focusSequence": [
+      {
+        "press": 1,
+        "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": null,
+        "name": "Inspect trace",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 2,
+        "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "nodegraph-fit",
+        "name": "fit",
+        "inGraph": true,
+        "readout": false
+      },
+      {
+        "press": 3,
+        "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+        "tag": "INPUT",
+        "role": null,
+        "testId": null,
+        "name": "traversal(15)· local",
+        "inGraph": true,
+        "readout": false
+      },
+      {
+        "press": 4,
+        "path": "html:nth-child(1)>body:nth-child(2)",
+        "tag": "BODY",
+        "role": null,
+        "testId": null,
+        "name": "NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleveri",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 5,
+        "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": null,
+        "name": "Inspect trace",
+        "inGraph": false,
+        "readout": false
+      }
+    ],
+    "cycleClosed": true,
+    "pressBudget": 100,
+    "fitEntered": 1,
+    "actualFitActivations": 1,
+    "readoutReached": false
+  },
+  "pointer": {
+    "name": "tool: workSurface.evidenceCarousel",
+    "events": [
+      "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+    ],
+    "expectedEvents": [
+      "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+    ],
+    "semanticMatch": true
+  },
+  "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+  "video": "installed-1440-keyboard-pointer.webm"
+}

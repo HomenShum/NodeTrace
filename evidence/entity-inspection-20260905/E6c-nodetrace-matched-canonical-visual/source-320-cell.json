@@ -1,0 +1,559 @@
+{
+  "name": "source-320",
+  "viewport": {
+    "width": 320,
+    "height": 800
+  },
+  "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+  "traceRecords": 6,
+  "route": "/?unrelated=preserved#review",
+  "replay": "byte-exact original response through browser routing; not fresh backend output",
+  "captures": [
+    {
+      "name": "source-320-populated",
+      "url": "http://127.0.0.1:4917/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "scroll": {
+        "x": 0,
+        "y": 1999
+      },
+      "overflow": 0,
+      "theme": "rgb(245, 247, 251)",
+      "entityCount": "14",
+      "edgeCount": "31",
+      "canvas": {
+        "x": 45,
+        "y": 621.46875,
+        "width": 230,
+        "height": 298,
+        "documentY": 2620.46875
+      },
+      "selector": {
+        "x": 27,
+        "y": 381.84375,
+        "width": 266,
+        "height": 44,
+        "documentY": 2380.84375
+      },
+      "fit": {
+        "x": 44,
+        "y": 568.46875,
+        "width": 44,
+        "height": 44,
+        "documentY": 2567.46875
+      },
+      "readout": null,
+      "selection": null,
+      "protected": [
+        {
+          "selector": ".showcase",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run capture:noderoom:realnpm run trace-coach:sqlite no API key requiredBundled snapshotverified SQLite NodeRoom trace browser UISource appNodeRoombundled snapshotCoach steps6ordered labelsTrace tabs4overview, steps, minimap, rawThis saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent.",
+          "bounds": {
+            "x": 12,
+            "y": -1987,
+            "width": 296,
+            "height": 1042.203125,
+            "documentY": 12
+          }
+        },
+        {
+          "selector": "[aria-label=\"Trace Coach launch path\"]",
+          "text": "Bundled snapshotverified SQLite NodeRoom trace browser UISource appNodeRoombundled snapshotCoach steps6ordered labelsTrace tabs4overview, steps, minimap, rawThis saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent.",
+          "bounds": {
+            "x": 29,
+            "y": -1462.90625,
+            "width": 262,
+            "height": 501.109375,
+            "documentY": 536.09375
+          }
+        },
+        {
+          "selector": ".liveGraphRailHead",
+          "text": "Live graph rail14 entities from 6 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+          "bounds": {
+            "x": 27,
+            "y": 246.5625,
+            "width": 266,
+            "height": 102.4375,
+            "documentY": 2245.5625
+          }
+        }
+      ],
+      "frame": [
+        {
+          "text": "trace-tabs",
+          "x": 102.26208475259442,
+          "y": 74.70665278232369,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 168.29058707077115,
+          "y": 89.35101667640384,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 53.99999979007067,
+          "y": 137.28436856127945,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 138.34160521713963,
+          "y": 159.01678481021705,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 81.61693599686483,
+          "y": 196.62467948447716,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 147.37728123145013,
+          "y": 213.37259033248986,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "pixelProof": [
+        {
+          "path": "source-320-populated.png",
+          "sha256": "42384d75ba4df8fdf0f44a57edde74dd41328b8c7d2d92769aeafd98f9194af0",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "source-320-populated-paint-attempt-1.png",
+              "sha256": "42384d75ba4df8fdf0f44a57edde74dd41328b8c7d2d92769aeafd98f9194af0",
+              "darkGraphPixels": 639,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                624,
+                272,
+                800
+              ],
+              "rasterSize": [
+                320,
+                800
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "source-320-populated-full.png",
+          "sha256": "d3172e9c79b5d5447a8fd1193fc175db27ae929152d0733ec2a6e148dc23060f",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "source-320-populated-full-paint-attempt-1.png",
+              "sha256": "d3172e9c79b5d5447a8fd1193fc175db27ae929152d0733ec2a6e148dc23060f",
+              "darkGraphPixels": 803,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                2623,
+                272,
+                2915
+              ],
+              "rasterSize": [
+                320,
+                2963
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "source-320-populated-change-boundary.png",
+          "sha256": "dd7641b0a886d001b8424bed0082b7522274a387f97cf79e01b1b306b6cbce61",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "source-320-populated-change-boundary-paint-attempt-1.png",
+              "sha256": "dd7641b0a886d001b8424bed0082b7522274a387f97cf79e01b1b306b6cbce61",
+              "darkGraphPixels": 639,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                624,
+                272,
+                800
+              ],
+              "rasterSize": [
+                320,
+                800
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        }
+      ],
+      "boundary": [
+        {
+          "label": "CHANGE A · Entity controls and local graph heading",
+          "x": 27,
+          "y": 359,
+          "width": 266,
+          "height": 253.46875,
+          "documentY": 2358,
+          "borderWidth": 3
+        },
+        {
+          "label": "CHANGE B · Graph and entity result",
+          "x": 28,
+          "y": 621.46875,
+          "width": 264,
+          "height": 298,
+          "documentY": 2620.46875,
+          "borderWidth": 3
+        }
+      ]
+    },
+    {
+      "name": "source-320-native-selected",
+      "url": "http://127.0.0.1:4917/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "scroll": {
+        "x": 0,
+        "y": 2265
+      },
+      "overflow": 0,
+      "theme": "rgb(245, 247, 251)",
+      "entityCount": "14",
+      "edgeCount": "31",
+      "canvas": {
+        "x": 45,
+        "y": 355.46875,
+        "width": 230,
+        "height": 298,
+        "documentY": 2620.46875
+      },
+      "selector": {
+        "x": 27,
+        "y": 115.84375,
+        "width": 266,
+        "height": 44,
+        "documentY": 2380.84375
+      },
+      "fit": {
+        "x": 44,
+        "y": 302.46875,
+        "width": 44,
+        "height": 44,
+        "documentY": 2567.46875
+      },
+      "readout": "tool: workSurface.traceproduced by trace event:coach-step-02-detail-tabs-trace",
+      "selection": "entityworkSurface.trace · toolcountunknown — not measuredvisits1 — interaction frequency, not evidence strength",
+      "protected": [
+        {
+          "selector": ".showcase",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run capture:noderoom:realnpm run trace-coach:sqlite no API key requiredBundled snapshotverified SQLite NodeRoom trace browser UISource appNodeRoombundled snapshotCoach steps6ordered labelsTrace tabs4overview, steps, minimap, rawThis saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent.",
+          "bounds": {
+            "x": 12,
+            "y": -2253,
+            "width": 296,
+            "height": 1042.203125,
+            "documentY": 12
+          }
+        },
+        {
+          "selector": "[aria-label=\"Trace Coach launch path\"]",
+          "text": "Bundled snapshotverified SQLite NodeRoom trace browser UISource appNodeRoombundled snapshotCoach steps6ordered labelsTrace tabs4overview, steps, minimap, rawThis saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent.",
+          "bounds": {
+            "x": 29,
+            "y": -1728.90625,
+            "width": 262,
+            "height": 501.109375,
+            "documentY": 536.09375
+          }
+        },
+        {
+          "selector": ".liveGraphRailHead",
+          "text": "Live graph rail14 entities from 6 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+          "bounds": {
+            "x": 27,
+            "y": -19.4375,
+            "width": 266,
+            "height": 102.4375,
+            "documentY": 2245.5625
+          }
+        }
+      ],
+      "frame": [
+        {
+          "text": "trace-tabs",
+          "x": 102.26208475259442,
+          "y": 74.70665278232369,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 168.29058707077115,
+          "y": 89.35101667640384,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 53.99999979007067,
+          "y": 137.28436856127945,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 138.34160521713963,
+          "y": 159.01678481021705,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 81.61693599686483,
+          "y": 196.62467948447716,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 147.37728123145013,
+          "y": 213.37259033248986,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 230,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "pixelProof": [
+        {
+          "path": "source-320-native-selected.png",
+          "sha256": "950caa778b47915dcdaa5b7158ff25dbb4d9a70c920e6295d4f35729a4a22cd3",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "source-320-native-selected-paint-attempt-1.png",
+              "sha256": "950caa778b47915dcdaa5b7158ff25dbb4d9a70c920e6295d4f35729a4a22cd3",
+              "darkGraphPixels": 803,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                358,
+                272,
+                650
+              ],
+              "rasterSize": [
+                320,
+                800
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "source-320-native-selected-full.png",
+          "sha256": "07531c24817fa5b1bb8268901edf7cbfbfea29fa3a276bd4c64906db388e986d",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "source-320-native-selected-full-paint-attempt-1.png",
+              "sha256": "07531c24817fa5b1bb8268901edf7cbfbfea29fa3a276bd4c64906db388e986d",
+              "darkGraphPixels": 803,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                2623,
+                272,
+                2915
+              ],
+              "rasterSize": [
+                320,
+                3112
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        },
+        {
+          "path": "source-320-native-selected-change-boundary.png",
+          "sha256": "851ccc9ae6e7d2f09bbfc5086354aee4cd4a8887d4862320876c118f1416b239",
+          "attempts": [
+            {
+              "attempt": 1,
+              "path": "source-320-native-selected-change-boundary-paint-attempt-1.png",
+              "sha256": "851ccc9ae6e7d2f09bbfc5086354aee4cd4a8887d4862320876c118f1416b239",
+              "darkGraphPixels": 803,
+              "positivePaint": true,
+              "canvasCrop": [
+                48,
+                358,
+                272,
+                650
+              ],
+              "rasterSize": [
+                320,
+                800
+              ]
+            }
+          ],
+          "checkedExactSavedBytes": true
+        }
+      ],
+      "boundary": [
+        {
+          "label": "CHANGE A · Entity controls and local graph heading",
+          "x": 27,
+          "y": 93,
+          "width": 266,
+          "height": 253.46875,
+          "documentY": 2358,
+          "borderWidth": 3
+        },
+        {
+          "label": "CHANGE B · Graph and entity result",
+          "x": 28,
+          "y": 355.46875,
+          "width": 264,
+          "height": 464.28125,
+          "documentY": 2620.46875,
+          "borderWidth": 3
+        }
+      ]
+    }
+  ],
+  "console": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x404c001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x404c001b8200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x404c001ba000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x404c001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:4917/assets/index-ChpLb_-N.css",
+      "status": 200,
+      "bytes": 17071,
+      "sha256": "e3582fc5e7519c7c9b13153120aa37b85ac857b86d596b5faba7947cde67db16",
+      "builtFile": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\dist\\assets\\index-ChpLb_-N.css",
+      "builtBytesMatch": true
+    },
+    {
+      "url": "http://127.0.0.1:4917/assets/index-CKk4ZGQ4.js",
+      "status": 200,
+      "bytes": 512701,
+      "sha256": "e28ff57fc738cad38c6b3c2c84f3c0b0db03f588acd11897019f564d74d57ee8",
+      "builtFile": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\dist\\assets\\index-CKk4ZGQ4.js",
+      "builtBytesMatch": true
+    }
+  ],
+  "focus": [
+    {
+      "tag": "BUTTON",
+      "text": "Inspect trace"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Open NodeRoom's Trace tab from the artifact shellpassStart from the real artifact panel. NodeRoom exposes a trace tab an"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Use the real NodeRoom trace tabspassThe sample should follow NodeRoom's detail-tab model instead of a loose walkthrough "
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Seed the app from NodeRoom TraceRecord datapassNodeTrace now seeds from the same mental model NodeRoom uses: records con"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Render code and UI evidence like NodeRoom step rowspassEach step is an ordered, source-linked unit. Screenshot attachmen"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Keep the latest flow tab behaviorpassNodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clic"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Match NodeRoom's dark trace surfacepassThe sample app should look like NodeRoom: dark app chrome, compact tabs, muted me"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Inspect trace"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Overview"
+    },
+    {
+      "tag": "DIV",
+      "text": "src/ui/panels/Artifact.tsxHomenShum/noderoom - lines 1-15[data-noderoom-surface=\"workSurface.traceStrip\"]DOMRect x11 y90"
+    },
+    {
+      "tag": "SELECT",
+      "text": "EntityChoose an entityactor: trace-coachtool: workSurface.traceStripartifact: noderoom-codebase-tracestep: entrytool: workSurface.tracestep: trace-tabstool: workSurface.traceDatastep: data-modeltool: workSurface.traceStepsstep: stepstool: workSurface.traceFlowstep: flowtool: workSurface.traceStylestep: look-and-feel"
+    }
+  ],
+  "selectedTarget": "tool: workSurface.trace",
+  "expectedEvents": [
+    "coach-step-02-detail-tabs-trace"
+  ]
+}

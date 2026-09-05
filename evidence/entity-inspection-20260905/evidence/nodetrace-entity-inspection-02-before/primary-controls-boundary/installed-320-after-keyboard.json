@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 320,
+    "height": 800
+  },
+  "theme": "rgb(245, 247, 251)",
+  "scroll": {
+    "x": 0,
+    "y": 1017
+  },
+  "overflow": 0,
+  "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+  "entityCount": "10",
+  "edgeCount": "15",
+  "modal": false,
+  "fit": {
+    "x": 44,
+    "y": 425.609375,
+    "width": 27.84375,
+    "height": 21.9375,
+    "documentY": 1442.609375
+  },
+  "controls": {
+    "x": 44,
+    "y": 425.609375,
+    "width": 232,
+    "height": 21.9375,
+    "documentY": 1442.609375
+  },
+  "canvas": {
+    "x": 45,
+    "y": 456.546875,
+    "width": 230,
+    "height": 298,
+    "documentY": 1473.546875
+  },
+  "result": null,
+  "graphControls": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "fit",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 44,
+        "y": 425.609375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 1442.609375
+      }
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "name": "traversal(15)· local",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 87.84375,
+        "y": 430.078125,
+        "width": 13,
+        "height": 13,
+        "documentY": 1447.078125
+      }
+    }
+  ],
+  "readout": null
+}

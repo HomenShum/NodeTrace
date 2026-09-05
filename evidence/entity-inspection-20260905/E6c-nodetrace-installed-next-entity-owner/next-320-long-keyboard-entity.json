@@ -1,0 +1,121 @@
+{
+  "url": "http://127.0.0.1:62075/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 320,
+    "height": 800
+  },
+  "overflow": 0,
+  "focus": "<select aria-describedby=\"_r_0_\"><option value=\"\">Choose an entity</option><option value=\"[&quot;actor&quot;,&quot;Reviewer_long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-&quot;]\">actor: Reviewer_long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-</option><option value=\"[&quot;tool&quot;,&quot;tool:供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/&quot;]\">tool: tool:供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/</option><option value=\"[&quot;artifact&quot;,&quot;artifact_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&quot;]\">artifact: artifact_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option><option value=\"[&quot;step&quot;,&quot;schema&quot;]\">step: schema</option><option value=\"[&quot;actor&quot;,&quot;nodetrace&quot;]\">actor: nodetrace</option><option value=\"[&quot;tool&quot;,&quot;workSurface.evidenceCarousel&quot;]\">tool: workSurface.evidenceCarousel</option><option value=\"[&quot;artifact&quot;,&quot;demo-artifact&quot;]\">artifact: demo-artifact</option><option value=\"[&quot;step&quot;,&quot;proof&quot;]\">step: proof</option><option value=\"[&quot;tool&quot;,&quot;copilot.agentOperationStream&quot;]\">tool: copilot.agentOperationStream</option><option value=\"[&quot;step&quot;,&quot;events&quot;]\">step: events</option><option value=\"[&quot;tool&quot;,&quot;shell.statusStrip&quot;]\">tool: shell.statusStrip</option><option value=\"[&quot;step&quot;,&quot;state&quot;]\">step: state</option></select>",
+  "modal": false,
+  "selection": "step: state",
+  "events": [
+    "nodetrace-2026-09-05T04-21-14-908Z-trace-004"
+  ],
+  "labels": [
+    {
+      "text": "artifact_aaaaaaaaaaaaaaaaaaaaaaaa…",
+      "x": 5.60693359375,
+      "y": 64.1179748408253,
+      "width": 220.39306640625,
+      "height": 12,
+      "canvasWidth": 230,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "nodetrace",
+      "x": 78.81216521683785,
+      "y": 177.09314774789576,
+      "width": 59.4951171875,
+      "height": 10,
+      "canvasWidth": 230,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "Reviewer_long-identifier-long-ident…",
+      "x": 5.6513671875,
+      "y": 83.83742216973287,
+      "width": 220.3486328125,
+      "height": 13,
+      "canvasWidth": 230,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "events",
+      "x": 81.52173706293587,
+      "y": 207.3820251591747,
+      "width": 38.5888671875,
+      "height": 9,
+      "canvasWidth": 230,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "regions": {
+    ".showcaseActions": {
+      "text": "npm run nodetrace:happy-path no API key required",
+      "bounds": {
+        "x": 29,
+        "y": 310.03125,
+        "width": 262,
+        "height": 88.78125
+      }
+    },
+    ".coachEmpty": {
+      "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+      "bounds": {
+        "x": 12,
+        "y": 932.734375,
+        "width": 296,
+        "height": 297.75
+      }
+    },
+    ".liveGraphRailHead": {
+      "text": "Live graph rail12 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+      "bounds": {
+        "x": 27,
+        "y": 1263.484375,
+        "width": 266,
+        "height": 102.4375
+      }
+    },
+    ".liveGraphRailControls": {
+      "text": "EntityChoose an entityactor: Reviewer_long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-tool: tool:供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/artifact: artifact_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaastep: schemaactor: nodetracetool: workSurface.evidenceCarouselartifact: demo-artifactstep: prooftool: copilot.agentOperationStreamstep: eventstool: shell.statusStripstep: stateChoose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.",
+      "bounds": {
+        "x": 27,
+        "y": 1375.921875,
+        "width": 266,
+        "height": 130.78125
+      }
+    },
+    "[data-testid=\"nodegraph-canvas\"]": {
+      "text": "",
+      "bounds": {
+        "x": 45,
+        "y": 1638.390625,
+        "width": 230,
+        "height": 298
+      }
+    },
+    "[data-testid=\"nodegraph-selection\"]": {
+      "text": "entitystate · stepcountunknown — not measuredvisits1 — interaction frequency, not evidence strength",
+      "bounds": {
+        "x": 44,
+        "y": 1945.390625,
+        "width": 232,
+        "height": 73.5625
+      }
+    },
+    "[data-testid=\"live-graph-node-events\"]": {
+      "text": "step: stateproduced by trace event:nodetrace-2026-09-05T04-21-14-908Z-trace-004",
+      "bounds": {
+        "x": 27,
+        "y": 2045.953125,
+        "width": 266,
+        "height": 74.65625
+      }
+    }
+  }
+}

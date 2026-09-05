@@ -1,0 +1,278 @@
+{
+  "at": "2026-09-05T03:59:42.833078+00:00",
+  "verdict": "PRE_FIX_CANDIDATE_REFUTED_FINAL_REVIEW_PENDING",
+  "reviewerContext": "The reviewer did not author this UI repair. The parent reports a fresh-agent spawn was rejected by the tool thread limit, so this reviewer was reused after unrelated backend CI/type diagnosis. This is independent of authorship but not a fresh context.",
+  "primaryBase": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+  "sourceSnapshot": {
+    "src/trace/LiveGraphRail.tsx": "abb36986e90712eb2fca250a1e8d4e578d992b5d8fc3a756d02be3b3513d9f49",
+    "src/styles.css": "5dfa4e81a60693b838a00989141a74d96dee03e668f25f10bbdd16b3b69767dc",
+    "vendor/nodegraph-live/NodeGraph.js": "8eccee3aa7afbc6bbe22e8004dfc89114f56b7a1f16f76c41d97a1aac01d6392",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501"
+  },
+  "findings": [
+    {
+      "id": "NT-ENTITY-01",
+      "priority": "P1",
+      "title": "Native and pointer selection leave contradictory entity readouts",
+      "status": "REPRODUCED_PRE_FIX",
+      "symptom": "Pointer select tool workSurface.trace, then native-select actor trace-coach. The owned producing-event readout changes, while the vendor entity/count/visits panel keeps the tool.",
+      "cause": "Owner selectedId and vendor selected message are separate state; native selection never updates the vendor state.",
+      "evidence": [
+        "E6c-nodetrace-independent-host/pointer-then-native-other.png",
+        "E6c-nodetrace-independent-host/pointer-then-native-other.json"
+      ],
+      "nextProof": "Pointer to native to clear to a new selection must update every readout to the same current entity in source and installed consumer."
+    },
+    {
+      "id": "NT-ENTITY-02",
+      "priority": "P1",
+      "title": "Same-ID data growth leaves old visit metadata",
+      "status": "REPRODUCED_PRE_FIX",
+      "symptom": "After replacing six traces with twelve using new event IDs and unchanged entity identities, the selected tool has two producing events but its visits panel stays at one.",
+      "cause": "The vendor reads mutable graph attributes during render before its effect patches attributes; same-ID changes do not increment rev, so there is no follow-up render for the changed visit count.",
+      "evidence": [
+        "E6c-nodetrace-independent-metadata-replay/same-entities-extra-events.png",
+        "E6c-nodetrace-independent-metadata-replay/same-entities-extra-events.json"
+      ],
+      "nextProof": "Retain selection across same-ID props replacement; event IDs and visit count must both describe the new snapshot without another user action."
+    },
+    {
+      "id": "NT-ENTITY-03",
+      "priority": "P1",
+      "title": "Removing the hovered node leaves the whole graph dimmed",
+      "status": "REPRODUCED_PRE_FIX",
+      "symptom": "After removing the currently hovered tool, the remaining twelve entities all turn grey and labels disappear. Pointer-out and Fit do not recover the state.",
+      "cause": "The renderer closure retains hoverRef.current after that ID disappears from the graph. Every remaining node fails the stale-neighbor predicate and is dimmed; the stale hover is not cleared by the graph patch.",
+      "evidence": [
+        "E6c-nodetrace-independent-hover-isolation/hovered-entity-removed.png",
+        "E6c-nodetrace-independent-hover-isolation/removed-entity-pointer-out.png",
+        "E6c-nodetrace-independent-hover-isolation/removed-entity-fit.png"
+      ],
+      "nextProof": "Remove/replace the hovered entity during the same mount, keep the pointer still, then move out and Fit; remaining nodes and labels must return to their normal state."
+    }
+  ],
+  "proofLimits": [
+    "Component-host proof uses exact copied application/vendor files, the actual six-event source fixture, an isolated anonymous Chromium context at 390x844 and reduced motion. It is not a complete source-app or installed-consumer review.",
+    "The chroma-only painted-ring helper falsely described grey visible nodes as an empty canvas. Raw failures and actual pixels are preserved; no WebGL crash was observed.",
+    "The dense fixture had 160 entities from 40 synthetic traces within the stated input bounds. Full native identity wrapping, document bounds and pan/Fit were observed, but its canvas labels were suppressed and the hover target was not semantically confirmed. Positive dense label/hover proof is still required.",
+    "All tested empty states removed stale visible readouts; reintroduced same identities used current producing-event IDs, but the independent vendor panel remained subject to the selection/metadata defects above.",
+    "No primary source/index/ref/build/public-fixture mutation, credentials, production request or port 4173 was used. Root was told the original-source read guard could close after the immutable copy was established.",
+    "Final source, installed consumer, normal-motion seven-width matrix and fixed-state review are pending. No final product grades are granted."
+  ],
+  "audit": {
+    "file": "E6c-nodetrace-independent-lock-audit.json",
+    "exitCode": 0,
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    }
+  },
+  "artifacts": {
+    "E6c-nodetrace-independent-host/failure.json": {
+      "sha256": "8e3a05301c168abc58ffa5c132de4f1f54137d7c8ed147d9b5e87d3a9fded1c1",
+      "bytes": 435248
+    },
+    "E6c-nodetrace-independent-host/failure.png": {
+      "sha256": "a176ff06c40c1e4568dbb37f4e489e8a31b10e093826a3a0cf3d8cb3eb9d5f47",
+      "bytes": 64146
+    },
+    "E6c-nodetrace-independent-host/initial.json": {
+      "sha256": "bd1e4d47b41d2837463ef4cf15295703ac9bf8d917d0f17efbd26bc43696d4f4",
+      "bytes": 2542
+    },
+    "E6c-nodetrace-independent-host/initial.png": {
+      "sha256": "d5d0341f0743a865a8f4520e2bf137ce206f25b2e0c040ad37def5fca73f3579",
+      "bytes": 56595
+    },
+    "E6c-nodetrace-independent-host/pointer-selected.json": {
+      "sha256": "3e4be7e6f43bcf0acf58e295e1c8e2427028d66ecb5f81b2010033959e0bcad4",
+      "bytes": 2029
+    },
+    "E6c-nodetrace-independent-host/pointer-selected.png": {
+      "sha256": "06602456d62ac33959c41d8170275ca7cb90988ee32fa00b22e491850f1d9b0e",
+      "bytes": 59371
+    },
+    "E6c-nodetrace-independent-host/pointer-then-native-other.json": {
+      "sha256": "cd7e11f74fddfc683095f6fe457fccaebaee7d30a4ec8733b83cfc11f6743fef",
+      "bytes": 2318
+    },
+    "E6c-nodetrace-independent-host/pointer-then-native-other.png": {
+      "sha256": "38c077f6a0b041947419c36c5cadd52be3f9c54db2645d3e4cbdff9fba802514",
+      "bytes": 61771
+    },
+    "E6c-nodetrace-independent-host/profile.md": {
+      "sha256": "207dd7266c8b620c637479cf815ed98a14e3d62e9f31d2438dc31cbc0f5868cf",
+      "bytes": 592
+    },
+    "E6c-nodetrace-independent-host/removed-native-entity.json": {
+      "sha256": "4eb4f2da62bc02f89d323bce4684cf165c0d61812c272b0c7637ebc64c0e2626",
+      "bytes": 531
+    },
+    "E6c-nodetrace-independent-host/removed-native-entity.png": {
+      "sha256": "999b2c32dd49208dc5baf338204ec63ff4edcb5d35b9154543eb5cf2c2e801fb",
+      "bytes": 29051
+    },
+    "E6c-nodetrace-independent-host/report.json": {
+      "sha256": "330a682e773f6721d8fe9abbc2272fee6a6f0c9a43fa9520fa64220ec366e394",
+      "bytes": 447988
+    },
+    "E6c-nodetrace-independent-host/same-entities-new-events.json": {
+      "sha256": "2b644be4b2f09498f7e53dfb2c8b855f479098aa028ef075708332f8b4b75601",
+      "bytes": 2478
+    },
+    "E6c-nodetrace-independent-host/same-entities-new-events.png": {
+      "sha256": "4d033ec0ca9fa8d2b5641cfa397d0a3cc88579855811ab03987e39014a1be67e",
+      "bytes": 67293
+    },
+    "E6c-nodetrace-independent-host/same-mount-empty.json": {
+      "sha256": "4eb4f2da62bc02f89d323bce4684cf165c0d61812c272b0c7637ebc64c0e2626",
+      "bytes": 531
+    },
+    "E6c-nodetrace-independent-host/same-mount-empty.png": {
+      "sha256": "999b2c32dd49208dc5baf338204ec63ff4edcb5d35b9154543eb5cf2c2e801fb",
+      "bytes": 29051
+    },
+    "E6c-nodetrace-independent-metadata-replay/failure.json": {
+      "sha256": "99c5bb637355fc868c87f9d3309f5309a1f0e75e19380943551d3d1dd202bc95",
+      "bytes": 153
+    },
+    "E6c-nodetrace-independent-metadata-replay/failure.png": {
+      "sha256": "a176ff06c40c1e4568dbb37f4e489e8a31b10e093826a3a0cf3d8cb3eb9d5f47",
+      "bytes": 64146
+    },
+    "E6c-nodetrace-independent-metadata-replay/hovered-entity-removed.json": {
+      "sha256": "de859892804e1a11d9507e65b25bfafca9c5222c82af03e6b0ef9be7cd343bb7",
+      "bytes": 152
+    },
+    "E6c-nodetrace-independent-metadata-replay/hovered-entity-removed.png": {
+      "sha256": "9298ed7dcef40245e95942601a0dae6c072da1f07f0a6fda1a0e81a6456d148a",
+      "bytes": 44166
+    },
+    "E6c-nodetrace-independent-metadata-replay/pointer-before-update.json": {
+      "sha256": "67e08c95c6607c3362b1467e666d3244b0753e4cf55dde68b26278bf9be6bd8e",
+      "bytes": 1135
+    },
+    "E6c-nodetrace-independent-metadata-replay/pointer-before-update.png": {
+      "sha256": "06602456d62ac33959c41d8170275ca7cb90988ee32fa00b22e491850f1d9b0e",
+      "bytes": 59371
+    },
+    "E6c-nodetrace-independent-metadata-replay/removed-entity-pointer-out.json": {
+      "sha256": "de859892804e1a11d9507e65b25bfafca9c5222c82af03e6b0ef9be7cd343bb7",
+      "bytes": 152
+    },
+    "E6c-nodetrace-independent-metadata-replay/removed-entity-pointer-out.png": {
+      "sha256": "9298ed7dcef40245e95942601a0dae6c072da1f07f0a6fda1a0e81a6456d148a",
+      "bytes": 44166
+    },
+    "E6c-nodetrace-independent-metadata-replay/report.json": {
+      "sha256": "fdf599d09bc3c8e782939271214cb6234fd82e3fa1e90ab591cf39e8af53325e",
+      "bytes": 3894
+    },
+    "E6c-nodetrace-independent-metadata-replay/same-entities-extra-events.json": {
+      "sha256": "51563f8b23ce2ce4ddf518f2548ac12d084df6f107c469fa3ce8bff8ef2d5461",
+      "bytes": 1176
+    },
+    "E6c-nodetrace-independent-metadata-replay/same-entities-extra-events.png": {
+      "sha256": "0bf5411da97baa82238d2a8aa916f8ad1874331e2f4e089c912d11d19f4cbbf8",
+      "bytes": 60581
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-fit.json": {
+      "sha256": "42df3a9fb2f3957c514b2fb84b351774ada6529c74d3f624bc129ed043e6b09a",
+      "bytes": 2284
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-fit.png": {
+      "sha256": "7c6bc32f6f8b1e3c73cb8f644946ea5d2a3700718bf3fc1336c6f55625857d33",
+      "bytes": 115678
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-hover.json": {
+      "sha256": "99c5bb637355fc868c87f9d3309f5309a1f0e75e19380943551d3d1dd202bc95",
+      "bytes": 153
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-hover.png": {
+      "sha256": "132248882ce418832a607097a7b69ac7e0c241d68b7442c724af2b05152ea002",
+      "bytes": 88020
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-pan.json": {
+      "sha256": "42df3a9fb2f3957c514b2fb84b351774ada6529c74d3f624bc129ed043e6b09a",
+      "bytes": 2284
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-pan.png": {
+      "sha256": "a67b9299f7a74aab217e733ccf8b9177b618b0607f15db529272d80286fbaa80",
+      "bytes": 92456
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-pointer-out.json": {
+      "sha256": "99c5bb637355fc868c87f9d3309f5309a1f0e75e19380943551d3d1dd202bc95",
+      "bytes": 153
+    },
+    "E6c-nodetrace-independent-hover-isolation/dense-pointer-out.png": {
+      "sha256": "132248882ce418832a607097a7b69ac7e0c241d68b7442c724af2b05152ea002",
+      "bytes": 88020
+    },
+    "E6c-nodetrace-independent-hover-isolation/hovered-entity-removed.json": {
+      "sha256": "de859892804e1a11d9507e65b25bfafca9c5222c82af03e6b0ef9be7cd343bb7",
+      "bytes": 152
+    },
+    "E6c-nodetrace-independent-hover-isolation/hovered-entity-removed.png": {
+      "sha256": "9298ed7dcef40245e95942601a0dae6c072da1f07f0a6fda1a0e81a6456d148a",
+      "bytes": 44166
+    },
+    "E6c-nodetrace-independent-hover-isolation/long-full-name.json": {
+      "sha256": "42df3a9fb2f3957c514b2fb84b351774ada6529c74d3f624bc129ed043e6b09a",
+      "bytes": 2284
+    },
+    "E6c-nodetrace-independent-hover-isolation/long-full-name.png": {
+      "sha256": "7c6bc32f6f8b1e3c73cb8f644946ea5d2a3700718bf3fc1336c6f55625857d33",
+      "bytes": 115678
+    },
+    "E6c-nodetrace-independent-hover-isolation/pointer-before-update.json": {
+      "sha256": "67e08c95c6607c3362b1467e666d3244b0753e4cf55dde68b26278bf9be6bd8e",
+      "bytes": 1135
+    },
+    "E6c-nodetrace-independent-hover-isolation/pointer-before-update.png": {
+      "sha256": "06602456d62ac33959c41d8170275ca7cb90988ee32fa00b22e491850f1d9b0e",
+      "bytes": 59371
+    },
+    "E6c-nodetrace-independent-hover-isolation/pointer-out-after-valid-hover.json": {
+      "sha256": "de859892804e1a11d9507e65b25bfafca9c5222c82af03e6b0ef9be7cd343bb7",
+      "bytes": 152
+    },
+    "E6c-nodetrace-independent-hover-isolation/pointer-out-after-valid-hover.png": {
+      "sha256": "9298ed7dcef40245e95942601a0dae6c072da1f07f0a6fda1a0e81a6456d148a",
+      "bytes": 44166
+    },
+    "E6c-nodetrace-independent-hover-isolation/removed-entity-fit.json": {
+      "sha256": "de859892804e1a11d9507e65b25bfafca9c5222c82af03e6b0ef9be7cd343bb7",
+      "bytes": 152
+    },
+    "E6c-nodetrace-independent-hover-isolation/removed-entity-fit.png": {
+      "sha256": "9298ed7dcef40245e95942601a0dae6c072da1f07f0a6fda1a0e81a6456d148a",
+      "bytes": 44166
+    },
+    "E6c-nodetrace-independent-hover-isolation/removed-entity-pointer-out.json": {
+      "sha256": "de859892804e1a11d9507e65b25bfafca9c5222c82af03e6b0ef9be7cd343bb7",
+      "bytes": 152
+    },
+    "E6c-nodetrace-independent-hover-isolation/removed-entity-pointer-out.png": {
+      "sha256": "9298ed7dcef40245e95942601a0dae6c072da1f07f0a6fda1a0e81a6456d148a",
+      "bytes": 44166
+    },
+    "E6c-nodetrace-independent-hover-isolation/report.json": {
+      "sha256": "d4a5d3f070e00bf110bd34cc7733d497e17cead4ab953a8db7abb889c1f0380a",
+      "bytes": 11379
+    },
+    "E6c-nodetrace-independent-hover-isolation/same-entities-extra-events.json": {
+      "sha256": "51563f8b23ce2ce4ddf518f2548ac12d084df6f107c469fa3ce8bff8ef2d5461",
+      "bytes": 1176
+    },
+    "E6c-nodetrace-independent-hover-isolation/same-entities-extra-events.png": {
+      "sha256": "0bf5411da97baa82238d2a8aa916f8ad1874331e2f4e089c912d11d19f4cbbf8",
+      "bytes": 60581
+    }
+  }
+}

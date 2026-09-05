@@ -1,0 +1,15 @@
+# Final graph-owner targeted knockout
+
+**Builder. Re your request:** make each repo ready for developers and users, including responsive UI and interaction standards. The final entity repair passes the exact cases that previously contradicted what a reviewer saw.
+
+**Decision: targeted correction verified; final packet judgment remains pending.** Renderer `e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4` passed **19 generic-consumer checks** and **108 LiveGraphRail checks across 18 states**, with no page or console errors. Inputs were copied into new isolated hosts; earlier source copies and failures remain intact.
+
+The uncontrolled renderer now returns the same single canonical relationship that its mounted graph paints, dropping dangling endpoints and collapsing reversed duplicates according to the existing graph owner. Metadata-only updates keep an assertion filter off, refresh measured count 42 and visits 7 without another click, and expose the current receipt/weight on the next actual click. After the optional visits map omits an existing ID, both baseline and candidate retain 7. The intermediate candidate's incorrect 0 is preserved as a failed proof.
+
+The actual rail still passes pointer→native→clear→reselect, same-ID event growth with visits 1→2, hovered-entity removal, empty input and recovery. Forty bounded long-name entities retain positive glyph paint with no recorded collisions or out-of-bounds text through hover, pan and Fit; both full-name/event panels fit. Clearing the actual label canvases clears both pixels and recorder entries, followed by fresh positive paint. These are observation checks, not a whole-product or motion grade.
+
+The root cause was two competing owners: raw input rows produced detail/callbacks while the graph model reconciled canvas relationships. The correction reads one existing graph after a before-paint patch and refreshes React detail for attribute-only updates. Restoring graph-owned visits preserves optional-input semantics without restoring the stale-visits bug. The original model's build-first/patch-last duplicate policy is unchanged; this slice neither introduces a second normalizer nor rewrites that policy.
+
+Reviewer context was reused after a fresh-agent spawn hit the thread limit; the reviewer did not author application changes. The bounded hosts use Chromium at 900×1100 and 390×844 with reduced motion. Final seven-width source and installed evidence, staged-tree binding and portable archive remain separate pending gates.
+
+[Machine evidence and hashes](E6c_NODETRACE_ENTITY_OWNER_KNOCKOUT.json) · [Generic renderer replay](E6c-nodetrace-canonical-owner-knockout-02/report.json) · [Rail replay](E6c-nodetrace-independent-owner-knockout/report.json) · [Retained omitted-visits failure](E6c-nodetrace-canonical-owner-knockout-01/report.json)
