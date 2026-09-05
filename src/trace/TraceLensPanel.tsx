@@ -1,5 +1,5 @@
 import { Activity, ArrowUpRight, FileSearch, Lock, ShieldCheck, X } from "lucide-react";
-import type { ReactNode } from "react";
+import { useLayoutEffect, useRef, type ReactNode } from "react";
 import type { CodeOwnershipReceipt, NodeTraceState, TraceProof } from "./types";
 import { useTraceLens } from "./TraceLensProvider";
 import "./trace.css";
@@ -12,29 +12,55 @@ export function TraceLensPanel({
   state: NodeTraceState;
 }) {
   const { builderCapable, close, hit, mode, open, setMode } = useTraceLens();
-  // The panel reads its title and blurb from the surface registry that came
-  // with the state file. An id the registry does not list has nothing to show.
+  const dialogRef = useRef<HTMLDialogElement>(null);
+  const pointerStartedOutside = useRef(false);
+  useLayoutEffect(() => {
+    const dialog = dialogRef.current;
+    if (!open || !dialog) return;
+    const opener = document.activeElement;
+    dialog.showModal();
+    dialog.querySelector<HTMLButtonElement>(".nt-close")?.focus();
+    return () => {
+      dialog.close();
+      if (opener instanceof HTMLElement && opener.isConnected && opener !== document.body) opener.focus();
+      else (document.querySelector<HTMLButtonElement>("[data-trace-inspect]:not(:disabled)") ?? document.querySelector<HTMLElement>("main[tabindex]"))?.focus();
+    };
+  }, [open]);
+  // Registry absence is a visible missing-data result, never fabricated proof.
   const meta = state.surfaces.find((surface) => surface.id === hit?.surfaceId) ?? null;
 
-  if (!open || !hit || !meta) return null;
+  if (!open || !hit) return null;
 
   const proofCards = filterByHit(state.proofs, hit.surfaceId, hit.artifactId, hit.elementId).slice(0, 6);
   const traceRows = filterByHit(state.traces, hit.surfaceId, hit.artifactId, hit.elementId).slice(-6).reverse();
   const ownership = state.codeOwnership.find((entry) => entry.surfaceId === hit.surfaceId) ?? null;
 
   return (
-    <>
-      <div className="nt-backdrop" onClick={close} aria-hidden="true" />
-      <aside className="nt-panel" role="dialog" aria-label={`Trace Lens: ${meta.label}`}>
+      <dialog ref={dialogRef} className="nt-panel" role="dialog" aria-modal="true" aria-label={`Trace Lens: ${meta?.label ?? "Surface unavailable"}`} onCancel={(event) => { event.preventDefault(); close(); }} onPointerDown={(event) => {
+        const rect = event.currentTarget.getBoundingClientRect();
+        pointerStartedOutside.current = event.button === 0 && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom);
+      }} onPointerCancel={() => { pointerStartedOutside.current = false; }} onClick={(event) => {
+        if (event.target !== event.currentTarget) return;
+        const rect = event.currentTarget.getBoundingClientRect();
+        if (pointerStartedOutside.current && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) close();
+        pointerStartedOutside.current = false;
+      }} onKeyDown={(event) => {
+        if (event.key !== "Tab" || event.altKey || event.ctrlKey || event.metaKey) return;
+        const controls = [...event.currentTarget.querySelectorAll<HTMLElement>("button:not(:disabled), a[href]")].filter((node) => node.tabIndex >= 0 && node.getClientRects().length > 0);
+        const first = controls[0], last = controls[controls.length - 1];
+        const destination = event.shiftKey && document.activeElement === first ? last : !event.shiftKey && document.activeElement === last ? first : null;
+        // Native modal inertness protects the page; wrap endpoints so Tab does not enter browser chrome.
+        if (destination) { event.preventDefault(); destination.focus(); }
+      }}>
         <header className="nt-head">
           <FileSearch size={15} aria-hidden="true" />
-          <strong>{meta.label}</strong>
+          <strong>{meta?.label ?? "Surface unavailable"}</strong>
           {builderCapable ? (
-            <div className="nt-modes" role="tablist" aria-label="Trace Lens mode">
-              <button type="button" aria-selected={mode === "review"} data-on={String(mode === "review")} onClick={() => setMode("review")}>
+            <div className="nt-modes" role="group" aria-label="Trace Lens mode">
+              <button type="button" aria-pressed={mode === "review"} data-on={String(mode === "review")} onClick={() => setMode("review")}>
                 Review
               </button>
-              <button type="button" aria-selected={mode === "builder"} data-on={String(mode === "builder")} onClick={() => setMode("builder")}>
+              <button type="button" aria-pressed={mode === "builder"} data-on={String(mode === "builder")} onClick={() => setMode("builder")}>
                 Builder
               </button>
             </div>
@@ -45,7 +71,8 @@ export function TraceLensPanel({
         </header>
 
         <div className="nt-body">
-          <p className="nt-about">{meta.about}</p>
+          <p className="nt-about">{meta?.about ?? `No registry entry is available for “${hit.surfaceId}” in this state file. Regenerate or load the matching trace data.`}</p>
+          {(hit.elementId || hit.artifactId) ? <p className="nt-about">Showing matching records where available; otherwise these records describe the surrounding surface. This selection does not verify the exact element.</p> : null}
 
           <TraceRegion icon={<ShieldCheck size={13} aria-hidden="true" />} title="Business proof">
             {proofCards.length > 0 ? (
@@ -62,17 +89,17 @@ export function TraceLensPanel({
                       <a href={proof.sourceUrl} target="_blank" rel="noreferrer">
                         Open source <ArrowUpRight size={12} aria-hidden="true" />
                       </a>
-                    ) : (
-                      <button type="button" onClick={() => onOpenSource?.(proof)}>
+                    ) : onOpenSource ? (
+                      <button type="button" onClick={() => onOpenSource(proof)}>
                         Open source <ArrowUpRight size={12} aria-hidden="true" />
                       </button>
-                    )}
+                    ) : <span>Source opening is unavailable in this host.</span>}
                   </footer>
                 </article>
               ))
             ) : (
               <p className="nt-empty">
-                {meta.proofAvailable ? "No business proof is attached to this exact surface yet." : "This surface does not publish business proof."}
+                {meta?.proofAvailable ? "No business proof is attached to this surface yet." : meta ? "This surface does not publish business proof." : "Business proof availability is unknown for this unregistered surface."}
               </p>
             )}
           </TraceRegion>
@@ -103,8 +130,7 @@ export function TraceLensPanel({
             )}
           </TraceRegion>
         </div>
-      </aside>
-    </>
+      </dialog>
   );
 }
 

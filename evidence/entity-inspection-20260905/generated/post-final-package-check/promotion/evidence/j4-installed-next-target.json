@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "journey": "J4 - install into an existing Next app and open /nodetrace",
+  "completedAt": "2026-08-14T00:13:11.067Z",
+  "totalMs": 110709,
+  "apiKeysRequired": false,
+  "url": "http://127.0.0.1:4302/nodetrace",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "installerPhases": [
+    {
+      "name": "install dependencies",
+      "ok": true,
+      "durationMs": 32516
+    },
+    {
+      "name": "happy path",
+      "ok": true,
+      "durationMs": 868
+    },
+    {
+      "name": "smoke",
+      "ok": true,
+      "durationMs": 623
+    },
+    {
+      "name": "build",
+      "ok": true,
+      "durationMs": 66434
+    }
+  ],
+  "observed": {
+    "httpStatus": 200,
+    "title": "",
+    "liveGraphRailPresent": true,
+    "entities": "10",
+    "edges": "15",
+    "paintedNodes": 10,
+    "traceRecords": 0,
+    "canvases": 8,
+    "horizontalOverflowPx": 0,
+    "consoleErrors": [],
+    "failedRequests": []
+  },
+  "screenshot": "promotion/evidence/j4-installed-next-target-1280.png",
+  "issues": []
+}

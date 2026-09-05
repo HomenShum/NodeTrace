@@ -33,8 +33,10 @@ export type NodeGraphProps = {
         light: string;
         dark: string;
     }>;
+    /** Optional current selection owner; null clears the visible detail. */
+    selectedNodeId?: string | null;
     onNode?: (m: NodeClickMessage) => void;
     onContext?: (m: ContextMessage) => void;
 };
-export declare function NodeGraph({ nodes, edges, visits, dark, height, kindColors, onNode, onContext, }: NodeGraphProps): import("react").JSX.Element;
+export declare function NodeGraph({ nodes, edges, visits, dark, height, kindColors, selectedNodeId, onNode, onContext, }: NodeGraphProps): import("react").JSX.Element;
 export default NodeGraph;

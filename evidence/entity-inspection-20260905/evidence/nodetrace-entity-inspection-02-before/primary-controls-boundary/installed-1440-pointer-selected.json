@@ -1,0 +1,74 @@
+{
+  "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "theme": "rgb(245, 247, 251)",
+  "scroll": {
+    "x": 0,
+    "y": 26
+  },
+  "overflow": 0,
+  "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" ari",
+  "entityCount": "10",
+  "edgeCount": "15",
+  "modal": false,
+  "fit": {
+    "x": 54,
+    "y": 597.9375,
+    "width": 27.84375,
+    "height": 21.9375,
+    "documentY": 623.9375
+  },
+  "controls": {
+    "x": 54,
+    "y": 597.9375,
+    "width": 1332,
+    "height": 21.9375,
+    "documentY": 623.9375
+  },
+  "canvas": {
+    "x": 55,
+    "y": 628.875,
+    "width": 1330,
+    "height": 298,
+    "documentY": 654.875
+  },
+  "result": {
+    "x": 37,
+    "y": 1019.046875,
+    "width": 1366,
+    "height": 39.328125,
+    "documentY": 1045.046875
+  },
+  "graphControls": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "fit",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 623.9375
+      }
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "name": "traversal(15)· local",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 97.84375,
+        "y": 602.40625,
+        "width": 13,
+        "height": 13,
+        "documentY": 628.40625
+      }
+    }
+  ],
+  "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+}

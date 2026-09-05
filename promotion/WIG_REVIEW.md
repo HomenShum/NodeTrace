@@ -1,5 +1,15 @@
 # Web Interface Guidelines review — NodeTrace
 
+> **2026-09-04 candidate update:** the observations and scores below are historical.
+> Their UI source citations are pinned to pre-repair commit
+> [fc7c0c4](https://github.com/HomenShum/NodeTrace/tree/fc7c0c471bea40d2fb354e3cb742b395e923244b);
+> the original raw evidence is also retained in that commit. D1 and D4 now have
+> repairs in the local candidate, pending final independent UI judgment. Loading,
+> snapshot labels and demo URL selection also have candidate repairs. This does
+> not rescore this report or close the promotion gate. See the current
+> [onboarding guide](../docs/START_HERE.md) and
+> [concerns](../docs/codebase/CONCERNS.md) for the changed behavior and limits.
+
 Condition 7 of the [PROMOTION gate](https://github.com/HomenShum/NodeKit/blob/main/templates/promotion/GATE.md).
 **Verdict: FAIL — 7 major findings.** Previously UNVERIFIED, because no review
 had been run.
@@ -70,7 +80,7 @@ keyboard-operable & follow the WAI-ARIA Authoring Patterns."*
 Measured in the rendered page: **0 of 12 focusable elements open the Trace Lens
 when Enter is pressed on them**, and 40 consecutive Tab presses (13 distinct
 stops) never reach an opener. The lens is the product; the only way in is
-`src/trace/TraceLensProvider.tsx:58` (`event.metaKey || event.ctrlKey`), a
+[src/trace/TraceLensProvider.tsx (pre-repair source)](https://github.com/HomenShum/NodeTrace/blob/fc7c0c471bea40d2fb354e3cb742b395e923244b/src/trace/TraceLensProvider.tsx#L58) (`event.metaKey || event.ctrlKey`), a
 modified mouse click. Evidence:
 [`wig-keyboard-no-opener.png`](evidence/wig-keyboard-no-opener.png),
 `measurements.keyboard` in the report.
@@ -78,7 +88,7 @@ modified mouse click. Evidence:
 **M2 — Manage focus.** *"Manage focus. Use focus traps, move & return focus
 according to the WAI-ARIA Patterns."*
 
-The dialog at `src/trace/TraceLensPanel.tsx:28` (`role="dialog"`) opens with
+The dialog at [src/trace/TraceLensPanel.tsx (pre-repair source)](https://github.com/HomenShum/NodeTrace/blob/fc7c0c471bea40d2fb354e3cb742b395e923244b/src/trace/TraceLensPanel.tsx#L28) (`role="dialog"`) opens with
 `document.activeElement` still on `<body>` and no `aria-modal`. Of the 6 Tab
 presses after it opens, **2 land inside the panel and 4 land on controls behind
 it** — measured in order: `button "fit"`, `input`, `button.nt-close "Close Trace
@@ -112,7 +122,7 @@ cannot be linked is the wrong default.
 (button, a, label, table), before `aria-*`."*, with the WAI-ARIA Authoring
 Patterns requirement from the Interactions section.
 
-**4 elements carry `role="tab"`** at `src/DemoDashboard.tsx:196`
+**4 elements carry `role="tab"`** at [src/DemoDashboard.tsx (pre-repair source)](https://github.com/HomenShum/NodeTrace/blob/fc7c0c471bea40d2fb354e3cb742b395e923244b/src/DemoDashboard.tsx#L196)
 (`role="tablist"`), and the page has **0 `role="tabpanel"` and 0
 `aria-controls`**. The tablist announces a widget whose panels do not exist, so
 assistive technology is told about a relationship the DOM cannot express, and the
@@ -139,7 +149,7 @@ the hero's own statistics — the numbers a reader is there to read.
 sparse, dense, & error states."* and *"No dead ends. Every screen offers a next
 step or recovery path."*
 
-After the README's own Happy Path, `src/DemoDashboard.tsx:105`
+After the README's own Happy Path, [src/DemoDashboard.tsx (pre-repair source)](https://github.com/HomenShum/NodeTrace/blob/fc7c0c471bea40d2fb354e3cb742b395e923244b/src/DemoDashboard.tsx#L105)
 (`{coach && activeCoachStep ? (`) renders **nothing** where the Trace Coach
 belongs — **18 px of empty space** between the hero and the graph rail — while
 the hero one line above reads "Coach steps **0**" and, in the same card, claims

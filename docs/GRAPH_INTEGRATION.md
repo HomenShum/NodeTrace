@@ -18,6 +18,14 @@ what the current wiring (`src/trace/LiveGraphRail.tsx`, commit cdf3cb5) feeds
 and deliberately refuses, and names the exact schema changes that would let a
 NodeTrace row honestly earn a higher trust class.
 
+## Local accessibility and label-placement delta
+
+A reviewer can select any current trace entity using the rail's native Entity control and read its complete name and exact producing-event IDs. Pointer selection uses the same mapping. When an entity disappears, its earlier event result is no longer shown.
+
+The original NodeGraph8242a83 copy has a disclosed local change in `vendor/nodegraph-live/NodeGraph.js`: measured glyph rectangles select an adjacent in-bounds position and avoid other labels in the current frame. The same placement controls hover text. Labels may shorten or hide on dense graphs; the visible Entity control retains the full identity. One optional controlled selectedNodeId prop makes both detail panels use the same current selection. Detail messages and visits derive from the same reconciled graph as the canvas, preserving omitted-visit retention and the existing duplicate/dangling-edge behavior. Metadata refresh preserves unchanged type filters; hover resets when snapshot inputs change. Consumers omitting the prop keep internal selection. In the controlled rail the Entity selector owns clearing. Graph/session schema, edge meanings, measured counts, positions and force-layout settings are unchanged.
+
+Replay `node scripts/ui-readiness.mjs` for the current-source keyboard, pointer, responsive and current-frame canvas proof. The shared proof helper clears its observations when the real canvas is cleared, so earlier draws cannot certify a blank frame. These are demonstrated fixture jobs, not an arbitrary production-graph scale guarantee.
+
 ## (a) The event taxonomy, and the trust class each event earns
 
 The trace event schema is `trace_events` in `db/schema.sql`: `id`,

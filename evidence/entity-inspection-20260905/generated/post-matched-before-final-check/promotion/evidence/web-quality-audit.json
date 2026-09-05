@@ -1,0 +1,303 @@
+{
+  "ok": false,
+  "condition": 8,
+  "generatedAt": "2026-08-14T01:55:04.159Z",
+  "servedFrom": "vite preview over dist/ (the built bundle, not the dev server)",
+  "tools": {
+    "lighthouse": "lighthouse@13.4.1",
+    "axe": "@axe-core/cli@4.13.0"
+  },
+  "major": [
+    "happy-path: axe color-contrast (serious, 6 nodes) — Elements must meet minimum color contrast ratio thresholds",
+    "happy-path: Total Blocking Time 774ms exceeds 600ms — the main thread is unresponsive to input for that long after load",
+    "trace-coach: axe color-contrast (serious, 19 nodes) — Elements must meet minimum color contrast ratio thresholds",
+    "trace-coach: Total Blocking Time 687ms exceeds 600ms — the main thread is unresponsive to input for that long after load"
+  ],
+  "results": [
+    {
+      "state": "happy-path",
+      "note": "README Happy Path: hero + Live graph rail, no Trace Coach",
+      "url": "http://127.0.0.1:4910/",
+      "commands": [
+        "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-happy-path.json --chrome-flags=--headless --quiet",
+        "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-happy-path.json"
+      ],
+      "lighthouse": {
+        "lighthouseVersion": "13.4.1",
+        "categories": {
+          "performance": 0.8,
+          "accessibility": 0.92,
+          "best-practices": 1,
+          "seo": 0.82,
+          "agentic-browsing": 0.67
+        },
+        "largestContentfulPaintMs": 2157.676375,
+        "cumulativeLayoutShift": 0,
+        "totalBlockingTimeMs": 773.9999999999998,
+        "firstContentfulPaintMs": 1507.7411,
+        "failedAudits": [
+          {
+            "id": "total-blocking-time",
+            "score": 0.38,
+            "title": "Total Blocking Time"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0,
+            "title": "Max Potential First Input Delay"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work"
+          },
+          {
+            "id": "bootup-time",
+            "score": 0,
+            "title": "Reduce JavaScript execution time"
+          },
+          {
+            "id": "color-contrast",
+            "score": 0,
+            "title": "Background and foreground colors do not have a sufficient contrast ratio."
+          },
+          {
+            "id": "heading-order",
+            "score": 0,
+            "title": "Heading elements are not in a sequentially-descending order"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "title": "Reduce unused JavaScript"
+          },
+          {
+            "id": "meta-description",
+            "score": 0,
+            "title": "Document does not have a meta description"
+          },
+          {
+            "id": "robots-txt",
+            "score": 0,
+            "title": "robots.txt is not valid"
+          },
+          {
+            "id": "llms-txt",
+            "score": 0,
+            "title": "llms.txt does not follow recommendations"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ]
+      },
+      "axe": {
+        "axeVersion": "4.13.0",
+        "passes": 28,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 7
+          }
+        ],
+        "violationNodes": 7,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": 6,
+            "targets": [
+              ".heroStats > div:nth-child(1) > span",
+              "div:nth-child(1) > small",
+              ".heroStats > div:nth-child(2) > span",
+              "div:nth-child(2) > small",
+              "div:nth-child(3) > span",
+              "div:nth-child(3) > small"
+            ]
+          },
+          {
+            "id": "heading-order",
+            "impact": "moderate",
+            "help": "Heading levels should only increase by one",
+            "nodes": 1,
+            "targets": [
+              "h3"
+            ]
+          }
+        ]
+      },
+      "artifacts": [
+        "promotion/evidence/lighthouse-happy-path.json",
+        "promotion/evidence/axe-happy-path.json"
+      ]
+    },
+    {
+      "state": "trace-coach",
+      "note": "J3 screen: six-step Trace Coach mounted above the rail",
+      "url": "http://127.0.0.1:4910/",
+      "commands": [
+        "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-trace-coach.json --chrome-flags=--headless --quiet",
+        "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-trace-coach.json"
+      ],
+      "lighthouse": {
+        "lighthouseVersion": "13.4.1",
+        "categories": {
+          "performance": 0.81,
+          "accessibility": 0.95,
+          "best-practices": 1,
+          "seo": 0.83,
+          "agentic-browsing": 0.67
+        },
+        "largestContentfulPaintMs": 2157.7922500000004,
+        "cumulativeLayoutShift": 0,
+        "totalBlockingTimeMs": 686.5000000000002,
+        "firstContentfulPaintMs": 1525.4338,
+        "failedAudits": [
+          {
+            "id": "total-blocking-time",
+            "score": 0.43,
+            "title": "Total Blocking Time"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.01,
+            "title": "Max Potential First Input Delay"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work"
+          },
+          {
+            "id": "bootup-time",
+            "score": 0,
+            "title": "Reduce JavaScript execution time"
+          },
+          {
+            "id": "color-contrast",
+            "score": 0,
+            "title": "Background and foreground colors do not have a sufficient contrast ratio."
+          },
+          {
+            "id": "heading-order",
+            "score": 0,
+            "title": "Heading elements are not in a sequentially-descending order"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "title": "Reduce unused JavaScript"
+          },
+          {
+            "id": "meta-description",
+            "score": 0,
+            "title": "Document does not have a meta description"
+          },
+          {
+            "id": "robots-txt",
+            "score": 0,
+            "title": "robots.txt is not valid"
+          },
+          {
+            "id": "llms-txt",
+            "score": 0,
+            "title": "llms.txt does not follow recommendations"
+          },
+          {
+            "id": "forced-reflow-insight",
+            "score": 0,
+            "title": "Forced reflow"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ]
+      },
+      "axe": {
+        "axeVersion": "4.13.0",
+        "passes": 37,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 13
+          }
+        ],
+        "violationNodes": 20,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "help": "Elements must meet minimum color contrast ratio thresholds",
+            "nodes": 19,
+            "targets": [
+              ".heroStats > div:nth-child(1) > span",
+              ".heroStats > div:nth-child(1) > small",
+              ".heroStats > div:nth-child(2) > span",
+              "div:nth-child(2) > small",
+              "div:nth-child(3) > span",
+              "div:nth-child(3) > small",
+              ".r-tracevu-rec[data-on=\"true\"][data-testid=\"trace-record\"] > .r-tracevu-rec-head > .r-tracevu-pill[data-tone=\"ok\"]",
+              ".r-tracevu-rec[data-on=\"true\"][data-testid=\"trace-record\"] > .r-tracevu-rec-sub",
+              ".r-tracevu-rec[data-on=\"true\"][data-testid=\"trace-record\"] > .r-tracevu-rec-meta",
+              ".r-tracevu-rec[data-testid=\"trace-record\"][data-on=\"false\"]:nth-child(3) > .r-tracevu-rec-meta",
+              ".r-tracevu-rec[data-testid=\"trace-record\"][data-on=\"false\"]:nth-child(4) > .r-tracevu-rec-meta",
+              ".r-tracevu-rec[data-testid=\"trace-record\"][data-on=\"false\"]:nth-child(5) > .r-tracevu-rec-meta",
+              ".r-tracevu-rec[data-testid=\"trace-record\"][data-on=\"false\"]:nth-child(6) > .r-tracevu-rec-meta",
+              ".r-tracevu-rec[data-testid=\"trace-record\"][data-on=\"false\"]:nth-child(7) > .r-tracevu-rec-meta",
+              "button[role=\"tab\"][data-on=\"false\"]:nth-child(2)",
+              "button[role=\"tab\"][data-on=\"false\"]:nth-child(3)",
+              "button[role=\"tab\"][data-on=\"false\"]:nth-child(4)",
+              ".codePane > small",
+              ".uiPane > small"
+            ]
+          },
+          {
+            "id": "heading-order",
+            "impact": "moderate",
+            "help": "Heading levels should only increase by one",
+            "nodes": 1,
+            "targets": [
+              "h3"
+            ]
+          }
+        ]
+      },
+      "artifacts": [
+        "promotion/evidence/lighthouse-trace-coach.json",
+        "promotion/evidence/axe-trace-coach.json"
+      ]
+    }
+  ]
+}

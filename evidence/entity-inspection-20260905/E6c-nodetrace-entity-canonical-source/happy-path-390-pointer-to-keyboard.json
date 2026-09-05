@@ -1,0 +1,28 @@
+{
+  "url": "http://127.0.0.1:4917/?unrelated=preserved#review",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "overflow": 0,
+  "focus": "<select aria-describedby=\"_r_0_\"><option value=\"\">Choose an entity</option><option value=\"[&quot;actor&quot;,&quot;nodetrace&quot;]\">actor: nodetrace</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceStrip&quot;]\">tool: workSurface.traceStrip</option><option value=\"[&quot;step&quot;,&quot;schema&quot;]\">step: schema</option><option value=\"[&quot;tool&quot;,&quot;workSurface.evidenceCarousel&quot;]\">tool: workSurface.evidenceCarousel</option><option value=\"[&quot;artifact&quot;,&quot;demo-artifact&quot;]\">artifact: demo-artifact</option><option value=\"[&quot;step&quot;,&quot;proof&quot;]\">step: proof</option><option value=\"[&quot;tool&quot;,&quot;copilot.agentOperationStream&quot;]\">tool: copilot.agentOperationStream</option><option value=\"[&quot;step&quot;,&quot;events&quot;]\">step: events</option><option value=\"[&quot;tool&quot;,&quot;shell.statusStrip&quot;]\">tool: shell.statusStrip</option><option value=\"[&quot;step&quot;,&quot;state&quot;]\">step: state</option></select>",
+  "headings": [
+    {
+      "level": "H1",
+      "text": "Portable trace UI for agent apps."
+    },
+    {
+      "level": "H2",
+      "text": "Load a guided trace"
+    },
+    {
+      "level": "H2",
+      "text": "Live graph rail"
+    },
+    {
+      "level": "H3",
+      "text": "Relationship graph"
+    }
+  ],
+  "modal": false
+}

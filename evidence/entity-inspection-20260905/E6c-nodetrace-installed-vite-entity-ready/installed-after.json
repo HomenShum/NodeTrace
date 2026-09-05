@@ -1,0 +1,154 @@
+{
+  "src/main.tsx": {
+    "sha256": "60bc068f01bba7fd6558420bedb46633260a1906b854602ad50b0c7d4ff6d5e5",
+    "bytes": 194
+  },
+  "src/nodetrace/LiveGraphRail.tsx": {
+    "sha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+    "bytes": 4306
+  },
+  "src/nodetrace/TraceLensPanel.tsx": {
+    "sha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "bytes": 8970
+  },
+  "src/nodetrace/TraceLensProvider.tsx": {
+    "sha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "bytes": 3424
+  },
+  "src/nodetrace/index.ts": {
+    "sha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+    "bytes": 406
+  },
+  "src/nodetrace/trace.css": {
+    "sha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "bytes": 3901
+  },
+  "src/nodetrace/types.ts": {
+    "sha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+    "bytes": 3507
+  },
+  "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts": {
+    "sha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "bytes": 1357
+  },
+  "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": {
+    "sha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+    "bytes": 34839
+  },
+  "src/nodetrace/vendor/nodegraph-live/README.md": {
+    "sha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "bytes": 182
+  },
+  "src/nodetrace/vendor/nodegraph-live/graph-model.d.ts": {
+    "sha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "bytes": 6969
+  },
+  "src/nodetrace/vendor/nodegraph-live/graph-model.js": {
+    "sha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "bytes": 16614
+  },
+  "src/nodetrace/vendor/nodegraph-live/index.d.ts": {
+    "sha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "bytes": 513
+  },
+  "src/nodetrace/vendor/nodegraph-live/index.js": {
+    "sha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "bytes": 274
+  },
+  "src/nodetrace/vendor/nodegraph-live/react.d.ts": {
+    "sha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "bytes": 154
+  },
+  "src/nodetrace/vendor/nodegraph-live/react.js": {
+    "sha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "bytes": 89
+  },
+  "src/nodetrace/vendor/nodegraph-live/session.d.ts": {
+    "sha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "bytes": 2857
+  },
+  "src/nodetrace/vendor/nodegraph-live/session.js": {
+    "sha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+    "bytes": 11987
+  },
+  "src/nodetrace-demo/DemoDashboard.tsx": {
+    "sha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+    "bytes": 17140
+  },
+  "src/nodetrace-demo/demoNavigation.ts": {
+    "sha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "bytes": 3748
+  },
+  "src/nodetrace-demo/demoState.ts": {
+    "sha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "bytes": 3739
+  },
+  "src/nodetrace-demo/main.tsx": {
+    "sha256": "a707f7da8130e070c514ea16ebc34b791487c012e40070b08fc20009aad0208a",
+    "bytes": 279
+  },
+  "src/nodetrace-demo/styles.css": {
+    "sha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "bytes": 17130
+  },
+  "scripts/nodetrace-init.mjs": {
+    "sha256": "c900243bea5d73c598dc58e5abefba7c247212485a9c8a92b7897d193e48f369",
+    "bytes": 8312
+  },
+  "scripts/nodetrace-smoke.mjs": {
+    "sha256": "bf457ef32777f901a3304bac0c1badee480d90d022e877e72e78d790dd01af74",
+    "bytes": 2420
+  },
+  "db/nodetrace.schema.sql": {
+    "sha256": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "bytes": 3105
+  },
+  "dist/assets/index-t2bDzXc4.js": {
+    "sha256": "013d8f7b799bae735ff97bb0f0864cd67657003990e6b75bc56a02d55f79902b",
+    "bytes": 194581
+  },
+  "dist/index.html": {
+    "sha256": "d37665b3cd569c9741ae8e34c5dd28dc604703b96468be193740bdf762f98a14",
+    "bytes": 289
+  },
+  "dist/nodetrace-state.json": {
+    "sha256": "b5128e0eb00d5b91d030b129b301f9fb1e80c4f4f2d7172addde76f8df895c9a",
+    "bytes": 3355
+  },
+  "package.json": {
+    "sha256": "79020f8ee78953813357670056b408ac40a85e52cda0ac7172d985c6c104bd15",
+    "bytes": 926
+  },
+  "package-lock.json": {
+    "sha256": "4cc29f73dae68dea53fc63ad72f3437cc1ccbcc87b7e8b40098f7fb153aa796e",
+    "bytes": 82131
+  },
+  "tsconfig.json": {
+    "sha256": "47fa3011f56da3a1fbedd9b10782c1f03d834db463e15c986048d4c4cd597024",
+    "bytes": 393
+  },
+  "vite.config.ts": {
+    "sha256": "1324d55fbba3c3c0e78f8cd30f51c7e4187d477768558acc2acaf7176a2232ff",
+    "bytes": 130
+  },
+  "index.html": {
+    "sha256": "fa146504577651c76ca478688d4110e0156112d3b46f4c543fc43968d3b26de1",
+    "bytes": 262
+  },
+  "nodetrace.html": {
+    "sha256": "85f7c4b02ddd1594da7907234ebc873438440ac24eb1a9e283b1b5990df34375",
+    "bytes": 323
+  },
+  "docs/NODETRACE_INTEGRATION.md": {
+    "sha256": "52c77ef88c9b89bb3603e14bad99acd0da47a5721e42d4c3350ee208f41c948c",
+    "bytes": 1107
+  },
+  ".nodetrace/setup-log.txt": {
+    "sha256": "42a1425f1156bc079ba9389467b5773f3687141d409ab5587b7395a5ce793c77",
+    "bytes": 1659
+  },
+  ".nodetrace/setup-receipt.json": {
+    "sha256": "c46df1f4d97a89ac31dba575606bdd4875e0fade620b22d32c00b541737fa88e",
+    "bytes": 1592
+  }
+}

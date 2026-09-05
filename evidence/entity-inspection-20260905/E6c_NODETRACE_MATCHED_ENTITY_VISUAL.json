@@ -1,0 +1,1307 @@
+{
+  "proof": "NODETRACE-MATCHED-ENTITY-VISUAL-02",
+  "at": "2026-09-05T04:44:34.111057+00:00",
+  "mode": "Builder / independent judge",
+  "verdict": "VERIFIED_WITH_CAVEATS",
+  "requestTraceability": "Make each repository ready for developer handoff, including visual UI, responsiveness, and interaction standards; this bounded review verifies the NodeTrace entity-inspection repair against exact previous inputs.",
+  "reviewerIndependence": "Reused nonauthor reviewer context due agent thread limit. This reviewer did not implement the NodeTrace repair.",
+  "scope": "Local built primary Vite and installed production Next UI, exact original fixture replay, six viewport cells and twelve captures. No source, index, ref, fixture, or environment file edits. No provider, deployment, or production proof.",
+  "primary": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "installedConsumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-BzFZOC",
+  "headDuringProof": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+  "sourceBindings": {
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "scripts/lib/entity-inspection-proof.mjs": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+    "vendor/nodegraph-live/NodeGraph.js": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/ui-readiness.mjs": "31b233e37e6a149b3657d19620d59733b69afd587983f9af9c07f7e3ba43c9df",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+  },
+  "installedTransforms": [
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "replacements": [],
+      "sourceSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "expectedInstalledSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "installedSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.d.ts",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "replacements": [],
+      "sourceSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "expectedInstalledSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "installedSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/graph-model.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "replacements": [],
+      "sourceSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "expectedInstalledSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "installedSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/session.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/session.js",
+      "replacements": [],
+      "sourceSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "expectedInstalledSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "installedSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/react.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/react.js",
+      "replacements": [],
+      "sourceSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "expectedInstalledSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "installedSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/index.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/index.js",
+      "replacements": [],
+      "sourceSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "expectedInstalledSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "installedSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "exact": true
+    },
+    {
+      "source": "src/trace/LiveGraphRail.tsx",
+      "target": "src/nodetrace/LiveGraphRail.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+      "expectedInstalledSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "installedSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "exact": true
+    },
+    {
+      "source": "src/styles.css",
+      "target": "src/nodetrace-demo/styles.css",
+      "replacements": [],
+      "sourceSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "expectedInstalledSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "installedSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "exact": true
+    },
+    {
+      "source": "src/DemoDashboard.tsx",
+      "target": "src/nodetrace-demo/DemoDashboard.tsx",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "expectedInstalledSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "installedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "exact": true
+    },
+    {
+      "source": "src/demoState.ts",
+      "target": "src/nodetrace-demo/demoState.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "expectedInstalledSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "installedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "exact": true
+    },
+    {
+      "source": "src/demoNavigation.ts",
+      "target": "src/nodetrace-demo/demoNavigation.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "expectedInstalledSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "installedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensPanel.tsx",
+      "target": "src/nodetrace/TraceLensPanel.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "expectedInstalledSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "installedSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensProvider.tsx",
+      "target": "src/nodetrace/TraceLensProvider.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "expectedInstalledSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "installedSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "exact": true
+    },
+    {
+      "source": "src/trace/trace.css",
+      "target": "src/nodetrace/trace.css",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "expectedInstalledSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "installedSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "exact": true
+    },
+    {
+      "source": "src/trace/types.ts",
+      "target": "src/nodetrace/types.ts",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "expectedInstalledSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "installedSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "exact": true
+    }
+  ],
+  "preservation": {
+    "head": true,
+    "stageListing": true,
+    "source": true,
+    "installed": true,
+    "originalPrimary": true,
+    "originalInstalled": true
+  },
+  "browserResult": {
+    "passed": true,
+    "checks": 165,
+    "cells": 6,
+    "states": 12,
+    "screenshots": 36,
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\report.json"
+  },
+  "protectedMarkupResult": {
+    "passed": true,
+    "checks": 24,
+    "selectors": [
+      ".showcase",
+      "[aria-label=\"Trace Coach launch path\"]",
+      ".liveGraphRailHead",
+      ".coachEmpty"
+    ],
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\protected-markup-comparison.json"
+  },
+  "cells": [
+    {
+      "name": "source-320",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "deviceScaleFactor": 1,
+      "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "traceRecords": 6,
+      "overviewScroll": {
+        "x": 0,
+        "y": 1999
+      },
+      "matchesBeforeOverviewScroll": true,
+      "actualBeforeURL": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "actualAfterURL": "http://127.0.0.1:4917/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "nativeIdentity": "tool: workSurface.trace",
+      "producingEvents": [
+        "coach-step-02-detail-tabs-trace"
+      ],
+      "captureStates": 2,
+      "currentFrameLabels": [
+        6,
+        6
+      ],
+      "selectHeights": [
+        44,
+        44
+      ],
+      "fitSizes": [
+        [
+          44,
+          44
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "horizontalOverflow": [
+        0,
+        0
+      ],
+      "servedBuiltModules": 2,
+      "servedBuiltModulesMatch": true
+    },
+    {
+      "name": "source-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 1,
+      "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "traceRecords": 6,
+      "overviewScroll": {
+        "x": 0,
+        "y": 1897
+      },
+      "matchesBeforeOverviewScroll": true,
+      "actualBeforeURL": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "actualAfterURL": "http://127.0.0.1:4917/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "nativeIdentity": "tool: workSurface.trace",
+      "producingEvents": [
+        "coach-step-02-detail-tabs-trace"
+      ],
+      "captureStates": 2,
+      "currentFrameLabels": [
+        7,
+        7
+      ],
+      "selectHeights": [
+        44,
+        44
+      ],
+      "fitSizes": [
+        [
+          44,
+          44
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "horizontalOverflow": [
+        0,
+        0
+      ],
+      "servedBuiltModules": 2,
+      "servedBuiltModulesMatch": true
+    },
+    {
+      "name": "source-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "deviceScaleFactor": 1,
+      "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "traceRecords": 6,
+      "overviewScroll": {
+        "x": 0,
+        "y": 942
+      },
+      "matchesBeforeOverviewScroll": true,
+      "actualBeforeURL": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "actualAfterURL": "http://127.0.0.1:4917/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "nativeIdentity": "tool: workSurface.trace",
+      "producingEvents": [
+        "coach-step-02-detail-tabs-trace"
+      ],
+      "captureStates": 2,
+      "currentFrameLabels": [
+        7,
+        7
+      ],
+      "selectHeights": [
+        44,
+        44
+      ],
+      "fitSizes": [
+        [
+          44,
+          44
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "horizontalOverflow": [
+        0,
+        0
+      ],
+      "servedBuiltModules": 2,
+      "servedBuiltModulesMatch": true
+    },
+    {
+      "name": "installed-320",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "deviceScaleFactor": 1,
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "overviewScroll": {
+        "x": 0,
+        "y": 1014
+      },
+      "matchesBeforeOverviewScroll": true,
+      "actualBeforeURL": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "actualAfterURL": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "nativeIdentity": "tool: workSurface.evidenceCarousel",
+      "producingEvents": [
+        "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+      ],
+      "captureStates": 2,
+      "currentFrameLabels": [
+        6,
+        6
+      ],
+      "selectHeights": [
+        44,
+        44
+      ],
+      "fitSizes": [
+        [
+          44,
+          44
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "horizontalOverflow": [
+        0,
+        0
+      ],
+      "servedBuiltModules": 10,
+      "servedBuiltModulesMatch": true
+    },
+    {
+      "name": "installed-390",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 1,
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "overviewScroll": {
+        "x": 0,
+        "y": 777
+      },
+      "matchesBeforeOverviewScroll": true,
+      "actualBeforeURL": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "actualAfterURL": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "nativeIdentity": "tool: workSurface.evidenceCarousel",
+      "producingEvents": [
+        "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+      ],
+      "captureStates": 2,
+      "currentFrameLabels": [
+        6,
+        6
+      ],
+      "selectHeights": [
+        44,
+        44
+      ],
+      "fitSizes": [
+        [
+          44,
+          44
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "horizontalOverflow": [
+        0,
+        0
+      ],
+      "servedBuiltModules": 10,
+      "servedBuiltModulesMatch": true
+    },
+    {
+      "name": "installed-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "deviceScaleFactor": 1,
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "overviewScroll": {
+        "x": 0,
+        "y": 24
+      },
+      "matchesBeforeOverviewScroll": true,
+      "actualBeforeURL": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "actualAfterURL": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "nativeIdentity": "tool: workSurface.evidenceCarousel",
+      "producingEvents": [
+        "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+      ],
+      "captureStates": 2,
+      "currentFrameLabels": [
+        7,
+        7
+      ],
+      "selectHeights": [
+        44,
+        44
+      ],
+      "fitSizes": [
+        [
+          44,
+          44
+        ],
+        [
+          44,
+          44
+        ]
+      ],
+      "horizontalOverflow": [
+        0,
+        0
+      ],
+      "servedBuiltModules": 10,
+      "servedBuiltModulesMatch": true
+    }
+  ],
+  "observedPixels": [
+    "Native Entity selector is visually distinct, focus ring is visible, and full selected identity appears in both selector and detail/readout at the inspected widths.",
+    "Fit is 44 by 44 pixels; Entity is 44 pixels tall in all captured states.",
+    "Current graph labels are selectively omitted or shortened with explanatory text. Populated boundary and selected screenshots show legible labels within the graph; full identity and original producing event remain in textual results.",
+    "Added controls and explanatory text increase vertical space. At the unchanged phone overview scroll the graph is lower; at 320 pixels the selected producing event can require further vertical scrolling. No horizontal overflow occurs.",
+    "The old guidance and headings remain readable and have exact matching parsed markup and text in all six overview pairs. Pixel positions may move through normal document flow; no pixel-identical-neighbor claim is made."
+  ],
+  "limitations": [
+    {
+      "id": "RASTER_FRAME_DISAGREEMENT",
+      "status": "FAILED_ORIGINAL_CAPTURES_RETAINED_WITH_POSITIVE_RECAPTURES",
+      "detail": "Unannotated source-320 and installed-390 overview viewport PNGs have an empty graph area despite current-frame Canvas2D label records. Immediately following full-page and boundary PNGs, and selected PNGs, render the graph. Those blank originals are retained. This proves the current-frame API is insufficient by itself to certify every raster capture; this bounded run does not establish whether screenshot timing/compositing or an intermittent application paint issue caused the discrepancy. No unconditional all-state pixel pass is claimed. Only those two affected cells were recaptured. Both now have positive actual raster proof immediately before final capture, and both final PNGs were independently viewed as populated. This closes the matched visual evidence gap for these states without erasing the initial failed captures or establishing their underlying paint/timing cause.",
+      "paths": [
+        "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated.png",
+        "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated.png"
+      ]
+    },
+    {
+      "id": "HARNESS_URL_EXPECTATION",
+      "status": "CORRECTED_SEPARATE_REPLAY",
+      "detail": "First attempt expected the input URL literally and failed when the source app added its managed step query. The actual BEFORE URL already contains that managed step. Final comparison checks actual before/after path, query, and fragment with only origin normalized. Original failure remains."
+    },
+    {
+      "id": "HARNESS_NETWORK_WAIT",
+      "status": "BOUNDED_SEPARATE_REPLAY",
+      "detail": "Second attempt stalled after source-320 captures while awaiting all response bodies. Owned process tree was interrupted; preservation remained true. Final attempt records actual built modules only and bounds each body read to ten seconds. No candidate source changed."
+    },
+    {
+      "id": "SCREENSHOT_WARNING",
+      "status": "RETAINED",
+      "detail": "Four source-320 GPU ReadPixels performance warnings were retained. There were no browser console errors or page errors. This run makes no performance or CLS claim."
+    }
+  ],
+  "replayDisclosure": "The exact original six-event and four-event bytes, and source assets when referenced, were returned through browser routing. Current application files/build and public data stayed unchanged. This is input replay, not new backend output.",
+  "lowerLayerBoundary": "165 deterministic/browser checks pass; blank raster evidence prevents treating that as proof every screenshot painted. Screenshots actually viewed, DOM and current-frame evidence are distinguished.",
+  "otherReportsNotRerun": {
+    "sourceReceipt": {
+      "checks": 3385,
+      "captures": 128,
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-entity-final-source\\receipt.json"
+    },
+    "installedReceipt": {
+      "checks": 1855,
+      "captures": 95,
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_INSTALLED_NEXT_ENTITY_PROOF.json"
+    }
+  },
+  "fullGrades": null,
+  "productionClaim": false,
+  "serversStopped": true,
+  "viewedImages": [
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-320-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-390-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-1440-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-320-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-390-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-1440-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-320-pointer-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-390-pointer-selected.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated-change-boundary.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated-full.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated-full.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-populated.png",
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-populated.png"
+  ],
+  "artifactManifest": [
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-entity-final-source\\receipt.json",
+      "bytes": 1539201,
+      "sha256": "76a656deb01dcbac0464354a0914afd8b186d1d88f85210130b9bccff3a59320"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual\\report.json",
+      "bytes": 28681,
+      "sha256": "acfe86e1566d081ca17bb7d5c5b56c31c8122ca39aa941258e348541802a9b14"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-cell.json",
+      "bytes": 15139,
+      "sha256": "1f3ad4768be2398d4adce59b4858308efd991b505d309ca09f44549715ba83a5"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected-ax.txt",
+      "bytes": 2585,
+      "sha256": "e878584acbb7e1b9ea9e7c26aa4c74446d805f36e0e51a689d01846326da89c0"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected-boundary.json",
+      "bytes": 396,
+      "sha256": "33cb3997b9bfe42527f81707c2e83e4cedd603d699cc9b77cd1963e8cceae849"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected-change-boundary.png",
+      "bytes": 94597,
+      "sha256": "8b08249a6057afaad6430bca778d60238b554dc3e9f4d2de65756b9b055c8800"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected-full.png",
+      "bytes": 210276,
+      "sha256": "64d5f648c504a6534eb0fa5f0380ef79a03ab5aca4b98e13e92c222643daefbb"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected.html",
+      "bytes": 15359,
+      "sha256": "f0ca45673622caa53bf0d4107b51a68b218fd8d8e16c066acdb4386707c1f845"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected.json",
+      "bytes": 4106,
+      "sha256": "1bdfb199a1819bc2ce6fce887f46dcb53d67da1700df225862d4fabbbaef2ae8"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-native-selected.png",
+      "bytes": 91277,
+      "sha256": "5b5c23dd6175714bf81243800c2230f42546850944d17a8d859b621b7f7833ae"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated-ax.txt",
+      "bytes": 2181,
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated-boundary.json",
+      "bytes": 389,
+      "sha256": "57be8d266a3b7721d5272b8f8ab90fc861f87d8fe1ecb73d0d643403d67a1d1a"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated-change-boundary.png",
+      "bytes": 188280,
+      "sha256": "5c9b66f9f297c7170945f45d695d12993fddb3eda7902e1a6fceb5955e8dfd86"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated-full.png",
+      "bytes": 196840,
+      "sha256": "32ac71b03c34186fff3fb3825d0ec54d55c1e2ee6d3fdea43ab0a0ac02183163"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated.html",
+      "bytes": 14440,
+      "sha256": "24b833b559f606ea9f6e4b39b2cd06d609759f4be995dc34d6613e7415db073d"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated.json",
+      "bytes": 3876,
+      "sha256": "10ec4acc3a51da39076c49762cfd94afbfced855745a196d571812a7cfe5319b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-1440-populated.png",
+      "bytes": 185260,
+      "sha256": "0a632944b982da2d8a5c5f9fc20871a236c2655471d5fca3ce942eb93d9c3ae1"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-cell.json",
+      "bytes": 14556,
+      "sha256": "f1fd9509093bc9cda00344834701e3cae80ec980220ab79bdc7dbf3ec0a14fbb"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected-ax.txt",
+      "bytes": 2585,
+      "sha256": "e878584acbb7e1b9ea9e7c26aa4c74446d805f36e0e51a689d01846326da89c0"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected-boundary.json",
+      "bytes": 396,
+      "sha256": "8d91e15609fe7a2bb89d9e8d7a7ea922f032c6eee93e47c62f519b27bd578a4c"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected-change-boundary.png",
+      "bytes": 44905,
+      "sha256": "5b4c602663d8ceb560f7f4a69eedf2398451be4c7a632816e71395b1002d7c66"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected-full.png",
+      "bytes": 148696,
+      "sha256": "a42ab7e17e94ee92676642c036e9d010c37158ef28b8d27cc29d982e397409b2"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected.html",
+      "bytes": 15345,
+      "sha256": "14b121ecfbb8cbfc967b7af13cd4f8e0fd3182ae11d2d90895e0f6417ca6727b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected.json",
+      "bytes": 3853,
+      "sha256": "32bda37daaf326f2f7eaca04e0c871af53f0c87397e0518fff6e3e88a8507b21"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-native-selected.png",
+      "bytes": 42163,
+      "sha256": "4087da266b69e69a855d0c266f8db12fef1f53de19c3c2eed7e084cfbd7d7102"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated-ax.txt",
+      "bytes": 2181,
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated-boundary.json",
+      "bytes": 390,
+      "sha256": "40f397316fd357cf6fde0b244c2c49f7e019021996107df04f61601b6a32f405"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated-change-boundary.png",
+      "bytes": 42536,
+      "sha256": "82f7f6b9be129f7c800dab3671752c8401015e46a666c408acada6c56739da14"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated-full.png",
+      "bytes": 136732,
+      "sha256": "2d62ae296b9ffc0fe964356730986478dfdb3bfc2b2dff7c8700a9a491992958"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated.html",
+      "bytes": 14426,
+      "sha256": "7ff2a933237b5730f88502815774324a600868172f1ed81b95128ebdffb2812f"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated.json",
+      "bytes": 3629,
+      "sha256": "a6999ff67baa2fa60aea04bfef2c50a7d34c1d409350daf5e1d8f711e7b589c6"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-320-populated.png",
+      "bytes": 39519,
+      "sha256": "b7f075ccc5a234506487108b57078da37cdb968a6a92fb19c185673369208903"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-cell.json",
+      "bytes": 14472,
+      "sha256": "242da1987242a42afb6e07d0a8a7019b051a52435a316cee2014c2df8e4e8422"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected-ax.txt",
+      "bytes": 2585,
+      "sha256": "e878584acbb7e1b9ea9e7c26aa4c74446d805f36e0e51a689d01846326da89c0"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected-boundary.json",
+      "bytes": 381,
+      "sha256": "7a57b01c6e7fcf5ef8720f8411069832e3325da766a4b4d34042711ec1e72ecf"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected-change-boundary.png",
+      "bytes": 54971,
+      "sha256": "fce3a4d4bc5439725bda60f59a9022d6ca1f28918798dcbfa35ed818c451b8f8"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected-full.png",
+      "bytes": 168255,
+      "sha256": "7af3a9a0b3c12dbd0c653eb30e1d422ce260a08e0c7f7777bcfc3c9736f31398"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected.html",
+      "bytes": 15345,
+      "sha256": "fd33506b2f50c22d3821aed82983d2dae5288e76b3ca6458f7814a28243a7b6b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected.json",
+      "bytes": 3827,
+      "sha256": "018d62b350e02b45ec198fbc2dbc2b102183898a1e05998f09f84a37d2a7c60b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-native-selected.png",
+      "bytes": 52186,
+      "sha256": "9075424b651b60b800921d01e91c4e9d40e9f76c5389b408a00fb19180e36f7c"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated-ax.txt",
+      "bytes": 2181,
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated-boundary.json",
+      "bytes": 374,
+      "sha256": "f7f33697c69372b6bbe06e903d78b71714e73492b6ffaeabe668091d7ecb83b9"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated-change-boundary.png",
+      "bytes": 52534,
+      "sha256": "84a26223a8cbaa01b881f1fb140f8951156dc8a7c1d0e72549ec5732b179d259"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated-full.png",
+      "bytes": 155919,
+      "sha256": "c402520b23f69266dfbe33a2c295ab94083204f6d191f8a277ea5618bb613290"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated.html",
+      "bytes": 14426,
+      "sha256": "bd2c25f8d4ce5cf035b8e83e86d5e98803093aa9e9fe41d11c1b93483f95a807"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated.json",
+      "bytes": 3602,
+      "sha256": "306370b25ce8ccb99957144399e38a7ebe2c13ebd1ee09cd140cb8aaa15c0623"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-390-populated.png",
+      "bytes": 36357,
+      "sha256": "558a57b45450948b49f3f4aa2f6829856d2910b969b714df61b2b354215ddc70"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\installed-server.log",
+      "bytes": 145,
+      "sha256": "517a4b12f81761b31e4d0e2bd9139a64d942af60030c78edbd65d09f06456206"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\protected-markup-comparison.json",
+      "bytes": 4806,
+      "sha256": "1c8930d5316fb2590e5aedc24d28fbbf70eced9cabab9d1c44ce2b602db4510c"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\report.json",
+      "bytes": 193038,
+      "sha256": "730c442868d2f05341c329957b861f26d51cd63074394c8f10aaa79531120077"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-cell.json",
+      "bytes": 13599,
+      "sha256": "3de45065ddc8763385897f66ee00316a919dd1e4c6b3d6386a0a50e2bbe99a4a"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected-ax.txt",
+      "bytes": 5033,
+      "sha256": "6dfffd5c731e8bcbf110dabec93f56fa4e34baaf66c8eac24960343ecfce1051"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected-boundary.json",
+      "bytes": 394,
+      "sha256": "caeb719cb16bb237a13f85a14b4bf5f9b9bfc9c2042d82dfb2e550887b5b0ead"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected-change-boundary.png",
+      "bytes": 89541,
+      "sha256": "939492dab2cf766debc84e7fe1aa136209b5e657c8904f0c1b28ef1f84db6680"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected-full.png",
+      "bytes": 414029,
+      "sha256": "f778af7db4d93bb9c140ee4022a61c424e5089f19cf161cf7d67420425141310"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected.html",
+      "bytes": 21993,
+      "sha256": "03b48d122429b6f529cc1a2c79e3a4f74360f6fa631dac5c2ded43c652c4d147"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected.json",
+      "bytes": 4240,
+      "sha256": "16f5efa0ec430bff2ef6b418878b39839fbc089bb36b5a8adf25d68b1a209f54"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-native-selected.png",
+      "bytes": 86574,
+      "sha256": "e40287fcfbf2c658487537b82dc3269c9e829218daa94fd473a83fedbc657918"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated-ax.txt",
+      "bytes": 4664,
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated-boundary.json",
+      "bytes": 387,
+      "sha256": "3bc6c4dcf5a98c678bc2c120b16e2c1fc01f75e5c1ae1af1d3992207f95f9468"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated-change-boundary.png",
+      "bytes": 114097,
+      "sha256": "fbf2a9e5765c376a20537de355866a6b7788864a65fa19c55e89b7bca07af4b6"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated-full.png",
+      "bytes": 400687,
+      "sha256": "260cb2d085124dca4ac27544c40d872069a0829568c7005fb0ca34bf90d88f00"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated.html",
+      "bytes": 21109,
+      "sha256": "479e50cef6f98ac2ed633a90c5b36b75d13dc91bc1160dcad0aad733a343b073"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated.json",
+      "bytes": 4059,
+      "sha256": "e337dcef76ba0c8c4a851731563a58b870321bb0383bc9fc81a049dbd4104c4a"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-1440-populated.png",
+      "bytes": 109125,
+      "sha256": "4868b32a5539134ad57a7adb4e892d98ed9b3c664d70b6e14c64599de06b9f35"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-cell.json",
+      "bytes": 13708,
+      "sha256": "35095db54779df0341b7eca0f398f8b94215fbb08ab5a5927b77341cf581c455"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected-ax.txt",
+      "bytes": 5033,
+      "sha256": "6dfffd5c731e8bcbf110dabec93f56fa4e34baaf66c8eac24960343ecfce1051"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected-boundary.json",
+      "bytes": 379,
+      "sha256": "b22c354006dce556ec953da631a096485909eee42610692337ed5ef8bb8f24db"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected-change-boundary.png",
+      "bytes": 48966,
+      "sha256": "851ccc9ae6e7d2f09bbfc5086354aee4cd4a8887d4862320876c118f1416b239"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected-full.png",
+      "bytes": 245817,
+      "sha256": "07531c24817fa5b1bb8268901edf7cbfbfea29fa3a276bd4c64906db388e986d"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected.html",
+      "bytes": 21979,
+      "sha256": "f61ef9294215de57ec4c2a07cbc332f2436cd5225cbdaab7fe9395d7068ef67b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected.json",
+      "bytes": 3994,
+      "sha256": "540d701b667b05ec084c64f50550b65a343aebe972eb8937333daed5066b4178"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-native-selected.png",
+      "bytes": 46374,
+      "sha256": "950caa778b47915dcdaa5b7158ff25dbb4d9a70c920e6295d4f35729a4a22cd3"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated-ax.txt",
+      "bytes": 4664,
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated-boundary.json",
+      "bytes": 374,
+      "sha256": "85a59eba263692cf3267c7e25d3e5c46b8d561e891f83ab494525af7f210a29d"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated-change-boundary.png",
+      "bytes": 45524,
+      "sha256": "dd7641b0a886d001b8424bed0082b7522274a387f97cf79e01b1b306b6cbce61"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated-full.png",
+      "bytes": 237102,
+      "sha256": "d3172e9c79b5d5447a8fd1193fc175db27ae929152d0733ec2a6e148dc23060f"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated.html",
+      "bytes": 21095,
+      "sha256": "b43cab1c13965ed0b7fcc881533db2797a2a1483e6699190e54c7a6c2eb3e1dc"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated.json",
+      "bytes": 3807,
+      "sha256": "df8891d0ead6e03fd595522f05ecedee6a0fe9017d175e8da055eaf8831f2e0b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-320-populated.png",
+      "bytes": 28615,
+      "sha256": "c9c6c088a1454959962b5e241eb0690cd268f8ae3817c7be1c83d8199b1c0489"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-cell.json",
+      "bytes": 13541,
+      "sha256": "7e91cc79829334e7334edce509b4468a7db83d21aac3ce9c92f30efb60b6346e"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected-ax.txt",
+      "bytes": 5033,
+      "sha256": "6dfffd5c731e8bcbf110dabec93f56fa4e34baaf66c8eac24960343ecfce1051"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected-boundary.json",
+      "bytes": 381,
+      "sha256": "82058a8715739179ee88739f5ead38b079394c51570a7f6501c57f3d4b0fb6c3"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected-change-boundary.png",
+      "bytes": 62085,
+      "sha256": "5897f69890b220122ec38a8d665ea0e16a964a372ab5f0f0581aa67149d84859"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected-full.png",
+      "bytes": 253555,
+      "sha256": "5f3cc8934c030324119b7137392b68b2c6fc9c9e7f00615f4aa6252268e593d6"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected.html",
+      "bytes": 21979,
+      "sha256": "c611612ff9e9fdcfd05fc105bc7ef6359e598f7ea380f04902e91fadb47052de"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected.json",
+      "bytes": 4230,
+      "sha256": "fd8c75fabf51b49bcd96e4dc86116d07befde1ba41a3674a91da500afcc8305c"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-native-selected.png",
+      "bytes": 59503,
+      "sha256": "612726da872582251caf60c545e3e7015967061a5b26758fe0a7aaede0081d2d"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated-ax.txt",
+      "bytes": 4664,
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated-boundary.json",
+      "bytes": 374,
+      "sha256": "d96bd6b87411e2aa44d91abea4e24a0fdd03960787b165b9f3d287349c0832b9"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated-change-boundary.png",
+      "bytes": 55044,
+      "sha256": "8ea8116c3e79803d7ab921b9accf223f5740f4a1365d86aa6f42afacfa2295dd"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated-full.png",
+      "bytes": 245076,
+      "sha256": "c5a11921cd4075fcdcbcc3c9b63c0001965364c48533ac620a68a82dd7c8c09d"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated.html",
+      "bytes": 21095,
+      "sha256": "4cfeb832cba69f61dce958675568c14b4fc9996a0f00cb0cb3c430e55a293a27"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated.json",
+      "bytes": 4041,
+      "sha256": "ce638c10b0d46e498f587685430872b9020f21f86accd22a88334c27a7a90d33"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-390-populated.png",
+      "bytes": 52326,
+      "sha256": "30f67a11900dab8f1eb1598185d62e88ecd649a94eb38e9d0c492c1d5cbee3f5"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-after.json",
+      "bytes": 16672,
+      "sha256": "51e4b66b50256eb976bb697852261264a0363febb7b4b80f61b24ea8b23bdc71"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-before.json",
+      "bytes": 16672,
+      "sha256": "7c0d7ba97255f6cbfc7a01edbaf6e11d2aaad07f044901cec98dc6bb9585e23e"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final\\source-server.log",
+      "bytes": 77,
+      "sha256": "8511ea2f1f6669e03ed3df018548ee501cf298d47a4a31f2b7aa12053c185d94"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-final.mjs",
+      "bytes": 18693,
+      "sha256": "7feb985091d8c18f17950ea60dabee92e2b83bcf3322f54b93ea6c82d4f7a7cc"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-replay\\interruption.json",
+      "bytes": 489,
+      "sha256": "05faeee4789b05314b5a9898759677b2681a35ab2b9458b8beae3ce2e37279c2"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual-replay.mjs",
+      "bytes": 18275,
+      "sha256": "0a9a9e51fac73d33a19171722c6f11b14e44909ca4b90da339c93749836c5f18"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-visual.mjs",
+      "bytes": 18077,
+      "sha256": "220f3077c6916104855568e30008c96d879bd5a4f293055a8015ea84174505ea"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_INSTALLED_NEXT_ENTITY_PROOF.json",
+      "bytes": 77896,
+      "sha256": "634d99c1fee5f1e2e48488c7c3a5a7863c9e378ac0425c52a4dc40edf6d3d42f"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-1440-populated-change-boundary.png",
+      "bytes": 189002,
+      "sha256": "8e088a2ec98a923315c49036698f10ccb15ec59b2a736e8f04ade0455df0abed"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-320-populated-change-boundary.png",
+      "bytes": 41107,
+      "sha256": "26f68f2604d00b6f513b34a21bc1a407adca037ea8e488555507a65573baa6a3"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-390-pointer-selected.png",
+      "bytes": 49383,
+      "sha256": "98fa8376b795dd276f378e8e74922b554dab1be3b47f26157cc4aa9f5c5ff07a"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\installed-390-populated-change-boundary.png",
+      "bytes": 54797,
+      "sha256": "b354bfcf8d68cffbe67c2465b7d91a753d239fa27ca5a1405421464256aabedd"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\report.json",
+      "bytes": 183543,
+      "sha256": "d1227db3609bf8950e7d5572518ca03400ff9b660ca65854f7a42eaf51dfcc10"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-1440-populated-change-boundary.png",
+      "bytes": 118185,
+      "sha256": "0e420f8ef8cce94bb82cf23fc27380e0df2234b462dbc228d49933f3cae6a024"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-320-pointer-selected.png",
+      "bytes": 39731,
+      "sha256": "5840a78a21b4124cd87f280a4f9884d358bf0106fb7afa3209ce7ed828e63236"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-320-populated-change-boundary.png",
+      "bytes": 44397,
+      "sha256": "946a0040a49dcc0b12987d6771b8b33349ccbdaba1612d1429b079b1d2c8f51a"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\source-390-populated-change-boundary.png",
+      "bytes": 54813,
+      "sha256": "7bd1530e75cfd12fa5f8d7e64c2b03c0c381cc353faa52678c5286761ccde87f"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-cell.json",
+      "bytes": 9136,
+      "sha256": "d1f91f332834dc00a3222512f0b4ccb0834ddbc54ba4a0b0a0146e5dbdc08db1"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-paint-attempt-1.png",
+      "bytes": 36357,
+      "sha256": "558a57b45450948b49f3f4aa2f6829856d2910b969b714df61b2b354215ddc70"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-paint-attempt-2.png",
+      "bytes": 49421,
+      "sha256": "3d8fdabcac1adc6d8902bf956676ea8e027b92d8c5d5367d2ff87604a271d137"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-populated-ax.txt",
+      "bytes": 2181,
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-populated-full.png",
+      "bytes": 155960,
+      "sha256": "1904fe9566acd6fa0d34a774a2ddb43c994be80adcd34925426c6bb87ec1a060"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-populated.html",
+      "bytes": 14426,
+      "sha256": "bd2c25f8d4ce5cf035b8e83e86d5e98803093aa9e9fe41d11c1b93483f95a807"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-populated.json",
+      "bytes": 3600,
+      "sha256": "00fcd80850884aad50af81c12247b68a1970e9bf35fd0e37a38d028308f5481b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-populated.png",
+      "bytes": 49421,
+      "sha256": "3d8fdabcac1adc6d8902bf956676ea8e027b92d8c5d5367d2ff87604a271d137"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-server.log",
+      "bytes": 145,
+      "sha256": "772394eef140e5d163712428a241af10e524a8c7108d5c8fe7100bb03dbaae00"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\report.json",
+      "bytes": 49014,
+      "sha256": "48d9d99d870cef138b522a05a577e914d0560d42bd04b472c3a7b1bc5330d683"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-cell.json",
+      "bytes": 6519,
+      "sha256": "b177858dd3fedd1ca6654bca68569a011dc1f4f900f4d97eeb56a65551a59d09"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-paint-attempt-1.png",
+      "bytes": 42871,
+      "sha256": "bd72118289ba5f335502919aaf1d74febe50eabc5b5ebd66c0bcbbd34ad0ff91"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-populated-ax.txt",
+      "bytes": 4664,
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-populated-full.png",
+      "bytes": 237112,
+      "sha256": "e289759ebb064237dd694cd6c81a678e1677b3e6ed990b20c922a6719ea350d5"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-populated.html",
+      "bytes": 21095,
+      "sha256": "b43cab1c13965ed0b7fcc881533db2797a2a1483e6699190e54c7a6c2eb3e1dc"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-populated.json",
+      "bytes": 3807,
+      "sha256": "e8d776ef7ce8eb74b949260e6dc18c1610ea68641b0d6dfaf67170245c6e2336"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-populated.png",
+      "bytes": 42871,
+      "sha256": "d6dfe57fce632a84db11eeeeeca75a1b5cdae50429fb67976f02a2c6b86ff334"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-after.json",
+      "bytes": 16672,
+      "sha256": "d956704d38b0042167f7524c9d88399f8a8ea74a53431da2332f1bcd97e53b42"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-before.json",
+      "bytes": 16672,
+      "sha256": "67908417748d1b460948d1f3ef902e3e027c612f7174bf1cd1c7f5f0bf429fae"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-server.log",
+      "bytes": 77,
+      "sha256": "8511ea2f1f6669e03ed3df018548ee501cf298d47a4a31f2b7aa12053c185d94"
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture.mjs",
+      "bytes": 17943,
+      "sha256": "4d57de5c9fa3de8425005340c05623d5541c85a35e9b704edaf1d03a6956d630"
+    }
+  ],
+  "artifactCount": 133,
+  "artifactBytes": 8421861,
+  "candidateStatus": "Evidence for the exact prior candidate bound here. Root has a separate raw nodeMessage duplicate/dangling-edge compatibility repair pending; final source binding or equivalence review remains required after that fix.",
+  "supplementalPaintRecapture": {
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\report.json",
+    "passed": true,
+    "checks": 65,
+    "cells": 2,
+    "preservation": {
+      "head": true,
+      "stageListing": true,
+      "source": true,
+      "installed": true,
+      "originalPrimary": true,
+      "originalInstalled": true
+    },
+    "pixelMethod": "Actual unannotated viewport PNG decoded to count dark glyph/edge pixels strictly within the visible graph rectangle; more than 40 confirms nonblank pixels immediately before final viewport capture. This is independent of DOM and intercepted Canvas2D records. Both final PNGs were also actually viewed by the judge.",
+    "attempts": [
+      {
+        "cell": "source-320",
+        "attempts": [
+          {
+            "attempt": 1,
+            "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\source-320-paint-attempt-1.png",
+            "darkGraphPixels": 639,
+            "positivePaint": true
+          }
+        ]
+      },
+      {
+        "cell": "installed-390",
+        "attempts": [
+          {
+            "attempt": 1,
+            "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-paint-attempt-1.png",
+            "darkGraphPixels": 0,
+            "positivePaint": false
+          },
+          {
+            "attempt": 2,
+            "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-matched-entity-paint-recapture\\installed-390-paint-attempt-2.png",
+            "darkGraphPixels": 544,
+            "positivePaint": true
+          }
+        ]
+      }
+    ],
+    "actualFinalPixelJudgment": "Both source-320 and installed-390 final unannotated overview PNGs are populated, readable, preserve the same original overview scroll, and keep surrounding guidance intact.",
+    "serversStopped": true
+  }
+}

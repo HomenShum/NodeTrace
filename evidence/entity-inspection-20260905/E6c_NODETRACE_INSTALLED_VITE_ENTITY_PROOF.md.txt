@@ -1,0 +1,19 @@
+# Installed Vite development entity proof
+
+**Builder. Re your request:** make each repo usable for developer/user handoff, including visual UI, responsiveness and interaction standards. The actual documented Vite development job passes this bounded review.
+
+**Decision: VERIFIED WITH LIMITS for `/nodetrace.html` on the Vite development server.** All **1,874 checks** and **95 captures** passed at **320, 360, 390, 768, 1024, 1440 and 1920px**, with normal motion. Screenshots were viewed at every width. Seven videos are retained without a separate motion grade.
+
+The normally installed consumer is `D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905`. Its successful installer receipt is required before this replay. The generated entry exactly includes the owned-root nonnull assertion and installed mode, while the host's index, main entry, Vite config and TypeScript config remain unchanged.
+
+A keyboard or pointer reviewer can select every actual entity and read its full name, kind and exact producing event IDs. Both panels agree through pointer→native→clear→reselect; visits update from current records and measured counts remain unknown. Entity and Fit have 44px targets and visible focus. Positive current glyph frames remain inside the canvas without collisions through hover and pan/Fit. Long Unicode names and long event IDs wrap inside the selected panels.
+
+Installed guidance shows the real consumer command and integration guide. Modal focus, Escape/pointer closure and Back/Forward retain the host path, query and hash. The advertised `npm run nodetrace:happy-path` was actually run once: it refreshed four trace events and two proof records, and the new event IDs were verified in the UI. Complete prior and refreshed state/SQLite/evaluation bytes are retained; the disposable consumer keeps its useful refreshed state.
+
+Fifteen source→installed transformations match exactly. Fifteen actual raw HTTP source responses also equal the installed bytes directly; 560 observed development-module responses succeeded and their hashes are retained. All **38 protected source/package/config/script/schema/build files** remained exact, including the host's own entry and config. No page or console errors occurred. Four ReadPixels GPU-stall warnings and normal development messages remain visible in the raw report.
+
+Three initial failed runs are preserved. An initial Node fetch transport failure was not reproduced and its precise cause remains unconfirmed. A source probe mistakenly decoded a response already identical to the source file; direct byte comparison corrected the probe. A network-idle wait timed out over an already rendered development page; the final replay waits for DOM readiness, exact state bytes and actual stable graph paint. Application implementation was never changed by this reviewer.
+
+The generated guide promises the development route. The ordinary host production build does not include this optional demo HTML, and this proof does not claim otherwise. See [Vite build disposition](E6c_NODETRACE_VITE_BUILD_DISPOSITION.md). Next's production route, final frozen-package judgment and whole-product grades remain separate. This reviewer did not author the repair but was reused after the tool thread limit rejected a fresh spawn. Physical input, screen readers, other engines, maximum-scale behavior and universal cold-start reliability are outside this result.
+
+[Machine proof and 317 artifact hashes](E6c_NODETRACE_INSTALLED_VITE_ENTITY_PROOF.json) · [Raw checks and captures](E6c-nodetrace-installed-vite-entity-ready/report.json) · [Real refreshed event IDs](E6c-nodetrace-installed-vite-entity-ready/vite-390-refreshed-state.png) · [1024px full long identity](E6c-nodetrace-installed-vite-entity-ready/vite-1024-long-long-entity-2.png)

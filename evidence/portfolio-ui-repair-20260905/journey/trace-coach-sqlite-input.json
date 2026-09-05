@@ -1,0 +1,604 @@
+{
+  "generatedAt": "2026-09-05T02:01:30.855Z",
+  "session": {
+    "id": "trace-coach-noderoom-sqlite",
+    "title": "Trace Coach: NodeRoom codebase trace",
+    "status": "verified",
+    "summary": "A local Trace tab sample sourced from the latest full NodeRoom checkout, using real NodeRoom trace records, detail tabs, steps, flow, screenshot boxes, and raw JSON."
+  },
+  "builderCapable": false,
+  "surfaces": [
+    {
+      "id": "workSurface.trace",
+      "label": "Trace tab",
+      "proofAvailable": true,
+      "about": "NodeRoom's master-detail trace tab with Overview, Steps, Flow, Evidence, and Raw JSON."
+    },
+    {
+      "id": "workSurface.traceStrip",
+      "label": "Room trace strip",
+      "proofAvailable": true,
+      "about": "The bottom room activity strip that opens into the full trace surface."
+    },
+    {
+      "id": "workSurface.traceSteps",
+      "label": "Trace steps",
+      "proofAvailable": true,
+      "about": "Grouped, bounded, source-linked steps with screenshot and metric attachments."
+    },
+    {
+      "id": "workSurface.traceFlow",
+      "label": "Trace flow",
+      "proofAvailable": true,
+      "about": "NodeRoom's graph view over the same trace steps."
+    },
+    {
+      "id": "workSurface.traceData",
+      "label": "Trace data",
+      "proofAvailable": true,
+      "about": "The shared TraceRecord and TraceStep data model behind the tabs."
+    },
+    {
+      "id": "workSurface.traceStyle",
+      "label": "Trace styling",
+      "proofAvailable": true,
+      "about": "The NodeRoom visual layer for record lists, tabs, step cards, and screenshot boxes."
+    }
+  ],
+  "proofs": [
+    {
+      "id": "coach-step-01-artifact-entry-proof",
+      "surfaceId": "workSurface.traceStrip",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-01-artifact-entry",
+      "title": "Step 01: Open NodeRoom's Trace tab from the artifact shell",
+      "status": "verified",
+      "confidence": 0.88,
+      "sourceLabel": "src/ui/panels/Artifact.tsx",
+      "sourceUrl": "https://github.com/HomenShum/noderoom",
+      "detail": "Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view."
+    },
+    {
+      "id": "coach-step-02-detail-tabs-proof",
+      "surfaceId": "workSurface.trace",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-02-detail-tabs",
+      "title": "Step 02: Use the real NodeRoom trace tabs",
+      "status": "verified",
+      "confidence": 0.88,
+      "sourceLabel": "src/ui/panels/TraceSurface.tsx",
+      "sourceUrl": "https://github.com/HomenShum/noderoom",
+      "detail": "The sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record."
+    },
+    {
+      "id": "coach-step-03-trace-data-proof",
+      "surfaceId": "workSurface.traceData",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-03-trace-data",
+      "title": "Step 03: Seed the app from NodeRoom TraceRecord data",
+      "status": "verified",
+      "confidence": 0.88,
+      "sourceLabel": "src/ui/panels/traceData.ts",
+      "sourceUrl": "https://github.com/HomenShum/noderoom",
+      "detail": "NodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads."
+    },
+    {
+      "id": "coach-step-04-step-row-proof",
+      "surfaceId": "workSurface.traceSteps",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-04-step-row",
+      "title": "Step 04: Render code and UI evidence like NodeRoom step rows",
+      "status": "verified",
+      "confidence": 0.88,
+      "sourceLabel": "src/ui/panels/TraceStepRow.tsx",
+      "sourceUrl": "https://github.com/HomenShum/noderoom",
+      "detail": "Each step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted."
+    },
+    {
+      "id": "coach-step-05-flow-proof",
+      "surfaceId": "workSurface.traceFlow",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-05-flow",
+      "title": "Step 05: Keep the latest flow tab behavior",
+      "status": "verified",
+      "confidence": 0.88,
+      "sourceLabel": "src/ui/panels/TraceFlow.tsx",
+      "sourceUrl": "https://github.com/HomenShum/noderoom",
+      "detail": "NodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list."
+    },
+    {
+      "id": "coach-step-06-style-proof",
+      "surfaceId": "workSurface.traceStyle",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-06-style",
+      "title": "Step 06: Match NodeRoom's dark trace surface",
+      "status": "verified",
+      "confidence": 0.88,
+      "sourceLabel": "src/app/styles.css",
+      "sourceUrl": "https://github.com/HomenShum/noderoom",
+      "detail": "The sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes."
+    }
+  ],
+  "traces": [
+    {
+      "id": "coach-step-01-artifact-entry-trace",
+      "surfaceId": "workSurface.traceStrip",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-01-artifact-entry",
+      "phase": "entry",
+      "actor": "trace-coach",
+      "status": "ok",
+      "summary": "Step 01: Open NodeRoom's Trace tab from the artifact shell",
+      "durationMs": 57
+    },
+    {
+      "id": "coach-step-02-detail-tabs-trace",
+      "surfaceId": "workSurface.trace",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-02-detail-tabs",
+      "phase": "trace-tabs",
+      "actor": "trace-coach",
+      "status": "ok",
+      "summary": "Step 02: Use the real NodeRoom trace tabs",
+      "durationMs": 66
+    },
+    {
+      "id": "coach-step-03-trace-data-trace",
+      "surfaceId": "workSurface.traceData",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-03-trace-data",
+      "phase": "data-model",
+      "actor": "trace-coach",
+      "status": "ok",
+      "summary": "Step 03: Seed the app from NodeRoom TraceRecord data",
+      "durationMs": 75
+    },
+    {
+      "id": "coach-step-04-step-row-trace",
+      "surfaceId": "workSurface.traceSteps",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-04-step-row",
+      "phase": "steps",
+      "actor": "trace-coach",
+      "status": "ok",
+      "summary": "Step 04: Render code and UI evidence like NodeRoom step rows",
+      "durationMs": 84
+    },
+    {
+      "id": "coach-step-05-flow-trace",
+      "surfaceId": "workSurface.traceFlow",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-05-flow",
+      "phase": "flow",
+      "actor": "trace-coach",
+      "status": "ok",
+      "summary": "Step 05: Keep the latest flow tab behavior",
+      "durationMs": 93
+    },
+    {
+      "id": "coach-step-06-style-trace",
+      "surfaceId": "workSurface.traceStyle",
+      "artifactId": "noderoom-codebase-trace",
+      "elementId": "coach-step-06-style",
+      "phase": "look-and-feel",
+      "actor": "trace-coach",
+      "status": "ok",
+      "summary": "Step 06: Match NodeRoom's dark trace surface",
+      "durationMs": 102
+    }
+  ],
+  "codeOwnership": [],
+  "coach": {
+    "mode": "campaign",
+    "activeStepId": "coach-step-01-artifact-entry",
+    "sourceRepo": "HomenShum/noderoom",
+    "sourceMode": "snapshot",
+    "steps": [
+      {
+        "id": "coach-step-01-artifact-entry",
+        "order": 1,
+        "stepLabel": "Step 01",
+        "group": "Entry",
+        "title": "Open NodeRoom's Trace tab from the artifact shell",
+        "narrative": "Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.",
+        "surfaceId": "workSurface.traceStrip",
+        "uiCapture": {
+          "selector": "[data-noderoom-surface=\"workSurface.traceStrip\"]",
+          "rect": {
+            "x": 11,
+            "y": 904,
+            "width": 1056,
+            "height": 45
+          },
+          "screenshotPath": "captures/coach-step-01-artifact-entry-ui.png",
+          "alt": "NodeRoom bottom room trace strip with recent room events and trace telemetry.",
+          "captureKind": "actual-noderoom-playwright"
+        },
+        "diagram": {
+          "kind": "mermaid",
+          "nodeId": "artifact",
+          "source": "flowchart LR\n  Artifact[Artifact shell] --> Strip[Room trace strip]\n  Strip --> TraceTab[Trace tab]\n  TraceTab --> Surface[TraceSurface]"
+        },
+        "sourceView": {
+          "imagePath": "captures/coach-step-01-artifact-entry-ide.png",
+          "repositoryRoot": "HomenShum/noderoom",
+          "activeFile": "src/ui/panels/Artifact.tsx",
+          "folderTree": [
+            "src",
+            "  - ui",
+            "    - panels",
+            "      - Artifact.tsx"
+          ],
+          "highlightStartLine": 1,
+          "highlightEndLine": 15,
+          "captureKind": "actual-code-browser-shiki"
+        },
+        "mapCapture": {
+          "imagePath": "captures/coach-step-01-artifact-entry-minimap.svg",
+          "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+          "model": "Understand-Anything-backed structural minimap"
+        },
+        "codeBlock": {
+          "filePath": "src/ui/panels/Artifact.tsx",
+          "startLine": 1,
+          "endLine": 15,
+          "snippet": "\nfunction TraceStrip({ roomId }: { roomId: string }) {\n  return (\n    <div className=\"r-trace\" data-testid=\"room-trace\" data-open={String(open)} data-noderoom-surface=\"workSurface.traceStrip\">\n      <div className=\"r-trace-head\">\n        <button type=\"button\" className=\"r-trace-toggle\" onClick={() => setOpen((v) => !v)}>\n          <ChevronRight size={13} className=\"r-trace-chev\" />\n          <span className=\"h-title\">Room trace</span>\n        </button>\n      </div>\n      {open && <div className=\"r-trace-list\" aria-live=\"polite\" aria-label=\"Room activity log\" />}\n    </div>\n  );\n}\n"
+        }
+      },
+      {
+        "id": "coach-step-02-detail-tabs",
+        "order": 2,
+        "stepLabel": "Step 02",
+        "group": "Trace tabs",
+        "title": "Use the real NodeRoom trace tabs",
+        "narrative": "The sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.",
+        "surfaceId": "workSurface.trace",
+        "uiCapture": {
+          "selector": "[data-testid=\"trace-surface\"] .r-tracevu-tabs",
+          "rect": {
+            "x": 283,
+            "y": 165,
+            "width": 768,
+            "height": 29
+          },
+          "screenshotPath": "captures/coach-step-02-detail-tabs-ui.png",
+          "alt": "NodeRoom trace detail tabs for Overview, Steps, Flow, Evidence, and Raw JSON.",
+          "captureKind": "actual-noderoom-playwright"
+        },
+        "diagram": {
+          "kind": "mermaid",
+          "nodeId": "surface",
+          "source": "flowchart LR\n  Record[Selected trace record] --> Overview\n  Record --> Steps\n  Record --> Flow\n  Record --> Evidence\n  Record --> RawJSON[Raw JSON]"
+        },
+        "sourceView": {
+          "imagePath": "captures/coach-step-02-detail-tabs-ide.png",
+          "repositoryRoot": "HomenShum/noderoom",
+          "activeFile": "src/ui/panels/TraceSurface.tsx",
+          "folderTree": [
+            "src",
+            "  - ui",
+            "    - panels",
+            "      - TraceSurface.tsx"
+          ],
+          "highlightStartLine": 2,
+          "highlightEndLine": 22,
+          "captureKind": "actual-code-browser-shiki"
+        },
+        "mapCapture": {
+          "imagePath": "captures/coach-step-02-detail-tabs-minimap.svg",
+          "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+          "model": "Understand-Anything-backed structural minimap"
+        },
+        "codeBlock": {
+          "filePath": "src/ui/panels/TraceSurface.tsx",
+          "startLine": 2,
+          "endLine": 22,
+          "snippet": "type DetailTab = \"overview\" | \"steps\" | \"flow\" | \"evidence\" | \"raw\";\n\nexport function TraceSurface({ roomId, onOpenSource }) {\n  const records = buildRecords(roomId);\n  const [selectedId, setSelectedId] = useState(records[0]?.id);\n  const [tab, setTab] = useState<DetailTab>(\"overview\");\n  const record = records.find((r) => r.id === selectedId) ?? records[0];\n  const detailTabs = ([\"overview\", \"steps\", \"flow\", \"evidence\", \"raw\"] as DetailTab[])\n    .filter((t) => t !== \"evidence\" || (record.evidenceCards?.length ?? 0) > 0);\n  return (\n    <div className=\"r-art-body r-tracevu\" data-testid=\"trace-surface\" data-noderoom-surface=\"workSurface.trace\">\n      <aside className=\"r-tracevu-list\" aria-label=\"Trace records\" />\n      <div className=\"r-tracevu-detail\">\n        <header className=\"r-tracevu-detail-head\">\n          <div className=\"r-tracevu-tabs\" role=\"tablist\" aria-label=\"Trace detail\" />\n        </header>\n      </div>\n    </div>\n  );\n}\n"
+        }
+      },
+      {
+        "id": "coach-step-03-trace-data",
+        "order": 3,
+        "stepLabel": "Step 03",
+        "group": "Data model",
+        "title": "Seed the app from NodeRoom TraceRecord data",
+        "narrative": "NodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.",
+        "surfaceId": "workSurface.traceData",
+        "uiCapture": {
+          "selector": "[data-testid=\"trace-record\"]",
+          "rect": {
+            "x": 19,
+            "y": 109,
+            "width": 239,
+            "height": 99
+          },
+          "screenshotPath": "captures/coach-step-03-trace-data-ui.png",
+          "alt": "NodeRoom trace record list showing source, step count, and verdict pills.",
+          "captureKind": "actual-noderoom-playwright"
+        },
+        "diagram": {
+          "kind": "mermaid",
+          "nodeId": "data",
+          "source": "flowchart TB\n  TraceRecord --> Source\n  TraceRecord --> Verdict\n  TraceRecord --> Steps\n  Steps --> Attachments\n  Attachments --> ScreenshotBox[normalized screenshot box]"
+        },
+        "sourceView": {
+          "imagePath": "captures/coach-step-03-trace-data-ide.png",
+          "repositoryRoot": "HomenShum/noderoom",
+          "activeFile": "src/ui/panels/traceData.ts",
+          "folderTree": [
+            "src",
+            "  - ui",
+            "    - panels",
+            "      - traceData.ts"
+          ],
+          "highlightStartLine": 1,
+          "highlightEndLine": 28,
+          "captureKind": "actual-code-browser-shiki"
+        },
+        "mapCapture": {
+          "imagePath": "captures/coach-step-03-trace-data-minimap.svg",
+          "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+          "model": "Understand-Anything-backed structural minimap"
+        },
+        "codeBlock": {
+          "filePath": "src/ui/panels/traceData.ts",
+          "startLine": 1,
+          "endLine": 28,
+          "snippet": "\nexport interface TraceStep {\n  idx: number;\n  label: string;\n  detail?: string;\n  status: TraceTone;\n  group?: string;\n  targetArtifactId?: string;\n  targetElementId?: string;\n  screenshotUrl?: string;\n  metrics?: { label: string; value: string }[];\n  attachments?: TraceAttachment[];\n}\n\nexport interface TraceRecord {\n  id: string;\n  kind: \"agent\" | \"qa\";\n  title: string;\n  subtitle: string;\n  ts: string;\n  source: { tool: string; version?: string; env?: string; model?: string };\n  verdict?: { label: string; tone: TraceTone };\n  attribution?: { ai: number; mixed: number; human: number };\n  steps: TraceStep[];\n  evidenceCards?: EvidenceCardArtifact[];\n  raw: unknown;\n}\n"
+        }
+      },
+      {
+        "id": "coach-step-04-step-row",
+        "order": 4,
+        "stepLabel": "Step 04",
+        "group": "Steps",
+        "title": "Render code and UI evidence like NodeRoom step rows",
+        "narrative": "Each step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.",
+        "surfaceId": "workSurface.traceSteps",
+        "uiCapture": {
+          "selector": "[data-testid=\"trace-step\"] .r-tracevu-shotframe",
+          "rect": {
+            "x": 329,
+            "y": 347,
+            "width": 440,
+            "height": 278
+          },
+          "screenshotPath": "captures/coach-step-04-step-row-ui.png",
+          "alt": "NodeRoom trace step screenshot frame with a highlighted bounding box overlay.",
+          "captureKind": "actual-noderoom-playwright"
+        },
+        "diagram": {
+          "kind": "mermaid",
+          "nodeId": "steps",
+          "source": "flowchart LR\n  Step[TraceStep] --> Label\n  Step --> Detail\n  Step --> Attachments\n  Attachments --> Screenshot\n  Screenshot --> Box[box x y w h]"
+        },
+        "sourceView": {
+          "imagePath": "captures/coach-step-04-step-row-ide.png",
+          "repositoryRoot": "HomenShum/noderoom",
+          "activeFile": "src/ui/panels/TraceStepRow.tsx",
+          "folderTree": [
+            "src",
+            "  - ui",
+            "    - panels",
+            "      - TraceStepRow.tsx"
+          ],
+          "highlightStartLine": 1,
+          "highlightEndLine": 20,
+          "captureKind": "actual-code-browser-shiki"
+        },
+        "mapCapture": {
+          "imagePath": "captures/coach-step-04-step-row-minimap.svg",
+          "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+          "model": "Understand-Anything-backed structural minimap"
+        },
+        "codeBlock": {
+          "filePath": "src/ui/panels/TraceStepRow.tsx",
+          "startLine": 1,
+          "endLine": 20,
+          "snippet": "\nexport function StepRow({ s, onOpenSource }) {\n  return (\n    <div className=\"r-tracevu-step\" data-testid=\"trace-step\" data-tone={s.status}>\n      <span className=\"r-tracevu-step-idx\">{s.idx}</span>\n      <span className=\"r-tracevu-step-body\">\n        <span className=\"r-tracevu-step-label\">{s.label}</span>\n        {shots.map((a, i) => (\n          <a key={i} className=\"r-tracevu-shotlink\" href={a.url}>\n            <span className=\"r-tracevu-shotframe\">\n              <img className=\"r-tracevu-shot\" src={a.url} alt={a.label ?? s.label} loading=\"lazy\" />\n              {a.box && <span className=\"r-tracevu-box\" style={{ left: `${a.box.x * 100}%`, top: `${a.box.y * 100}%`, width: `${a.box.w * 100}%`, height: `${a.box.h * 100}%` }} aria-hidden=\"true\" />}\n            </span>\n          </a>\n        ))}\n      </span>\n    </div>\n  );\n}\n"
+        }
+      },
+      {
+        "id": "coach-step-05-flow",
+        "order": 5,
+        "stepLabel": "Step 05",
+        "group": "Flow",
+        "title": "Keep the latest flow tab behavior",
+        "narrative": "NodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.",
+        "surfaceId": "workSurface.traceFlow",
+        "uiCapture": {
+          "selector": "[data-testid=\"trace-flow\"]",
+          "rect": {
+            "x": 283,
+            "y": 211,
+            "width": 768,
+            "height": 440
+          },
+          "screenshotPath": "captures/coach-step-05-flow-ui.png",
+          "alt": "NodeRoom trace flow graph with grouped phases, animated edges, controls, and minimap.",
+          "captureKind": "actual-noderoom-playwright"
+        },
+        "diagram": {
+          "kind": "mermaid",
+          "nodeId": "flow",
+          "source": "flowchart LR\n  Steps[Ordered TraceStep list] --> Nodes[ReactFlow nodes]\n  Nodes --> Edges[Sequential edges]\n  Nodes --> Detail[Shared StepRow detail]"
+        },
+        "sourceView": {
+          "imagePath": "captures/coach-step-05-flow-ide.png",
+          "repositoryRoot": "HomenShum/noderoom",
+          "activeFile": "src/ui/panels/TraceFlow.tsx",
+          "folderTree": [
+            "src",
+            "  - ui",
+            "    - panels",
+            "      - TraceFlow.tsx"
+          ],
+          "highlightStartLine": 1,
+          "highlightEndLine": 21,
+          "captureKind": "actual-code-browser-shiki"
+        },
+        "mapCapture": {
+          "imagePath": "captures/coach-step-05-flow-minimap.svg",
+          "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+          "model": "Understand-Anything-backed structural minimap"
+        },
+        "codeBlock": {
+          "filePath": "src/ui/panels/TraceFlow.tsx",
+          "startLine": 1,
+          "endLine": 21,
+          "snippet": "\nexport function TraceFlow({ record, onOpenSource }) {\n  const phases = useMemo(() => {\n    const seen: string[] = [];\n    for (const s of record.steps) { const g = s.group ?? \"Steps\"; if (!seen.includes(g)) seen.push(g); }\n    return seen;\n  }, [record]);\n  const { nodes, edges } = useMemo(() => {\n    const COL = 248, ROW = 88;\n    const nodes = record.steps.map((s) => ({\n      id: String(s.idx),\n      position: { x: phases.indexOf(s.group ?? \"Steps\") * COL, y: s.idx * ROW },\n      data: { label: `${s.idx}. ${s.label}` },\n    }));\n    const edges = [];\n    for (let i = 0; i < record.steps.length - 1; i++) edges.push({ id: `f${i}`, source: String(record.steps[i].idx), target: String(record.steps[i + 1].idx) });\n    return { nodes, edges };\n  }, [record, phases]);\n  return <div className=\"r-tracevu-flow\" data-testid=\"trace-flow\" />;\n}\n"
+        }
+      },
+      {
+        "id": "coach-step-06-style",
+        "order": 6,
+        "stepLabel": "Step 06",
+        "group": "Look and feel",
+        "title": "Match NodeRoom's dark trace surface",
+        "narrative": "The sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.",
+        "surfaceId": "workSurface.traceStyle",
+        "uiCapture": {
+          "selector": ".r-tracevu",
+          "rect": {
+            "x": 11,
+            "y": 101,
+            "width": 1056,
+            "height": 803
+          },
+          "screenshotPath": "captures/coach-step-06-style-ui.png",
+          "alt": "NodeRoom dark trace surface with record list, detail pane, tabs, and step cards.",
+          "captureKind": "actual-noderoom-playwright"
+        },
+        "diagram": {
+          "kind": "mermaid",
+          "nodeId": "style",
+          "source": "flowchart TB\n  Tokens[NodeRoom design tokens] --> TraceList\n  Tokens --> DetailTabs\n  Tokens --> StepCards\n  Tokens --> ScreenshotBoxes"
+        },
+        "sourceView": {
+          "imagePath": "captures/coach-step-06-style-ide.png",
+          "repositoryRoot": "HomenShum/noderoom",
+          "activeFile": "src/app/styles.css",
+          "folderTree": [
+            "src",
+            "  - app",
+            "    - styles.css"
+          ],
+          "highlightStartLine": 1,
+          "highlightEndLine": 11,
+          "captureKind": "actual-code-browser-shiki"
+        },
+        "mapCapture": {
+          "imagePath": "captures/coach-step-06-style-minimap.svg",
+          "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+          "model": "Understand-Anything-backed structural minimap"
+        },
+        "codeBlock": {
+          "filePath": "src/app/styles.css",
+          "startLine": 1,
+          "endLine": 11,
+          "snippet": "\n.r-tracevu-tabs { display: flex; gap: 2px; }\n.r-tracevu-tabs button { padding: 6px 11px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--text-muted); font-size: 12px; font-weight: 600; cursor: pointer; }\n.r-tracevu-tabs button[data-on=\"true\"] { color: var(--accent-ink); border-bottom-color: var(--accent-primary); }\n.r-tracevu-detail-body { flex: 1; min-height: 0; overflow-y: auto; padding: 16px; }\n.r-tracevu-steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }\n.r-tracevu-step { width: 100%; display: flex; gap: 11px; text-align: left; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg-secondary); color: var(--text-secondary); }\n.r-tracevu-step-idx { flex: none; width: 22px; height: 22px; display: grid; place-items: center; border-radius: 6px; background: var(--bg-primary); color: var(--text-muted); font-size: 11px; font-weight: 700; font-family: var(--font-mono); }\n.r-tracevu-shotframe { position: relative; display: inline-block; line-height: 0; }\n.r-tracevu-box { position: absolute; border: 2px solid var(--accent-primary); border-radius: 3px; background: color-mix(in srgb, var(--accent-primary) 16%, transparent); box-shadow: 0 0 0 1px var(--bg-primary); pointer-events: none; }\n"
+        }
+      }
+    ],
+    "graphNodes": [
+      {
+        "id": "artifact",
+        "label": "Artifact shell",
+        "kind": "component",
+        "filePath": "src/ui/panels/Artifact.tsx",
+        "layer": "UI entry",
+        "x": 112,
+        "y": 250,
+        "summary": "Entry point that exposes the room trace strip."
+      },
+      {
+        "id": "surface",
+        "label": "TraceSurface",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceSurface.tsx",
+        "layer": "Trace UI",
+        "x": 332,
+        "y": 176,
+        "summary": "Master-detail trace tab with records, tabs, and active detail."
+      },
+      {
+        "id": "data",
+        "label": "traceData",
+        "kind": "schema",
+        "filePath": "src/ui/panels/traceData.ts",
+        "layer": "Data model",
+        "x": 332,
+        "y": 382,
+        "summary": "TraceRecord and TraceStep structures that feed the UI."
+      },
+      {
+        "id": "steps",
+        "label": "TraceStepRow",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceStepRow.tsx",
+        "layer": "Evidence UI",
+        "x": 560,
+        "y": 286,
+        "summary": "Step renderer for source-linked rows and screenshot boxes."
+      },
+      {
+        "id": "flow",
+        "label": "TraceFlow",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceFlow.tsx",
+        "layer": "Graph UI",
+        "x": 784,
+        "y": 190,
+        "summary": "Graph view over the same ordered trace steps."
+      },
+      {
+        "id": "style",
+        "label": "Trace CSS",
+        "kind": "runtime",
+        "filePath": "src/app/styles.css",
+        "layer": "Visual system",
+        "x": 790,
+        "y": 406,
+        "summary": "Dark trace surface, tabs, cards, and highlighted boxes."
+      }
+    ],
+    "graphEdges": [
+      {
+        "id": "artifact-surface",
+        "from": "artifact",
+        "to": "surface",
+        "label": "opens full trace tab"
+      },
+      {
+        "id": "surface-data",
+        "from": "surface",
+        "to": "data",
+        "label": "loads records"
+      },
+      {
+        "id": "surface-steps",
+        "from": "surface",
+        "to": "steps",
+        "label": "renders step list"
+      },
+      {
+        "id": "surface-flow",
+        "from": "surface",
+        "to": "flow",
+        "label": "renders graph tab"
+      },
+      {
+        "id": "steps-style",
+        "from": "steps",
+        "to": "style",
+        "label": "uses screenshot box styles"
+      },
+      {
+        "id": "flow-style",
+        "from": "flow",
+        "to": "style",
+        "label": "uses dark graph shell"
+      }
+    ]
+  }
+}

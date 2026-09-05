@@ -1,0 +1,28 @@
+# NodeTrace matched entity visual review
+
+**Builder · VERIFIED_WITH_CAVEATS.** A developer inspecting a trace can now reach an Entity selector by keyboard, read the full name, and find the same producing event previously reachable by pointer. This review covers that local source and installed-app job; whole-app grades and production readiness remain unassessed.
+
+**Re your request:** make each repository ready for handoff, including visual UI, responsiveness, and interaction standards. The named proof is `NODETRACE-MATCHED-ENTITY-VISUAL-02`.
+
+The final replay passes **165 checks, six viewport cells, and twelve states**, with **36 screenshots**. Widths are 320×800, 390×844, and 1440×960 at device scale 1. Six-event source and four-event installed fixtures are replayed as exact original response bytes through browser routing, not generated again. All overview scroll positions match the original capture; native selection uses natural Tab and arrow keys.
+
+| Surface | Exact original fixture SHA-256 | Selected identity | Original event |
+|---|---|---|---|
+| Source | `e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f` | `tool: workSurface.trace` | `coach-step-02-detail-tabs-trace` |
+| Installed Next | `ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c` | `tool: workSurface.evidenceCarousel` | `nodetrace-2026-09-05T02-00-37-968Z-trace-002` |
+
+The inspected pixels show a visible keyboard focus ring, a 44-pixel-tall selector, and a 44×44 Fit target. Selected names and event identities remain complete. Labels that would collide are shortened or omitted, with explicit guidance to use the selector. The added controls use vertical space on phones; a selected event may need scrolling at 320 pixels. All twelve captured states have zero horizontal overflow.
+
+**Surviving pixel caveat:** `source-320-populated.png` and `installed-390-populated.png` show an empty graph area, although the recorded current-frame canvas labels are present. The immediately following full-page and boundary images, plus native-selected images, contain the graph. The blank originals remain in the evidence. The cause is unresolved: screenshot timing/compositing and intermittent app painting are not distinguished by this run. Passing canvas/DOM checks must not be promoted to an unconditional pixel pass.
+
+Protected headers, Trace Coach guidance, installed “Connect your own trace” guidance, and rail heading have exact matching parsed markup and text in **24 checks** across the six original/replay pairs. Their images were inspected; normal vertical flow changes are disclosed rather than called pixel-identical. Sixteen final source bindings, fifteen installed transformations, and 36 served built-module responses match their actual files. Source/build files, installed files, Git HEAD/index listing, and both original fixtures remained unchanged throughout the final run. Owned ports were stopped.
+
+The first attempt preserves a failed judge URL expectation: the app-managed step query already existed in the original capture. A separate replay corrected the comparison to the actual BEFORE URL. The second attempt preserves an interrupted all-response-body wait; the final script records only required built modules with a ten-second bound. Four GPU ReadPixels warnings are retained. No performance claim follows from this screenshot run.
+
+Reviewer context was reused because a fresh reviewer slot was unavailable; this reviewer authored no NodeTrace implementation. Parent source and installed matrices are referenced, not claimed as rerun here. No full numerical grade or deployed-site claim is made.
+
+Raw result: [report.json](C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6c-nodetrace-matched-entity-visual-final/report.json). Structured verdict and 112 bounded artifact hashes: [E6c_NODETRACE_MATCHED_ENTITY_VISUAL.json](C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6c_NODETRACE_MATCHED_ENTITY_VISUAL.json).
+
+**Two-cell raster follow-up:** Only the two affected overview cells were repeated, with positive graph pixels measured from an actual viewport PNG immediately before the final capture. All 65 bounded checks pass and every preservation guard remains true. Both final unannotated PNGs were actually viewed as populated and readable at the exact original overview scroll. The original blank captures remain failed captures; their underlying cause is not established. No broad matrix was rerun. See [paint recapture report](C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6c-nodetrace-matched-entity-paint-recapture/report.json).
+
+**Candidate boundary:** This is exact prior-candidate evidence. Root is separately repairing raw nodeMessage duplicate/dangling-edge compatibility; the final source must be rebound or reviewed for equivalence after that repair. Freeze has been released.

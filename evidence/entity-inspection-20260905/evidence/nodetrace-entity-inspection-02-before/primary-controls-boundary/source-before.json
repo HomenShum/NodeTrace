@@ -1,0 +1,268 @@
+{
+  "at": "2026-09-05T03:32:21.022Z",
+  "head": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+  "tree": "0d4a78203c20e80fc9bd9ea066bf25d8ae4ddf32",
+  "status": "M package-lock.json",
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+    "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+    "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+    "scripts/lib/proof-server.mjs": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd",
+    "vite.config.ts": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+    "index.html": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+    "src/main.tsx": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+    "tsconfig.json": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "installedHashes": {
+    "src/nodetrace-demo/DemoDashboard.tsx": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    ".next/BUILD_ID": "f1f63887b4c79386e3600161de5db5fa216363c3c53daa6be20b5e27779e373a",
+    "docs/NODETRACE_INTEGRATION.md": "d598f90bdba8a905d4d7716d0b2b5476c5d6cdd9c408ac377ac8240b84468e1d",
+    "public/nodetrace-state.json": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+    "src/nodetrace/LiveGraphRail.tsx": "d30627db82d441556f3d5dba50cf7aa699156e90707f9ab31c9a2c3a1964a792",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587"
+  },
+  "runtimeSource": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "runtimeHashes": {
+    "index.html": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/capture/codebaseCapture.mjs": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/main.tsx": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+    "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+    "tsconfig.json": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+    "vendor/nodegraph-live/NodeGraph.d.ts": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+    "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+    "vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+    "vite.config.ts": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+    "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "dist/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "dist/index.html": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+    "dist/assets/index-C5GRn8kk.css": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+    "dist/assets/index-Cl47s1zn.js": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1"
+  },
+  "renderingComparisons": [
+    {
+      "file": "index.html",
+      "primarySha256": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "runtimeSha256": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/DemoDashboard.tsx",
+      "primarySha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "runtimeSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "primarySha256": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+      "runtimeSha256": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/demoNavigation.ts",
+      "primarySha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "runtimeSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/demoState.ts",
+      "primarySha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "runtimeSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/main.tsx",
+      "primarySha256": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "runtimeSha256": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/styles.css",
+      "primarySha256": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "runtimeSha256": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/LiveGraphRail.tsx",
+      "primarySha256": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "runtimeSha256": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/TraceLensPanel.tsx",
+      "primarySha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "runtimeSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/TraceLensProvider.tsx",
+      "primarySha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "runtimeSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/index.ts",
+      "primarySha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+      "runtimeSha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/trace.css",
+      "primarySha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "runtimeSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/types.ts",
+      "primarySha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "runtimeSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "tsconfig.json",
+      "primarySha256": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "runtimeSha256": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/NodeGraph.d.ts",
+      "primarySha256": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+      "runtimeSha256": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/NodeGraph.js",
+      "primarySha256": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "runtimeSha256": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/README.md",
+      "primarySha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+      "runtimeSha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/graph-model.d.ts",
+      "primarySha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+      "runtimeSha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/graph-model.js",
+      "primarySha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "runtimeSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/index.d.ts",
+      "primarySha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+      "runtimeSha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/index.js",
+      "primarySha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "runtimeSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/react.d.ts",
+      "primarySha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+      "runtimeSha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/react.js",
+      "primarySha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "runtimeSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/session.d.ts",
+      "primarySha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+      "runtimeSha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/session.js",
+      "primarySha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "runtimeSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vite.config.ts",
+      "primarySha256": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "runtimeSha256": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    }
+  ]
+}

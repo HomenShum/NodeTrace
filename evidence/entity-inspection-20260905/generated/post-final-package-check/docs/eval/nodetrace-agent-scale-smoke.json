@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "startedAt": "2026-09-05T05:20:25.702Z",
+  "completedAt": "2026-09-05T05:20:25.796Z",
+  "durationMs": 95,
+  "apiKeysRequired": false,
+  "scenario": "long-running 125-step QA agent",
+  "traceRows": 125,
+  "visibleWindowRows": 6,
+  "publicCodeOwnershipRows": 0,
+  "builderOwnershipFields": [
+    "componentRef",
+    "backendRef",
+    "queryRef",
+    "mutationRef",
+    "skillRef",
+    "testRef"
+  ],
+  "issues": []
+}

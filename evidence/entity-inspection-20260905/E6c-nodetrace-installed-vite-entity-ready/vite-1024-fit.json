@@ -1,0 +1,144 @@
+{
+  "url": "http://127.0.0.1:4958/nodetrace.html?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 1024,
+    "height": 768
+  },
+  "overflow": 0,
+  "focus": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+  "modal": false,
+  "selection": "actor: nodetrace",
+  "events": [
+    "nodetrace-2026-09-05T04-25-14-011Z-trace-001",
+    "nodetrace-2026-09-05T04-25-14-011Z-trace-002",
+    "nodetrace-2026-09-05T04-25-14-011Z-trace-003",
+    "nodetrace-2026-09-05T04-25-14-011Z-trace-004"
+  ],
+  "labels": [
+    {
+      "text": "demo-artifact",
+      "x": 357.2141776829958,
+      "y": 42.150208691842046,
+      "width": 81.68603515625,
+      "height": 10,
+      "canvasWidth": 914,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "schema",
+      "x": 551.5657278228796,
+      "y": 49.35124805655835,
+      "width": 44.705078125,
+      "height": 10,
+      "canvasWidth": 914,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "nodetrace",
+      "x": 472.46605456541914,
+      "y": 136.6002204011186,
+      "width": 59.4951171875,
+      "height": 10,
+      "canvasWidth": 914,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "copilot.agentOperationStream",
+      "x": 401.7503390484896,
+      "y": 228.89210928929123,
+      "width": 178.298828125,
+      "height": 13,
+      "canvasWidth": 914,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "events",
+      "x": 438.44550042823056,
+      "y": 249.49999894526184,
+      "width": 38.5888671875,
+      "height": 9,
+      "canvasWidth": 914,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "state",
+      "x": 574.423976507845,
+      "y": 195.53023483904914,
+      "width": 28.708984375,
+      "height": 9,
+      "canvasWidth": 914,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "regions": {
+    ".showcaseActions": {
+      "text": "npm run nodetrace:happy-path no API key required",
+      "bounds": {
+        "x": 43,
+        "y": 274.6875,
+        "width": 522,
+        "height": 39.390625
+      }
+    },
+    ".coachEmpty": {
+      "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+      "bounds": {
+        "x": 22,
+        "y": 351.078125,
+        "width": 980,
+        "height": 133.78125
+      }
+    },
+    ".liveGraphRailHead": {
+      "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+      "bounds": {
+        "x": 37,
+        "y": 517.859375,
+        "width": 950,
+        "height": 44.5
+      }
+    },
+    ".liveGraphRailControls": {
+      "text": "EntityChoose an entityactor: nodetracetool: workSurface.traceStripstep: schematool: workSurface.evidenceCarouselartifact: demo-artifactstep: prooftool: copilot.agentOperationStreamstep: eventstool: shell.statusStripstep: stateChoose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.",
+      "bounds": {
+        "x": 37,
+        "y": 572.359375,
+        "width": 950,
+        "height": 92.15625
+      }
+    },
+    "[data-testid=\"nodegraph-canvas\"]": {
+      "text": "",
+      "bounds": {
+        "x": 55,
+        "y": 774.8125,
+        "width": 914,
+        "height": 298
+      }
+    },
+    "[data-testid=\"nodegraph-selection\"]": {
+      "text": "entitynodetrace · actorcountunknown — not measuredvisits4 — interaction frequency, not evidence strength",
+      "bounds": {
+        "x": 54,
+        "y": 1081.8125,
+        "width": 916,
+        "height": 56.171875
+      }
+    },
+    "[data-testid=\"live-graph-node-events\"]": {
+      "text": "actor: nodetraceproduced by trace events:nodetrace-2026-09-05T04-25-14-011Z-trace-001nodetrace-2026-09-05T04-25-14-011Z-trace-002nodetrace-2026-09-05T04-25-14-011Z-trace-003nodetrace-2026-09-05T04-25-14-011Z-trace-004",
+      "bounds": {
+        "x": 37,
+        "y": 1164.984375,
+        "width": 950,
+        "height": 110.53125
+      }
+    }
+  }
+}

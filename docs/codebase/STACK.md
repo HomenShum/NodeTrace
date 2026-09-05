@@ -57,5 +57,6 @@ package does not declare what its own CLI needs. Recorded in `CONCERNS.md`.
 ## What is deliberately absent
 
 No test runner (Vitest, Jest, Playwright Test). No linter or formatter config.
-No state manager. No router. No CSS framework — `src/styles.css` and
+No state manager or router dependency. The demo uses its own URL-selection
+hook; installed hosts keep their router. No CSS framework — `src/styles.css` and
 `src/trace/trace.css` are hand-written. No CI matrix; one Ubuntu job.

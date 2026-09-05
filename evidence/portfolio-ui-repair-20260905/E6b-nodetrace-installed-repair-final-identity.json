@@ -1,0 +1,235 @@
+{
+  "at": "2026-09-05T02:07:30.502086+00:00",
+  "ok": true,
+  "checks": {
+    "original49Unchanged": true,
+    "additional4DocsUnchanged": true,
+    "53CloneBytesMatch": true,
+    "13ProofSourceBytesMatchNamedJourney": true,
+    "headUnchanged": true,
+    "refsUnchanged": true,
+    "freshInstaller48SourceInputsUnchanged": true,
+    "installedResponses44Match": true,
+    "displayedRecoveryExecutedTwice": true,
+    "priorRefutedMdJsonUnchanged": true,
+    "3InstalledHelpersMatchExactRewrite": true,
+    "generatedNextInstalledFlag": true,
+    "generatedViteInstalledFlag": true,
+    "sourceDefaultUnchanged7Widths": true,
+    "originalProbesNotWeakened": true
+  },
+  "sourceHashes": {
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+    ".tours/01-primary-user-flow.tour": "f745b8d75879d3e80b8be087dfccc7f2d7c8d1e0c1c1d92ea3385ffaedf3a7ea",
+    ".tours/02-agent-execution.tour": "971ac22b547ef03bc6aa314e7d7b5e1b25c5a3cfceeeb5728e7dc050ada0bbdb",
+    ".tours/03-debug-and-recovery.tour": "36615c44b60b4bd8110e35abe51aaef116da0387f5599e7004329d3f6ff73079",
+    "AGENTS.md": "c763289a0000cdd84adff68fcd74bc29aa1a89d454baa9d2e48f58693a5f6438",
+    "README.md": "b3cc569930111250dabbbdc2758767d427f00381261699cac9a96a3b13f28778",
+    "bin/nodetrace-capture.mjs": "8ce11d500e424efec6b3e52129990d9a773843c2ab4735c414bcc4f4ca5783df",
+    "bin/nodetrace-mcp.mjs": "85d726ba1cd6d47e85b3438bcc219c883992ab59a8be21aa11234273f0e011fe",
+    "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+    "docs/START_HERE.md": "4862ab8a090a4ca21ac3921cb2b1a2fa85b2aa9e7edc87550571a13326bb26dd",
+    "docs/codebase/ARCHITECTURE.md": "43b9250efdc6ae2535451e7858b5ba3292850b4a3a7f3b5d9cb19d3179f7f221",
+    "docs/codebase/CONCERNS.md": "c6968d51b0d7b332e2c52214db0a321afdc36368a50d0cfb7540b5f3b57e90a5",
+    "docs/codebase/CONVENTIONS.md": "b026b8a942a95ac853599d02e00609a5459a1afae57497b465e5f59ea09a43da",
+    "docs/codebase/INTEGRATIONS.md": "6c6247eff9b6a8194fec5b661e11657c4eb054b8f870584514e54ca889449b1e",
+    "docs/codebase/STACK.md": "a320ea6e2c0242f8af4e1ab3862f5a8ac21b4e9f6ebfd500f090ebd619a18138",
+    "docs/codebase/STRUCTURE.md": "665e9fd23b1ea225aeebd72b8abd83ef930c0172808f8891031282e8e9a4d247",
+    "docs/codebase/TESTING.md": "7bdeb835040e6fb54de1b899621ce70ff75e6b54f09d27b10a461ed9ce8a03a9",
+    "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "scripts/agent-trace-scale-smoke.mjs": "e698dc43e26376e9058c9af96ec9a689f76fa890ce449d2c6bf046d1b91cda0f",
+    "scripts/builder-access-smoke.mjs": "454497bc398f6f83aad22aec92488e450faa6f416f89ed25bbacf674e620613a",
+    "scripts/capture-live-graph-rail.mjs": "cdd1dd156f4c7306ff6d3b09fc5cb616a43112cb8977407f29b7466662dbde59",
+    "scripts/capture-noderoom-real-assets.mjs": "d3e99b680adba0ca2f55d44e286dcca2bde609461920281be4b0750d7200633b",
+    "scripts/capture-plan-fixture.mjs": "0ed8a703027455ed70f8dae75e803ed44626de17ac972be8049ac8a92425dc05",
+    "scripts/capture-plan-smoke.mjs": "9b81beeccf0929df1c00fedbb6c2d6bc12b01c20779c09a91d6cd564051fc45f",
+    "scripts/citations-check.mjs": "27043ac8d84cbb68ce786b948c93d1cb983d6c374683b7d30bdd62f76495c3db",
+    "scripts/cli-smoke.mjs": "e313ca25f7463379074a47ce5750e228de257693d44c839d23823d17bd426431",
+    "scripts/init-sqlite.mjs": "5b0ff389f3ad0daf8492d02186a8992b4b3c4602e9cc7d51ea68ff06e6a31632",
+    "scripts/installer-next-e2e-smoke.mjs": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+    "scripts/lib/proof-server.mjs": "b8b8843a266bcddf72a5c5ff45ccd46af0fa69f393a67c1621897406041dd359",
+    "scripts/mcp-smoke.mjs": "10032b3a1042018a3f1a05ef16b8ccf0c694d8dafa47483fcc45fc2c1d7239f9",
+    "scripts/record-live-graph-rail.mjs": "0891e5fe4dbd3f01adb26d5f45c27ce35b0bec88dd6b79eb3f9acd91d3dcb690",
+    "scripts/render-walkthrough-media.mjs": "2c642b383debae9b5689c4753b9bc944e93f55078478b85764a340e3e04ea89a",
+    "scripts/smoke.mjs": "873abd8f1eb64e8d038f63f767d6c2d9234a5a28ac475cef3762f4361b93c7f9",
+    "scripts/trace-coach-sqlite.mjs": "ad44dcea46392c1e91c2c69a5d94859a883eae3c0b79162bd5522f03a5638731",
+    "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+    "scripts/understand-anything-noderoom.mjs": "50178e8071b04d3a059c4ac9e7133a59145e0a2c830b8d479931ccf18f9dc979",
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/capture/codebaseCapture.mjs": "59611521f326883e1332eb8533361f1d82707a2d2a3581ea8c871f42297f8718",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/main.tsx": "3a464c6ba9091ecd74e8af7e809a2044285f0363eac2109c6c549659a772c37a",
+    "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6",
+    "promotion/PRODUCT_GOAL.md": "372b05101ab5c9a660dd6b737b783a5ecaba9227cc293cca2b76f3a124d8f75d",
+    "promotion/PRODUCT_JOURNEYS.md": "f7dfc0630b82a83c9341b0bd56839b4f2e347dbacfea213054899feb5163bf1f",
+    "promotion/PROMOTION_LOG.md": "82068d7d9c3da1260a4809f7780ab5fd3c07aaf4259873ec22748e61aff4f82d",
+    "promotion/WIG_REVIEW.md": "3539dda54646fc6f7a01b9534313c967ae11130c6d43e8d706bb42015d1be4d5"
+  },
+  "proofSourceHashes": {
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+    "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+    "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+  },
+  "sourceDeltaFromPriorJudge": [
+    "bin/nodetrace.mjs",
+    "src/DemoDashboard.tsx"
+  ],
+  "helperBindings": [
+    {
+      "file": "DemoDashboard.tsx",
+      "expectedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "actualSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "exact": true
+    },
+    {
+      "file": "demoState.ts",
+      "expectedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "actualSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "exact": true
+    },
+    {
+      "file": "demoNavigation.ts",
+      "expectedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "actualSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "exact": true
+    }
+  ],
+  "sourceDefaultRendered": [
+    {
+      "width": 320,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    },
+    {
+      "width": 360,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    },
+    {
+      "width": 390,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    },
+    {
+      "width": 768,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    },
+    {
+      "width": 1024,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    },
+    {
+      "width": 1440,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    },
+    {
+      "width": 1920,
+      "commands": [
+        "npm run understand:noderoom",
+        "npm run capture:noderoom:real",
+        "npm run trace-coach:sqlite",
+        "npm run trace-coach:sqlite"
+      ],
+      "guidePresent": true,
+      "installedCopyAbsent": true
+    }
+  ],
+  "probes": {
+    "promotion/probes/wig-review.mjs": {
+      "rootSha256": "63325d4a54cc4db20aac1db372dfed6e823d4b562d418368536b2207e381cacf",
+      "cloneSha256": "9b6a3024427ded77ed9a058ecfd9b2b76a3ce02cde62c6e34296aea6016d6b3d",
+      "rootEqualsBaseAfterLfNormalization": true,
+      "cloneEqualsRootAfterLfNormalization": true
+    },
+    "promotion/probes/web-quality-audit.mjs": {
+      "rootSha256": "03dcc6892c54ba97ea63e07b579540d9b163b1593783a4bb4e0db735f6c1fb5e",
+      "cloneSha256": "6f997bc6df2b1f9533b404b5b95db1d70dab84cfb6a8e55efd38bda73c46e936",
+      "rootEqualsBaseAfterLfNormalization": true,
+      "cloneEqualsRootAfterLfNormalization": true
+    },
+    "scripts/installer-next-e2e-smoke.mjs": {
+      "rootSha256": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+      "cloneSha256": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+      "rootEqualsBaseAfterLfNormalization": true,
+      "cloneEqualsRootAfterLfNormalization": true
+    }
+  },
+  "quietAuditProvenance": {
+    "actualMeasuredResult": "PASS320/234msTBT,0axe both",
+    "noAuditTime13FileSnapshot": true,
+    "rootAttestation": "Two-file installed edits and citations completed before quiet audit; no NodeTrace source edit thereafter.",
+    "sourceBindingLimitation": "Recorded built-tree/state guard plus actual build asset filenames; later frozen raw source identity is separate. Current matching built bytes support continuity inference, not a retroactive audit-time SHA snapshot.",
+    "assetComparison": [
+      {
+        "filenameInBothActualQuietLighthouseNetworkLogs": "index-Cl47s1zn.js",
+        "rootCurrentBuiltSha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+        "judgeFreshBuiltSha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+        "currentBuiltBytesEqual": true
+      },
+      {
+        "filenameInBothActualQuietLighthouseNetworkLogs": "index-C5GRn8kk.css",
+        "rootCurrentBuiltSha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+        "judgeFreshBuiltSha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+        "currentBuiltBytesEqual": true
+      }
+    ]
+  },
+  "processesStopped": true
+}

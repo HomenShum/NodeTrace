@@ -1,0 +1,32 @@
+{
+  "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard&surface=shell.statusStrip#host-section",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "overflow": 0,
+  "active": "<button type=\"button\" class=\"nt-close\" aria-label=\"Close Trace Lens\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-x\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path></svg></button>",
+  "modal": true,
+  "regions": [
+    {
+      "selector": ".showcaseActions",
+      "text": "npm run nodetrace:happy-path no API key required",
+      "bounds": {
+        "x": 43,
+        "y": 280.96875,
+        "width": 938,
+        "height": 39.390625
+      }
+    },
+    {
+      "selector": ".coachEmpty",
+      "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+      "bounds": {
+        "x": 22,
+        "y": 357.359375,
+        "width": 1396,
+        "height": 133.78125
+      }
+    }
+  ]
+}

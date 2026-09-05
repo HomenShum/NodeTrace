@@ -1,5 +1,15 @@
 # Canonical journeys — NodeTrace
 
+> **2026-09-04 candidate update:** the observations and scores below are historical.
+> Their UI source citations are pinned to pre-repair commit
+> [fc7c0c4](https://github.com/HomenShum/NodeTrace/tree/fc7c0c471bea40d2fb354e3cb742b395e923244b);
+> the original raw evidence is also retained in that commit. D1 and D4 now have
+> repairs in the local candidate, pending final independent UI judgment. Loading,
+> snapshot labels and demo URL selection also have candidate repairs. This does
+> not rescore this report or close the promotion gate. See the current
+> [onboarding guide](../docs/START_HERE.md) and
+> [concerns](../docs/codebase/CONCERNS.md) for the changed behavior and limits.
+
 Four real workflows. Not feature tours: a journey is one person, one goal, and
 the artifact they hold when it worked. These are the promotion loop's work queue,
 exercised in order of importance.
@@ -53,7 +63,7 @@ Each journey states, in this order:
 - **Steps:**
   1. With the dev server up, Ctrl-click (Cmd-click on macOS) a region carrying
      `data-nodetrace-surface` — the resolver is
-     `src/trace/TraceLensProvider.tsx:55-67`
+     [src/trace/TraceLensProvider.tsx (pre-repair source)](https://github.com/HomenShum/NodeTrace/blob/fc7c0c471bea40d2fb354e3cb742b395e923244b/src/trace/TraceLensProvider.tsx#L55-L67)
      (`window.addEventListener("click", onClick, true)`).
   2. Read the panel `src/trace/TraceLensPanel.tsx` renders: Business proof,
      Runtime trace, Code ownership.
@@ -85,7 +95,7 @@ Each journey states, in this order:
   3. `npm run trace-coach:sqlite` (`scripts/trace-coach-sqlite.mjs`)
   4. Reload `http://127.0.0.1:5187/` and work through the step list, then the
      Overview / Steps / Minimap / Raw JSON tabs
-     (`src/DemoDashboard.tsx:141-146`
+     ([src/DemoDashboard.tsx (pre-repair source)](https://github.com/HomenShum/NodeTrace/blob/fc7c0c471bea40d2fb354e3cb742b395e923244b/src/DemoDashboard.tsx#L141-L146)
      (`{ id: "flow", label: "Minimap", Icon: Network }`)).
 - **Done when:** Six ordered steps render, each naming a real NodeRoom file and
   line range, a code-browser source screenshot, a UI selector with its DOMRect,

@@ -38,63 +38,79 @@ docs check on its own merits.
 
 ---
 
-## 2. A missing state file fails silently, in the browser and in the panel
+## 2. Failed loads and missing registry entries have candidate recovery paths — D1
 
-Two silent failures on the same path.
+A reviewer must be told when evidence cannot load. The pre-repair UI substituted
+an empty loading seed after a failed fetch, and a missing surface registry entry
+made the panel return nothing. Those observations remain in the historical
+promotion reports.
 
-`src/DemoDashboard.tsx:34` (`fetch("./nodetrace-state.json"`) — if `public/nodetrace-state.json` is missing or
-unparseable, the `.catch` swaps in a placeholder with an empty surface list. The
-page renders normally. Nothing tells the user that no data loaded.
+The 2026-09-04 candidate calls `src/demoState.ts:31`
+(`export async function loadDemoState`) to check HTTP status, cap the read at
+1 MiB and validate nested render fields. The dashboard supplies a ten-second
+abort timeout and displays an error with **Retry loading trace**. Loading and
+ready states are distinct; an obsolete request cannot replace current state.
 
-`src/trace/TraceLensPanel.tsx:17-19` (`state.surfaces.find`) — if the clicked surface id is not in
-`state.surfaces`, the component returns `null`. The click was consumed
-(`preventDefault` + `stopPropagation` already ran), so the user gets no panel, no
-message, and no cursor change. **This is defect D1**, and it is reachable from the
-README's own instructions: `npm run trace-coach:sqlite` replaces the surface
-registry, and the page header is still tagged `shell.statusStrip`.
-
-Both are one small change each. Neither was made here because Wave 3 is
-structural and mixing a UI behaviour change into it would make the "behaviour
-preserved" claim unverifiable.
-
----
-
-## 3. The lens can only be opened with a mouse — D4
-
-`src/trace/TraceLensProvider.tsx:58` (`event.metaKey || event.ctrlKey`) requires `metaKey || ctrlKey` plus
-`button === 0`. Measured at the Wave 1 baseline: 25 consecutive Tab presses reach
-no opener; a tap at 375x812 with touch emulation leaves `.nt-panel` null. Once
-open, the dialog has `role="dialog"` without `aria-modal`, focus stays on `BODY`,
-and Tab lands on buttons behind the panel.
-
-For a product whose whole pitch is "anyone can check this claim", keyboard-only
-and touch users cannot check anything.
+`src/trace/TraceLensPanel.tsx:30` (`const meta = state.surfaces.find`) now permits
+an absent registry entry and displays **Surface unavailable** with instructions
+to load matching data. It does not invent the missing registration or evidence.
+**D1: repaired candidate, pending final independent UI judge.** The original
+failed observations have not been rescored.
 
 ---
 
-## 4. Two documented commands fail on a fresh clone — D3
+## 3. Normal entry and modal focus replace the mouse-only path — D4
 
-`npm run understand:noderoom` and `npm run capture:noderoom:real` resolve their
-source as `options["source-root"] ?? NODETRACE_SOURCE_ROOT ?? ".."`, i.e. they
-assume a checkout of `HomenShum/noderoom` sits beside this one. The README does
-not say to create it. On a fresh clone the first throws
-`Error: NodeRoom trace file missing: …` with a raw stack trace and the second
-prints `NodeRoom source root not found: …`.
+The earlier measurements found no opener after repeated Tab presses or a mobile
+tap; focus stayed behind the role-only panel. The candidate's header and coach
+use `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) to call the
+existing `useTraceLens().openHit` API from a normal button. The provider's
+Ctrl/Cmd-click shortcut remains available. Hosts can supply their own buttons
+through that API without adopting the demo's routing policy.
 
-Neither is in `npm run check`, so the green bar does not depend on them — but
-both are printed on the demo page as instructions to run.
+The panel calls `src/trace/TraceLensPanel.tsx:21` (`dialog.showModal()`) to make
+the background inert. It focuses Close, wraps Tab between its available controls
+and restores the opener after Escape, Close or a backdrop gesture. Source
+opening is an actual URL, a supplied host callback, or an explicit unavailable
+message. **D4: repaired candidate, pending final independent UI judge.** Source
+inspection alone does not certify keyboard, physical touch or screen-reader use.
 
 ---
 
-## 5. The page claims provenance the receipt denies — D3, second half
+## 4. New NodeRoom captures still require an actual source checkout — D3
 
-`src/DemoDashboard.tsx:138` (`sourceModeLabel`) maps any `sourceMode` that is not `"live"` to the
-words **"full local checkout"**. After `npm run trace-coach:sqlite` on a fresh
-clone, `docs/eval/nodetrace-trace-coach-sqlite.json` records
-`"sourceMode": "snapshot"` — there is no checkout — and the page nonetheless
-renders `full local checkout - HomenShum/noderoom`.
+`npm run understand:noderoom` and `npm run capture:noderoom:real` use
+`--source-root`, then `NODETRACE_SOURCE_ROOT`, then the parent directory to find
+NodeRoom. A fresh NodeTrace clone does not supply that separate checkout.
+The commands can therefore fail until the operator provides the source and its
+required dependencies. The README now states that prerequisite explicitly.
+Auto-cloning the Understand-Anything tool does not clone the NodeRoom source.
 
-In a product about provenance this is the worst possible place to overstate.
+For the bundled walkthrough, `npm run trace-coach:sqlite` can use the committed
+snapshot and captures without claiming that it produced a fresh capture. The
+candidate's empty-state instructions distinguish those jobs. Capture CLI and
+receipt semantics are outside this UI repair; this note does not close all of D3.
+
+---
+
+## 5. Snapshot labels, empty states and URL selection have candidate repairs
+
+`src/DemoDashboard.tsx:165` (`const sourceModeLabel =`) labels the loaded coach
+as **captured checkout** or **bundled snapshot**. The happy-path sample says no
+coach captures are loaded and gives the snapshot setup command. The old claim
+that a snapshot was a full local checkout is preserved only as historical
+failure evidence. The UI displays saved captures; it does not start an agent or
+new capture. These D3/D8 content repairs remain pending final UI judgment.
+
+`src/demoNavigation.ts:31` (`export function useDemoNavigation`) owns step, tab
+and lens query parameters in the demo. It restores selection on reload and
+Back/Forward, normalizing invalid steps after data arrives. The portable provider
+keeps its existing API, and installed hosts retain their own navigation policy.
+
+Public JSON is data, never a grant of builder authority. The loader strips code
+ownership and forces Review mode even if an input file claims capability.
+Hosts must obtain capability from server-verified identity and send a safe
+privileged projection. A public file or URL flag cannot replace that contract.
 
 ---
 
@@ -119,7 +135,8 @@ package does not declare what its own CLI needs. Either move `playwright` to
   `src/trace/surfaces.ts` was deleted in the Wave 3 reduction. The remaining two
   describe genuinely different sets, so they are not duplicates — but nothing
   checks that a surface tagged in the DOM is registered by whichever script last
-  wrote the state, which is what makes D1 possible.
+  wrote the state. The candidate reports that mismatch visibly; the underlying
+  datasets remain separate.
 - **`foreign_keys = ON` is set in `trace-coach-sqlite.mjs` and not in
   `init-sqlite.mjs`.** Inconsistent rather than wrong; the inserts are ordered
   correctly either way.

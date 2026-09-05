@@ -4,11 +4,11 @@ Where things are, and which of them you will actually open.
 
 ## The five files that are the product
 
-If you read nothing else, read these. Together they are under 600 lines.
+Start with these five files, then the demo-only helpers below.
 
     src/trace/types.ts             the vocabulary: SurfaceHit, TraceProof, RuntimeTraceRow, NodeTraceState
-    src/trace/TraceLensProvider.tsx  catches Ctrl-click, turns a DOM event into a SurfaceHit
-    src/trace/TraceLensPanel.tsx     renders proof, trace and ownership for that hit
+    src/trace/TraceLensProvider.tsx  host openHit/close API, plus Ctrl/Cmd-click resolution
+    src/trace/TraceLensPanel.tsx     native modal for proof, trace, ownership and missing data
     db/schema.sql                    the eight tables everything is stored in
     scripts/init-sqlite.mjs          the only code that writes rows and publishes the client JSON
 
@@ -19,14 +19,16 @@ If you read nothing else, read these. Together they are under 600 lines.
 
     src/
       main.tsx                 mounts DemoDashboard, nothing else
-      DemoDashboard.tsx        the demo page: hero, Trace Coach panel, live graph rail
+      DemoDashboard.tsx        demo loading/retry, inspect buttons, coach, live graph rail
+      demoState.ts            bounded public JSON loader; no builder authority
+      demoNavigation.ts       demo-only URL selection; host routing stays external
       styles.css               demo page styling
       trace/                   THE PORTABLE PART — this whole directory is what
                                `nodetrace add` copies into another repository
         index.ts               the public surface of that copy
         types.ts               domain types
-        TraceLensProvider.tsx  click capture + React context
-        TraceLensPanel.tsx     the panel
+        TraceLensProvider.tsx  host API, click capture and React context
+        TraceLensPanel.tsx     native modal with focus return and honest empty states
         LiveGraphRail.tsx      trace rows as a graph, via vendor/nodegraph-live
         trace.css              panel styling
       capture/
@@ -93,6 +95,8 @@ other people's applications receive — `bin/nodetrace.mjs:52-75`
     src/trace/**                 -> <target>/src/nodetrace/
     vendor/nodegraph-live/**     -> <target>/src/nodetrace/vendor/nodegraph-live/
     src/DemoDashboard.tsx        -> <target>/src/nodetrace-demo/DemoDashboard.tsx
+    src/demoState.ts             -> <target>/src/nodetrace-demo/demoState.ts
+    src/demoNavigation.ts        -> <target>/src/nodetrace-demo/demoNavigation.ts
     src/styles.css               -> <target>/src/nodetrace-demo/styles.css
     db/schema.sql                -> <target>/db/nodetrace.schema.sql
     scripts/init-sqlite.mjs      -> <target>/scripts/nodetrace-init.mjs

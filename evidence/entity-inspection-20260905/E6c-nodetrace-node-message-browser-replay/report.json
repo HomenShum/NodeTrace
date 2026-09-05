@@ -1,0 +1,100 @@
+{
+  "host": "D:/ProjectRecovery/nodetrace-node-message-contract-review-20260905",
+  "sourceHash": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+  "baseSourceHash": "892ca69f298b3c25c69e385c8c00cd9265f2612479caaf9320cb73c07dd629c5",
+  "port": 5173,
+  "results": [
+    {
+      "mode": "before",
+      "message": {
+        "source": "nodegraph",
+        "kind": "node",
+        "id": "b",
+        "label": "Product B",
+        "nodeKind": "product",
+        "edges": [
+          {
+            "other": "Supplier A",
+            "weight": 99,
+            "type": "assertion",
+            "receipt": {
+              "source": "Independent contract fixture",
+              "release": "duplicate-should-not-appear",
+              "subjectId": "a",
+              "objectId": "b",
+              "url": "https://example.invalid/duplicate-should-not-appear"
+            }
+          }
+        ]
+      },
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+      "painted": {
+        "nodes": 2,
+        "chromaticPixels": 82,
+        "points": [
+          {
+            "x": 214,
+            "y": 357.4407786885246
+          },
+          {
+            "x": 687,
+            "y": 357.4407786885246
+          }
+        ]
+      }
+    },
+    {
+      "mode": "after",
+      "message": {
+        "source": "nodegraph",
+        "kind": "node",
+        "id": "b",
+        "label": "Product B",
+        "nodeKind": "product",
+        "edges": [
+          {
+            "other": "Supplier A",
+            "weight": 1,
+            "type": "assertion",
+            "receipt": {
+              "source": "Independent contract fixture",
+              "release": "reviewed-first",
+              "subjectId": "a",
+              "objectId": "b",
+              "url": "https://example.invalid/reviewed-first"
+            }
+          },
+          {
+            "other": "Supplier A",
+            "weight": 99,
+            "type": "assertion",
+            "receipt": {
+              "source": "Independent contract fixture",
+              "release": "duplicate-should-not-appear",
+              "subjectId": "a",
+              "objectId": "b",
+              "url": "https://example.invalid/duplicate-should-not-appear"
+            }
+          }
+        ]
+      },
+      "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture reviewed-first · receipt\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+      "painted": {
+        "nodes": 2,
+        "chromaticPixels": 82,
+        "points": [
+          {
+            "x": 214,
+            "y": 357.4407786885246
+          },
+          {
+            "x": 687,
+            "y": 357.4407786885246
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "reproduced": true
+}

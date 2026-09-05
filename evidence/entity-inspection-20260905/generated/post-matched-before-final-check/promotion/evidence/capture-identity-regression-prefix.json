@@ -1,0 +1,22 @@
+{
+  "ok": false,
+  "probe": "capture-identity — the capture script must not photograph a foreign process",
+  "completedAt": "2026-08-13T22:34:34.212Z",
+  "observed": {
+    "port": 5187,
+    "impostor": "a foreign process already held the port",
+    "exitCode": 0,
+    "lastLine": "live graph rail capture: PASS (14 entities, 31 traversal edges -> docs/screenshots/live-graph-rail.png)",
+    "artifactShaBefore": "9e7764717699026d",
+    "artifactShaAfter": "1ed894e78db75559",
+    "artifactRewritten": true,
+    "artifactRestored": true,
+    "identityRejectsImpostor": "the captured page served a different public/nodetrace-state.json than this checkout has on disk (page sha256:537c2fbd4438, disk sha256:e5b8ea0e1ce4) — another process answered on this port",
+    "identityAcceptsThisTree": true
+  },
+  "issues": [
+    "capture script exited 0 while a foreign process held port 5187",
+    "capture script printed PASS against the impostor",
+    "docs\\screenshots\\live-graph-rail.png was rewritten from a page this checkout did not serve"
+  ]
+}

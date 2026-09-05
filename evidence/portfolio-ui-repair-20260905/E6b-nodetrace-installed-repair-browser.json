@@ -1,0 +1,870 @@
+{
+  "at": "2026-09-05T02:00:39.210Z",
+  "consumer": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+  "source": "D:/ProjectRecovery/nodetrace-installed-repair-judge-20260905-0200",
+  "origin": "http://127.0.0.1:39744",
+  "checks": [
+    {
+      "name": "generated Next entrypoint explicitly supplies installed",
+      "pass": true
+    },
+    {
+      "name": "integration guide actually exists",
+      "pass": true
+    },
+    {
+      "name": "displayed consumer command exists in package",
+      "pass": true,
+      "detail": {
+        "build": "next build",
+        "nodetrace:dev": "next dev",
+        "nodetrace:happy-path": "node scripts/nodetrace-init.mjs --json-out docs/eval/nodetrace-happy-path.json",
+        "nodetrace:smoke": "node scripts/nodetrace-smoke.mjs"
+      }
+    },
+    {
+      "name": "390 header has only actual consumer command",
+      "pass": true,
+      "detail": [
+        "npm run nodetrace:happy-path"
+      ]
+    },
+    {
+      "name": "390 no source-checkout-only commands",
+      "pass": true
+    },
+    {
+      "name": "390 empty guidance discloses missing guided captures",
+      "pass": true
+    },
+    {
+      "name": "390 actual generated trace count visible",
+      "pass": true
+    },
+    {
+      "name": "390 no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "390 natural Tab reaches Inspect",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "390 native modal and focus inside",
+      "pass": true
+    },
+    {
+      "name": "390 state-derived proof and trace displayed",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 0",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 1",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 2",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 3",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 4",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 5",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 6",
+      "pass": true
+    },
+    {
+      "name": "390 modal keyboard containment 7",
+      "pass": true
+    },
+    {
+      "name": "390 open preserves host context",
+      "pass": true
+    },
+    {
+      "name": "390 Escape restores opener",
+      "pass": true
+    },
+    {
+      "name": "390 pointer close restores opener",
+      "pass": true
+    },
+    {
+      "name": "390 closed preserves host context",
+      "pass": true
+    },
+    {
+      "name": "390 advertised command executes successfully",
+      "pass": true,
+      "detail": "\n> nodetrace:happy-path\n> node scripts/nodetrace-init.mjs --json-out docs/eval/nodetrace-happy-path.json\n\nnodetrace happy path: PASS 9ms\nwrote .nodetrace/nodetrace.sqlite\nwrote public/nodetrace-state.json\n"
+    },
+    {
+      "name": "390 regenerates useful local state",
+      "pass": true,
+      "detail": {
+        "width": 390,
+        "displayed": "npm run nodetrace:happy-path",
+        "status": 0,
+        "stateBeforeSha256": "b751492258f9cbf1dfd5af400eb948e9fddfebcaadbcf6d4f775cfa995b248ab",
+        "stateAfterSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+        "traces": 4,
+        "proofs": 2,
+        "generatedAt": "2026-09-05T02:00:34.915Z"
+      }
+    },
+    {
+      "name": "390 refresh retains useful trace and host context",
+      "pass": true
+    },
+    {
+      "name": "1440 header has only actual consumer command",
+      "pass": true,
+      "detail": [
+        "npm run nodetrace:happy-path"
+      ]
+    },
+    {
+      "name": "1440 no source-checkout-only commands",
+      "pass": true
+    },
+    {
+      "name": "1440 empty guidance discloses missing guided captures",
+      "pass": true
+    },
+    {
+      "name": "1440 actual generated trace count visible",
+      "pass": true
+    },
+    {
+      "name": "1440 no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "1440 natural Tab reaches Inspect",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "1440 native modal and focus inside",
+      "pass": true
+    },
+    {
+      "name": "1440 state-derived proof and trace displayed",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 0",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 1",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 2",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 3",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 4",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 5",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 6",
+      "pass": true
+    },
+    {
+      "name": "1440 modal keyboard containment 7",
+      "pass": true
+    },
+    {
+      "name": "1440 open preserves host context",
+      "pass": true
+    },
+    {
+      "name": "1440 Escape restores opener",
+      "pass": true
+    },
+    {
+      "name": "1440 pointer close restores opener",
+      "pass": true
+    },
+    {
+      "name": "1440 closed preserves host context",
+      "pass": true
+    },
+    {
+      "name": "1440 advertised command executes successfully",
+      "pass": true,
+      "detail": "\n> nodetrace:happy-path\n> node scripts/nodetrace-init.mjs --json-out docs/eval/nodetrace-happy-path.json\n\nnodetrace happy path: PASS 9ms\nwrote .nodetrace/nodetrace.sqlite\nwrote public/nodetrace-state.json\n"
+    },
+    {
+      "name": "1440 regenerates useful local state",
+      "pass": true,
+      "detail": {
+        "width": 1440,
+        "displayed": "npm run nodetrace:happy-path",
+        "status": 0,
+        "stateBeforeSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+        "stateAfterSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+        "traces": 4,
+        "proofs": 2,
+        "generatedAt": "2026-09-05T02:00:37.977Z"
+      }
+    },
+    {
+      "name": "1440 refresh retains useful trace and host context",
+      "pass": true
+    },
+    {
+      "name": "all served state/build assets match retained files",
+      "pass": true,
+      "detail": 44
+    },
+    {
+      "name": "no uncaught script errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed source/config/build unchanged by recovery command",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "390-empty",
+      "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": 0,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" aria-label=\"SQLite to trace UI flow\"><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg> SQLite</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\" aria-hidden=\"true\"><path d=\"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z\"></path><path d=\"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12\"></path><path d=\"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17\"></path></svg> NodeRoom trace</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg> browser UI</span></div><div class=\"heroStats\"><div><span>Source app</span><strong>NodeRoom</strong><small>SQLite sample</small></div><div><span>Coach steps</span><strong>0</strong><small>ordered labels</small></div><div><span>Trace tabs</span><strong>4</strong><small>overview, steps, minimap, raw</small></div></div><div class=\"launchCheck\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-check\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"m9 12 2 2 4-4\"></path></svg><span>The SQLite sample contains trace events. No Trace Coach captures are loaded yet.</span></div></aside></header><section class=\"coachEmpty\" aria-labelledby=\"coach-empty-title\"><h2 id=\"coach-empty-title\">Connect your own trace</h2><p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate=\"no\">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate=\"no\">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p></section><section class=\"liveGraphRail\" aria-label=\"Live graph rail\" data-testid=\"live-graph-rail\" data-entity-count=\"10\" data-edge-count=\"15\"><header class=\"liveGraphRailHead\"><h2>Live graph rail</h2><small>10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.</small></header><section data-testid=\"nodegraph\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 8px; background: rgb(255, 255, 255); color: rgb(21, 24, 26); padding: 16px; font-family: ui-sans-serif, system-ui, sans-serif;\"><header style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;\"><h3 style=\"margin: 0px; font-size: 14px; font-weight: 600;\">Relationship graph</h3><p style=\"margin: 0px; font-size: 12px; color: rgb(90, 98, 106);\">10 entities · 15 of 15 relationships shown</p></header><div data-testid=\"edge-type-filters\" style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px;\"><button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button><label style=\"display: flex; align-items: center; gap: 6px; font-size: 12px;\"><input data-filter-type=\"traversal\" type=\"checkbox\" checked=\"\"><span>traversal</span><span style=\"color: rgb(90, 98, 106);\">(15)</span><span title=\"interaction frequency, not evidence strength\" style=\"color: rgb(90, 98, 106);\">· local</span></label></div><div style=\"position: relative; border-radius: 6px; border: 1px solid rgb(226, 229, 231); height: 300px; width: 100%; background-image: radial-gradient(rgba(21, 24, 26, 0.06) 1px, transparent 1px); background-size: 22px 22px;\"><div data-testid=\"nodegraph-canvas\" style=\"position: absolute; inset: 0px;\"><canvas class=\"sigma-edges\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-edgeLabels\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-nodes\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-labels\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-hovers\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-hoverNodes\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-mouse\" width=\"300px\" height=\"298px\" style=\"position: absolute; touch-action: none; user-select: none; width: 300px; height: 298px;\"></canvas></div><canvas data-testid=\"cinematic-layer\" style=\"pointer-events: none; position: absolute; inset: 0px; z-index: 10; height: 100%; width: 100%;\"></canvas></div></section></section></section></main><!--$--><!--/$--><script src=\"/_next/static/chunks/webpack-5a5084729816eddb.js\" id=\"_R_\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[9766,[],\\\"\\\"]\\n3:I[8924,[],\\\"\\\"]\\n4:I[1959,[],\\\"ClientPageRoot\\\"]\\n5:I[6776,[\\\"76\\\",\\\"static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js\\\"],\\\"default\\\"]\\n8:I[4431,[],\\\"OutletBoundary\\\"]\\na:I[5278,[],\\\"AsyncMetadataOutlet\\\"]\\nc:I[4431,[],\\\"ViewportBoundary\\\"]\\ne:I[4431,[],\\\"MetadataBoundary\\\"]\\nf:\\\"$Sreact.suspense\\\"\\n11:I[7150,[],\\\"\\\"]\\n:HL[\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"b\\\":\\\"FdrwvwAGqng9s6yFor82Y\\\",\\\"p\\\":\\\"\\\",\\\"c\\\":[\\\"\\\",\\\"nodetrace\\\"],\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"nodetrace\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],[\\\"\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],{\\\"children\\\":[\\\"nodetrace\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[\\\"__PAGE__\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{\\\"Component\\\":\\\"$5\\\",\\\"searchParams\\\":{},\\\"params\\\":{},\\\"promises\\\":[\\\"$@6\\\",\\\"$@7\\\"]}],[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"$L8\\\",null,{\\\"children\\\":[\\\"$L9\\\",[\\\"$\\\",\\\"$La\\\",null,{\\\"promise\\\":\\\"$@b\\\"}]]}]]}],{},null,false]},null,false]},null,false],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":\\\"$Ld\\\"}],null],[\\\"$\\\",\\\"$Le\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$f\\\",null,{\\\"fallback\\\":null,\\\"children\\\":\\\"$L10\\\"}]}]}]]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$11\\\",[]],\\\"s\\\":false,\\\"S\\\":true}\\n\"])</script><script>self.__next_f.push([1,\"6:{}\\n7:\\\"$0:f:0:1:2:children:2:children:1:props:children:0:props:params\\\"\\n\"])</script><script>self.__next_f.push([1,\"d:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n9:null\\n\"])</script><script>self.__next_f.push([1,\"b:{\\\"metadata\\\":[],\\\"error\\\":null,\\\"digest\\\":\\\"$undefined\\\"}\\n\"])</script><script>self.__next_f.push([1,\"10:\\\"$b:metadata\\\"\\n\"])</script><next-route-announcer style=\"position: absolute;\"></next-route-announcer></body>",
+      "modal": false,
+      "regions": [
+        {
+          "selector": ".showcaseActions",
+          "text": "npm run nodetrace:happy-path no API key required",
+          "bounds": {
+            "x": 29,
+            "y": 251.0625,
+            "width": 332,
+            "height": 88.78125
+          }
+        },
+        {
+          "selector": ".coachEmpty",
+          "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+          "bounds": {
+            "x": 12,
+            "y": 830.1875,
+            "width": 366,
+            "height": 224.53125
+          }
+        }
+      ]
+    },
+    {
+      "name": "390-modal",
+      "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard&surface=shell.statusStrip#host-section",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": 0,
+      "active": "<button type=\"button\" class=\"nt-close\" aria-label=\"Close Trace Lens\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-x\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path></svg></button>",
+      "modal": true,
+      "regions": [
+        {
+          "selector": ".showcaseActions",
+          "text": "npm run nodetrace:happy-path no API key required",
+          "bounds": {
+            "x": 29,
+            "y": 251.0625,
+            "width": 332,
+            "height": 88.78125
+          }
+        },
+        {
+          "selector": ".coachEmpty",
+          "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+          "bounds": {
+            "x": 12,
+            "y": 830.1875,
+            "width": 366,
+            "height": 226.53125
+          }
+        }
+      ]
+    },
+    {
+      "name": "390-after-command",
+      "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": 0,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" aria-label=\"SQLite to trace UI flow\"><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg> SQLite</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\" aria-hidden=\"true\"><path d=\"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z\"></path><path d=\"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12\"></path><path d=\"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17\"></path></svg> NodeRoom trace</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg> browser UI</span></div><div class=\"heroStats\"><div><span>Source app</span><strong>NodeRoom</strong><small>SQLite sample</small></div><div><span>Coach steps</span><strong>0</strong><small>ordered labels</small></div><div><span>Trace tabs</span><strong>4</strong><small>overview, steps, minimap, raw</small></div></div><div class=\"launchCheck\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-check\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"m9 12 2 2 4-4\"></path></svg><span>The SQLite sample contains trace events. No Trace Coach captures are loaded yet.</span></div></aside></header><section class=\"coachEmpty\" aria-labelledby=\"coach-empty-title\"><h2 id=\"coach-empty-title\">Connect your own trace</h2><p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate=\"no\">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate=\"no\">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p></section><section class=\"liveGraphRail\" aria-label=\"Live graph rail\" data-testid=\"live-graph-rail\" data-entity-count=\"10\" data-edge-count=\"15\"><header class=\"liveGraphRailHead\"><h2>Live graph rail</h2><small>10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.</small></header><section data-testid=\"nodegraph\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 8px; background: rgb(255, 255, 255); color: rgb(21, 24, 26); padding: 16px; font-family: ui-sans-serif, system-ui, sans-serif;\"><header style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;\"><h3 style=\"margin: 0px; font-size: 14px; font-weight: 600;\">Relationship graph</h3><p style=\"margin: 0px; font-size: 12px; color: rgb(90, 98, 106);\">10 entities · 15 of 15 relationships shown</p></header><div data-testid=\"edge-type-filters\" style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px;\"><button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button><label style=\"display: flex; align-items: center; gap: 6px; font-size: 12px;\"><input data-filter-type=\"traversal\" type=\"checkbox\" checked=\"\"><span>traversal</span><span style=\"color: rgb(90, 98, 106);\">(15)</span><span title=\"interaction frequency, not evidence strength\" style=\"color: rgb(90, 98, 106);\">· local</span></label></div><div style=\"position: relative; border-radius: 6px; border: 1px solid rgb(226, 229, 231); height: 300px; width: 100%; background-image: radial-gradient(rgba(21, 24, 26, 0.06) 1px, transparent 1px); background-size: 22px 22px;\"><div data-testid=\"nodegraph-canvas\" style=\"position: absolute; inset: 0px;\"><canvas class=\"sigma-edges\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-edgeLabels\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-nodes\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-labels\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-hovers\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-hoverNodes\" width=\"300px\" height=\"298px\" style=\"position: absolute; width: 300px; height: 298px;\"></canvas><canvas class=\"sigma-mouse\" width=\"300px\" height=\"298px\" style=\"position: absolute; touch-action: none; user-select: none; width: 300px; height: 298px;\"></canvas></div><canvas data-testid=\"cinematic-layer\" style=\"pointer-events: none; position: absolute; inset: 0px; z-index: 10; height: 100%; width: 100%;\"></canvas></div></section></section></section></main><!--$--><!--/$--><script src=\"/_next/static/chunks/webpack-5a5084729816eddb.js\" id=\"_R_\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[9766,[],\\\"\\\"]\\n3:I[8924,[],\\\"\\\"]\\n4:I[1959,[],\\\"ClientPageRoot\\\"]\\n5:I[6776,[\\\"76\\\",\\\"static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js\\\"],\\\"default\\\"]\\n8:I[4431,[],\\\"OutletBoundary\\\"]\\na:I[5278,[],\\\"AsyncMetadataOutlet\\\"]\\nc:I[4431,[],\\\"ViewportBoundary\\\"]\\ne:I[4431,[],\\\"MetadataBoundary\\\"]\\nf:\\\"$Sreact.suspense\\\"\\n11:I[7150,[],\\\"\\\"]\\n:HL[\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"b\\\":\\\"FdrwvwAGqng9s6yFor82Y\\\",\\\"p\\\":\\\"\\\",\\\"c\\\":[\\\"\\\",\\\"nodetrace\\\"],\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"nodetrace\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],[\\\"\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],{\\\"children\\\":[\\\"nodetrace\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[\\\"__PAGE__\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{\\\"Component\\\":\\\"$5\\\",\\\"searchParams\\\":{},\\\"params\\\":{},\\\"promises\\\":[\\\"$@6\\\",\\\"$@7\\\"]}],[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"$L8\\\",null,{\\\"children\\\":[\\\"$L9\\\",[\\\"$\\\",\\\"$La\\\",null,{\\\"promise\\\":\\\"$@b\\\"}]]}]]}],{},null,false]},null,false]},null,false],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":\\\"$Ld\\\"}],null],[\\\"$\\\",\\\"$Le\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$f\\\",null,{\\\"fallback\\\":null,\\\"children\\\":\\\"$L10\\\"}]}]}]]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$11\\\",[]],\\\"s\\\":false,\\\"S\\\":true}\\n\"])</script><script>self.__next_f.push([1,\"6:{}\\n7:\\\"$0:f:0:1:2:children:2:children:1:props:children:0:props:params\\\"\\n\"])</script><script>self.__next_f.push([1,\"d:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n9:null\\n\"])</script><script>self.__next_f.push([1,\"b:{\\\"metadata\\\":[],\\\"error\\\":null,\\\"digest\\\":\\\"$undefined\\\"}\\n\"])</script><script>self.__next_f.push([1,\"10:\\\"$b:metadata\\\"\\n\"])</script><next-route-announcer style=\"position: absolute;\"></next-route-announcer></body>",
+      "modal": false,
+      "regions": [
+        {
+          "selector": ".showcaseActions",
+          "text": "npm run nodetrace:happy-path no API key required",
+          "bounds": {
+            "x": 29,
+            "y": 251.0625,
+            "width": 332,
+            "height": 88.78125
+          }
+        },
+        {
+          "selector": ".coachEmpty",
+          "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+          "bounds": {
+            "x": 12,
+            "y": 830.1875,
+            "width": 366,
+            "height": 226.53125
+          }
+        }
+      ]
+    },
+    {
+      "name": "1440-empty",
+      "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "overflow": 0,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" aria-label=\"SQLite to trace UI flow\"><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg> SQLite</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\" aria-hidden=\"true\"><path d=\"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z\"></path><path d=\"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12\"></path><path d=\"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17\"></path></svg> NodeRoom trace</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg> browser UI</span></div><div class=\"heroStats\"><div><span>Source app</span><strong>NodeRoom</strong><small>SQLite sample</small></div><div><span>Coach steps</span><strong>0</strong><small>ordered labels</small></div><div><span>Trace tabs</span><strong>4</strong><small>overview, steps, minimap, raw</small></div></div><div class=\"launchCheck\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-check\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"m9 12 2 2 4-4\"></path></svg><span>The SQLite sample contains trace events. No Trace Coach captures are loaded yet.</span></div></aside></header><section class=\"coachEmpty\" aria-labelledby=\"coach-empty-title\"><h2 id=\"coach-empty-title\">Connect your own trace</h2><p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate=\"no\">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate=\"no\">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p></section><section class=\"liveGraphRail\" aria-label=\"Live graph rail\" data-testid=\"live-graph-rail\" data-entity-count=\"10\" data-edge-count=\"15\"><header class=\"liveGraphRailHead\"><h2>Live graph rail</h2><small>10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.</small></header><section data-testid=\"nodegraph\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 8px; background: rgb(255, 255, 255); color: rgb(21, 24, 26); padding: 16px; font-family: ui-sans-serif, system-ui, sans-serif;\"><header style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;\"><h3 style=\"margin: 0px; font-size: 14px; font-weight: 600;\">Relationship graph</h3><p style=\"margin: 0px; font-size: 12px; color: rgb(90, 98, 106);\">10 entities · 15 of 15 relationships shown</p></header><div data-testid=\"edge-type-filters\" style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px;\"><button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button><label style=\"display: flex; align-items: center; gap: 6px; font-size: 12px;\"><input data-filter-type=\"traversal\" type=\"checkbox\" checked=\"\"><span>traversal</span><span style=\"color: rgb(90, 98, 106);\">(15)</span><span title=\"interaction frequency, not evidence strength\" style=\"color: rgb(90, 98, 106);\">· local</span></label></div><div style=\"position: relative; border-radius: 6px; border: 1px solid rgb(226, 229, 231); height: 300px; width: 100%; background-image: radial-gradient(rgba(21, 24, 26, 0.06) 1px, transparent 1px); background-size: 22px 22px;\"><div data-testid=\"nodegraph-canvas\" style=\"position: absolute; inset: 0px;\"><canvas class=\"sigma-edges\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-edgeLabels\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-nodes\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-labels\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-hovers\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-hoverNodes\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-mouse\" width=\"1330px\" height=\"298px\" style=\"position: absolute; touch-action: none; user-select: none; width: 1330px; height: 298px;\"></canvas></div><canvas data-testid=\"cinematic-layer\" style=\"pointer-events: none; position: absolute; inset: 0px; z-index: 10; height: 100%; width: 100%;\"></canvas></div></section></section></section></main><!--$--><!--/$--><script src=\"/_next/static/chunks/webpack-5a5084729816eddb.js\" id=\"_R_\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[9766,[],\\\"\\\"]\\n3:I[8924,[],\\\"\\\"]\\n4:I[1959,[],\\\"ClientPageRoot\\\"]\\n5:I[6776,[\\\"76\\\",\\\"static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js\\\"],\\\"default\\\"]\\n8:I[4431,[],\\\"OutletBoundary\\\"]\\na:I[5278,[],\\\"AsyncMetadataOutlet\\\"]\\nc:I[4431,[],\\\"ViewportBoundary\\\"]\\ne:I[4431,[],\\\"MetadataBoundary\\\"]\\nf:\\\"$Sreact.suspense\\\"\\n11:I[7150,[],\\\"\\\"]\\n:HL[\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"b\\\":\\\"FdrwvwAGqng9s6yFor82Y\\\",\\\"p\\\":\\\"\\\",\\\"c\\\":[\\\"\\\",\\\"nodetrace\\\"],\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"nodetrace\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],[\\\"\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],{\\\"children\\\":[\\\"nodetrace\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[\\\"__PAGE__\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{\\\"Component\\\":\\\"$5\\\",\\\"searchParams\\\":{},\\\"params\\\":{},\\\"promises\\\":[\\\"$@6\\\",\\\"$@7\\\"]}],[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"$L8\\\",null,{\\\"children\\\":[\\\"$L9\\\",[\\\"$\\\",\\\"$La\\\",null,{\\\"promise\\\":\\\"$@b\\\"}]]}]]}],{},null,false]},null,false]},null,false],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":\\\"$Ld\\\"}],null],[\\\"$\\\",\\\"$Le\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$f\\\",null,{\\\"fallback\\\":null,\\\"children\\\":\\\"$L10\\\"}]}]}]]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$11\\\",[]],\\\"s\\\":false,\\\"S\\\":true}\\n\"])</script><script>self.__next_f.push([1,\"6:{}\\n7:\\\"$0:f:0:1:2:children:2:children:1:props:children:0:props:params\\\"\\n\"])</script><script>self.__next_f.push([1,\"d:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n9:null\\n\"])</script><script>self.__next_f.push([1,\"b:{\\\"metadata\\\":[],\\\"error\\\":null,\\\"digest\\\":\\\"$undefined\\\"}\\n\"])</script><script>self.__next_f.push([1,\"10:\\\"$b:metadata\\\"\\n\"])</script><next-route-announcer style=\"position: absolute;\"></next-route-announcer></body>",
+      "modal": false,
+      "regions": [
+        {
+          "selector": ".showcaseActions",
+          "text": "npm run nodetrace:happy-path no API key required",
+          "bounds": {
+            "x": 43,
+            "y": 280.96875,
+            "width": 938,
+            "height": 39.390625
+          }
+        },
+        {
+          "selector": ".coachEmpty",
+          "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+          "bounds": {
+            "x": 22,
+            "y": 357.359375,
+            "width": 1396,
+            "height": 131.78125
+          }
+        }
+      ]
+    },
+    {
+      "name": "1440-modal",
+      "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard&surface=shell.statusStrip#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "overflow": 0,
+      "active": "<button type=\"button\" class=\"nt-close\" aria-label=\"Close Trace Lens\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-x\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"></path><path d=\"m6 6 12 12\"></path></svg></button>",
+      "modal": true,
+      "regions": [
+        {
+          "selector": ".showcaseActions",
+          "text": "npm run nodetrace:happy-path no API key required",
+          "bounds": {
+            "x": 43,
+            "y": 280.96875,
+            "width": 938,
+            "height": 39.390625
+          }
+        },
+        {
+          "selector": ".coachEmpty",
+          "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+          "bounds": {
+            "x": 22,
+            "y": 357.359375,
+            "width": 1396,
+            "height": 133.78125
+          }
+        }
+      ]
+    },
+    {
+      "name": "1440-after-command",
+      "url": "http://127.0.0.1:39744/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "overflow": 0,
+      "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" aria-label=\"SQLite to trace UI flow\"><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg> SQLite</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\" aria-hidden=\"true\"><path d=\"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z\"></path><path d=\"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12\"></path><path d=\"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17\"></path></svg> NodeRoom trace</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg> browser UI</span></div><div class=\"heroStats\"><div><span>Source app</span><strong>NodeRoom</strong><small>SQLite sample</small></div><div><span>Coach steps</span><strong>0</strong><small>ordered labels</small></div><div><span>Trace tabs</span><strong>4</strong><small>overview, steps, minimap, raw</small></div></div><div class=\"launchCheck\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-check\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"m9 12 2 2 4-4\"></path></svg><span>The SQLite sample contains trace events. No Trace Coach captures are loaded yet.</span></div></aside></header><section class=\"coachEmpty\" aria-labelledby=\"coach-empty-title\"><h2 id=\"coach-empty-title\">Connect your own trace</h2><p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate=\"no\">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate=\"no\">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p></section><section class=\"liveGraphRail\" aria-label=\"Live graph rail\" data-testid=\"live-graph-rail\" data-entity-count=\"10\" data-edge-count=\"15\"><header class=\"liveGraphRailHead\"><h2>Live graph rail</h2><small>10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.</small></header><section data-testid=\"nodegraph\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 8px; background: rgb(255, 255, 255); color: rgb(21, 24, 26); padding: 16px; font-family: ui-sans-serif, system-ui, sans-serif;\"><header style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;\"><h3 style=\"margin: 0px; font-size: 14px; font-weight: 600;\">Relationship graph</h3><p style=\"margin: 0px; font-size: 12px; color: rgb(90, 98, 106);\">10 entities · 15 of 15 relationships shown</p></header><div data-testid=\"edge-type-filters\" style=\"margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px;\"><button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button><label style=\"display: flex; align-items: center; gap: 6px; font-size: 12px;\"><input data-filter-type=\"traversal\" type=\"checkbox\" checked=\"\"><span>traversal</span><span style=\"color: rgb(90, 98, 106);\">(15)</span><span title=\"interaction frequency, not evidence strength\" style=\"color: rgb(90, 98, 106);\">· local</span></label></div><div style=\"position: relative; border-radius: 6px; border: 1px solid rgb(226, 229, 231); height: 300px; width: 100%; background-image: radial-gradient(rgba(21, 24, 26, 0.06) 1px, transparent 1px); background-size: 22px 22px;\"><div data-testid=\"nodegraph-canvas\" style=\"position: absolute; inset: 0px;\"><canvas class=\"sigma-edges\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-edgeLabels\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-nodes\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-labels\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-hovers\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-hoverNodes\" width=\"1330px\" height=\"298px\" style=\"position: absolute; width: 1330px; height: 298px;\"></canvas><canvas class=\"sigma-mouse\" width=\"1330px\" height=\"298px\" style=\"position: absolute; touch-action: none; user-select: none; width: 1330px; height: 298px;\"></canvas></div><canvas data-testid=\"cinematic-layer\" style=\"pointer-events: none; position: absolute; inset: 0px; z-index: 10; height: 100%; width: 100%;\"></canvas></div></section></section></section></main><!--$--><!--/$--><script src=\"/_next/static/chunks/webpack-5a5084729816eddb.js\" id=\"_R_\" async=\"\"></script><script>(self.__next_f=self.__next_f||[]).push([0])</script><script>self.__next_f.push([1,\"1:\\\"$Sreact.fragment\\\"\\n2:I[9766,[],\\\"\\\"]\\n3:I[8924,[],\\\"\\\"]\\n4:I[1959,[],\\\"ClientPageRoot\\\"]\\n5:I[6776,[\\\"76\\\",\\\"static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js\\\"],\\\"default\\\"]\\n8:I[4431,[],\\\"OutletBoundary\\\"]\\na:I[5278,[],\\\"AsyncMetadataOutlet\\\"]\\nc:I[4431,[],\\\"ViewportBoundary\\\"]\\ne:I[4431,[],\\\"MetadataBoundary\\\"]\\nf:\\\"$Sreact.suspense\\\"\\n11:I[7150,[],\\\"\\\"]\\n:HL[\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"style\\\"]\\n\"])</script><script>self.__next_f.push([1,\"0:{\\\"P\\\":null,\\\"b\\\":\\\"FdrwvwAGqng9s6yFor82Y\\\",\\\"p\\\":\\\"\\\",\\\"c\\\":[\\\"\\\",\\\"nodetrace\\\"],\\\"i\\\":false,\\\"f\\\":[[[\\\"\\\",{\\\"children\\\":[\\\"nodetrace\\\",{\\\"children\\\":[\\\"__PAGE__\\\",{}]}]},\\\"$undefined\\\",\\\"$undefined\\\",true],[\\\"\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"html\\\",null,{\\\"lang\\\":\\\"en\\\",\\\"children\\\":[\\\"$\\\",\\\"body\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":[[[\\\"$\\\",\\\"title\\\",null,{\\\"children\\\":\\\"404: This page could not be found.\\\"}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"fontFamily\\\":\\\"system-ui,\\\\\\\"Segoe UI\\\\\\\",Roboto,Helvetica,Arial,sans-serif,\\\\\\\"Apple Color Emoji\\\\\\\",\\\\\\\"Segoe UI Emoji\\\\\\\"\\\",\\\"height\\\":\\\"100vh\\\",\\\"textAlign\\\":\\\"center\\\",\\\"display\\\":\\\"flex\\\",\\\"flexDirection\\\":\\\"column\\\",\\\"alignItems\\\":\\\"center\\\",\\\"justifyContent\\\":\\\"center\\\"},\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"children\\\":[[\\\"$\\\",\\\"style\\\",null,{\\\"dangerouslySetInnerHTML\\\":{\\\"__html\\\":\\\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\\\"}}],[\\\"$\\\",\\\"h1\\\",null,{\\\"className\\\":\\\"next-error-h1\\\",\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\",\\\"margin\\\":\\\"0 20px 0 0\\\",\\\"padding\\\":\\\"0 23px 0 0\\\",\\\"fontSize\\\":24,\\\"fontWeight\\\":500,\\\"verticalAlign\\\":\\\"top\\\",\\\"lineHeight\\\":\\\"49px\\\"},\\\"children\\\":404}],[\\\"$\\\",\\\"div\\\",null,{\\\"style\\\":{\\\"display\\\":\\\"inline-block\\\"},\\\"children\\\":[\\\"$\\\",\\\"h2\\\",null,{\\\"style\\\":{\\\"fontSize\\\":14,\\\"fontWeight\\\":400,\\\"lineHeight\\\":\\\"49px\\\",\\\"margin\\\":0},\\\"children\\\":\\\"This page could not be found.\\\"}]}]]}]}]],[]],\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]}]}]]}],{\\\"children\\\":[\\\"nodetrace\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[null,[\\\"$\\\",\\\"$L2\\\",null,{\\\"parallelRouterKey\\\":\\\"children\\\",\\\"error\\\":\\\"$undefined\\\",\\\"errorStyles\\\":\\\"$undefined\\\",\\\"errorScripts\\\":\\\"$undefined\\\",\\\"template\\\":[\\\"$\\\",\\\"$L3\\\",null,{}],\\\"templateStyles\\\":\\\"$undefined\\\",\\\"templateScripts\\\":\\\"$undefined\\\",\\\"notFound\\\":\\\"$undefined\\\",\\\"forbidden\\\":\\\"$undefined\\\",\\\"unauthorized\\\":\\\"$undefined\\\"}]]}],{\\\"children\\\":[\\\"__PAGE__\\\",[\\\"$\\\",\\\"$1\\\",\\\"c\\\",{\\\"children\\\":[[\\\"$\\\",\\\"$L4\\\",null,{\\\"Component\\\":\\\"$5\\\",\\\"searchParams\\\":{},\\\"params\\\":{},\\\"promises\\\":[\\\"$@6\\\",\\\"$@7\\\"]}],[[\\\"$\\\",\\\"link\\\",\\\"0\\\",{\\\"rel\\\":\\\"stylesheet\\\",\\\"href\\\":\\\"/_next/static/css/0b9e091888c97c1f.css\\\",\\\"precedence\\\":\\\"next\\\",\\\"crossOrigin\\\":\\\"$undefined\\\",\\\"nonce\\\":\\\"$undefined\\\"}]],[\\\"$\\\",\\\"$L8\\\",null,{\\\"children\\\":[\\\"$L9\\\",[\\\"$\\\",\\\"$La\\\",null,{\\\"promise\\\":\\\"$@b\\\"}]]}]]}],{},null,false]},null,false]},null,false],[\\\"$\\\",\\\"$1\\\",\\\"h\\\",{\\\"children\\\":[null,[[\\\"$\\\",\\\"$Lc\\\",null,{\\\"children\\\":\\\"$Ld\\\"}],null],[\\\"$\\\",\\\"$Le\\\",null,{\\\"children\\\":[\\\"$\\\",\\\"div\\\",null,{\\\"hidden\\\":true,\\\"children\\\":[\\\"$\\\",\\\"$f\\\",null,{\\\"fallback\\\":null,\\\"children\\\":\\\"$L10\\\"}]}]}]]}],false]],\\\"m\\\":\\\"$undefined\\\",\\\"G\\\":[\\\"$11\\\",[]],\\\"s\\\":false,\\\"S\\\":true}\\n\"])</script><script>self.__next_f.push([1,\"6:{}\\n7:\\\"$0:f:0:1:2:children:2:children:1:props:children:0:props:params\\\"\\n\"])</script><script>self.__next_f.push([1,\"d:[[\\\"$\\\",\\\"meta\\\",\\\"0\\\",{\\\"charSet\\\":\\\"utf-8\\\"}],[\\\"$\\\",\\\"meta\\\",\\\"1\\\",{\\\"name\\\":\\\"viewport\\\",\\\"content\\\":\\\"width=device-width, initial-scale=1\\\"}]]\\n9:null\\n\"])</script><script>self.__next_f.push([1,\"b:{\\\"metadata\\\":[],\\\"error\\\":null,\\\"digest\\\":\\\"$undefined\\\"}\\n\"])</script><script>self.__next_f.push([1,\"10:\\\"$b:metadata\\\"\\n\"])</script><next-route-announcer style=\"position: absolute;\"></next-route-announcer></body>",
+      "modal": false,
+      "regions": [
+        {
+          "selector": ".showcaseActions",
+          "text": "npm run nodetrace:happy-path no API key required",
+          "bounds": {
+            "x": 43,
+            "y": 280.96875,
+            "width": 938,
+            "height": 39.390625
+          }
+        },
+        {
+          "selector": ".coachEmpty",
+          "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+          "bounds": {
+            "x": 22,
+            "y": 357.359375,
+            "width": 1396,
+            "height": 133.78125
+          }
+        }
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "width": 390,
+      "displayed": "npm run nodetrace:happy-path",
+      "status": 0,
+      "stateBeforeSha256": "b751492258f9cbf1dfd5af400eb948e9fddfebcaadbcf6d4f775cfa995b248ab",
+      "stateAfterSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+      "traces": 4,
+      "proofs": 2,
+      "generatedAt": "2026-09-05T02:00:34.915Z"
+    },
+    {
+      "width": 1440,
+      "displayed": "npm run nodetrace:happy-path",
+      "status": 0,
+      "stateBeforeSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+      "stateAfterSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traces": 4,
+      "proofs": 2,
+      "generatedAt": "2026-09-05T02:00:37.977Z"
+    }
+  ],
+  "responses": [
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskSha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskSha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskSha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskSha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskSha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskSha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskSha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskSha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskSha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskSha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/nodetrace-state.json",
+      "status": 200,
+      "sha256": "b751492258f9cbf1dfd5af400eb948e9fddfebcaadbcf6d4f775cfa995b248ab",
+      "diskSha256": "b751492258f9cbf1dfd5af400eb948e9fddfebcaadbcf6d4f775cfa995b248ab",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskSha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskSha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskSha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskSha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskSha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskSha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskSha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskSha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskSha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskSha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "matches": true
+    },
+    {
+      "width": 390,
+      "url": "http://127.0.0.1:39744/nodetrace-state.json",
+      "status": 200,
+      "sha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+      "diskSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskSha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskSha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskSha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskSha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskSha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskSha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskSha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskSha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskSha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskSha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/nodetrace-state.json",
+      "status": 200,
+      "sha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+      "diskSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskSha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskSha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskSha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskSha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskSha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskSha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskSha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskSha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskSha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskSha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "matches": true
+    },
+    {
+      "width": 1440,
+      "url": "http://127.0.0.1:39744/nodetrace-state.json",
+      "status": 200,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "matches": true
+    }
+  ],
+  "consoleLog": [
+    {
+      "width": 390,
+      "type": "warning",
+      "text": "[.WebGL-0x20a4001c0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "width": 390,
+      "type": "warning",
+      "text": "[.WebGL-0x20a4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "width": 390,
+      "type": "warning",
+      "text": "[.WebGL-0x20a4001c1400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "width": 390,
+      "type": "warning",
+      "text": "[.WebGL-0x20a4001c0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "installedInputs": {
+    "src/nodetrace-demo/DemoDashboard.tsx": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    ".next/BUILD_ID": "f1f63887b4c79386e3600161de5db5fa216363c3c53daa6be20b5e27779e373a",
+    "docs/NODETRACE_INTEGRATION.md": "d598f90bdba8a905d4d7716d0b2b5476c5d6cdd9c408ac377ac8240b84468e1d"
+  },
+  "ok": true,
+  "previewStopped": true
+}
