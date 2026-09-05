@@ -1,0 +1,144 @@
+{
+  "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+  "exactFunctionSha256": "d48071c8e21da1cb7a379bfd7fe23b5466f8d659dee43d7329300102aecc52d7",
+  "input": {
+    "nodes": [
+      {
+        "id": "a",
+        "label": "Supplier A",
+        "type": "supplier"
+      },
+      {
+        "id": "b",
+        "label": "Product B",
+        "type": "product"
+      }
+    ],
+    "edges": [
+      {
+        "source": "a",
+        "target": "b",
+        "type": "assertion",
+        "weight": 1,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "reviewed-first",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/reviewed-first"
+        }
+      },
+      {
+        "source": "b",
+        "target": "a",
+        "type": "assertion",
+        "weight": 99,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "duplicate-should-not-appear",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/duplicate-should-not-appear"
+        }
+      },
+      {
+        "source": "a",
+        "target": "missing",
+        "type": "assertion",
+        "weight": 23,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "missing-endpoint-should-not-appear",
+          "subjectId": "a",
+          "objectId": "missing",
+          "url": "https://example.invalid/missing-endpoint-should-not-appear"
+        }
+      }
+    ]
+  },
+  "graphOrder": 2,
+  "graphSize": 1,
+  "cases": [
+    {
+      "id": "a",
+      "message": {
+        "source": "nodegraph",
+        "kind": "node",
+        "id": "a",
+        "label": "Supplier A",
+        "nodeKind": "supplier",
+        "edges": [
+          {
+            "other": "Product B",
+            "weight": 99,
+            "type": "assertion",
+            "receipt": {
+              "source": "Independent contract fixture",
+              "release": "duplicate-should-not-appear",
+              "subjectId": "a",
+              "objectId": "b",
+              "url": "https://example.invalid/duplicate-should-not-appear"
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "a",
+      "hidden": {
+        "source": "nodegraph",
+        "kind": "node",
+        "id": "a",
+        "label": "Supplier A",
+        "nodeKind": "supplier",
+        "edges": []
+      },
+      "pass": true
+    },
+    {
+      "id": "b",
+      "message": {
+        "source": "nodegraph",
+        "kind": "node",
+        "id": "b",
+        "label": "Product B",
+        "nodeKind": "product",
+        "edges": [
+          {
+            "other": "Supplier A",
+            "weight": 99,
+            "type": "assertion",
+            "receipt": {
+              "source": "Independent contract fixture",
+              "release": "duplicate-should-not-appear",
+              "subjectId": "a",
+              "objectId": "b",
+              "url": "https://example.invalid/duplicate-should-not-appear"
+            }
+          }
+        ]
+      },
+      "pass": true
+    },
+    {
+      "id": "b",
+      "hidden": {
+        "source": "nodegraph",
+        "kind": "node",
+        "id": "b",
+        "label": "Product B",
+        "nodeKind": "product",
+        "edges": []
+      },
+      "pass": true
+    },
+    {
+      "id": "missing",
+      "message": null,
+      "pass": true
+    }
+  ],
+  "ok": true,
+  "scope": "Exact current function from retained final source, mounted patchGraph semantics; supplements actual browser Product B pointer proof with dangling-adjacent node A."
+}
