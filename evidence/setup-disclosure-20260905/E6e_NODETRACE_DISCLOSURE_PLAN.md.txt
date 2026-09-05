@@ -1,0 +1,32 @@
+Builder — freeze a **two-file header patch** for root review. Implementation has not started.
+
+**Re your request:** each repo should be ready for real use and handoff, including visual/responsive/interaction grading — the next D3 improvement is grounded in the current canonical source and normal installed sample.
+
+A developer trying to inspect a saved trace sees a screen of setup before the records. At390px the source header occupies939.66px; the installed header occupies802.19px. The source's first Inspect trace button additionally opens “Surface unavailable”; its hardcoded sample surface is absent from the guided registry. The already-selected coach step has the correct registered identity, and its existing secondary action opens real recorded evidence. The installed first action already works.
+
+Use one native **Setup and trace provenance** disclosure, closed by default at every width, for the existing command row and launch/provenance card. Keep heading, status, error/Retry and Inspect visible. Use one `activeCoachStep?.surfaceId ?? "shell.statusStrip"` value consistently for the header and its first button. This fixes the observed identity mismatch without adding registry records or changing the lens, navigation or graph.
+
+| Actual surface | Header height(px) | Next section Y(px) | Graph Y(px) |
+|---|---:|---:|---:|
+| source-320 | 1042.20 | 1070.20 | 2230.56 |
+| source-390 | 939.66 | 967.66 | 2191.88 |
+| source-1440 | 341.86 | 379.86 | 1403.03 |
+| installed-320 | 904.73 | 932.73 | 1245.48 |
+| installed-390 | 802.19 | 830.19 | 1072.72 |
+| installed-1440 | 319.36 | 357.36 | 507.14 |
+
+The native3px CHANGE A box covers only the existing header. View the [source390 top](E6e-nodetrace-disclosure-before/source-390-top-change-boundary.png), [source lower tile](E6e-nodetrace-disclosure-entry-before-03/source-390-setup-bottom-labelled.png), [installed390](E6e-nodetrace-disclosure-before/installed-390-top-change-boundary.png) and both desktop references in the [complete state and boundary contract](E6e-nodetrace-disclosure-before/change-boundary.md). The retained [source first-action failure](E6e-nodetrace-disclosure-before/source-390-existing-inspect.png) contrasts with the [actual valid selected-coach inspection](E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.png).
+
+1. Root reviews these pixels and the closed plan before edits.
+2. Implement only the two existing owner files, preserving all current setup text and installed Connect your own trace guidance.
+3. Verify normal320/390 first-screen access, native keyboard disclosure, correct first inspection,320/390/1440 resizing, selected step/tab/entity/history preservation, loading/error/Retry/empty and actual200% text.
+4. Preserve native lens routing: opening adds lens keys; closing restores the pre-inspection URL. Run a bounded repeated-use sequence and cause-specific knockouts.
+5. Capture matched viewport-only after pixels and unchanged input/protected-neighbor bindings; run required existing checks and return the frozen candidate to an independent judge.
+
+Normal-text acceptance budgets: header at most60% of phone height, first source record and installed graph heading visible before the fold, and desktop next-section downward drift no more than16px. These are proposed limits, not reported outcomes. At200% text, complete access and no clipping take precedence over the normal-text height budget.
+
+Before proof: **41 checks/six actual-input cells**, plus **10 checks** for visible lower-tile labels and the existing valid coach action; **15 actual PNGs viewed**. Both failed supplemental probes remain retained. Their oracle incorrectly expected closing a lens to retain its open-lens URL; the third uses the actual existing close contract and passes. No application fix was applied to satisfy that probe.
+
+Canonical base: `594c988881d17b759ff6455539dc3b293e1a4ee5`; source/build/public bytes,53 installed inputs,index and refs unchanged. No builds, provider actions, DB access or production claims. Reviewer context was reused with no authored involvement. D3 remains an observed3; full grades and the4.5 target remain open.
+
+Deliverables: [frozen machine plan](E6e_NODETRACE_DISCLOSURE_PLAN.json), [exact bounded artifact manifest](E6e_NODETRACE_DISCLOSURE_BEFORE_ARTIFACTS.json), [before report](E6e-nodetrace-disclosure-before/report.json), [supplemental report](E6e-nodetrace-disclosure-entry-before-03/report.json).

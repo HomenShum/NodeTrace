@@ -1,0 +1,28 @@
+Builder — **APPROVED_SCOPED_D3_WITH_CAPTURE_LIMITATION**.
+
+**Re your request:** make each individual repo ready for real usage and handoff, including visual, responsive and interaction grading — NodeTrace's frozen setup disclosure and first-inspection repair pass independent review.
+
+A developer can now reach the first records on a phone and reveal setup when needed. The source's first Inspect trace action opens its selected registered evidence; the installed sample retains its working Status entry. Loading, errors and Retry remain exposed. Keyboard toggling, resizing, Raw/entity/history continuity, actual doubled header text and bounded repeated use pass.
+
+| Actual view | Before header(px) | After header(px) |
+|---|---:|---:|
+| source 320 | 1042.20 | 384.72 |
+| source 390 | 939.66 | 325.75 |
+| source 1440 | 341.86 | 349.66 |
+| installed 320 | 904.73 | 362.22 |
+| installed 390 | 802.19 | 303.25 |
+| installed 1440 | 319.36 | 327.16 |
+
+The independent replay passed **92 source checks and 79 installed checks**, plus **14 causal/host-alert checks**, **six single-viewport capture checks** and **33 source/metadata custody checks**. The old identity knockout reproduces Surface unavailable, and restoring actual bytes restores the registered result. The 53 installed inputs and 35 source/build inputs stay exact. Existing type/installer source changes were not rebuilt by this reviewer.
+
+The metadata review caught 70 corrupted punctuation characters in two handoff files. The parent repaired those from explicit UTF8 Git baselines, preserving the bad copies. Current metadata now contains only intended anchors/header guidance; tour descriptions are exact and fresh citations pass 3 tours/35 steps/54 refs. Approval binds candidate `f044bf1ebdfea1f04d3165a59e20d6b898113e0259f3ae340d925f22d6cf2f06`, with all seven file hashes in the machine verdict.
+
+The Next recovery exception is precisely observed: an empty 1×1 clipped alert remains inside the `next-route-announcer` shadow root. The app's own error alert is removed after exactly two requests. Expecting every host alert to disappear was an incorrect test oracle.
+
+One independent installed 1440 screenshot has a blank visible graph region and remains retained. Its DOM checks do not certify its pixels. A single fresh unchanged viewport visibly shows the graph, with 243 colored pixels in the visible graph region versus zero in the failed capture. The older capture's cause remains unknown. Direct WebGL canvas exports were transparent beside the painted native screenshot, so those exports also do not certify composited pixels. See the [precise capture observation](E6e-nodetrace-disclosure-final-judge/installed-1440-capture/pixel-observation.json) and [actual fresh viewport](E6e-nodetrace-disclosure-final-judge/installed-1440-capture/installed-1440-current-viewport.png).
+
+**Scoped D3 Progressive disclosure: observed 3→5**, under the frozen owner/reference cases. No material D3 defect survives this scope. Full criterion coverage, all eight dimension grades and overall grade remain null; the 4.5 target and criterion floor 4 are unchanged. The capture limitation, real-human/device validation and production verification remain explicit. Other criteria are not rescored.
+
+The reviewer prepared the before plan but did not author the implementation; context reuse is disclosed. No runtime, fixture, environment, database, index or ref edits were made by the judge. No provider action, build or deployment was run. Proceed with exact staged-byte review and normal integration; no broader matrix is needed for this named proof.
+
+Evidence: [machine verdict](E6e_NODETRACE_DISCLOSURE_FINAL_JUDGE.json), [source and metadata verification](E6e-nodetrace-disclosure-final-judge/verification.json), [causal probe](E6e-nodetrace-disclosure-final-judge/causal/report.json), [exact host shadow DOM](E6e-nodetrace-disclosure-final-judge/causal/installed-alert-shadow-observation.json), [bounded artifact manifest](E6e_NODETRACE_DISCLOSURE_FINAL_JUDGE_ARTIFACTS.json).

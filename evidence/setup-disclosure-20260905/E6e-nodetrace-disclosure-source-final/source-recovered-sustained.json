@@ -1,0 +1,75 @@
+{
+  "url": "http://127.0.0.1:4965/?disclosureProof=preserved&step=coach-step-01-artifact-entry#review",
+  "width": 390,
+  "height": 844,
+  "overflow": 0,
+  "open": false,
+  "scrollY": 0,
+  "active": "SUMMARY",
+  "regions": {
+    ".showcase": {
+      "x": 12,
+      "y": 12,
+      "width": 366,
+      "height": 325.75,
+      "documentY": 12
+    },
+    ".showcaseCopy h1": {
+      "x": 29,
+      "y": 51.9375,
+      "width": 332,
+      "height": 72.9375,
+      "documentY": 51.9375
+    },
+    ".traceSetup > summary": {
+      "x": 29,
+      "y": 273.5625,
+      "width": 332,
+      "height": 47.1875,
+      "documentY": 273.5625
+    },
+    ".showcaseActions": {
+      "x": 29,
+      "y": 332.75,
+      "width": 332,
+      "height": 187.5625,
+      "documentY": 332.75
+    },
+    ".launchCard": {
+      "x": 29,
+      "y": 536.3125,
+      "width": 332,
+      "height": 457.53125,
+      "documentY": 536.3125
+    },
+    ".coachPanel": {
+      "x": 12,
+      "y": 353.75,
+      "width": 366,
+      "height": 1206.21875,
+      "documentY": 353.75
+    },
+    ".coachList": {
+      "x": 13,
+      "y": 354.75,
+      "width": 364,
+      "height": 300,
+      "documentY": 354.75
+    },
+    ".coachDetail": {
+      "x": 13,
+      "y": 654.75,
+      "width": 364,
+      "height": 904.21875,
+      "documentY": 654.75
+    },
+    ".coachEmpty": null,
+    ".liveGraphRail": {
+      "x": 12,
+      "y": 1577.96875,
+      "width": 366,
+      "height": 682.28125,
+      "documentY": 1577.96875
+    }
+  }
+}

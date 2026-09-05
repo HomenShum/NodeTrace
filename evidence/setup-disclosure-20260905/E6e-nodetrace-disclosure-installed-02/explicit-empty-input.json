@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-09-05T08:33:50.043Z",
+  "session": {
+    "id": "nodetrace-2026-09-05T08-33-49-896Z",
+    "title": "NodeTrace local happy path",
+    "status": "verified",
+    "summary": "SQLite trace session, proof cards, events, and gated ownership were generated locally."
+  },
+  "builderCapable": false,
+  "surfaces": [],
+  "proofs": [],
+  "traces": [],
+  "codeOwnership": []
+}

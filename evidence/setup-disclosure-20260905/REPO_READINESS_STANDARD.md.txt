@@ -1,0 +1,112 @@
+# Repository readiness includes the experience people actually use
+
+**Re your request:** every individual repo should be ready for use and handoff, including visual UI, responsiveness, interaction standards and explicit grading. This addendum corrects the engineering-only emphasis in the earlier completion explanation.
+
+A developer needs to start and understand the project; a user needs to recognize the next action, operate it on their device, understand progress or failure, and recover their result. For example, a sourcing flow that saves a correct specification still fails the user if its approval button disappears on a phone or its loading indicator falsely implies progress. Readiness must cover the rendered experience and the underlying result together.
+
+**Status:** acceptance standard defined; portfolio grades **NOT_RUN**. This document does not certify an application or activate a CI gate. The previous recovery assessment remains historical evidence, not UI acceptance. Developer handoff, user experience, shared integration and production operation receive separate statuses.
+
+## Source and authority
+
+The user's correction makes UI quality an explicit readiness requirement. Existing NodeBench guidance retains four fields: `visualScore`, `designScore`, `usageScore`, `alignmentScore`, plus confidence, limitations and required fixes. The referenced source was located at [the archived scoring policy](../../archive/2026-q1/architecture-superseded/APP_SCORING_AND_DOGFOOD_INSTRUCTIONS.md); its old `docs/architecture` path no longer resolves. Treat it as prior policy, not current runtime proof.
+
+Use the installed [NodeKit QA contract](C:/Users/hshum/.codex/skills/nodekit-qa/references/qa-contract.md) for source/runtime/evidence binding and [Agentic UI QA](C:/Users/hshum/.codex/skills/agentic-ui-qa/SKILL.md) for journeys and trust checks. Its visual rubric V1–V9 informs the visual review. Retain original 0–2 B/V measurements when captured; do not relabel them as the 1–5 portfolio grades below.
+
+The installed [GATING.md](C:/Users/hshum/.codex/skills/agentic-ui-qa/GATING.md) currently treats the prettify audit and some findings as advisory. This addendum sets a stricter **handoff acceptance policy** in response to the user. It does not claim those scripts already enforce it or alter their sanctioned floors. Numeric A-grade cutoffs below are a new working portfolio target chosen for this request, not an existing industry certification or a prior user-specified number.
+
+## Eight dimensions, each reported separately
+
+Freeze the applicable routes, states, criteria and reference captures before a repair pass. Rate each named criterion 1–5 using the anchors below, citing observed evidence and deductions. A criterion is not applicable only with a recorded, independently reviewed reason. Missing evidence is `NOT_RUN` or `BLOCKED`, with a null score; it never receives an assumed passing score.
+
+| Field | Criteria to inspect and grade |
+| --- | --- |
+| `visualScore` | V1 typography; V2 spacing/grid; V3 color/token discipline; V4 hierarchy; V5 rendered legibility/contrast; V6 consistent elevation/icons; V7 alignment; V8 polish of empty/loading/error/populated states; V9 purposeful motion and reduced-motion behavior. Judge the actual screenshots/video against the repo's stated design language. |
+| `designScore` | Clarity of the main action; navigation/information architecture; progressive disclosure; useful information density; consistency of component behavior and wording. |
+| `responsiveScore` | Reflow/content preservation; reachability of navigation and primary actions; modal/panel/table/canvas adaptation; touch and on-screen-keyboard usability; stability under zoom, long content and declared locales. |
+| `interactionScore` | Working controls and keyboard paths; immediate honest feedback and durable status; validation/error/retry behavior; safe cancellation/undo and duplicate-action handling; state continuity through navigation, reload, conflicts and reopening. |
+| `accessibilityScore` | Semantic names/structure; keyboard/focus order and modal focus return; contrast/non-color cues; text resize/reflow and target size; screen-reader announcements and reduced-motion alternatives. Manual checks accompany automated scans. |
+| `performanceScore` | Initial usable view; input/scroll responsiveness; layout stability; honest long-operation feedback; behavior with large data and constrained device/network conditions. Record workload and measured budgets separately from reviewer impressions. |
+| `usageScore` | First-time task comprehension; successful core journey; bounded errors/help/rework; usable export or consumer result; restart/reopen/handoff without hidden knowledge. Fresh-agent operability is separate from observed fresh-human usability. |
+| `alignmentScore` | Fit to intended user and job; coverage of advertised capabilities; truthful limits/status; permissions and review authority; source/trace/artifact consistency. |
+
+## Grade anchors and acceptance rule
+
+Each criterion receives an integer rating:
+
+| Rating | Anchor |
+| --- | --- |
+| 5 | Meets the frozen reference and all exercised cases with clear, coherent behavior; no material observed defect in this criterion. |
+| 4 | Fully usable; only minor, explicitly recorded polish/friction remains. |
+| 3 | Usable with a workaround, confusion, inconsistency or repeated friction. |
+| 2 | Major observed gaps; the user needs substantial help or loses access to part of the workflow. |
+| 1 | Broken, misleading, inaccessible or absent where required, demonstrated by a concrete probe. |
+
+Check completeness **before calculating any mean**. A required surface/dimension receives a final numeric score only when every applicable criterion has current, valid evidence. One `NOT_RUN`, `BLOCKED` or `STALE` required criterion keeps its dimension and overall score null with the unresolved status; any partial observations remain criterion-level evidence, never a final dimension score. A dimension with zero applicable criteria is reviewed `NOT_APPLICABLE` with a null score. If every dimension is N/A, the overall result is `NOT_APPLICABLE` with a null grade and **never a readiness pass**; technical handoff still requires its own proof.
+
+Only after that completeness check, for each required surface/state, a dimension score is the arithmetic mean of its applicable criterion ratings. The repo's score for that dimension is the **minimum** across its required surfaces/states, not an average across routes or devices. Preserve unrounded values for comparison. Across the repo, the overall grade is the **minimum dimension score**. This deliberately prevents a polished desktop screen from hiding a broken mobile flow.
+
+Letter bands: **A = 4.5–5**, **B = 4–<4.5**, **C = 3–<4**, **D = 2–<3**, **F = 1–<2**. `NOT_RUN`, `BLOCKED`, `STALE` and reviewed `NOT_APPLICABLE` remain explicit statuses, not letter grades. A required missing or stale result prevents an overall readiness grade; N/A is excluded, not awarded five points.
+
+**Working target for user-facing handoff: A in every applicable dimension, every applicable criterion at least 4, and every hard gate passing.** A or B describes an observed rubric outcome, not an automatic release. Do not lower a floor, omit a failing state, change references after seeing results, or relabel a defect to obtain acceptance. Record changes to scope/criteria as a new reviewable revision.
+
+Hard blockers override grades:
+
+- Any open P0 (crash, dead core flow, data loss, fake success, wrong authority/provenance) or P1 (broken claimed journey even with a workaround), or a regression of a previously fixed such issue.
+- Inaccessible required action, obscured primary controls, destructive duplicate action, unusable required viewport, or a failed applicable accessibility check. An automated accessibility scan alone cannot certify WCAG conformance.
+- Missing/invalid evidence identity; fabricated runtime progress; unverified export; or a required gate that is missing, errored or `NO_GATE`.
+- A live-provider or production-readiness claim without proof of that exact operation/revision. Local user-experience acceptance may be recorded separately while production readiness remains pending.
+
+The judge validates evidence and rubric application; deterministic checks validate measured conditions and fixed thresholds. Neither a model's praise nor a green code build can substitute for rendered review. A machine must not infer aesthetic quality from counts of CSS values.
+
+Evidence binds the tested commit/runtime tree, public configuration digest (never secret values), dependency lock, deployment/environment identity, provider mode where relevant, fixture/source revision, profile/reference revision, and browser/platform cell. A relevant change to any bound input marks affected evidence `STALE` until reverified. Record the reason and affected coverage; do not silently carry a prior grade across a new candidate. Profiles involving mutable live services must freeze a validity window before the run. Outside that window, live evidence is stale; missing validity metadata prevents a current-live claim. A recent timestamp alone cannot establish current production truth.
+
+Sanity cases: one criterion rated 5 plus a required untested criterion yields a null dimension, not 5; a desktop score of 5 and mobile score of 3 yields 3, not 4; an all-N/A profile yields no readiness grade. These are acceptance-rule examples, not executed application tests.
+
+## Responsive and interaction evidence matrix
+
+Start each web-app profile with these exact CSS viewport sizes: **360×800, 390×844, 768×1024, 1024×768, 1440×960, 1920×1080**. Freeze supported browsers, input methods and themes from the actual product promise. Inspect every supported light/dark theme; a missing promised theme fails, while an intentionally single-theme product records that scope. Test all principal routes for default and representative populated states across the matrix; add route-specific failure/overflow/dialog states where their layout or interaction changes. Every advertised workflow must be covered by a named journey; a representative screenshot cannot certify an untested route.
+
+Each required platform cell names browser/version/engine, OS, device or emulation, input method and applicable assistive technology/version. Establish and review the support promise before grading if one is absent. Map journeys/states to each required cell; an unexecuted required combination is `NOT_RUN` or `BLOCKED`. Record unsupported combinations as reviewed scope, never as passes. A Chromium viewport is not Safari/iOS, Firefox, real-touch or screen-reader verification.
+
+Also exercise 200% text sizing and the relevant 400% zoom/reflow case. WCAG's vertical-content reflow criterion uses an equivalent width of 320 CSS pixels, with exceptions for content requiring two-dimensional layout; the exception does not excuse unrelated controls or prose. Contain necessary table/canvas scrolling and preserve access to actions. [W3C reflow guidance](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html).
+
+Inspect hit areas and spacing. WCAG 2.2's minimum pointer-target criterion uses 24×24 CSS pixels with defined exceptions; record any exception, and aim for 44×44 primary touch controls as this portfolio's ergonomic preference. [W3C target-size guidance](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html).
+
+For each applicable journey, capture first visit, empty, loading, populated, success, validation error, provider/network failure, timeout, retry, canceled and disabled states. Exercise double-submit, stale/concurrent change, reload during work, long/localized text, large result sets, and keyboard-only operation. Use a representative burst and an extended session with accumulated state; freeze counts/duration and expected behavior before running. Explain any inapplicable state rather than simulating unsupported capability.
+
+Check browser back/forward and deep links; menus and dialogs; focus visibility/return; hover/focus/pressed/disabled feedback; touch operation without hover-only controls; scrolling and overflow; and visible recovery from failed actions. An operating system's on-screen keyboard and real touch behavior need actual device evidence before claiming device verification; browser emulation is labeled as such.
+
+Per viewport, preserve one intended auth/session class, wait for stable layout, capture DOM/accessibility state, console/network outcomes and pixels, then move to the next viewport. Pin commit, route, fixture, theme, viewport, browser, device/emulation and timestamp. Capture before and after with identical state when changing UI. Use short recordings for motion, multi-step interaction and recovery; static screenshots cannot prove those behaviors.
+
+For production web performance, report field p75 LCP, INP and CLS where data exists, with sample/window and device segment. Good Core Web Vitals thresholds are LCP ≤2.5s, INP ≤200ms and CLS ≤0.1. Keep controlled lab results separate; they do not establish field p75. [web.dev threshold definitions](https://web.dev/articles/defining-core-web-vitals-thresholds). Other latency/workload budgets must be frozen per product before testing.
+
+## Agentic interaction and trust
+
+Retain the existing B1–B11 Bar: consent/egress, attribution, proposal review, scope, honest failure, status/latency, recovery, agent operability, visual craft, content quality and first-run disclosure. Required trust capabilities need observed evidence, not a badge generated by the app. Preserve the original 0–2 Bar separately; the working handoff target is 2 for each applicable dimension, without weakening any stricter existing gate.
+
+For a live AI workflow, the rendered mode, provider/model, policy, source lineage, proposal, accepted version and durable receipt must agree. Account for usage from the actual provider response; do not invent monetary cost or require a fictitious positive dollar cost for a legitimately free/cached request. Unknown usage remains unknown. Local rules, fixtures, degraded behavior and live provider operation must be visibly distinguishable.
+
+Where durable jobs/memory are advertised, also test progress staleness, pause/cancel/resume, replay/idempotency, state accumulation, memory visibility and owner control. Where unavailable, record the product boundary and do not award capability scores for future plans.
+
+## Apply to each repository, according to what it owns
+
+- **Applications:** grade actual claimed routes, states, workflows and supported device/theme matrix. The final user-facing surface must be inspected on its exact target environment.
+- **UI libraries, generators and design systems:** generate or install into a fresh representative consumer, then grade its rendered components, states and interactions; source tokens alone do not prove quality.
+- **Backend/CLI libraries:** do not build an artificial frontend to earn a visual score. Review applicability explicitly; grade the real developer/CLI/API interaction, error contract, consumer example, performance and handoff. Any owned docs/demo UI still receives its applicable visual checks.
+- **Multiple clones of one project:** choose the canonical product/revision before assigning its final grade. Local-family inventory rows are triage records, not separate certified products.
+
+Every repo also retains the prior technical gates: reproducible fresh setup; architecture and ownership; core behavior/security/reliability; dependencies/configuration; tests and observability; consumer/export proof; developer runbook and handoff; and separate shared-integration/production status. UI acceptance complements these gates.
+
+For a full human-usability claim, required first-time comprehension and core-task criteria need an observed real participant from the intended audience. Freeze tasks/success criteria before observation; record participant class, sample size, assistance, wrong turns and completion without personal identifiers. An agent cannot supply that human rating. If no participant observation exists, `freshHumanUsabilityStatus` remains `NOT_RUN` and any required human criterion keeps `usageScore`/overall readiness unresolved. A profile limited to agent evaluation may record `AGENT_EVALUATED_ONLY` and its human-validation limitation; it must not call that full user-experience acceptance. No universal usability claim follows from one successful participant.
+
+## Planner → workers → judge → handoff
+
+1. Planner freezes repo identity, intended users, claimed journeys, applicable criteria, design references, device/state matrix, thresholds and named proof before edits.
+2. Workers record the baseline by visual, responsive, interaction/accessibility and runtime/usability lenses. For this Codex session, use sequential receipts as requested; no score is inferred from source inspection alone.
+3. Fix the lowest failing criterion by root cause, in a bounded slice; preserve trust, neighboring surfaces and evidence. Re-run the affected state and complete core journey, including a failure/recovery path.
+4. A fresh-context judge inspects pixels/recordings and raw observations, attempts to reproduce failed claims, checks scores and rejects unsupported N/A decisions or hidden regressions. Preserve disagreements and corrections.
+5. Handoff the exact commit, setup steps, route/device coverage, criterion ratings, eight dimension grades, before/after evidence, run/receipt IDs, accessibility/performance results, limitations, unresolved findings and next owner. Record actual developer and user evidence separately.
+
+The minimum scorecard fields are: `repo`, `canonicalRepo`, `commit`, `environment`, `profileRevision`, `referenceRefs`, `testedAt`, `reviewer`, `coverage`, `criterionRatings`, the eight score fields, `barScores`, `hardGates`, `confidence`, `limitations`, `requiredFixes`, `evidenceRefs`, `developerHandoffStatus`, `userExperienceStatus`, `freshHumanUsabilityStatus`, `sharedIntegrationStatus`, `productionStatus`. Evidence records carry the bound inputs and platform cells specified above. Quality marks without evidence remain null. Empty `requiredFixes` on an unassessed planning row means no findings have been collected, not no defects exist.
+
+The adjacent `REPO_READINESS_GRADES.json` initializes the existing inventory with no invented grades. It is a planning scaffold, not a schema-enforced validator or completed QA run. Individual runtime scorecards and any future enforced gate belong to their owning repositories after profile and ownership review.

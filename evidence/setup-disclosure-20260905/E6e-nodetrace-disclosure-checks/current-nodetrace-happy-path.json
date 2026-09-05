@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "startedAt": "2026-09-05T08:43:38.406Z",
+  "completedAt": "2026-09-05T08:43:38.432Z",
+  "durationMs": 26,
+  "apiKeysRequired": false,
+  "databasePath": "C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6e-nodetrace-disclosure-checks/isolated-happy-path.sqlite",
+  "statePath": "C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6e-nodetrace-disclosure-checks/isolated-happy-path-state.json",
+  "tables": [
+    "trace_sessions",
+    "trace_surfaces",
+    "trace_proofs",
+    "trace_events",
+    "trace_code_ownership"
+  ],
+  "traceRows": 4,
+  "proofRows": 2,
+  "builderCapable": false
+}

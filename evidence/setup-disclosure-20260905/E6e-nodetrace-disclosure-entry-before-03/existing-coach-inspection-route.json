@@ -1,0 +1,5 @@
+{
+  "before": "http://127.0.0.1:4965/?disclosureProof=preserved&step=coach-step-01-artifact-entry#review",
+  "open": "http://127.0.0.1:4965/?disclosureProof=preserved&step=coach-step-01-artifact-entry&surface=workSurface.traceStrip#review",
+  "expectedAfter": "http://127.0.0.1:4965/?disclosureProof=preserved&step=coach-step-01-artifact-entry#review"
+}

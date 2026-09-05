@@ -32,3 +32,10 @@ The reviewed Raw region now has a responsive height ceiling, a name and a native
 See [the portable reading proof](evidence/raw-reading-20260905/README.md) for 312 source checks/25 states, 104 normally installed Next checks/eight states, and the independent 187-check replay. The final reviewer approves the scoped runtime with a disclosed full-page screenshot limitation; a viewport-only desktop comparison resolves layout acceptance. Earlier native-scroll timing, selector and incomplete-fixture failures remain available.
 
 The scoped D4/R3 observations are 4/5 and 5/5; mobile setup D3 remains 3/5. All full dimension and overall grades, real human/device validation and production deployment remain open. The packet binds the exact reviewed files; normal CI and shared integration are separate from that local judgment.
+
+
+## Setup disclosure and first inspection
+
+The Raw reading repair landed through PR5 at canonical `594c988881d17b759ff6455539dc3b293e1a4ee5`. The next reviewed slice closes the source's incorrect first inspection target and puts optional setup behind one native disclosure. Current loading, error, Retry and Inspect remain outside it. A phone reviewer can reach records before opening commands and provenance; enlarged provenance labels wrap completely.
+
+See [the portable disclosure proof](evidence/setup-disclosure-20260905/README.md) for 92 source and 79 normally installed checks, independent replay, before/after views and exact current files. Scoped D3 Progressive disclosure improves from observed 3 to 5. The previous D3=3 statement is historical; full dimensions and overall readiness remain unscored. One blank desktop graph capture is retained with an unknown cause and a separately painted fresh viewport. This approval covers the frozen disclosure/inspection scope, not complete rendering reliability, human/device acceptance or production. Normal shared integration follows the exact staged-byte review.
