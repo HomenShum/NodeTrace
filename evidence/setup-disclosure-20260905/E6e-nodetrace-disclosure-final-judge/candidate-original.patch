@@ -1,0 +1,560 @@
+diff --git a/.tours/01-primary-user-flow.tour b/.tours/01-primary-user-flow.tour
+index 51186ea..1d86b02 100644
+--- a/.tours/01-primary-user-flow.tour
++++ b/.tours/01-primary-user-flow.tour
+@@ -21,7 +21,7 @@
+     },
+     {
+       "file": "src/DemoDashboard.tsx",
+-      "line": 147,
++      "line": 153,
+       "description": "A normal Inspect trace button calls the existing useTraceLens().openHit API. Keyboard and touch users have a visible entrypoint; hosts can add their own controls with the same API. Historical D4 is repaired in this candidate, pending final judge."
+     },
+     {
+diff --git a/.tours/03-debug-and-recovery.tour b/.tours/03-debug-and-recovery.tour
+index 7c5ece7..7ebc2fd 100644
+--- a/.tours/03-debug-and-recovery.tour
++++ b/.tours/03-debug-and-recovery.tour
+@@ -6,7 +6,7 @@
+   "steps": [
+     {
+       "file": "src/DemoDashboard.tsx",
+-      "line": 54,
++      "line": 55,
+       "description": "Missing, malformed, oversized, invalid or timed-out state produces an alert and Retry loading trace. Retry starts a new abortable request; cleanup prevents a stale request from replacing the current state. Inspect controls stay disabled until data is ready."
+     },
+     {
+diff --git a/docs/START_HERE.md b/docs/START_HERE.md
+index 48d788a..529e566 100644
+--- a/docs/START_HERE.md
++++ b/docs/START_HERE.md
+@@ -6,7 +6,7 @@ code actually runs**, not in the order an architect would draw it.
+ 
+ ## The human situation, before any jargon
+ 
+-A reviewer is looking at a screen in some product — a number, a status badge, a
++A reviewer is looking at a screen in some product â€” a number, a status badge, a
+ generated summary. They ask the question that no screenshot can answer: *where
+ did that come from, and can I check it?* Normally somebody has to go read the
+ code and reply in Slack.
+@@ -52,7 +52,7 @@ because it installs NodeTrace into a throwaway Next.js app and builds it).
+ 
+ ---
+ 
+-## Step 1 — The page loads and mounts one React component
++## Step 1 â€” The page loads and mounts one React component
+ 
+ **File:** `src/main.tsx`
+ **Symbol:** `src/main.tsx:6` (`createRoot(document.getElementById("root")!)`)
+@@ -75,15 +75,15 @@ createRoot(document.getElementById("root")!).render(
+ );
+ ```
+ 
+-**Input** — the empty root div, `index.html:10` (`<div id="root"></div>`).
+-**Output** — a mounted React tree.
+-**Failure behavior** — if `#root` is missing the non-null assertion throws and
++**Input** â€” the empty root div, `index.html:10` (`<div id="root"></div>`).
++**Output** â€” a mounted React tree.
++**Failure behavior** â€” if `#root` is missing the non-null assertion throws and
+ the page is blank. Nothing catches it; there is no error boundary.
+-**Next** — continue to `DemoDashboard` in Step 2.
++**Next** â€” continue to `DemoDashboard` in Step 2.
+ 
+ ---
+ 
+-## Step 2 — Load and validate the public state before rendering trace details
++## Step 2 â€” Load and validate the public state before rendering trace details
+ 
+ **Files:** `src/DemoDashboard.tsx`, `src/demoState.ts`
+ **Symbol:** `src/demoState.ts:31` (`export async function loadDemoState`)
+@@ -106,23 +106,25 @@ if (!response.ok) throw new Error(`State request failed (HTTP ${response.status}
+ return { ...parsed.data, builderCapable: false, codeOwnership: [] };
+ ```
+ 
+-**Input** — a public JSON response and an abort signal.
+-**Output** — validated review data. Public JSON is not builder authority: the
++**Input** â€” a public JSON response and an abort signal.
++**Output** â€” validated review data. Public JSON is not builder authority: the
+ loader strips ownership and forces `builderCapable: false`, and the demo's
+ provider also receives `false`.
+-**Failure behavior** — failed, invalid, oversized or timed-out requests produce
++**Failure behavior** â€” failed, invalid, oversized or timed-out requests produce
+ an alert and **Retry loading trace**. Loading is announced and inspect controls
+ remain disabled until the request succeeds. Effect cleanup aborts the request
+ and prevents an obsolete response from replacing current state.
+-**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:72`
+-(`data-nodetrace-surface="shell.statusStrip"`) and a normal inspect control.
++**Next** â€” the ready header has a tagged surface at `src/DemoDashboard.tsx:73`
++(`data-nodetrace-surface={heroSurfaceId}`) and a normal inspect control. Both use the selected coach step's surface, or the installed sample surface when there is no coach. The native
++**Setup and trace provenance** disclosure reveals the existing commands and
++snapshot details without changing the selected trace.
+ 
+ ---
+ 
+-## Step 3 — Open the lens through a normal control or the existing shortcut
++## Step 3 â€” Open the lens through a normal control or the existing shortcut
+ 
+ **Files:** `src/DemoDashboard.tsx`, `src/trace/TraceLensProvider.tsx`
+-**Symbols:** `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) and
++**Symbols:** `src/DemoDashboard.tsx:153` (`function InspectTraceButton`) and
+ `src/trace/TraceLensProvider.tsx:45` (`const openHit = useCallback`)
+ **Called by:** an Inspect trace button, a host control or the modifier-click listener
+ **Calls next:** `openHit`; modifier-click first calls `resolveTraceHit`
+@@ -144,18 +146,18 @@ tagged region. It resolves the hit, prevents the underlying action and calls
+ `openHit`. Other clicks pass through to the host. See
+ `src/trace/TraceLensProvider.tsx:58` (`event.metaKey || event.ctrlKey`).
+ 
+-**Input** — an explicit `SurfaceHit`, or a DOM event resolved to one.
+-**Output** — an open lens and its selected hit in React context.
+-**Failure behavior** — a click outside a tagged region does nothing to the
++**Input** â€” an explicit `SurfaceHit`, or a DOM event resolved to one.
++**Output** â€” an open lens and its selected hit in React context.
++**Failure behavior** â€” a click outside a tagged region does nothing to the
+ host. An unregistered but explicit surface opens a missing-data message rather
+ than disappearing. Historical D1 and D4 have candidate repairs; final browser
+ acceptance is pending, as recorded in [CONCERNS.md](codebase/CONCERNS.md).
+-**Next** — Step 4 explains the shortcut's DOM resolver; normal controls already
++**Next** â€” Step 4 explains the shortcut's DOM resolver; normal controls already
+ supply the same typed value.
+ 
+ ---
+ 
+-## Step 4 — The click becomes a typed domain value
++## Step 4 â€” The click becomes a typed domain value
+ 
+ **File:** `src/trace/TraceLensProvider.tsx`
+ **Symbol:** `src/trace/TraceLensProvider.tsx:15` (`export function resolveTraceHit`)
+@@ -181,19 +183,19 @@ export function resolveTraceHit(target: EventTarget | null): SurfaceHit | null {
+ }
+ ```
+ 
+-**Input** — `event.target`.
+-**Output** — a `SurfaceHit`, defined at `src/trace/types.ts:10`
++**Input** â€” `event.target`.
++**Output** â€” a `SurfaceHit`, defined at `src/trace/types.ts:10`
+ (`export interface SurfaceHit {`): `surfaceId` plus optional
+ `artifactId`, `elementId`, `targetRef` read from the nearest enclosing element
+ that carries them.
+-**Failure behavior** — every unsupported shape returns `null` and the click is
++**Failure behavior** â€” every unsupported shape returns `null` and the click is
+ left alone. `data-noderoom-surface` is accepted as well as
+ `data-nodetrace-surface` so an app already tagged for NodeRoom works unchanged.
+-**Next** — the stored hit re-renders `TraceLensPanel`; continue to Step 5.
++**Next** â€” the stored hit re-renders `TraceLensPanel`; continue to Step 5.
+ 
+ ---
+ 
+-## Step 5 — Tool registration and invocation: the MCP server, not the panel
++## Step 5 â€” Tool registration and invocation: the MCP server, not the panel
+ 
+ **File:** `bin/nodetrace-mcp.mjs`
+ **Symbol:** `bin/nodetrace-mcp.mjs:22-23` (`"validate_capture_plan"`) and
+@@ -205,7 +207,7 @@ left alone. `data-noderoom-surface` is accepted as well as
+ **Why this exists**
+ **The stage the gate calls "agent orchestration" does not exist in this
+ repository, and you should not go looking for it.** NodeTrace has no planner, no
+-model call, no agent loop — it is the surface an agent-built product adopts, not
++model call, no agent loop â€” it is the surface an agent-built product adopts, not
+ an agent. What it does have is a pair of tools it exposes *to* somebody else's
+ agent, so a coding assistant can photograph a codebase without a human driving a
+ browser.
+@@ -220,27 +222,27 @@ server.registerTool("capture_codebase", { /* zod inputSchema */ },
+ await server.connect(new StdioServerTransport());
+ ```
+ 
+-**Input** — a path to a capture plan JSON file (see
++**Input** â€” a path to a capture plan JSON file (see
+ `examples/real-codebase-capture/noderoom.capture.json`).
+-**Output** — a JSON text block with the step count and manifest path, plus PNGs
++**Output** â€” a JSON text block with the step count and manifest path, plus PNGs
+ on disk.
+-**Failure behavior** — a bad plan throws inside `normalizeCapturePlan` and the
++**Failure behavior** â€” a bad plan throws inside `normalizeCapturePlan` and the
+ MCP call returns the error text. `editor.mode` other than `code-browser` is
+-rejected by name — `src/capture/codebaseCapture.mjs:98`
++rejected by name â€” `src/capture/codebaseCapture.mjs:98`
+ (`Unsupported editor.mode`).
+-**Next** — continue to Step 6; the capture writes a manifest, and the happy path
++**Next** â€” continue to Step 6; the capture writes a manifest, and the happy path
+ writes the database.
+ 
+ ---
+ 
+-## Step 6 — Persistence: the only place rows are created
++## Step 6 â€” Persistence: the only place rows are created
+ 
+ **File:** `scripts/init-sqlite.mjs`
+ **Symbol:** `scripts/init-sqlite.mjs:187` (`db.transaction(() => {`) and
+ `scripts/init-sqlite.mjs:227` (`writeFileSync(statePath,`)
+ **Called by:** `npm run happy-path`, and by `scripts/nodetrace-init.mjs` inside
+ any app the installer patched
+-**Calls next:** nothing — it is a script; it exits
++**Calls next:** nothing â€” it is a script; it exits
+ 
+ **Why this exists**
+ This is the whole write path of the product. It applies `db/schema.sql`, inserts
+@@ -265,23 +267,23 @@ const clientState = { ..., codeOwnership: builderCapable ? codeOwnership.map(...
+ writeFileSync(statePath, `${JSON.stringify(clientState, null, 2)}\n`);
+ ```
+ 
+-**Input** — `--db`, `--state`, `--json-out` (parsed by `node:util`), and the
++**Input** â€” `--db`, `--state`, `--json-out` (parsed by `node:util`), and the
+ `NODETRACE_BUILDER_CAPABLE` environment variable.
+-**Output** — `.nodetrace/nodetrace.sqlite`, `public/nodetrace-state.json`, and an
++**Output** â€” `.nodetrace/nodetrace.sqlite`, `public/nodetrace-state.json`, and an
+ optional receipt JSON.
+-**Failure behavior** — a missing `better-sqlite3` prints one instruction and
+-exits 1 — `scripts/init-sqlite.mjs:10` (`Missing dependency: run`). Everything
++**Failure behavior** â€” a missing `better-sqlite3` prints one instruction and
++exits 1 â€” `scripts/init-sqlite.mjs:10` (`Missing dependency: run`). Everything
+ else throws with a stack trace. The transaction means a half-written database is
+ not possible.
+-**Next** — the JSON this step wrote is what Step 2 fetches. That is the loop.
++**Next** â€” the JSON this step wrote is what Step 2 fetches. That is the loop.
+ 
+ ---
+ 
+-## Step 7 — Rendering: the panel filters the state down to one surface
++## Step 7 â€” Rendering: the panel filters the state down to one surface
+ 
+ **File:** `src/trace/TraceLensPanel.tsx`
+ **Symbol:** `src/trace/TraceLensPanel.tsx:7` (`export function TraceLensPanel({`)
+-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:142`
++**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:148`
+ (`<TraceLensPanel state={state} />`)
+ **Calls next:** `src/trace/TraceLensPanel.tsx:184` (`function filterByHit`)
+ 
+@@ -300,13 +302,13 @@ const proofCards = filterByHit(state.proofs, hit.surfaceId, hit.artifactId, hit.
+ const traceRows = filterByHit(state.traces, hit.surfaceId, hit.artifactId, hit.elementId).slice(-6).reverse();
+ ```
+ 
+-**Input** — the `SurfaceHit` from Step 4 and the `NodeTraceState` from Step 2.
+-**Output** — a native `<dialog>` with Business proof, Runtime trace and Code
++**Input** â€” the `SurfaceHit` from Step 4 and the `NodeTraceState` from Step 2.
++**Output** â€” a native `<dialog>` with Business proof, Runtime trace and Code
+ ownership regions. `src/trace/TraceLensPanel.tsx:21` (`dialog.showModal()`)
+ makes the background inert, focuses Close, wraps Tab between available controls
+ and restores the opener on dismissal. Escape, Close and a gesture beginning
+ and ending on the backdrop dismiss it.
+-**Failure behavior** — an unregistered surface renders **Surface unavailable**
++**Failure behavior** â€” an unregistered surface renders **Surface unavailable**
+ and tells the reviewer to load matching trace data. Empty proof/trace regions
+ and locked ownership stay explicit. A source URL produces a link; a host's
+ `onOpenSource` callback produces a button; otherwise the panel says opening is
+@@ -319,15 +321,15 @@ selection after the actual dataset loads. Invalid steps normalize to a step in
+ that dataset. Tabs connect `aria-controls` to their panels and support arrow,
+ Home and End keys. None of this changes the portable host's routing contract
+ or derives builder capability from a URL.
+-**Next** — a second rendering path runs beside this one; continue to Step 8.
++**Next** â€” a second rendering path runs beside this one; continue to Step 8.
+ 
+ ---
+ 
+-## Step 8 — The live graph rail turns trace rows into a picture
++## Step 8 â€” The live graph rail turns trace rows into a picture
+ 
+ **File:** `src/trace/LiveGraphRail.tsx`
+ **Symbol:** `src/trace/LiveGraphRail.tsx:27` (`export function LiveGraphRail`)
+-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:137`
++**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:143`
+ (`<LiveGraphRail traces={state.traces} />`), only when `state.traces` is non-empty
+ **Calls next:** `GraphSession.observe` and the `NodeGraph` renderer in
+ `vendor/nodegraph-live/`
+@@ -350,33 +352,33 @@ for (const row of traces) {
+ const snapshot = useSyncExternalStore(session.subscribe, session.getSnapshot, session.getSnapshot);
+ ```
+ 
+-**Input** — `RuntimeTraceRow[]`.
+-**Output** — a graph section with an `h2` heading, a WebGL canvas and
++**Input** â€” `RuntimeTraceRow[]`.
++**Output** â€” a graph section with an `h2` heading, a WebGL canvas and
+ `data-entity-count` / `data-edge-count`
+ attributes, which is how the browser probes assert on it without reading pixels.
+-**Failure behavior** — this component needs WebGL and mounts nothing useful on a
++**Failure behavior** â€” this component needs WebGL and mounts nothing useful on a
+ server. That is why the installer loads the dashboard through
+-`next/dynamic(..., { ssr: false })` in a Next.js target — `bin/nodetrace.mjs:307`
++`next/dynamic(..., { ssr: false })` in a Next.js target â€” `bin/nodetrace.mjs:307`
+ (`function nextPage(importPath)`). Without it, `next build` dies in prerender
+ with `WebGL2RenderingContext is not defined`.
+-**Next** — continue to failure and recovery in Step 9.
++**Next** â€” continue to failure and recovery in Step 9.
+ 
+ ---
+ 
+-## Step 9 — Installer failure and recovery have their own receipt
++## Step 9 â€” Installer failure and recovery have their own receipt
+ 
+ **File:** `bin/nodetrace.mjs`
+ **Symbol:** `bin/nodetrace.mjs:207` (`function runCommand`), and the receipt
+ written at `bin/nodetrace.mjs:122` (`setup-receipt.json`)
+ **Called by:** `bin/nodetrace.mjs:31` (`function addNodeTrace`), i.e.
+ `npx @homenshum/nodetrace add`
+-**Calls next:** nothing — it writes the receipt and sets the exit code
++**Calls next:** nothing â€” it writes the receipt and sets the exit code
+ 
+ **Why this exists**
+ The riskiest thing this project does is modify somebody else's repository:
+ copying files in, editing their `package.json`, running their install and their
+ build. Every phase is timed, logged to `.nodetrace/setup-log.txt`, and recorded
+-in `.nodetrace/setup-receipt.json` with `ok`, duration and a failure excerpt — and
++in `.nodetrace/setup-receipt.json` with `ok`, duration and a failure excerpt â€” and
+ the chain stops at the first failure rather than continuing to make changes.
+ 
+ **Core code**
+@@ -386,20 +388,20 @@ const ok = result.status === 0 && !result.error;
+ const status = timedOut ? `TIMEOUT after ${formatMs(options.timeoutMs)}` : ok ? "PASS" : "FAIL";
+ ```
+ 
+-**Input** — a target directory, and optionally `--framework`, `--force`,
++**Input** â€” a target directory, and optionally `--framework`, `--force`,
+ `--skip-install`, `--skip-verify`.
+-**Output** — files in the target, a patched `package.json`, a receipt, and exit
++**Output** â€” files in the target, a patched `package.json`, a receipt, and exit
+ code 0 or 1.
+-**Failure behavior** — the receipt is written whether or not the phases passed,
++**Failure behavior** â€” the receipt is written whether or not the phases passed,
+ so a failed install is inspectable rather than silent. `writeText` refuses to
+-overwrite an existing file unless `--force` is given — `bin/nodetrace.mjs:158`
+-(`Refusing to overwrite`) — so re-running
++overwrite an existing file unless `--force` is given â€” `bin/nodetrace.mjs:158`
++(`Refusing to overwrite`) â€” so re-running
+ `add` cannot quietly clobber a customised copy.
+-**Next** — continue to the tests in Step 10.
++**Next** â€” continue to the tests in Step 10.
+ 
+ ---
+ 
+-## Step 10 — The tests that prove the flow, and the one that does not
++## Step 10 â€” The tests that prove the flow, and the one that does not
+ 
+ **File:** `scripts/cli-smoke.mjs`, `scripts/capture-plan-smoke.mjs`,
+ `scripts/mcp-smoke.mjs`, `scripts/smoke.mjs`
+@@ -421,7 +423,7 @@ while this repository stayed green.
+ `checkRealCapture` serves a page over HTTP from inside the test, then runs the
+ capture CLI against it and checks the manifest recorded
+ `actual-code-browser-shiki` and a real DOMRect. Before it existed, nothing ran the
+-capture engine end to end — only its plans were parsed.
++capture engine end to end â€” only its plans were parsed.
+ 
+ **Core code**
+ ```js
+@@ -431,13 +433,13 @@ for (const match of readFileSync(file, "utf8").matchAll(/(?:from|import)\s+"(\.[
+ }
+ ```
+ 
+-**Input** — a throwaway target directory and a throwaway capture plan.
+-**Output** — a receipt in `docs/eval/`, and exit 0 or 1.
+-**Failure behavior** — each script collects issues and prints them all before
++**Input** â€” a throwaway target directory and a throwaway capture plan.
++**Output** â€” a receipt in `docs/eval/`, and exit 0 or 1.
++**Failure behavior** â€” each script collects issues and prints them all before
+ exiting 1, rather than throwing on the first one.
+ **And the one that does not:** `scripts/smoke.mjs` is mostly not a test. Roughly
+ 170 of its 212 lines assert that documentation files and source files contain
+-particular literal strings — that `README.md` contains `125-step QA-agent trace`,
++particular literal strings â€” that `README.md` contains `125-step QA-agent trace`,
+ that `DemoDashboard.tsx` does *not* contain `surfaceBand`. Renaming a function or
+ rewording a sentence turns it red. Read `docs/codebase/TESTING.md` before you
+ change anything it names.
+@@ -450,7 +452,7 @@ Say you want the panel to also show *who approved* a surface.
+ 
+ 1. Add the field to `src/trace/types.ts:17` (`export interface TraceProof`).
+ 2. Add the column to `db/schema.sql:16` (`create table if not exists trace_proofs`).
+-3. Write it in `scripts/init-sqlite.mjs` — both the `proofs` array and the
++3. Write it in `scripts/init-sqlite.mjs` â€” both the `proofs` array and the
+    `insertProof` prepared statement, which must stay in sync by hand.
+ 4. Render it in `src/trace/TraceLensPanel.tsx`, inside the Business proof region.
+ 5. Add the column name to the schema assertion list in `scripts/smoke.mjs:47`
+diff --git a/docs/codebase/CONCERNS.md b/docs/codebase/CONCERNS.md
+index d5982c4..bd8f67c 100644
+--- a/docs/codebase/CONCERNS.md
++++ b/docs/codebase/CONCERNS.md
+@@ -10,7 +10,7 @@ is not a concern. Items marked **D<n>** are the product loop's defect ledger in
+ 
+ **Not a defect in the product. The largest obstacle to working on it.**
+ 
+-`scripts/smoke.mjs` asserts that 112 literal strings appear in specific files —
++`scripts/smoke.mjs` asserts that 112 literal strings appear in specific files â€”
+ 29 in `README.md`, 15 in `docs/WALKTHROUGH.md`, 12 identifiers inside
+ `scripts/trace-coach-sqlite.mjs`, 9 strings that must *not* appear in
+ `src/DemoDashboard.tsx`, and so on. See the table in `TESTING.md`.
+@@ -27,7 +27,7 @@ Why it was not fixed here: loosening assertions during a refactor is exactly the
+ move that hides a regression, and this one has real checks mixed in with the
+ prose pins (state keys, schema tables and columns, `package.json` bin and files
+ entries). Separating them is its own change with its own review. The Wave 3
+-reduction worked around it instead — every deletion was of something this file
++reduction worked around it instead â€” every deletion was of something this file
+ does not name, which is why "smoke stayed green" is meaningful evidence rather
+ than a formality.
+ 
+@@ -38,7 +38,7 @@ docs check on its own merits.
+ 
+ ---
+ 
+-## 2. Failed loads and missing registry entries have candidate recovery paths — D1
++## 2. Failed loads and missing registry entries have candidate recovery paths â€” D1
+ 
+ A reviewer must be told when evidence cannot load. The pre-repair UI substituted
+ an empty loading seed after a failed fetch, and a missing surface registry entry
+@@ -59,11 +59,11 @@ failed observations have not been rescored.
+ 
+ ---
+ 
+-## 3. Normal entry and modal focus replace the mouse-only path — D4
++## 3. Normal entry and modal focus replace the mouse-only path â€” D4
+ 
+ The earlier measurements found no opener after repeated Tab presses or a mobile
+ tap; focus stayed behind the role-only panel. The candidate's header and coach
+-use `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) to call the
++use `src/DemoDashboard.tsx:153` (`function InspectTraceButton`) to call the
+ existing `useTraceLens().openHit` API from a normal button. The provider's
+ Ctrl/Cmd-click shortcut remains available. Hosts can supply their own buttons
+ through that API without adopting the demo's routing policy.
+@@ -77,7 +77,7 @@ inspection alone does not certify keyboard, physical touch or screen-reader use.
+ 
+ ---
+ 
+-## 4. New NodeRoom captures still require an actual source checkout — D3
++## 4. New NodeRoom captures still require an actual source checkout â€” D3
+ 
+ `npm run understand:noderoom` and `npm run capture:noderoom:real` use
+ `--source-root`, then `NODETRACE_SOURCE_ROOT`, then the parent directory to find
+@@ -95,7 +95,7 @@ receipt semantics are outside this UI repair; this note does not close all of D3
+ 
+ ## 5. Snapshot labels, empty states and URL selection have candidate repairs
+ 
+-`src/DemoDashboard.tsx:165` (`const sourceModeLabel =`) labels the loaded coach
++`src/DemoDashboard.tsx:171` (`const sourceModeLabel =`) labels the loaded coach
+ as **captured checkout** or **bundled snapshot**. The happy-path sample says no
+ coach captures are loaded and gives the snapshot setup command. The old claim
+ that a snapshot was a full local checkout is preserved only as historical
+@@ -122,7 +122,7 @@ which is declared under `devDependencies`. A consumer who installs the package
+ and runs a real capture gets
+ `Missing dependency: install Playwright before running nodetrace capture.`
+ 
+-The import is dynamic and the message is deliberate, so nothing crashes — but the
++The import is dynamic and the message is deliberate, so nothing crashes â€” but the
+ package does not declare what its own CLI needs. Either move `playwright` to
+ `dependencies` (heavy: it downloads browsers) or declare it as an
+ `optionalDependency` or `peerDependency` and say so in the README.
+@@ -133,7 +133,7 @@ package does not declare what its own CLI needs. Either move `playwright` to
+   (`const surfaces = [`) and `scripts/trace-coach-sqlite.mjs:57`
+   (`const surfaces = [`) each hold their own list. A third copy in
+   `src/trace/surfaces.ts` was deleted in the Wave 3 reduction. The remaining two
+-  describe genuinely different sets, so they are not duplicates — but nothing
++  describe genuinely different sets, so they are not duplicates â€” but nothing
+   checks that a surface tagged in the DOM is registered by whichever script last
+   wrote the state. The candidate reports that mismatch visibly; the underlying
+   datasets remain separate.
+@@ -153,7 +153,7 @@ package does not declare what its own CLI needs. Either move `playwright` to
+   `vendor/nodegraph-live/`, a pre-built third-party bundle, and its `.d.ts` files
+   are load-bearing for `tsc` even though knip cannot see it. The remaining
+   exports and all 10 unused types are `src/trace/index.ts`, which is the public
+-  API of a library meant to be copied into another repository — a consumer
++  API of a library meant to be copied into another repository â€” a consumer
+   building a `NodeTraceState` needs those types. The sixth file is
+   `.dependency-cruiser.cjs`, a tool config knip does not recognise as one.
+   None of it is dead code.
+diff --git a/src/DemoDashboard.tsx b/src/DemoDashboard.tsx
+index 2b5b0fb..1e159cb 100644
+--- a/src/DemoDashboard.tsx
++++ b/src/DemoDashboard.tsx
+@@ -35,6 +35,7 @@ function DemoContent({ installed }: { installed: boolean }) {
+     () => coach?.steps.find((step) => step.id === navigation.step) ?? coach?.steps.find((step) => step.id === coach.activeStepId) ?? coach?.steps[0],
+     [navigation.step, coach],
+   );
++  const heroSurfaceId = activeCoachStep?.surfaceId ?? "shell.statusStrip";
+ 
+   useEffect(() => {
+     const controller = new AbortController();
+@@ -69,7 +70,7 @@ function DemoContent({ installed }: { installed: boolean }) {
+     <>
+       <main className="shell" tabIndex={-1}>
+         <section className="workspace">
+-          <header className="showcase" data-nodetrace-surface="shell.statusStrip">
++          <header className="showcase" data-nodetrace-surface={heroSurfaceId}>
+             <div className="showcaseCopy">
+               <p className="eyebrow">
+                 <Route size={13} aria-hidden="true" /> NodeRoom codebase trace
+@@ -77,7 +78,11 @@ function DemoContent({ installed }: { installed: boolean }) {
+               <h1>Portable trace UI for agent apps.</h1>
+               <p role="status" aria-live="polite">{loadStatus === "loading" ? "Loading the local trace file…" : loadStatus === "error" ? "Trace data could not be loaded." : coach ? `Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from ${coach.sourceMode === "live" ? "a captured checkout" : "the bundled snapshot"}.` : state.session.summary}</p>
+               {loadStatus === "error" ? <div className="loadError" role="alert"><p>{loadError}</p><button type="button" className="inspectTrace" onClick={() => setAttempt((value) => value + 1)}>Retry loading trace</button></div> : null}
+-              <InspectTraceButton surfaceId="shell.statusStrip" disabled={loadStatus !== "ready"} />
++              <InspectTraceButton surfaceId={heroSurfaceId} disabled={loadStatus !== "ready"} />
++            </div>
++            <details className="traceSetup">
++              <summary>Setup and trace provenance</summary>
++              <div className="traceSetupContent">
+               <div className="showcaseActions">
+                 {installed ? <div className="command"><Terminal size={15} aria-hidden="true" /><code translate="no">npm run nodetrace:happy-path</code></div> : <><div className="command">
+                   <Terminal size={15} aria-hidden="true" />
+@@ -95,7 +100,6 @@ function DemoContent({ installed }: { installed: boolean }) {
+                   <CircleDot size={13} aria-hidden="true" /> no API key required
+                 </span>
+               </div>
+-            </div>
+             <aside className="launchCard" aria-label="Trace Coach launch path">
+               <div className="launchHead">
+                 <span>{coach?.sourceMode === "live" ? "Captured checkout" : coach ? "Bundled snapshot" : "SQLite sample"}</span>
+@@ -122,6 +126,8 @@ function DemoContent({ installed }: { installed: boolean }) {
+                 <span>{loadStatus !== "ready" ? "Trace evidence will appear after the state file loads successfully." : coach ? "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent." : "The SQLite sample contains trace events. No Trace Coach captures are loaded yet."}</span>
+               </div>
+             </aside>
++              </div>
++            </details>
+           </header>
+ 
+           {coach && activeCoachStep ? (
+diff --git a/src/styles.css b/src/styles.css
+index 01e7e22..0c0f061 100644
+--- a/src/styles.css
++++ b/src/styles.css
+@@ -63,7 +63,7 @@ button {
+ 
+ .showcase {
+   display: grid;
+-  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
++  grid-template-columns: minmax(0, 1fr);
+   gap: 16px;
+   min-height: 246px;
+   border: 1px solid var(--line);
+@@ -119,6 +119,28 @@ button {
+   margin-top: 16px;
+ }
+ 
++.traceSetup { min-width: 0; }
++.traceSetup > summary {
++  min-height: 44px;
++  padding: 11px 12px;
++  border: 1px solid var(--line);
++  border-radius: 8px;
++  background: var(--bg-primary);
++  color: var(--text-secondary);
++  font-weight: 700;
++  overflow-wrap: anywhere;
++  cursor: pointer;
++}
++.traceSetupContent {
++  display: grid;
++  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
++  align-items: start;
++  gap: 16px;
++  margin-top: 12px;
++}
++.traceSetup .showcaseActions { margin-top: 0; }
++.traceSetup .heroStats :is(span, small, strong) { white-space: normal; overflow-wrap: anywhere; }
++
+ .command {
+   display: inline-flex;
+   align-items: center;
+@@ -746,7 +768,7 @@ button {
+ }
+ 
+ @media (max-width: 980px) {
+-  .showcase {
++  .traceSetupContent {
+     grid-template-columns: 1fr;
+   }
+ 

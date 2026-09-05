@@ -1,0 +1,128 @@
+{
+  "pixelObservations": [
+    {
+      "label": "original_independent",
+      "path": "docs\\plans\\portfolio-recovery-20260904\\E6e-nodetrace-disclosure-final-judge\\installed\\installed-1440-collapsed.png",
+      "sha256": "a37ac006238408188378f3c8b4bdf8bbb0c9195d78ef7463d3128c1653c69d82",
+      "graphVisibleChromaticPixels": 0,
+      "crop": [
+        55,
+        787,
+        1385,
+        960
+      ]
+    },
+    {
+      "label": "root_final",
+      "path": "docs\\plans\\portfolio-recovery-20260904\\E6e-nodetrace-disclosure-installed-final\\installed-1440-collapsed.png",
+      "sha256": "8aaa223adb9dea8252b72b0837f87cc177ecc442ee4c3b21882344d76a0ce968",
+      "graphVisibleChromaticPixels": 247,
+      "crop": [
+        55,
+        787,
+        1385,
+        960
+      ]
+    },
+    {
+      "label": "fresh_one_viewport",
+      "path": "docs\\plans\\portfolio-recovery-20260904\\E6e-nodetrace-disclosure-final-judge\\installed-1440-capture\\installed-1440-current-viewport.png",
+      "sha256": "8f8c9f688d9fa26a2fd7579adfc22911bff9ee7b51237ed6093067bb4d95f780",
+      "graphVisibleChromaticPixels": 243,
+      "crop": [
+        55,
+        787,
+        1385,
+        960
+      ]
+    }
+  ],
+  "canvasReadbacks": [
+    {
+      "state": "pre",
+      "className": "sigma-edges",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "pre",
+      "className": "sigma-edgeLabels",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "pre",
+      "className": "sigma-nodes",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "pre",
+      "className": "sigma-labels",
+      "sha256": "5bac5ebbc0740149c1acd156c1d197fa2aaaf97218e7806e5e3a22676aeb6f5f",
+      "nontransparentPixels": 3786
+    },
+    {
+      "state": "pre",
+      "className": "sigma-hovers",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "pre",
+      "className": "sigma-hoverNodes",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "pre",
+      "className": "sigma-mouse",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "post",
+      "className": "sigma-edges",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "post",
+      "className": "sigma-edgeLabels",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "post",
+      "className": "sigma-nodes",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "post",
+      "className": "sigma-labels",
+      "sha256": "18d115bcca8ba9fe54c6845772bebc39be3e36c19eeef2cfe52eb1ff48183a1d",
+      "nontransparentPixels": 4395
+    },
+    {
+      "state": "post",
+      "className": "sigma-hovers",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "post",
+      "className": "sigma-hoverNodes",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    },
+    {
+      "state": "post",
+      "className": "sigma-mouse",
+      "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+      "nontransparentPixels": 0
+    }
+  ],
+  "scope": "Actual saved PNG pixels; graph ROI uses the fresh before/after identical viewport geometry. Original screenshot has no separately captured canvas readback.",
+  "interpretation": "The fresh native viewport visibly paints graph rings/labels. Direct canvas exports for the WebGL layers are transparent even beside that painted native screenshot, so these exports cannot certify composited WebGL paint. Label export hashes change across screenshot despite unchanged DOM geometry. Historical blank capture cause remains unestablished; do not infer GPU contention."
+}

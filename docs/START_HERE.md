@@ -114,15 +114,17 @@ provider also receives `false`.
 an alert and **Retry loading trace**. Loading is announced and inspect controls
 remain disabled until the request succeeds. Effect cleanup aborts the request
 and prevents an obsolete response from replacing current state.
-**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:72`
-(`data-nodetrace-surface="shell.statusStrip"`) and a normal inspect control.
+**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:73`
+(`data-nodetrace-surface={heroSurfaceId}`) and a normal inspect control. Both use the selected coach step's surface, or the installed sample surface when there is no coach. The native
+**Setup and trace provenance** disclosure reveals the existing commands and
+snapshot details without changing the selected trace.
 
 ---
 
 ## Step 3 — Open the lens through a normal control or the existing shortcut
 
 **Files:** `src/DemoDashboard.tsx`, `src/trace/TraceLensProvider.tsx`
-**Symbols:** `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) and
+**Symbols:** `src/DemoDashboard.tsx:153` (`function InspectTraceButton`) and
 `src/trace/TraceLensProvider.tsx:45` (`const openHit = useCallback`)
 **Called by:** an Inspect trace button, a host control or the modifier-click listener
 **Calls next:** `openHit`; modifier-click first calls `resolveTraceHit`
@@ -281,7 +283,7 @@ not possible.
 
 **File:** `src/trace/TraceLensPanel.tsx`
 **Symbol:** `src/trace/TraceLensPanel.tsx:7` (`export function TraceLensPanel({`)
-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:142`
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:148`
 (`<TraceLensPanel state={state} />`)
 **Calls next:** `src/trace/TraceLensPanel.tsx:184` (`function filterByHit`)
 
@@ -327,7 +329,7 @@ or derives builder capability from a URL.
 
 **File:** `src/trace/LiveGraphRail.tsx`
 **Symbol:** `src/trace/LiveGraphRail.tsx:27` (`export function LiveGraphRail`)
-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:137`
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:143`
 (`<LiveGraphRail traces={state.traces} />`), only when `state.traces` is non-empty
 **Calls next:** `GraphSession.observe` and the `NodeGraph` renderer in
 `vendor/nodegraph-live/`

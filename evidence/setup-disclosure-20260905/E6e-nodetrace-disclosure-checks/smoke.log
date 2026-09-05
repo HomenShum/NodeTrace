@@ -1,0 +1,7 @@
+
+> @homenshum/nodetrace@0.1.0 smoke
+> node scripts/smoke.mjs && node scripts/cli-smoke.mjs && node scripts/mcp-smoke.mjs
+
+nodetrace smoke: PASS
+nodetrace cli smoke: PASS
+nodetrace mcp smoke: PASS

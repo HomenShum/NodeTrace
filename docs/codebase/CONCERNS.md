@@ -63,7 +63,7 @@ failed observations have not been rescored.
 
 The earlier measurements found no opener after repeated Tab presses or a mobile
 tap; focus stayed behind the role-only panel. The candidate's header and coach
-use `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) to call the
+use `src/DemoDashboard.tsx:153` (`function InspectTraceButton`) to call the
 existing `useTraceLens().openHit` API from a normal button. The provider's
 Ctrl/Cmd-click shortcut remains available. Hosts can supply their own buttons
 through that API without adopting the demo's routing policy.
@@ -95,7 +95,7 @@ receipt semantics are outside this UI repair; this note does not close all of D3
 
 ## 5. Snapshot labels, empty states and URL selection have candidate repairs
 
-`src/DemoDashboard.tsx:165` (`const sourceModeLabel =`) labels the loaded coach
+`src/DemoDashboard.tsx:171` (`const sourceModeLabel =`) labels the loaded coach
 as **captured checkout** or **bundled snapshot**. The happy-path sample says no
 coach captures are loaded and gives the snapshot setup command. The old claim
 that a snapshot was a full local checkout is preserved only as historical

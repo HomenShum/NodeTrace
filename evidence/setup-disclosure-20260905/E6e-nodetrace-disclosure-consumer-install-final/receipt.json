@@ -1,0 +1,39 @@
+{
+  "started": "2026-09-05T08:42:18.670435+00:00",
+  "exitCode": 0,
+  "report": {
+    "ok": true,
+    "startedAt": "2026-09-05T08:42:18.715Z",
+    "completedAt": "2026-09-05T08:44:05.370Z",
+    "totalMs": 106655,
+    "apiKeysRequired": false,
+    "framework": "next",
+    "targetDir": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-AxCJ0v",
+    "timeoutMs": 600000,
+    "phases": [
+      {
+        "name": "install dependencies",
+        "ok": true,
+        "durationMs": 30083
+      },
+      {
+        "name": "happy path",
+        "ok": true,
+        "durationMs": 1216
+      },
+      {
+        "name": "smoke",
+        "ok": true,
+        "durationMs": 637
+      },
+      {
+        "name": "build",
+        "ok": true,
+        "durationMs": 74631
+      }
+    ],
+    "issues": []
+  },
+  "previousReportSha256": "09c4df91cc4d504e8be39c56b7d30e97e3ffc3a2ab97fd9b4f1757a675b53079",
+  "previousReportRestoredExactly": true
+}

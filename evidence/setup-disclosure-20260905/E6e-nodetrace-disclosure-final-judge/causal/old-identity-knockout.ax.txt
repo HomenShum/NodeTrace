@@ -1,0 +1,67 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.
+  - button "Inspect trace"
+  - group: Setup and trace provenance
+  - complementary "NodeRoom trace records":
+    - text: Source app
+    - strong: NodeRoom
+    - text: bundled snapshot - HomenShum/noderoom - 6 guided steps
+    - button "Open NodeRoom's Trace tab from the artifact shell pass Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view. Entry - Step 01 - src/ui/panels/Artifact.tsx"
+    - 'button "Use the real NodeRoom trace tabs pass The sample should follow NodeRoom''s detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record. Trace tabs - Step 02 - src/ui/panels/TraceSurface.tsx"'
+    - 'button "Seed the app from NodeRoom TraceRecord data pass NodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads. Data model - Step 03 - src/ui/panels/traceData.ts"'
+    - button "Render code and UI evidence like NodeRoom step rows pass Each step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted. Steps - Step 04 - src/ui/panels/TraceStepRow.tsx"
+    - button "Keep the latest flow tab behavior pass NodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list. Flow - Step 05 - src/ui/panels/TraceFlow.tsx"
+    - 'button "Match NodeRoom''s dark trace surface pass The sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes. Look and feel - Step 06 - src/app/styles.css"'
+  - strong: Open NodeRoom's Trace tab from the artifact shell
+  - paragraph: Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.
+  - button "Inspect trace"
+  - tablist "NodeRoom trace detail":
+    - tab "Overview" [selected]
+    - tab "Steps"
+    - tab "Minimap"
+    - tab "Raw JSON"
+  - tabpanel "Overview":
+    - region "Code slice":
+      - text: src/ui/panels/Artifact.tsx HomenShum/noderoom - lines 1-15
+      - img "Source capture for src/ui/panels/Artifact.tsx"
+    - region "UI capture":
+      - text: "[data-noderoom-surface=\"workSurface.traceStrip\"] DOMRect x11 y904 w1056 h45"
+      - img "NodeRoom bottom room trace strip with recent room events and trace telemetry."
+  - region "Live graph rail":
+    - heading "Live graph rail" [level=2]
+    - text: 14 entities from 6 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence. Entity
+    - combobox "Entity":
+      - option "Choose an entity" [selected]
+      - 'option "actor: trace-coach"'
+      - 'option "tool: workSurface.traceStrip"'
+      - 'option "artifact: noderoom-codebase-trace"'
+      - 'option "step: entry"'
+      - 'option "tool: workSurface.trace"'
+      - 'option "step: trace-tabs"'
+      - 'option "tool: workSurface.traceData"'
+      - 'option "step: data-model"'
+      - 'option "tool: workSurface.traceSteps"'
+      - 'option "step: steps"'
+      - 'option "tool: workSurface.traceFlow"'
+      - 'option "step: flow"'
+      - 'option "tool: workSurface.traceStyle"'
+      - 'option "step: look-and-feel"'
+    - text: Choose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.
+    - heading "Relationship graph" [level=3]
+    - paragraph: 14 entities · 31 of 31 relationships shown
+    - button "fit"
+    - checkbox "traversal (31) · local" [checked]
+    - text: traversal (31) · local
+- 'dialog "Trace Lens: Surface unavailable"':
+  - banner:
+    - strong: Surface unavailable
+    - button "Close Trace Lens"
+  - paragraph: No registry entry is available for “shell.statusStrip” in this state file. Regenerate or load the matching trace data.
+  - text: Business proof
+  - paragraph: Business proof availability is unknown for this unregistered surface.
+  - text: Runtime trace
+  - paragraph: No recent runtime trace rows for this surface.
+  - text: Code ownership
+  - paragraph: Builder access only. Component, query, mutation, skill, and test ownership must come from a privileged server route.

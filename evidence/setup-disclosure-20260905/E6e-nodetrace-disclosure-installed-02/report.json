@@ -1,0 +1,2524 @@
+{
+  "proof": "NODETRACE-D3-SETUP-DISCLOSURE-01",
+  "at": "2026-09-05T08:40:02.310Z",
+  "surface": "installed",
+  "consumer": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-0Mf95T",
+  "checks": [
+    {
+      "name": "normal installed dashboard has exact installer transformation",
+      "pass": true
+    },
+    {
+      "name": "normal installed styles are exact source bytes",
+      "pass": true
+    },
+    {
+      "name": "normal generated sample has four traces and no coach",
+      "pass": true
+    },
+    {
+      "name": "installed-320-collapsed: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-320: disclosure starts closed",
+      "pass": true
+    },
+    {
+      "name": "installed-320: no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+        "width": 320,
+        "height": 800,
+        "overflow": 0,
+        "open": false,
+        "scrollY": 0,
+        "active": "BODY",
+        "regions": {
+          ".showcase": {
+            "x": 12,
+            "y": 12,
+            "width": 296,
+            "height": 362.21875,
+            "documentY": 12
+          },
+          ".showcaseCopy h1": {
+            "x": 29,
+            "y": 51.9375,
+            "width": 262,
+            "height": 109.40625,
+            "documentY": 51.9375
+          },
+          ".traceSetup > summary": {
+            "x": 29,
+            "y": 310.03125,
+            "width": 262,
+            "height": 47.1875,
+            "documentY": 310.03125
+          },
+          ".showcaseActions": {
+            "x": 29,
+            "y": 369.21875,
+            "width": 262,
+            "height": 88.78125,
+            "documentY": 369.21875
+          },
+          ".launchCard": {
+            "x": 29,
+            "y": 474,
+            "width": 262,
+            "height": 484.921875,
+            "documentY": 474
+          },
+          ".coachPanel": null,
+          ".coachList": null,
+          ".coachDetail": null,
+          ".coachEmpty": {
+            "x": 12,
+            "y": 390.21875,
+            "width": 296,
+            "height": 294.75,
+            "documentY": 390.21875
+          },
+          ".liveGraphRail": {
+            "x": 12,
+            "y": 702.96875,
+            "width": 296,
+            "height": 720.90625,
+            "documentY": 702.96875
+          }
+        }
+      }
+    },
+    {
+      "name": "installed-320: commands hidden but current Inspect remains visible",
+      "pass": true
+    },
+    {
+      "name": "installed-320: header within 60 percent phone height",
+      "pass": true,
+      "detail": {
+        "x": 12,
+        "y": 12,
+        "width": 296,
+        "height": 362.21875,
+        "documentY": 12
+      }
+    },
+    {
+      "name": "installed-320: first record or installed graph heading before fold",
+      "pass": true,
+      "detail": {
+        "x": 27,
+        "y": 717.96875,
+        "width": 266,
+        "height": 23.1875
+      }
+    },
+    {
+      "name": "installed-320: protected geometry .coachEmpty",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 12,
+          "y": 932.734375,
+          "width": 296,
+          "height": 294.75,
+          "documentY": 932.734375
+        },
+        "after": {
+          "x": 12,
+          "y": 390.21875,
+          "width": 296,
+          "height": 294.75,
+          "documentY": 390.21875
+        }
+      }
+    },
+    {
+      "name": "installed-320: protected geometry .liveGraphRail",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 12,
+          "y": 1245.484375,
+          "width": 296,
+          "height": 720.90625,
+          "documentY": 1245.484375
+        },
+        "after": {
+          "x": 12,
+          "y": 702.96875,
+          "width": 296,
+          "height": 720.90625,
+          "documentY": 702.96875
+        }
+      }
+    },
+    {
+      "name": "installed-320: first Inspect opens registered evidence",
+      "pass": true
+    },
+    {
+      "name": "installed-320-inspect: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-320: lens close restores pre-inspection URL",
+      "pass": true
+    },
+    {
+      "name": "installed-320: native Enter expands setup retaining focus",
+      "pass": true
+    },
+    {
+      "name": "installed-320: every existing setup command retained",
+      "pass": true
+    },
+    {
+      "name": "installed-320: provenance text retained",
+      "pass": true
+    },
+    {
+      "name": "installed-320-expanded: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-320: user expansion survives resize",
+      "pass": true
+    },
+    {
+      "name": "installed-320: native Space collapses retaining focus",
+      "pass": true
+    },
+    {
+      "name": "installed-320: toggles do not change URL",
+      "pass": true
+    },
+    {
+      "name": "installed-320: modifier click resolves same current surface",
+      "pass": true
+    },
+    {
+      "name": "installed-390-collapsed: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-390: disclosure starts closed",
+      "pass": true
+    },
+    {
+      "name": "installed-390: no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+        "width": 390,
+        "height": 844,
+        "overflow": 0,
+        "open": false,
+        "scrollY": 0,
+        "active": "BODY",
+        "regions": {
+          ".showcase": {
+            "x": 12,
+            "y": 12,
+            "width": 366,
+            "height": 303.25,
+            "documentY": 12
+          },
+          ".showcaseCopy h1": {
+            "x": 29,
+            "y": 51.9375,
+            "width": 332,
+            "height": 72.9375,
+            "documentY": 51.9375
+          },
+          ".traceSetup > summary": {
+            "x": 29,
+            "y": 251.0625,
+            "width": 332,
+            "height": 47.1875,
+            "documentY": 251.0625
+          },
+          ".showcaseActions": {
+            "x": 29,
+            "y": 310.25,
+            "width": 332,
+            "height": 88.78125,
+            "documentY": 310.25
+          },
+          ".launchCard": {
+            "x": 29,
+            "y": 415.03125,
+            "width": 332,
+            "height": 441.34375,
+            "documentY": 415.03125
+          },
+          ".coachPanel": null,
+          ".coachList": null,
+          ".coachDetail": null,
+          ".coachEmpty": {
+            "x": 12,
+            "y": 331.25,
+            "width": 366,
+            "height": 224.53125,
+            "documentY": 331.25
+          },
+          ".liveGraphRail": {
+            "x": 12,
+            "y": 573.78125,
+            "width": 366,
+            "height": 682.28125,
+            "documentY": 573.78125
+          }
+        }
+      }
+    },
+    {
+      "name": "installed-390: commands hidden but current Inspect remains visible",
+      "pass": true
+    },
+    {
+      "name": "installed-390: header within 60 percent phone height",
+      "pass": true,
+      "detail": {
+        "x": 12,
+        "y": 12,
+        "width": 366,
+        "height": 303.25,
+        "documentY": 12
+      }
+    },
+    {
+      "name": "installed-390: first record or installed graph heading before fold",
+      "pass": true,
+      "detail": {
+        "x": 27,
+        "y": 588.78125,
+        "width": 336,
+        "height": 23.1875
+      }
+    },
+    {
+      "name": "installed-390: protected geometry .coachEmpty",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 12,
+          "y": 830.1875,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 830.1875
+        },
+        "after": {
+          "x": 12,
+          "y": 331.25,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 331.25
+        }
+      }
+    },
+    {
+      "name": "installed-390: protected geometry .liveGraphRail",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 12,
+          "y": 1072.71875,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 1072.71875
+        },
+        "after": {
+          "x": 12,
+          "y": 573.78125,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 573.78125
+        }
+      }
+    },
+    {
+      "name": "installed-390: first Inspect opens registered evidence",
+      "pass": true
+    },
+    {
+      "name": "installed-390-inspect: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-390: lens close restores pre-inspection URL",
+      "pass": true
+    },
+    {
+      "name": "installed-390: native Enter expands setup retaining focus",
+      "pass": true
+    },
+    {
+      "name": "installed-390: every existing setup command retained",
+      "pass": true
+    },
+    {
+      "name": "installed-390: provenance text retained",
+      "pass": true
+    },
+    {
+      "name": "installed-390-expanded: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-390: user expansion survives resize",
+      "pass": true
+    },
+    {
+      "name": "installed-390: native Space collapses retaining focus",
+      "pass": true
+    },
+    {
+      "name": "installed-390: toggles do not change URL",
+      "pass": true
+    },
+    {
+      "name": "installed-390: modifier click resolves same current surface",
+      "pass": true
+    },
+    {
+      "name": "installed-390: every header text size is exactly doubled without inherited compounding",
+      "pass": true,
+      "detail": [
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "P",
+          "before": 11,
+          "after": 22
+        },
+        {
+          "tag": "H1",
+          "before": 38,
+          "after": 76
+        },
+        {
+          "tag": "P",
+          "before": 15,
+          "after": 30
+        },
+        {
+          "tag": "BUTTON",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "DETAILS",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "SUMMARY",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "DIV",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "CODE",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "SPAN",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "ASIDE",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "SPAN",
+          "before": 11,
+          "after": 22
+        },
+        {
+          "tag": "STRONG",
+          "before": 11,
+          "after": 22
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "SPAN",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "SPAN",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "SPAN",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "SPAN",
+          "before": 10,
+          "after": 20
+        },
+        {
+          "tag": "STRONG",
+          "before": 15,
+          "after": 30
+        },
+        {
+          "tag": "SMALL",
+          "before": 10,
+          "after": 20
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "SPAN",
+          "before": 10,
+          "after": 20
+        },
+        {
+          "tag": "STRONG",
+          "before": 15,
+          "after": 30
+        },
+        {
+          "tag": "SMALL",
+          "before": 10,
+          "after": 20
+        },
+        {
+          "tag": "DIV",
+          "before": 16,
+          "after": 32
+        },
+        {
+          "tag": "SPAN",
+          "before": 10,
+          "after": 20
+        },
+        {
+          "tag": "STRONG",
+          "before": 15,
+          "after": 30
+        },
+        {
+          "tag": "SMALL",
+          "before": 10,
+          "after": 20
+        },
+        {
+          "tag": "DIV",
+          "before": 12,
+          "after": 24
+        },
+        {
+          "tag": "SPAN",
+          "before": 12,
+          "after": 24
+        }
+      ]
+    },
+    {
+      "name": "installed-390-text200-collapsed: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-390: enlarged text no document overflow",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+        "width": 390,
+        "height": 844,
+        "overflow": 0,
+        "open": false,
+        "scrollY": 0,
+        "active": "SUMMARY",
+        "regions": {
+          ".showcase": {
+            "x": 12,
+            "y": 12,
+            "width": 366,
+            "height": 797.765625,
+            "documentY": 12
+          },
+          ".showcaseCopy h1": {
+            "x": 29,
+            "y": 99.78125,
+            "width": 332,
+            "height": 291.8125,
+            "documentY": 99.78125
+          },
+          ".traceSetup > summary": {
+            "x": 29,
+            "y": 675.984375,
+            "width": 332,
+            "height": 116.78125,
+            "documentY": 675.984375
+          },
+          ".showcaseActions": {
+            "x": 29,
+            "y": 804.765625,
+            "width": 332,
+            "height": 158.390625,
+            "documentY": 804.765625
+          },
+          ".launchCard": {
+            "x": 29,
+            "y": 979.15625,
+            "width": 332,
+            "height": 786.34375,
+            "documentY": 979.15625
+          },
+          ".coachPanel": null,
+          ".coachList": null,
+          ".coachDetail": null,
+          ".coachEmpty": {
+            "x": 12,
+            "y": 825.765625,
+            "width": 366,
+            "height": 224.53125,
+            "documentY": 825.765625
+          },
+          ".liveGraphRail": {
+            "x": 12,
+            "y": 1068.296875,
+            "width": 366,
+            "height": 682.28125,
+            "documentY": 1068.296875
+          }
+        }
+      }
+    },
+    {
+      "name": "installed-390-text200-provenance: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-390: enlarged expanded setup has no document overflow",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+        "width": 390,
+        "height": 844,
+        "overflow": 0,
+        "open": true,
+        "scrollY": 950,
+        "active": "SUMMARY",
+        "regions": {
+          ".showcase": {
+            "x": 12,
+            "y": -938,
+            "width": 366,
+            "height": 1770.5,
+            "documentY": 12
+          },
+          ".showcaseCopy h1": {
+            "x": 29,
+            "y": -850.21875,
+            "width": 332,
+            "height": 291.8125,
+            "documentY": 99.78125
+          },
+          ".traceSetup > summary": {
+            "x": 29,
+            "y": -274.015625,
+            "width": 332,
+            "height": 116.78125,
+            "documentY": 675.984375
+          },
+          ".showcaseActions": {
+            "x": 29,
+            "y": -145.234375,
+            "width": 332,
+            "height": 158.390625,
+            "documentY": 804.765625
+          },
+          ".launchCard": {
+            "x": 29,
+            "y": 29.15625,
+            "width": 332,
+            "height": 786.34375,
+            "documentY": 979.15625
+          },
+          ".coachPanel": null,
+          ".coachList": null,
+          ".coachDetail": null,
+          ".coachEmpty": {
+            "x": 12,
+            "y": 848.5,
+            "width": 366,
+            "height": 224.53125,
+            "documentY": 1798.5
+          },
+          ".liveGraphRail": {
+            "x": 12,
+            "y": 1091.03125,
+            "width": 366,
+            "height": 682.28125,
+            "documentY": 2041.03125
+          }
+        }
+      }
+    },
+    {
+      "name": "installed-390: enlarged setup keyboard escape remains usable",
+      "pass": true
+    },
+    {
+      "name": "installed-1440-collapsed: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: disclosure starts closed",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: no horizontal overflow",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+        "width": 1440,
+        "height": 960,
+        "overflow": 0,
+        "open": false,
+        "scrollY": 0,
+        "active": "BODY",
+        "regions": {
+          ".showcase": {
+            "x": 22,
+            "y": 22,
+            "width": 1396,
+            "height": 327.15625,
+            "documentY": 22
+          },
+          ".showcaseCopy h1": {
+            "x": 43,
+            "y": 65.9375,
+            "width": 860,
+            "height": 111.34375,
+            "documentY": 65.9375
+          },
+          ".traceSetup > summary": {
+            "x": 43,
+            "y": 280.96875,
+            "width": 1354,
+            "height": 47.1875,
+            "documentY": 280.96875
+          },
+          ".showcaseActions": {
+            "x": 43,
+            "y": 340.15625,
+            "width": 938,
+            "height": 39.390625,
+            "documentY": 340.15625
+          },
+          ".launchCard": {
+            "x": 997,
+            "y": 340.15625,
+            "width": 400,
+            "height": 248.453125,
+            "documentY": 340.15625
+          },
+          ".coachPanel": null,
+          ".coachList": null,
+          ".coachDetail": null,
+          ".coachEmpty": {
+            "x": 22,
+            "y": 365.15625,
+            "width": 1396,
+            "height": 131.78125,
+            "documentY": 365.15625
+          },
+          ".liveGraphRail": {
+            "x": 22,
+            "y": 514.9375,
+            "width": 1396,
+            "height": 602.953125,
+            "documentY": 514.9375
+          }
+        }
+      }
+    },
+    {
+      "name": "installed-1440: commands hidden but current Inspect remains visible",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: next section does not drift down beyond 16 pixels",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: protected geometry .coachEmpty",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 22,
+          "y": 357.359375,
+          "width": 1396,
+          "height": 131.78125,
+          "documentY": 357.359375
+        },
+        "after": {
+          "x": 22,
+          "y": 365.15625,
+          "width": 1396,
+          "height": 131.78125,
+          "documentY": 365.15625
+        }
+      }
+    },
+    {
+      "name": "installed-1440: protected geometry .liveGraphRail",
+      "pass": true,
+      "detail": {
+        "before": {
+          "x": 22,
+          "y": 507.140625,
+          "width": 1396,
+          "height": 602.953125,
+          "documentY": 507.140625
+        },
+        "after": {
+          "x": 22,
+          "y": 514.9375,
+          "width": 1396,
+          "height": 602.953125,
+          "documentY": 514.9375
+        }
+      }
+    },
+    {
+      "name": "installed-1440: first Inspect opens registered evidence",
+      "pass": true
+    },
+    {
+      "name": "installed-1440-inspect: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: lens close restores pre-inspection URL",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: native Enter expands setup retaining focus",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: every existing setup command retained",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: provenance text retained",
+      "pass": true
+    },
+    {
+      "name": "installed-1440-expanded: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: user expansion survives resize",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: native Space collapses retaining focus",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: toggles do not change URL",
+      "pass": true
+    },
+    {
+      "name": "installed-1440: modifier click resolves same current surface",
+      "pass": true
+    },
+    {
+      "name": "loading status and disabled Inspect remain visible outside closed setup",
+      "pass": true
+    },
+    {
+      "name": "installed-loading: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "error and Retry visible outside closed setup",
+      "pass": true
+    },
+    {
+      "name": "installed-error: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "one explicit Retry recovers actual data",
+      "pass": true,
+      "detail": {
+        "requests": 2,
+        "ownedAlerts": 0,
+        "allAlerts": 1
+      }
+    },
+    {
+      "name": "sustained toggling makes no extra state request and stays bounded",
+      "pass": true,
+      "detail": {
+        "rounds": 129,
+        "elapsedMs": 15061,
+        "requests": 2
+      }
+    },
+    {
+      "name": "installed-recovered-sustained: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "empty input retains truthful guidance without fake coach or graph",
+      "pass": true
+    },
+    {
+      "name": "empty setup remains reachable and states no coach captures",
+      "pass": true
+    },
+    {
+      "name": "installed-empty: screenshot leaves same-frame geometry unchanged",
+      "pass": true
+    },
+    {
+      "name": "all normal actual input and built assets match disk",
+      "pass": true
+    },
+    {
+      "name": "no application errors or unexpected traffic",
+      "pass": true,
+      "detail": [
+        {
+          "scenario": "transport-recovery",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+        }
+      ]
+    },
+    {
+      "name": "all source, built assets and installed inputs unchanged during proof",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "installed-320-collapsed",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 320,
+      "height": 800,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BODY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 296,
+          "height": 362.21875,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 262,
+          "height": 109.40625,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 310.03125,
+          "width": 262,
+          "height": 47.1875,
+          "documentY": 310.03125
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 369.21875,
+          "width": 262,
+          "height": 88.78125,
+          "documentY": 369.21875
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 474,
+          "width": 262,
+          "height": 484.921875,
+          "documentY": 474
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 390.21875,
+          "width": 296,
+          "height": 294.75,
+          "documentY": 390.21875
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 702.96875,
+          "width": 296,
+          "height": 720.90625,
+          "documentY": 702.96875
+        }
+      }
+    },
+    {
+      "name": "installed-320-inspect",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved&surface=shell.statusStrip#review",
+      "width": 320,
+      "height": 800,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BUTTON",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 296,
+          "height": 362.21875,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 262,
+          "height": 109.40625,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 310.03125,
+          "width": 262,
+          "height": 47.1875,
+          "documentY": 310.03125
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 369.21875,
+          "width": 262,
+          "height": 88.78125,
+          "documentY": 369.21875
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 474,
+          "width": 262,
+          "height": 484.921875,
+          "documentY": 474
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 390.21875,
+          "width": 296,
+          "height": 294.75,
+          "documentY": 390.21875
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 702.96875,
+          "width": 296,
+          "height": 720.90625,
+          "documentY": 702.96875
+        }
+      }
+    },
+    {
+      "name": "installed-320-expanded",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 320,
+      "height": 800,
+      "overflow": 0,
+      "open": true,
+      "scrollY": 0,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 296,
+          "height": 963.921875,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 262,
+          "height": 109.40625,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 310.03125,
+          "width": 262,
+          "height": 47.1875,
+          "documentY": 310.03125
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 369.21875,
+          "width": 262,
+          "height": 88.78125,
+          "documentY": 369.21875
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 474,
+          "width": 262,
+          "height": 484.921875,
+          "documentY": 474
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 991.921875,
+          "width": 296,
+          "height": 294.75,
+          "documentY": 991.921875
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 1304.671875,
+          "width": 296,
+          "height": 720.90625,
+          "documentY": 1304.671875
+        }
+      }
+    },
+    {
+      "name": "installed-390-collapsed",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BODY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 303.25,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 251.0625,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 251.0625
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 310.25,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 310.25
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 415.03125,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 415.03125
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 331.25,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 331.25
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 573.78125,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 573.78125
+        }
+      }
+    },
+    {
+      "name": "installed-390-inspect",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved&surface=shell.statusStrip#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BUTTON",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 303.25,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 251.0625,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 251.0625
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 310.25,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 310.25
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 415.03125,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 415.03125
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 331.25,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 331.25
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 573.78125,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 573.78125
+        }
+      }
+    },
+    {
+      "name": "installed-390-expanded",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": true,
+      "scrollY": 0,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 861.375,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 251.0625,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 251.0625
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 310.25,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 310.25
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 415.03125,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 415.03125
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 889.375,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 889.375
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 1131.90625,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 1131.90625
+        }
+      }
+    },
+    {
+      "name": "installed-390-text200-collapsed",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 797.765625,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 99.78125,
+          "width": 332,
+          "height": 291.8125,
+          "documentY": 99.78125
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 675.984375,
+          "width": 332,
+          "height": 116.78125,
+          "documentY": 675.984375
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 804.765625,
+          "width": 332,
+          "height": 158.390625,
+          "documentY": 804.765625
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 979.15625,
+          "width": 332,
+          "height": 786.34375,
+          "documentY": 979.15625
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 825.765625,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 825.765625
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 1068.296875,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 1068.296875
+        }
+      }
+    },
+    {
+      "name": "installed-390-text200-provenance",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": true,
+      "scrollY": 950,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": -938,
+          "width": 366,
+          "height": 1770.5,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": -850.21875,
+          "width": 332,
+          "height": 291.8125,
+          "documentY": 99.78125
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": -274.015625,
+          "width": 332,
+          "height": 116.78125,
+          "documentY": 675.984375
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": -145.234375,
+          "width": 332,
+          "height": 158.390625,
+          "documentY": 804.765625
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 29.15625,
+          "width": 332,
+          "height": 786.34375,
+          "documentY": 979.15625
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 848.5,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 1798.5
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 1091.03125,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 2041.03125
+        }
+      }
+    },
+    {
+      "name": "installed-1440-collapsed",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 1440,
+      "height": 960,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BODY",
+      "regions": {
+        ".showcase": {
+          "x": 22,
+          "y": 22,
+          "width": 1396,
+          "height": 327.15625,
+          "documentY": 22
+        },
+        ".showcaseCopy h1": {
+          "x": 43,
+          "y": 65.9375,
+          "width": 860,
+          "height": 111.34375,
+          "documentY": 65.9375
+        },
+        ".traceSetup > summary": {
+          "x": 43,
+          "y": 280.96875,
+          "width": 1354,
+          "height": 47.1875,
+          "documentY": 280.96875
+        },
+        ".showcaseActions": {
+          "x": 43,
+          "y": 340.15625,
+          "width": 938,
+          "height": 39.390625,
+          "documentY": 340.15625
+        },
+        ".launchCard": {
+          "x": 997,
+          "y": 340.15625,
+          "width": 400,
+          "height": 248.453125,
+          "documentY": 340.15625
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 22,
+          "y": 365.15625,
+          "width": 1396,
+          "height": 131.78125,
+          "documentY": 365.15625
+        },
+        ".liveGraphRail": {
+          "x": 22,
+          "y": 514.9375,
+          "width": 1396,
+          "height": 602.953125,
+          "documentY": 514.9375
+        }
+      }
+    },
+    {
+      "name": "installed-1440-inspect",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved&surface=shell.statusStrip#review",
+      "width": 1440,
+      "height": 960,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BUTTON",
+      "regions": {
+        ".showcase": {
+          "x": 22,
+          "y": 22,
+          "width": 1396,
+          "height": 327.15625,
+          "documentY": 22
+        },
+        ".showcaseCopy h1": {
+          "x": 43,
+          "y": 65.9375,
+          "width": 860,
+          "height": 111.34375,
+          "documentY": 65.9375
+        },
+        ".traceSetup > summary": {
+          "x": 43,
+          "y": 280.96875,
+          "width": 1354,
+          "height": 47.1875,
+          "documentY": 280.96875
+        },
+        ".showcaseActions": {
+          "x": 43,
+          "y": 340.15625,
+          "width": 938,
+          "height": 39.390625,
+          "documentY": 340.15625
+        },
+        ".launchCard": {
+          "x": 997,
+          "y": 340.15625,
+          "width": 400,
+          "height": 248.453125,
+          "documentY": 340.15625
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 22,
+          "y": 365.15625,
+          "width": 1396,
+          "height": 131.78125,
+          "documentY": 365.15625
+        },
+        ".liveGraphRail": {
+          "x": 22,
+          "y": 514.9375,
+          "width": 1396,
+          "height": 602.953125,
+          "documentY": 514.9375
+        }
+      }
+    },
+    {
+      "name": "installed-1440-expanded",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 1440,
+      "height": 960,
+      "overflow": 0,
+      "open": true,
+      "scrollY": 0,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 22,
+          "y": 22,
+          "width": 1396,
+          "height": 587.609375,
+          "documentY": 22
+        },
+        ".showcaseCopy h1": {
+          "x": 43,
+          "y": 65.9375,
+          "width": 860,
+          "height": 111.34375,
+          "documentY": 65.9375
+        },
+        ".traceSetup > summary": {
+          "x": 43,
+          "y": 280.96875,
+          "width": 1354,
+          "height": 47.1875,
+          "documentY": 280.96875
+        },
+        ".showcaseActions": {
+          "x": 43,
+          "y": 340.15625,
+          "width": 938,
+          "height": 39.390625,
+          "documentY": 340.15625
+        },
+        ".launchCard": {
+          "x": 997,
+          "y": 340.15625,
+          "width": 400,
+          "height": 248.453125,
+          "documentY": 340.15625
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 22,
+          "y": 625.609375,
+          "width": 1396,
+          "height": 131.78125,
+          "documentY": 625.609375
+        },
+        ".liveGraphRail": {
+          "x": 22,
+          "y": 775.390625,
+          "width": 1396,
+          "height": 602.953125,
+          "documentY": 775.390625
+        }
+      }
+    },
+    {
+      "name": "installed-loading",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BODY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 280.75,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 228.5625,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 228.5625
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 287.75,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 287.75
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 392.53125,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 392.53125
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": null,
+        ".liveGraphRail": null
+      }
+    },
+    {
+      "name": "installed-error",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "BODY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 373.125,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 320.9375,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 320.9375
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 380.125,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 380.125
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 484.90625,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 484.90625
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": null,
+        ".liveGraphRail": null
+      }
+    },
+    {
+      "name": "installed-recovered-sustained",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": false,
+      "scrollY": 0,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 303.25,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 251.0625,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 251.0625
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 310.25,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 310.25
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 415.03125,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 415.03125
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 331.25,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 331.25
+        },
+        ".liveGraphRail": {
+          "x": 12,
+          "y": 573.78125,
+          "width": 366,
+          "height": 682.28125,
+          "documentY": 573.78125
+        }
+      }
+    },
+    {
+      "name": "installed-empty",
+      "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "open": true,
+      "scrollY": 0,
+      "active": "SUMMARY",
+      "regions": {
+        ".showcase": {
+          "x": 12,
+          "y": 12,
+          "width": 366,
+          "height": 861.375,
+          "documentY": 12
+        },
+        ".showcaseCopy h1": {
+          "x": 29,
+          "y": 51.9375,
+          "width": 332,
+          "height": 72.9375,
+          "documentY": 51.9375
+        },
+        ".traceSetup > summary": {
+          "x": 29,
+          "y": 251.0625,
+          "width": 332,
+          "height": 47.1875,
+          "documentY": 251.0625
+        },
+        ".showcaseActions": {
+          "x": 29,
+          "y": 310.25,
+          "width": 332,
+          "height": 88.78125,
+          "documentY": 310.25
+        },
+        ".launchCard": {
+          "x": 29,
+          "y": 415.03125,
+          "width": 332,
+          "height": 441.34375,
+          "documentY": 415.03125
+        },
+        ".coachPanel": null,
+        ".coachList": null,
+        ".coachDetail": null,
+        ".coachEmpty": {
+          "x": 12,
+          "y": 889.375,
+          "width": 366,
+          "height": 224.53125,
+          "documentY": 889.375
+        },
+        ".liveGraphRail": null
+      }
+    }
+  ],
+  "responses": [
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/css/7bf7ca5de23c5d22.css",
+      "bytes": 14580,
+      "sha256": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/webpack-43c49664112e2c76.js",
+      "bytes": 4842,
+      "sha256": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/main-app-0ab597710ddfd338.js",
+      "bytes": 557,
+      "sha256": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/app/nodetrace/page-9a91ac9668255985.js",
+      "bytes": 3487,
+      "sha256": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/484.41411c99df45fb80.js",
+      "bytes": 51781,
+      "sha256": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/css/1383a2b9f3290658.css",
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/nodetrace-state.json",
+      "state": true,
+      "sha256": "11ce171e7021ec817edcb7585f11aec1ad65dfb2a1e57426ced25ff57cf083aa",
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/css/7bf7ca5de23c5d22.css",
+      "bytes": 14580,
+      "sha256": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/webpack-43c49664112e2c76.js",
+      "bytes": 4842,
+      "sha256": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/main-app-0ab597710ddfd338.js",
+      "bytes": 557,
+      "sha256": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/app/nodetrace/page-9a91ac9668255985.js",
+      "bytes": 3487,
+      "sha256": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/484.41411c99df45fb80.js",
+      "bytes": 51781,
+      "sha256": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/css/1383a2b9f3290658.css",
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/nodetrace-state.json",
+      "state": true,
+      "sha256": "11ce171e7021ec817edcb7585f11aec1ad65dfb2a1e57426ced25ff57cf083aa",
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/css/7bf7ca5de23c5d22.css",
+      "bytes": 14580,
+      "sha256": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/webpack-43c49664112e2c76.js",
+      "bytes": 4842,
+      "sha256": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/main-app-0ab597710ddfd338.js",
+      "bytes": 557,
+      "sha256": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/app/nodetrace/page-9a91ac9668255985.js",
+      "bytes": 3487,
+      "sha256": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/css/1383a2b9f3290658.css",
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/484.41411c99df45fb80.js",
+      "bytes": 51781,
+      "sha256": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "actual",
+      "url": "http://127.0.0.1:4966/nodetrace-state.json",
+      "state": true,
+      "sha256": "11ce171e7021ec817edcb7585f11aec1ad65dfb2a1e57426ced25ff57cf083aa",
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/css/7bf7ca5de23c5d22.css",
+      "bytes": 14580,
+      "sha256": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/webpack-43c49664112e2c76.js",
+      "bytes": 4842,
+      "sha256": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/main-app-0ab597710ddfd338.js",
+      "bytes": 557,
+      "sha256": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/app/nodetrace/page-9a91ac9668255985.js",
+      "bytes": 3487,
+      "sha256": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/484.41411c99df45fb80.js",
+      "bytes": 51781,
+      "sha256": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/css/1383a2b9f3290658.css",
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "transport-recovery",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/css/7bf7ca5de23c5d22.css",
+      "bytes": 14580,
+      "sha256": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/webpack-43c49664112e2c76.js",
+      "bytes": 4842,
+      "sha256": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/main-app-0ab597710ddfd338.js",
+      "bytes": 557,
+      "sha256": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/app/nodetrace/page-9a91ac9668255985.js",
+      "bytes": 3487,
+      "sha256": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/css/1383a2b9f3290658.css",
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/484.41411c99df45fb80.js",
+      "bytes": 51781,
+      "sha256": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "asset": true,
+      "exact": true
+    },
+    {
+      "scenario": "empty-input",
+      "url": "http://127.0.0.1:4966/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "asset": true,
+      "exact": true
+    }
+  ],
+  "logs": [
+    {
+      "scenario": "actual",
+      "type": "warning",
+      "text": "[.WebGL-0x6a64001b9400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "scenario": "actual",
+      "type": "warning",
+      "text": "[.WebGL-0x6a64001b8e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "scenario": "actual",
+      "type": "warning",
+      "text": "[.WebGL-0x6a64001ba000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "scenario": "actual",
+      "type": "warning",
+      "text": "[.WebGL-0x6a64001b9400]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "scenario": "transport-recovery",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+    }
+  ],
+  "sourceBefore": {
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "dist/assets/index-CMDYJMwH.css": "1883e6be7f021825d378936c6d8e250551442fa9b1f6046baab923e330a021f2",
+    "dist/assets/index-p9ewKNk0.js": "5d4a2a75f2933d2105d6f1bacc938826fd78b982cdbd0bb3987cea44246ff925",
+    "dist/captures/coach-step-01-artifact-entry-ide.png": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+    "dist/captures/coach-step-01-artifact-entry-minimap.svg": "4546bb747da97f3059245858fbd617eea189d9412c01177539dda97f14c198a5",
+    "dist/captures/coach-step-01-artifact-entry-ui.png": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+    "dist/captures/coach-step-02-detail-tabs-ide.png": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+    "dist/captures/coach-step-02-detail-tabs-minimap.svg": "5bd23c282f0186e42b5b3b18be6166853e19e50dff341f67318b349c76c2f3a4",
+    "dist/captures/coach-step-02-detail-tabs-ui.png": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+    "dist/captures/coach-step-03-trace-data-ide.png": "7ae6e759d2e0aa0b09009addcca8c773c7a563e8a4390a3694cc1ee16ee8cb48",
+    "dist/captures/coach-step-03-trace-data-minimap.svg": "819c9d199321fe55d25d84a738626ab86235b6092a9aefc0a8edda391c411787",
+    "dist/captures/coach-step-03-trace-data-ui.png": "7b10c55f8c15e0d238cf4e09b1c8077376a3958eefce24b70ef57d80c377c309",
+    "dist/captures/coach-step-04-step-row-ide.png": "d02def1baf506a4e7c9f97e56e01eaf06ce0895ae4719f70a1908626d6d12155",
+    "dist/captures/coach-step-04-step-row-minimap.svg": "dfd793fb3b533a2a41ca760efbfb61f2f8aaf9dc594deae387075bb8d2de298a",
+    "dist/captures/coach-step-04-step-row-ui.png": "da5b3e8f61cf1cea71d394151afc72723f4b59911bfb5c6161e15a3bfd6d67ce",
+    "dist/captures/coach-step-05-flow-ide.png": "1af8c71406ccc79a243e6204c65c29c7bdfadc740fd38f7f4dcbe1c600d0ef19",
+    "dist/captures/coach-step-05-flow-minimap.svg": "fe0adc1c805a9cc744c8841c494a62eac9bc2e907edc61b711f520adc63b07d8",
+    "dist/captures/coach-step-05-flow-ui.png": "3702c6232ed2d54d840c48ed96aa0cdb25e6a8decc12280f9f6d0ad3dd3e9c13",
+    "dist/captures/coach-step-06-style-ide.png": "30169a13fc5515c0379f1bb55d236a299cad4590ad9155c796f2fa91476aac34",
+    "dist/captures/coach-step-06-style-minimap.svg": "c9d848461d0a7ca29f8cda23ac2b66075388739a9db97fae5edb8f2bf87a2926",
+    "dist/captures/coach-step-06-style-ui.png": "c2267920f05c61d046ad7af897a30cbab9ae38809b4aaef1ef12adde97745d90",
+    "dist/captures/noderoom-real-capture-manifest.json": "1b242ac5442dbb15e39fc9cd9784d5a3ad19236a247af374ece2fea2a296944f",
+    "dist/captures/noderoom-trace-knowledge-graph.json": "74b63513c13f00445e9bf6224137ac55ce7769748eb875d410b625a203e728d5",
+    "dist/favicon.svg": "5503f0142f9b831d7eefc2e6b08cb7f1a194898cfd8baa98122195f5bdc0a9c3",
+    "dist/index.html": "9b3b3b8b266255697da04ab3733abb9d88646c2b20ada7c78d738214103dcca4",
+    "dist/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "scripts/setup-disclosure-proof.mjs": "f50874a15e7d03914fd9e573a866827915a5b6b07c60bbf5664bf4318e259597",
+    "src/DemoDashboard.tsx": "89865a4eb9144c88fa32b5e97e4b7d8c77465c41752ba2bd95486701c63ce662",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "513658a52658ddadc4ed0ace3dc5e146b416cb236ee6b663724e72c54042a534",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4"
+  },
+  "sourceAfter": {
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "dist/assets/index-CMDYJMwH.css": "1883e6be7f021825d378936c6d8e250551442fa9b1f6046baab923e330a021f2",
+    "dist/assets/index-p9ewKNk0.js": "5d4a2a75f2933d2105d6f1bacc938826fd78b982cdbd0bb3987cea44246ff925",
+    "dist/captures/coach-step-01-artifact-entry-ide.png": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+    "dist/captures/coach-step-01-artifact-entry-minimap.svg": "4546bb747da97f3059245858fbd617eea189d9412c01177539dda97f14c198a5",
+    "dist/captures/coach-step-01-artifact-entry-ui.png": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+    "dist/captures/coach-step-02-detail-tabs-ide.png": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+    "dist/captures/coach-step-02-detail-tabs-minimap.svg": "5bd23c282f0186e42b5b3b18be6166853e19e50dff341f67318b349c76c2f3a4",
+    "dist/captures/coach-step-02-detail-tabs-ui.png": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+    "dist/captures/coach-step-03-trace-data-ide.png": "7ae6e759d2e0aa0b09009addcca8c773c7a563e8a4390a3694cc1ee16ee8cb48",
+    "dist/captures/coach-step-03-trace-data-minimap.svg": "819c9d199321fe55d25d84a738626ab86235b6092a9aefc0a8edda391c411787",
+    "dist/captures/coach-step-03-trace-data-ui.png": "7b10c55f8c15e0d238cf4e09b1c8077376a3958eefce24b70ef57d80c377c309",
+    "dist/captures/coach-step-04-step-row-ide.png": "d02def1baf506a4e7c9f97e56e01eaf06ce0895ae4719f70a1908626d6d12155",
+    "dist/captures/coach-step-04-step-row-minimap.svg": "dfd793fb3b533a2a41ca760efbfb61f2f8aaf9dc594deae387075bb8d2de298a",
+    "dist/captures/coach-step-04-step-row-ui.png": "da5b3e8f61cf1cea71d394151afc72723f4b59911bfb5c6161e15a3bfd6d67ce",
+    "dist/captures/coach-step-05-flow-ide.png": "1af8c71406ccc79a243e6204c65c29c7bdfadc740fd38f7f4dcbe1c600d0ef19",
+    "dist/captures/coach-step-05-flow-minimap.svg": "fe0adc1c805a9cc744c8841c494a62eac9bc2e907edc61b711f520adc63b07d8",
+    "dist/captures/coach-step-05-flow-ui.png": "3702c6232ed2d54d840c48ed96aa0cdb25e6a8decc12280f9f6d0ad3dd3e9c13",
+    "dist/captures/coach-step-06-style-ide.png": "30169a13fc5515c0379f1bb55d236a299cad4590ad9155c796f2fa91476aac34",
+    "dist/captures/coach-step-06-style-minimap.svg": "c9d848461d0a7ca29f8cda23ac2b66075388739a9db97fae5edb8f2bf87a2926",
+    "dist/captures/coach-step-06-style-ui.png": "c2267920f05c61d046ad7af897a30cbab9ae38809b4aaef1ef12adde97745d90",
+    "dist/captures/noderoom-real-capture-manifest.json": "1b242ac5442dbb15e39fc9cd9784d5a3ad19236a247af374ece2fea2a296944f",
+    "dist/captures/noderoom-trace-knowledge-graph.json": "74b63513c13f00445e9bf6224137ac55ce7769748eb875d410b625a203e728d5",
+    "dist/favicon.svg": "5503f0142f9b831d7eefc2e6b08cb7f1a194898cfd8baa98122195f5bdc0a9c3",
+    "dist/index.html": "9b3b3b8b266255697da04ab3733abb9d88646c2b20ada7c78d738214103dcca4",
+    "dist/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "scripts/setup-disclosure-proof.mjs": "f50874a15e7d03914fd9e573a866827915a5b6b07c60bbf5664bf4318e259597",
+    "src/DemoDashboard.tsx": "89865a4eb9144c88fa32b5e97e4b7d8c77465c41752ba2bd95486701c63ce662",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "513658a52658ddadc4ed0ace3dc5e146b416cb236ee6b663724e72c54042a534",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4"
+  },
+  "installedBefore": {
+    ".next/BUILD_ID": "3a7544f0829a6b23ecaa0bc9c2755fbe35a358b5d90ec7db72bd5b2ddfaae11a",
+    ".next/static/7J5NoeV5CMRjNRTCg6Muc/_buildManifest.js": "53d79fa0952962d7cc7b59a79c8ef4d353ad59142c931fad0cfd1a3db5d544e9",
+    ".next/static/7J5NoeV5CMRjNRTCg6Muc/_ssgManifest.js": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+    ".next/static/chunks/139.7a5a8e93a21948c1.js": "632898ee9bdecfb4bb7ad2b2524754908cc1dd253de92c603a62934bb126ed1c",
+    ".next/static/chunks/255-37e0f0325134c4d7.js": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+    ".next/static/chunks/484.41411c99df45fb80.js": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+    ".next/static/chunks/4bd1b696-c023c6e3521b1417.js": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+    ".next/static/chunks/5a255377.58c8dcfdf915e228.js": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+    ".next/static/chunks/646.f342b7cffc01feb0.js": "ab1467e26bb6750f89c9e52b89b17111bb38371d8b15c1463d2de7998597d476",
+    ".next/static/chunks/941.b31d29c9d2dae6db.js": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+    ".next/static/chunks/app/_not-found/page-e9088ded4e4c723d.js": "1abbbc879bc36f2cb1e869d22e92b25c636faffd372f305180ed4953b8252489",
+    ".next/static/chunks/app/layout-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/app/nodetrace/page-9a91ac9668255985.js": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+    ".next/static/chunks/app/page-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/framework-085cf39580498177.js": "102db8738ae9067cbd62c9625e9f6e567b7bbe7c83bebeb0b88f8fb40f086826",
+    ".next/static/chunks/main-01fdee0a1cd4ae59.js": "99f8d9ec31d571681e3351b6fd0679d592e89d470629fe28b188f81c1e6d5bc6",
+    ".next/static/chunks/main-app-0ab597710ddfd338.js": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+    ".next/static/chunks/pages/_app-82835f42865034fa.js": "4e546f7f9a327da75326865d2dcf898f976f5414d7dbb1296cd21a96de079ca7",
+    ".next/static/chunks/pages/_error-013f4188946cdd04.js": "79c3e9093cd1a5220e778a8baf10128d866617fb65f6e2ef1a3316c4c62b6deb",
+    ".next/static/chunks/polyfills-42372ed130431b0a.js": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+    ".next/static/chunks/webpack-43c49664112e2c76.js": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+    ".next/static/css/1383a2b9f3290658.css": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+    ".next/static/css/7bf7ca5de23c5d22.css": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+    "db/nodetrace.schema.sql": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "public/nodetrace-state.json": "11ce171e7021ec817edcb7585f11aec1ad65dfb2a1e57426ced25ff57cf083aa",
+    "scripts/nodetrace-init.mjs": "c900243bea5d73c598dc58e5abefba7c247212485a9c8a92b7897d193e48f369",
+    "scripts/nodetrace-smoke.mjs": "bf457ef32777f901a3304bac0c1badee480d90d022e877e72e78d790dd01af74",
+    "src/app/layout.tsx": "806a78943199cddbe9dc56447e677e4c4fa363e2922b6639277fdd452bdff3ec",
+    "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+    "src/app/page.tsx": "3fd252d1b85d2c0fd351b34260faa7131419236981f07793159b2f2fb294c914",
+    "src/nodetrace-demo/DemoDashboard.tsx": "b8e0184cb0c71a2e2e92d7d7f8c887eeefb60d928ffd8858cd598d3e241e83ae",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/styles.css": "513658a52658ddadc4ed0ace3dc5e146b416cb236ee6b663724e72c54042a534",
+    "src/nodetrace/LiveGraphRail.tsx": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+    "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+    "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/nodetrace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/nodetrace/vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "src/nodetrace/vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "src/nodetrace/vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "src/nodetrace/vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "src/nodetrace/vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "src/nodetrace/vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "src/nodetrace/vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94"
+  },
+  "installedAfter": {
+    ".next/BUILD_ID": "3a7544f0829a6b23ecaa0bc9c2755fbe35a358b5d90ec7db72bd5b2ddfaae11a",
+    ".next/static/7J5NoeV5CMRjNRTCg6Muc/_buildManifest.js": "53d79fa0952962d7cc7b59a79c8ef4d353ad59142c931fad0cfd1a3db5d544e9",
+    ".next/static/7J5NoeV5CMRjNRTCg6Muc/_ssgManifest.js": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+    ".next/static/chunks/139.7a5a8e93a21948c1.js": "632898ee9bdecfb4bb7ad2b2524754908cc1dd253de92c603a62934bb126ed1c",
+    ".next/static/chunks/255-37e0f0325134c4d7.js": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+    ".next/static/chunks/484.41411c99df45fb80.js": "865e0bb3c964328a36d71211b10e65de5ba8bdb9096b1484ee49106ff384bbbf",
+    ".next/static/chunks/4bd1b696-c023c6e3521b1417.js": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+    ".next/static/chunks/5a255377.58c8dcfdf915e228.js": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+    ".next/static/chunks/646.f342b7cffc01feb0.js": "ab1467e26bb6750f89c9e52b89b17111bb38371d8b15c1463d2de7998597d476",
+    ".next/static/chunks/941.b31d29c9d2dae6db.js": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+    ".next/static/chunks/app/_not-found/page-e9088ded4e4c723d.js": "1abbbc879bc36f2cb1e869d22e92b25c636faffd372f305180ed4953b8252489",
+    ".next/static/chunks/app/layout-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/app/nodetrace/page-9a91ac9668255985.js": "82048281af286de572eb47278433e7b6c199ed0c4c186415201ebb2c63943564",
+    ".next/static/chunks/app/page-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/framework-085cf39580498177.js": "102db8738ae9067cbd62c9625e9f6e567b7bbe7c83bebeb0b88f8fb40f086826",
+    ".next/static/chunks/main-01fdee0a1cd4ae59.js": "99f8d9ec31d571681e3351b6fd0679d592e89d470629fe28b188f81c1e6d5bc6",
+    ".next/static/chunks/main-app-0ab597710ddfd338.js": "0e5ab8f897232d965a5ee3715688b3924e3bf224450c2cacc9df7e4b2228d6ab",
+    ".next/static/chunks/pages/_app-82835f42865034fa.js": "4e546f7f9a327da75326865d2dcf898f976f5414d7dbb1296cd21a96de079ca7",
+    ".next/static/chunks/pages/_error-013f4188946cdd04.js": "79c3e9093cd1a5220e778a8baf10128d866617fb65f6e2ef1a3316c4c62b6deb",
+    ".next/static/chunks/polyfills-42372ed130431b0a.js": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+    ".next/static/chunks/webpack-43c49664112e2c76.js": "fe6640f2c8ad3a3e70761e2f8661cceced27db33d2cbf926573f1e87d4d557d0",
+    ".next/static/css/1383a2b9f3290658.css": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+    ".next/static/css/7bf7ca5de23c5d22.css": "6ef219b21c47ed3a1a2634ac6ee76aeca68e4c4337bc648c9dd9c01ac6d9dc46",
+    "db/nodetrace.schema.sql": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "public/nodetrace-state.json": "11ce171e7021ec817edcb7585f11aec1ad65dfb2a1e57426ced25ff57cf083aa",
+    "scripts/nodetrace-init.mjs": "c900243bea5d73c598dc58e5abefba7c247212485a9c8a92b7897d193e48f369",
+    "scripts/nodetrace-smoke.mjs": "bf457ef32777f901a3304bac0c1badee480d90d022e877e72e78d790dd01af74",
+    "src/app/layout.tsx": "806a78943199cddbe9dc56447e677e4c4fa363e2922b6639277fdd452bdff3ec",
+    "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+    "src/app/page.tsx": "3fd252d1b85d2c0fd351b34260faa7131419236981f07793159b2f2fb294c914",
+    "src/nodetrace-demo/DemoDashboard.tsx": "b8e0184cb0c71a2e2e92d7d7f8c887eeefb60d928ffd8858cd598d3e241e83ae",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/styles.css": "513658a52658ddadc4ed0ace3dc5e146b416cb236ee6b663724e72c54042a534",
+    "src/nodetrace/LiveGraphRail.tsx": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+    "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+    "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/nodetrace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/nodetrace/vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "src/nodetrace/vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "src/nodetrace/vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "src/nodetrace/vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "src/nodetrace/vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "src/nodetrace/vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "src/nodetrace/vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94"
+  },
+  "ok": true,
+  "limits": [
+    "Actual source and normal installed fixture used without substitution in normal cases.",
+    "Loading/error/empty are explicitly routed local fixtures, not provider incidents.",
+    "200 percent changes all header computed text sizes; it is not browser zoom or whole-app certification.",
+    "Viewport-only screenshots, no field performance or complete repo grade."
+  ]
+}

@@ -1,0 +1,193 @@
+diff --git a/.tours/01-primary-user-flow.tour b/.tours/01-primary-user-flow.tour
+index 51186ea..1d86b02 100644
+--- a/.tours/01-primary-user-flow.tour
++++ b/.tours/01-primary-user-flow.tour
+@@ -21,7 +21,7 @@
+     },
+     {
+       "file": "src/DemoDashboard.tsx",
+-      "line": 147,
++      "line": 153,
+       "description": "A normal Inspect trace button calls the existing useTraceLens().openHit API. Keyboard and touch users have a visible entrypoint; hosts can add their own controls with the same API. Historical D4 is repaired in this candidate, pending final judge."
+     },
+     {
+diff --git a/.tours/03-debug-and-recovery.tour b/.tours/03-debug-and-recovery.tour
+index 7c5ece7..7ebc2fd 100644
+--- a/.tours/03-debug-and-recovery.tour
++++ b/.tours/03-debug-and-recovery.tour
+@@ -6,7 +6,7 @@
+   "steps": [
+     {
+       "file": "src/DemoDashboard.tsx",
+-      "line": 54,
++      "line": 55,
+       "description": "Missing, malformed, oversized, invalid or timed-out state produces an alert and Retry loading trace. Retry starts a new abortable request; cleanup prevents a stale request from replacing the current state. Inspect controls stay disabled until data is ready."
+     },
+     {
+diff --git a/docs/START_HERE.md b/docs/START_HERE.md
+index 48d788a..b7a7047 100644
+--- a/docs/START_HERE.md
++++ b/docs/START_HERE.md
+@@ -114,15 +114,17 @@ provider also receives `false`.
+ an alert and **Retry loading trace**. Loading is announced and inspect controls
+ remain disabled until the request succeeds. Effect cleanup aborts the request
+ and prevents an obsolete response from replacing current state.
+-**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:72`
+-(`data-nodetrace-surface="shell.statusStrip"`) and a normal inspect control.
++**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:73`
++(`data-nodetrace-surface={heroSurfaceId}`) and a normal inspect control. Both use the selected coach step's surface, or the installed sample surface when there is no coach. The native
++**Setup and trace provenance** disclosure reveals the existing commands and
++snapshot details without changing the selected trace.
+ 
+ ---
+ 
+ ## Step 3 — Open the lens through a normal control or the existing shortcut
+ 
+ **Files:** `src/DemoDashboard.tsx`, `src/trace/TraceLensProvider.tsx`
+-**Symbols:** `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) and
++**Symbols:** `src/DemoDashboard.tsx:153` (`function InspectTraceButton`) and
+ `src/trace/TraceLensProvider.tsx:45` (`const openHit = useCallback`)
+ **Called by:** an Inspect trace button, a host control or the modifier-click listener
+ **Calls next:** `openHit`; modifier-click first calls `resolveTraceHit`
+@@ -281,7 +283,7 @@ not possible.
+ 
+ **File:** `src/trace/TraceLensPanel.tsx`
+ **Symbol:** `src/trace/TraceLensPanel.tsx:7` (`export function TraceLensPanel({`)
+-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:142`
++**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:148`
+ (`<TraceLensPanel state={state} />`)
+ **Calls next:** `src/trace/TraceLensPanel.tsx:184` (`function filterByHit`)
+ 
+@@ -327,7 +329,7 @@ or derives builder capability from a URL.
+ 
+ **File:** `src/trace/LiveGraphRail.tsx`
+ **Symbol:** `src/trace/LiveGraphRail.tsx:27` (`export function LiveGraphRail`)
+-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:137`
++**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:143`
+ (`<LiveGraphRail traces={state.traces} />`), only when `state.traces` is non-empty
+ **Calls next:** `GraphSession.observe` and the `NodeGraph` renderer in
+ `vendor/nodegraph-live/`
+diff --git a/docs/codebase/CONCERNS.md b/docs/codebase/CONCERNS.md
+index d5982c4..5e96ac0 100644
+--- a/docs/codebase/CONCERNS.md
++++ b/docs/codebase/CONCERNS.md
+@@ -63,7 +63,7 @@ failed observations have not been rescored.
+ 
+ The earlier measurements found no opener after repeated Tab presses or a mobile
+ tap; focus stayed behind the role-only panel. The candidate's header and coach
+-use `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) to call the
++use `src/DemoDashboard.tsx:153` (`function InspectTraceButton`) to call the
+ existing `useTraceLens().openHit` API from a normal button. The provider's
+ Ctrl/Cmd-click shortcut remains available. Hosts can supply their own buttons
+ through that API without adopting the demo's routing policy.
+@@ -95,7 +95,7 @@ receipt semantics are outside this UI repair; this note does not close all of D3
+ 
+ ## 5. Snapshot labels, empty states and URL selection have candidate repairs
+ 
+-`src/DemoDashboard.tsx:165` (`const sourceModeLabel =`) labels the loaded coach
++`src/DemoDashboard.tsx:171` (`const sourceModeLabel =`) labels the loaded coach
+ as **captured checkout** or **bundled snapshot**. The happy-path sample says no
+ coach captures are loaded and gives the snapshot setup command. The old claim
+ that a snapshot was a full local checkout is preserved only as historical
+diff --git a/src/DemoDashboard.tsx b/src/DemoDashboard.tsx
+index 2b5b0fb..1e159cb 100644
+--- a/src/DemoDashboard.tsx
++++ b/src/DemoDashboard.tsx
+@@ -35,6 +35,7 @@ function DemoContent({ installed }: { installed: boolean }) {
+     () => coach?.steps.find((step) => step.id === navigation.step) ?? coach?.steps.find((step) => step.id === coach.activeStepId) ?? coach?.steps[0],
+     [navigation.step, coach],
+   );
++  const heroSurfaceId = activeCoachStep?.surfaceId ?? "shell.statusStrip";
+ 
+   useEffect(() => {
+     const controller = new AbortController();
+@@ -69,7 +70,7 @@ function DemoContent({ installed }: { installed: boolean }) {
+     <>
+       <main className="shell" tabIndex={-1}>
+         <section className="workspace">
+-          <header className="showcase" data-nodetrace-surface="shell.statusStrip">
++          <header className="showcase" data-nodetrace-surface={heroSurfaceId}>
+             <div className="showcaseCopy">
+               <p className="eyebrow">
+                 <Route size={13} aria-hidden="true" /> NodeRoom codebase trace
+@@ -77,7 +78,11 @@ function DemoContent({ installed }: { installed: boolean }) {
+               <h1>Portable trace UI for agent apps.</h1>
+               <p role="status" aria-live="polite">{loadStatus === "loading" ? "Loading the local trace file…" : loadStatus === "error" ? "Trace data could not be loaded." : coach ? `Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from ${coach.sourceMode === "live" ? "a captured checkout" : "the bundled snapshot"}.` : state.session.summary}</p>
+               {loadStatus === "error" ? <div className="loadError" role="alert"><p>{loadError}</p><button type="button" className="inspectTrace" onClick={() => setAttempt((value) => value + 1)}>Retry loading trace</button></div> : null}
+-              <InspectTraceButton surfaceId="shell.statusStrip" disabled={loadStatus !== "ready"} />
++              <InspectTraceButton surfaceId={heroSurfaceId} disabled={loadStatus !== "ready"} />
++            </div>
++            <details className="traceSetup">
++              <summary>Setup and trace provenance</summary>
++              <div className="traceSetupContent">
+               <div className="showcaseActions">
+                 {installed ? <div className="command"><Terminal size={15} aria-hidden="true" /><code translate="no">npm run nodetrace:happy-path</code></div> : <><div className="command">
+                   <Terminal size={15} aria-hidden="true" />
+@@ -95,7 +100,6 @@ function DemoContent({ installed }: { installed: boolean }) {
+                   <CircleDot size={13} aria-hidden="true" /> no API key required
+                 </span>
+               </div>
+-            </div>
+             <aside className="launchCard" aria-label="Trace Coach launch path">
+               <div className="launchHead">
+                 <span>{coach?.sourceMode === "live" ? "Captured checkout" : coach ? "Bundled snapshot" : "SQLite sample"}</span>
+@@ -122,6 +126,8 @@ function DemoContent({ installed }: { installed: boolean }) {
+                 <span>{loadStatus !== "ready" ? "Trace evidence will appear after the state file loads successfully." : coach ? "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent." : "The SQLite sample contains trace events. No Trace Coach captures are loaded yet."}</span>
+               </div>
+             </aside>
++              </div>
++            </details>
+           </header>
+ 
+           {coach && activeCoachStep ? (
+diff --git a/src/styles.css b/src/styles.css
+index 01e7e22..0c0f061 100644
+--- a/src/styles.css
++++ b/src/styles.css
+@@ -63,7 +63,7 @@ button {
+ 
+ .showcase {
+   display: grid;
+-  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
++  grid-template-columns: minmax(0, 1fr);
+   gap: 16px;
+   min-height: 246px;
+   border: 1px solid var(--line);
+@@ -119,6 +119,28 @@ button {
+   margin-top: 16px;
+ }
+ 
++.traceSetup { min-width: 0; }
++.traceSetup > summary {
++  min-height: 44px;
++  padding: 11px 12px;
++  border: 1px solid var(--line);
++  border-radius: 8px;
++  background: var(--bg-primary);
++  color: var(--text-secondary);
++  font-weight: 700;
++  overflow-wrap: anywhere;
++  cursor: pointer;
++}
++.traceSetupContent {
++  display: grid;
++  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
++  align-items: start;
++  gap: 16px;
++  margin-top: 12px;
++}
++.traceSetup .showcaseActions { margin-top: 0; }
++.traceSetup .heroStats :is(span, small, strong) { white-space: normal; overflow-wrap: anywhere; }
++
+ .command {
+   display: inline-flex;
+   align-items: center;
+@@ -746,7 +768,7 @@ button {
+ }
+ 
+ @media (max-width: 980px) {
+-  .showcase {
++  .traceSetupContent {
+     grid-template-columns: 1fr;
+   }
+ 

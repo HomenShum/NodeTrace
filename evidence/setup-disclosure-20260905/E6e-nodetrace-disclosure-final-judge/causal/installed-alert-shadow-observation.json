@@ -1,0 +1,112 @@
+{
+  "requests": 2,
+  "loading": [
+    {
+      "chain": [
+        "next-route-announcer"
+      ],
+      "tag": "DIV",
+      "id": "__next-route-announcer__",
+      "role": "alert",
+      "ariaLive": "assertive",
+      "text": "",
+      "html": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>",
+      "ownedLoadError": false,
+      "rect": {
+        "x": -1,
+        "y": 843,
+        "width": 1,
+        "height": 1
+      },
+      "computed": {
+        "position": "absolute",
+        "overflow": "hidden",
+        "clip": "rect(0px, 0px, 0px, 0px)",
+        "clipPath": "none"
+      },
+      "rootHost": "<next-route-announcer style=\"position: absolute;\"></next-route-announcer>",
+      "shadowRootHTML": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>"
+    }
+  ],
+  "failed": [
+    {
+      "chain": [],
+      "tag": "DIV",
+      "id": "",
+      "role": "alert",
+      "ariaLive": null,
+      "text": "State request failed (HTTP 503).Retry loading trace",
+      "html": "<div class=\"loadError\" role=\"alert\"><p>State request failed (HTTP 503).</p><button type=\"button\" class=\"inspectTrace\">Retry loading trace</button></div>",
+      "ownedLoadError": true,
+      "rect": {
+        "x": 29,
+        "y": 159.375,
+        "width": 332,
+        "height": 80.375
+      },
+      "computed": {
+        "position": "static",
+        "overflow": "visible",
+        "clip": "auto",
+        "clipPath": "none"
+      },
+      "rootHost": null,
+      "shadowRootHTML": null
+    },
+    {
+      "chain": [
+        "next-route-announcer"
+      ],
+      "tag": "DIV",
+      "id": "__next-route-announcer__",
+      "role": "alert",
+      "ariaLive": "assertive",
+      "text": "",
+      "html": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>",
+      "ownedLoadError": false,
+      "rect": {
+        "x": -1,
+        "y": 843,
+        "width": 1,
+        "height": 1
+      },
+      "computed": {
+        "position": "absolute",
+        "overflow": "hidden",
+        "clip": "rect(0px, 0px, 0px, 0px)",
+        "clipPath": "none"
+      },
+      "rootHost": "<next-route-announcer style=\"position: absolute;\"></next-route-announcer>",
+      "shadowRootHTML": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>"
+    }
+  ],
+  "recovered": [
+    {
+      "chain": [
+        "next-route-announcer"
+      ],
+      "tag": "DIV",
+      "id": "__next-route-announcer__",
+      "role": "alert",
+      "ariaLive": "assertive",
+      "text": "",
+      "html": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>",
+      "ownedLoadError": false,
+      "rect": {
+        "x": -1,
+        "y": 843.0625,
+        "width": 1,
+        "height": 1
+      },
+      "computed": {
+        "position": "absolute",
+        "overflow": "hidden",
+        "clip": "rect(0px, 0px, 0px, 0px)",
+        "clipPath": "none"
+      },
+      "rootHost": "<next-route-announcer style=\"position: absolute;\"></next-route-announcer>",
+      "shadowRootHTML": "<div aria-live=\"assertive\" id=\"__next-route-announcer__\" role=\"alert\" style=\"position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;\"></div>"
+    }
+  ],
+  "playwrightAlertCountAfterRecovery": 1
+}

@@ -35,6 +35,7 @@ function DemoContent({ installed }: { installed: boolean }) {
     () => coach?.steps.find((step) => step.id === navigation.step) ?? coach?.steps.find((step) => step.id === coach.activeStepId) ?? coach?.steps[0],
     [navigation.step, coach],
   );
+  const heroSurfaceId = activeCoachStep?.surfaceId ?? "shell.statusStrip";
 
   useEffect(() => {
     const controller = new AbortController();
@@ -69,7 +70,7 @@ function DemoContent({ installed }: { installed: boolean }) {
     <>
       <main className="shell" tabIndex={-1}>
         <section className="workspace">
-          <header className="showcase" data-nodetrace-surface="shell.statusStrip">
+          <header className="showcase" data-nodetrace-surface={heroSurfaceId}>
             <div className="showcaseCopy">
               <p className="eyebrow">
                 <Route size={13} aria-hidden="true" /> NodeRoom codebase trace
@@ -77,7 +78,11 @@ function DemoContent({ installed }: { installed: boolean }) {
               <h1>Portable trace UI for agent apps.</h1>
               <p role="status" aria-live="polite">{loadStatus === "loading" ? "Loading the local trace file…" : loadStatus === "error" ? "Trace data could not be loaded." : coach ? `Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from ${coach.sourceMode === "live" ? "a captured checkout" : "the bundled snapshot"}.` : state.session.summary}</p>
               {loadStatus === "error" ? <div className="loadError" role="alert"><p>{loadError}</p><button type="button" className="inspectTrace" onClick={() => setAttempt((value) => value + 1)}>Retry loading trace</button></div> : null}
-              <InspectTraceButton surfaceId="shell.statusStrip" disabled={loadStatus !== "ready"} />
+              <InspectTraceButton surfaceId={heroSurfaceId} disabled={loadStatus !== "ready"} />
+            </div>
+            <details className="traceSetup">
+              <summary>Setup and trace provenance</summary>
+              <div className="traceSetupContent">
               <div className="showcaseActions">
                 {installed ? <div className="command"><Terminal size={15} aria-hidden="true" /><code translate="no">npm run nodetrace:happy-path</code></div> : <><div className="command">
                   <Terminal size={15} aria-hidden="true" />
@@ -95,7 +100,6 @@ function DemoContent({ installed }: { installed: boolean }) {
                   <CircleDot size={13} aria-hidden="true" /> no API key required
                 </span>
               </div>
-            </div>
             <aside className="launchCard" aria-label="Trace Coach launch path">
               <div className="launchHead">
                 <span>{coach?.sourceMode === "live" ? "Captured checkout" : coach ? "Bundled snapshot" : "SQLite sample"}</span>
@@ -122,6 +126,8 @@ function DemoContent({ installed }: { installed: boolean }) {
                 <span>{loadStatus !== "ready" ? "Trace evidence will appear after the state file loads successfully." : coach ? "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent." : "The SQLite sample contains trace events. No Trace Coach captures are loaded yet."}</span>
               </div>
             </aside>
+              </div>
+            </details>
           </header>
 
           {coach && activeCoachStep ? (

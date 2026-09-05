@@ -1,0 +1,7 @@
+
+> @homenshum/nodetrace@0.1.0 happy-path
+> node scripts/init-sqlite.mjs --json-out docs/eval/nodetrace-happy-path.json
+
+nodetrace happy path: PASS 26ms
+wrote C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6e-nodetrace-disclosure-checks/isolated-happy-path.sqlite
+wrote C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6e-nodetrace-disclosure-checks/isolated-happy-path-state.json
