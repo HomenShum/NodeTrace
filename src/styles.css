@@ -732,7 +732,8 @@ button {
 }
 
 .r-tracevu-raw {
-  min-height: 560px;
+  max-height: min(560px, 65vh);
+  overflow-y: auto;
   margin: 0;
   border: 1px solid var(--line);
   border-radius: 10px;

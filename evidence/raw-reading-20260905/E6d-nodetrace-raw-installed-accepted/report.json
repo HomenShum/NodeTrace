@@ -1,0 +1,2442 @@
+{
+  "proof": "NODETRACE-RAW-READING-REGION-01",
+  "at": "2026-09-05T06:59:35.479Z",
+  "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-lU78sE",
+  "onlyCell": null,
+  "routedFixtures": "Exact retained before inputs with explicitly bound capture attachments in installed replay; representative local saved trace, not fresh production data or the normal four-trace consumer state",
+  "attachmentManifest": {
+    "captures/coach-step-01-artifact-entry-ide.png": {
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-01-artifact-entry-ide.png",
+      "consumerHasFile": false,
+      "bytes": 102076
+    },
+    "captures/coach-step-01-artifact-entry-minimap.svg": {
+      "sha256": "4546bb747da97f3059245858fbd617eea189d9412c01177539dda97f14c198a5",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-01-artifact-entry-minimap.svg",
+      "consumerHasFile": false,
+      "bytes": 5440
+    },
+    "captures/coach-step-01-artifact-entry-ui.png": {
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-01-artifact-entry-ui.png",
+      "consumerHasFile": false,
+      "bytes": 3350
+    },
+    "captures/coach-step-02-detail-tabs-ide.png": {
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-02-detail-tabs-ide.png",
+      "consumerHasFile": false,
+      "bytes": 105337
+    },
+    "captures/coach-step-02-detail-tabs-minimap.svg": {
+      "sha256": "5bd23c282f0186e42b5b3b18be6166853e19e50dff341f67318b349c76c2f3a4",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-02-detail-tabs-minimap.svg",
+      "consumerHasFile": false,
+      "bytes": 5439
+    },
+    "captures/coach-step-02-detail-tabs-ui.png": {
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-02-detail-tabs-ui.png",
+      "consumerHasFile": false,
+      "bytes": 4687
+    },
+    "captures/coach-step-03-trace-data-ide.png": {
+      "sha256": "7ae6e759d2e0aa0b09009addcca8c773c7a563e8a4390a3694cc1ee16ee8cb48",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-03-trace-data-ide.png",
+      "consumerHasFile": false,
+      "bytes": 74161
+    },
+    "captures/coach-step-03-trace-data-minimap.svg": {
+      "sha256": "819c9d199321fe55d25d84a738626ab86235b6092a9aefc0a8edda391c411787",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-03-trace-data-minimap.svg",
+      "consumerHasFile": false,
+      "bytes": 5436
+    },
+    "captures/coach-step-03-trace-data-ui.png": {
+      "sha256": "7b10c55f8c15e0d238cf4e09b1c8077376a3958eefce24b70ef57d80c377c309",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-03-trace-data-ui.png",
+      "consumerHasFile": false,
+      "bytes": 9713
+    },
+    "captures/coach-step-04-step-row-ide.png": {
+      "sha256": "d02def1baf506a4e7c9f97e56e01eaf06ce0895ae4719f70a1908626d6d12155",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-04-step-row-ide.png",
+      "consumerHasFile": false,
+      "bytes": 94697
+    },
+    "captures/coach-step-04-step-row-minimap.svg": {
+      "sha256": "dfd793fb3b533a2a41ca760efbfb61f2f8aaf9dc594deae387075bb8d2de298a",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-04-step-row-minimap.svg",
+      "consumerHasFile": false,
+      "bytes": 5437
+    },
+    "captures/coach-step-04-step-row-ui.png": {
+      "sha256": "da5b3e8f61cf1cea71d394151afc72723f4b59911bfb5c6161e15a3bfd6d67ce",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-04-step-row-ui.png",
+      "consumerHasFile": false,
+      "bytes": 33166
+    },
+    "captures/coach-step-05-flow-ide.png": {
+      "sha256": "1af8c71406ccc79a243e6204c65c29c7bdfadc740fd38f7f4dcbe1c600d0ef19",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-05-flow-ide.png",
+      "consumerHasFile": false,
+      "bytes": 79864
+    },
+    "captures/coach-step-05-flow-minimap.svg": {
+      "sha256": "fe0adc1c805a9cc744c8841c494a62eac9bc2e907edc61b711f520adc63b07d8",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-05-flow-minimap.svg",
+      "consumerHasFile": false,
+      "bytes": 5436
+    },
+    "captures/coach-step-05-flow-ui.png": {
+      "sha256": "3702c6232ed2d54d840c48ed96aa0cdb25e6a8decc12280f9f6d0ad3dd3e9c13",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-05-flow-ui.png",
+      "consumerHasFile": false,
+      "bytes": 17184
+    },
+    "captures/coach-step-06-style-ide.png": {
+      "sha256": "30169a13fc5515c0379f1bb55d236a299cad4590ad9155c796f2fa91476aac34",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-06-style-ide.png",
+      "consumerHasFile": false,
+      "bytes": 137539
+    },
+    "captures/coach-step-06-style-minimap.svg": {
+      "sha256": "c9d848461d0a7ca29f8cda23ac2b66075388739a9db97fae5edb8f2bf87a2926",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-06-style-minimap.svg",
+      "consumerHasFile": false,
+      "bytes": 5437
+    },
+    "captures/coach-step-06-style-ui.png": {
+      "sha256": "c2267920f05c61d046ad7af897a30cbab9ae38809b4aaef1ef12adde97745d90",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/coach-step-06-style-ui.png",
+      "consumerHasFile": false,
+      "bytes": 95693
+    },
+    "captures/noderoom-trace-knowledge-graph.json": {
+      "sha256": "74b63513c13f00445e9bf6224137ac55ce7769748eb875d410b625a203e728d5",
+      "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+      "source": "public/captures/noderoom-trace-knowledge-graph.json",
+      "consumerHasFile": false,
+      "bytes": 14179
+    }
+  },
+  "installedBefore": {
+    ".next/BUILD_ID": "39479b4669774829843cf5b0a5fb30e455dfc181556594f8c41c68d60d759415",
+    ".next/static/chunks/139.7a5a8e93a21948c1.js": "632898ee9bdecfb4bb7ad2b2524754908cc1dd253de92c603a62934bb126ed1c",
+    ".next/static/chunks/255-37e0f0325134c4d7.js": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+    ".next/static/chunks/484.b7d3d26e3d12c47e.js": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+    ".next/static/chunks/4bd1b696-c023c6e3521b1417.js": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+    ".next/static/chunks/5a255377.58c8dcfdf915e228.js": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+    ".next/static/chunks/646.f342b7cffc01feb0.js": "ab1467e26bb6750f89c9e52b89b17111bb38371d8b15c1463d2de7998597d476",
+    ".next/static/chunks/941.b31d29c9d2dae6db.js": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+    ".next/static/chunks/app/_not-found/page-93adf5b29387cc4b.js": "c8cad6f52519f738e70764b245f221f807f44af28e38ccfe6a1c070e64a4aecb",
+    ".next/static/chunks/app/layout-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/app/nodetrace/page-205628246ae309b0.js": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+    ".next/static/chunks/app/page-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/framework-085cf39580498177.js": "102db8738ae9067cbd62c9625e9f6e567b7bbe7c83bebeb0b88f8fb40f086826",
+    ".next/static/chunks/main-01fdee0a1cd4ae59.js": "99f8d9ec31d571681e3351b6fd0679d592e89d470629fe28b188f81c1e6d5bc6",
+    ".next/static/chunks/main-app-ecd2f93ca481396f.js": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+    ".next/static/chunks/pages/_app-82835f42865034fa.js": "4e546f7f9a327da75326865d2dcf898f976f5414d7dbb1296cd21a96de079ca7",
+    ".next/static/chunks/pages/_error-013f4188946cdd04.js": "79c3e9093cd1a5220e778a8baf10128d866617fb65f6e2ef1a3316c4c62b6deb",
+    ".next/static/chunks/polyfills-42372ed130431b0a.js": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+    ".next/static/chunks/webpack-d16f5e05bf561c03.js": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+    ".next/static/css/1383a2b9f3290658.css": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+    ".next/static/css/ea227640c3c82f29.css": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+    ".next/static/tGfrwjzlM9eIRsXdF1lOg/_buildManifest.js": "53d79fa0952962d7cc7b59a79c8ef4d353ad59142c931fad0cfd1a3db5d544e9",
+    ".next/static/tGfrwjzlM9eIRsXdF1lOg/_ssgManifest.js": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+    "db/nodetrace.schema.sql": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "public/nodetrace-state.json": "d2343166f80d8bc46766db9fcce1c2945aa6a0a393a6c1301e8315d7b599ba4a",
+    "scripts/nodetrace-init.mjs": "c900243bea5d73c598dc58e5abefba7c247212485a9c8a92b7897d193e48f369",
+    "scripts/nodetrace-smoke.mjs": "bf457ef32777f901a3304bac0c1badee480d90d022e877e72e78d790dd01af74",
+    "src/app/layout.tsx": "806a78943199cddbe9dc56447e677e4c4fa363e2922b6639277fdd452bdff3ec",
+    "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+    "src/app/page.tsx": "3fd252d1b85d2c0fd351b34260faa7131419236981f07793159b2f2fb294c914",
+    "src/nodetrace-demo/DemoDashboard.tsx": "a8e3a2301d5255e638836dff9b0389735080912c4e25e671dd744174368b8694",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/nodetrace/LiveGraphRail.tsx": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+    "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+    "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/nodetrace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/nodetrace/vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "src/nodetrace/vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "src/nodetrace/vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "src/nodetrace/vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "src/nodetrace/vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "src/nodetrace/vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "src/nodetrace/vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94"
+  },
+  "installedAfter": {
+    ".next/BUILD_ID": "39479b4669774829843cf5b0a5fb30e455dfc181556594f8c41c68d60d759415",
+    ".next/static/chunks/139.7a5a8e93a21948c1.js": "632898ee9bdecfb4bb7ad2b2524754908cc1dd253de92c603a62934bb126ed1c",
+    ".next/static/chunks/255-37e0f0325134c4d7.js": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+    ".next/static/chunks/484.b7d3d26e3d12c47e.js": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+    ".next/static/chunks/4bd1b696-c023c6e3521b1417.js": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+    ".next/static/chunks/5a255377.58c8dcfdf915e228.js": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+    ".next/static/chunks/646.f342b7cffc01feb0.js": "ab1467e26bb6750f89c9e52b89b17111bb38371d8b15c1463d2de7998597d476",
+    ".next/static/chunks/941.b31d29c9d2dae6db.js": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+    ".next/static/chunks/app/_not-found/page-93adf5b29387cc4b.js": "c8cad6f52519f738e70764b245f221f807f44af28e38ccfe6a1c070e64a4aecb",
+    ".next/static/chunks/app/layout-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/app/nodetrace/page-205628246ae309b0.js": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+    ".next/static/chunks/app/page-41a9ae17601bb653.js": "ca353c7499fcd60db869bfc3ff43d20594f7b076d8073b3dbf0ce651b74e9b1c",
+    ".next/static/chunks/framework-085cf39580498177.js": "102db8738ae9067cbd62c9625e9f6e567b7bbe7c83bebeb0b88f8fb40f086826",
+    ".next/static/chunks/main-01fdee0a1cd4ae59.js": "99f8d9ec31d571681e3351b6fd0679d592e89d470629fe28b188f81c1e6d5bc6",
+    ".next/static/chunks/main-app-ecd2f93ca481396f.js": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+    ".next/static/chunks/pages/_app-82835f42865034fa.js": "4e546f7f9a327da75326865d2dcf898f976f5414d7dbb1296cd21a96de079ca7",
+    ".next/static/chunks/pages/_error-013f4188946cdd04.js": "79c3e9093cd1a5220e778a8baf10128d866617fb65f6e2ef1a3316c4c62b6deb",
+    ".next/static/chunks/polyfills-42372ed130431b0a.js": "0973c1d64c88adc8e3c950410cb58b288f72118d5965b78049438deb8f2f9683",
+    ".next/static/chunks/webpack-d16f5e05bf561c03.js": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+    ".next/static/css/1383a2b9f3290658.css": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+    ".next/static/css/ea227640c3c82f29.css": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+    ".next/static/tGfrwjzlM9eIRsXdF1lOg/_buildManifest.js": "53d79fa0952962d7cc7b59a79c8ef4d353ad59142c931fad0cfd1a3db5d544e9",
+    ".next/static/tGfrwjzlM9eIRsXdF1lOg/_ssgManifest.js": "678f6ce2cb80b1fe72fc67e7412be6e2ab6ada083111b64f7c40d35e3cba5e00",
+    "db/nodetrace.schema.sql": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "public/nodetrace-state.json": "d2343166f80d8bc46766db9fcce1c2945aa6a0a393a6c1301e8315d7b599ba4a",
+    "scripts/nodetrace-init.mjs": "c900243bea5d73c598dc58e5abefba7c247212485a9c8a92b7897d193e48f369",
+    "scripts/nodetrace-smoke.mjs": "bf457ef32777f901a3304bac0c1badee480d90d022e877e72e78d790dd01af74",
+    "src/app/layout.tsx": "806a78943199cddbe9dc56447e677e4c4fa363e2922b6639277fdd452bdff3ec",
+    "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+    "src/app/page.tsx": "3fd252d1b85d2c0fd351b34260faa7131419236981f07793159b2f2fb294c914",
+    "src/nodetrace-demo/DemoDashboard.tsx": "a8e3a2301d5255e638836dff9b0389735080912c4e25e671dd744174368b8694",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/nodetrace/LiveGraphRail.tsx": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+    "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+    "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/nodetrace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/nodetrace/vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "src/nodetrace/vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "src/nodetrace/vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "src/nodetrace/vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "src/nodetrace/vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "src/nodetrace/vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "src/nodetrace/vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "src/nodetrace/vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94"
+  },
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "name": "normal installed dashboard has exact owned import transformation",
+      "pass": true
+    },
+    {
+      "name": "normal installed Raw styles are exact source bytes",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: recorded capture images decode",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "short-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "short-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "short-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 900,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: recorded capture images decode",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "short-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "short-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "short-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 719,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: recorded capture images decode",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11344,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: recorded capture images decode",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 6395,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "all captured source or installed assets equal this actual build",
+      "pass": true
+    },
+    {
+      "name": "no unexpected page or console errors",
+      "pass": true,
+      "detail": [
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x13f4001c0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": {
+            "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x13f4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": {
+            "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x13f4001c2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+          "location": {
+            "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x13f4001c0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+          "location": {
+            "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "source/public inputs unchanged during proof",
+      "pass": true
+    },
+    {
+      "name": "normal installed consumer source, state and build inputs unchanged",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "short-390-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-390-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1395.1000000238419
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 13,
+          "at": 1421.6999999284744
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 900,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-1024-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-1024-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1616.6999999284744
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 13,
+          "at": 1646.1999999284744
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 719,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "long-390-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-390-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1552.3999999761581
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 11,
+          "at": 1580.6000000238419
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11344,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-1024-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-1024-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1616
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 26,
+          "at": 1652
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 6395,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    }
+  ],
+  "logs": [
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x13f4001c0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x13f4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x13f4001c2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x13f4001c0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "location": {
+        "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-02-detail-tabs-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ide.png",
+      "fixtureAttachment": true,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/captures/coach-step-01-artifact-entry-ui.png",
+      "fixtureAttachment": true,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskExact": true
+    }
+  ],
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "b5c821b9c319a2c0579700c00e7911190a28f2b03b819856451da76968aad313",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "afterHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "b5c821b9c319a2c0579700c00e7911190a28f2b03b819856451da76968aad313",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "ok": true,
+  "limits": [
+    "Desktop Chromium viewport emulation",
+    "Text200 enlarges only actual Raw component text, not browser zoom",
+    "Not a human, physical-device or performance certification",
+    "Rapid Home during unfinished native scrolling is a retained Chromium limitation; completed-action proof waits scrollend"
+  ]
+}

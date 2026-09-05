@@ -1,0 +1,70 @@
+{
+  "sourceRepo": "HomenShum/noderoom",
+  "sourceMode": "snapshot",
+  "activeStep": {
+    "id": "coach-step-02-detail-tabs",
+    "surfaceId": "workSurface.trace",
+    "order": 2,
+    "stepLabel": "Step 02",
+    "group": "Trace tabs",
+    "title": "Use the real NodeRoom trace tabs",
+    "narrative": "The sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.",
+    "sourceView": {
+      "imagePath": "captures/coach-step-02-detail-tabs-ide.png",
+      "repositoryRoot": "HomenShum/noderoom",
+      "activeFile": "src/ui/panels/TraceSurface.tsx",
+      "folderTree": [
+        "src",
+        "  - ui",
+        "    - panels",
+        "      - TraceSurface.tsx"
+      ],
+      "highlightStartLine": 2,
+      "highlightEndLine": 22,
+      "captureKind": "actual-code-browser-shiki"
+    },
+    "codeBlock": {
+      "filePath": "src/ui/panels/TraceSurface.tsx",
+      "startLine": 2,
+      "endLine": 22,
+      "snippet": "type DetailTab = \"overview\" | \"steps\" | \"flow\" | \"evidence\" | \"raw\";\n\nexport function TraceSurface({ roomId, onOpenSource }) {\n  const records = buildRecords(roomId);\n  const [selectedId, setSelectedId] = useState(records[0]?.id);\n  const [tab, setTab] = useState<DetailTab>(\"overview\");\n  const record = records.find((r) => r.id === selectedId) ?? records[0];\n  const detailTabs = ([\"overview\", \"steps\", \"flow\", \"evidence\", \"raw\"] as DetailTab[])\n    .filter((t) => t !== \"evidence\" || (record.evidenceCards?.length ?? 0) > 0);\n  return (\n    <div className=\"r-art-body r-tracevu\" data-testid=\"trace-surface\" data-noderoom-surface=\"workSurface.trace\">\n      <aside className=\"r-tracevu-list\" aria-label=\"Trace records\" />\n      <div className=\"r-tracevu-detail\">\n        <header className=\"r-tracevu-detail-head\">\n          <div className=\"r-tracevu-tabs\" role=\"tablist\" aria-label=\"Trace detail\" />\n        </header>\n      </div>\n    </div>\n  );\n}\n"
+    },
+    "uiCapture": {
+      "selector": "[data-testid=\"trace-surface\"] .r-tracevu-tabs",
+      "rect": {
+        "x": 283,
+        "y": 165,
+        "width": 768,
+        "height": 29
+      },
+      "screenshotPath": "captures/coach-step-02-detail-tabs-ui.png",
+      "alt": "NodeRoom trace detail tabs for Overview, Steps, Flow, Evidence, and Raw JSON.",
+      "captureKind": "actual-noderoom-playwright"
+    },
+    "mapCapture": {
+      "imagePath": "captures/coach-step-02-detail-tabs-minimap.svg",
+      "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+      "model": "Understand-Anything-backed structural minimap"
+    },
+    "diagram": {
+      "kind": "mermaid",
+      "nodeId": "surface",
+      "source": "flowchart LR\n  Record[Selected trace record] --> Overview\n  Record --> Steps\n  Record --> Flow\n  Record --> Evidence\n  Record --> RawJSON[Raw JSON]"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "artifact",
+        "label": "Artifact shell",
+        "kind": "component",
+        "filePath": "src/ui/panels/Artifact.tsx",
+        "layer": "UI entry",
+        "x": 112,
+        "y": 250,
+        "summary": "Entry point that exposes the room trace strip."
+      }
+    ],
+    "edges": []
+  }
+}

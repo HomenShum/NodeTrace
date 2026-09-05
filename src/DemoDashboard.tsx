@@ -322,7 +322,7 @@ function TraceCoachPanel({
           ) : null}
 
           {activeTab === "raw" ? (
-            <pre className="r-tracevu-raw" data-testid="trace-raw">{JSON.stringify(rawPayload, null, 2)}</pre>
+            <pre key={activeStep.id} className="r-tracevu-raw" data-testid="trace-raw" role="region" aria-label="Raw trace JSON" tabIndex={0}>{JSON.stringify(rawPayload, null, 2)}</pre>
           ) : null}
           </> : null}
         </div>)}

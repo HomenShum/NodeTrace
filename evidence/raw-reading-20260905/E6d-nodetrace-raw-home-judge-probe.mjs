@@ -1,0 +1,161 @@
+// A developer reads a long saved trace, compares an entity, and resumes after interruptions.
+import assert from 'node:assert/strict';
+import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { resolve, join } from 'node:path';
+import { createHash } from 'node:crypto';
+import { spawn } from 'node:child_process';
+import { createRequire } from 'node:module'; const {chromium}=createRequire("D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\package.json")('playwright');
+import { assertPortFree, waitForServer, waitForPaintedGraph } from "file:///D:/VSCode%20Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace/scripts/lib/proof-server.mjs";
+
+const [fixtureDir, outputDir, consumer] = process.argv.slice(2);
+assert(fixtureDir && outputDir, 'Usage: node scripts/raw-reading-proof.mjs <before-fixtures> <new-output> [installed-next-consumer]');
+const repo = resolve('.'), target = consumer ? resolve(consumer) : repo;
+const out = resolve(outputDir); mkdirSync(out);
+const port = consumer ? 4960 : 4959, origin = `http://127.0.0.1:${port}`;
+const route = consumer ? '/nodetrace' : '/';
+const sha = b => createHash('sha256').update(b).digest('hex');
+const files = ['src/DemoDashboard.tsx', 'src/styles.css', 'src/demoNavigation.ts', 'src/demoState.ts', 'src/trace/LiveGraphRail.tsx', 'vendor/nodegraph-live/NodeGraph.js', 'bin/nodetrace.mjs', 'package-lock.json', 'scripts/raw-reading-proof.mjs', 'public/nodetrace-state.json'];
+const hashes = () => Object.fromEntries(files.map(file => [file, sha(readFileSync(join(repo, file)))]));
+const before = hashes();
+const fixtures = Object.fromEntries(['actual', 'short', 'long'].map(name => [name, readFileSync(join(fixtureDir, `${name}-state.json`))]));
+for (const [name, bytes] of Object.entries(fixtures)) writeFileSync(join(out, `${name}-state.json`), bytes);
+const checks = [], captures = [], logs = [], responses = [], pendingResponses = [];
+const check = (name, pass, detail) => { checks.push({ name, pass: Boolean(pass), detail }); assert(pass, name); };
+let browser, server, failure, activePage, serverLog = '';
+const allowed = new Set(['path','systemroot','windir','comspec','pathext','programfiles','programfiles(x86)','programw6432','systemdrive','userprofile','appdata','localappdata','allusersprofile','homedrive','homepath','number_of_processors','processor_architecture','temp','tmp']);
+const env = Object.fromEntries(Object.entries(process.env).filter(([key]) => allowed.has(key.toLowerCase())));
+async function meta(page) {
+  return page.evaluate(() => {
+    const raw = document.querySelector('[data-testid="trace-raw"]'), r = raw?.getBoundingClientRect(), g = document.querySelector('[data-testid="live-graph-rail"]')?.getBoundingClientRect();
+    const css = raw && getComputedStyle(raw);
+    return { url: location.href, viewport: { width: innerWidth, height: innerHeight }, documentHeight: document.documentElement.scrollHeight, overflow: document.documentElement.scrollWidth - innerWidth, keys: window.__rawKeys,
+      raw: raw && { x: r.x, y: r.y, width: r.width, height: r.height, documentY: r.y + scrollY, clientHeight: raw.clientHeight, scrollHeight: raw.scrollHeight, scrollTop: raw.scrollTop, fontSize: css.fontSize, overflowY: css.overflowY, outline: css.outline, tabIndex: raw.tabIndex },
+      graph: g && { width: g.width, height: g.height, documentY: g.y + scrollY }, focused: document.activeElement?.getAttribute('data-testid'), rawText: raw?.textContent, selection: getSelection()?.toString() };
+  });
+}
+async function capture(page, name) {
+  const data = await meta(page);
+  if (data.rawText !== undefined) { writeFileSync(join(out, `${name}.raw.txt`), data.rawText); data.rawSha256 = sha(data.rawText); delete data.rawText; }
+  writeFileSync(join(out, `${name}.json`), JSON.stringify(data, null, 2));
+  writeFileSync(join(out, `${name}.html`), await page.content());
+  writeFileSync(join(out, `${name}.ax.txt`), await page.locator('body').ariaSnapshot());
+  await page.screenshot({ path: join(out, `${name}.png`), fullPage: true });
+  await page.screenshot({ path: join(out, `${name}-viewport.png`) });
+  captures.push({ name, ...data }); return data;
+}
+async function toEnd(page) {
+  await page.getByTestId('trace-raw').focus(); await page.keyboard.press('End');
+  await page.waitForFunction(() => { const n = document.querySelector('[data-testid="trace-raw"]'); return n.scrollHeight - n.clientHeight - n.scrollTop <= 2; });
+}
+async function toHome(page) {
+  await page.getByTestId('trace-raw').focus(); await page.keyboard.press('Home');
+  try { await page.waitForFunction(() => document.querySelector('[data-testid="trace-raw"]').scrollTop === 0, null, {timeout:2000}); }
+  catch(error){
+    writeFileSync(join(out,'native-home-failure.json'),JSON.stringify(await page.evaluate(()=>({state:window.__rawState(),events:window.__rawDiag,frames:window.__rawFrames})),null,2));
+    await page.screenshot({path:join(out,'native-home-failure.png')});
+    await page.keyboard.press('Home'); await page.waitForTimeout(1200);
+    writeFileSync(join(out,'native-home-second-key.json'),JSON.stringify(await page.evaluate(()=>({state:window.__rawState(),events:window.__rawDiag,frames:window.__rawFrames})),null,2));
+    await page.screenshot({path:join(out,'native-home-second-key.png')});
+    throw error;
+  }
+}
+try {
+  await assertPortFree(port);
+  const args = consumer ? [join(target, 'node_modules/next/dist/bin/next'), 'start', '--hostname', '127.0.0.1', '--port', String(port)] : [join(repo, 'node_modules/vite/bin/vite.js'), 'preview', '--host', '127.0.0.1', '--port', String(port), '--strictPort'];
+  server = spawn(process.execPath, args, { cwd: target, env, windowsHide: true, stdio: ['ignore', 'pipe', 'pipe'] });
+  server.stdout.on('data', b => { serverLog = (serverLog + b).slice(-100000); }); server.stderr.on('data', b => { serverLog = (serverLog + b).slice(-100000); });
+  await waitForServer(origin + route); browser = await chromium.launch();
+  const cases = consumer ? [['short',390,844],['short',1024,768],['long',390,844],['long',1024,768]] : [['actual',320,800],['actual',390,844],['actual',1024,768],['actual',1440,960],['short',390,844],['short',1024,768],['long',390,844],['long',1024,768],['actual',390,844,'no-preference',true],['actual',1024,768,'reduce',true],['long',390,844,'reduce']];
+  for (const [fixture, width, height, motion = 'no-preference', doubled = false] of cases) {
+    const name = `${fixture}-${width}-${motion}${doubled ? '-text200' : ''}`;
+    if (process.env.NODETRACE_RAW_ONLY && process.env.NODETRACE_RAW_ONLY !== name) continue;
+    const context = await browser.newContext({ viewport: { width, height }, reducedMotion: motion });
+    await context.addInitScript(() => { window.__rawKeys = []; addEventListener('keydown', event => { if (!['Home','End','PageDown'].includes(event.key)) return; const n = document.querySelector('[data-testid="trace-raw"]'); window.__rawKeys.push({ key: event.key, target: event.target.getAttribute('data-testid'), scrollTop: n?.scrollTop, at: performance.now() }); if (window.__rawKeys.length > 24) window.__rawKeys.shift(); }); });
+    await context.addInitScript(() => {
+      window.__rawDiag=[]; window.__rawFrames=[];
+      let id=0; const ids=new WeakMap();
+      const ident=n=>!n?null:ids.has(n)?ids.get(n):(ids.set(n,++id),id);
+      const state=()=>{const n=document.querySelector('[data-testid="trace-raw"]'),s=getSelection();return {at:performance.now(),node:ident(n),top:n?.scrollTop,max:n&&n.scrollHeight-n.clientHeight,docTop:scrollY,focus:document.activeElement?.getAttribute('data-testid'),y:n?.getBoundingClientRect().y,sel:s?.toString(),anchor:s?.anchorNode?.parentElement?.tagName,connected:n?.isConnected};};
+      window.__rawState=state;
+      for(const type of ['keydown','keyup','scroll','scrollend','focusin','focusout','popstate'])addEventListener(type,e=>{
+        if(['keydown','keyup'].includes(type)&&!['Home','End','PageDown'].includes(e.key))return;
+        const row={...state(),type,key:e.key,target:e.target?.getAttribute?.('data-testid')??e.target?.nodeName,trusted:e.isTrusted,prevented:e.defaultPrevented};
+        window.__rawDiag.push(row); if(window.__rawDiag.length>1500)window.__rawDiag.shift();
+        if(type==='keydown')queueMicrotask(()=>{row.preventedAfter=e.defaultPrevented;});
+      },true);
+      function frame(){window.__rawFrames.push(state());if(window.__rawFrames.length>500)window.__rawFrames.shift();requestAnimationFrame(frame);}requestAnimationFrame(frame);
+    });
+    const page = activePage = await context.newPage(); page.setDefaultTimeout(15000);
+    page.on('console', m => logs.push({ name, type: m.type(), text: m.text() })); page.on('pageerror', e => logs.push({ name, type: 'pageerror', text: String(e) }));
+    page.on('response', response => { if (new URL(response.url()).pathname.startsWith('/assets/')) pendingResponses.push((async () => { const bytes = await response.body(); const disk = readFileSync(join(target, 'dist', new URL(response.url()).pathname.slice(1))); responses.push({ url: response.url(), sha256: sha(bytes), diskExact: sha(bytes) === sha(disk) }); })()); });
+    await page.route('**/nodetrace-state.json', r => r.fulfill({ status: 200, contentType: 'application/json', body: fixtures[fixture] }));
+    await page.goto(`${origin}${route}?unrelated=preserved#review`); await page.getByRole('tab', { name: 'Raw JSON', exact: true }).waitFor(); await waitForPaintedGraph(page);
+    const rawTab = page.getByRole('tab', { name: 'Raw JSON', exact: true }), raw = page.getByTestId('trace-raw');
+    const entity = page.getByRole('combobox', { name: 'Entity', exact: true });
+    await entity.selectOption({ index: 1 }); const entityId = await entity.inputValue();
+    const entityLabel = await entity.locator('option:checked').textContent();
+    const readout = await page.getByTestId('live-graph-node-events').textContent();
+    const eventIds = await page.getByTestId('live-graph-node-events').locator('li').allTextContents();
+    const [kind, ...labelParts] = entityLabel.split(': '), label = labelParts.join(': ');
+    const field = { actor: 'actor', tool: 'surfaceId', artifact: 'artifactId', step: 'phase' }[kind];
+    const expectedIds = [...new Set(JSON.parse(fixtures[fixture]).traces.filter(row => row[field] === label).map(row => row.id))];
+    check(`${name}: entity has exact actual producing events`, readout.includes(entityLabel) && eventIds.length > 0 && JSON.stringify(eventIds) === JSON.stringify(expectedIds), { entityId, entityLabel, eventIds, expectedIds });
+    await rawTab.focus(); await page.keyboard.press('Enter'); await raw.waitFor();
+    if (doubled) await raw.evaluate(n => { n.style.fontSize = '22px'; n.style.lineHeight = '33px'; });
+    const originalText = await raw.textContent(), originalHash = sha(originalText);
+    const matchingBefore = join(fixtureDir, `${fixture}-${width}-${motion}.raw.txt`);
+    if (['actual','short','long'].includes(fixture) && (fixture === 'actual' && !doubled || width === 390 && motion === 'no-preference')) {
+      check(`${name}: exact paired before JSON`, sha(readFileSync(matchingBefore)) === originalHash);
+    }
+    check(`${name}: current selected snippet exact`, JSON.parse(originalText).activeStep.codeBlock.snippet === JSON.parse(fixtures[fixture]).coach.steps[0].codeBlock.snippet);
+    for (let i = 0; i < 3 && await raw.evaluate(n => document.activeElement !== n); i++) await page.keyboard.press('Tab');
+    check(`${name}: natural Tab reaches named region`, await raw.evaluate(n => document.activeElement === n && n.getAttribute('aria-label') === 'Raw trace JSON' && n.getAttribute('role') === 'region'));
+    const top = await capture(page, `${name}-top`);
+    check(`${name}: responsive height budget`, top.raw.height <= Math.min(560, height * .65) + 2, top.raw);
+    check(`${name}: no document overflow`, top.overflow <= 1, top.overflow);
+    check(`${name}: visible keyboard focus`, /3px/.test(top.raw.outline) && !/none/.test(top.raw.outline), top.raw.outline);
+    if (doubled) check(`${name}: actual doubled component text`, top.raw.fontSize === '22px');
+    await page.keyboard.press('PageDown'); await page.waitForFunction(() => document.querySelector('[data-testid="trace-raw"]').scrollTop > 0);
+    await toEnd(page); const end = await capture(page, `${name}-end`);
+    check(`${name}: last line reachable with native End`, end.raw.scrollHeight - end.raw.clientHeight - end.raw.scrollTop <= 2 && end.rawSha256 === originalHash, end.raw);
+    await entity.selectOption({ index: 2 });
+    check(`${name}: incidental entity render preserves reading position`, Math.abs((await raw.evaluate(n => n.scrollTop)) - end.raw.scrollTop) <= 1);
+    await raw.focus(); await page.keyboard.press('Tab'); check(`${name}: forward Tab exits`, await raw.evaluate(n => document.activeElement !== n));
+    await raw.focus(); await page.keyboard.press('Shift+Tab'); check(`${name}: backward Tab exits`, await raw.evaluate(n => document.activeElement !== n));
+    await toHome(page); check(`${name}: Home restores first line`, await raw.evaluate(n => n.scrollTop === 0));
+    const box = await raw.boundingBox(); await page.mouse.move(box.x + 20, box.y + 23); await page.mouse.down(); await page.mouse.move(box.x + Math.min(box.width - 30, 160), box.y + 40, { steps: 6 }); await page.mouse.up();
+    check(`${name}: pointer can select JSON text`, await page.evaluate(() => Boolean(getSelection()?.toString().trim())));
+    await toEnd(page); await page.getByTestId('trace-record').nth(1).click();
+    check(`${name}: selecting a record preserves the existing Overview transition`, await page.getByRole('tab', { name: 'Overview', exact: true }).getAttribute('aria-selected') === 'true');
+    await rawTab.click();
+    check(`${name}: new step begins at top with current payload`, (await raw.evaluate(n => n.scrollTop)) === 0 && JSON.parse(await raw.textContent()).activeStep.id === JSON.parse(fixtures[fixture]).coach.steps[1].id);
+    for (let i = 0; i < 5; i++) { await page.getByRole('tab', { name: 'Overview', exact: true }).click(); await rawTab.click(); await page.getByTestId('trace-record').nth(i % 2).click(); await rawTab.click(); check(`${name}: burst ${i} begins current text at top`, await raw.evaluate(n => n.scrollTop === 0)); }
+    await page.getByTestId('trace-record').nth(0).click(); await rawTab.click();
+    const reloadHash = sha(await raw.textContent()); await page.reload(); await raw.waitFor();
+    check(`${name}: Raw/current bytes survive reload`, sha(await raw.textContent()) === reloadHash);
+    await page.getByRole('tab', { name: 'Overview', exact: true }).click(); await page.goBack(); await raw.waitFor();
+    check(`${name}: Back restores Raw`, sha(await raw.textContent()) === reloadHash);
+    await page.goForward(); check(`${name}: Forward restores Overview`, await page.getByRole('tab', { name: 'Overview', exact: true }).getAttribute('aria-selected') === 'true');
+    check(`${name}: unrelated host state retained`, new URL(page.url()).searchParams.get('unrelated') === 'preserved' && new URL(page.url()).hash === '#review');
+    if (!consumer && fixture === 'long' && width === 390 && motion === 'no-preference') {
+      await rawTab.click(); const started = Date.now(); let rounds = 0;
+      while (Date.now() - started < 60000) { await toEnd(page); await toHome(page); check(`${name}: sustained ${rounds} complete unchanged text`, sha(await raw.textContent()) === originalHash); await page.waitForTimeout(1000); rounds++; }
+      check(`${name}: sixty-second reading session`, Date.now() - started >= 60000, { rounds, elapsedMs: Date.now() - started });
+      await capture(page, `${name}-sustained`);
+    }
+    await context.close();
+  }
+  if (!consumer && !process.env.NODETRACE_RAW_ONLY) {
+    const context = await browser.newContext({ viewport: { width: 390, height: 844 } }); const page = await context.newPage(); let tries = 0;
+    await page.route('**/nodetrace-state.json', r => ++tries === 1 ? r.fulfill({ status: 503, body: 'unavailable' }) : r.fulfill({ status: 200, contentType: 'application/json', body: fixtures.actual }));
+    await page.goto(origin); await page.getByRole('button', { name: 'Retry', exact: true }).waitFor(); await capture(page, 'degraded-before-retry');
+    await page.getByRole('button', { name: 'Retry', exact: true }).click(); await page.getByRole('tab', { name: 'Raw JSON', exact: true }).click();
+    check('honest failure and Retry restores named current reading region', tries === 2 && await page.getByRole('region', { name: 'Raw trace JSON', exact: true }).isVisible()); await capture(page, 'recovered-raw'); await context.close();
+  }
+  await Promise.all(pendingResponses); check('all captured source assets equal this build', consumer || responses.length > 0 && responses.every(r => r.diskExact));
+  check('no unexpected page or console errors', !logs.some(l => ['error','pageerror'].includes(l.type)), logs);
+} catch (error) { failure = error.stack ?? String(error); if (activePage && !activePage.isClosed()) await capture(activePage, 'failure-current-state'); }
+finally { await browser?.close(); if (server) { server.kill(); await new Promise(r => setTimeout(r, 300)); } writeFileSync(join(out, 'server.log'), serverLog); }
+const after = hashes(); check('source/public inputs unchanged during proof', JSON.stringify(before) === JSON.stringify(after));
+const report = { proof: 'NODETRACE-RAW-READING-REGION-01', at: new Date().toISOString(), consumer: consumer ?? null, onlyCell: process.env.NODETRACE_RAW_ONLY ?? null, routedFixtures: 'Exact retained before inputs; representative local saved trace, not fresh production data', browser: browser?.version(), checks, captures, logs, responses, sourceHashes: before, afterHashes: after, failure, ok: !failure && checks.every(c => c.pass), limits: ['Desktop Chromium viewport emulation', 'Text200 enlarges only actual Raw component text, not browser zoom', 'Not a human, physical-device or performance certification'] };
+writeFileSync(join(out, 'report.json'), JSON.stringify(report, null, 2)); console.log(JSON.stringify({ ok: report.ok, checks: checks.length, captures: captures.length, failure })); if (!report.ok) process.exitCode = 1;

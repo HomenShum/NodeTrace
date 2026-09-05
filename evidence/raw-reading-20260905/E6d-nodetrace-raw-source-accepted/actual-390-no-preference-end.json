@@ -1,0 +1,45 @@
+{
+  "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "documentHeight": 3116,
+  "overflow": 0,
+  "keys": [
+    {
+      "key": "PageDown",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 1293.7999999523163
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 35,
+      "at": 1333.1999999284744
+    }
+  ],
+  "raw": {
+    "x": 29,
+    "y": 279.6875,
+    "width": 332,
+    "height": 548.59375,
+    "documentY": 1617.6875,
+    "clientHeight": 547,
+    "scrollHeight": 3213,
+    "scrollTop": 2666,
+    "fontSize": "11px",
+    "overflowY": "auto",
+    "outline": "rgb(31, 103, 177) solid 3px",
+    "tabIndex": 0
+  },
+  "graph": {
+    "width": 366,
+    "height": 902.859375,
+    "documentY": 2201.28125
+  },
+  "focused": "trace-raw",
+  "selection": "",
+  "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+}

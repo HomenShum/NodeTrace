@@ -1,0 +1,58 @@
+{
+  "ok": true,
+  "startedAt": "2026-09-05T06:16:57.355Z",
+  "completedAt": "2026-09-05T06:18:48.935Z",
+  "totalMs": 111580,
+  "targetDir": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-lU78sE",
+  "framework": "next",
+  "apiKeysRequired": false,
+  "setupLog": ".nodetrace/setup-log.txt",
+  "files": [
+    "src/nodetrace",
+    "src/nodetrace-demo",
+    "db/nodetrace.schema.sql",
+    "scripts/nodetrace-init.mjs",
+    "scripts/nodetrace-smoke.mjs",
+    "src\\app\\nodetrace\\page.tsx",
+    "docs/NODETRACE_INTEGRATION.md"
+  ],
+  "phases": [
+    {
+      "name": "install dependencies",
+      "command": "cmd.exe /d /s /c npm.cmd install --cache .nodetrace/npm-cache --prefer-offline --no-audit --fund=false --progress=false",
+      "ok": true,
+      "durationMs": 27950,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    },
+    {
+      "name": "happy path",
+      "command": "cmd.exe /d /s /c npm.cmd run nodetrace:happy-path",
+      "ok": true,
+      "durationMs": 1185,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    },
+    {
+      "name": "smoke",
+      "command": "cmd.exe /d /s /c npm.cmd run nodetrace:smoke",
+      "ok": true,
+      "durationMs": 805,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    },
+    {
+      "name": "build",
+      "command": "cmd.exe /d /s /c npm.cmd run build",
+      "ok": true,
+      "durationMs": 81583,
+      "timeoutMs": 300000,
+      "detail": "completed"
+    }
+  ],
+  "nextSteps": [
+    "npm run nodetrace:dev",
+    "Open /nodetrace",
+    "Copy TraceLensProvider and TraceLensPanel into your app shell when ready."
+  ]
+}

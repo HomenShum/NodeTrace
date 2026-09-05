@@ -1,0 +1,2580 @@
+{
+  "results": [
+    {
+      "name": "current-viewport",
+      "former": false,
+      "fullPage": false,
+      "idleStable": true,
+      "domExact": true,
+      "beforeRawY": 615.46875,
+      "afterRawY": 615.46875,
+      "delta": []
+    },
+    {
+      "name": "current-full",
+      "former": false,
+      "fullPage": true,
+      "idleStable": true,
+      "domExact": true,
+      "beforeRawY": 615.46875,
+      "afterRawY": 664.859375,
+      "delta": [
+        {
+          "tag": "HEADER",
+          "classes": "showcase",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, sourc",
+          "before": {
+            "x": 22,
+            "y": 22,
+            "w": 1396,
+            "h": 341.859375
+          },
+          "after": {
+            "x": 22,
+            "y": 22,
+            "w": 1396,
+            "h": 391.25
+          },
+          "style": {
+            "block-size": {
+              "before": "341.859px",
+              "after": "391.25px"
+            },
+            "grid-template-rows": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "height": {
+              "before": "341.859px",
+              "after": "391.25px"
+            },
+            "perspective-origin": {
+              "before": "698px 170.922px",
+              "after": "698px 195.625px"
+            },
+            "transform-origin": {
+              "before": "698px 170.93px",
+              "after": "698px 195.625px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "showcaseCopy",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, sourc",
+          "before": {
+            "x": 43,
+            "y": 43,
+            "w": 938,
+            "h": 299.859375
+          },
+          "after": {
+            "x": 43,
+            "y": 43,
+            "w": 938,
+            "h": 349.25
+          },
+          "style": {
+            "block-size": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "height": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "perspective-origin": {
+              "before": "469px 149.922px",
+              "after": "469px 174.625px"
+            },
+            "transform-origin": {
+              "before": "469px 149.93px",
+              "after": "469px 174.625px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "showcaseActions",
+          "text": "npm run understand:noderoomnpm run capture:noderoom:realnpm run trace-coach:sqlite no API key requir",
+          "before": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 938,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 938,
+            "h": 88.78125
+          },
+          "style": {
+            "block-size": {
+              "before": "39.3906px",
+              "after": "88.7812px"
+            },
+            "height": {
+              "before": "39.3906px",
+              "after": "88.7812px"
+            },
+            "perspective-origin": {
+              "before": "469px 19.6875px",
+              "after": "469px 44.3906px"
+            },
+            "transform-origin": {
+              "before": "469px 19.6953px",
+              "after": "469px 44.3906px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "command",
+          "text": "npm run understand:noderoom",
+          "before": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 230.140625,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 246.4375,
+            "h": 39.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "230.141px",
+              "after": "246.438px"
+            },
+            "perspective-origin": {
+              "before": "115.062px 19.6875px",
+              "after": "123.219px 19.6875px"
+            },
+            "transform-origin": {
+              "before": "115.07px 19.6953px",
+              "after": "123.219px 19.6953px"
+            },
+            "width": {
+              "before": "230.141px",
+              "after": "246.438px"
+            }
+          }
+        },
+        {
+          "tag": "CODE",
+          "classes": null,
+          "text": "npm run understand:noderoom",
+          "before": {
+            "x": 81,
+            "y": 314.46875,
+            "w": 178.140625,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 81,
+            "y": 314.46875,
+            "w": 194.4375,
+            "h": 17.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "178.141px",
+              "after": "194.438px"
+            },
+            "perspective-origin": {
+              "before": "89.0625px 8.6875px",
+              "after": "97.2188px 8.6875px"
+            },
+            "transform-origin": {
+              "before": "89.0703px 8.69531px",
+              "after": "97.2188px 8.69531px"
+            },
+            "width": {
+              "before": "178.141px",
+              "after": "194.438px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "command",
+          "text": "npm run capture:noderoom:real",
+          "before": {
+            "x": 283.140625,
+            "y": 303.46875,
+            "w": 243.34375,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 299.4375,
+            "y": 303.46875,
+            "w": 260.84375,
+            "h": 39.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "243.344px",
+              "after": "260.844px"
+            },
+            "perspective-origin": {
+              "before": "121.672px 19.6875px",
+              "after": "130.422px 19.6875px"
+            },
+            "transform-origin": {
+              "before": "121.672px 19.6953px",
+              "after": "130.422px 19.6953px"
+            },
+            "width": {
+              "before": "243.344px",
+              "after": "260.844px"
+            }
+          }
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-terminal",
+          "text": "",
+          "before": {
+            "x": 297.140625,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "after": {
+            "x": 313.4375,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 304.640625,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "after": {
+            "x": 320.9375,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 299.640625,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "after": {
+            "x": 315.9375,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "CODE",
+          "classes": null,
+          "text": "npm run capture:noderoom:real",
+          "before": {
+            "x": 321.140625,
+            "y": 314.46875,
+            "w": 191.34375,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 337.4375,
+            "y": 314.46875,
+            "w": 208.84375,
+            "h": 17.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "191.344px",
+              "after": "208.844px"
+            },
+            "perspective-origin": {
+              "before": "95.6719px 8.6875px",
+              "after": "104.422px 8.6875px"
+            },
+            "transform-origin": {
+              "before": "95.6719px 8.69531px",
+              "after": "104.422px 8.69531px"
+            },
+            "width": {
+              "before": "191.344px",
+              "after": "208.844px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "command",
+          "text": "npm run trace-coach:sqlite",
+          "before": {
+            "x": 536.484375,
+            "y": 303.46875,
+            "w": 223.546875,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 570.28125,
+            "y": 303.46875,
+            "w": 239.234375,
+            "h": 39.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "223.547px",
+              "after": "239.234px"
+            },
+            "perspective-origin": {
+              "before": "111.766px 19.6875px",
+              "after": "119.609px 19.6875px"
+            },
+            "transform-origin": {
+              "before": "111.773px 19.6953px",
+              "after": "119.617px 19.6953px"
+            },
+            "width": {
+              "before": "223.547px",
+              "after": "239.234px"
+            }
+          }
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-terminal",
+          "text": "",
+          "before": {
+            "x": 550.484375,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "after": {
+            "x": 584.28125,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 557.984375,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "after": {
+            "x": 591.78125,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 552.984375,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "after": {
+            "x": 586.78125,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "CODE",
+          "classes": null,
+          "text": "npm run trace-coach:sqlite",
+          "before": {
+            "x": 574.484375,
+            "y": 314.46875,
+            "w": 171.546875,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 608.28125,
+            "y": 314.46875,
+            "w": 187.234375,
+            "h": 17.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "171.547px",
+              "after": "187.234px"
+            },
+            "perspective-origin": {
+              "before": "85.7656px 8.6875px",
+              "after": "93.6094px 8.6875px"
+            },
+            "transform-origin": {
+              "before": "85.7734px 8.69531px",
+              "after": "93.6172px 8.69531px"
+            },
+            "width": {
+              "before": "171.547px",
+              "after": "187.234px"
+            }
+          }
+        },
+        {
+          "tag": "SPAN",
+          "classes": "sourcePill",
+          "text": " no API key required",
+          "before": {
+            "x": 770.03125,
+            "y": 303.46875,
+            "w": 163.421875,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 43,
+            "y": 352.859375,
+            "w": 163.421875,
+            "h": 39.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-circle-dot",
+          "text": "",
+          "before": {
+            "x": 783.03125,
+            "y": 316.65625,
+            "w": 13,
+            "h": 13
+          },
+          "after": {
+            "x": 56,
+            "y": 366.046875,
+            "w": 13,
+            "h": 13
+          },
+          "style": {}
+        },
+        {
+          "tag": "circle",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 784.1145629882812,
+            "y": 317.73958587646484,
+            "w": 10.8333740234375,
+            "h": 10.833328247070312
+          },
+          "after": {
+            "x": 57.08333206176758,
+            "y": 367.1302032470703,
+            "w": 10.833332061767578,
+            "h": 10.833343505859375
+          },
+          "style": {}
+        },
+        {
+          "tag": "circle",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 788.9895629882812,
+            "y": 322.61458587646484,
+            "w": 1.0833740234375,
+            "h": 1.0833282470703125
+          },
+          "after": {
+            "x": 61.95833206176758,
+            "y": 372.0052032470703,
+            "w": 1.0833358764648438,
+            "h": 1.083343505859375
+          },
+          "style": {}
+        },
+        {
+          "tag": "ASIDE",
+          "classes": "launchCard",
+          "text": "Bundled snapshotverified SQLite NodeRoom trace browser UISource appNodeRoombundled snapshotCoach ste",
+          "before": {
+            "x": 997,
+            "y": 43,
+            "w": 400,
+            "h": 299.859375
+          },
+          "after": {
+            "x": 997,
+            "y": 43,
+            "w": 400,
+            "h": 349.25
+          },
+          "style": {
+            "block-size": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "height": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "perspective-origin": {
+              "before": "200px 149.922px",
+              "after": "200px 174.625px"
+            },
+            "transform-origin": {
+              "before": "200px 149.93px",
+              "after": "200px 174.625px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "launchHead",
+          "text": "Bundled snapshotverified",
+          "before": {
+            "x": 1012,
+            "y": 75.609375,
+            "w": 370,
+            "h": 23.9375
+          },
+          "after": {
+            "x": 1012,
+            "y": 100.296875,
+            "w": 370,
+            "h": 23.9375
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Bundled snapshot",
+          "before": {
+            "x": 1012,
+            "y": 79.609375,
+            "w": 117.671875,
+            "h": 15.9375
+          },
+          "after": {
+            "x": 1012,
+            "y": 104.296875,
+            "w": 117.671875,
+            "h": 15.9375
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "verified",
+          "before": {
+            "x": 1314.96875,
+            "y": 75.609375,
+            "w": 67.03125,
+            "h": 23.9375
+          },
+          "after": {
+            "x": 1314.96875,
+            "y": 100.296875,
+            "w": 67.03125,
+            "h": 23.9375
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": "launchFlow",
+          "text": " SQLite NodeRoom trace browser UI",
+          "before": {
+            "x": 1012,
+            "y": 109.546875,
+            "w": 370,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 1012,
+            "y": 134.234375,
+            "w": 370,
+            "h": 39.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": " SQLite",
+          "before": {
+            "x": 1023,
+            "y": 120.546875,
+            "w": 57.96875,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 1023,
+            "y": 145.234375,
+            "w": 57.96875,
+            "h": 17.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-database",
+          "text": "",
+          "before": {
+            "x": 1023,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1023,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "ellipse",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1024.75,
+            "y": 123.40103912353516,
+            "w": 10.5,
+            "h": 3.5
+          },
+          "after": {
+            "x": 1024.75,
+            "y": 148.08853912353516,
+            "w": 10.5,
+            "h": 3.5000038146972656
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1024.75,
+            "y": 125.15103912353516,
+            "w": 10.5,
+            "h": 9.916069030761719
+          },
+          "after": {
+            "x": 1024.75,
+            "y": 149.83853912353516,
+            "w": 10.5,
+            "h": 9.916065216064453
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1024.75,
+            "y": 129.234375,
+            "w": 10.5,
+            "h": 1.7493972778320312
+          },
+          "after": {
+            "x": 1024.75,
+            "y": 153.921875,
+            "w": 10.5,
+            "h": 1.7493972778320312
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-arrow-right",
+          "text": "",
+          "before": {
+            "x": 1090.96875,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1090.96875,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1093.8853759765625,
+            "y": 129.234375,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "after": {
+            "x": 1093.8853759765625,
+            "y": 153.921875,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1097.96875,
+            "y": 125.15103912353516,
+            "w": 4.0833740234375,
+            "h": 8.166671752929688
+          },
+          "after": {
+            "x": 1097.96875,
+            "y": 149.83853912353516,
+            "w": 4.0833740234375,
+            "h": 8.166667938232422
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": " NodeRoom trace",
+          "before": {
+            "x": 1114.96875,
+            "y": 120.546875,
+            "w": 119.546875,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 1114.96875,
+            "y": 145.234375,
+            "w": 119.546875,
+            "h": 17.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-layers",
+          "text": "",
+          "before": {
+            "x": 1114.96875,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1114.96875,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1116.137451171875,
+            "y": 123.40083312988281,
+            "w": 11.67431640625,
+            "h": 5.833747863769531
+          },
+          "after": {
+            "x": 1116.137451171875,
+            "y": 148.0883331298828,
+            "w": 11.67431640625,
+            "h": 5.833747863769531
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1116.1353759765625,
+            "y": 129.234375,
+            "w": 11.666748046875,
+            "h": 2.9155502319335938
+          },
+          "after": {
+            "x": 1116.1353759765625,
+            "y": 153.921875,
+            "w": 11.666748046875,
+            "h": 2.9155502319335938
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1116.1353759765625,
+            "y": 132.15103912353516,
+            "w": 11.666748046875,
+            "h": 2.9155502319335938
+          },
+          "after": {
+            "x": 1116.1353759765625,
+            "y": 156.83854293823242,
+            "w": 11.666748046875,
+            "h": 2.915546417236328
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-arrow-right",
+          "text": "",
+          "before": {
+            "x": 1244.515625,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1244.515625,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1247.4322509765625,
+            "y": 129.234375,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "after": {
+            "x": 1247.4322509765625,
+            "y": 153.921875,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1251.515625,
+            "y": 125.15103912353516,
+            "w": 4.0833740234375,
+            "h": 8.166671752929688
+          },
+          "after": {
+            "x": 1251.515625,
+            "y": 149.83853912353516,
+            "w": 4.0833740234375,
+            "h": 8.166667938232422
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": " browser UI",
+          "before": {
+            "x": 1268.515625,
+            "y": 120.546875,
+            "w": 84.84375,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 1268.515625,
+            "y": 145.234375,
+            "w": 84.84375,
+            "h": 17.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-play",
+          "text": "",
+          "before": {
+            "x": 1268.515625,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1268.515625,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "polygon",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1272.015625,
+            "y": 123.984375,
+            "w": 8.1666259765625,
+            "h": 10.5
+          },
+          "after": {
+            "x": 1272.015625,
+            "y": 148.671875,
+            "w": 8.1666259765625,
+            "h": 10.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": "heroStats",
+          "text": "Source appNodeRoombundled snapshotCoach steps6ordered labelsTrace tabs4overview, steps, minimap, raw",
+          "before": {
+            "x": 1012,
+            "y": 158.9375,
+            "w": 370,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1012,
+            "y": 183.625,
+            "w": 370,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": null,
+          "text": "Source appNodeRoombundled snapshot",
+          "before": {
+            "x": 1012,
+            "y": 158.9375,
+            "w": 118,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1012,
+            "y": 183.625,
+            "w": 118,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Source app",
+          "before": {
+            "x": 1021,
+            "y": 167.9375,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1021,
+            "y": 192.625,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "NodeRoom",
+          "before": {
+            "x": 1021,
+            "y": 185.4375,
+            "w": 100,
+            "h": 21.75
+          },
+          "after": {
+            "x": 1021,
+            "y": 210.125,
+            "w": 100,
+            "h": 21.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SMALL",
+          "classes": null,
+          "text": "bundled snapshot",
+          "before": {
+            "x": 1021,
+            "y": 210.1875,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1021,
+            "y": 234.875,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": null,
+          "text": "Coach steps6ordered labels",
+          "before": {
+            "x": 1138,
+            "y": 158.9375,
+            "w": 118,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1138,
+            "y": 183.625,
+            "w": 118,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Coach steps",
+          "before": {
+            "x": 1147,
+            "y": 167.9375,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1147,
+            "y": 192.625,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "6",
+          "before": {
+            "x": 1147,
+            "y": 185.4375,
+            "w": 100,
+            "h": 21.75
+          },
+          "after": {
+            "x": 1147,
+            "y": 210.125,
+            "w": 100,
+            "h": 21.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SMALL",
+          "classes": null,
+          "text": "ordered labels",
+          "before": {
+            "x": 1147,
+            "y": 210.1875,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1147,
+            "y": 234.875,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": null,
+          "text": "Trace tabs4overview, steps, minimap, raw",
+          "before": {
+            "x": 1264,
+            "y": 158.9375,
+            "w": 118,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1264,
+            "y": 183.625,
+            "w": 118,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Trace tabs",
+          "before": {
+            "x": 1273,
+            "y": 167.9375,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1273,
+            "y": 192.625,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "4",
+          "before": {
+            "x": 1273,
+            "y": 185.4375,
+            "w": 100,
+            "h": 21.75
+          },
+          "after": {
+            "x": 1273,
+            "y": 210.125,
+            "w": 100,
+            "h": 21.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SMALL",
+          "classes": null,
+          "text": "overview, steps, minimap, raw",
+          "before": {
+            "x": 1273,
+            "y": 210.1875,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1273,
+            "y": 234.875,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": "launchCheck",
+          "text": "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does no",
+          "before": {
+            "x": 1012,
+            "y": 243.6875,
+            "w": 370,
+            "h": 66.5625
+          },
+          "after": {
+            "x": 1012,
+            "y": 268.375,
+            "w": 370,
+            "h": 66.5625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-circle-check",
+          "text": "",
+          "before": {
+            "x": 1021,
+            "y": 252.6875,
+            "w": 7.3125,
+            "h": 15
+          },
+          "after": {
+            "x": 1021,
+            "y": 277.375,
+            "w": 7.3125,
+            "h": 15
+          },
+          "style": {}
+        },
+        {
+          "tag": "circle",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1021.609375,
+            "y": 257.140625,
+            "w": 6.09375,
+            "h": 6.09375
+          },
+          "after": {
+            "x": 1021.609375,
+            "y": 281.828125,
+            "w": 6.09375,
+            "h": 6.09375
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1023.7421875,
+            "y": 259.578125,
+            "w": 1.828125,
+            "h": 1.21875
+          },
+          "after": {
+            "x": 1023.7421875,
+            "y": 284.265625,
+            "w": 1.828125,
+            "h": 1.21875
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does no",
+          "before": {
+            "x": 1038.3125,
+            "y": 252.6875,
+            "w": 334.6875,
+            "h": 48.5625
+          },
+          "after": {
+            "x": 1038.3125,
+            "y": 277.375,
+            "w": 334.6875,
+            "h": 48.5625
+          },
+          "style": {}
+        }
+      ]
+    },
+    {
+      "name": "former-full",
+      "former": true,
+      "fullPage": true,
+      "idleStable": true,
+      "domExact": true,
+      "beforeRawY": 615.46875,
+      "afterRawY": 664.859375,
+      "delta": [
+        {
+          "tag": "HEADER",
+          "classes": "showcase",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, sourc",
+          "before": {
+            "x": 22,
+            "y": 22,
+            "w": 1396,
+            "h": 341.859375
+          },
+          "after": {
+            "x": 22,
+            "y": 22,
+            "w": 1396,
+            "h": 391.25
+          },
+          "style": {
+            "block-size": {
+              "before": "341.859px",
+              "after": "391.25px"
+            },
+            "grid-template-rows": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "height": {
+              "before": "341.859px",
+              "after": "391.25px"
+            },
+            "perspective-origin": {
+              "before": "698px 170.922px",
+              "after": "698px 195.625px"
+            },
+            "transform-origin": {
+              "before": "698px 170.93px",
+              "after": "698px 195.625px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "showcaseCopy",
+          "text": " NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, sourc",
+          "before": {
+            "x": 43,
+            "y": 43,
+            "w": 938,
+            "h": 299.859375
+          },
+          "after": {
+            "x": 43,
+            "y": 43,
+            "w": 938,
+            "h": 349.25
+          },
+          "style": {
+            "block-size": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "height": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "perspective-origin": {
+              "before": "469px 149.922px",
+              "after": "469px 174.625px"
+            },
+            "transform-origin": {
+              "before": "469px 149.93px",
+              "after": "469px 174.625px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "showcaseActions",
+          "text": "npm run understand:noderoomnpm run capture:noderoom:realnpm run trace-coach:sqlite no API key requir",
+          "before": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 938,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 938,
+            "h": 88.78125
+          },
+          "style": {
+            "block-size": {
+              "before": "39.3906px",
+              "after": "88.7812px"
+            },
+            "height": {
+              "before": "39.3906px",
+              "after": "88.7812px"
+            },
+            "perspective-origin": {
+              "before": "469px 19.6875px",
+              "after": "469px 44.3906px"
+            },
+            "transform-origin": {
+              "before": "469px 19.6953px",
+              "after": "469px 44.3906px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "command",
+          "text": "npm run understand:noderoom",
+          "before": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 230.140625,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 43,
+            "y": 303.46875,
+            "w": 246.4375,
+            "h": 39.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "230.141px",
+              "after": "246.438px"
+            },
+            "perspective-origin": {
+              "before": "115.062px 19.6875px",
+              "after": "123.219px 19.6875px"
+            },
+            "transform-origin": {
+              "before": "115.07px 19.6953px",
+              "after": "123.219px 19.6953px"
+            },
+            "width": {
+              "before": "230.141px",
+              "after": "246.438px"
+            }
+          }
+        },
+        {
+          "tag": "CODE",
+          "classes": null,
+          "text": "npm run understand:noderoom",
+          "before": {
+            "x": 81,
+            "y": 314.46875,
+            "w": 178.140625,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 81,
+            "y": 314.46875,
+            "w": 194.4375,
+            "h": 17.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "178.141px",
+              "after": "194.438px"
+            },
+            "perspective-origin": {
+              "before": "89.0625px 8.6875px",
+              "after": "97.2188px 8.6875px"
+            },
+            "transform-origin": {
+              "before": "89.0703px 8.69531px",
+              "after": "97.2188px 8.69531px"
+            },
+            "width": {
+              "before": "178.141px",
+              "after": "194.438px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "command",
+          "text": "npm run capture:noderoom:real",
+          "before": {
+            "x": 283.140625,
+            "y": 303.46875,
+            "w": 243.34375,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 299.4375,
+            "y": 303.46875,
+            "w": 260.84375,
+            "h": 39.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "243.344px",
+              "after": "260.844px"
+            },
+            "perspective-origin": {
+              "before": "121.672px 19.6875px",
+              "after": "130.422px 19.6875px"
+            },
+            "transform-origin": {
+              "before": "121.672px 19.6953px",
+              "after": "130.422px 19.6953px"
+            },
+            "width": {
+              "before": "243.344px",
+              "after": "260.844px"
+            }
+          }
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-terminal",
+          "text": "",
+          "before": {
+            "x": 297.140625,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "after": {
+            "x": 313.4375,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 304.640625,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "after": {
+            "x": 320.9375,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 299.640625,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "after": {
+            "x": 315.9375,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "CODE",
+          "classes": null,
+          "text": "npm run capture:noderoom:real",
+          "before": {
+            "x": 321.140625,
+            "y": 314.46875,
+            "w": 191.34375,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 337.4375,
+            "y": 314.46875,
+            "w": 208.84375,
+            "h": 17.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "191.344px",
+              "after": "208.844px"
+            },
+            "perspective-origin": {
+              "before": "95.6719px 8.6875px",
+              "after": "104.422px 8.6875px"
+            },
+            "transform-origin": {
+              "before": "95.6719px 8.69531px",
+              "after": "104.422px 8.69531px"
+            },
+            "width": {
+              "before": "191.344px",
+              "after": "208.844px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "command",
+          "text": "npm run trace-coach:sqlite",
+          "before": {
+            "x": 536.484375,
+            "y": 303.46875,
+            "w": 223.546875,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 570.28125,
+            "y": 303.46875,
+            "w": 239.234375,
+            "h": 39.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "223.547px",
+              "after": "239.234px"
+            },
+            "perspective-origin": {
+              "before": "111.766px 19.6875px",
+              "after": "119.609px 19.6875px"
+            },
+            "transform-origin": {
+              "before": "111.773px 19.6953px",
+              "after": "119.617px 19.6953px"
+            },
+            "width": {
+              "before": "223.547px",
+              "after": "239.234px"
+            }
+          }
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-terminal",
+          "text": "",
+          "before": {
+            "x": 550.484375,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "after": {
+            "x": 584.28125,
+            "y": 315.65625,
+            "w": 15,
+            "h": 15
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 557.984375,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "after": {
+            "x": 591.78125,
+            "y": 327.53125,
+            "w": 5,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 552.984375,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "after": {
+            "x": 586.78125,
+            "y": 318.78125,
+            "w": 3.75,
+            "h": 7.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "CODE",
+          "classes": null,
+          "text": "npm run trace-coach:sqlite",
+          "before": {
+            "x": 574.484375,
+            "y": 314.46875,
+            "w": 171.546875,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 608.28125,
+            "y": 314.46875,
+            "w": 187.234375,
+            "h": 17.390625
+          },
+          "style": {
+            "inline-size": {
+              "before": "171.547px",
+              "after": "187.234px"
+            },
+            "perspective-origin": {
+              "before": "85.7656px 8.6875px",
+              "after": "93.6094px 8.6875px"
+            },
+            "transform-origin": {
+              "before": "85.7734px 8.69531px",
+              "after": "93.6172px 8.69531px"
+            },
+            "width": {
+              "before": "171.547px",
+              "after": "187.234px"
+            }
+          }
+        },
+        {
+          "tag": "SPAN",
+          "classes": "sourcePill",
+          "text": " no API key required",
+          "before": {
+            "x": 770.03125,
+            "y": 303.46875,
+            "w": 163.421875,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 43,
+            "y": 352.859375,
+            "w": 163.421875,
+            "h": 39.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-circle-dot",
+          "text": "",
+          "before": {
+            "x": 783.03125,
+            "y": 316.65625,
+            "w": 13,
+            "h": 13
+          },
+          "after": {
+            "x": 56,
+            "y": 366.046875,
+            "w": 13,
+            "h": 13
+          },
+          "style": {}
+        },
+        {
+          "tag": "circle",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 784.1145629882812,
+            "y": 317.73958587646484,
+            "w": 10.8333740234375,
+            "h": 10.833328247070312
+          },
+          "after": {
+            "x": 57.08333206176758,
+            "y": 367.1302032470703,
+            "w": 10.833332061767578,
+            "h": 10.833343505859375
+          },
+          "style": {}
+        },
+        {
+          "tag": "circle",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 788.9895629882812,
+            "y": 322.61458587646484,
+            "w": 1.0833740234375,
+            "h": 1.0833282470703125
+          },
+          "after": {
+            "x": 61.95833206176758,
+            "y": 372.0052032470703,
+            "w": 1.0833358764648438,
+            "h": 1.083343505859375
+          },
+          "style": {}
+        },
+        {
+          "tag": "ASIDE",
+          "classes": "launchCard",
+          "text": "Bundled snapshotverified SQLite NodeRoom trace browser UISource appNodeRoombundled snapshotCoach ste",
+          "before": {
+            "x": 997,
+            "y": 43,
+            "w": 400,
+            "h": 299.859375
+          },
+          "after": {
+            "x": 997,
+            "y": 43,
+            "w": 400,
+            "h": 349.25
+          },
+          "style": {
+            "block-size": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "height": {
+              "before": "299.859px",
+              "after": "349.25px"
+            },
+            "perspective-origin": {
+              "before": "200px 149.922px",
+              "after": "200px 174.625px"
+            },
+            "transform-origin": {
+              "before": "200px 149.93px",
+              "after": "200px 174.625px"
+            }
+          }
+        },
+        {
+          "tag": "DIV",
+          "classes": "launchHead",
+          "text": "Bundled snapshotverified",
+          "before": {
+            "x": 1012,
+            "y": 75.609375,
+            "w": 370,
+            "h": 23.9375
+          },
+          "after": {
+            "x": 1012,
+            "y": 100.296875,
+            "w": 370,
+            "h": 23.9375
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Bundled snapshot",
+          "before": {
+            "x": 1012,
+            "y": 79.609375,
+            "w": 117.671875,
+            "h": 15.9375
+          },
+          "after": {
+            "x": 1012,
+            "y": 104.296875,
+            "w": 117.671875,
+            "h": 15.9375
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "verified",
+          "before": {
+            "x": 1314.96875,
+            "y": 75.609375,
+            "w": 67.03125,
+            "h": 23.9375
+          },
+          "after": {
+            "x": 1314.96875,
+            "y": 100.296875,
+            "w": 67.03125,
+            "h": 23.9375
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": "launchFlow",
+          "text": " SQLite NodeRoom trace browser UI",
+          "before": {
+            "x": 1012,
+            "y": 109.546875,
+            "w": 370,
+            "h": 39.390625
+          },
+          "after": {
+            "x": 1012,
+            "y": 134.234375,
+            "w": 370,
+            "h": 39.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": " SQLite",
+          "before": {
+            "x": 1023,
+            "y": 120.546875,
+            "w": 57.96875,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 1023,
+            "y": 145.234375,
+            "w": 57.96875,
+            "h": 17.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-database",
+          "text": "",
+          "before": {
+            "x": 1023,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1023,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "ellipse",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1024.75,
+            "y": 123.40103912353516,
+            "w": 10.5,
+            "h": 3.5
+          },
+          "after": {
+            "x": 1024.75,
+            "y": 148.08853912353516,
+            "w": 10.5,
+            "h": 3.5000038146972656
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1024.75,
+            "y": 125.15103912353516,
+            "w": 10.5,
+            "h": 9.916069030761719
+          },
+          "after": {
+            "x": 1024.75,
+            "y": 149.83853912353516,
+            "w": 10.5,
+            "h": 9.916065216064453
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1024.75,
+            "y": 129.234375,
+            "w": 10.5,
+            "h": 1.7493972778320312
+          },
+          "after": {
+            "x": 1024.75,
+            "y": 153.921875,
+            "w": 10.5,
+            "h": 1.7493972778320312
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-arrow-right",
+          "text": "",
+          "before": {
+            "x": 1090.96875,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1090.96875,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1093.8853759765625,
+            "y": 129.234375,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "after": {
+            "x": 1093.8853759765625,
+            "y": 153.921875,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1097.96875,
+            "y": 125.15103912353516,
+            "w": 4.0833740234375,
+            "h": 8.166671752929688
+          },
+          "after": {
+            "x": 1097.96875,
+            "y": 149.83853912353516,
+            "w": 4.0833740234375,
+            "h": 8.166667938232422
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": " NodeRoom trace",
+          "before": {
+            "x": 1114.96875,
+            "y": 120.546875,
+            "w": 119.546875,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 1114.96875,
+            "y": 145.234375,
+            "w": 119.546875,
+            "h": 17.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-layers",
+          "text": "",
+          "before": {
+            "x": 1114.96875,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1114.96875,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1116.137451171875,
+            "y": 123.40083312988281,
+            "w": 11.67431640625,
+            "h": 5.833747863769531
+          },
+          "after": {
+            "x": 1116.137451171875,
+            "y": 148.0883331298828,
+            "w": 11.67431640625,
+            "h": 5.833747863769531
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1116.1353759765625,
+            "y": 129.234375,
+            "w": 11.666748046875,
+            "h": 2.9155502319335938
+          },
+          "after": {
+            "x": 1116.1353759765625,
+            "y": 153.921875,
+            "w": 11.666748046875,
+            "h": 2.9155502319335938
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1116.1353759765625,
+            "y": 132.15103912353516,
+            "w": 11.666748046875,
+            "h": 2.9155502319335938
+          },
+          "after": {
+            "x": 1116.1353759765625,
+            "y": 156.83854293823242,
+            "w": 11.666748046875,
+            "h": 2.915546417236328
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-arrow-right",
+          "text": "",
+          "before": {
+            "x": 1244.515625,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1244.515625,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1247.4322509765625,
+            "y": 129.234375,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "after": {
+            "x": 1247.4322509765625,
+            "y": 153.921875,
+            "w": 8.166748046875,
+            "h": 0
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1251.515625,
+            "y": 125.15103912353516,
+            "w": 4.0833740234375,
+            "h": 8.166671752929688
+          },
+          "after": {
+            "x": 1251.515625,
+            "y": 149.83853912353516,
+            "w": 4.0833740234375,
+            "h": 8.166667938232422
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": " browser UI",
+          "before": {
+            "x": 1268.515625,
+            "y": 120.546875,
+            "w": 84.84375,
+            "h": 17.390625
+          },
+          "after": {
+            "x": 1268.515625,
+            "y": 145.234375,
+            "w": 84.84375,
+            "h": 17.390625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-play",
+          "text": "",
+          "before": {
+            "x": 1268.515625,
+            "y": 122.234375,
+            "w": 14,
+            "h": 14
+          },
+          "after": {
+            "x": 1268.515625,
+            "y": 146.921875,
+            "w": 14,
+            "h": 14
+          },
+          "style": {}
+        },
+        {
+          "tag": "polygon",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1272.015625,
+            "y": 123.984375,
+            "w": 8.1666259765625,
+            "h": 10.5
+          },
+          "after": {
+            "x": 1272.015625,
+            "y": 148.671875,
+            "w": 8.1666259765625,
+            "h": 10.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": "heroStats",
+          "text": "Source appNodeRoombundled snapshotCoach steps6ordered labelsTrace tabs4overview, steps, minimap, raw",
+          "before": {
+            "x": 1012,
+            "y": 158.9375,
+            "w": 370,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1012,
+            "y": 183.625,
+            "w": 370,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": null,
+          "text": "Source appNodeRoombundled snapshot",
+          "before": {
+            "x": 1012,
+            "y": 158.9375,
+            "w": 118,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1012,
+            "y": 183.625,
+            "w": 118,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Source app",
+          "before": {
+            "x": 1021,
+            "y": 167.9375,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1021,
+            "y": 192.625,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "NodeRoom",
+          "before": {
+            "x": 1021,
+            "y": 185.4375,
+            "w": 100,
+            "h": 21.75
+          },
+          "after": {
+            "x": 1021,
+            "y": 210.125,
+            "w": 100,
+            "h": 21.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SMALL",
+          "classes": null,
+          "text": "bundled snapshot",
+          "before": {
+            "x": 1021,
+            "y": 210.1875,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1021,
+            "y": 234.875,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": null,
+          "text": "Coach steps6ordered labels",
+          "before": {
+            "x": 1138,
+            "y": 158.9375,
+            "w": 118,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1138,
+            "y": 183.625,
+            "w": 118,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Coach steps",
+          "before": {
+            "x": 1147,
+            "y": 167.9375,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1147,
+            "y": 192.625,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "6",
+          "before": {
+            "x": 1147,
+            "y": 185.4375,
+            "w": 100,
+            "h": 21.75
+          },
+          "after": {
+            "x": 1147,
+            "y": 210.125,
+            "w": 100,
+            "h": 21.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SMALL",
+          "classes": null,
+          "text": "ordered labels",
+          "before": {
+            "x": 1147,
+            "y": 210.1875,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1147,
+            "y": 234.875,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": null,
+          "text": "Trace tabs4overview, steps, minimap, raw",
+          "before": {
+            "x": 1264,
+            "y": 158.9375,
+            "w": 118,
+            "h": 74.75
+          },
+          "after": {
+            "x": 1264,
+            "y": 183.625,
+            "w": 118,
+            "h": 74.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "Trace tabs",
+          "before": {
+            "x": 1273,
+            "y": 167.9375,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1273,
+            "y": 192.625,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "STRONG",
+          "classes": null,
+          "text": "4",
+          "before": {
+            "x": 1273,
+            "y": 185.4375,
+            "w": 100,
+            "h": 21.75
+          },
+          "after": {
+            "x": 1273,
+            "y": 210.125,
+            "w": 100,
+            "h": 21.75
+          },
+          "style": {}
+        },
+        {
+          "tag": "SMALL",
+          "classes": null,
+          "text": "overview, steps, minimap, raw",
+          "before": {
+            "x": 1273,
+            "y": 210.1875,
+            "w": 100,
+            "h": 14.5
+          },
+          "after": {
+            "x": 1273,
+            "y": 234.875,
+            "w": 100,
+            "h": 14.5
+          },
+          "style": {}
+        },
+        {
+          "tag": "DIV",
+          "classes": "launchCheck",
+          "text": "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does no",
+          "before": {
+            "x": 1012,
+            "y": 243.6875,
+            "w": 370,
+            "h": 66.5625
+          },
+          "after": {
+            "x": 1012,
+            "y": 268.375,
+            "w": 370,
+            "h": 66.5625
+          },
+          "style": {}
+        },
+        {
+          "tag": "svg",
+          "classes": "lucide lucide-circle-check",
+          "text": "",
+          "before": {
+            "x": 1021,
+            "y": 252.6875,
+            "w": 7.3125,
+            "h": 15
+          },
+          "after": {
+            "x": 1021,
+            "y": 277.375,
+            "w": 7.3125,
+            "h": 15
+          },
+          "style": {}
+        },
+        {
+          "tag": "circle",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1021.609375,
+            "y": 257.140625,
+            "w": 6.09375,
+            "h": 6.09375
+          },
+          "after": {
+            "x": 1021.609375,
+            "y": 281.828125,
+            "w": 6.09375,
+            "h": 6.09375
+          },
+          "style": {}
+        },
+        {
+          "tag": "path",
+          "classes": null,
+          "text": "",
+          "before": {
+            "x": 1023.7421875,
+            "y": 259.578125,
+            "w": 1.828125,
+            "h": 1.21875
+          },
+          "after": {
+            "x": 1023.7421875,
+            "y": 284.265625,
+            "w": 1.828125,
+            "h": 1.21875
+          },
+          "style": {}
+        },
+        {
+          "tag": "SPAN",
+          "classes": null,
+          "text": "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does no",
+          "before": {
+            "x": 1038.3125,
+            "y": 252.6875,
+            "w": 334.6875,
+            "h": 48.5625
+          },
+          "after": {
+            "x": 1038.3125,
+            "y": 277.375,
+            "w": 334.6875,
+            "h": 48.5625
+          },
+          "style": {}
+        }
+      ]
+    }
+  ]
+}

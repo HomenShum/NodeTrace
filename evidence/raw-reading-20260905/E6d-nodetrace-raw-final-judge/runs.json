@@ -1,0 +1,52 @@
+[
+  {
+    "surface": "source",
+    "cell": "actual-390-no-preference",
+    "exit": 0,
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\report.json",
+    "ok": true,
+    "checks": 27,
+    "captures": 2,
+    "failure": null
+  },
+  {
+    "surface": "source",
+    "cell": "actual-1024-reduce-text200",
+    "exit": 0,
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\report.json",
+    "ok": true,
+    "checks": 27,
+    "captures": 2,
+    "failure": null
+  },
+  {
+    "surface": "source",
+    "cell": "long-390-no-preference",
+    "exit": 0,
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\report.json",
+    "ok": true,
+    "checks": 72,
+    "captures": 3,
+    "failure": null
+  },
+  {
+    "surface": "installed",
+    "cell": "short-390-no-preference",
+    "exit": 0,
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\report.json",
+    "ok": true,
+    "checks": 31,
+    "captures": 2,
+    "failure": null
+  },
+  {
+    "surface": "installed",
+    "cell": "long-1024-no-preference",
+    "exit": 0,
+    "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\report.json",
+    "ok": true,
+    "checks": 30,
+    "captures": 2,
+    "failure": null
+  }
+]

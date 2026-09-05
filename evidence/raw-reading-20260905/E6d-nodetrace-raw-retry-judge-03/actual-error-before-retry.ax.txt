@@ -1,0 +1,22 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: Trace data could not be loaded.
+  - alert:
+    - paragraph: State request failed (HTTP 503).
+    - button "Retry loading trace"
+  - button "Inspect trace" [disabled]
+  - code: npm run understand:noderoom
+  - code: npm run capture:noderoom:real
+  - code: npm run trace-coach:sqlite
+  - text: no API key required
+  - complementary "Trace Coach launch path":
+    - text: SQLite sample
+    - strong: error
+    - text: SQLite NodeRoom trace browser UI Source app
+    - strong: NodeRoom
+    - text: SQLite sample Coach steps
+    - strong: "0"
+    - text: ordered labels Trace tabs
+    - strong: "4"
+    - text: overview, steps, minimap, raw Trace evidence will appear after the state file loads successfully.
