@@ -1,0 +1,28 @@
+{
+  "url": "http://127.0.0.1:4928/?unrelated=preserved#review",
+  "viewport": {
+    "width": 360,
+    "height": 800
+  },
+  "overflow": 0,
+  "focus": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+  "headings": [
+    {
+      "level": "H1",
+      "text": "Portable trace UI for agent apps."
+    },
+    {
+      "level": "H2",
+      "text": "Load a guided trace"
+    },
+    {
+      "level": "H2",
+      "text": "Live graph rail"
+    },
+    {
+      "level": "H3",
+      "text": "Relationship graph"
+    }
+  ],
+  "modal": false
+}

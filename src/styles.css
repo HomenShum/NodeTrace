@@ -8,13 +8,13 @@
   --line-strong: #bdc8d6;
   --text-primary: #172033;
   --text-secondary: #3d495d;
-  --text-muted: #68758a;
-  --text-tertiary: #8995a6;
+  --text-muted: #536175;
+  --text-tertiary: #566276;
   --accent-primary: #d85f45;
   --accent-ink: #9b3b2d;
   --accent-border: rgba(216, 95, 69, 0.34);
   --accent-tint: rgba(216, 95, 69, 0.1);
-  --success-ink: #16704a;
+  --success-ink: #146540;
   --warning-ink: #9a6a14;
   --danger-ink: #b42335;
   --violet-ink: #635bff;
@@ -410,6 +410,7 @@ button {
 }
 
 .r-tracevu-tabs button {
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -804,6 +805,18 @@ button {
 .liveGraphRailHead small {
   color: var(--text-muted);
 }
+
+.liveGraphRailHead h2 { margin: 0; font-size: 16px; font-weight: 700; }
+.inspectTrace { min-height: 44px; padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); cursor: pointer; font-weight: 700; }
+.inspectTrace:disabled { cursor: wait; color: var(--text-muted); }
+.showcaseCopy > .inspectTrace { margin-top: 8px; }
+.showcase :focus-visible, .coachPanel :focus-visible, .coachEmpty :focus-visible { outline: 3px solid var(--blue-ink); outline-offset: 3px; }
+.r-tracevu-detail-head > .inspectTrace { margin: 0 0 12px; }
+.coachEmpty { margin: 16px 0; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-primary); }
+.coachEmpty h2 { margin: 0 0 8px; font-size: 18px; }
+.coachEmpty p, .loadError p { margin: 0 0 12px; overflow-wrap: anywhere; }
+.coachEmpty code, .command code { overflow-wrap: anywhere; white-space: normal; }
+.loadError { margin-bottom: 12px; color: var(--danger-ink); }
 
 .liveGraphRailReadout {
   margin-top: 10px;

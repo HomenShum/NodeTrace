@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { Activity, ArrowRight, CheckCircle2, CircleDot, Code2, Database, FileJson, Image, Layers3, ListChecks, Map, Network, Play, Route, Terminal } from "lucide-react";
-import { TraceLensPanel, TraceLensProvider, type NodeTraceState, type TraceCoachState, type TraceCoachStep } from "./trace";
+import { TraceLensPanel, TraceLensProvider, useTraceLens, type NodeTraceState, type TraceCoachState, type TraceCoachStep } from "./trace";
 import { LiveGraphRail } from "./trace/LiveGraphRail";
-
-type CoachTab = "overview" | "steps" | "flow" | "raw";
+import { loadDemoState } from "./demoState";
+import { coachTabs, useDemoNavigation, type CoachTab } from "./demoNavigation";
 
 const seedState: NodeTraceState = {
   generatedAt: "loading",
@@ -20,34 +20,54 @@ const seedState: NodeTraceState = {
   codeOwnership: [],
 };
 
-export function DemoDashboard() {
+export function DemoDashboard({ installed = false }: { installed?: boolean }) {
+  return <TraceLensProvider builderCapable={false}><DemoContent installed={installed} /></TraceLensProvider>;
+}
+
+function DemoContent({ installed }: { installed: boolean }) {
   const [state, setState] = useState<NodeTraceState>(seedState);
-  const [activeCoachStepId, setActiveCoachStepId] = useState<string | null>(null);
-  const [coachTab, setCoachTab] = useState<CoachTab>("overview");
+  const [loadStatus, setLoadStatus] = useState<"loading" | "ready" | "error">("loading");
+  const [loadError, setLoadError] = useState("");
+  const [attempt, setAttempt] = useState(0);
   const coach = state.coach;
+  const navigation = useDemoNavigation(coach, loadStatus === "ready");
   const activeCoachStep = useMemo(
-    () => coach?.steps.find((step) => step.id === activeCoachStepId) ?? coach?.steps.find((step) => step.id === coach.activeStepId) ?? coach?.steps[0],
-    [activeCoachStepId, coach],
+    () => coach?.steps.find((step) => step.id === navigation.step) ?? coach?.steps.find((step) => step.id === coach.activeStepId) ?? coach?.steps[0],
+    [navigation.step, coach],
   );
 
   useEffect(() => {
-    fetch("./nodetrace-state.json", { cache: "no-store" })
-      .then((response) => (response.ok ? response.json() : seedState))
-      .then((nextState: NodeTraceState) => setState(nextState))
-      .catch(() => setState(seedState));
-  }, []);
+    const controller = new AbortController();
+    let active = true;
+    const timeout = window.setTimeout(() => controller.abort(), 10_000);
+    setLoadStatus("loading");
+    setLoadError("");
+    loadDemoState(controller.signal)
+      .then((nextState) => {
+        if (!active) return;
+        setState(nextState);
+        setLoadStatus("ready");
+      })
+      .catch((error: unknown) => {
+        if (!active) return;
+        setLoadError(controller.signal.aborted ? "The state request timed out. Check the local server and retry." : error instanceof Error ? error.message : "The state request failed. Check the local server and retry.");
+        setLoadStatus("error");
+      })
+      .finally(() => window.clearTimeout(timeout));
+    return () => { active = false; controller.abort(); window.clearTimeout(timeout); };
+  }, [attempt]);
 
   const heroStats = useMemo(
     () => [
-      { detail: coach?.sourceMode === "live" ? "latest full" : "local checkout", label: "Source app", value: "NodeRoom" },
+      { detail: coach ? coach.sourceMode === "live" ? "captured checkout" : "bundled snapshot" : "SQLite sample", label: "Source app", value: "NodeRoom" },
       { detail: "ordered labels", label: "Coach steps", value: String(coach?.steps.length ?? 0) },
       { detail: "overview, steps, minimap, raw", label: "Trace tabs", value: "4" },
     ],
     [coach],
   );
   return (
-    <TraceLensProvider builderCapable={state.builderCapable}>
-      <main className="shell">
+    <>
+      <main className="shell" tabIndex={-1}>
         <section className="workspace">
           <header className="showcase" data-nodetrace-surface="shell.statusStrip">
             <div className="showcaseCopy">
@@ -55,20 +75,22 @@ export function DemoDashboard() {
                 <Route size={13} aria-hidden="true" /> NodeRoom codebase trace
               </p>
               <h1>Portable trace UI for agent apps.</h1>
-              <p>{state.session.summary}</p>
+              <p role="status" aria-live="polite">{loadStatus === "loading" ? "Loading the local trace file…" : loadStatus === "error" ? "Trace data could not be loaded." : coach ? `Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from ${coach.sourceMode === "live" ? "a captured checkout" : "the bundled snapshot"}.` : state.session.summary}</p>
+              {loadStatus === "error" ? <div className="loadError" role="alert"><p>{loadError}</p><button type="button" className="inspectTrace" onClick={() => setAttempt((value) => value + 1)}>Retry loading trace</button></div> : null}
+              <InspectTraceButton surfaceId="shell.statusStrip" disabled={loadStatus !== "ready"} />
               <div className="showcaseActions">
-                <div className="command">
+                {installed ? <div className="command"><Terminal size={15} aria-hidden="true" /><code translate="no">npm run nodetrace:happy-path</code></div> : <><div className="command">
                   <Terminal size={15} aria-hidden="true" />
-                  <code>npm run understand:noderoom</code>
+                  <code translate="no">npm run understand:noderoom</code>
                 </div>
                 <div className="command">
                   <Terminal size={15} aria-hidden="true" />
-                  <code>npm run capture:noderoom:real</code>
+                  <code translate="no">npm run capture:noderoom:real</code>
                 </div>
                 <div className="command">
                   <Terminal size={15} aria-hidden="true" />
-                  <code>npm run trace-coach:sqlite</code>
-                </div>
+                  <code translate="no">npm run trace-coach:sqlite</code>
+                </div></>}
                 <span className="sourcePill">
                   <CircleDot size={13} aria-hidden="true" /> no API key required
                 </span>
@@ -76,8 +98,8 @@ export function DemoDashboard() {
             </div>
             <aside className="launchCard" aria-label="Trace Coach launch path">
               <div className="launchHead">
-                <span>Live sample</span>
-                <strong>{state.session.status}</strong>
+                <span>{coach?.sourceMode === "live" ? "Captured checkout" : coach ? "Bundled snapshot" : "SQLite sample"}</span>
+                <strong>{loadStatus === "ready" ? state.session.status : loadStatus}</strong>
               </div>
               <div className="launchFlow" aria-label="SQLite to trace UI flow">
                 <span><Database size={14} aria-hidden="true" /> SQLite</span>
@@ -97,7 +119,7 @@ export function DemoDashboard() {
               </div>
               <div className="launchCheck">
                 <CheckCircle2 size={15} aria-hidden="true" />
-                <span>Seeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots, and flow metadata.</span>
+                <span>{loadStatus !== "ready" ? "Trace evidence will appear after the state file loads successfully." : coach ? "This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent." : "The SQLite sample contains trace events. No Trace Coach captures are loaded yet."}</span>
               </div>
             </aside>
           </header>
@@ -105,21 +127,26 @@ export function DemoDashboard() {
           {coach && activeCoachStep ? (
             <TraceCoachPanel
               activeStep={activeCoachStep}
-              activeTab={coachTab}
+              activeTab={navigation.tab}
               coach={coach}
-              setActiveTab={setCoachTab}
-              setActiveStepId={setActiveCoachStepId}
+              setActiveTab={navigation.selectTab}
+              setActiveStepId={navigation.selectStep}
             />
-          ) : null}
+          ) : loadStatus === "ready" ? <section className="coachEmpty" aria-labelledby="coach-empty-title"><h2 id="coach-empty-title">{installed ? "Connect your own trace" : "Load a guided trace"}</h2>{installed ? <p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate="no">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate="no">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p> : <p>No Trace Coach steps are available in this sample. To inspect the bundled snapshot, run <code translate="no">npm run trace-coach:sqlite</code> and refresh. For new captures, the first two commands above require a real NodeRoom checkout.</p>}</section> : null}
 
           {state.traces.length > 0 ? <LiveGraphRail traces={state.traces} /> : null}
 
         </section>
       </main>
 
-      <TraceLensPanel state={state} />
-    </TraceLensProvider>
+      {loadStatus === "ready" ? <TraceLensPanel state={state} /> : null}
+    </>
   );
+}
+
+function InspectTraceButton({ surfaceId, disabled = false }: { surfaceId: string; disabled?: boolean }) {
+  const { openHit } = useTraceLens();
+  return <button type="button" className="inspectTrace" data-trace-inspect disabled={disabled} onClick={() => openHit({ surfaceId })}>Inspect trace</button>;
 }
 
 function TraceCoachPanel({
@@ -135,7 +162,7 @@ function TraceCoachPanel({
   setActiveTab: (tab: CoachTab) => void;
   setActiveStepId: (stepId: string) => void;
 }) {
-  const sourceModeLabel = coach.sourceMode === "live" ? "latest full live checkout" : "full local checkout";
+  const sourceModeLabel = coach.sourceMode === "live" ? "captured checkout" : "bundled snapshot";
   const activeNodeId = activeStep.diagram.nodeId;
   const rect = activeStep.uiCapture.rect;
   const tabs: Array<{ id: CoachTab; label: string; Icon: typeof ListChecks }> = [
@@ -173,7 +200,6 @@ function TraceCoachPanel({
             data-testid="trace-record"
             onClick={() => {
               setActiveStepId(step.id);
-              setActiveTab("overview");
             }}
           >
             <span className="r-tracevu-rec-head">
@@ -193,9 +219,17 @@ function TraceCoachPanel({
         <header className="r-tracevu-detail-head">
           <strong>{activeStep.title}</strong>
           <p>{activeStep.narrative}</p>
+          <InspectTraceButton surfaceId={activeStep.surfaceId} />
           <div className="r-tracevu-tabs" role="tablist" aria-label="NodeRoom trace detail">
             {tabs.map(({ id, label, Icon }) => (
-              <button key={id} type="button" role="tab" aria-selected={activeTab === id} data-on={String(activeTab === id)} onClick={() => setActiveTab(id)}>
+              <button key={id} type="button" role="tab" id={`coach-tab-${id}`} aria-controls={`coach-panel-${id}`} tabIndex={activeTab === id ? 0 : -1} aria-selected={activeTab === id} data-on={String(activeTab === id)} onClick={() => setActiveTab(id)} onKeyDown={(event) => {
+                const index = coachTabs.indexOf(id);
+                const next = event.key === "ArrowRight" ? coachTabs[(index + 1) % coachTabs.length] : event.key === "ArrowLeft" ? coachTabs[(index + coachTabs.length - 1) % coachTabs.length] : event.key === "Home" ? coachTabs[0] : event.key === "End" ? coachTabs[coachTabs.length - 1] : null;
+                if (!next) return;
+                event.preventDefault();
+                setActiveTab(next);
+                document.getElementById(`coach-tab-${next}`)?.focus();
+              }}>
                 <Icon size={12} aria-hidden="true" />
                 {label}
               </button>
@@ -203,7 +237,8 @@ function TraceCoachPanel({
           </div>
         </header>
 
-        <div className="r-tracevu-detail-body">
+        {tabs.map(({ id }) => <div key={id} className="r-tracevu-detail-body" role="tabpanel" id={`coach-panel-${id}`} aria-labelledby={`coach-tab-${id}`} tabIndex={0} hidden={activeTab !== id}>
+          {activeTab === id ? <>
           {activeTab === "overview" ? (
             <div className="coachOverview">
               <section className="coachPane codePane" aria-label="Code slice">
@@ -289,7 +324,8 @@ function TraceCoachPanel({
           {activeTab === "raw" ? (
             <pre className="r-tracevu-raw" data-testid="trace-raw">{JSON.stringify(rawPayload, null, 2)}</pre>
           ) : null}
-        </div>
+          </> : null}
+        </div>)}
       </div>
     </section>
   );
@@ -300,7 +336,7 @@ function groupCoachSteps(steps: TraceCoachStep[]): Record<string, TraceCoachStep
     const group = step.group ?? "Trace";
     groups[group] = [...(groups[group] ?? []), step];
     return groups;
-  }, {});
+  }, Object.create(null) as Record<string, TraceCoachStep[]>);
 }
 
 function assetPath(path: string) {

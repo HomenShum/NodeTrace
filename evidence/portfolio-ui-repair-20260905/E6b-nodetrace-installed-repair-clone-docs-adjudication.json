@@ -1,0 +1,36 @@
+{
+  "at": "2026-09-05T02:05:07.910121+00:00",
+  "classification": "Judge clone assembly omission, not candidate defect",
+  "cause": "The prior 49-input copy filter omitted four promotion Markdown files changed in the candidate; clone retained base citations. Original failing log preserved.",
+  "action": "Copied exact frozen root bytes for four omitted docs into isolated judge clone only; no application or original source edit.",
+  "files": [
+    {
+      "path": "promotion/PRODUCT_GOAL.md",
+      "oldCloneSha256": "5afeef48d56833411b7d0d5e25e54ff4b98430f22cd07625f9e4eb6b8559217f",
+      "frozenRootSha256": "372b05101ab5c9a660dd6b737b783a5ecaba9227cc293cca2b76f3a124d8f75d",
+      "afterCloneSha256": "372b05101ab5c9a660dd6b737b783a5ecaba9227cc293cca2b76f3a124d8f75d",
+      "rootStillUnchanged": true
+    },
+    {
+      "path": "promotion/PRODUCT_JOURNEYS.md",
+      "oldCloneSha256": "b322ddd4747849abbae7f3d5c8372e83ed1b09d1f8ca2b7b375a81947818f719",
+      "frozenRootSha256": "f7dfc0630b82a83c9341b0bd56839b4f2e347dbacfea213054899feb5163bf1f",
+      "afterCloneSha256": "f7dfc0630b82a83c9341b0bd56839b4f2e347dbacfea213054899feb5163bf1f",
+      "rootStillUnchanged": true
+    },
+    {
+      "path": "promotion/PROMOTION_LOG.md",
+      "oldCloneSha256": "083d8ed2cf55421d4ed86dc53ff09a4b7e823090f4a9cc18bf0677bc32cc68e6",
+      "frozenRootSha256": "82068d7d9c3da1260a4809f7780ab5fd3c07aaf4259873ec22748e61aff4f82d",
+      "afterCloneSha256": "82068d7d9c3da1260a4809f7780ab5fd3c07aaf4259873ec22748e61aff4f82d",
+      "rootStillUnchanged": true
+    },
+    {
+      "path": "promotion/WIG_REVIEW.md",
+      "oldCloneSha256": "b589531b4f53e5895cb0655e60985c13336f7d210dd8011326a0e574351c6bd8",
+      "frozenRootSha256": "3539dda54646fc6f7a01b9534313c967ae11130c6d43e8d706bb42015d1be4d5",
+      "afterCloneSha256": "3539dda54646fc6f7a01b9534313c967ae11130c6d43e8d706bb42015d1be4d5",
+      "rootStillUnchanged": true
+    }
+  ]
+}

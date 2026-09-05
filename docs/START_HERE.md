@@ -13,33 +13,41 @@ code and reply in Slack.
 
 NodeTrace is the thing you drop into that product so the screen can answer for
 itself. A developer marks a region of their interface with one HTML attribute.
-After that, holding **Ctrl** (or **Cmd** on a Mac) and clicking that region opens
-a side panel that says: here is the business claim this region is making, here
-is the evidence behind it, here are the runtime steps that produced it, and — if
-you are on the team — here is which component, query and test own it.
+The demo supplies an **Inspect trace** button that works with keyboard, pointer
+or touch. Holding **Ctrl** (or **Cmd** on a Mac) and clicking a tagged region
+also opens the Trace Lens. It shows the region's business proof and runtime
+steps, including explicit missing-data states. A host can expose internal code
+ownership only after verifying the reviewer's capability on its server.
 
 Two words you will meet everywhere below:
 
 - a **surface** is a named region of a user interface (`workSurface.traceStrip`,
   `shell.statusStrip`). It is just a string. Both the interface and the database
   agree to use the same string, and that agreement is the whole trick.
-- the **Trace Lens** is that side panel.
+- the **Trace Lens** is a native modal dialog displayed as a side panel.
 
 This repository ships three things around that idea: the panel itself, a command
 that transplants the panel into an app you already have, and a capture tool that
 photographs real source files and the real running app so a walkthrough can show
 code and screen side by side.
 
+**Candidate status, 2026-09-04:** this page describes the local user-journey
+repair. Earlier D1/D4 failures remain historical evidence; their candidate
+repairs and the new loading, navigation and provenance behavior still require
+final independent UI judgment. Compilation and citations do not certify visual
+quality, physical touch, human accessibility or production readiness.
+
 ## Run it first
 
 ```bash
 npm install
 npm run happy-path     # creates the SQLite file and public/nodetrace-state.json
-npm run dev            # http://127.0.0.1:5173/
+npm run dev            # use the Vite URL printed by the server
 ```
 
-Then Ctrl-click the big header on the page. That is the action this document
-follows. `npm run check` runs the whole verification chain (about six minutes,
+Then activate **Inspect trace** in the header, or Ctrl/Cmd-click the header.
+That is the action this document follows. `npm run check` runs the whole
+verification chain (about six minutes,
 because it installs NodeTrace into a throwaway Next.js app and builds it).
 
 ---
@@ -52,10 +60,11 @@ because it installs NodeTrace into a throwaway Next.js app and builds it).
 **Calls next:** `DemoDashboard`
 
 **Why this exists**
-There is exactly one route and one page. NodeTrace is a component library with a
-demo attached, not an application with a router, so nothing here dispatches on a
-URL. If you were looking for a routing layer: there isn't one, and that is
-deliberate.
+The entrypoint mounts one demo page. Its selection helper reads and writes URL
+parameters for the selected coach step, tab and Trace Lens hit. That logic lives
+in `src/demoNavigation.ts:31` (`export function useDemoNavigation`), outside the
+portable provider. Installed applications keep their existing router and call
+the provider's `openHit` and `close` API themselves.
 
 **Core code**
 ```tsx
@@ -74,77 +83,75 @@ the page is blank. Nothing catches it; there is no error boundary.
 
 ---
 
-## Step 2 — The dashboard fetches the state file that everything else reads
+## Step 2 — Load and validate the public state before rendering trace details
 
-**File:** `src/DemoDashboard.tsx`
-**Symbol:** `DemoDashboard`, the state fetch at `src/DemoDashboard.tsx:33` (`useEffect(() => {`)
-**Called by:** `src/main.tsx`
-**Calls next:** `TraceLensProvider`, `LiveGraphRail`, `TraceLensPanel`
+**Files:** `src/DemoDashboard.tsx`, `src/demoState.ts`
+**Symbol:** `src/demoState.ts:31` (`export async function loadDemoState`)
+**Called by:** the request effect in `DemoContent`, on mount and retry
+**Calls next:** ready-state rendering and `useDemoNavigation`
 
 **Why this exists**
-Everything the panel can say about a surface arrives as one static JSON file,
-`public/nodetrace-state.json`, written earlier by the happy path (Step 6). The
-browser never talks to SQLite. That is what makes the panel droppable into any
-app: it needs a fetch, not a database driver.
+The demo reads `public/nodetrace-state.json`, prepared by a SQLite seed command.
+The browser never opens SQLite. A missing or malformed file must tell the
+reviewer why evidence is unavailable instead of looking like an empty success.
+The loader checks HTTP status, limits the response to 1 MiB and validates its
+nested render fields with the existing Zod dependency. `DemoContent` supplies
+an AbortController and a ten-second timeout.
 
 **Core code**
 ```tsx
-useEffect(() => {
-  fetch("./nodetrace-state.json", { cache: "no-store" })
-    .then((response) => (response.ok ? response.json() : seedState))
-    .then((nextState: NodeTraceState) => setState(nextState))
-    .catch(() => setState(seedState));
-}, []);
+const response = await fetch("./nodetrace-state.json", { cache: "no-store", signal });
+if (!response.ok) throw new Error(`State request failed (HTTP ${response.status}).`);
+// After a bounded read and schema validation:
+return { ...parsed.data, builderCapable: false, codeOwnership: [] };
 ```
 
-**Input** — none; it runs once on mount.
-**Output** — `state`, a `NodeTraceState` holding the surface registry, proof
-cards, runtime trace rows and code-ownership rows.
-**Failure behavior** — a missing or unparseable file falls back to `seedState`,
-which is a placeholder with an empty surface list. The page still renders; the
-lens then has nothing to show and stays shut. There is no visible error message,
-which is a real weakness — see `docs/codebase/CONCERNS.md`.
-**Next** — the tagged regions this component renders are the click targets for
-Step 3. The one you will click is the header at `src/DemoDashboard.tsx:52`
-(`data-nodetrace-surface="shell.statusStrip"`).
+**Input** — a public JSON response and an abort signal.
+**Output** — validated review data. Public JSON is not builder authority: the
+loader strips ownership and forces `builderCapable: false`, and the demo's
+provider also receives `false`.
+**Failure behavior** — failed, invalid, oversized or timed-out requests produce
+an alert and **Retry loading trace**. Loading is announced and inspect controls
+remain disabled until the request succeeds. Effect cleanup aborts the request
+and prevents an obsolete response from replacing current state.
+**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:72`
+(`data-nodetrace-surface="shell.statusStrip"`) and a normal inspect control.
 
 ---
 
-## Step 3 — Ctrl-click anywhere on the page is caught once, at the window
+## Step 3 — Open the lens through a normal control or the existing shortcut
 
-**File:** `src/trace/TraceLensProvider.tsx`
-**Symbol:** the `onClick` listener inside `TraceLensProvider`,
-`src/trace/TraceLensProvider.tsx:57` (`const onClick = (event: MouseEvent) => {`)
-**Called by:** the browser, on every click, in the capture phase
-**Calls next:** `resolveTraceHit`
+**Files:** `src/DemoDashboard.tsx`, `src/trace/TraceLensProvider.tsx`
+**Symbols:** `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) and
+`src/trace/TraceLensProvider.tsx:45` (`const openHit = useCallback`)
+**Called by:** an Inspect trace button, a host control or the modifier-click listener
+**Calls next:** `openHit`; modifier-click first calls `resolveTraceHit`
 
 **Why this exists**
-Every tagged region could have had its own click handler. Instead there is one
-listener on `window`, registered with `capture: true` so it runs before the host
-application's own handlers. That is why adopting NodeTrace requires no changes to
-existing components — only an attribute.
+A reviewer using a keyboard or phone needs an ordinary button. The demo's
+header and coach detail controls call the provider's existing API; hosts can
+provide an equivalent control without adopting the demo's URL policy.
 
 **Core code**
 ```tsx
-const onClick = (event: MouseEvent) => {
-  if (!(event.metaKey || event.ctrlKey) || event.altKey || event.shiftKey || event.button !== 0) return;
-  const resolved = resolveTraceHit(event.target);
-  if (!resolved) return;
-  event.preventDefault();
-  event.stopPropagation();
-  openHit(resolved);
-};
-window.addEventListener("click", onClick, true);
+const { openHit } = useTraceLens();
+// Inside a host's normal button handler:
+openHit({ surfaceId });
 ```
 
-**Input** — a raw DOM `MouseEvent`.
-**Output** — nothing, unless the modifier keys match and the click landed inside
-a tagged region.
-**Failure behavior** — an ordinary click, a right-click, or Ctrl+Shift+click all
-return early and reach the application untouched. This gate is also the reason
-the lens cannot be opened by keyboard or by touch, which is open defect **D4** in
-`promotion/PROMOTION_LOG.md`.
-**Next** — continue to `resolveTraceHit` in Step 4.
+The existing window listener still accepts a plain Ctrl/Cmd-left-click in a
+tagged region. It resolves the hit, prevents the underlying action and calls
+`openHit`. Other clicks pass through to the host. See
+`src/trace/TraceLensProvider.tsx:58` (`event.metaKey || event.ctrlKey`).
+
+**Input** — an explicit `SurfaceHit`, or a DOM event resolved to one.
+**Output** — an open lens and its selected hit in React context.
+**Failure behavior** — a click outside a tagged region does nothing to the
+host. An unregistered but explicit surface opens a missing-data message rather
+than disappearing. Historical D1 and D4 have candidate repairs; final browser
+acceptance is pending, as recorded in [CONCERNS.md](codebase/CONCERNS.md).
+**Next** — Step 4 explains the shortcut's DOM resolver; normal controls already
+supply the same typed value.
 
 ---
 
@@ -156,9 +163,10 @@ the lens cannot be opened by keyboard or by touch, which is open defect **D4** i
 **Calls next:** `openHit`, which stores the result in React state
 
 **Why this exists**
-This is the trust boundary. Above it there is a DOM event, which could be
-anything. Below it there is a `SurfaceHit` — four optional strings and nothing
-else. No DOM node, no event, no component reference crosses this line, which is
+This is the selection boundary. Above it there is a DOM event; below it
+there is a `SurfaceHit` with one required surface id and three optional strings.
+Selecting a surface grants no privileged access. No DOM node, no event and no
+component reference crosses this line, which is
 why the panel can be rendered anywhere in the tree.
 
 **Core code**
@@ -239,8 +247,11 @@ This is the whole write path of the product. It applies `db/schema.sql`, inserts
 one demo session with its surfaces, proof cards, trace events and ownership rows,
 and then publishes the browser-safe subset as
 `public/nodetrace-state.json`. Notice what it strips: `codeOwnership` is written
-to the JSON **only** when `NODETRACE_BUILDER_CAPABLE=true`, because component,
-query, mutation and test paths are internal information.
+to the JSON **only** when `NODETRACE_BUILDER_CAPABLE=true`. That flag controls
+a local export; it does not authenticate a browser user. Do not publish a
+privileged export as a public static file. The demo always strips ownership and
+uses Review mode. An installed host must verify builder identity on its server
+and provide a safe privileged projection through its own route.
 
 **Core code**
 ```js
@@ -270,34 +281,44 @@ not possible.
 
 **File:** `src/trace/TraceLensPanel.tsx`
 **Symbol:** `src/trace/TraceLensPanel.tsx:7` (`export function TraceLensPanel({`)
-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:120`
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:142`
 (`<TraceLensPanel state={state} />`)
-**Calls next:** `src/trace/TraceLensPanel.tsx:158` (`function filterByHit`)
+**Calls next:** `src/trace/TraceLensPanel.tsx:184` (`function filterByHit`)
 
 **Why this exists**
-The panel holds no state of its own. It reads the current hit from context and
-the full state from its prop, and narrows: proof cards and trace rows are matched
+The panel reads the current hit from context and the full state from its prop,
+and narrows: proof cards and trace rows are matched
 first on the exact element, then fall back to the whole surface, so a click on a
 region with no per-element evidence still shows the region's evidence.
 
 **Core code**
 ```tsx
 const meta = state.surfaces.find((surface) => surface.id === hit?.surfaceId) ?? null;
-if (!open || !hit || !meta) return null;
+if (!open || !hit) return null;
 
 const proofCards = filterByHit(state.proofs, hit.surfaceId, hit.artifactId, hit.elementId).slice(0, 6);
 const traceRows = filterByHit(state.traces, hit.surfaceId, hit.artifactId, hit.elementId).slice(-6).reverse();
 ```
 
 **Input** — the `SurfaceHit` from Step 4 and the `NodeTraceState` from Step 2.
-**Output** — a `role="dialog"` panel with three regions: Business proof, Runtime
-trace, Code ownership.
-**Failure behavior** — **this is the line that produces open defect D1.** If the
-clicked surface id is not in `state.surfaces`, `meta` is `null` and the component
-returns `null`: the click was consumed, and nothing appears. There is no message.
-Reproduce it by running `npm run trace-coach:sqlite` (which replaces the surface
-registry) and then Ctrl-clicking the header, which is still tagged
-`shell.statusStrip`.
+**Output** — a native `<dialog>` with Business proof, Runtime trace and Code
+ownership regions. `src/trace/TraceLensPanel.tsx:21` (`dialog.showModal()`)
+makes the background inert, focuses Close, wraps Tab between available controls
+and restores the opener on dismissal. Escape, Close and a gesture beginning
+and ending on the backdrop dismiss it.
+**Failure behavior** — an unregistered surface renders **Surface unavailable**
+and tells the reviewer to load matching trace data. Empty proof/trace regions
+and locked ownership stay explicit. A source URL produces a link; a host's
+`onOpenSource` callback produces a button; otherwise the panel says opening is
+unavailable. Element/artifact fallback is labeled as surrounding-surface evidence,
+so it cannot imply the exact selected element was verified.
+
+The demo separately persists the selected step, tab and lens hit in URL query
+parameters through `useDemoNavigation`. Back/Forward and reload restore the
+selection after the actual dataset loads. Invalid steps normalize to a step in
+that dataset. Tabs connect `aria-controls` to their panels and support arrow,
+Home and End keys. None of this changes the portable host's routing contract
+or derives builder capability from a URL.
 **Next** — a second rendering path runs beside this one; continue to Step 8.
 
 ---
@@ -306,7 +327,7 @@ registry) and then Ctrl-clicking the header, which is still tagged
 
 **File:** `src/trace/LiveGraphRail.tsx`
 **Symbol:** `src/trace/LiveGraphRail.tsx:27` (`export function LiveGraphRail`)
-**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:115`
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:137`
 (`<LiveGraphRail traces={state.traces} />`), only when `state.traces` is non-empty
 **Calls next:** `GraphSession.observe` and the `NodeGraph` renderer in
 `vendor/nodegraph-live/`
@@ -330,22 +351,23 @@ const snapshot = useSyncExternalStore(session.subscribe, session.getSnapshot, se
 ```
 
 **Input** — `RuntimeTraceRow[]`.
-**Output** — a WebGL canvas plus `data-entity-count` / `data-edge-count`
+**Output** — a graph section with an `h2` heading, a WebGL canvas and
+`data-entity-count` / `data-edge-count`
 attributes, which is how the browser probes assert on it without reading pixels.
 **Failure behavior** — this component needs WebGL and mounts nothing useful on a
 server. That is why the installer loads the dashboard through
-`next/dynamic(..., { ssr: false })` in a Next.js target — `bin/nodetrace.mjs:304`
+`next/dynamic(..., { ssr: false })` in a Next.js target — `bin/nodetrace.mjs:307`
 (`function nextPage(importPath)`). Without it, `next build` dies in prerender
 with `WebGL2RenderingContext is not defined`.
 **Next** — continue to failure and recovery in Step 9.
 
 ---
 
-## Step 9 — Failure and recovery live in the installer, not the UI
+## Step 9 — Installer failure and recovery have their own receipt
 
 **File:** `bin/nodetrace.mjs`
-**Symbol:** `bin/nodetrace.mjs:204` (`function runCommand`), and the receipt
-written at `bin/nodetrace.mjs:120` (`setup-receipt.json`)
+**Symbol:** `bin/nodetrace.mjs:207` (`function runCommand`), and the receipt
+written at `bin/nodetrace.mjs:122` (`setup-receipt.json`)
 **Called by:** `bin/nodetrace.mjs:31` (`function addNodeTrace`), i.e.
 `npx @homenshum/nodetrace add`
 **Calls next:** nothing — it writes the receipt and sets the exit code
@@ -370,7 +392,7 @@ const status = timedOut ? `TIMEOUT after ${formatMs(options.timeoutMs)}` : ok ? 
 code 0 or 1.
 **Failure behavior** — the receipt is written whether or not the phases passed,
 so a failed install is inspectable rather than silent. `writeText` refuses to
-overwrite an existing file unless `--force` is given — `bin/nodetrace.mjs:156`
+overwrite an existing file unless `--force` is given — `bin/nodetrace.mjs:158`
 (`Refusing to overwrite`) — so re-running
 `add` cannot quietly clobber a customised copy.
 **Next** — continue to the tests in Step 10.

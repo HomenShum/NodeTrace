@@ -95,18 +95,25 @@ left alone and recorded in `CONCERNS.md` instead.
 
 If you are about to rename something: grep `scripts/smoke.mjs` for it first.
 
-## What nothing tests
+## Coverage boundaries for the current repair candidate
 
-- The **panel's rendering**. There is no component test anywhere. Every
-  assertion about `TraceLensPanel` is a substring match on its source text.
-- **Keyboard and touch access.** Open defect D4 was found by an ad-hoc Playwright
-  probe that was never committed; nothing in the repository would notice it
-  returning.
-- **The unregistered-surface path** (defect D1) — a Ctrl-click on a surface the
-  state does not list renders nothing, and no check covers it.
-- **The Vite installer target's build.** Only the Next target is built end to end.
-- `npm run understand:noderoom` and `npm run capture:noderoom:real`, which need a
-  sibling NodeRoom checkout and exit 1 without one (defect D3).
+- The basic `scripts/smoke.mjs` checks pin panel strings; they do not prove the
+  rendered modal's focus lifecycle, source actions or navigation behavior.
+- Historical D1 and D4 reports demonstrated missing-surface and keyboard/touch
+  failures. The candidate now has visible missing data, normal inspect buttons
+  and native modal focus handling. Final independent browser judgment is pending;
+  the old report's FAIL values are not automatically changed by source edits.
+- The new demo URL and loading boundaries need real reload/Back/Forward,
+  malformed/slow/error input and retry scenarios, in addition to citation checks.
+- The Vite installer target's build is not covered by the existing Next build
+  proof. The installed-import check must include every copied demo dependency.
+- `npm run understand:noderoom` and `npm run capture:noderoom:real` require an
+  actual NodeRoom checkout, selected by `--source-root`, `NODETRACE_SOURCE_ROOT`
+  or the parent-directory default. A bundled snapshot does not test a new capture.
+
+The current behavior and remaining acceptance boundary are described in
+[START_HERE.md](../START_HERE.md) and [CONCERNS.md](CONCERNS.md). This documentation
+update leaves existing smoke assertions and historical raw reports unchanged.
 
 ## Adding a check
 

@@ -83,8 +83,9 @@ Output lines are `<name>: PASS` or `<name>: FAIL` followed by indented
 ## React
 
 - Function components, hooks, no class components.
-- No state library. `DemoDashboard` holds everything in `useState`; the lens uses
-  one `createContext`.
+- No state library. `DemoContent` owns loading and data state; the demo-only
+  `useDemoNavigation` hook synchronizes selection with the URL. The portable
+  lens uses one `createContext` and retains its host-controlled API.
 - `useTraceLens()` throws if used outside its provider — deliberate, so a
   mis-mounted panel fails loudly rather than rendering empty.
 - Props are declared inline (`{ state }: { state: NodeTraceState }`) rather than

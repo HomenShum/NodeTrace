@@ -15,9 +15,10 @@ to NodeAgent's agent architecture. Bring your own agent, tools, queue, database,
 or model provider.
 
 **New here? Read [`docs/START_HERE.md`](docs/START_HERE.md).** It follows one real
-user action — Ctrl-clicking a tagged region — through the code in the order the
-code runs, and it names the open defects on that path rather than routing around
-them. Then [`docs/codebase/`](docs/codebase/) for stack, structure, architecture,
+user action — opening the Trace Lens for a tagged region — through the code.
+It describes the repaired local candidate, the historical failures and the
+remaining final-judgment boundary. Then [`docs/codebase/`](docs/codebase/) for
+stack, structure, architecture,
 conventions, integrations, testing and known concerns, and `.tours/` for the same
 three walkthroughs inside VS Code (`npm run citations:check` proves every tour
 step and every `path:line` in these documents still names the line it claims).
@@ -43,7 +44,13 @@ creates:
 - `public/nodetrace-state.json`
 - `docs/eval/nodetrace-happy-path.json`
 
-Open the Vite URL and Cmd/Ctrl-click any tagged surface to open Trace Lens.
+Open the Vite URL and activate **Inspect trace** with keyboard, pointer or
+touch. Cmd/Ctrl-click on a tagged surface remains a shortcut. The candidate
+uses a native modal and visible loading/error/retry states; final UI acceptance
+is pending. The demo restores step, tab and lens selection through the URL,
+while installed hosts retain their own routing and the existing lens API.
+The demo always treats public JSON as Review data; builder access requires a host
+server to verify identity and provide the privileged data.
 
 ![NodeTrace dashboard overview](docs/screenshots/nodetrace-dashboard.png)
 
@@ -104,7 +111,11 @@ state remains Builder-safe, and confirms the Trace Lens keeps a bounded runtime
 window for the clicked surface. The integration prompt is in
 [`examples/qa-agent/README.md`](examples/qa-agent/README.md).
 
-For a NodeRoom codebase Trace Coach walkthrough:
+For a NodeRoom codebase Trace Coach walkthrough using **new captures**, first
+provide a real NodeRoom checkout and its dependencies. Both discovery and
+capture resolve it from `--source-root`, then `NODETRACE_SOURCE_ROOT`, then
+the parent directory. The automatic tool clone below supplies Understand-Anything,
+not the NodeRoom source.
 
 ```bash
 npm run understand:noderoom
@@ -113,8 +124,14 @@ npm run trace-coach:sqlite
 npm run dev
 ```
 
-That proof seeds the local sample app from NodeRoom's real trace-tab source
-path. It writes a SQLite-backed campaign where each ordered step contains a
+For the **bundled snapshot**, run `npm run trace-coach:sqlite` and `npm run dev`
+without the first two commands. This reuses committed captures and does not
+create new ones. The UI labels that state **bundled snapshot**, distinguishes it
+from a captured checkout, and explains when no coach is loaded.
+
+With a real checkout and successful capture commands, the workflow seeds the
+local sample app from NodeRoom's real trace-tab source path. It writes a
+SQLite-backed campaign where each ordered step contains a
 step label, real NodeRoom file path and line range, actual NodeTrace
 code-browser source screenshot rendered from the real filesystem, UI selector,
 DOMRect bounding box, actual running NodeRoom screenshot, and Mermaid flow

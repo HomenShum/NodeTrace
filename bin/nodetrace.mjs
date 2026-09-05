@@ -60,10 +60,12 @@ function addNodeTrace(options) {
     replacements: [["../db/schema.sql", "../db/nodetrace.schema.sql"]],
   });
   writeText(join(targetDir, "scripts", "nodetrace-smoke.mjs"), targetSmokeScript(), { force });
-  copyText(join(packageRoot, "src", "DemoDashboard.tsx"), join(targetDir, "src", "nodetrace-demo", "DemoDashboard.tsx"), {
-    force,
-    replacements: [["./trace", "../nodetrace"]],
-  });
+  for (const file of ["DemoDashboard.tsx", "demoState.ts", "demoNavigation.ts"]) {
+    copyText(join(packageRoot, "src", file), join(targetDir, "src", "nodetrace-demo", file), {
+      force,
+      replacements: [["./trace", "../nodetrace"]],
+    });
+  }
   copyText(join(packageRoot, "src", "styles.css"), join(targetDir, "src", "nodetrace-demo", "styles.css"), { force });
   if (framework === "next") {
     writeText(nextPagePath(targetDir), nextPage(nextPageImport(targetDir)), { force });
@@ -180,6 +182,7 @@ function updatePackageJson(targetDir, framework) {
     "react",
     "react-dom",
     "sigma",
+    "zod",
   ]);
   pkg.devDependencies = withOwnRanges(pkg.devDependencies, "devDependencies", [
     "@types/node",
@@ -313,7 +316,7 @@ import "${importPath.replace(/DemoDashboard$/, "styles.css")}";
 const DemoDashboard = dynamic(() => import("${importPath}").then((module) => module.DemoDashboard), { ssr: false });
 
 export default function NodeTracePage() {
-  return <DemoDashboard />;
+  return <DemoDashboard installed />;
 }
 `;
 }
@@ -326,7 +329,7 @@ import "./styles.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <DemoDashboard />
+    <DemoDashboard installed />
   </React.StrictMode>,
 );
 `;

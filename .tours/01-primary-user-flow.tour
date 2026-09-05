@@ -1,63 +1,78 @@
 {
   "$schema": "https://aka.ms/codetour-schema",
-  "title": "1. Ctrl-click a surface, get its proof",
-  "description": "The one user action this product exists for, from the browser event to the rendered panel. Run `npm run happy-path && npm run dev` first so there is state to show.",
+  "title": "1. Inspect a surface, get its trace",
+  "description": "Follow the repaired demo candidate from local data to a keyboard- and touch-reachable Trace Lens. Run npm run happy-path and npm run dev first. Final UI acceptance remains pending.",
   "ref": "main",
   "steps": [
     {
       "file": "index.html",
       "line": 11,
-      "description": "One page, one script. There is no router in this repository and looking for one is a dead end."
+      "description": "One page and one React entrypoint. The demo synchronizes its detail selection with URL parameters; installed hosts retain their own routing."
     },
     {
       "file": "src/main.tsx",
       "line": 6,
-      "description": "One React root, one component. Everything below hangs off `DemoDashboard`."
+      "description": "One React root mounts DemoDashboard. The browser reads a prepared local dataset; it does not open SQLite or start an agent."
+    },
+    {
+      "file": "src/demoState.ts",
+      "line": 31,
+      "description": "The demo fetches public JSON with an AbortSignal, checks HTTP status, limits the body to 1 MiB and validates required render fields with Zod. DemoContent supplies a ten-second timeout and visible retry."
     },
     {
       "file": "src/DemoDashboard.tsx",
-      "line": 34,
-      "description": "Everything the panel can ever say arrives here, as one static JSON file. The browser never opens SQLite -- that is what makes the panel droppable into any app.\n\nIf the file is missing, the `.catch` below falls back to a placeholder with an empty surface list, and nothing on screen says so."
-    },
-    {
-      "file": "src/DemoDashboard.tsx",
-      "line": 52,
-      "description": "This attribute is the entire adoption cost. A region of interface says: I am the surface called shell.statusStrip. That string is the only thing the interface and the database have to agree on.\n\nThis particular tag is also open defect D1: after `npm run trace-coach:sqlite` the state file no longer registers `shell.statusStrip`, so Ctrl-clicking here silently does nothing."
+      "line": 147,
+      "description": "A normal Inspect trace button calls the existing useTraceLens().openHit API. Keyboard and touch users have a visible entrypoint; hosts can add their own controls with the same API. Historical D4 is repaired in this candidate, pending final judge."
     },
     {
       "file": "src/trace/TraceLensProvider.tsx",
       "line": 58,
-      "description": "One listener on `window`, in the capture phase, gated on Ctrl or Cmd plus a plain left click. This is why adopting NodeTrace needs no changes to existing components.\n\nIt is also why the lens cannot be opened by keyboard or by touch -- open defect D4."
+      "description": "The existing Ctrl/Cmd-click shortcut still resolves a tagged region through one window listener. It complements normal controls; it is not the only entrypoint. Ordinary clicks on host content pass through."
     },
     {
       "file": "src/trace/TraceLensProvider.tsx",
       "line": 15,
-      "description": "The trust boundary. Above this line there is a DOM event, which could be anything; below it there is a `SurfaceHit`, which is four optional strings and nothing else. No DOM node crosses.\n\n`data-noderoom-surface` is accepted as well as `data-nodetrace-surface`, so an app already tagged for NodeRoom works unchanged."
+      "description": "The DOM event becomes a SurfaceHit: one required surface id and three optional reference strings. No DOM node crosses. Both data-nodetrace-surface and data-noderoom-surface are supported. This identifies a selection; it does not grant authority."
     },
     {
       "file": "src/trace/types.ts",
       "line": 10,
-      "description": "`SurfaceHit` -- the domain value the rest of the panel is written against. Four strings, three of them optional."
+      "description": "SurfaceHit is the value hosts pass to openHit: surfaceId plus optional artifactId, elementId and targetRef."
     },
     {
       "file": "src/trace/TraceLensPanel.tsx",
-      "line": 17,
-      "description": "The panel looks the clicked id up in the registry that came with the state file. A miss makes `meta` null, and the next line returns null: the click was swallowed and nothing appears.\n\nThat is defect D1's mechanism, in two lines."
+      "line": 30,
+      "description": "An unregistered selection now opens Surface unavailable with missing-data guidance. It does not fabricate a registry entry or proof. Historical D1 is repaired in this candidate, pending final judge."
     },
     {
       "file": "src/trace/TraceLensPanel.tsx",
-      "line": 158,
-      "description": "Narrowing, with a deliberate fallback: match on the exact element first, and if nothing matches, show everything for the surface. A click on a region with no per-element evidence still shows the region's evidence rather than an empty panel."
+      "line": 21,
+      "description": "The native dialog makes the page behind it inert. The panel focuses Close, wraps Tab between its controls, and restores the opener on dismissal. Escape, Close and a pointer gesture that starts and ends on the backdrop dismiss it."
     },
     {
       "file": "src/trace/TraceLensPanel.tsx",
-      "line": 97,
-      "description": "Code ownership -- component, query, mutation, skill and test paths -- renders only when the host app has declared itself builder-capable."
+      "line": 184,
+      "description": "Exact element/artifact matches take priority; absent matches fall back to the surrounding surface. The panel says this does not verify the exact element. Proof and runtime windows remain bounded to six rows each."
+    },
+    {
+      "file": "src/demoNavigation.ts",
+      "line": 31,
+      "description": "Only the demo owns step, tab and lens URL parameters. Reload and history restore selection after state is ready; invalid steps normalize against the loaded dataset. No URL parameter grants builder access."
+    },
+    {
+      "file": "src/trace/TraceLensPanel.tsx",
+      "line": 124,
+      "description": "The portable panel renders ownership only with builder capability, Builder mode and a matching ownership row. Hosts must derive capability from server-verified identity and serve a safe projection."
+    },
+    {
+      "file": "src/demoState.ts",
+      "line": 59,
+      "description": "Public JSON is data, not builder authority. The demo discards privileged flags and ownership and always mounts its provider in Review mode. A producer-side environment flag is not authentication."
     },
     {
       "file": "scripts/init-sqlite.mjs",
       "line": 222,
-      "description": "And here is why that is more than a UI toggle: the happy path strips ownership rows out of the published JSON entirely unless `NODETRACE_BUILDER_CAPABLE=true`. The client cannot leak what it never received. This is the single security-relevant line in the browser path."
+      "description": "The seed producer normally omits ownership. Its NODETRACE_BUILDER_CAPABLE option can export internal rows, so operators must not publish a privileged export as a public file. Installed hosts own their privileged server route."
     }
   ]
 }

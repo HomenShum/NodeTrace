@@ -1,0 +1,768 @@
+{
+  "verdict": "VERIFIED WITH CAVEATS",
+  "repairStatus": "RESOLVED",
+  "scope": "Only installed-context setup/empty-state guidance repair and its regressions; no full portfolio readiness acceptance",
+  "repo": "NodeTrace",
+  "canonicalRepo": "D:/ProjectRecovery/nodetrace-canonical-consumer-20260904",
+  "baseCommit": "fc7c0c471bea40d2fb354e3cb742b395e923244b",
+  "candidateState": "Frozen uncommitted candidate; exact 53 inputs and 13 proof-source hashes attached.",
+  "request": "Freshly install repaired demo, execute displayed recovery command, compare390+desktop before/after, verify keyboard/host URL and unchanged source-default behavior, rerun source-bound journey and unchanged WIG; retain historical refutation.",
+  "reviewer": "runtime_ui_judge",
+  "testedAt": "2026-09-05T02:11:56.219791+00:00",
+  "profileRevision": "E6b_NODETRACE_UI_REPAIR_PLAN.md + explicit narrow installed CHANGE A/B repair; REPO_READINESS_STANDARD.md",
+  "sourceBinding": {
+    "at": "2026-09-05T02:07:30.502086+00:00",
+    "ok": true,
+    "checks": {
+      "original49Unchanged": true,
+      "additional4DocsUnchanged": true,
+      "53CloneBytesMatch": true,
+      "13ProofSourceBytesMatchNamedJourney": true,
+      "headUnchanged": true,
+      "refsUnchanged": true,
+      "freshInstaller48SourceInputsUnchanged": true,
+      "installedResponses44Match": true,
+      "displayedRecoveryExecutedTwice": true,
+      "priorRefutedMdJsonUnchanged": true,
+      "3InstalledHelpersMatchExactRewrite": true,
+      "generatedNextInstalledFlag": true,
+      "generatedViteInstalledFlag": true,
+      "sourceDefaultUnchanged7Widths": true,
+      "originalProbesNotWeakened": true
+    },
+    "sourceHashes": {
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+      ".tours/01-primary-user-flow.tour": "f745b8d75879d3e80b8be087dfccc7f2d7c8d1e0c1c1d92ea3385ffaedf3a7ea",
+      ".tours/02-agent-execution.tour": "971ac22b547ef03bc6aa314e7d7b5e1b25c5a3cfceeeb5728e7dc050ada0bbdb",
+      ".tours/03-debug-and-recovery.tour": "36615c44b60b4bd8110e35abe51aaef116da0387f5599e7004329d3f6ff73079",
+      "AGENTS.md": "c763289a0000cdd84adff68fcd74bc29aa1a89d454baa9d2e48f58693a5f6438",
+      "README.md": "b3cc569930111250dabbbdc2758767d427f00381261699cac9a96a3b13f28778",
+      "bin/nodetrace-capture.mjs": "8ce11d500e424efec6b3e52129990d9a773843c2ab4735c414bcc4f4ca5783df",
+      "bin/nodetrace-mcp.mjs": "85d726ba1cd6d47e85b3438bcc219c883992ab59a8be21aa11234273f0e011fe",
+      "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+      "docs/START_HERE.md": "4862ab8a090a4ca21ac3921cb2b1a2fa85b2aa9e7edc87550571a13326bb26dd",
+      "docs/codebase/ARCHITECTURE.md": "43b9250efdc6ae2535451e7858b5ba3292850b4a3a7f3b5d9cb19d3179f7f221",
+      "docs/codebase/CONCERNS.md": "c6968d51b0d7b332e2c52214db0a321afdc36368a50d0cfb7540b5f3b57e90a5",
+      "docs/codebase/CONVENTIONS.md": "b026b8a942a95ac853599d02e00609a5459a1afae57497b465e5f59ea09a43da",
+      "docs/codebase/INTEGRATIONS.md": "6c6247eff9b6a8194fec5b661e11657c4eb054b8f870584514e54ca889449b1e",
+      "docs/codebase/STACK.md": "a320ea6e2c0242f8af4e1ab3862f5a8ac21b4e9f6ebfd500f090ebd619a18138",
+      "docs/codebase/STRUCTURE.md": "665e9fd23b1ea225aeebd72b8abd83ef930c0172808f8891031282e8e9a4d247",
+      "docs/codebase/TESTING.md": "7bdeb835040e6fb54de1b899621ce70ff75e6b54f09d27b10a461ed9ce8a03a9",
+      "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "scripts/agent-trace-scale-smoke.mjs": "e698dc43e26376e9058c9af96ec9a689f76fa890ce449d2c6bf046d1b91cda0f",
+      "scripts/builder-access-smoke.mjs": "454497bc398f6f83aad22aec92488e450faa6f416f89ed25bbacf674e620613a",
+      "scripts/capture-live-graph-rail.mjs": "cdd1dd156f4c7306ff6d3b09fc5cb616a43112cb8977407f29b7466662dbde59",
+      "scripts/capture-noderoom-real-assets.mjs": "d3e99b680adba0ca2f55d44e286dcca2bde609461920281be4b0750d7200633b",
+      "scripts/capture-plan-fixture.mjs": "0ed8a703027455ed70f8dae75e803ed44626de17ac972be8049ac8a92425dc05",
+      "scripts/capture-plan-smoke.mjs": "9b81beeccf0929df1c00fedbb6c2d6bc12b01c20779c09a91d6cd564051fc45f",
+      "scripts/citations-check.mjs": "27043ac8d84cbb68ce786b948c93d1cb983d6c374683b7d30bdd62f76495c3db",
+      "scripts/cli-smoke.mjs": "e313ca25f7463379074a47ce5750e228de257693d44c839d23823d17bd426431",
+      "scripts/init-sqlite.mjs": "5b0ff389f3ad0daf8492d02186a8992b4b3c4602e9cc7d51ea68ff06e6a31632",
+      "scripts/installer-next-e2e-smoke.mjs": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+      "scripts/lib/proof-server.mjs": "b8b8843a266bcddf72a5c5ff45ccd46af0fa69f393a67c1621897406041dd359",
+      "scripts/mcp-smoke.mjs": "10032b3a1042018a3f1a05ef16b8ccf0c694d8dafa47483fcc45fc2c1d7239f9",
+      "scripts/record-live-graph-rail.mjs": "0891e5fe4dbd3f01adb26d5f45c27ce35b0bec88dd6b79eb3f9acd91d3dcb690",
+      "scripts/render-walkthrough-media.mjs": "2c642b383debae9b5689c4753b9bc944e93f55078478b85764a340e3e04ea89a",
+      "scripts/smoke.mjs": "873abd8f1eb64e8d038f63f767d6c2d9234a5a28ac475cef3762f4361b93c7f9",
+      "scripts/trace-coach-sqlite.mjs": "ad44dcea46392c1e91c2c69a5d94859a883eae3c0b79162bd5522f03a5638731",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "scripts/understand-anything-noderoom.mjs": "50178e8071b04d3a059c4ac9e7133a59145e0a2c830b8d479931ccf18f9dc979",
+      "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "src/capture/codebaseCapture.mjs": "59611521f326883e1332eb8533361f1d82707a2d2a3581ea8c871f42297f8718",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/main.tsx": "3a464c6ba9091ecd74e8af7e809a2044285f0363eac2109c6c549659a772c37a",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6",
+      "promotion/PRODUCT_GOAL.md": "372b05101ab5c9a660dd6b737b783a5ecaba9227cc293cca2b76f3a124d8f75d",
+      "promotion/PRODUCT_JOURNEYS.md": "f7dfc0630b82a83c9341b0bd56839b4f2e347dbacfea213054899feb5163bf1f",
+      "promotion/PROMOTION_LOG.md": "82068d7d9c3da1260a4809f7780ab5fd3c07aaf4259873ec22748e61aff4f82d",
+      "promotion/WIG_REVIEW.md": "3539dda54646fc6f7a01b9534313c967ae11130c6d43e8d706bb42015d1be4d5"
+    },
+    "proofSourceHashes": {
+      "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+    },
+    "sourceDeltaFromPriorJudge": [
+      "bin/nodetrace.mjs",
+      "src/DemoDashboard.tsx"
+    ],
+    "helperBindings": [
+      {
+        "file": "DemoDashboard.tsx",
+        "expectedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+        "actualSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+        "exact": true
+      },
+      {
+        "file": "demoState.ts",
+        "expectedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+        "actualSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+        "exact": true
+      },
+      {
+        "file": "demoNavigation.ts",
+        "expectedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+        "actualSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+        "exact": true
+      }
+    ],
+    "sourceDefaultRendered": [
+      {
+        "width": 320,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      },
+      {
+        "width": 360,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      },
+      {
+        "width": 390,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      },
+      {
+        "width": 768,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      },
+      {
+        "width": 1024,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      },
+      {
+        "width": 1440,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      },
+      {
+        "width": 1920,
+        "commands": [
+          "npm run understand:noderoom",
+          "npm run capture:noderoom:real",
+          "npm run trace-coach:sqlite",
+          "npm run trace-coach:sqlite"
+        ],
+        "guidePresent": true,
+        "installedCopyAbsent": true
+      }
+    ],
+    "probes": {
+      "promotion/probes/wig-review.mjs": {
+        "rootSha256": "63325d4a54cc4db20aac1db372dfed6e823d4b562d418368536b2207e381cacf",
+        "cloneSha256": "9b6a3024427ded77ed9a058ecfd9b2b76a3ce02cde62c6e34296aea6016d6b3d",
+        "rootEqualsBaseAfterLfNormalization": true,
+        "cloneEqualsRootAfterLfNormalization": true
+      },
+      "promotion/probes/web-quality-audit.mjs": {
+        "rootSha256": "03dcc6892c54ba97ea63e07b579540d9b163b1593783a4bb4e0db735f6c1fb5e",
+        "cloneSha256": "6f997bc6df2b1f9533b404b5b95db1d70dab84cfb6a8e55efd38bda73c46e936",
+        "rootEqualsBaseAfterLfNormalization": true,
+        "cloneEqualsRootAfterLfNormalization": true
+      },
+      "scripts/installer-next-e2e-smoke.mjs": {
+        "rootSha256": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+        "cloneSha256": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+        "rootEqualsBaseAfterLfNormalization": true,
+        "cloneEqualsRootAfterLfNormalization": true
+      }
+    },
+    "quietAuditProvenance": {
+      "actualMeasuredResult": "PASS320/234msTBT,0axe both",
+      "noAuditTime13FileSnapshot": true,
+      "rootAttestation": "Two-file installed edits and citations completed before quiet audit; no NodeTrace source edit thereafter.",
+      "sourceBindingLimitation": "Recorded built-tree/state guard plus actual build asset filenames; later frozen raw source identity is separate. Current matching built bytes support continuity inference, not a retroactive audit-time SHA snapshot.",
+      "assetComparison": [
+        {
+          "filenameInBothActualQuietLighthouseNetworkLogs": "index-Cl47s1zn.js",
+          "rootCurrentBuiltSha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+          "judgeFreshBuiltSha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+          "currentBuiltBytesEqual": true
+        },
+        {
+          "filenameInBothActualQuietLighthouseNetworkLogs": "index-C5GRn8kk.css",
+          "rootCurrentBuiltSha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+          "judgeFreshBuiltSha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+          "currentBuiltBytesEqual": true
+        }
+      ]
+    },
+    "processesStopped": true
+  },
+  "environment": {
+    "browser": "Chromium 149.0.7827.55",
+    "auth": "anonymous",
+    "theme": "light",
+    "device": "desktop with emulated CSS viewports",
+    "provider": "none",
+    "production": false,
+    "node": "v22.22.2",
+    "nextVersion": "15.5.25",
+    "isolatedSource": "D:/ProjectRecovery/nodetrace-installed-repair-judge-20260905-0200",
+    "retainedFreshConsumer": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95"
+  },
+  "coverage": {
+    "freshNextInstall": {
+      "ok": true,
+      "startedAt": "2026-09-05T01:57:56.549Z",
+      "completedAt": "2026-09-05T01:59:34.526Z",
+      "totalMs": 97977,
+      "apiKeysRequired": false,
+      "framework": "next",
+      "targetDir": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+      "timeoutMs": 600000,
+      "phases": [
+        {
+          "name": "install dependencies",
+          "ok": true,
+          "durationMs": 20053
+        },
+        {
+          "name": "happy path",
+          "ok": true,
+          "durationMs": 1311
+        },
+        {
+          "name": "smoke",
+          "ok": true,
+          "durationMs": 528
+        },
+        {
+          "name": "build",
+          "ok": true,
+          "durationMs": 75987
+        }
+      ],
+      "issues": []
+    },
+    "installedChecks": 52,
+    "installedCapturedStates": 6,
+    "installedViewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 1440,
+        "height": 960
+      }
+    ],
+    "servedBindings": 44,
+    "advertisedCommandExecutions": [
+      {
+        "width": 390,
+        "displayed": "npm run nodetrace:happy-path",
+        "status": 0,
+        "stateBeforeSha256": "b751492258f9cbf1dfd5af400eb948e9fddfebcaadbcf6d4f775cfa995b248ab",
+        "stateAfterSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+        "traces": 4,
+        "proofs": 2,
+        "generatedAt": "2026-09-05T02:00:34.915Z"
+      },
+      {
+        "width": 1440,
+        "displayed": "npm run nodetrace:happy-path",
+        "status": 0,
+        "stateBeforeSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+        "stateAfterSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+        "traces": 4,
+        "proofs": 2,
+        "generatedAt": "2026-09-05T02:00:37.977Z"
+      }
+    ],
+    "sourceJourneyChecks": 808,
+    "sourceJourneyCaptures": 43,
+    "sourceWidths": [
+      320,
+      360,
+      390,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "sourceTypesBuild": "PASS via both named journey seed builds",
+    "sourceSmoke": "PASS SQLite, CLI, MCP",
+    "citations": "PASS: 3 tours, 35 steps, 54 citations, after correcting four omitted clone documents.",
+    "viteGeneration": "Actual isolated CLI --skip-install --skip-verify verifies generated installed flag only; no installed Vite build claim"
+  },
+  "claims": [
+    {
+      "claim": "Installed recovery instruction is runnable and useful",
+      "status": "VERIFIED",
+      "evidence": "Two displayed command executions exit 0; the state hash changes each time with 4 traces and 2 proofs; refresh and inspection remain useful."
+    },
+    {
+      "claim": "Installed pixels and interactions preserve neighboring trace function",
+      "status": "VERIFIED",
+      "evidence": "52 checks, 6 captures and 44 exact bindings at 390 and 1440; ordinary keyboard/pointer modal, focus and host context pass."
+    },
+    {
+      "claim": "Source default and public authority are unchanged",
+      "status": "VERIFIED",
+      "evidence": "Source diff only adds explicit context/copy/entrypoint flag; rendered source HTML at seven widths keeps the three source commands; 808 source-bound checks pass."
+    },
+    {
+      "claim": "Original WIG gate passes",
+      "status": "REFUTED",
+      "evidence": "Unchanged WIG exits 1 with two known probe-assumption major findings; raw evidence retained."
+    },
+    {
+      "claim": "Quiet local web-quality measured budget passes",
+      "status": "OBSERVED_ROOT_RUN",
+      "evidence": "Actual TBT 320/234ms and zero axe violations in both seeds. Built-tree/state guard and recorded asset names provide partial provenance. Later matching raw assets support continuity as an inference; no audit-time 13-file hash snapshot exists."
+    }
+  ],
+  "cause": {
+    "symptomBefore": "Installed page recommended npm run trace-coach:sqlite, which exited1 Missing script.",
+    "boundary": "Source-demo copy transplanted into consumer with different scripts.",
+    "mechanism": "No explicit installed context reached demo guidance.",
+    "missingGuard": "InstallerE2E did not execute the actual displayed recovery command.",
+    "rootCause": "The transplant provided implementation imports but retained source-checkout setup assumptions."
+  },
+  "fix": {
+    "files": [
+      "src/DemoDashboard.tsx",
+      "bin/nodetrace.mjs"
+    ],
+    "implementation": "Optional installed=false prop on demo; generated Vite/Next supply installed; supported consumer command + existingguide + honestguidedcapturelimit; source commands retained.",
+    "newDependency": false,
+    "newProviderApi": false,
+    "newUrlFlag": false
+  },
+  "knockout": {
+    "status": "RESOLVED",
+    "commands": [
+      {
+        "width": 390,
+        "displayed": "npm run nodetrace:happy-path",
+        "status": 0,
+        "stateBeforeSha256": "b751492258f9cbf1dfd5af400eb948e9fddfebcaadbcf6d4f775cfa995b248ab",
+        "stateAfterSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+        "traces": 4,
+        "proofs": 2,
+        "generatedAt": "2026-09-05T02:00:34.915Z"
+      },
+      {
+        "width": 1440,
+        "displayed": "npm run nodetrace:happy-path",
+        "status": 0,
+        "stateBeforeSha256": "19f372ea27a076f75cb1e46abb95c56c2bdf3d714178c42211c1da64cd0847ff",
+        "stateAfterSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+        "traces": 4,
+        "proofs": 2,
+        "generatedAt": "2026-09-05T02:00:37.977Z"
+      }
+    ],
+    "historicalRefutationUnchanged": true,
+    "historicalReceipt": "E6b_NODETRACE_UI_JUDGE.md/json"
+  },
+  "boundaryProof": {
+    "actualPreEdit390": "evidence/nodetrace-installed-recovery-boundary/boundary-contract.json",
+    "actualAfter390": "E6b-nodetrace-installed-repair-browser/390-after-change-boundary.png",
+    "desktopPrior": "E6b-nodetrace-installed-repair-prior-build-1440.png",
+    "desktopPriorClassification": "Actual retained prior-build desktop reference replay, captured after repair; NOT a pre-edit boundary screenshot",
+    "desktopAfter": "E6b-nodetrace-installed-repair-browser/1440-empty.png",
+    "reviewed": "Actual clean/annotated 390 and desktop before/after, both modal states, source 390 empty and source 390 modal. A/B copy is readable; downstream sections move upward naturally. No canvas pixel-identity claim.",
+    "limitation": "Only the 390 annotation was captured before repair. Desktop reference is an actual retained prior-build replay after repair, never labeled a pre-edit capture."
+  },
+  "criterionRatings": [
+    {
+      "criterion": "Installed setup/empty guidance",
+      "score": 5,
+      "status": "OBSERVED",
+      "evidence": "Correct command is rendered and executes twice; truthful capture limitation and integration guide exist."
+    },
+    {
+      "criterion": "Installed command and prose reflow",
+      "score": 4,
+      "status": "OBSERVED",
+      "evidence": "390 and 1440 have no document overflow and legible guidance. Full text-resize and physical-touch coverage remains missing."
+    },
+    {
+      "criterion": "Installed keyboard/modal/host state",
+      "score": 5,
+      "status": "OBSERVED",
+      "evidence": "Natural Tab/Enter, eight modal endpoint walks per cell, Escape/pointer focus return and intact host URL."
+    },
+    {
+      "criterion": "Unassisted human comprehension",
+      "score": null,
+      "status": "NOT_RUN",
+      "evidence": "Agent evaluation only; no intended human participant."
+    }
+  ],
+  "wig": {
+    "ok": false,
+    "majorCount": 2,
+    "generatedAt": "2026-09-05T02:03:48.146Z",
+    "majorFindings": [
+      {
+        "id": "interactions.url-as-state",
+        "guideline": "Interactions — “URL as state. Persist state in the URL so share, refresh, Back/Forward navigation work.” / “Deep-link everything. Filters, tabs, pagination, expanded panels, anytime useState is used.”",
+        "severity": "major",
+        "summary": "switching to the Raw JSON tab leaves the URL at http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw — unchanged — and a reload returns to Overview (raw pane present after reload: true); the coach tab, the active step and the open lens are all useState and none of them is shareable or survives refresh",
+        "measurement": {
+          "hasTabs": true,
+          "urlBefore": "http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw",
+          "urlAfter": "http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw",
+          "survivesReload": true
+        }
+      },
+      {
+        "id": "content.all-states-designed",
+        "guideline": "Content — “All states designed. Empty, sparse, dense, & error states.” and “No dead ends. Every screen offers a next step or recovery path.”",
+        "severity": "major",
+        "summary": "after the README's own Happy Path the Trace Coach slot renders nothing (165px of empty space between hero and rail) while the hero one line above reads \"Coach steps 0\" and claims \"Seeded from real NodeRoom files…\" (false) — an empty state with no explanation and no next step",
+        "measurement": {
+          "coachPanelRendered": false,
+          "coachStepsReadout": "0",
+          "heroClaimsSeededFromRealFiles": false,
+          "pointerToTheMissingCommand": true,
+          "gapBetweenHeroAndRailPx": 165
+        },
+        "evidence": "promotion/evidence/wig-happy-path-empty-coach-slot.png"
+      }
+    ],
+    "adjudication": "URL probe starts and ends on Raw, with survival true. Empty gate demands a populated coach panel despite truthful guidance. Independent named scenarios verify actual navigation and the valid empty state. The original report remains FAIL.",
+    "probeChanged": false
+  },
+  "webQuality": {
+    "status": "PASS_MEASURED_LOCAL_ROOT_RUN",
+    "generatedAt": "2026-09-05T01:54:36.135Z",
+    "results": [
+      {
+        "state": "happy-path",
+        "note": "README Happy Path: hero + Live graph rail, no Trace Coach",
+        "url": "http://127.0.0.1:4910/",
+        "commands": [
+          "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-happy-path.json --chrome-flags=--headless --quiet",
+          "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-happy-path.json"
+        ],
+        "lighthouse": {
+          "lighthouseVersion": "13.4.1",
+          "categories": {
+            "performance": 0.92,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.82,
+            "agentic-browsing": 0.67
+          },
+          "largestContentfulPaintMs": 1917.446625,
+          "cumulativeLayoutShift": 0.01872374565732472,
+          "totalBlockingTimeMs": 320,
+          "firstContentfulPaintMs": 1655.9573,
+          "failedAudits": [
+            {
+              "id": "total-blocking-time",
+              "score": 0.76,
+              "title": "Total Blocking Time"
+            },
+            {
+              "id": "max-potential-fid",
+              "score": 0.22,
+              "title": "Max Potential First Input Delay"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "score": 0,
+              "title": "Minimize main-thread work"
+            },
+            {
+              "id": "bootup-time",
+              "score": 0,
+              "title": "Reduce JavaScript execution time"
+            },
+            {
+              "id": "unused-javascript",
+              "score": 0,
+              "title": "Reduce unused JavaScript"
+            },
+            {
+              "id": "meta-description",
+              "score": 0,
+              "title": "Document does not have a meta description"
+            },
+            {
+              "id": "robots-txt",
+              "score": 0,
+              "title": "robots.txt is not valid"
+            },
+            {
+              "id": "llms-txt",
+              "score": 0,
+              "title": "llms.txt does not follow recommendations"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0,
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "title": "Render-blocking requests"
+            }
+          ]
+        },
+        "axe": {
+          "axeVersion": "4.13.0",
+          "passes": 34,
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "nodes": 1
+            },
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": 7
+            }
+          ],
+          "violationNodes": 0,
+          "violations": []
+        },
+        "artifacts": [
+          "promotion/evidence/lighthouse-happy-path.json",
+          "promotion/evidence/axe-happy-path.json"
+        ]
+      },
+      {
+        "state": "trace-coach",
+        "note": "J3 screen: six-step Trace Coach mounted above the rail",
+        "url": "http://127.0.0.1:4910/",
+        "commands": [
+          "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-trace-coach.json --chrome-flags=--headless --quiet",
+          "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-trace-coach.json"
+        ],
+        "lighthouse": {
+          "lighthouseVersion": "13.4.1",
+          "categories": {
+            "performance": 0.95,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.83,
+            "agentic-browsing": 0.67
+          },
+          "largestContentfulPaintMs": 1874.1045,
+          "cumulativeLayoutShift": 0.03744749131464944,
+          "totalBlockingTimeMs": 234,
+          "firstContentfulPaintMs": 1655.6836,
+          "failedAudits": [
+            {
+              "id": "total-blocking-time",
+              "score": 0.86,
+              "title": "Total Blocking Time"
+            },
+            {
+              "id": "max-potential-fid",
+              "score": 0.4,
+              "title": "Max Potential First Input Delay"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "score": 0,
+              "title": "Minimize main-thread work"
+            },
+            {
+              "id": "bootup-time",
+              "score": 0,
+              "title": "Reduce JavaScript execution time"
+            },
+            {
+              "id": "unused-javascript",
+              "score": 0,
+              "title": "Reduce unused JavaScript"
+            },
+            {
+              "id": "meta-description",
+              "score": 0,
+              "title": "Document does not have a meta description"
+            },
+            {
+              "id": "robots-txt",
+              "score": 0,
+              "title": "robots.txt is not valid"
+            },
+            {
+              "id": "llms-txt",
+              "score": 0,
+              "title": "llms.txt does not follow recommendations"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "title": "Improve image delivery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0,
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "title": "Render-blocking requests"
+            }
+          ]
+        },
+        "axe": {
+          "axeVersion": "4.13.0",
+          "passes": 39,
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "nodes": 1
+            },
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": 13
+            }
+          ],
+          "violationNodes": 0,
+          "violations": []
+        },
+        "artifacts": [
+          "promotion/evidence/lighthouse-trace-coach.json",
+          "promotion/evidence/axe-trace-coach.json"
+        ]
+      }
+    ],
+    "provenance": {
+      "actualMeasuredResult": "PASS320/234msTBT,0axe both",
+      "noAuditTime13FileSnapshot": true,
+      "rootAttestation": "Two-file installed edits and citations completed before quiet audit; no NodeTrace source edit thereafter.",
+      "sourceBindingLimitation": "Recorded built-tree/state guard plus actual build asset filenames; later frozen raw source identity is separate. Current matching built bytes support continuity inference, not a retroactive audit-time SHA snapshot.",
+      "assetComparison": [
+        {
+          "filenameInBothActualQuietLighthouseNetworkLogs": "index-Cl47s1zn.js",
+          "rootCurrentBuiltSha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+          "judgeFreshBuiltSha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+          "currentBuiltBytesEqual": true
+        },
+        {
+          "filenameInBothActualQuietLighthouseNetworkLogs": "index-C5GRn8kk.css",
+          "rootCurrentBuiltSha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+          "judgeFreshBuiltSha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+          "currentBuiltBytesEqual": true
+        }
+      ]
+    },
+    "earlierFailuresPreserved": "E6b-nodetrace-judge-retained-audits-before-quiet/",
+    "independentLighthouseRerun": false
+  },
+  "judgeRunAdjudication": "Four omitted promotion Markdown candidate files caused the initial clone citation failure. Exact root bytes were copied into the isolated clone and hash-bound; the unchanged check reran PASS. The original failure log is retained.",
+  "fraudsFound": [],
+  "requiredFixes": [],
+  "outstandingBroaderFindings": [
+    "The unchanged WIG audit is red with two probe-assumption major findings; do not claim all gates pass.",
+    "Existing graph labels can clip or overlap; original full-grade coverage remains incomplete.",
+    "Inherited high development Browserslist advisory remains; a production-only zero audit is not an all-dependency zero audit."
+  ],
+  "hardGates": {
+    "namedRepair": "PASS",
+    "freshInstalledNextBuild": "PASS",
+    "displayedCommandKnockout": "PASS",
+    "sourceJourney": "PASS",
+    "sourceSmoke": "PASS",
+    "citations": "PASS",
+    "originalWig": "FAIL_RETAINED",
+    "quietWebQuality": "PASS_WITH_PROVENANCE_LIMITATION",
+    "fullPortfolioReadiness": "OPEN"
+  },
+  "developerHandoffStatus": "Bounded installed repair VERIFIED; full repository readiness OPEN.",
+  "userExperienceStatus": "AGENT_EVALUATED_ONLY",
+  "freshHumanUsabilityStatus": "NOT_RUN",
+  "sharedIntegrationStatus": "NOT_RUN beyond the fresh local Next consumer.",
+  "productionStatus": "NOT_RUN",
+  "confidence": "High for exact-byte bounded recovery and exercised regressions; full grade remains unresolved.",
+  "limitations": [
+    "No physical device, human participant, screen reader, alternate engine, 200% text or full reduced-motion coverage.",
+    "No provider, deployment, authenticated or production claim.",
+    "Quiet audit has no audit-time 13-file hash snapshot; matching build bytes support continuity only as an inference.",
+    "One quiet run does not establish CPU contention as the prior failure cause or establish field performance.",
+    "Graph canvas and bitmap legibility limitations remain."
+  ],
+  "overallScore": null,
+  "overallGrade": null,
+  "barScores": null,
+  "processesStopped": true,
+  "sourceFreeze": "Released after final identity for root next authorized work; later relevant changes stale the affected proof.",
+  "evidenceRefs": [
+    "E6b-nodetrace-installed-repair-final-identity.json",
+    "E6b-nodetrace-installed-repair-narrow.diff",
+    "E6b-nodetrace-installed-repair-consumer-setup.log",
+    "E6b-nodetrace-installed-repair-browser.json",
+    "E6b-nodetrace-installed-repair-journey/receipt.json",
+    "E6b-nodetrace-installed-repair-wig-artifacts/wig-review.json",
+    "E6b-nodetrace-installed-repair-quiet-audits/web-quality-audit.json",
+    "E6b-nodetrace-installed-repair-clone-docs-adjudication.json"
+  ],
+  "visualScore": null,
+  "designScore": null,
+  "responsiveScore": null,
+  "interactionScore": null,
+  "accessibilityScore": null,
+  "performanceScore": null,
+  "usageScore": null,
+  "alignmentScore": null
+}

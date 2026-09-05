@@ -21,22 +21,28 @@ Everything below follows from that.
         publishes a subset   ->  public/nodetrace-state.json   (client side, public)
 
     browser
-        DemoDashboard fetches that JSON once, on mount
-        TraceLensProvider listens for Ctrl-click on window (capture phase)
-        resolveTraceHit    DOM event  ->  SurfaceHit
-        TraceLensPanel     SurfaceHit + state  ->  the panel
+        DemoDashboard loads validated public data through loadDemoState, with retry
+        Inspect trace buttons call the existing provider openHit API
+        Ctrl/Cmd-click -> resolveTraceHit -> SurfaceHit -> openHit
+        TraceLensPanel     SurfaceHit + state -> native modal, including missing data
+        useDemoNavigation  demo selection <-> URL; installed hosts own their router
 
-The browser never opens SQLite and never calls an API. The published JSON is the
-entire contract, and it is a static file. That is the reason the panel drops into
-a Next.js app, a Vite app, or anything else that can serve a file.
+The demo fetches a static file and never opens SQLite. The portable panel accepts
+state through props and selections through its existing context API; hosts can
+source that state from their own server. Demo-only loading and URL helpers stay
+outside `src/trace/`. See [START_HERE.md](../START_HERE.md) for the current
+repair candidate and its pending final UI judgment.
 
 ### The one privacy rule in the whole system
 
 `scripts/init-sqlite.mjs` writes `codeOwnership` into the published JSON **only**
 when `NODETRACE_BUILDER_CAPABLE=true`. Those rows carry internal component,
-query, mutation, skill and test paths. The panel also gates them again at render
-time, but the render-time gate is cosmetic; the one that matters is the write.
-A client cannot leak what it never received.
+query, mutation, skill and test paths. This local producer option is not
+authentication: do not publish a privileged export as a public file. The demo
+validates public data, removes ownership and forces Review mode. The portable
+panel only displays ownership when its host supplies verified capability and
+a matching privileged projection. A client cannot conceal data already delivered
+to it, so that projection must be enforced by the host server.
 
 The generated integration doc repeats the rule to whoever adopts NodeTrace:
 keep `builderCapable` server-verified, and serve ownership from a privileged
@@ -47,7 +53,7 @@ route rather than a static file.
 The repository is not one application. It is three programs that share
 `src/trace/types.ts` and `db/schema.sql`.
 
-**1. The panel** (`src/trace/`, ~430 lines of TSX plus CSS)
+**1. The panel** (`src/trace/`, React components plus CSS)
 A React context provider, a panel component, and a graph rail. No data fetching
 of its own — it takes state as a prop. This is the part that gets copied.
 
@@ -90,7 +96,9 @@ agent wrote. If you are looking for the agent, you are in the wrong repository.
 is a worked example of the privileged route a host app should write — it is a
 sample, not a running service.
 
-**There is no router and no client-side state store.** One page, one `useState`.
+**There is no router dependency or external state store.** React hooks own the
+demo state. `useDemoNavigation` handles only its URL selection; the portable
+provider leaves routing to the host.
 
 ## Invariants worth not breaking
 
