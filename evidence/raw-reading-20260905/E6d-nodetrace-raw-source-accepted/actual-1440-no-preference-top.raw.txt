@@ -1,0 +1,157 @@
+{
+  "sourceRepo": "HomenShum/noderoom",
+  "sourceMode": "snapshot",
+  "activeStep": {
+    "id": "coach-step-01-artifact-entry",
+    "surfaceId": "workSurface.traceStrip",
+    "order": 1,
+    "stepLabel": "Step 01",
+    "group": "Entry",
+    "title": "Open NodeRoom's Trace tab from the artifact shell",
+    "narrative": "Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.",
+    "sourceView": {
+      "imagePath": "captures/coach-step-01-artifact-entry-ide.png",
+      "repositoryRoot": "HomenShum/noderoom",
+      "activeFile": "src/ui/panels/Artifact.tsx",
+      "folderTree": [
+        "src",
+        "  - ui",
+        "    - panels",
+        "      - Artifact.tsx"
+      ],
+      "highlightStartLine": 1,
+      "highlightEndLine": 15,
+      "captureKind": "actual-code-browser-shiki"
+    },
+    "codeBlock": {
+      "filePath": "src/ui/panels/Artifact.tsx",
+      "startLine": 1,
+      "endLine": 15,
+      "snippet": "\nfunction TraceStrip({ roomId }: { roomId: string }) {\n  return (\n    <div className=\"r-trace\" data-testid=\"room-trace\" data-open={String(open)} data-noderoom-surface=\"workSurface.traceStrip\">\n      <div className=\"r-trace-head\">\n        <button type=\"button\" className=\"r-trace-toggle\" onClick={() => setOpen((v) => !v)}>\n          <ChevronRight size={13} className=\"r-trace-chev\" />\n          <span className=\"h-title\">Room trace</span>\n        </button>\n      </div>\n      {open && <div className=\"r-trace-list\" aria-live=\"polite\" aria-label=\"Room activity log\" />}\n    </div>\n  );\n}\n"
+    },
+    "uiCapture": {
+      "selector": "[data-noderoom-surface=\"workSurface.traceStrip\"]",
+      "rect": {
+        "x": 11,
+        "y": 904,
+        "width": 1056,
+        "height": 45
+      },
+      "screenshotPath": "captures/coach-step-01-artifact-entry-ui.png",
+      "alt": "NodeRoom bottom room trace strip with recent room events and trace telemetry.",
+      "captureKind": "actual-noderoom-playwright"
+    },
+    "mapCapture": {
+      "imagePath": "captures/coach-step-01-artifact-entry-minimap.svg",
+      "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+      "model": "Understand-Anything-backed structural minimap"
+    },
+    "diagram": {
+      "kind": "mermaid",
+      "nodeId": "artifact",
+      "source": "flowchart LR\n  Artifact[Artifact shell] --> Strip[Room trace strip]\n  Strip --> TraceTab[Trace tab]\n  TraceTab --> Surface[TraceSurface]"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "artifact",
+        "label": "Artifact shell",
+        "kind": "component",
+        "filePath": "src/ui/panels/Artifact.tsx",
+        "layer": "UI entry",
+        "x": 112,
+        "y": 250,
+        "summary": "Entry point that exposes the room trace strip."
+      },
+      {
+        "id": "surface",
+        "label": "TraceSurface",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceSurface.tsx",
+        "layer": "Trace UI",
+        "x": 332,
+        "y": 176,
+        "summary": "Master-detail trace tab with records, tabs, and active detail."
+      },
+      {
+        "id": "data",
+        "label": "traceData",
+        "kind": "schema",
+        "filePath": "src/ui/panels/traceData.ts",
+        "layer": "Data model",
+        "x": 332,
+        "y": 382,
+        "summary": "TraceRecord and TraceStep structures that feed the UI."
+      },
+      {
+        "id": "steps",
+        "label": "TraceStepRow",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceStepRow.tsx",
+        "layer": "Evidence UI",
+        "x": 560,
+        "y": 286,
+        "summary": "Step renderer for source-linked rows and screenshot boxes."
+      },
+      {
+        "id": "flow",
+        "label": "TraceFlow",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceFlow.tsx",
+        "layer": "Graph UI",
+        "x": 784,
+        "y": 190,
+        "summary": "Graph view over the same ordered trace steps."
+      },
+      {
+        "id": "style",
+        "label": "Trace CSS",
+        "kind": "runtime",
+        "filePath": "src/app/styles.css",
+        "layer": "Visual system",
+        "x": 790,
+        "y": 406,
+        "summary": "Dark trace surface, tabs, cards, and highlighted boxes."
+      }
+    ],
+    "edges": [
+      {
+        "id": "artifact-surface",
+        "from": "artifact",
+        "to": "surface",
+        "label": "opens full trace tab"
+      },
+      {
+        "id": "surface-data",
+        "from": "surface",
+        "to": "data",
+        "label": "loads records"
+      },
+      {
+        "id": "surface-steps",
+        "from": "surface",
+        "to": "steps",
+        "label": "renders step list"
+      },
+      {
+        "id": "surface-flow",
+        "from": "surface",
+        "to": "flow",
+        "label": "renders graph tab"
+      },
+      {
+        "id": "steps-style",
+        "from": "steps",
+        "to": "style",
+        "label": "uses screenshot box styles"
+      },
+      {
+        "id": "flow-style",
+        "from": "flow",
+        "to": "style",
+        "label": "uses dark graph shell"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1149 @@
+{
+  "at": "2026-09-05T06:34:07.333Z",
+  "browser": "149.0.7827.55",
+  "isolation": "Exact captured application DOM plus exact current built stylesheet, scripts removed. No React, history restoration, application event handlers, fixture fetch or graph animation.",
+  "htmlInputSha256": "8d59a9e6cb37d0f625dd9d951d13b706a13de8bd9109858b56c1a16fa3de5071",
+  "cssInputSha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+  "cases": [
+    {
+      "mode": "endpoint-sample",
+      "rounds": [
+        {
+          "round": 0,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 0,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 1,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 1,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 2,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 2,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 3,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 3,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 4,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 4,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 5,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 5,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 6,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 6,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 7,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 7,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 8,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 8,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 9,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 9,
+          "key": "Home",
+          "reached": false,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        }
+      ],
+      "events": [
+        {
+          "type": "scrollend",
+          "at": 135.70000004768372,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 151.80000007152557,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 329.8000000715256,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 346.8000000715256,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 1044,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 1213.6000000238419,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 2773.600000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 2946.600000023842,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 2963.7000000476837,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 3660.3000000715256,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 3830,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 5387.100000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 5563,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 5563.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 6274.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 6448,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 8005.5,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 8180.700000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 8181.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 8363.700000047684,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 9368.100000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 9540.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 9546.700000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 10251.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 10430.5,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 11973.800000071526,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 12143.700000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 12146.300000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 12866.400000095367,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 13048,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 14589.300000071526,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 14760.200000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 14763.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 15470.900000095367,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 15647,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 17200.100000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 17377.300000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 17379.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 18089.300000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 18262.600000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 19800.900000095367,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 19977.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 19979.600000023842,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 20698,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 20879.400000095367,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 22420.200000047684,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 22593.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 22596.700000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 23304.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 23479.100000023842,
+          "top": 0,
+          "max": 11345
+        }
+      ],
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "mode": "native-scrollend",
+      "rounds": [
+        {
+          "round": 0,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 0,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 1,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 1,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 2,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 2,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 3,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 3,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 4,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 4,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 5,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 5,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 6,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 6,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 7,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 7,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 8,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 8,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 9,
+          "key": "End",
+          "reached": true,
+          "top": 11345,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        },
+        {
+          "round": 9,
+          "key": "Home",
+          "reached": true,
+          "top": 0,
+          "max": 11345,
+          "y": 147.6875,
+          "width": 332,
+          "height": 548.59375,
+          "focused": true
+        }
+      ],
+      "events": [
+        {
+          "type": "scrollend",
+          "at": 191.5,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 193,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 373.2000000476837,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 388.8000000715256,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 557.6000000238419,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 1577.2000000476837,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 1757.2000000476837,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 1772.6000000238419,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 1956.9000000953674,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 2989.4000000953674,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 3173.7000000476837,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 3185,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 3358.100000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 4375.900000095367,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 4556.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 4569.400000095367,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 4740.200000047684,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 5765.5,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 5940.700000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 5953.200000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 6122.700000047684,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 7146.100000023842,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 7323.100000023842,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 7336.200000047684,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 7506,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 8523.900000095367,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 8706.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 8720.900000095367,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 8889.900000095367,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 9917,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 10090.100000023842,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 10102.600000023842,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 10273.300000071526,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 11297.5,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 11472.5,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 11486.400000095367,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 11656.300000071526,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "End",
+          "target": "trace-raw",
+          "at": 12675.400000095367,
+          "top": 0,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 12855.800000071526,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "keydown",
+          "key": "Home",
+          "target": "trace-raw",
+          "at": 12867.100000023842,
+          "top": 11345,
+          "max": 11345
+        },
+        {
+          "type": "scrollend",
+          "target": "trace-raw",
+          "at": 13040,
+          "top": 0,
+          "max": 11345
+        }
+      ],
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    }
+  ]
+}

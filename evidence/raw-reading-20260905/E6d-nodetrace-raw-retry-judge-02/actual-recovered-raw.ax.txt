@@ -1,0 +1,64 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.
+  - button "Inspect trace"
+  - code: npm run understand:noderoom
+  - code: npm run capture:noderoom:real
+  - code: npm run trace-coach:sqlite
+  - text: no API key required
+  - complementary "Trace Coach launch path":
+    - text: Bundled snapshot
+    - strong: verified
+    - text: SQLite NodeRoom trace browser UI Source app
+    - strong: NodeRoom
+    - text: bundled snapshot Coach steps
+    - strong: "6"
+    - text: ordered labels Trace tabs
+    - strong: "4"
+    - text: overview, steps, minimap, raw This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent.
+  - complementary "NodeRoom trace records":
+    - text: Source app
+    - strong: NodeRoom
+    - text: bundled snapshot - HomenShum/noderoom - 6 guided steps
+    - button "Open NodeRoom's Trace tab from the artifact shell pass Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view. Entry - Step 01 - src/ui/panels/Artifact.tsx"
+    - 'button "Use the real NodeRoom trace tabs pass The sample should follow NodeRoom''s detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record. Trace tabs - Step 02 - src/ui/panels/TraceSurface.tsx"'
+    - 'button "Seed the app from NodeRoom TraceRecord data pass NodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads. Data model - Step 03 - src/ui/panels/traceData.ts"'
+    - button "Render code and UI evidence like NodeRoom step rows pass Each step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted. Steps - Step 04 - src/ui/panels/TraceStepRow.tsx"
+    - button "Keep the latest flow tab behavior pass NodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list. Flow - Step 05 - src/ui/panels/TraceFlow.tsx"
+    - 'button "Match NodeRoom''s dark trace surface pass The sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes. Look and feel - Step 06 - src/app/styles.css"'
+  - strong: Open NodeRoom's Trace tab from the artifact shell
+  - paragraph: Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.
+  - button "Inspect trace"
+  - tablist "NodeRoom trace detail":
+    - tab "Overview"
+    - tab "Steps"
+    - tab "Minimap"
+    - tab "Raw JSON" [selected]
+  - tabpanel "Raw JSON":
+    - region "Raw trace JSON": "{ \"sourceRepo\": \"HomenShum/noderoom\", \"sourceMode\": \"snapshot\", \"activeStep\": { \"id\": \"coach-step-01-artifact-entry\", \"surfaceId\": \"workSurface.traceStrip\", \"order\": 1, \"stepLabel\": \"Step 01\", \"group\": \"Entry\", \"title\": \"Open NodeRoom's Trace tab from the artifact shell\", \"narrative\": \"Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.\", \"sourceView\": { \"imagePath\": \"captures/coach-step-01-artifact-entry-ide.png\", \"repositoryRoot\": \"HomenShum/noderoom\", \"activeFile\": \"src/ui/panels/Artifact.tsx\", \"folderTree\": [ \"src\", \" - ui\", \" - panels\", \" - Artifact.tsx\" ], \"highlightStartLine\": 1, \"highlightEndLine\": 15, \"captureKind\": \"actual-code-browser-shiki\" }, \"codeBlock\": { \"filePath\": \"src/ui/panels/Artifact.tsx\", \"startLine\": 1, \"endLine\": 15, \"snippet\": \"\\nfunction TraceStrip({ roomId }: { roomId: string }) {\\n return (\\n <div className=\\\"r-trace\\\" data-testid=\\\"room-trace\\\" data-open={String(open)} data-noderoom-surface=\\\"workSurface.traceStrip\\\">\\n <div className=\\\"r-trace-head\\\">\\n <button type=\\\"button\\\" className=\\\"r-trace-toggle\\\" onClick={() => setOpen((v) => !v)}>\\n <ChevronRight size={13} className=\\\"r-trace-chev\\\" />\\n <span className=\\\"h-title\\\">Room trace</span>\\n </button>\\n </div>\\n {open && <div className=\\\"r-trace-list\\\" aria-live=\\\"polite\\\" aria-label=\\\"Room activity log\\\" />}\\n </div>\\n );\\n}\\n\" }, \"uiCapture\": { \"selector\": \"[data-noderoom-surface=\\\"workSurface.traceStrip\\\"]\", \"rect\": { \"x\": 11, \"y\": 904, \"width\": 1056, \"height\": 45 }, \"screenshotPath\": \"captures/coach-step-01-artifact-entry-ui.png\", \"alt\": \"NodeRoom bottom room trace strip with recent room events and trace telemetry.\", \"captureKind\": \"actual-noderoom-playwright\" }, \"mapCapture\": { \"imagePath\": \"captures/coach-step-01-artifact-entry-minimap.svg\", \"graphPath\": \"captures/noderoom-trace-knowledge-graph.json\", \"model\": \"Understand-Anything-backed structural minimap\" }, \"diagram\": { \"kind\": \"mermaid\", \"nodeId\": \"artifact\", \"source\": \"flowchart LR\\n Artifact[Artifact shell] --> Strip[Room trace strip]\\n Strip --> TraceTab[Trace tab]\\n TraceTab --> Surface[TraceSurface]\" } }, \"graph\": { \"nodes\": [ { \"id\": \"artifact\", \"label\": \"Artifact shell\", \"kind\": \"component\", \"filePath\": \"src/ui/panels/Artifact.tsx\", \"layer\": \"UI entry\", \"x\": 112, \"y\": 250, \"summary\": \"Entry point that exposes the room trace strip.\" }, { \"id\": \"surface\", \"label\": \"TraceSurface\", \"kind\": \"component\", \"filePath\": \"src/ui/panels/TraceSurface.tsx\", \"layer\": \"Trace UI\", \"x\": 332, \"y\": 176, \"summary\": \"Master-detail trace tab with records, tabs, and active detail.\" }, { \"id\": \"data\", \"label\": \"traceData\", \"kind\": \"schema\", \"filePath\": \"src/ui/panels/traceData.ts\", \"layer\": \"Data model\", \"x\": 332, \"y\": 382, \"summary\": \"TraceRecord and TraceStep structures that feed the UI.\" }, { \"id\": \"steps\", \"label\": \"TraceStepRow\", \"kind\": \"component\", \"filePath\": \"src/ui/panels/TraceStepRow.tsx\", \"layer\": \"Evidence UI\", \"x\": 560, \"y\": 286, \"summary\": \"Step renderer for source-linked rows and screenshot boxes.\" }, { \"id\": \"flow\", \"label\": \"TraceFlow\", \"kind\": \"component\", \"filePath\": \"src/ui/panels/TraceFlow.tsx\", \"layer\": \"Graph UI\", \"x\": 784, \"y\": 190, \"summary\": \"Graph view over the same ordered trace steps.\" }, { \"id\": \"style\", \"label\": \"Trace CSS\", \"kind\": \"runtime\", \"filePath\": \"src/app/styles.css\", \"layer\": \"Visual system\", \"x\": 790, \"y\": 406, \"summary\": \"Dark trace surface, tabs, cards, and highlighted boxes.\" } ], \"edges\": [ { \"id\": \"artifact-surface\", \"from\": \"artifact\", \"to\": \"surface\", \"label\": \"opens full trace tab\" }, { \"id\": \"surface-data\", \"from\": \"surface\", \"to\": \"data\", \"label\": \"loads records\" }, { \"id\": \"surface-steps\", \"from\": \"surface\", \"to\": \"steps\", \"label\": \"renders step list\" }, { \"id\": \"surface-flow\", \"from\": \"surface\", \"to\": \"flow\", \"label\": \"renders graph tab\" }, { \"id\": \"steps-style\", \"from\": \"steps\", \"to\": \"style\", \"label\": \"uses screenshot box styles\" }, { \"id\": \"flow-style\", \"from\": \"flow\", \"to\": \"style\", \"label\": \"uses dark graph shell\" } ] } }"
+  - region "Live graph rail":
+    - heading "Live graph rail" [level=2]
+    - text: 14 entities from 6 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence. Entity
+    - combobox "Entity":
+      - option "Choose an entity" [selected]
+      - 'option "actor: trace-coach"'
+      - 'option "tool: workSurface.traceStrip"'
+      - 'option "artifact: noderoom-codebase-trace"'
+      - 'option "step: entry"'
+      - 'option "tool: workSurface.trace"'
+      - 'option "step: trace-tabs"'
+      - 'option "tool: workSurface.traceData"'
+      - 'option "step: data-model"'
+      - 'option "tool: workSurface.traceSteps"'
+      - 'option "step: steps"'
+      - 'option "tool: workSurface.traceFlow"'
+      - 'option "step: flow"'
+      - 'option "tool: workSurface.traceStyle"'
+      - 'option "step: look-and-feel"'
+    - text: Choose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.
+    - heading "Relationship graph" [level=3]
+    - paragraph: 14 entities · 31 of 31 relationships shown
+    - button "fit"
+    - checkbox "traversal (31) · local" [checked]
+    - text: traversal (31) · local

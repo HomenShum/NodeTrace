@@ -1,0 +1,376 @@
+{
+  "proof": "NODETRACE-INSTALLED-RAW-ATTACHMENT-CAUSAL-JUDGE-01",
+  "status": "INCOMPLETE_REPLAY_FIXTURE_CONFIRMED_NO_INSTALLER_CHANGE_RECOMMENDED",
+  "at": "2026-09-05T06:54:53.894076+00:00",
+  "requestTrace": "Independently investigate the final installed Raw proof404s; distinguish a real installer defect from missing attachments in the explicitly routed replay fixture without suppressing errors.",
+  "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-lU78sE",
+  "browser": "149.0.7827.55",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "causalChain": [
+    "The normal consumer public directory contains its four-trace state and no coach packet; that un-routed app loads without404, console error or page crash.",
+    "The proof replaces the state response with a six-trace, six-step coach fixture. Its Overview UI references screenshot assets under captures/. That extra packet was never part of the normal four-trace consumer output.",
+    "The state-only replay creates four exact missing resource requests for the first two viewed records. Those files are absent from consumer/public, although the selected records and Raw text still render.",
+    "The same installed source/build with the same fixture JSON and exact recorded attachments restores all viewed images and eliminates404s without changing consumer files or suppressing errors."
+  ],
+  "missingUrls": [
+    {
+      "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ide.png",
+      "status": 404,
+      "type": "image",
+      "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+    },
+    {
+      "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ui.png",
+      "status": 404,
+      "type": "image",
+      "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+    },
+    {
+      "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ide.png",
+      "status": 404,
+      "type": "image",
+      "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+    },
+    {
+      "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ui.png",
+      "status": 404,
+      "type": "image",
+      "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+    }
+  ],
+  "verification": {
+    "checks": 9,
+    "cases": [
+      {
+        "mode": "normal-installed",
+        "httpErrors": [],
+        "consoleErrors": [],
+        "pageErrors": [],
+        "images": [],
+        "servedAttachmentBindings": []
+      },
+      {
+        "mode": "fixture-state-only",
+        "httpErrors": [
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ide.png",
+            "status": 404,
+            "type": "image",
+            "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+          },
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ui.png",
+            "status": 404,
+            "type": "image",
+            "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+          },
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ide.png",
+            "status": 404,
+            "type": "image",
+            "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+          },
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ui.png",
+            "status": 404,
+            "type": "image",
+            "bodySha256": "016cd27eb45ea987f124daf5122e7c681a86e0f4a878e1a900665ec859a78a15"
+          }
+        ],
+        "consoleErrors": [
+          {
+            "type": "error",
+            "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "location": {
+              "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ide.png",
+              "line": 0,
+              "column": 0,
+              "lineNumber": 0,
+              "columnNumber": 0
+            }
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "location": {
+              "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ui.png",
+              "line": 0,
+              "column": 0,
+              "lineNumber": 0,
+              "columnNumber": 0
+            }
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "location": {
+              "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ide.png",
+              "line": 0,
+              "column": 0,
+              "lineNumber": 0,
+              "columnNumber": 0
+            }
+          },
+          {
+            "type": "error",
+            "text": "Failed to load resource: the server responded with a status of 404 (Not Found)",
+            "location": {
+              "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ui.png",
+              "line": 0,
+              "column": 0,
+              "lineNumber": 0,
+              "columnNumber": 0
+            }
+          }
+        ],
+        "pageErrors": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ide.png",
+            "complete": true,
+            "naturalWidth": 0,
+            "naturalHeight": 0
+          },
+          {
+            "src": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ui.png",
+            "complete": true,
+            "naturalWidth": 0,
+            "naturalHeight": 0
+          }
+        ],
+        "servedAttachmentBindings": []
+      },
+      {
+        "mode": "fixture-with-exact-attachments",
+        "httpErrors": [],
+        "consoleErrors": [],
+        "pageErrors": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ide.png",
+            "complete": true,
+            "naturalWidth": 1440,
+            "naturalHeight": 920
+          },
+          {
+            "src": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ui.png",
+            "complete": true,
+            "naturalWidth": 768,
+            "naturalHeight": 30
+          }
+        ],
+        "servedAttachmentBindings": [
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ide.png",
+            "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579"
+          },
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-01-artifact-entry-ui.png",
+            "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f"
+          },
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ide.png",
+            "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81"
+          },
+          {
+            "url": "http://127.0.0.1:4964/captures/coach-step-02-detail-tabs-ui.png",
+            "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0"
+          }
+        ]
+      }
+    ],
+    "protectedConsumerFiles": 50,
+    "allConsumerInputsPreserved": true,
+    "currentSelectedRawStepPreserved": true,
+    "installedServedAssetsMatchActualBuild": true
+  },
+  "fixturePacket": {
+    "attachmentCount": 19,
+    "bytes": 804271,
+    "sourceCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "binding": "Every attachment byte equals the actual committed public asset and current source file; exact retained copies and an explicit path/hash manifest accompany this report.",
+    "manifest": "E6d-nodetrace-installed-assets-judge/attachment-manifest.json",
+    "inputFixturesUnchanged": true
+  },
+  "recommendation": [
+    "Complete the installed replay packet using the19 explicitly enumerated attachment files and existing state fixtures.",
+    "Record the packet/asset hashes and route only those exact known URLs to their exact original bytes. Leave all other requests and404 assertions intact.",
+    "Preserve the failed installed run; rerun the four planned short/long390/1024 installed cells with the complete packet.",
+    "Keep installed source/build identities and normal four-trace setup evidence distinct from the six-trace replay fixture."
+  ],
+  "noProductFix": "No defect in the normal installer contract or app source is established by this failure. Adding global404 suppression, fake images or undocumented consumer file changes would conceal the incomplete input instead of proving it.",
+  "limits": [
+    "This diagnosis views only the first two coach records at390px. All19 referenced attachments are byte-verified, but not every image/map view was rendered here.",
+    "Complete attachment mode is explicitly a routed recorded fixture, not newly installed files, a fresh provider capture or production data.",
+    "No deployment, final full-matrix approval or product grade is claimed."
+  ],
+  "evidence": {
+    "E6d-nodetrace-installed-assets-judge.mjs": {
+      "sha256": "451d326418ef5cd8d1c69f9b6d47cb07d68e8b7d1dbcde11e379d8a447c19650",
+      "bytes": 8692
+    },
+    "E6d-nodetrace-raw-installed-final/report.json": {
+      "sha256": "b99ec4c1884524bf555a22b89d4a0b0b948bed6020af38e3e247b2729897f2d2",
+      "bytes": 88229
+    },
+    "E6d-nodetrace-installed-assets-judge/attachment-manifest.json": {
+      "sha256": "62e3d56c0721b52db1583da9e0781b9883e9be2b08f18bdbe6c830488ffa6065",
+      "bytes": 5918
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-state-only-viewport.png": {
+      "sha256": "3649ed7a94e732f910681bf9db78bba48cf34fb3e77c8e1b2797cd15d25e0fa0",
+      "bytes": 55311
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-state-only.ax.txt": {
+      "sha256": "cfa86c06ea7e2089f08b89c36796e8a8a5ecc27b3ec77e72ce71583d8613bd9f",
+      "bytes": 4593
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-state-only.html": {
+      "sha256": "a73c2f8cde81d4b526cf5b31f624ed0deb622ff9bf5dfbe1970addf06d76b646",
+      "bytes": 25206
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-state-only.json": {
+      "sha256": "0976c5706ffdee27036034c921e971a600f53f1177394049adbe6d131a7efff8",
+      "bytes": 3770
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-state-only.png": {
+      "sha256": "6e2c0f1c9b6075963a12d19088dcbabfa52fae3027927a5d69b7bbde3d7df50e",
+      "bytes": 194505
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-state-only.raw.txt": {
+      "sha256": "090b04940d4ad9ea9c572f252507088f0f3797e617b832ba75ce354ecbfecb83",
+      "bytes": 3293
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments-viewport.png": {
+      "sha256": "e71a779ff6dbc69be83cfe037dd35c8919b21cd43d3c8848ac07ddc1851950fd",
+      "bytes": 76104
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments.ax.txt": {
+      "sha256": "cfa86c06ea7e2089f08b89c36796e8a8a5ecc27b3ec77e72ce71583d8613bd9f",
+      "bytes": 4593
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments.html": {
+      "sha256": "a73c2f8cde81d4b526cf5b31f624ed0deb622ff9bf5dfbe1970addf06d76b646",
+      "bytes": 25206
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments.json": {
+      "sha256": "5d4b396976cd2f09a4c69abaa3bb72861dc1406eda5654c831cba062c529ff5e",
+      "bytes": 3778
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments.png": {
+      "sha256": "f2b701c7c4fbf3f2af0505987089ad25d2ad881d13c19e3923eabd270db691d7",
+      "bytes": 238977
+    },
+    "E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments.raw.txt": {
+      "sha256": "090b04940d4ad9ea9c572f252507088f0f3797e617b832ba75ce354ecbfecb83",
+      "bytes": 3293
+    },
+    "E6d-nodetrace-installed-assets-judge/normal-installed-viewport.png": {
+      "sha256": "9167491c8efd0e219d77f26648d04d52a4c402881c84e708deb9d2b2332fed86",
+      "bytes": 48811
+    },
+    "E6d-nodetrace-installed-assets-judge/normal-installed.ax.txt": {
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64",
+      "bytes": 2181
+    },
+    "E6d-nodetrace-installed-assets-judge/normal-installed.html": {
+      "sha256": "5a315e0739f441b01d11b0abf5ae502e05e6949eeeddf035a96098462e78dade",
+      "bytes": 14426
+    },
+    "E6d-nodetrace-installed-assets-judge/normal-installed.json": {
+      "sha256": "6d46a1f9088a4ef1b72a0201032d474be4dd61506ef7a31e8a2ad5e9adfccdbc",
+      "bytes": 1459
+    },
+    "E6d-nodetrace-installed-assets-judge/normal-installed.png": {
+      "sha256": "1bb13981cb7a74a2d01fa0316a89c722132fb6acc2def07519d8c9625a6e05f2",
+      "bytes": 155925
+    },
+    "E6d-nodetrace-installed-assets-judge/report.json": {
+      "sha256": "7b61be34c506e4e5343c0fb283c8b497295daea30e9435a5c913185f68b78bab",
+      "bytes": 27476
+    },
+    "E6d-nodetrace-installed-assets-judge/server.log": {
+      "sha256": "30825128013eb7e574225f796094b03080392a582e640be1a5ff1eacd7174208",
+      "bytes": 143
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-01-artifact-entry-ide.png": {
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "bytes": 102076
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-01-artifact-entry-minimap.svg": {
+      "sha256": "4546bb747da97f3059245858fbd617eea189d9412c01177539dda97f14c198a5",
+      "bytes": 5440
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-01-artifact-entry-ui.png": {
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "bytes": 3350
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-02-detail-tabs-ide.png": {
+      "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+      "bytes": 105337
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-02-detail-tabs-minimap.svg": {
+      "sha256": "5bd23c282f0186e42b5b3b18be6166853e19e50dff341f67318b349c76c2f3a4",
+      "bytes": 5439
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-02-detail-tabs-ui.png": {
+      "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+      "bytes": 4687
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-03-trace-data-ide.png": {
+      "sha256": "7ae6e759d2e0aa0b09009addcca8c773c7a563e8a4390a3694cc1ee16ee8cb48",
+      "bytes": 74161
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-03-trace-data-minimap.svg": {
+      "sha256": "819c9d199321fe55d25d84a738626ab86235b6092a9aefc0a8edda391c411787",
+      "bytes": 5436
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-03-trace-data-ui.png": {
+      "sha256": "7b10c55f8c15e0d238cf4e09b1c8077376a3958eefce24b70ef57d80c377c309",
+      "bytes": 9713
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-04-step-row-ide.png": {
+      "sha256": "d02def1baf506a4e7c9f97e56e01eaf06ce0895ae4719f70a1908626d6d12155",
+      "bytes": 94697
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-04-step-row-minimap.svg": {
+      "sha256": "dfd793fb3b533a2a41ca760efbfb61f2f8aaf9dc594deae387075bb8d2de298a",
+      "bytes": 5437
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-04-step-row-ui.png": {
+      "sha256": "da5b3e8f61cf1cea71d394151afc72723f4b59911bfb5c6161e15a3bfd6d67ce",
+      "bytes": 33166
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-05-flow-ide.png": {
+      "sha256": "1af8c71406ccc79a243e6204c65c29c7bdfadc740fd38f7f4dcbe1c600d0ef19",
+      "bytes": 79864
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-05-flow-minimap.svg": {
+      "sha256": "fe0adc1c805a9cc744c8841c494a62eac9bc2e907edc61b711f520adc63b07d8",
+      "bytes": 5436
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-05-flow-ui.png": {
+      "sha256": "3702c6232ed2d54d840c48ed96aa0cdb25e6a8decc12280f9f6d0ad3dd3e9c13",
+      "bytes": 17184
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-06-style-ide.png": {
+      "sha256": "30169a13fc5515c0379f1bb55d236a299cad4590ad9155c796f2fa91476aac34",
+      "bytes": 137539
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-06-style-minimap.svg": {
+      "sha256": "c9d848461d0a7ca29f8cda23ac2b66075388739a9db97fae5edb8f2bf87a2926",
+      "bytes": 5437
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/coach-step-06-style-ui.png": {
+      "sha256": "c2267920f05c61d046ad7af897a30cbab9ae38809b4aaef1ef12adde97745d90",
+      "bytes": 95693
+    },
+    "E6d-nodetrace-installed-assets-judge/attachments/noderoom-trace-knowledge-graph.json": {
+      "sha256": "74b63513c13f00445e9bf6224137ac55ce7769748eb875d410b625a203e728d5",
+      "bytes": 14179
+    }
+  }
+}

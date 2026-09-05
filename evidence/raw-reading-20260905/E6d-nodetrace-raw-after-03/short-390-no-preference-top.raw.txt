@@ -1,0 +1,70 @@
+{
+  "sourceRepo": "HomenShum/noderoom",
+  "sourceMode": "snapshot",
+  "activeStep": {
+    "id": "coach-step-01-artifact-entry",
+    "surfaceId": "workSurface.traceStrip",
+    "order": 1,
+    "stepLabel": "Step 01",
+    "group": "Entry",
+    "title": "Open NodeRoom's Trace tab from the artifact shell",
+    "narrative": "Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.",
+    "sourceView": {
+      "imagePath": "captures/coach-step-01-artifact-entry-ide.png",
+      "repositoryRoot": "HomenShum/noderoom",
+      "activeFile": "src/ui/panels/Artifact.tsx",
+      "folderTree": [
+        "src",
+        "  - ui",
+        "    - panels",
+        "      - Artifact.tsx"
+      ],
+      "highlightStartLine": 1,
+      "highlightEndLine": 15,
+      "captureKind": "actual-code-browser-shiki"
+    },
+    "codeBlock": {
+      "filePath": "src/ui/panels/Artifact.tsx",
+      "startLine": 1,
+      "endLine": 15,
+      "snippet": "export const trace = \"short reference\";"
+    },
+    "uiCapture": {
+      "selector": "[data-noderoom-surface=\"workSurface.traceStrip\"]",
+      "rect": {
+        "x": 11,
+        "y": 904,
+        "width": 1056,
+        "height": 45
+      },
+      "screenshotPath": "captures/coach-step-01-artifact-entry-ui.png",
+      "alt": "NodeRoom bottom room trace strip with recent room events and trace telemetry.",
+      "captureKind": "actual-noderoom-playwright"
+    },
+    "mapCapture": {
+      "imagePath": "captures/coach-step-01-artifact-entry-minimap.svg",
+      "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+      "model": "Understand-Anything-backed structural minimap"
+    },
+    "diagram": {
+      "kind": "mermaid",
+      "nodeId": "artifact",
+      "source": "flowchart LR\n  Artifact[Artifact shell] --> Strip[Room trace strip]\n  Strip --> TraceTab[Trace tab]\n  TraceTab --> Surface[TraceSurface]"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "artifact",
+        "label": "Artifact shell",
+        "kind": "component",
+        "filePath": "src/ui/panels/Artifact.tsx",
+        "layer": "UI entry",
+        "x": 112,
+        "y": 250,
+        "summary": "Entry point that exposes the room trace strip."
+      }
+    ],
+    "edges": []
+  }
+}

@@ -1,0 +1,27 @@
+diff --git a/src/DemoDashboard.tsx b/src/DemoDashboard.tsx
+index 395f8b2..2b5b0fb 100644
+--- a/src/DemoDashboard.tsx
++++ b/src/DemoDashboard.tsx
+@@ -322,7 +322,7 @@ function TraceCoachPanel({
+           ) : null}
+ 
+           {activeTab === "raw" ? (
+-            <pre className="r-tracevu-raw" data-testid="trace-raw">{JSON.stringify(rawPayload, null, 2)}</pre>
++            <pre key={activeStep.id} className="r-tracevu-raw" data-testid="trace-raw" role="region" aria-label="Raw trace JSON" tabIndex={0}>{JSON.stringify(rawPayload, null, 2)}</pre>
+           ) : null}
+           </> : null}
+         </div>)}
+diff --git a/src/styles.css b/src/styles.css
+index 66f78f9..01e7e22 100644
+--- a/src/styles.css
++++ b/src/styles.css
+@@ -732,7 +732,8 @@ button {
+ }
+ 
+ .r-tracevu-raw {
+-  min-height: 560px;
++  max-height: min(560px, 65vh);
++  overflow-y: auto;
+   margin: 0;
+   border: 1px solid var(--line);
+   border-radius: 10px;

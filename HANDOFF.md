@@ -22,4 +22,13 @@ Historical proof remains unchanged in `evidence/portfolio-ui-repair-20260905/REA
 
 ## Remaining readiness work
 
-The bounded entity repair is independently approved at commit `6048117a7879bde8b7a214746a4e4e49607bfe5f`; see [the final judgment](evidence/entity-inspection-final-review-20260905/README.md). Shared integration is pending normal CI. The recorded entity jobs close the observed keyboard, label, stale-selection, visit-count and removed-hover failures; they do not prove arbitrary graph sizes or consumer data. Full visual/design/responsive/interaction/accessibility/performance/usage/alignment grades, physical touch, a fresh human usability session and deployment remain pending. Source and installed demo proof does not certify an agent's claims or a production system.
+The bounded entity repair is independently approved at commit `6048117a7879bde8b7a214746a4e4e49607bfe5f`; see [the final judgment](evidence/entity-inspection-final-review-20260905/README.md). It landed through normal PR4 and passing shared CI at canonical `04891604227ab607a61557f49f2cdb41b28dd338`; that merge closes the entity slice only. The recorded entity jobs close the observed keyboard, label, stale-selection, visit-count and removed-hover failures; they do not prove arbitrary graph sizes or consumer data. Full visual/design/responsive/interaction/accessibility/performance/usage/alignment grades, physical touch, a fresh human usability session and deployment remain pending. Source and installed demo proof does not certify an agent's claims or a production system.
+
+
+## Raw trace reading follow-up
+
+The reviewed Raw region now has a responsive height ceiling, a name and a native keyboard focus stop. Complete JSON stays available while the following entity graph moves into reach. This slice changes only the existing Raw pre and its height/overflow; native scrolling and graph semantics are preserved.
+
+See [the portable reading proof](evidence/raw-reading-20260905/README.md) for 312 source checks/25 states, 104 normally installed Next checks/eight states, and the independent 187-check replay. The final reviewer approves the scoped runtime with a disclosed full-page screenshot limitation; a viewport-only desktop comparison resolves layout acceptance. Earlier native-scroll timing, selector and incomplete-fixture failures remain available.
+
+The scoped D4/R3 observations are 4/5 and 5/5; mobile setup D3 remains 3/5. All full dimension and overall grades, real human/device validation and production deployment remain open. The packet binds the exact reviewed files; normal CI and shared integration are separate from that local judgment.

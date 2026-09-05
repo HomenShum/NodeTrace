@@ -1,0 +1,5810 @@
+{
+  "schemaVersion": "portfolio.criterion-assessment/v1",
+  "proof": "NODETRACE-CURRENT-44-CRITERIA-01",
+  "mode": "Builder",
+  "repo": "NodeTrace",
+  "canonicalRepo": "HomenShum/NodeTrace",
+  "canonicalPath": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace",
+  "commit": "4d6c55841d2ffa3fe27a9b33c17eff9dd6814695",
+  "runtimeCommit": "6048117a7879bde8b7a214746a4e4e49607bfe5f",
+  "runtimeTree": "c77fe64fe38e668bffdeca7b3042c4187bf7c132",
+  "publicationTree": "02cf74d4bc6537ff06138ddcd479d2dc61de291f",
+  "assessedAt": "2026-09-05T05:54:16.444654+00:00",
+  "requestTrace": "Each individual repository ready for usage and handoff, including visual UI, responsiveness, interaction standards and explicit gradings.",
+  "verdict": "AGENT_EVALUATED_ONLY_PARTIAL; WHOLE_REPO_READINESS_OPEN",
+  "profileRevision": "E6d current evidence supplement to frozen E6c current-source artifact grading scope v1; no support promise, criterion, target or design-reference replacement.",
+  "referenceRefs": [
+    "standard",
+    "prior-profile",
+    "prior-ui-plan",
+    "entity-plan"
+  ],
+  "environment": {
+    "os": "Windows",
+    "sourceBrowser": "Chromium 149.0.7827.55",
+    "input": "desktop keyboard/pointer, CSS viewport emulation",
+    "theme": "frozen local light source/installed demo",
+    "providerMode": "local SQLite samples/saved snapshot; no live provider call",
+    "sourceRoute": "/",
+    "nextRoute": "/nodetrace?host=preserved&returnTo=dashboard#host-section",
+    "viteRoute": "/nodetrace.html?host=preserved&returnTo=dashboard#host-section",
+    "production": false,
+    "actualBrowserVersionsForInstalled": "Recorded only as Chromium by installed reports; exact binary version absent there, so platform completeness remains false."
+  },
+  "sourceBindings": {
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "scripts/lib/entity-inspection-proof.mjs": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/ui-readiness.mjs": "31b233e37e6a149b3657d19620d59733b69afd587983f9af9c07f7e3ba43c9df",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+  },
+  "dependencyLockSha256": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+  "fixtures": {
+    "source": [
+      {
+        "seed": "happy-path",
+        "sha256": "a5e889b0e79f055997b1a54088c35292bd8a5922f2013aaa53c9978a98d25c80",
+        "assets": {}
+      },
+      {
+        "seed": "trace-coach:sqlite",
+        "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+        "assets": {
+          "captures/coach-step-01-artifact-entry-ide.png": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+          "captures/coach-step-01-artifact-entry-ui.png": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+          "captures/coach-step-01-artifact-entry-minimap.svg": "4546bb747da97f3059245858fbd617eea189d9412c01177539dda97f14c198a5",
+          "captures/coach-step-02-detail-tabs-ide.png": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+          "captures/coach-step-02-detail-tabs-ui.png": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+          "captures/coach-step-02-detail-tabs-minimap.svg": "5bd23c282f0186e42b5b3b18be6166853e19e50dff341f67318b349c76c2f3a4",
+          "captures/coach-step-03-trace-data-ide.png": "7ae6e759d2e0aa0b09009addcca8c773c7a563e8a4390a3694cc1ee16ee8cb48",
+          "captures/coach-step-03-trace-data-ui.png": "7b10c55f8c15e0d238cf4e09b1c8077376a3958eefce24b70ef57d80c377c309",
+          "captures/coach-step-03-trace-data-minimap.svg": "819c9d199321fe55d25d84a738626ab86235b6092a9aefc0a8edda391c411787",
+          "captures/coach-step-04-step-row-ide.png": "d02def1baf506a4e7c9f97e56e01eaf06ce0895ae4719f70a1908626d6d12155",
+          "captures/coach-step-04-step-row-ui.png": "da5b3e8f61cf1cea71d394151afc72723f4b59911bfb5c6161e15a3bfd6d67ce",
+          "captures/coach-step-04-step-row-minimap.svg": "dfd793fb3b533a2a41ca760efbfb61f2f8aaf9dc594deae387075bb8d2de298a",
+          "captures/coach-step-05-flow-ide.png": "1af8c71406ccc79a243e6204c65c29c7bdfadc740fd38f7f4dcbe1c600d0ef19",
+          "captures/coach-step-05-flow-ui.png": "3702c6232ed2d54d840c48ed96aa0cdb25e6a8decc12280f9f6d0ad3dd3e9c13",
+          "captures/coach-step-05-flow-minimap.svg": "fe0adc1c805a9cc744c8841c494a62eac9bc2e907edc61b711f520adc63b07d8",
+          "captures/coach-step-06-style-ide.png": "30169a13fc5515c0379f1bb55d236a299cad4590ad9155c796f2fa91476aac34",
+          "captures/coach-step-06-style-ui.png": "c2267920f05c61d046ad7af897a30cbab9ae38809b4aaef1ef12adde97745d90",
+          "captures/coach-step-06-style-minimap.svg": "c9d848461d0a7ca29f8cda23ac2b66075388739a9db97fae5edb8f2bf87a2926"
+        }
+      }
+    ],
+    "next": {
+      "initialSha256": "929d442e39b4ddea72e718c886743754aaee2fdce4937f048d18c2838857111f",
+      "initialTraces": 4,
+      "finalSha256": "78d0d644449b6c3e2bde2bf9f40cd8a859ea37460d49bdc6deb6a684d13812d8"
+    },
+    "vite": {
+      "initialSha256": "1e0b05f14d415e956dee933bf1cddbe9701ecc9f7977f0d1f57758a8bb3a2866",
+      "initialTraces": 4,
+      "finalSha256": "4c349b723ce89d21936c87207f4179e2a0bf9956df6ff0b613ee7932767c8ff3"
+    }
+  },
+  "coverage": {
+    "cssViewports": [
+      [
+        320,
+        800
+      ],
+      [
+        360,
+        800
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        768,
+        1024
+      ],
+      [
+        1024,
+        768
+      ],
+      [
+        1440,
+        960
+      ],
+      [
+        1920,
+        1080
+      ]
+    ],
+    "sourceChecks": 3368,
+    "sourceCaptures": 128,
+    "nextChecks": 1855,
+    "nextCaptures": 95,
+    "viteChecks": 1874,
+    "viteCaptures": 95,
+    "newBrowserRunsForThisAssessment": 0,
+    "newVisualReview": "Five current source screenshots plus the already viewed six matched pairs and independently exercised/viewed installed matrices.",
+    "observationsCompleteOnlyWithinExplicitRows": true,
+    "requiredMatrixComplete": false,
+    "fullSupportPromiseReviewed": false,
+    "humanSampleSize": 0,
+    "noNotApplicableDecisions": true,
+    "missingPlatformMetadata": "Installed reports identify Chromium but do not retain its exact version; no Safari/Firefox/physical-device/AT evidence."
+  },
+  "criterionRatings": [
+    {
+      "id": "V1",
+      "dimension": "visualScore",
+      "criterion": "Typography",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Headline and body hierarchy remain readable. Deduct one for compact 11–13px metadata, Raw JSON and Fit text during sustained inspection.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "raw-1024",
+        "style"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V2",
+      "dimension": "visualScore",
+      "criterion": "Spacing and grid",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Cards and gutters reflow coherently. Deduct one for oversized setup/status cards and extended empty column space beside Raw JSON.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "raw-1024"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V3",
+      "dimension": "visualScore",
+      "criterion": "Color and token discipline",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The light page, code surfaces, status and focus colors remain coherent. Deduct one for visibly different warm page controls and blue vendored graph controls.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "style"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V4",
+      "dimension": "visualScore",
+      "criterion": "Hierarchy",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Inspect trace and modal titles remain prominent. Deduct one because three setup commands and snapshot facts compete with the evidence on the phone.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V5",
+      "dimension": "visualScore",
+      "criterion": "Rendered legibility and contrast",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Painted labels fit and complete identities remain available in both panels. Deduct one because source/UI screenshot details remain too small for direct reading in the narrow overview.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "source-run",
+        "owner-knockout"
+      ],
+      "priorObservedScore": 3,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V6",
+      "dimension": "visualScore",
+      "criterion": "Elevation and icons",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Card borders, icons and elevation are consistent. Deduct one for the visually tiny lowercase Fit label despite its verified 44px hit area.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "helper"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V7",
+      "dimension": "visualScore",
+      "criterion": "Alignment",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "No alignment defect is visible in the cited current cards, native control, result panels or dialogs. No deduction within these observed cells.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V8",
+      "dimension": "visualScore",
+      "criterion": "State polish",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Current source loading/error/empty/unknown states describe their status and recovery. Deduct one for retaining the large setup summary and inactive Inspect action during loading/error; installed sad-state matrix remains unrun.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "error",
+        "loading",
+        "source-run"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "V9",
+      "dimension": "visualScore",
+      "criterion": "Purposeful motion and reduced motion",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Normal-motion videos exist and targeted reduced-motion runs pass behavior, but no paired motion-spec assessment covers source/Next/Vite. Video existence is not a motion rating.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "D1",
+      "dimension": "designScore",
+      "criterion": "Main action clarity",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Inspect trace is named and visible; installed guidance gives the actual command. Deduct one for three similarly styled source setup commands ahead of the trace task.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "next-run",
+        "vite-run"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "D2",
+      "dimension": "designScore",
+      "criterion": "Navigation and information architecture",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Tabs, step selection, modal and browser history behave coherently. Deduct one for long phone travel between overview, raw detail and the entity region.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "raw-1024",
+        "source-run"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "D3",
+      "dimension": "designScore",
+      "criterion": "Progressive disclosure",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 3,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The current source phone first viewport is dominated by the hero, commands and snapshot facts before trace evidence. The task is usable by scrolling, but disclosure still requires substantial reading.",
+      "evidenceRefs": [
+        "phone-overview",
+        "source-run",
+        "view"
+      ],
+      "priorObservedScore": 3,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "D4",
+      "dimension": "designScore",
+      "criterion": "Information density",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 3,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Raw JSON creates a 4269px-tall page at 1024px width and pushes the graph after the full payload. Comparing a raw field with an entity requires repeated page travel; no bounded reading region exists.",
+      "evidenceRefs": [
+        "raw-1024",
+        "view",
+        "style",
+        "source-run"
+      ],
+      "priorObservedScore": 3,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "D5",
+      "dimension": "designScore",
+      "criterion": "Component behavior and wording consistency",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Current source and installed wording matches the actual sample/snapshot context. Entity and pointer paths agree with each other, and both installed displayed commands produce the expected new records. No observed contradiction remains.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "next-320",
+        "vite-320"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "R1",
+      "dimension": "responsiveScore",
+      "criterion": "Reflow and content preservation",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The exercised 320–1920px DOM content and complete selected identities remain available without page overflow. Deduct one for source screenshots shrinking below comfortable detail reading on phones.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920",
+        "source-run",
+        "next-run",
+        "vite-run"
+      ],
+      "priorObservedScore": 3,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "R2",
+      "dimension": "responsiveScore",
+      "criterion": "Navigation and action reachability",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Natural Tab reaches Entity and Fit; Inspect, tabs and close are usable in the recorded keyboard paths. Deduct one for reaching the source graph only after the long preceding phone content.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "phone-overview",
+        "helper"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "R3",
+      "dimension": "responsiveScore",
+      "criterion": "Canvas and panel adaptation",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 3,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Canvas labels and native modal adapt successfully, but Raw JSON expands the page instead of providing a bounded panel. This remains repeated scrolling friction in the required source surface.",
+      "evidenceRefs": [
+        "raw-1024",
+        "source-320",
+        "installed-390",
+        "phone-lens",
+        "style"
+      ],
+      "priorObservedScore": 3,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "R4",
+      "dimension": "responsiveScore",
+      "criterion": "Physical touch and on-screen keyboard",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "No physical touch device or operating-system on-screen keyboard was observed. Chromium viewport emulation is not device verification.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "R5",
+      "dimension": "responsiveScore",
+      "criterion": "Zoom, long text and locale stability",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Long Latin/Unicode/emoji IDs were exercised, but actual 200% text sizing, 400% zoom and a reviewed locale promise remain missing.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "owner-knockout"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "I1",
+      "dimension": "interactionScore",
+      "criterion": "Controls and keyboard paths",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Actual Entity Tab/ArrowDown, pointer, clear/reselect, Fit, filters, tabs and modal controls work in their cited recorded jobs. The prior inaccessible entity path is closed. No deduction within those jobs.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "owner-knockout",
+        "helper"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "I2",
+      "dimension": "interactionScore",
+      "criterion": "Honest feedback and status",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Current selected identities, event IDs, counts/visits and sample/snapshot/timeout status are honest in the observed jobs. Same-ID refresh no longer leaves old results. No deduction within these observations.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "owner-knockout",
+        "error",
+        "loading"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "I3",
+      "dimension": "interactionScore",
+      "criterion": "Error and retry behavior",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The source rejects malformed, missing-field, unsafe-source, oversized and HTTP responses; Retry preserves the intended surface and timeout is recoverable. Deduct one for technical failure copy amid large setup content. Equivalent installed sad-state coverage is not complete.",
+      "evidenceRefs": [
+        "source-run",
+        "error",
+        "loading"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "I4",
+      "dimension": "interactionScore",
+      "criterion": "Cancellation, undo and duplicate actions",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Modal cancellation, clear selection and repeated review are observed. Whole-product write cancellation/undo/duplicate-action applicability has not been independently resolved; no N/A exception is assumed.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "I5",
+      "dimension": "interactionScore",
+      "criterion": "Reload, reopening and state continuity",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Source tab/step reload, Back/Forward and modal reopening pass; installed host path/query/hash survives; actual state refresh and selected-entity replacement/removal are consistent. No deduction for the exercised local state jobs.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "owner-knockout"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "A1",
+      "dimension": "accessibilityScore",
+      "criterion": "Semantic names and structure",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The native Entity control exposes every actual name, producing events have a DOM result, and the reviewed page/dialog/tab controls have semantic names. No observed semantic-action omission remains. Screen-reader speech is separate.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "helper",
+        "phone-lens"
+      ],
+      "priorObservedScore": 3,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "A2",
+      "dimension": "accessibilityScore",
+      "criterion": "Keyboard focus order and return",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Natural Tab/ArrowDown selects every fixture entity, visible focus reaches Fit, and native modal focus containment/return is observed. No deduction within the tested keyboard cells; installed modal opener was explicitly focused for that separate lane.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "helper"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "A3",
+      "dimension": "accessibilityScore",
+      "criterion": "Contrast and non-color cues",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "No complete current manual contrast and non-color-cue audit covers the changed renderer and all owned states. Historical automated scans cannot certify it.",
+      "evidenceRefs": [
+        "final-judge",
+        "phone-lens",
+        "source-390"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "A4",
+      "dimension": "accessibilityScore",
+      "criterion": "Text resize, reflow and target size",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Entity and Fit targets measure at least 44px with visible focus. Actual text resize/zoom and comprehensive target spacing remain missing, so the combined criterion stays null.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "helper"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "A5",
+      "dimension": "accessibilityScore",
+      "criterion": "Screen-reader announcements and motion alternatives",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "No screen-reader announcements or assistive-technology session is recorded. Reduced-motion behavior alone cannot complete this combined criterion.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "P1",
+      "dimension": "performanceScore",
+      "criterion": "Initial usable view",
+      "status": "STALE_OR_NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Earlier lab evidence predates the changed renderer. A current startup budget and constrained initial-usability run are missing; the retained desktop current-frame timing failure remains unexplained.",
+      "evidenceRefs": [
+        "final-judge",
+        "matched"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "P2",
+      "dimension": "performanceScore",
+      "criterion": "Input and scroll responsiveness",
+      "status": "STALE_OR_NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Successful interactions and videos do not measure input/scroll latency. No current required workload/device latency budget or field INP evidence is established.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "P3",
+      "dimension": "performanceScore",
+      "criterion": "Layout stability",
+      "status": "STALE_OR_NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "No current full layout-stability measurement is bound to this renderer across source/installed conditions. Old local CLS is not inherited.",
+      "evidenceRefs": [
+        "final-judge",
+        "source-run"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "P4",
+      "dimension": "performanceScore",
+      "criterion": "Long-operation feedback",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Local load/timeout/Retry feedback is observed under I2/I3. No current graded long-operation workload and latency budget has been frozen; no durable live-job capability is inferred.",
+      "evidenceRefs": [
+        "source-run",
+        "loading",
+        "error"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "P5",
+      "dimension": "performanceScore",
+      "criterion": "Large data and constrained platforms",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "125-row CLI smoke, small graph fixtures, 40 long-name entities and sustained review do not cover maximum admitted data or constrained devices/network. No performance rating is inferred.",
+      "evidenceRefs": [
+        "package-check",
+        "owner-knockout",
+        "source-run"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "U1",
+      "dimension": "usageScore",
+      "criterion": "First-time human task comprehension",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "No first-time intended-audience human participant was observed. An agent cannot provide the required comprehension rating.",
+      "evidenceRefs": [
+        "standard",
+        "prior-profile"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "U2",
+      "dimension": "usageScore",
+      "criterion": "Successful core journey",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The agent-controlled core journeys succeed; required human core-task success, assistance and wrong turns remain unobserved.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "U3",
+      "dimension": "usageScore",
+      "criterion": "Bounded errors, help and rework",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Both installed commands are real and source failures expose a working retry. Deduct one for dense source setup/raw content increasing reading and recovery effort. This is agent-observed operability only.",
+      "evidenceRefs": [
+        "source-run",
+        "next-run",
+        "vite-run",
+        "matched",
+        "final-judge",
+        "error",
+        "raw-1024"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "U4",
+      "dimension": "usageScore",
+      "criterion": "Usable consumer result",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Normally installed Next and strict Vite consumers build, display actual events and execute their own documented refresh command. The final renderer update/rebuild is explicitly disclosed. No defect remains in those representative consumer jobs.",
+      "evidenceRefs": [
+        "next-run",
+        "vite-run",
+        "package-check",
+        "publication-judge"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "U5",
+      "dimension": "usageScore",
+      "criterion": "Restart, reopen and handoff",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Current handoff commands and source reopen/history behavior are reproducible in recorded agent runs. Deduct one for requiring a CLI generation followed by browser refresh and separate source-versus-installed instructions; fresh-human handoff remains unrun.",
+      "evidenceRefs": [
+        "handoff",
+        "next-run",
+        "vite-run",
+        "source-run"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "L1",
+      "dimension": "alignmentScore",
+      "criterion": "Fit to intended user and job",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The inspected UI supports developers following an entity to its trace events. Deduct one for setup prominence and tiny evidence thumbnails competing with that inspection job. This is artifact-based audience fit, not participant validation.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-320",
+        "source-390",
+        "source-1440",
+        "installed-320",
+        "installed-390",
+        "installed-1440",
+        "next-768",
+        "next-1024",
+        "vite-1920"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "L2",
+      "dimension": "alignmentScore",
+      "criterion": "Coverage of advertised capabilities",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "The entity, source and representative installed jobs are covered, but the whole repository advertises additional CLI/capture/MCP and privileged integration behavior. Complete capability-to-journey scope is not frozen here.",
+      "evidenceRefs": [
+        "package-check",
+        "prior-profile",
+        "entity-plan"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "L3",
+      "dimension": "alignmentScore",
+      "criterion": "Truthful limits and status",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 4,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Snapshot, sample, unavailable source access, unknown counts and traversal-only semantics are disclosed. Deduct one because prominent VERIFIED/PASS/verified labels still require reading the nearby snapshot/context limitation to understand their scope.",
+      "evidenceRefs": [
+        "phone-overview",
+        "phone-lens",
+        "source-390",
+        "next-320",
+        "vite-320"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    },
+    {
+      "id": "L4",
+      "dimension": "alignmentScore",
+      "criterion": "Permissions and review authority",
+      "status": "NOT_RUN",
+      "score": null,
+      "observedScore": null,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": false,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Public demo URL inputs cannot enter builder mode and smoke checks exist. This UI review does not establish every server-side permission/owner integration; full criterion coverage stays null.",
+      "evidenceRefs": [
+        "source-run",
+        "package-check",
+        "phone-lens"
+      ],
+      "priorObservedScore": null,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells.",
+        "Specific missing coverage is stated in reasonAndDeduction."
+      ]
+    },
+    {
+      "id": "L5",
+      "dimension": "alignmentScore",
+      "criterion": "Source, trace and artifact consistency",
+      "status": "OBSERVED_PARTIAL",
+      "score": null,
+      "observedScore": 5,
+      "observedScoreScope": "Only the stated current source-bound local Chromium observations; not a complete repository criterion or dimension grade.",
+      "evidenceCompleteForStatedObservation": true,
+      "requiredCoverageComplete": false,
+      "reasonAndDeduction": "Exact current source, lock, installed transformations, served assets, actual event IDs and saved artifact buffers agree. The old failed runs and update history are preserved. No deduction for the bound local evidence chain.",
+      "evidenceRefs": [
+        "final-judge",
+        "publication-judge",
+        "matched",
+        "owner-knockout",
+        "next-run",
+        "vite-run"
+      ],
+      "priorObservedScore": 4,
+      "missingForFullCriterion": [
+        "Reviewed complete platform/theme/capability/state promise and all applicable cells."
+      ]
+    }
+  ],
+  "visualScore": null,
+  "designScore": null,
+  "responsiveScore": null,
+  "interactionScore": null,
+  "accessibilityScore": null,
+  "performanceScore": null,
+  "usageScore": null,
+  "alignmentScore": null,
+  "dimensionStatuses": {
+    "visualScore": "INCOMPLETE",
+    "designScore": "INCOMPLETE",
+    "responsiveScore": "INCOMPLETE",
+    "interactionScore": "INCOMPLETE",
+    "accessibilityScore": "INCOMPLETE",
+    "performanceScore": "INCOMPLETE",
+    "usageScore": "INCOMPLETE",
+    "alignmentScore": "INCOMPLETE"
+  },
+  "overallScore": null,
+  "overallGrade": null,
+  "counts": {
+    "criteria": 44,
+    "currentScopedObservations": 28,
+    "unscoredCriteria": 16,
+    "belowObservedCriterionFloor": [
+      "D3",
+      "D4",
+      "R3"
+    ]
+  },
+  "aggregation": "No mean or letter computed: required coverage is incomplete. Recorded scoped observations cannot pass whole dimensions.",
+  "workingTarget": {
+    "minimumCriterion": 4,
+    "minimumDimension": 4.5,
+    "overall": "minimum complete dimension; no floor relaxed"
+  },
+  "barScores": null,
+  "barStatus": "NOT_REASSESSED; no conversion of original 0–2 Bar",
+  "hardGates": {
+    "boundedEntityImplementation": "APPROVED_SCOPED_WITH_LIMITS",
+    "publicationMetadata": "APPROVED_METADATA_ONLY",
+    "newP0P1": [],
+    "remainingObservedUsabilityDeductions": [
+      "D3",
+      "D4",
+      "R3"
+    ],
+    "fullReadiness": "INCOMPLETE_NOT_A_PASS",
+    "historicalAudits": "Earlier WIG red findings and dispositions remain historical; no whole-gate green inferred.",
+    "performance": "MISSING_CURRENT_GRADED_EVIDENCE"
+  },
+  "developerHandoffStatus": "BOUNDED_SOURCE_AND_REPRESENTATIVE_CONSUMERS_VERIFIED; full handoff scope remains open",
+  "userExperienceStatus": "AGENT_EVALUATED_ONLY_PARTIAL",
+  "freshHumanUsabilityStatus": "NOT_RUN",
+  "sharedIntegrationStatus": "ROOT_OWNS_CURRENT_CI_AND_MERGE; not independently assessed here",
+  "productionStatus": "NOT_RUN",
+  "confidence": {
+    "currentExactEntityAndConsumerJobs": "high",
+    "visualDeductions": "moderate to high in cited cells; agent judgment",
+    "fullProductGeneralization": "not established"
+  },
+  "requiredFixes": [
+    {
+      "id": "NT-E6D-01",
+      "priority": "P2",
+      "criterionIds": [
+        "D4",
+        "R3"
+      ],
+      "title": "Raw JSON expands the whole document and displaces the entity comparison",
+      "status": "OBSERVED_CURRENT",
+      "evidenceRefs": [
+        "raw-1024",
+        "view",
+        "style"
+      ],
+      "example": "1024px current Raw view is 4269px tall; the entity graph follows the entire payload.",
+      "rootCause": "The single owned pre renders full pretty JSON with min-height560 and wrapping, but no bounded block-size/overflow reading region.",
+      "nextSlice": "Keep full JSON content and existing Raw tab/history; give this one region a responsive bounded height and keyboard-operable scroll/focus. No new parser, data format, dependency, component framework or page redesign.",
+      "sourceScope": [
+        "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\src\\DemoDashboard.tsx:325",
+        "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\src\\styles.css:734"
+      ],
+      "proofBeforeEdit": "Freeze exact current Raw screenshots/DOM/full JSON and chosen height/keyboard acceptance before changing these two files.",
+      "boundedAcceptance": [
+        "All JSON bytes remain accessible and unchanged; final field can be reached by keyboard.",
+        "At320/390/1024/1440, Raw region stays within its frozen size budget, no page overflow and graph remains reachable without traversing full JSON document height.",
+        "Raw tab/step/reload/Back continuity and graph Entity→events job remain intact.",
+        "Normal source build and actual installed import transformation check; rerun affected Raw/state cells rather than unrelated full portfolio matrices."
+      ]
+    },
+    {
+      "id": "NT-E6D-02",
+      "priority": "P2",
+      "criterionIds": [
+        "D3"
+      ],
+      "title": "Mobile setup summary precedes the evidence task",
+      "status": "OBSERVED_CURRENT_SEPARATE_BACKLOG",
+      "evidenceRefs": [
+        "phone-overview"
+      ],
+      "nextSlice": "Keep as a separate later disclosure review; do not combine a whole-page redesign with the Raw region fix."
+    }
+  ],
+  "remainingEvidenceWork": [
+    "Review the intended full platform/theme/capability/state promise without treating unsupported/unrun as N/A.",
+    "Complete actual text resize/zoom and manual contrast/non-color/target audit; record exact browser versions and AT/device identities.",
+    "Assess paired motion/reduced-motion and screen-reader announcements; record physical touch/OS keyboard evidence where required.",
+    "Freeze current workload/latency budgets then measure startup/input/scroll/layout/large-data/constrained cases; keep lab and field separate.",
+    "Observe intended-audience humans on predefined first-visit and core tasks; retain assistance/wrong turns/completion with no personal identifiers."
+  ],
+  "rawCheckGroups": {
+    "keyboard": [
+      {
+        "name": "happy-path-320: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: initial focus inside modal",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 0",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 1",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 2",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 3",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 4",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 5",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 6",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 7",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 8",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 9",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 10",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: modal Tab 11",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: focus returns to opener",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440: natural Tab reaches entity selection",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920: natural Tab reaches entity selection",
+        "pass": true
+      }
+    ],
+    "trust": [
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-320: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: graph remains traversal history",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: public demo cannot enter builder mode",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-320-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-360-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-390-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-768-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1024-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1440-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-pointer: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-pointer-to-keyboard: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "long-entities-1920-reselect-after-clear: counts remain unknown",
+        "pass": true
+      },
+      {
+        "name": "public JSON and URL cannot grant builder UI",
+        "pass": true
+      }
+    ],
+    "recovery": [
+      {
+        "name": "happy-path-320: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: unrelated query/hash survive",
+        "pass": true
+      },
+      {
+        "name": "sustained review with accumulated history",
+        "pass": true
+      },
+      {
+        "name": "http-error: retry preserves original requested surface",
+        "pass": true
+      },
+      {
+        "name": "invalid-json: retry preserves original requested surface",
+        "pass": true
+      },
+      {
+        "name": "missing-nested-field: retry preserves original requested surface",
+        "pass": true
+      },
+      {
+        "name": "unsafe-source: retry preserves original requested surface",
+        "pass": true
+      },
+      {
+        "name": "oversize: retry preserves original requested surface",
+        "pass": true
+      },
+      {
+        "name": "pending direct link does not claim registry absence",
+        "pass": true
+      },
+      {
+        "name": "request budget produces recoverable timeout",
+        "pass": true
+      },
+      {
+        "name": "late abandoned response cannot replace recovered state",
+        "pass": true
+      }
+    ],
+    "stateContinuity": [
+      {
+        "name": "happy-path-320: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "happy-path-360: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "happy-path-390: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "happy-path-768: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1024: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1440: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "happy-path-1920: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-320: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-360: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-390: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-768: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1024: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1440: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: Raw survives reload",
+        "pass": true
+      },
+      {
+        "name": "trace-coach-sqlite-1920: browser Back and Forward restore open/closed lens",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 0",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 1",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 2",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 3",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 4",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 5",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 6",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 7",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 8",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 9",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 10",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 11",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 12",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 13",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 14",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 15",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 16",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 17",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 18",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 19",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 20",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 21",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 22",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 23",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 24",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 25",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 26",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 27",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 28",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 29",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 30",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 31",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 32",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 33",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 34",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 35",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 36",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 37",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 38",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 39",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 40",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 41",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 42",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 43",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 44",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 45",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 46",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 47",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 48",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 49",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 50",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 51",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 52",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 53",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 54",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 55",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 56",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 57",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 58",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 59",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 60",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 61",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 62",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 63",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 64",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 65",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 66",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 67",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 68",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 69",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 70",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 71",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 72",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 73",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 74",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 75",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 76",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 77",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 78",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 79",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 80",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 81",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 82",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 83",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 84",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 85",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 86",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 87",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 88",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 89",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 90",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 91",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 92",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 93",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 94",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 95",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 96",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 97",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 98",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 99",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 100",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 101",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 102",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 103",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 104",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 105",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 106",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 107",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 108",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 109",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 110",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 111",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 112",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 113",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 114",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 115",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 116",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 117",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 118",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 119",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 120",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 121",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 122",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 123",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 124",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 125",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 126",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 127",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 128",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 129",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 130",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 131",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 132",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 133",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 134",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 135",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 136",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 137",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 138",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 139",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 140",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 141",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 142",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 143",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 144",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 145",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 146",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 147",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 148",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 149",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 150",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 151",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 152",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 153",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 154",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 155",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 156",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 157",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 158",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 159",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 160",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 161",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 162",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 163",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 164",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 165",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 166",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 167",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 168",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 169",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 170",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 171",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 172",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 173",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 174",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 175",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 176",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 177",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 178",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 179",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 180",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 181",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 182",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 183",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 184",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 185",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 186",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 187",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 188",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 189",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 190",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 191",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 192",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 193",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 194",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 195",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 196",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 197",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 198",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 199",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 200",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 201",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 202",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 203",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 204",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 205",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 206",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 207",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 208",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 209",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 210",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 211",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 212",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 213",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 214",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 215",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 216",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 217",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 218",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 219",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 220",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 221",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 222",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 223",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 224",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 225",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 226",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 227",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 228",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 229",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 230",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 231",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 232",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 233",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 234",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 235",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 236",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 237",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 238",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 239",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 240",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 241",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 242",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 243",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 244",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 245",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 246",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 247",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 248",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 249",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 250",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 251",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 252",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 253",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 254",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 255",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 256",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 257",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 258",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 259",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 260",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 261",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 262",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 263",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 264",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 265",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 266",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 267",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 268",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 269",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 270",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 271",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 272",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 273",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 274",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 275",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 276",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 277",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 278",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 279",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 280",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 281",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 282",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 283",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 284",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 285",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 286",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 287",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 288",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 289",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 290",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 291",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 292",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 293",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 294",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 295",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 296",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 297",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 298",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 299",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 300",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 301",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 302",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 303",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 304",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 305",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 306",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 307",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 308",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 309",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 310",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 311",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 312",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 313",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 314",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 315",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 316",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 317",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 318",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 319",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 320",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 321",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 322",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 323",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 324",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 325",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 326",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 327",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 328",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 329",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 330",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 331",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 332",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 333",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 334",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 335",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 336",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 337",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 338",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 339",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 340",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 341",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 342",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 343",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 344",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 345",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 346",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 347",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 348",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 349",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 350",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 351",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 352",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 353",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 354",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 355",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 356",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 357",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 358",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 359",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 360",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 361",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 362",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 363",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 364",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 365",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 366",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 367",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 368",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 369",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 370",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 371",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 372",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 373",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 374",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 375",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 376",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 377",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 378",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 379",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 380",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 381",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 382",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 383",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 384",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 385",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 386",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 387",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 388",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 389",
+        "pass": true
+      },
+      {
+        "name": "repeated review cycle 390",
+        "pass": true
+      },
+      {
+        "name": "sustained review with accumulated history",
+        "pass": true
+      }
+    ]
+  },
+  "evidenceCatalog": {
+    "standard": {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\REPO_READINESS_STANDARD.md",
+      "sha256": "8b5bb532bf0dfeed7cc4ecd2b425d708fc49048cc05ab4cbeb315fc3534aeff2",
+      "bytes": 18664
+    },
+    "prior-profile": {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODEMEM_NODETRACE_GRADE_PLAN.json",
+      "sha256": "7008ab4cb734cd51f76dd730c41e76463083b490a07835e35c4256ea1abbe16d",
+      "bytes": 102747
+    },
+    "prior-ui-plan": {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6b_NODETRACE_UI_REPAIR_PLAN.md",
+      "sha256": "19576522413744b3789e9750f7fea1d2b07a65e3821df06484338e2fa2cda301",
+      "bytes": 7951
+    },
+    "entity-plan": {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_ENTITY_REPAIR_PLAN.md",
+      "sha256": "50e1451e65a27732faf5e4cdfab115a0b9f32a1fa4f08a4872894fcf53dee82c",
+      "bytes": 12529
+    },
+    "final-judge": {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_ENTITY_FINAL_JUDGE.json",
+      "sha256": "6d1de8001ee49aeb8d0652a794d942b9e7f0cc9a467f28c7640dd52f30eb1581",
+      "bytes": 19209
+    },
+    "publication-judge": {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_PUBLICATION_JUDGE.json",
+      "sha256": "46d428f6b54343bbb4f1020f17cd24d9f44353c56de135b7ec6ed34b94f1b8b8",
+      "bytes": 4778
+    },
+    "source-run": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-entity-canonical-source\\receipt.json",
+      "sha256": "228df29df9b8baa68f0d90d619f479399138089a830da9aacda2949c2e196bcc",
+      "bytes": 1543064
+    },
+    "next-run": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\report.json",
+      "sha256": "1e6c401e546fc27ce25227a7251ce0c7643096243b99b4e8efc23e9a6ea36568",
+      "bytes": 1540815
+    },
+    "vite-run": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\report.json",
+      "sha256": "15666d0ae1b6529c56608e91e891099a850068ce9c9c5b22afd789e7b6f20654",
+      "bytes": 1618540
+    },
+    "owner-knockout": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c_NODETRACE_ENTITY_OWNER_KNOCKOUT.json",
+      "sha256": "f532e3335e1942ff52fd4f475f5caf48fd24ddac52c4687717511c0999c24879",
+      "bytes": 18271
+    },
+    "matched": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c_NODETRACE_MATCHED_CANONICAL_VISUAL.json",
+      "sha256": "f3aae8ea95cbb1154f691c08f36ba52d704a0218ac01391cbebcbe140d89a176",
+      "bytes": 47182
+    },
+    "raw-1024": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-entity-canonical-source\\trace-coach-sqlite-1024-raw.png",
+      "sha256": "354cf7106b721d250cb019ad6913ea495157d610d676427a7f694e62783143c0",
+      "bytes": 463376,
+      "rasterSize": [
+        1024,
+        4269
+      ],
+      "viewed": true
+    },
+    "phone-overview": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-entity-canonical-source\\trace-coach-sqlite-390-overview.png",
+      "sha256": "abafc326020f5686c217217f960e20dbd742cb9c8d8d164807ca227039abaae1",
+      "bytes": 245220,
+      "rasterSize": [
+        390,
+        2886
+      ],
+      "viewed": true
+    },
+    "phone-lens": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-entity-canonical-source\\trace-coach-sqlite-360-lens.png",
+      "sha256": "ff3a29adfd5b23b6cfb427ca9fbfb83b0497c7641205a6c987457df40d9256cb",
+      "bytes": 39116,
+      "rasterSize": [
+        360,
+        800
+      ],
+      "viewed": true
+    },
+    "error": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-entity-canonical-source\\http-error.png",
+      "sha256": "27b35174e49196f1479e607f0686db880d5dc1dc05e4fccbcca25a78b7943804",
+      "bytes": 98325,
+      "rasterSize": [
+        390,
+        995
+      ],
+      "viewed": true
+    },
+    "loading": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-entity-canonical-source\\pending-direct-link.png",
+      "sha256": "48abcac6cafb81b8a020b1c2dd16461c2f228298f52c2973192fb477dd662bc3",
+      "bytes": 99938,
+      "rasterSize": [
+        390,
+        902
+      ],
+      "viewed": true
+    },
+    "helper": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\scripts\\lib\\entity-inspection-proof.mjs",
+      "sha256": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+      "bytes": 8918
+    },
+    "view": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\src\\DemoDashboard.tsx",
+      "sha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "bytes": 17130
+    },
+    "style": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\src\\styles.css",
+      "sha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "bytes": 17130
+    },
+    "handoff": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\HANDOFF.md",
+      "sha256": "760fe6d14912468408c066279f0f38dbba67682a0805b20f6b59c2cd77981981",
+      "bytes": 5207
+    },
+    "package-check": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-canonical-final-package-check.log",
+      "sha256": "323a571c7cdd456b3a1b2b8969624ad90c4ba70309b87e3c8f8464a21de1d82a",
+      "bytes": 9135
+    },
+    "source-320": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-matched-canonical-visual\\source-320-native-selected-change-boundary.png",
+      "sha256": "851ccc9ae6e7d2f09bbfc5086354aee4cd4a8887d4862320876c118f1416b239",
+      "bytes": 48966,
+      "rasterSize": [
+        320,
+        800
+      ],
+      "viewed": true
+    },
+    "source-390": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-matched-canonical-visual\\source-390-native-selected-change-boundary.png",
+      "sha256": "3ac0e2b1469adbc684c3d7709d922f68cc88527af169019acb1219009b5341ba",
+      "bytes": 62131,
+      "rasterSize": [
+        390,
+        844
+      ],
+      "viewed": true
+    },
+    "source-1440": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-matched-canonical-visual\\source-1440-native-selected-change-boundary.png",
+      "sha256": "83368fe14f21374eb181a53eb35e5b46e94fe2002653b8dec09b3c7549c1d587",
+      "bytes": 89527,
+      "rasterSize": [
+        1440,
+        960
+      ],
+      "viewed": true
+    },
+    "installed-320": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-matched-canonical-visual\\installed-320-native-selected-change-boundary.png",
+      "sha256": "d05608dfff6d35fc91046e3d5bfebf81cdccc75c21996af85b16a9ea25077b98",
+      "bytes": 44864,
+      "rasterSize": [
+        320,
+        800
+      ],
+      "viewed": true
+    },
+    "installed-390": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-matched-canonical-visual\\installed-390-native-selected-change-boundary.png",
+      "sha256": "1933f6b814c0da658d8fea00e9ab0f089969d6ebcdd8c1c78a047ba8d4c24d80",
+      "bytes": 54954,
+      "rasterSize": [
+        390,
+        844
+      ],
+      "viewed": true
+    },
+    "installed-1440": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-native-selected-change-boundary.png",
+      "sha256": "f1b5c1daa38fb08c9e250ef04f6e2858b0c312c85b1c000e177277b4ef6abe86",
+      "bytes": 96077,
+      "rasterSize": [
+        1440,
+        960
+      ],
+      "viewed": true
+    },
+    "next-320": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-320-populated.png",
+      "sha256": "622a6f2b316a7e4f5ae81d5ecd9c1c553445eaf9e55095fc86a989a5a2390ca0",
+      "bytes": 136823,
+      "rasterSize": [
+        320,
+        1978
+      ],
+      "viewed": true
+    },
+    "next-360": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-360-pointer-to-keyboard.png",
+      "sha256": "5585eb760886b200fb608588244d32c072342e2438c5c55ef685a2b587fb6cb1",
+      "bytes": 163650,
+      "rasterSize": [
+        360,
+        2038
+      ],
+      "viewed": true
+    },
+    "next-390": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-390-modal.png",
+      "sha256": "5b1ac165983d023ef5477323b240d49f2f05d0dd5cb6e439df86c5689af795e7",
+      "bytes": 33479,
+      "rasterSize": [
+        390,
+        844
+      ],
+      "viewed": true
+    },
+    "next-768": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-768-fit.png",
+      "sha256": "2e7d574c20de77df81a8f2547d53a8ccd4cef895180d4a465d86f8bbdda34b83",
+      "bytes": 159782,
+      "rasterSize": [
+        768,
+        1531
+      ],
+      "viewed": true
+    },
+    "next-1024": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-1024-long-long-entity-2.png",
+      "sha256": "91029d8d4648736b62a4c6c42db874bf99e28daf0c01cf865aac4b0353b10294",
+      "bytes": 179953,
+      "rasterSize": [
+        1024,
+        1434
+      ],
+      "viewed": true
+    },
+    "next-1440": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-1440-fit.png",
+      "sha256": "35737ef30e8424ca84fbdc54fc56e866cdef9c387691b142b283c88555909f3e",
+      "bytes": 212941,
+      "rasterSize": [
+        1440,
+        1319
+      ],
+      "viewed": true
+    },
+    "next-1920": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-next-entity-owner\\next-1920-populated.png",
+      "sha256": "970e52c312514679b1b86193361ea6c7b0e37ab50f2678ca544dfc076fe8f1fb",
+      "bytes": 217575,
+      "rasterSize": [
+        1920,
+        1132
+      ],
+      "viewed": true
+    },
+    "vite-320": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-320-populated.png",
+      "sha256": "2e887d7b6043da8bc372a225648ad0ed11a5a70ef283e7e327fd6a074dd22e04",
+      "bytes": 136816,
+      "rasterSize": [
+        320,
+        1978
+      ],
+      "viewed": true
+    },
+    "vite-360": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-360-pointer-to-keyboard.png",
+      "sha256": "407260e2cc74fa90cbd7d6b96c4108c16e4cdb6aed3beeac374fea4e40aab0e2",
+      "bytes": 163685,
+      "rasterSize": [
+        360,
+        2038
+      ],
+      "viewed": true
+    },
+    "vite-390": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-390-modal.png",
+      "sha256": "5b1ac165983d023ef5477323b240d49f2f05d0dd5cb6e439df86c5689af795e7",
+      "bytes": 33479,
+      "rasterSize": [
+        390,
+        844
+      ],
+      "viewed": true
+    },
+    "vite-768": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-768-fit.png",
+      "sha256": "7da93474f85694d615093879343d1d34a297298648af6cf41ee8aa90c94c809f",
+      "bytes": 159769,
+      "rasterSize": [
+        768,
+        1531
+      ],
+      "viewed": true
+    },
+    "vite-1024": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-1024-long-long-entity-2.png",
+      "sha256": "ded89d873de86330a9323e88de13eb134e6d6a535c7bd26553f135cf5bd78fc8",
+      "bytes": 180011,
+      "rasterSize": [
+        1024,
+        1434
+      ],
+      "viewed": true
+    },
+    "vite-1440": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-1440-fit.png",
+      "sha256": "23a1358f86d6d3cf8fcb232594faa4789da5a5ca47d57d232cb8e4d9ebcb2380",
+      "bytes": 212951,
+      "rasterSize": [
+        1440,
+        1319
+      ],
+      "viewed": true
+    },
+    "vite-1920": {
+      "path": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\evidence\\entity-inspection-20260905\\E6c-nodetrace-installed-vite-entity-owner\\vite-1920-populated.png",
+      "sha256": "e35d587e09b3b7fd2bfdeba48dd04c4b3dad8bfa2356fdce138a5ad789153fa8",
+      "bytes": 217645,
+      "rasterSize": [
+        1920,
+        1132
+      ],
+      "viewed": true
+    }
+  },
+  "centralGradeRegisterModified": false,
+  "sourceIndexRefsModified": false,
+  "reviewer": "/root/provider_ci_closure_judge; independent of application authorship, reused context disclosed. This is an evidence assessment, not fresh-context full human acceptance."
+}

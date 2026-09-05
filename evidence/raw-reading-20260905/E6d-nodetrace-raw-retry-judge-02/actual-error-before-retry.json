@@ -1,0 +1,16 @@
+{
+  "url": "http://127.0.0.1:4963/",
+  "alerts": [
+    "State request failed (HTTP 503).Retry loading trace"
+  ],
+  "buttons": [
+    {
+      "text": "Retry loading trace",
+      "disabled": false
+    },
+    {
+      "text": "Inspect trace",
+      "disabled": true
+    }
+  ]
+}

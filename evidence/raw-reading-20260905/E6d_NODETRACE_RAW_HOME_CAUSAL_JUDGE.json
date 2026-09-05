@@ -1,0 +1,333 @@
+{
+  "proof": "NODETRACE-NATIVE-RAW-SCROLL-CAUSAL-DIAGNOSIS-01",
+  "status": "PROOF_SEQUENCE_CAUSE_REPRODUCED_NO_PRODUCT_CHANGE_RECOMMENDED",
+  "at": "2026-09-05T06:36:45.043208+00:00",
+  "requestTrace": "Independently diagnose the native Home failure while preserving the Raw UI reading, selection, history and strict keyboard requirements.",
+  "candidate": {
+    "root": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+    "base": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "branch": "codex/raw-trace-reading-20260905",
+    "sourceHashes": {
+      "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+      "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+      "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+      "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+      "scripts/raw-reading-proof.mjs": "cca808fbb78cd29ceec0a9b73abd968750e37865bdfdf63e36bb6fccda0b95fe",
+      "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+    },
+    "preservedAcrossBothAppRuns": true,
+    "browser": "149.0.7827.55",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "motion": "no-preference"
+  },
+  "causalObservation": {
+    "failure": "Immediate Home after sampling the first final End position is not equivalent to Home after the browser finishes the End scroll.",
+    "failedNativeSequence": {
+      "endReachedMaxAtMs": 1807.5,
+      "homeKeydownAtMs": 1811.9000000953674,
+      "priorScrollendAtMs": 1824.8000000715256,
+      "top": 11345,
+      "max": 11345
+    },
+    "controlledState": {
+      "samePreIdentity": 3,
+      "focus": "trace-raw",
+      "documentScrollTop": 1321,
+      "selection": "",
+      "homeDefaultPrevented": false,
+      "nodeConnected": true,
+      "noObservedGeometryChange": true
+    },
+    "recovery": "A second native Home after the failure reaches zero on the same element, without a React/state/history change.",
+    "necessaryCauseKnockout": "Same saved application DOM and exact current stylesheet with scripts removed reproduces the race: 9/10 Home presses fail when the helper samples endpoint then immediately sends Home; 20/20 End/Home actions pass when sequenced by actual native scrollend. This excludes React, history restoration, app key handlers and graph animation as necessary causes.",
+    "notClaimed": "Chromium internal implementation cause is not identified. A first endpoint sample can precede native completion; not every key pressed during that interval fails. This is an observed browser-native sequencing limitation, not proof of arbitrary rapid-key reliability."
+  },
+  "completionProof": {
+    "checks": 72,
+    "captures": 3,
+    "rounds": 44,
+    "elapsedMs": 60812,
+    "strictHomeAssertion": "scrollTop === 0",
+    "strictEndAssertion": "scrollHeight - clientHeight - scrollTop <= 2",
+    "originalJsonSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+    "allSourceAssetsEqualBuild": true,
+    "nativeKeyEvents": true,
+    "fullOriginalScenarioPreserved": true
+  },
+  "recommendation": {
+    "editScope": "Only scripts/raw-reading-proof.mjs native scroll proof helper; no product handler, styling or key changes are required by this finding.",
+    "sequence": [
+      "Focus the actual Raw region.",
+      "Before pressing a movement key, attach a scrollend observation to that actual element and record whether it is already at the requested endpoint.",
+      "Send the real native End or Home key.",
+      "When movement is needed, await the element scrollend with a bounded timeout and require the same strict endpoint. Remove the observation on completion or failure.",
+      "When already at the endpoint, do not wait for a movement event that need not occur. Keep the endpoint assertion and native key behavior honest.",
+      "Retain all earlier failed runs; then rerun the remaining planned source and installed-consumer cells."
+    ],
+    "rejectedWorkarounds": [
+      "No product key interception",
+      "No programmatic scrollTop assignment",
+      "No retry hidden as one Home success",
+      "No disabling native motion",
+      "No fixed sleep substituted for observed completion",
+      "No relaxed Home target or fabricated clean original run"
+    ]
+  },
+  "scopeLimits": [
+    "This is one long390 diagnosis plus a static no-React control, not the full Raw matrix or a new grade.",
+    "Text200, remaining source/consumer cells and final source/installed judgment stay parent-owned.",
+    "The static control reproduces the Raw geometry/text but has different document positioning after native focus; it makes no screenshot-equivalence claim for the entire app.",
+    "Rapid interruption before native scroll completion remains a recorded Chromium limitation. Completed reading actions pass.",
+    "The independent failure derivative retains its true failure in native-home-failure.json/png, then records the second-key recovery separately. Its inherited final failure-current-state capture occurs after that explicit recovery and must not be mistaken for the original stuck state.",
+    "No application source, build, fixture, index, ref, provider, credentials or production was changed."
+  ],
+  "evidence": {
+    "E6d_RAW_HOME_STATIC_JUDGE.json": {
+      "sha256": "78aa12d0b5af73bec3c2bcda90c4d08a81d2f7eef1be14cf438079776b53e535",
+      "bytes": 26561
+    },
+    "E6d-raw-home-static-judge.mjs": {
+      "sha256": "8907bb54c76835b44efe507d8460d64311e95480de992f1fed4ebecbfd16c09d",
+      "bytes": 3337
+    },
+    "E6d-raw-home-static-endpoint-sample.png": {
+      "sha256": "50a03260d03f84d4a522de30bb0e1b059fcd0db75b13d851f033d83161bba61b",
+      "bytes": 42913
+    },
+    "E6d-raw-home-static-native-scrollend.png": {
+      "sha256": "50a03260d03f84d4a522de30bb0e1b059fcd0db75b13d851f033d83161bba61b",
+      "bytes": 42913
+    },
+    "E6d-build-raw-home-judge-probe.py": {
+      "sha256": "c847636d79602c263a527fe23d1e3cfe9f4a281a7e238780f575b6c760c8094c",
+      "bytes": 3095
+    },
+    "E6d-nodetrace-raw-home-judge-probe.mjs": {
+      "sha256": "f95b719ef8a75f13f084d8e063388d224eb5f971020ce891170ed17c8a8ac36c",
+      "bytes": 18387
+    },
+    "E6d-build-raw-home-completion-probe.py": {
+      "sha256": "6ab41d2b138b76ea1eb249f00e545614e934d7d71ad90e73573c5e0207a3aa3a",
+      "bytes": 1723
+    },
+    "E6d-nodetrace-raw-home-completion-probe.mjs": {
+      "sha256": "1e1d0139031cdbeceb39cbe50a3832f9211f96b5af0c740ed4095f41058df29b",
+      "bytes": 18464
+    },
+    "E6d-nodetrace-raw-home-diagnosis/report.json": {
+      "sha256": "a3ad0cc24b36e8bcd384e699b001389943d59df4ae09316bfec736d63c3cb5df",
+      "bytes": 11925
+    },
+    "E6d-nodetrace-raw-home-judge-01/actual-state.json": {
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    "E6d-nodetrace-raw-home-judge-01/failure-current-state-viewport.png": {
+      "sha256": "8643299cfc5b02f1346487c58f4bdf59553501a0bd4f14475ed383ddf4b0b15c",
+      "bytes": 49775
+    },
+    "E6d-nodetrace-raw-home-judge-01/failure-current-state.ax.txt": {
+      "sha256": "433958d295cc90f7399308a993213e77623f3bf2a7911f56c84fd31d7be7dc9e",
+      "bytes": 33105
+    },
+    "E6d-nodetrace-raw-home-judge-01/failure-current-state.html": {
+      "sha256": "8d59a9e6cb37d0f625dd9d951d13b706a13de8bd9109858b56c1a16fa3de5071",
+      "bytes": 48993
+    },
+    "E6d-nodetrace-raw-home-judge-01/failure-current-state.json": {
+      "sha256": "a5550722a2a5c209b43836105c752df32f83ab28db28b35e8ccc78692d342d03",
+      "bytes": 1332
+    },
+    "E6d-nodetrace-raw-home-judge-01/failure-current-state.png": {
+      "sha256": "d8e3c712b84f6556bf5d4a283f767cfb81e3d761a0ae6975b295282a6cf28a66",
+      "bytes": 233666
+    },
+    "E6d-nodetrace-raw-home-judge-01/failure-current-state.raw.txt": {
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-end-viewport.png": {
+      "sha256": "a66777bcc89e5d0967de054c362b7ea23179ac35db66d8d8a5b2705474b5f5e6",
+      "bytes": 38275
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-end.ax.txt": {
+      "sha256": "5b3511b444dac6d8bff7f2d076d56022b6e8f5155b655124dadbab1ece7eaae8",
+      "bytes": 33781
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-end.html": {
+      "sha256": "f02db816303c393cf3432021f11241185611c05daa5089462677b3ac6068b221",
+      "bytes": 50119
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-end.json": {
+      "sha256": "955a37dd24725e1484b4765f8263b26914bef02e74faa0d6c7e3d218af50ee06",
+      "bytes": 972
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-end.png": {
+      "sha256": "a5a74c230cae1ce52db1cb7443cba8bfa8dddf38c991499258ed440dccdaeda9",
+      "bytes": 236254
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-end.raw.txt": {
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-top-viewport.png": {
+      "sha256": "570c1d58fadac9abd91e9ca7beb2f34546556980dbab2afe00d4e3da76e34926",
+      "bytes": 47697
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-top.ax.txt": {
+      "sha256": "5b3511b444dac6d8bff7f2d076d56022b6e8f5155b655124dadbab1ece7eaae8",
+      "bytes": 33781
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-top.html": {
+      "sha256": "f02db816303c393cf3432021f11241185611c05daa5089462677b3ac6068b221",
+      "bytes": 50119
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-top.json": {
+      "sha256": "28152367430e11793fd6226351b6af59a1ccfc34671927ab35e9be84a9761e31",
+      "bytes": 742
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-top.png": {
+      "sha256": "785f2a8e3368006a93f57e5a6ef066823d84e8e23383257486da2a92f7c44e1f",
+      "bytes": 245334
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-390-no-preference-top.raw.txt": {
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    "E6d-nodetrace-raw-home-judge-01/long-state.json": {
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    "E6d-nodetrace-raw-home-judge-01/native-home-failure.json": {
+      "sha256": "aeef7e0341996148fa987c10f7e7817a8ab2981a987721596698a6f6e33ec185",
+      "bytes": 62133
+    },
+    "E6d-nodetrace-raw-home-judge-01/native-home-failure.png": {
+      "sha256": "55943805c8c1f9608dd77a284216f6aed9aff94de4ed0a81ed87dd9efa16b182",
+      "bytes": 40335
+    },
+    "E6d-nodetrace-raw-home-judge-01/native-home-second-key.json": {
+      "sha256": "e1f32db9bb2f690b8feee8b9e1d5e4ae178ecbe48e38e5bc6ba41f8b9b783db0",
+      "bytes": 81712
+    },
+    "E6d-nodetrace-raw-home-judge-01/native-home-second-key.png": {
+      "sha256": "8643299cfc5b02f1346487c58f4bdf59553501a0bd4f14475ed383ddf4b0b15c",
+      "bytes": 49775
+    },
+    "E6d-nodetrace-raw-home-judge-01/report.json": {
+      "sha256": "f579c5ad45db2853a68d6e94aa01afb597b7625a7e6414a3ee2d2a1a0ff1fcea",
+      "bytes": 12541
+    },
+    "E6d-nodetrace-raw-home-judge-01/server.log": {
+      "sha256": "cfccabc300f2b403d6d5048194b3ab07530950c3cd72c4af919037a867d071b1",
+      "bytes": 77
+    },
+    "E6d-nodetrace-raw-home-judge-01/short-state.json": {
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    },
+    "E6d-nodetrace-raw-home-completed-01/actual-state.json": {
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-end-viewport.png": {
+      "sha256": "a66777bcc89e5d0967de054c362b7ea23179ac35db66d8d8a5b2705474b5f5e6",
+      "bytes": 38275
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-end.ax.txt": {
+      "sha256": "5b3511b444dac6d8bff7f2d076d56022b6e8f5155b655124dadbab1ece7eaae8",
+      "bytes": 33781
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-end.html": {
+      "sha256": "f02db816303c393cf3432021f11241185611c05daa5089462677b3ac6068b221",
+      "bytes": 50119
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-end.json": {
+      "sha256": "46fa513cc3c6cc2deeb30a590e647487531537526426a877d99d56a95b21c243",
+      "bytes": 970
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-end.png": {
+      "sha256": "9d4f1312febb9df4f78b873f4fcf83b6318898f8bedb8a0356b464413aba5444",
+      "bytes": 236215
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-end.raw.txt": {
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-sustained-viewport.png": {
+      "sha256": "8643299cfc5b02f1346487c58f4bdf59553501a0bd4f14475ed383ddf4b0b15c",
+      "bytes": 49775
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-sustained.ax.txt": {
+      "sha256": "433958d295cc90f7399308a993213e77623f3bf2a7911f56c84fd31d7be7dc9e",
+      "bytes": 33105
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-sustained.html": {
+      "sha256": "d3532b96cb2081ffc03e6da34b24bd494d7c518e7297fc7c98b98502ab910c6a",
+      "bytes": 48984
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-sustained.json": {
+      "sha256": "c9b43d51735834142ca10a8db90b1f8365abec622410e595b8c07192ba7cfa46",
+      "bytes": 3540
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-sustained.png": {
+      "sha256": "6310778deae49cbb9abdca16fa81fd589cfb780b5b0ccb941087ca3b3eb02766",
+      "bytes": 233751
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-sustained.raw.txt": {
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-top-viewport.png": {
+      "sha256": "570c1d58fadac9abd91e9ca7beb2f34546556980dbab2afe00d4e3da76e34926",
+      "bytes": 47697
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-top.ax.txt": {
+      "sha256": "5b3511b444dac6d8bff7f2d076d56022b6e8f5155b655124dadbab1ece7eaae8",
+      "bytes": 33781
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-top.html": {
+      "sha256": "f02db816303c393cf3432021f11241185611c05daa5089462677b3ac6068b221",
+      "bytes": 50119
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-top.json": {
+      "sha256": "28152367430e11793fd6226351b6af59a1ccfc34671927ab35e9be84a9761e31",
+      "bytes": 742
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-top.png": {
+      "sha256": "48f5796c01d2ad5bf1bc65595e4c3c9141fed8ba963bd8539ccc619eb2a6c0ff",
+      "bytes": 245380
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-390-no-preference-top.raw.txt": {
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    "E6d-nodetrace-raw-home-completed-01/long-state.json": {
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    "E6d-nodetrace-raw-home-completed-01/native-completed-reading.json": {
+      "sha256": "26258da944a21c9072c1c85ad26f4e056a2ee1afd24a36e7b4689321d0e8adec",
+      "bytes": 444366
+    },
+    "E6d-nodetrace-raw-home-completed-01/report.json": {
+      "sha256": "769d42bf72c56ad9fbc1754c73f28992d868223e2a697c1b06a566cb04c36e70",
+      "bytes": 20893
+    },
+    "E6d-nodetrace-raw-home-completed-01/server.log": {
+      "sha256": "cfccabc300f2b403d6d5048194b3ab07530950c3cd72c4af919037a867d071b1",
+      "bytes": 77
+    },
+    "E6d-nodetrace-raw-home-completed-01/short-state.json": {
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-05T07:03:50.871557+00:00",
+  "proof": "NODETRACE-RAW-READING-REGION-01",
+  "status": "SOURCE_AND_NORMAL_INSTALLED_REPLAY_PASS_INDEPENDENT_FINAL_REVIEW_PENDING",
+  "head": "04891604227ab607a61557f49f2cdb41b28dd338",
+  "branch": "codex/raw-trace-reading-20260905",
+  "sourceFiles": {
+    "src/DemoDashboard.tsx": {
+      "sha256": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+      "bytes": 17205
+    },
+    "src/styles.css": {
+      "sha256": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+      "bytes": 17161
+    },
+    "scripts/raw-reading-proof.mjs": {
+      "sha256": "b5c821b9c319a2c0579700c00e7911190a28f2b03b819856451da76968aad313",
+      "bytes": 21366
+    }
+  },
+  "sourceChecks": 312,
+  "sourceCaptures": 25,
+  "installedChecks": 104,
+  "installedCaptures": 8,
+  "installedProtectedFiles": 53,
+  "sourceRuntimeExactAcrossBothProofs": true,
+  "sourceHarnessWasRetainedBeforeConsumerFixtureExtension": true,
+  "installedConsumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-lU78sE",
+  "fixtureAttachments": 19,
+  "evidenceRefs": {
+    "E6d_NODETRACE_RAW_READING_PLAN.json": "15a91ab309196e31b36894938dbad266ff305f7af6041ef67adb85e1555711ba",
+    "E6d-nodetrace-raw-source-accepted/report.json": "df01257847944bcf81b17deee9f3ba9125de1d730f3cd1530d51862790d05b27",
+    "E6d-nodetrace-raw-installed-accepted/report.json": "7b5a760b4b2cb97b0c7224bffdf29b4e1cd403e85d9a971b63208dd9728eec08",
+    "E6d-raw-proof-source-accepted.mjs.txt": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+    "E6d_NODETRACE_RAW_HOME_CAUSAL_JUDGE.json": "3b9f4f652a6640c71bb8b431eda1f6209433e37b6aba1bd9c4e1fc4b18d2dada",
+    "E6d_NODETRACE_RAW_RETRY_CAUSAL_JUDGE.json": "2bebb40467f4b9ddc282c856b9fc22c5bfc72c85b4f445cc31f1721fc38c3e88",
+    "E6d_NODETRACE_INSTALLED_RAW_ASSET_CAUSAL_JUDGE.json": "a1ba5aebb60844fc2734b54a8ab7b2201ac9c7acafe3daa009f8975f874f7ad8",
+    "E6d-nodetrace-raw-consumer-install/current-report.json": "35002d1b48102d3fefaf01c1fd150dcfb991cfe2b074b4f3ad06d37985357896",
+    "E6d-nodetrace-raw-consumer-install/custody.json": "ae80afd94caad994542cc8957139c711a2c9c7e465c2a7fc494b23eda27b30ce",
+    "E6d-nodetrace-raw-implementation.patch": "784417983a90b23d28f39eca8b4e8c64df8ccc25e9f1aac492f4673c8edaac06"
+  },
+  "grades": {
+    "D4": null,
+    "R3": null,
+    "D3": "Existing separate mobile setup deduction unchanged"
+  },
+  "limits": [
+    "Desktop Chromium viewport emulation, no human/physical-device/performance certification",
+    "Text200 doubles Raw component text only, not browser zoom",
+    "Completed-action keyboard checks wait native scrollend; rapid interruption limitation remains documented",
+    "Normal consumer installs four traces without a coach; full recorded six-event coach packet with19exact attachments is explicitly routed for Raw reading proof",
+    "Source312check run used retained8a89 harness; later consumer-only fixture extension changes proof code, not application/runtime bytes",
+    "Earlier locator, native timing, incomplete attachment and attachment directory failures are retained; none is silently overwritten",
+    "No commit/push/deploy yet for this Raw slice"
+  ]
+}

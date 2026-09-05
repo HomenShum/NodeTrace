@@ -1,0 +1,135 @@
+{
+  "captures/coach-step-01-artifact-entry-ide.png": {
+    "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-01-artifact-entry-ide.png",
+    "consumerHasFile": false,
+    "bytes": 102076
+  },
+  "captures/coach-step-01-artifact-entry-minimap.svg": {
+    "sha256": "4546bb747da97f3059245858fbd617eea189d9412c01177539dda97f14c198a5",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-01-artifact-entry-minimap.svg",
+    "consumerHasFile": false,
+    "bytes": 5440
+  },
+  "captures/coach-step-01-artifact-entry-ui.png": {
+    "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-01-artifact-entry-ui.png",
+    "consumerHasFile": false,
+    "bytes": 3350
+  },
+  "captures/coach-step-02-detail-tabs-ide.png": {
+    "sha256": "255fd369818b6c84590764143f10030bd29b3f08a011fa67775d8b62e3e57d81",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-02-detail-tabs-ide.png",
+    "consumerHasFile": false,
+    "bytes": 105337
+  },
+  "captures/coach-step-02-detail-tabs-minimap.svg": {
+    "sha256": "5bd23c282f0186e42b5b3b18be6166853e19e50dff341f67318b349c76c2f3a4",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-02-detail-tabs-minimap.svg",
+    "consumerHasFile": false,
+    "bytes": 5439
+  },
+  "captures/coach-step-02-detail-tabs-ui.png": {
+    "sha256": "44a0fe6b3b95820bdd9c0af8495290e0752fa72f0aa31727c5ec176c7f2d8bf0",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-02-detail-tabs-ui.png",
+    "consumerHasFile": false,
+    "bytes": 4687
+  },
+  "captures/coach-step-03-trace-data-ide.png": {
+    "sha256": "7ae6e759d2e0aa0b09009addcca8c773c7a563e8a4390a3694cc1ee16ee8cb48",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-03-trace-data-ide.png",
+    "consumerHasFile": false,
+    "bytes": 74161
+  },
+  "captures/coach-step-03-trace-data-minimap.svg": {
+    "sha256": "819c9d199321fe55d25d84a738626ab86235b6092a9aefc0a8edda391c411787",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-03-trace-data-minimap.svg",
+    "consumerHasFile": false,
+    "bytes": 5436
+  },
+  "captures/coach-step-03-trace-data-ui.png": {
+    "sha256": "7b10c55f8c15e0d238cf4e09b1c8077376a3958eefce24b70ef57d80c377c309",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-03-trace-data-ui.png",
+    "consumerHasFile": false,
+    "bytes": 9713
+  },
+  "captures/coach-step-04-step-row-ide.png": {
+    "sha256": "d02def1baf506a4e7c9f97e56e01eaf06ce0895ae4719f70a1908626d6d12155",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-04-step-row-ide.png",
+    "consumerHasFile": false,
+    "bytes": 94697
+  },
+  "captures/coach-step-04-step-row-minimap.svg": {
+    "sha256": "dfd793fb3b533a2a41ca760efbfb61f2f8aaf9dc594deae387075bb8d2de298a",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-04-step-row-minimap.svg",
+    "consumerHasFile": false,
+    "bytes": 5437
+  },
+  "captures/coach-step-04-step-row-ui.png": {
+    "sha256": "da5b3e8f61cf1cea71d394151afc72723f4b59911bfb5c6161e15a3bfd6d67ce",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-04-step-row-ui.png",
+    "consumerHasFile": false,
+    "bytes": 33166
+  },
+  "captures/coach-step-05-flow-ide.png": {
+    "sha256": "1af8c71406ccc79a243e6204c65c29c7bdfadc740fd38f7f4dcbe1c600d0ef19",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-05-flow-ide.png",
+    "consumerHasFile": false,
+    "bytes": 79864
+  },
+  "captures/coach-step-05-flow-minimap.svg": {
+    "sha256": "fe0adc1c805a9cc744c8841c494a62eac9bc2e907edc61b711f520adc63b07d8",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-05-flow-minimap.svg",
+    "consumerHasFile": false,
+    "bytes": 5436
+  },
+  "captures/coach-step-05-flow-ui.png": {
+    "sha256": "3702c6232ed2d54d840c48ed96aa0cdb25e6a8decc12280f9f6d0ad3dd3e9c13",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-05-flow-ui.png",
+    "consumerHasFile": false,
+    "bytes": 17184
+  },
+  "captures/coach-step-06-style-ide.png": {
+    "sha256": "30169a13fc5515c0379f1bb55d236a299cad4590ad9155c796f2fa91476aac34",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-06-style-ide.png",
+    "consumerHasFile": false,
+    "bytes": 137539
+  },
+  "captures/coach-step-06-style-minimap.svg": {
+    "sha256": "c9d848461d0a7ca29f8cda23ac2b66075388739a9db97fae5edb8f2bf87a2926",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-06-style-minimap.svg",
+    "consumerHasFile": false,
+    "bytes": 5437
+  },
+  "captures/coach-step-06-style-ui.png": {
+    "sha256": "c2267920f05c61d046ad7af897a30cbab9ae38809b4aaef1ef12adde97745d90",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/coach-step-06-style-ui.png",
+    "consumerHasFile": false,
+    "bytes": 95693
+  },
+  "captures/noderoom-trace-knowledge-graph.json": {
+    "sha256": "74b63513c13f00445e9bf6224137ac55ce7769748eb875d410b625a203e728d5",
+    "gitCommit": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "source": "public/captures/noderoom-trace-knowledge-graph.json",
+    "consumerHasFile": false,
+    "bytes": 14179
+  }
+}

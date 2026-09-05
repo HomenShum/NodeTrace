@@ -1,0 +1,157 @@
+{
+  "sourceRepo": "HomenShum/noderoom",
+  "sourceMode": "snapshot",
+  "activeStep": {
+    "id": "coach-step-01-artifact-entry",
+    "surfaceId": "workSurface.traceStrip",
+    "order": 1,
+    "stepLabel": "Step 01",
+    "group": "Entry",
+    "title": "Open NodeRoom's Trace tab from the artifact shell",
+    "narrative": "Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.",
+    "sourceView": {
+      "imagePath": "captures/coach-step-01-artifact-entry-ide.png",
+      "repositoryRoot": "HomenShum/noderoom",
+      "activeFile": "src/ui/panels/Artifact.tsx",
+      "folderTree": [
+        "src",
+        "  - ui",
+        "    - panels",
+        "      - Artifact.tsx"
+      ],
+      "highlightStartLine": 1,
+      "highlightEndLine": 15,
+      "captureKind": "actual-code-browser-shiki"
+    },
+    "codeBlock": {
+      "filePath": "src/ui/panels/Artifact.tsx",
+      "startLine": 1,
+      "endLine": 15,
+      "snippet": "// raw-note-000: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-001: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-002: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-003: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-004: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-005: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-006: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-007: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-008: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-009: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-010: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-011: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-012: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-013: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-014: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-015: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-016: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-017: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-018: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-019: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-020: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-021: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-022: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-023: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-024: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-025: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-026: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-027: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-028: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-029: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-030: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-031: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-032: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-033: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-034: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-035: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-036: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-037: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-038: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-039: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-040: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-041: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-042: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-043: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-044: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-045: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-046: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-047: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-048: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-049: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-050: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-051: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-052: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-053: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-054: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-055: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-056: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-057: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-058: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-059: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-060: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-061: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-062: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-063: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-064: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-065: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-066: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-067: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-068: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-069: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-070: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-071: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-072: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-073: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-074: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-075: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-076: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-077: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-078: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-079: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-080: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-081: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-082: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-083: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-084: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-085: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-086: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-087: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-088: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-089: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-090: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-091: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-092: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-093: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-094: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-095: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-096: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-097: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-098: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-099: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-100: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-101: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-102: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-103: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-104: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-105: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-106: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-107: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-108: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-109: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-110: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-111: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-112: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-113: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-114: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-115: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-116: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-117: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-118: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-119: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-120: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-121: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-122: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-123: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-124: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-125: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-126: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-127: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-128: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-129: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-130: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-131: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-132: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-133: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-134: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-135: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-136: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-137: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-138: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-139: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-140: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-141: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-142: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-143: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-144: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-145: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-146: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-147: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-148: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-149: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-150: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-151: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-152: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-153: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-154: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-155: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-156: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-157: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-158: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-159: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-160: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-161: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-162: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-163: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-164: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-165: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-166: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-167: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-168: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-169: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-170: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-171: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-172: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-173: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-174: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-175: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-176: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-177: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-178: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-\n// raw-note-179: preserve JSON text 供应商🙂 long-description-long-description-long-description-long-description-long-description-"
+    },
+    "uiCapture": {
+      "selector": "[data-noderoom-surface=\"workSurface.traceStrip\"]",
+      "rect": {
+        "x": 11,
+        "y": 904,
+        "width": 1056,
+        "height": 45
+      },
+      "screenshotPath": "captures/coach-step-01-artifact-entry-ui.png",
+      "alt": "NodeRoom bottom room trace strip with recent room events and trace telemetry.",
+      "captureKind": "actual-noderoom-playwright"
+    },
+    "mapCapture": {
+      "imagePath": "captures/coach-step-01-artifact-entry-minimap.svg",
+      "graphPath": "captures/noderoom-trace-knowledge-graph.json",
+      "model": "Understand-Anything-backed structural minimap"
+    },
+    "diagram": {
+      "kind": "mermaid",
+      "nodeId": "artifact",
+      "source": "flowchart LR\n  Artifact[Artifact shell] --> Strip[Room trace strip]\n  Strip --> TraceTab[Trace tab]\n  TraceTab --> Surface[TraceSurface]"
+    }
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "artifact",
+        "label": "Artifact shell",
+        "kind": "component",
+        "filePath": "src/ui/panels/Artifact.tsx",
+        "layer": "UI entry",
+        "x": 112,
+        "y": 250,
+        "summary": "Entry point that exposes the room trace strip."
+      },
+      {
+        "id": "surface",
+        "label": "TraceSurface",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceSurface.tsx",
+        "layer": "Trace UI",
+        "x": 332,
+        "y": 176,
+        "summary": "Master-detail trace tab with records, tabs, and active detail."
+      },
+      {
+        "id": "data",
+        "label": "traceData",
+        "kind": "schema",
+        "filePath": "src/ui/panels/traceData.ts",
+        "layer": "Data model",
+        "x": 332,
+        "y": 382,
+        "summary": "TraceRecord and TraceStep structures that feed the UI."
+      },
+      {
+        "id": "steps",
+        "label": "TraceStepRow",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceStepRow.tsx",
+        "layer": "Evidence UI",
+        "x": 560,
+        "y": 286,
+        "summary": "Step renderer for source-linked rows and screenshot boxes."
+      },
+      {
+        "id": "flow",
+        "label": "TraceFlow",
+        "kind": "component",
+        "filePath": "src/ui/panels/TraceFlow.tsx",
+        "layer": "Graph UI",
+        "x": 784,
+        "y": 190,
+        "summary": "Graph view over the same ordered trace steps."
+      },
+      {
+        "id": "style",
+        "label": "Trace CSS",
+        "kind": "runtime",
+        "filePath": "src/app/styles.css",
+        "layer": "Visual system",
+        "x": 790,
+        "y": 406,
+        "summary": "Dark trace surface, tabs, cards, and highlighted boxes."
+      }
+    ],
+    "edges": [
+      {
+        "id": "artifact-surface",
+        "from": "artifact",
+        "to": "surface",
+        "label": "opens full trace tab"
+      },
+      {
+        "id": "surface-data",
+        "from": "surface",
+        "to": "data",
+        "label": "loads records"
+      },
+      {
+        "id": "surface-steps",
+        "from": "surface",
+        "to": "steps",
+        "label": "renders step list"
+      },
+      {
+        "id": "surface-flow",
+        "from": "surface",
+        "to": "flow",
+        "label": "renders graph tab"
+      },
+      {
+        "id": "steps-style",
+        "from": "steps",
+        "to": "style",
+        "label": "uses screenshot box styles"
+      },
+      {
+        "id": "flow-style",
+        "from": "flow",
+        "to": "style",
+        "label": "uses dark graph shell"
+      }
+    ]
+  }
+}
