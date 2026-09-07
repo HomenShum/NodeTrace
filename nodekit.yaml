@@ -25,11 +25,11 @@ noKey:
   status: certified
   command: npm run demo
   externalAccountsRequired: 0
-  disclosure: The SQLite happy path uses deterministic local state and requires no model, API key, or cloud account.
+  disclosure: The portable SQLite and Trace Lens happy path is deterministic and requires no model provider or cloud account; real external-app capture is a separate opt-in proof lane.
 
 environment:
   contractVersion: nodeplatform.env/v1
-  status: not-applicable
+  status: migration-planned
 
 proof:
   command: npm run proof
