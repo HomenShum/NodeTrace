@@ -1,48 +1,60 @@
 # NodeKit adoption
 
-NodeTrace is registered as a NodeKit `standalone-package` and maps its current
-portable trace UI, SQLite schema, installer, capture CLI, and MCP surface without
-moving them into a new directory tree.
+A developer adding trace inspection to an existing application needs to know
+which package owns the display and which runtime supplies its records.
+NodeTrace owns the portable trace UI, generic SQLite storage, installer,
+capture CLI and MCP capture tools. The host application supplies its runtime,
+authorization and trace data.
 
-## Current conformance level
+This ownership map complements [START_HERE.md](START_HERE.md),
+[AGENT_TRACE_ADOPTION.md](AGENT_TRACE_ADOPTION.md) and the
+[current developer handoff](../HANDOFF.md). It describes declared boundaries,
+not a completed protocol migration or product certification.
 
-- **L1 registered:** `nodekit.yaml` declares the repository identity, ownership,
-  lifecycle commands, no-key path, environment status, and proof boundary.
-- **L2 mapped:** the manifest identifies NodeTrace as the owner of
-  `nodetrace.trace-ui-store` and as a consumer of the canonical NodeAgent event
-  and trace-workpaper concepts plus ProofLoop certification.
+## Declared ownership
 
-NodeTrace does **not** run a product agent, so it intentionally has no
-`nodeagent.yaml`. It renders and stores portable trace state supplied by host
-applications. It must not vendor a NodeAgent runtime or define a competing event
-protocol.
+`nodekit.yaml` registers a `standalone-package`, owning
+`nodetrace.trace-ui-store` and consuming the repository, event, workpaper and
+certification contracts. NodeTrace has no product-agent definition:
+`nodeagent.yaml` is not required for this display/storage package.
 
-## Contract boundaries
-
-| Concern | Current truth |
+| Concern | Current implementation boundary |
 | --- | --- |
-| Trace presentation and generic SQLite storage | Owned by NodeTrace |
-| Runtime event envelope | Registered dependency on `nodeagent.event/v1`; host adapters may map events into UI rows, but NodeTrace does not yet ship a canonical event translator |
-| Trace workpaper contract | Consumed from `nodeagent.trace/v1`; NodeAgent remains the target owner while migration is incomplete |
-| Environment | Existing optional `NODETRACE_*` variables remain documented in `.env.example`; alignment to `nodeplatform.env/v1` is planned |
-| Certification receipt | ProofLoop owns `proofloop.receipt/v1` |
-| NodeTrace setup and eval JSON | Local evidence only; it is not yet a `proofloop.receipt/v1` implementation |
+| Trace presentation and generic SQLite storage | Owned by NodeTrace; portable to host applications |
+| Runtime event envelope | Manifest consumes `nodeagent.event-protocol`; hosts map their records into NodeTrace state. A canonical `nodeagent.event/v1` translator remains unimplemented |
+| Trace workpaper | Optional display fields are documented in [TRACE_WORKPAPER_STANDARD.md](TRACE_WORKPAPER_STANDARD.md); declaring consumption does not establish full `nodeagent.trace/v1` compatibility |
+| Environment | Optional `NODETRACE_*` variables are listed in [.env.example](../.env.example); alignment to `nodeplatform.env/v1` is planned |
+| Certification receipt | `proof.receiptSchema: null`; setup and eval JSON are local evidence, not a `proofloop.receipt/v1` implementation |
 
-For that reason, `nodekit.yaml` declares `proof.receiptSchema: null`. The
-`npm run proof` gate verifies NodeTrace's existing happy path, smoke suites, and
-build without claiming canonical receipt compatibility.
+An imported trace row can describe an action without proving that action was
+correct. Keep source-backed proof separate from runtime telemetry and serve
+Builder-only records only after the host verifies access.
 
-## Commands
+## Commands and proof scope
+
+Use the scripts already defined in [package.json](../package.json):
+
+| Command | Actual scope |
+| --- | --- |
+| `npm run demo` / `npm run doctor` | Generate the local SQLite happy path |
+| `npm run proof` | Run the temporary SQLite happy-path and documentation/schema smoke, installer CLI smoke and MCP smoke |
+| `npm run check` | Run `prepush`: happy path, smoke, citations, Builder safety, 125-step fixture, capture-plan proof, bundled coach, installed Next build, repository build, package dry run and production dependency audit |
+| `npm run dev` | Start the local Vite service |
+
+`npm run proof` includes a temporary SQLite initialization through its smoke
+script; it does not run the build or full `prepush` gate. The 125-step fixture
+is a bounded scenario check, not sustained production proof. Fresh external-app
+captures require a real checkout and the separate capture commands described
+in README; bundled captures do not establish a fresh run.
+
+If the sibling checkout directory is named `NodeKit`, the repository-contract
+command is:
 
 ```bash
-npm run demo
-npm run doctor
-npm run check
-npm run proof
+node ../NodeKit/src/cli.mjs repo check --repo-root .
 ```
 
-From a sibling NodeKit checkout, validate the repository contract with:
-
-```bash
-node ../node-platform/src/cli.mjs repo check --repo-root .
-```
+Use the actual sibling path when it differs. Contract conformance, package
+verification and rendered UI acceptance are separate judgments. Current UI
+grades and remaining user/device/deployment work are recorded in
+[HANDOFF.md](../HANDOFF.md).
