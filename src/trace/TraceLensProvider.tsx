@@ -69,7 +69,8 @@ export function TraceLensProvider({
   useEffect(() => {
     if (!open) return;
     const onKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      // A native modal owns Escape, including when another dialog is above it.
+      if (event.key === "Escape" && !document.querySelector(":modal")) setOpen(false);
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);

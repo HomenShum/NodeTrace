@@ -1,0 +1,75 @@
+{
+  "url": "http://127.0.0.1:4965/?disclosureProof=preserved&step=coach-step-01-artifact-entry&surface=workSurface.traceStrip#review",
+  "width": 1440,
+  "height": 960,
+  "overflow": 0,
+  "open": false,
+  "scrollY": 0,
+  "active": "BUTTON",
+  "regions": {
+    ".showcase": {
+      "x": 22,
+      "y": 22,
+      "width": 1396,
+      "height": 349.65625,
+      "documentY": 22
+    },
+    ".showcaseCopy h1": {
+      "x": 43,
+      "y": 65.9375,
+      "width": 860,
+      "height": 111.34375,
+      "documentY": 65.9375
+    },
+    ".traceSetup > summary": {
+      "x": 43,
+      "y": 303.46875,
+      "width": 1354,
+      "height": 47.1875,
+      "documentY": 303.46875
+    },
+    ".showcaseActions": {
+      "x": 43,
+      "y": 362.65625,
+      "width": 938,
+      "height": 39.390625,
+      "documentY": 362.65625
+    },
+    ".launchCard": {
+      "x": 997,
+      "y": 362.65625,
+      "width": 400,
+      "height": 264.640625,
+      "documentY": 362.65625
+    },
+    ".coachPanel": {
+      "x": 22,
+      "y": 387.65625,
+      "width": 1396,
+      "height": 1005.171875,
+      "documentY": 387.65625
+    },
+    ".coachList": {
+      "x": 23,
+      "y": 388.65625,
+      "width": 340,
+      "height": 1003.171875,
+      "documentY": 388.65625
+    },
+    ".coachDetail": {
+      "x": 363,
+      "y": 388.65625,
+      "width": 1054,
+      "height": 1003.171875,
+      "documentY": 388.65625
+    },
+    ".coachEmpty": null,
+    ".liveGraphRail": {
+      "x": 22,
+      "y": 1410.828125,
+      "width": 1396,
+      "height": 602.953125,
+      "documentY": 1410.828125
+    }
+  }
+}

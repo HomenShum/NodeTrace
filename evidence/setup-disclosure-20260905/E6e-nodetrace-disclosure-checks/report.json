@@ -1,0 +1,28 @@
+{
+  "steps": [
+    {
+      "name": "happy-path",
+      "exitCode": 0,
+      "log": "happy-path.log"
+    },
+    {
+      "name": "smoke",
+      "exitCode": 0,
+      "log": "smoke.log"
+    },
+    {
+      "name": "citations",
+      "exitCode": 1,
+      "log": "citations.log"
+    }
+  ],
+  "restored": {
+    "docs/eval/nodetrace-happy-path.json": true,
+    "docs/eval/nodetrace-smoke.json": true,
+    "docs/eval/nodetrace-cli-smoke.json": true
+  },
+  "limits": [
+    "Happy path uses existing supported isolated database/state environment paths; original local database and source fixture unchanged.",
+    "SQLite proof file stays central/local, not a portable publication input."
+  ]
+}

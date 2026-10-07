@@ -1,0 +1,17 @@
+# Installed Next final graph-owner proof
+
+**Builder. Re your request:** make each repo usable for developers and users, including visual UI, responsiveness and interaction standards. The final renderer passes the recorded installed entity job.
+
+**Decision: VERIFIED WITH LIMITS for the actual rebuilt Next production-mode local route.** All **1,855 checks**, **95 captures** and **seven widths (320/360/390/768/1024/1440/1920px)** passed with normal motion. The reviewer viewed every width, long selected identities and actual refreshed event IDs. No page or console errors occurred; 4 ReadPixels warnings remain in the raw record.
+
+The normally installed consumer at `C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-BzFZOC` was updated explicitly: only its vendored `NodeGraph.js` was copied from final source `e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4` after the independent 127-check compatibility/selection knockout passed. Its prior renderer and complete build bytes were archived first, and ordinary `npm run build` passed with no unexpected source/config changes. This is a documented update of the retained installed consumer, not a second complete fresh installer claim. The earlier proof report remains unchanged evidence for its older source hash.
+
+Natural keyboard selection reaches every actual entity; pointer→native→clear→reselect keeps both panels consistent. Current visits and exact producing event IDs agree, and measured count remains unknown. Entity/Fit have 44px targets and visible focus. Positive current glyph frames remain within the canvas without collisions through hover and pan/Fit. The four-event installed job and explicit bounded long Unicode/name/ID variants remain readable across all seven widths.
+
+Installed guidance, modal activation/containment/closure and Back/Forward preserve host path/query/hash. The displayed `npm run nodetrace:happy-path` was executed once during this replay; it generated four new trace events and two proof records, and the refreshed event IDs were read from the actual UI. Complete prior and refreshed state, SQLite and evaluation bytes remain in the packet. The consumer retains its successful refreshed state.
+
+All fifteen source→installed transformations match exactly. **133 protected source/package/lock/config/script/schema/build files** stayed byte-identical throughout the browser replay and command refresh. 160 served Next build responses matched retained disk bytes. Both temporary servers are stopped.
+
+Reviewer context was reused after the fresh-agent thread limit; the reviewer did not author application changes. The modal opener is focused explicitly for its separate keyboard checks; Entity uses natural Tab navigation. Seven motion videos are retained without a motion score. Physical input, screen readers, other engines, maximum-scale behavior, whole-product grades and deployed production remain outside this proof. Vite's ordinary host production build still omits the optional demo HTML by its documented development-route contract.
+
+[Machine proof and 315 artifact hashes](E6c_NODETRACE_INSTALLED_NEXT_ENTITY_OWNER_PROOF.json) · [Raw checks](E6c-nodetrace-installed-next-entity-owner/report.json) · [Final source-copy/build receipt](E6c-nodetrace-installed-owner-refresh/receipt.json) · [Refreshed state](E6c-nodetrace-installed-next-entity-owner/next-390-refreshed-state.png)

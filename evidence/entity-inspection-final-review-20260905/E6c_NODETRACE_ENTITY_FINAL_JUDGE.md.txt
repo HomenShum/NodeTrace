@@ -1,0 +1,45 @@
+# NodeTrace final entity implementation judgment
+
+**Builder. Re your request:** make each repository ready for developers and users, including visual UI, responsiveness, interaction standards and gradings. This review closes NodeTrace's bounded entity-inspection repair and its portable handoff evidence. Whole-product readiness remains open.
+
+**APPROVED_SCOPED_WITH_LIMITS.** The exact staged tree is `c77fe64fe38e668bffdeca7b3042c4187bf7c132`, based on `c578e3d2c870423f28ce140691a08e8a9bdaaaa6`. No unresolved implementation finding remains in the reviewed slice. This reviewer did not author application changes; reviewer context was reused after fresh-agent capacity was exhausted. The independent proof scripts were authored by this reviewer.
+
+A developer or reviewer can select each current actor, tool, artifact and step, read its complete identity and producing events, and switch between pointer and keyboard without stale or contradictory details. The repair also keeps graph labels within measured bounds and preserves the graph model's existing relationship and optional-visit semantics. These observations support the named inspection job; they are not product grades.
+
+## Exact candidate and portable custody
+
+I independently verified all 2,808 changed index blobs against actual working bytes: ten authored paths and the portable packet. All sixteen final source hashes match the source journey and manifest. Renderer SHA256 is `e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4`. The manifest is `ea28ec048f32e4da24506c481644506402e499216d42d10b1f9950fb8da543ce` and binds 2,797 artifacts totaling 251,618,199 bytes. No unstaged or nonignored untracked path remained; source, HEAD and index stayed unchanged during this review. Every captured and restored file in both 61-file generated-custody phases was checked again.
+
+The eight non-documentation implementation paths are the reviewed freeze. HANDOFF and graph-integration prose accurately describe controlled selection, reconciled graph ownership, optional visits, Vite dev scope and historical evidence. The literal NUL in LiveGraphRail is inherited unchanged from base; Git's binary label is not an encoding regression. The graph model has no semantic delta. Six existing development lock entries changed; recorded full audit has zero findings. The Vite installer correction is one owned-root nonnull assertion. Existing workflow/package authority and test gates were not weakened.
+
+[Read-only byte, current-frame and raster verification](E6c_NODETRACE_FINAL_JUDGE_BINDINGS.json) records 32 checks with no failure. [Fresh staged-source message replay](E6c-nodetrace-final-stage-owner-message/report.json) independently passes five canonical graph cases.
+
+## Causal closure and observed behavior
+
+The first candidate exposed three real failures: pointer/native panels disagreed, visits stayed stale after same-ID event growth, and a removed hovered entity dimmed the remaining graph. The final owner passes the same actual prop replacement/removal cases. A further compatibility probe found that constructing messages from raw arrays returned duplicate and dangling relationships absent from the canvas. Reading the already reconciled graph after a before-paint patch fixes this without changing graph normalization. Restoring graph-owned visits preserves a prior value of seven when the optional map omits that ID. Attribute refresh now keeps unchanged type filters and presents current count, receipt and visits.
+
+The independent bounded knockout passes 19 generic-renderer checks and 108 LiveGraphRail checks. It covers pointer→native→clear→reselect, same-ID visits 1→2, hovered removal, empty/recovery, long identities, hover/pan/Fit and actual cleared-canvas recovery. Its browser lanes used reduced motion at 900×1100 and 390×844; the separate installed matrices used normal motion at all seven widths. Earlier failures and interim renderer bytes remain available.
+
+| Proof lane | Verified scope and evidence |
+| --- | --- |
+| Current source | Root's raw 3368 checks/128 captures, sixteen exact final bindings; I inspected source screenshots and independently reproduced the targeted failures. |
+| Installed Next | I ran 1855 checks/95 captures at seven widths, the actual displayed refresh command and local built server; 133 protected inputs remained exact. |
+| Installed Vite | I ran 1874 checks/95 captures at seven widths and the displayed refresh command on documented dev `/nodetrace.html`; 38 protected inputs remained exact. |
+| Matched visual cells | Six original-fixture cells, twelve captures and 36 canonical PNGs independently recounted from actual saved bytes. I viewed all six original/current selected pairs at 320, 390 and 1440. |
+| Normal package check | Worker raw command exited 0; unchanged happy-path/smoke/citations/builder/scale/capture/SQLite/normal Next installer/build/package/audit sequence verified. This is inspected command evidence, not a second judge-run full check. |
+
+Both installed owner matrices followed an explicitly authorized one-file renderer refresh and normal rebuild of consumers installed earlier. They are not represented as second full fresh installations. The final package check independently performed its normal transient Next installer smoke. Next proof is local, and Vite's optional demo HTML is not automatically included in the host production build.
+
+## Matched pixels and retained uncertainty
+
+The source comparison retains the exact original six events; installed Next retains the original four. I checked actual source/index/installed/build/fixture snapshots across the full run and retry, current label rectangles for all twelve captures, and the exact 36 saved PNG buffers against their retained winning attempts. Every canonical PNG has more than forty dark pixels within its canvas crop, with matching recorded counts. Saved screenshots show the original clipped narrow hover labels, then readable full identities through the native selector and matching detail panels. Protected neighboring copy, event/relationship counts, route state and graph meanings remain consistent.
+
+The first full matched run still says failed: its installed desktop overview had an empty current-frame recorder. A diagnostic retry painted a graph but failed on a probe encoding mistake; that failure remains too. Retry02 used the correct UTF-8 and passed the same cell without its conditional wait. Combining five completed cells with that exact-input retry is legitimate evidence of those six observations. **The original timing cause is unproven**, so this review does not grant a first-frame reliability or performance grade.
+
+## Limits and handoff
+
+All eight visual/design/responsive/interaction/accessibility/performance/usage/alignment grades remain null. Physical touch, screen-reader interaction, other engines, a fresh human usability session, changed-renderer performance, deployment and shared integration remain unproved. Representative fixtures do not certify arbitrary graphs or all admitted maximum-size inputs. Earlier quiet lab results do not grade this changed renderer. Tracked/index cleanliness also does not certify all ignored operator runtime data.
+
+The root can commit and submit this exact scoped candidate through the existing integration process. Keep this final judgment outside the self-hashed packet, or add it later as a separately bound metadata supplement. Do not describe the whole repository or portfolio as ready solely from this judgment.
+
+[Machine judgment and claim-by-claim limits](E6c_NODETRACE_ENTITY_FINAL_JUDGE.json)

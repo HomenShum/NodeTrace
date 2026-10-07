@@ -1,0 +1,100 @@
+{
+  "selection": "tool: workSurface.trace",
+  "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+  "readout": "tool: workSurface.trace\nproduced by trace event:\ncoach-step-02-detail-tabs-trace",
+  "visits": "1 — interaction frequency, not evidence strength",
+  "labels": [
+    {
+      "text": "trace-tabs",
+      "x": 122.47481828768034,
+      "y": 44.841121867573555,
+      "width": 59.853515625,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "entry",
+      "x": 217.93860901650697,
+      "y": 65.79148691093714,
+      "width": 31.52099609375,
+      "height": 12,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "data-model",
+      "x": 54.00000201989608,
+      "y": 134.99867046570736,
+      "width": 68.3427734375,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "trace-coach",
+      "x": 175.21219430380287,
+      "y": 165.55627315168636,
+      "width": 69.15966796875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "look-and-feel",
+      "x": 208.55688274572893,
+      "y": 139.75233969115686,
+      "width": 78.88623046875,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "steps",
+      "x": 93.72317554448918,
+      "y": 219.98732809702454,
+      "width": 30.96533203125,
+      "height": 12,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "flow",
+      "x": 187.30220306340553,
+      "y": 243.8901561794926,
+      "width": 25.640625,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "workSurface.trace",
+      "x": 94.2552598207655,
+      "y": 26.72666698694229,
+      "width": 106.76318359375,
+      "height": 10,
+      "canvasWidth": 292,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "overflow": false,
+  "panels": [
+    {
+      "width": 294,
+      "scroll": 294
+    },
+    {
+      "width": 328,
+      "scroll": 328
+    }
+  ],
+  "entityCount": "14"
+}

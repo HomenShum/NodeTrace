@@ -1,6 +1,6 @@
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-import { dirname, join } from "node:path";
+import { dirname, join, relative, resolve } from "node:path";
 import { spawnSync } from "node:child_process";
 import { createCaptureFixture } from "./capture-plan-fixture.mjs";
 
@@ -107,6 +107,32 @@ function validateTarget(targetDir, framework, issues) {
   for (const required of ["data-nodetrace-surface", "data-noderoom-surface"]) {
     if (!provider.includes(required)) issues.push(`${framework} provider missing ${required}`);
   }
+  validateInstalledImports(targetDir, framework, issues);
+}
+
+// The installer copies a hand-listed set of paths. Anything the copied code
+// imports from outside that set resolves in this repo and nowhere else, and the
+// target only finds out at build time (see D2). Check it here instead.
+function validateInstalledImports(targetDir, framework, issues) {
+  for (const root of ["src/nodetrace", "src/nodetrace-demo"]) {
+    const rootDir = join(targetDir, root);
+    if (!existsSync(rootDir)) continue;
+    for (const entry of readdirSync(rootDir, { recursive: true })) {
+      const file = join(rootDir, String(entry));
+      if (!/\.(tsx?|jsx?|mjs)$/.test(file) || !statSync(file).isFile()) continue;
+      for (const match of readFileSync(file, "utf8").matchAll(/(?:from|import)\s+"(\.[^"]*)"/g)) {
+        if (resolvesInTarget(dirname(file), match[1])) continue;
+        const shown = relative(targetDir, file).replaceAll("\\", "/");
+        issues.push(`${framework} ${shown} imports ${match[1]}, which the installer never copied into the target`);
+      }
+    }
+  }
+}
+
+function resolvesInTarget(fromDir, specifier) {
+  const base = resolve(fromDir, specifier);
+  return ["", ".ts", ".tsx", ".js", ".jsx", ".css", "/index.ts", "/index.tsx", "/index.js"]
+    .some((suffix) => existsSync(base + suffix) && statSync(base + suffix).isFile());
 }
 
 function writeJson(path, value) {

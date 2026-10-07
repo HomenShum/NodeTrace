@@ -1,0 +1,975 @@
+{
+  "at": "2026-09-05T07:13:57.430745+00:00",
+  "before": {
+    "head": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "tree": "b7222aaa890ccce519aba60b3e0c96b8c001068e",
+    "index": "8590352d94cdd845e606c3a9f2f0253e83c1b109a64f65ff960f539bd7503766",
+    "refs": "de5114962cd4c06b7193ae9dabd09f9d78fc6aeb0f042d9a84e8e80da2aec868",
+    "status": " M src/DemoDashboard.tsx\u0000 M src/styles.css\u0000?? scripts/raw-reading-proof.mjs\u0000"
+  },
+  "after": {
+    "head": "04891604227ab607a61557f49f2cdb41b28dd338",
+    "tree": "b7222aaa890ccce519aba60b3e0c96b8c001068e",
+    "index": "8590352d94cdd845e606c3a9f2f0253e83c1b109a64f65ff960f539bd7503766",
+    "refs": "de5114962cd4c06b7193ae9dabd09f9d78fc6aeb0f042d9a84e8e80da2aec868",
+    "status": " M src/DemoDashboard.tsx\u0000 M src/styles.css\u0000?? scripts/raw-reading-proof.mjs\u0000"
+  },
+  "checks": [
+    {
+      "name": "exact base and source branch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen source src/DemoDashboard.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen source src/styles.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen source scripts/raw-reading-proof.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d_NODETRACE_RAW_READING_PLAN.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d-nodetrace-raw-source-accepted/report.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d-nodetrace-raw-installed-accepted/report.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d-raw-proof-source-accepted.mjs.txt",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d_NODETRACE_RAW_HOME_CAUSAL_JUDGE.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d_NODETRACE_RAW_RETRY_CAUSAL_JUDGE.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d_NODETRACE_INSTALLED_RAW_ASSET_CAUSAL_JUDGE.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d-nodetrace-raw-consumer-install/current-report.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d-nodetrace-raw-consumer-install/custody.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "receipt artifact E6d-nodetrace-raw-implementation.patch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source actual claim counts and pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding src/DemoDashboard.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding src/styles.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding src/demoNavigation.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding src/demoState.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding src/trace/LiveGraphRail.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding vendor/nodegraph-live/NodeGraph.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding bin/nodetrace.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding package-lock.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding scripts/raw-reading-proof.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source runtime binding public/nodetrace-state.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed actual claim counts and pass",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding src/DemoDashboard.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding src/styles.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding src/demoNavigation.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding src/demoState.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding src/trace/LiveGraphRail.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding vendor/nodegraph-live/NodeGraph.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding bin/nodetrace.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding package-lock.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding scripts/raw-reading-proof.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "installed runtime binding public/nodetrace-state.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/BUILD_ID",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/139.7a5a8e93a21948c1.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/255-37e0f0325134c4d7.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/646.f342b7cffc01feb0.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/941.b31d29c9d2dae6db.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/app/_not-found/page-93adf5b29387cc4b.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/app/layout-41a9ae17601bb653.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/app/page-41a9ae17601bb653.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/framework-085cf39580498177.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/main-01fdee0a1cd4ae59.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/pages/_app-82835f42865034fa.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/pages/_error-013f4188946cdd04.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/polyfills-42372ed130431b0a.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/css/1383a2b9f3290658.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/css/ea227640c3c82f29.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/tGfrwjzlM9eIRsXdF1lOg/_buildManifest.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed .next/static/tGfrwjzlM9eIRsXdF1lOg/_ssgManifest.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed db/nodetrace.schema.sql",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed package-lock.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed package.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed public/nodetrace-state.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed scripts/nodetrace-init.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed scripts/nodetrace-smoke.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/app/layout.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/app/nodetrace/page.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/app/page.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace-demo/DemoDashboard.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace-demo/demoNavigation.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace-demo/demoState.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace-demo/styles.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/LiveGraphRail.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/TraceLensPanel.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/TraceLensProvider.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/index.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/trace.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/types.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/graph-model.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/index.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/react.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/react.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/session.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed src/nodetrace/vendor/nodegraph-live/session.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "53 consumer inputs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-01-artifact-entry-ide.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-01-artifact-entry-minimap.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-01-artifact-entry-ui.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-02-detail-tabs-ide.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-02-detail-tabs-minimap.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-02-detail-tabs-ui.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-03-trace-data-ide.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-03-trace-data-minimap.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-03-trace-data-ui.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-04-step-row-ide.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-04-step-row-minimap.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-04-step-row-ui.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-05-flow-ide.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-05-flow-minimap.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-05-flow-ui.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-06-style-ide.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-06-style-minimap.svg",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/coach-step-06-style-ui.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 exact source/Git attachment captures/noderoom-trace-knowledge-graph.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "19 attachments counted",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact retained fixture actual",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact retained fixture short",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact retained fixture long",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen source remains src/DemoDashboard.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen source remains src/styles.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "frozen source remains scripts/raw-reading-proof.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/BUILD_ID",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/139.7a5a8e93a21948c1.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/255-37e0f0325134c4d7.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/646.f342b7cffc01feb0.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/941.b31d29c9d2dae6db.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/app/_not-found/page-93adf5b29387cc4b.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/app/layout-41a9ae17601bb653.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/app/page-41a9ae17601bb653.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/framework-085cf39580498177.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/main-01fdee0a1cd4ae59.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/pages/_app-82835f42865034fa.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/pages/_error-013f4188946cdd04.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/polyfills-42372ed130431b0a.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/css/1383a2b9f3290658.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/css/ea227640c3c82f29.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/tGfrwjzlM9eIRsXdF1lOg/_buildManifest.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains .next/static/tGfrwjzlM9eIRsXdF1lOg/_ssgManifest.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains db/nodetrace.schema.sql",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains package-lock.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains package.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains public/nodetrace-state.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains scripts/nodetrace-init.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains scripts/nodetrace-smoke.mjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/app/layout.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/app/nodetrace/page.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/app/page.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace-demo/DemoDashboard.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace-demo/demoNavigation.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace-demo/demoState.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace-demo/styles.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/LiveGraphRail.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/TraceLensPanel.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/TraceLensProvider.tsx",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/index.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/trace.css",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/types.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/graph-model.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/index.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/index.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/react.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/react.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/session.d.ts",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "protected installed remains src/nodetrace/vendor/nodegraph-live/session.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source HEAD index refs status unchanged",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "bindings": {
+    "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\src\\DemoDashboard.tsx": {
+      "sha256": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+      "bytes": 17205
+    },
+    "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\src\\styles.css": {
+      "sha256": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+      "bytes": 17161
+    },
+    "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace\\scripts\\raw-reading-proof.mjs": {
+      "sha256": "b5c821b9c319a2c0579700c00e7911190a28f2b03b819856451da76968aad313",
+      "bytes": 21366
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_READING_PLAN.json": {
+      "sha256": "15a91ab309196e31b36894938dbad266ff305f7af6041ef67adb85e1555711ba",
+      "bytes": 30818
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\report.json": {
+      "sha256": "df01257847944bcf81b17deee9f3ba9125de1d730f3cd1530d51862790d05b27",
+      "bytes": 92004
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\report.json": {
+      "sha256": "7b5a760b4b2cb97b0c7224bffdf29b4e1cd403e85d9a971b63208dd9728eec08",
+      "bytes": 95406
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-raw-proof-source-accepted.mjs.txt": {
+      "sha256": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+      "bytes": 17672
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_HOME_CAUSAL_JUDGE.json": {
+      "sha256": "3b9f4f652a6640c71bb8b431eda1f6209433e37b6aba1bd9c4e1fc4b18d2dada",
+      "bytes": 16942
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_RETRY_CAUSAL_JUDGE.json": {
+      "sha256": "2bebb40467f4b9ddc282c856b9fc22c5bfc72c85b4f445cc31f1721fc38c3e88",
+      "bytes": 13799
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_INSTALLED_RAW_ASSET_CAUSAL_JUDGE.json": {
+      "sha256": "a1ba5aebb60844fc2734b54a8ab7b2201ac9c7acafe3daa009f8975f874f7ad8",
+      "bytes": 17397
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-consumer-install\\current-report.json": {
+      "sha256": "35002d1b48102d3fefaf01c1fd150dcfb991cfe2b074b4f3ad06d37985357896",
+      "bytes": 655
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-consumer-install\\custody.json": {
+      "sha256": "ae80afd94caad994542cc8957139c711a2c9c7e465c2a7fc494b23eda27b30ce",
+      "bytes": 211
+    },
+    "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-implementation.patch": {
+      "sha256": "784417983a90b23d28f39eca8b4e8c64df8ccc25e9f1aac492f4673c8edaac06",
+      "bytes": 929
+    }
+  },
+  "runs": [
+    {
+      "surface": "source",
+      "cell": "actual-390-no-preference",
+      "exit": 0,
+      "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\report.json",
+      "ok": true,
+      "checks": 27,
+      "captures": 2,
+      "failure": null
+    },
+    {
+      "surface": "source",
+      "cell": "actual-1024-reduce-text200",
+      "exit": 0,
+      "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\report.json",
+      "ok": true,
+      "checks": 27,
+      "captures": 2,
+      "failure": null
+    },
+    {
+      "surface": "source",
+      "cell": "long-390-no-preference",
+      "exit": 0,
+      "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\report.json",
+      "ok": true,
+      "checks": 72,
+      "captures": 3,
+      "failure": null
+    },
+    {
+      "surface": "installed",
+      "cell": "short-390-no-preference",
+      "exit": 0,
+      "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\report.json",
+      "ok": true,
+      "checks": 31,
+      "captures": 2,
+      "failure": null
+    },
+    {
+      "surface": "installed",
+      "cell": "long-1024-no-preference",
+      "exit": 0,
+      "report": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\report.json",
+      "ok": true,
+      "checks": 30,
+      "captures": 2,
+      "failure": null
+    }
+  ]
+}

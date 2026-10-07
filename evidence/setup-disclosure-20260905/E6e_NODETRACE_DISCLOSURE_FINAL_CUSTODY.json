@@ -1,0 +1,581 @@
+{
+  "at": "2026-09-05T08:22:44.868846+00:00",
+  "ok": true,
+  "checks": {
+    "all93ArtifactBindingsExact": true,
+    "sourceBuildInputsUnchanged": true,
+    "all53InstalledInputsUnchanged": true,
+    "headIndexRefsStatusUnchanged": true,
+    "boundaryAndPlanLinksResolve": true
+  },
+  "git": {
+    "head": "594c988881d17b759ff6455539dc3b293e1a4ee5",
+    "tree": "7995a3a56bca8363994891997dfcc8256c8cbaac",
+    "index": "feba008111856aad19ce8dad21c63e459e2d3c97b25e3bb9f48f3b259d783944",
+    "refs": "2b1027f5e85fa3c1c8e2a3c601820d908d0202c0d48fe56093f69a56c271ce11",
+    "status": ""
+  },
+  "artifacts": [
+    {
+      "path": "E6e-nodetrace-disclosure-before/change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/custody-after.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/custody-before.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top-change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top-change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top-change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-actual-input.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-server.log",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/report.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top-change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top-change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top-change-boundary.md",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top-change-boundary.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-actual-input.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-server.log",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before.mjs",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/report.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-320-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-existing-coach-inspect.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-existing-coach-inspect.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-existing-coach-inspect.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/report.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-320-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-existing-coach-inspect.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-existing-coach-inspect.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-existing-coach-inspect.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02.mjs",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/existing-coach-inspection-route.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/installed-320-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/installed-server.log",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/report.json",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-320-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.ax.txt",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.html",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-setup-bottom-labelled.png",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-server.log",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03.mjs",
+      "exact": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before.mjs",
+      "exact": true
+    }
+  ],
+  "links": [
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-before/source-390-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-entry-before-03/source-390-setup-bottom-labelled.png",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-before/installed-390-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-before/change-boundary.md",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.png",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.png",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e_NODETRACE_DISCLOSURE_PLAN.json",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e_NODETRACE_DISCLOSURE_BEFORE_ARTIFACTS.json",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-before/report.json",
+      "exists": true
+    },
+    {
+      "document": "E6e_NODETRACE_DISCLOSURE_PLAN.md",
+      "target": "E6e-nodetrace-disclosure-entry-before-03/report.json",
+      "exists": true
+    },
+    {
+      "document": "installed-1440-top-change-boundary.md",
+      "target": "installed-1440-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "installed-1440-top-change-boundary.md",
+      "target": "installed-1440-top.png",
+      "exists": true
+    },
+    {
+      "document": "installed-1440-top-change-boundary.md",
+      "target": "installed-1440-top.json",
+      "exists": true
+    },
+    {
+      "document": "installed-1440-top-change-boundary.md",
+      "target": "change-boundary.md",
+      "exists": true
+    },
+    {
+      "document": "installed-320-top-change-boundary.md",
+      "target": "installed-320-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "installed-320-top-change-boundary.md",
+      "target": "installed-320-top.png",
+      "exists": true
+    },
+    {
+      "document": "installed-320-top-change-boundary.md",
+      "target": "../E6e-nodetrace-disclosure-entry-before-03/installed-320-setup-bottom-labelled.png",
+      "exists": true
+    },
+    {
+      "document": "installed-320-top-change-boundary.md",
+      "target": "installed-320-top.json",
+      "exists": true
+    },
+    {
+      "document": "installed-320-top-change-boundary.md",
+      "target": "change-boundary.md",
+      "exists": true
+    },
+    {
+      "document": "installed-390-top-change-boundary.md",
+      "target": "installed-390-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "installed-390-top-change-boundary.md",
+      "target": "installed-390-top.png",
+      "exists": true
+    },
+    {
+      "document": "installed-390-top-change-boundary.md",
+      "target": "installed-390-top.json",
+      "exists": true
+    },
+    {
+      "document": "installed-390-top-change-boundary.md",
+      "target": "change-boundary.md",
+      "exists": true
+    },
+    {
+      "document": "source-1440-top-change-boundary.md",
+      "target": "source-1440-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "source-1440-top-change-boundary.md",
+      "target": "source-1440-top.png",
+      "exists": true
+    },
+    {
+      "document": "source-1440-top-change-boundary.md",
+      "target": "source-1440-top.json",
+      "exists": true
+    },
+    {
+      "document": "source-1440-top-change-boundary.md",
+      "target": "change-boundary.md",
+      "exists": true
+    },
+    {
+      "document": "source-320-top-change-boundary.md",
+      "target": "source-320-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "source-320-top-change-boundary.md",
+      "target": "source-320-top.png",
+      "exists": true
+    },
+    {
+      "document": "source-320-top-change-boundary.md",
+      "target": "../E6e-nodetrace-disclosure-entry-before-03/source-320-setup-bottom-labelled.png",
+      "exists": true
+    },
+    {
+      "document": "source-320-top-change-boundary.md",
+      "target": "source-320-top.json",
+      "exists": true
+    },
+    {
+      "document": "source-320-top-change-boundary.md",
+      "target": "change-boundary.md",
+      "exists": true
+    },
+    {
+      "document": "source-390-top-change-boundary.md",
+      "target": "source-390-top-change-boundary.png",
+      "exists": true
+    },
+    {
+      "document": "source-390-top-change-boundary.md",
+      "target": "source-390-top.png",
+      "exists": true
+    },
+    {
+      "document": "source-390-top-change-boundary.md",
+      "target": "../E6e-nodetrace-disclosure-entry-before-03/source-390-setup-bottom-labelled.png",
+      "exists": true
+    },
+    {
+      "document": "source-390-top-change-boundary.md",
+      "target": "source-390-top.json",
+      "exists": true
+    },
+    {
+      "document": "source-390-top-change-boundary.md",
+      "target": "change-boundary.md",
+      "exists": true
+    }
+  ],
+  "planSha256": "146e00f9b1d059997ea24aee6bd809e4c67c748817c07bafe2e7be76b2569adc",
+  "artifactManifestSha256": "b87acdd5179b3d82f5427fa49c3d95af93e1e454c624ff83c301e81c54ececfe"
+}

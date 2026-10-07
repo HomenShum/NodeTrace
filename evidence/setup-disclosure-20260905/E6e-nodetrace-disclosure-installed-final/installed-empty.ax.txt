@@ -1,0 +1,28 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: SQLite trace session, proof cards, events, and gated ownership were generated locally.
+  - button "Inspect trace"
+  - group:
+    - text: Setup and trace provenance
+    - code: npm run nodetrace:happy-path
+    - text: no API key required
+    - complementary "Trace Coach launch path":
+      - text: SQLite sample
+      - strong: verified
+      - text: SQLite NodeRoom trace browser UI Source app
+      - strong: NodeRoom
+      - text: SQLite sample Coach steps
+      - strong: "0"
+      - text: ordered labels Trace tabs
+      - strong: "4"
+      - text: overview, steps, minimap, raw The SQLite sample contains trace events. No Trace Coach captures are loaded yet.
+  - region "Connect your own trace":
+    - heading "Connect your own trace" [level=2]
+    - paragraph:
+      - text: This installed sample contains trace events. Guided source and UI captures are not included. Run
+      - code: npm run nodetrace:happy-path
+      - text: to regenerate the local sample and refresh. Read
+      - code: docs/NODETRACE_INTEGRATION.md
+      - text: in your project to connect the trace UI to your app.
+- alert

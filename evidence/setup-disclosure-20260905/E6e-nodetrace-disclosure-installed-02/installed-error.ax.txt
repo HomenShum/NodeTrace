@@ -1,0 +1,10 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: Trace data could not be loaded.
+  - alert:
+    - paragraph: State request failed (HTTP 503).
+    - button "Retry loading trace"
+  - button "Inspect trace" [disabled]
+  - group: Setup and trace provenance
+- alert

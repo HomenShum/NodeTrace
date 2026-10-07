@@ -1,0 +1,520 @@
+{
+  "ok": false,
+  "condition": 7,
+  "review": "Vercel Web Interface Guidelines",
+  "guidelinesUrl": "https://vercel.com/design/guidelines",
+  "guidelinesCopy": "promotion/evidence/web-interface-guidelines.txt",
+  "guidelinesFetched": "2026-08-13, HTTP 200",
+  "notALighthouseRun": "Every major below is invisible to Lighthouse and axe: they are interaction and state-model findings, not machine-checkable WCAG rules.",
+  "generatedAt": "2026-09-05T02:03:48.146Z",
+  "servedFrom": "vite preview over dist/ (the built bundle, not the dev server)",
+  "viewport": "1280x900, plus a 375x812 pass for touch hit targets",
+  "majorCount": 2,
+  "findings": [
+    {
+      "id": "interactions.keyboard-works-everywhere",
+      "guideline": "Interactions — “Keyboard works everywhere. All flows are keyboard-operable & follow the WAI-ARIA Authoring Patterns.”",
+      "severity": "pass",
+      "summary": "2 of 18 focusable elements open the Trace Lens with Enter",
+      "measurement": {
+        "focusableCount": 18,
+        "focusablesThatOpenTheLens": 2,
+        "tabPresses": 40,
+        "distinctTabStops": 12,
+        "lensOpenAfter40Tabs": false
+      },
+      "evidence": "promotion/evidence/wig-keyboard-no-opener.png"
+    },
+    {
+      "id": "interactions.clear-focus",
+      "guideline": "Interactions — “Clear focus. Every focusable element shows a visible focus ring. Prefer :focus-visible over :focus.”",
+      "severity": "pass",
+      "summary": "17 controls measured while focused; 0 draw no ring at all. The page's stylesheets contain 2 :focus/:focus-visible selectors, so every ring here is the browser's default — correct by accident, and it disappears the first time anyone sets outline: none",
+      "measurement": {
+        "measured": 17,
+        "withoutAnyRing": [],
+        "focusSelectorsInStylesheets": [
+          ".nt-panel :focus-visible",
+          ".showcase :focus-visible, .coachPanel :focus-visible, .coachEmpty :focus-visible"
+        ]
+      }
+    },
+    {
+      "id": "interactions.manage-focus",
+      "guideline": "Interactions — “Manage focus. Use focus traps, move & return focus according to the WAI-ARIA Patterns.”",
+      "severity": "pass",
+      "summary": "the dialog opens with focus on <button> (aria-modal true); 6 of 6 subsequent Tab presses stay inside it — the rest land on controls behind the panel",
+      "measurement": {
+        "role": "dialog",
+        "ariaModal": "true",
+        "activeElementOnOpen": "button",
+        "activeElementInsidePanel": true,
+        "beforeOpen": "BUTTON",
+        "afterClose": "DIV",
+        "sixTabsAfterOpen": [
+          {
+            "inside": true,
+            "element": "a \"Open source\""
+          },
+          {
+            "inside": true,
+            "element": "button.nt-close \"Close Trace Lens\""
+          },
+          {
+            "inside": true,
+            "element": "a \"Open source\""
+          },
+          {
+            "inside": true,
+            "element": "button.nt-close \"Close Trace Lens\""
+          },
+          {
+            "inside": true,
+            "element": "a \"Open source\""
+          },
+          {
+            "inside": true,
+            "element": "button.nt-close \"Close Trace Lens\""
+          }
+        ],
+        "tabsThatStayedInside": 6
+      },
+      "evidence": "promotion/evidence/wig-lens-open-focus-outside.png"
+    },
+    {
+      "id": "interactions.no-dead-zones",
+      "guideline": "Interactions — “No dead zones. If part of a control looks interactive, it should be interactive. Don’t leave users guessing where to interact.”",
+      "severity": "pass",
+      "summary": "all 2 tagged regions open the lens",
+      "measurement": {
+        "total": 2,
+        "dead": []
+      }
+    },
+    {
+      "id": "interactions.url-as-state",
+      "guideline": "Interactions — “URL as state. Persist state in the URL so share, refresh, Back/Forward navigation work.” / “Deep-link everything. Filters, tabs, pagination, expanded panels, anytime useState is used.”",
+      "severity": "major",
+      "summary": "switching to the Raw JSON tab leaves the URL at http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw — unchanged — and a reload returns to Overview (raw pane present after reload: true); the coach tab, the active step and the open lens are all useState and none of them is shareable or survives refresh",
+      "measurement": {
+        "hasTabs": true,
+        "urlBefore": "http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw",
+        "urlAfter": "http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw",
+        "survivesReload": true
+      }
+    },
+    {
+      "id": "interactions.hit-targets",
+      "guideline": "Interactions — “Match visual & hit targets. Exception: if the visual target is < 24px, expand its hit target to ≥ 24px. On mobile, the minimum size is 44px.”",
+      "severity": "minor",
+      "summary": "2 of 14 controls are under 24px on their short side at 1280px; 2 of 14 are under 44px at 375px",
+      "measurement": {
+        "desktopUnder24": [
+          {
+            "selector": "button \"fit\"",
+            "width": 28,
+            "height": 22,
+            "min": 22
+          },
+          {
+            "selector": "input",
+            "width": 13,
+            "height": 13,
+            "min": 13
+          }
+        ],
+        "mobileUnder44": [
+          {
+            "selector": "button \"fit\"",
+            "width": 28,
+            "height": 22,
+            "min": 22
+          },
+          {
+            "selector": "input",
+            "width": 13,
+            "height": 13,
+            "min": 13
+          }
+        ],
+        "desktopCount": 14,
+        "mobileCount": 14
+      }
+    },
+    {
+      "id": "interactions.announce-async-updates",
+      "guideline": "Interactions — “Announce async updates. Use polite aria-live for toasts & inline validation.”",
+      "severity": "pass",
+      "summary": "1 aria-live/status/alert regions on the page — the panel opening, the tab switch and the state fetch all happen silently for a screen reader",
+      "measurement": {
+        "ariaLiveRegions": 1
+      }
+    },
+    {
+      "id": "content.semantics-before-aria",
+      "guideline": "Content — “Semantics before ARIA. Prefer native elements (button, a, label, table), before aria-*.” with Interactions’ WAI-ARIA Authoring Patterns requirement.",
+      "severity": "pass",
+      "summary": "4 elements carry role=\"tab\" but the page has 4 role=\"tabpanel\" and 4 aria-controls — the tablist announces a widget whose panels do not exist, so a screen-reader user is told about a relationship the DOM cannot express",
+      "measurement": {
+        "tabs": 4,
+        "tabpanels": 4,
+        "ariaControls": 4
+      }
+    },
+    {
+      "id": "content.headings-and-skip-link",
+      "guideline": "Content — “Headings & skip link. Hierarchical <h1–h6> & a “Skip to content” link.”",
+      "severity": "minor",
+      "summary": "heading levels in DOM order are h1 → h2 → h3; 0 skipped level(s); 0 skip links",
+      "measurement": {
+        "headings": [
+          {
+            "level": 1,
+            "text": "Portable trace UI for agent apps."
+          },
+          {
+            "level": 2,
+            "text": "Live graph rail"
+          },
+          {
+            "level": 3,
+            "text": "Relationship graph"
+          }
+        ],
+        "jumps": [],
+        "skipLinks": 0
+      }
+    },
+    {
+      "id": "content.icon-only-buttons-are-named",
+      "guideline": "Content — “Icon-only buttons are named. Provide a descriptive aria-label.”",
+      "severity": "pass",
+      "summary": "0 of 1 icon-only controls have no accessible name",
+      "measurement": {
+        "unnamed": [],
+        "total": 1
+      }
+    },
+    {
+      "id": "content.shield-verbatim-content",
+      "guideline": "Content — “Shield verbatim content from translation. Wrap brand names, product names, code tokens, & technical identifiers with translate=\"no\".”",
+      "severity": "pass",
+      "summary": "4 <code>/<pre> nodes (npm commands, file paths, raw JSON) and 3 translate=\"no\" — browser auto-translate will rewrite the commands the hero tells you to run",
+      "measurement": {
+        "codeTokens": 4,
+        "translateNo": 3
+      }
+    },
+    {
+      "id": "design.minimum-contrast",
+      "guideline": "Design — “Minimum contrast. Prefer APCA over WCAG 2 for more accurate perceptual contrast.”",
+      "severity": "pass",
+      "summary": "all 5 sampled text styles clear the AA floor",
+      "measurement": {
+        "samples": [
+          {
+            "selector": ".r-tracevu-rec-meta",
+            "fontSizePx": 10.5,
+            "fontWeight": "400",
+            "color": "rgb(86, 98, 118)",
+            "backgroundRgb": "rgb(255, 255, 255)",
+            "ratio": 6.17
+          },
+          {
+            "selector": ".heroStats span",
+            "fontSizePx": 10,
+            "fontWeight": "400",
+            "color": "rgb(86, 98, 118)",
+            "backgroundRgb": "rgb(248, 250, 252)",
+            "ratio": 5.9
+          },
+          {
+            "selector": ".heroStats small",
+            "fontSizePx": 10,
+            "fontWeight": "400",
+            "color": "rgb(86, 98, 118)",
+            "backgroundRgb": "rgb(248, 250, 252)",
+            "ratio": 5.9
+          },
+          {
+            "selector": ".r-tracevu-rec-sub",
+            "fontSizePx": 11.5,
+            "fontWeight": "400",
+            "color": "rgb(83, 97, 117)",
+            "backgroundRgb": "rgb(255, 255, 255)",
+            "ratio": 6.3
+          },
+          {
+            "selector": ".eyebrow",
+            "fontSizePx": 11,
+            "fontWeight": "900",
+            "color": "rgb(155, 59, 45)",
+            "backgroundRgb": "rgb(255, 255, 255)",
+            "ratio": 6.87
+          }
+        ],
+        "failing": []
+      }
+    },
+    {
+      "id": "design.browser-ui-matches-background",
+      "guideline": "Design — “Browser UI matches your background. Set <meta name=\"theme-color\">” and “Set the appropriate color-scheme.”",
+      "severity": "minor",
+      "summary": "meta[name=theme-color] absent, html color-scheme \"normal\"",
+      "measurement": {
+        "themeColor": null,
+        "colorScheme": "normal",
+        "metaDescription": null
+      }
+    },
+    {
+      "id": "animations.honor-prefers-reduced-motion",
+      "guideline": "Animations — “Honor prefers-reduced-motion. Provide a reduced-motion variant.”",
+      "severity": "not-applicable",
+      "summary": "0 elements have a CSS transition or animation; with none, there is no motion to reduce",
+      "measurement": {
+        "animatedElements": 0
+      }
+    },
+    {
+      "id": "forms.labels-everywhere",
+      "guideline": "Forms — “Labels everywhere. Every control has a <label> or is associated with a label for assistive tech.”",
+      "severity": "pass",
+      "summary": "1 form control(s): <input type=checkbox> in .liveGraphRail, label yes, visible true — from the vendored graph renderer, not written here, but on this page and so this page's problem",
+      "measurement": [
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "ariaHidden": null,
+          "visible": true,
+          "owner": "liveGraphRail",
+          "placeholder": null,
+          "ariaLabel": null,
+          "labelled": true
+        }
+      ]
+    },
+    {
+      "id": "interactions.links-are-links",
+      "guideline": "Interactions — “Links are links. Use <a> or <Link> for navigation… Never substitute with <button> or <div>.”",
+      "severity": "not-applicable",
+      "summary": "0 anchors with the lens closed (the panel adds one real <a> \"Open source\", seen in the manage-focus tab walk); a single-page demo with no route changes at all — every control mutates local state, none navigates",
+      "measurement": {
+        "anchors": 0,
+        "urlEverChanges": false
+      }
+    },
+    {
+      "id": "content.all-states-designed",
+      "guideline": "Content — “All states designed. Empty, sparse, dense, & error states.” and “No dead ends. Every screen offers a next step or recovery path.”",
+      "severity": "major",
+      "summary": "after the README's own Happy Path the Trace Coach slot renders nothing (165px of empty space between hero and rail) while the hero one line above reads \"Coach steps 0\" and claims \"Seeded from real NodeRoom files…\" (false) — an empty state with no explanation and no next step",
+      "measurement": {
+        "coachPanelRendered": false,
+        "coachStepsReadout": "0",
+        "heroClaimsSeededFromRealFiles": false,
+        "pointerToTheMissingCommand": true,
+        "gapBetweenHeroAndRailPx": 165
+      },
+      "evidence": "promotion/evidence/wig-happy-path-empty-coach-slot.png"
+    }
+  ],
+  "measurements": {
+    "keyboard": {
+      "focusableCount": 18,
+      "focusablesThatOpenTheLens": 2,
+      "tabPresses": 40,
+      "distinctTabStops": 12,
+      "lensOpenAfter40Tabs": false
+    },
+    "keyboardDom": {
+      "focusableCount": 18
+    },
+    "focusRings": {
+      "measured": 17,
+      "withoutAnyRing": [],
+      "focusSelectorsInStylesheets": [
+        ".nt-panel :focus-visible",
+        ".showcase :focus-visible, .coachPanel :focus-visible, .coachEmpty :focus-visible"
+      ]
+    },
+    "dialogFocus": {
+      "role": "dialog",
+      "ariaModal": "true",
+      "activeElementOnOpen": "button",
+      "activeElementInsidePanel": true,
+      "beforeOpen": "BUTTON",
+      "afterClose": "DIV",
+      "sixTabsAfterOpen": [
+        {
+          "inside": true,
+          "element": "a \"Open source\""
+        },
+        {
+          "inside": true,
+          "element": "button.nt-close \"Close Trace Lens\""
+        },
+        {
+          "inside": true,
+          "element": "a \"Open source\""
+        },
+        {
+          "inside": true,
+          "element": "button.nt-close \"Close Trace Lens\""
+        },
+        {
+          "inside": true,
+          "element": "a \"Open source\""
+        },
+        {
+          "inside": true,
+          "element": "button.nt-close \"Close Trace Lens\""
+        }
+      ],
+      "tabsThatStayedInside": 6
+    },
+    "taggedSurfaces": {
+      "total": 2,
+      "dead": []
+    },
+    "urlState": {
+      "hasTabs": true,
+      "urlBefore": "http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw",
+      "urlAfter": "http://127.0.0.1:4929/?step=coach-step-06-style&tab=raw",
+      "survivesReload": true
+    },
+    "hitTargets": {
+      "desktopUnder24": [
+        {
+          "selector": "button \"fit\"",
+          "width": 28,
+          "height": 22,
+          "min": 22
+        },
+        {
+          "selector": "input",
+          "width": 13,
+          "height": 13,
+          "min": 13
+        }
+      ],
+      "mobileUnder44": [
+        {
+          "selector": "button \"fit\"",
+          "width": 28,
+          "height": 22,
+          "min": 22
+        },
+        {
+          "selector": "input",
+          "width": 13,
+          "height": 13,
+          "min": 13
+        }
+      ],
+      "desktopCount": 14,
+      "mobileCount": 14
+    },
+    "ariaLiveRegions": 1,
+    "semantics": {
+      "headings": [
+        {
+          "level": 1,
+          "text": "Portable trace UI for agent apps."
+        },
+        {
+          "level": 2,
+          "text": "Live graph rail"
+        },
+        {
+          "level": 3,
+          "text": "Relationship graph"
+        }
+      ],
+      "headingOrderJumps": [],
+      "skipLinks": 0,
+      "tabs": 4,
+      "tabpanels": 4,
+      "ariaControls": 4,
+      "iconOnlyUnnamed": [],
+      "iconOnlyTotal": 1,
+      "title": "NodeTrace",
+      "translateNo": 3,
+      "codeTokens": 4
+    },
+    "contrast": {
+      "samples": [
+        {
+          "selector": ".r-tracevu-rec-meta",
+          "fontSizePx": 10.5,
+          "fontWeight": "400",
+          "color": "rgb(86, 98, 118)",
+          "backgroundRgb": "rgb(255, 255, 255)",
+          "ratio": 6.17
+        },
+        {
+          "selector": ".heroStats span",
+          "fontSizePx": 10,
+          "fontWeight": "400",
+          "color": "rgb(86, 98, 118)",
+          "backgroundRgb": "rgb(248, 250, 252)",
+          "ratio": 5.9
+        },
+        {
+          "selector": ".heroStats small",
+          "fontSizePx": 10,
+          "fontWeight": "400",
+          "color": "rgb(86, 98, 118)",
+          "backgroundRgb": "rgb(248, 250, 252)",
+          "ratio": 5.9
+        },
+        {
+          "selector": ".r-tracevu-rec-sub",
+          "fontSizePx": 11.5,
+          "fontWeight": "400",
+          "color": "rgb(83, 97, 117)",
+          "backgroundRgb": "rgb(255, 255, 255)",
+          "ratio": 6.3
+        },
+        {
+          "selector": ".eyebrow",
+          "fontSizePx": 11,
+          "fontWeight": "900",
+          "color": "rgb(155, 59, 45)",
+          "backgroundRgb": "rgb(255, 255, 255)",
+          "ratio": 6.87
+        }
+      ],
+      "failing": []
+    },
+    "browserChrome": {
+      "themeColor": null,
+      "colorScheme": "normal",
+      "metaDescription": null
+    },
+    "notApplicable": {
+      "animatedElements": 0,
+      "formControls": [
+        {
+          "tag": "input",
+          "type": "checkbox",
+          "ariaHidden": null,
+          "visible": true,
+          "owner": "liveGraphRail",
+          "placeholder": null,
+          "ariaLabel": null,
+          "labelled": true
+        }
+      ],
+      "userFacingFormControls": 1,
+      "anchors": 0
+    },
+    "emptyState": {
+      "coachPanelRendered": false,
+      "coachStepsReadout": "0",
+      "heroClaimsSeededFromRealFiles": false,
+      "pointerToTheMissingCommand": true,
+      "gapBetweenHeroAndRailPx": 165
+    }
+  }
+}

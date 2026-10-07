@@ -1,0 +1,691 @@
+{
+  "verdict": "REFUTED",
+  "repo": "NodeTrace",
+  "canonicalRepo": "D:\\ProjectRecovery\\nodetrace-canonical-consumer-20260904",
+  "commit": "fc7c0c471bea40d2fb354e3cb742b395e923244b",
+  "candidate": "uncommitted frozen repair source bound by13 raw hashes; before installed-copy repair",
+  "request": "Fresh independent read-only repair judge: actual keyboard/pointer/missing-source/history/late-response/malformed-data/authority,7width pixels, exact bindings and fresh installed consumer.",
+  "testedAt": "2026-09-05T01:50:28.007350+00:00",
+  "reviewer": "runtime_ui_judge with bounded nodetrace_consumer_judge installer/runtime evidence",
+  "environment": {
+    "kind": "anonymous local production-build previews; isolated raw-source clone and fresh installed Next consumer",
+    "browser": "149.0.7827.55",
+    "browserEngine": "Chromium",
+    "theme": "light",
+    "provider": "none",
+    "physicalDevice": false,
+    "authenticated": false
+  },
+  "profileRevision": "E6b_NODETRACE_UI_REPAIR_PLAN.md frozen boundaries A-D plus320CSSwidth; REPO_READINESS_STANDARD.md",
+  "referenceRefs": [
+    "evidence/nodetrace-user-journey-20260904/change-boundary.md",
+    "evidence/nodetrace-user-journey-20260904/change-boundary.png",
+    "evidence/nodetrace-user-journey-20260904/before/manifest.json",
+    "evidence/nodetrace-installed-recovery-boundary/boundary-contract.json"
+  ],
+  "sourceBinding": {
+    "at": "2026-09-05T01:46:56.927852+00:00",
+    "checks": {
+      "49FrozenSourceFilesUnchanged": true,
+      "13CloneProofFilesMatch": true,
+      "rootFinalJourney13Match": true,
+      "judgeJourney13Match": true,
+      "headUnchanged": true,
+      "refsUnchanged": true,
+      "originalProbesUnchanged": true,
+      "servedResponses42Match": true,
+      "consumerStateMatches": true,
+      "consumer10AssetsMatch": true,
+      "same18CapturedAssetHashes": true
+    },
+    "ok": true,
+    "sourceHashes": {
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+      ".tours/01-primary-user-flow.tour": "f745b8d75879d3e80b8be087dfccc7f2d7c8d1e0c1c1d92ea3385ffaedf3a7ea",
+      ".tours/02-agent-execution.tour": "971ac22b547ef03bc6aa314e7d7b5e1b25c5a3cfceeeb5728e7dc050ada0bbdb",
+      ".tours/03-debug-and-recovery.tour": "36615c44b60b4bd8110e35abe51aaef116da0387f5599e7004329d3f6ff73079",
+      "AGENTS.md": "c763289a0000cdd84adff68fcd74bc29aa1a89d454baa9d2e48f58693a5f6438",
+      "README.md": "b3cc569930111250dabbbdc2758767d427f00381261699cac9a96a3b13f28778",
+      "bin/nodetrace-capture.mjs": "8ce11d500e424efec6b3e52129990d9a773843c2ab4735c414bcc4f4ca5783df",
+      "bin/nodetrace-mcp.mjs": "85d726ba1cd6d47e85b3438bcc219c883992ab59a8be21aa11234273f0e011fe",
+      "bin/nodetrace.mjs": "9174db77814893031502e09b151ba23b93541562651cdbf8330e7b95300ae77e",
+      "docs/START_HERE.md": "4862ab8a090a4ca21ac3921cb2b1a2fa85b2aa9e7edc87550571a13326bb26dd",
+      "docs/codebase/ARCHITECTURE.md": "43b9250efdc6ae2535451e7858b5ba3292850b4a3a7f3b5d9cb19d3179f7f221",
+      "docs/codebase/CONCERNS.md": "c6968d51b0d7b332e2c52214db0a321afdc36368a50d0cfb7540b5f3b57e90a5",
+      "docs/codebase/CONVENTIONS.md": "b026b8a942a95ac853599d02e00609a5459a1afae57497b465e5f59ea09a43da",
+      "docs/codebase/INTEGRATIONS.md": "6c6247eff9b6a8194fec5b661e11657c4eb054b8f870584514e54ca889449b1e",
+      "docs/codebase/STACK.md": "a320ea6e2c0242f8af4e1ab3862f5a8ac21b4e9f6ebfd500f090ebd619a18138",
+      "docs/codebase/STRUCTURE.md": "665e9fd23b1ea225aeebd72b8abd83ef930c0172808f8891031282e8e9a4d247",
+      "docs/codebase/TESTING.md": "7bdeb835040e6fb54de1b899621ce70ff75e6b54f09d27b10a461ed9ce8a03a9",
+      "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "scripts/agent-trace-scale-smoke.mjs": "e698dc43e26376e9058c9af96ec9a689f76fa890ce449d2c6bf046d1b91cda0f",
+      "scripts/builder-access-smoke.mjs": "454497bc398f6f83aad22aec92488e450faa6f416f89ed25bbacf674e620613a",
+      "scripts/capture-live-graph-rail.mjs": "cdd1dd156f4c7306ff6d3b09fc5cb616a43112cb8977407f29b7466662dbde59",
+      "scripts/capture-noderoom-real-assets.mjs": "d3e99b680adba0ca2f55d44e286dcca2bde609461920281be4b0750d7200633b",
+      "scripts/capture-plan-fixture.mjs": "0ed8a703027455ed70f8dae75e803ed44626de17ac972be8049ac8a92425dc05",
+      "scripts/capture-plan-smoke.mjs": "9b81beeccf0929df1c00fedbb6c2d6bc12b01c20779c09a91d6cd564051fc45f",
+      "scripts/citations-check.mjs": "27043ac8d84cbb68ce786b948c93d1cb983d6c374683b7d30bdd62f76495c3db",
+      "scripts/cli-smoke.mjs": "e313ca25f7463379074a47ce5750e228de257693d44c839d23823d17bd426431",
+      "scripts/init-sqlite.mjs": "5b0ff389f3ad0daf8492d02186a8992b4b3c4602e9cc7d51ea68ff06e6a31632",
+      "scripts/installer-next-e2e-smoke.mjs": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+      "scripts/lib/proof-server.mjs": "b8b8843a266bcddf72a5c5ff45ccd46af0fa69f393a67c1621897406041dd359",
+      "scripts/mcp-smoke.mjs": "10032b3a1042018a3f1a05ef16b8ccf0c694d8dafa47483fcc45fc2c1d7239f9",
+      "scripts/record-live-graph-rail.mjs": "0891e5fe4dbd3f01adb26d5f45c27ce35b0bec88dd6b79eb3f9acd91d3dcb690",
+      "scripts/render-walkthrough-media.mjs": "2c642b383debae9b5689c4753b9bc944e93f55078478b85764a340e3e04ea89a",
+      "scripts/smoke.mjs": "873abd8f1eb64e8d038f63f767d6c2d9234a5a28ac475cef3762f4361b93c7f9",
+      "scripts/trace-coach-sqlite.mjs": "ad44dcea46392c1e91c2c69a5d94859a883eae3c0b79162bd5522f03a5638731",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "scripts/understand-anything-noderoom.mjs": "50178e8071b04d3a059c4ac9e7133a59145e0a2c830b8d479931ccf18f9dc979",
+      "src/DemoDashboard.tsx": "a7a36174cf5cff5e925f8b67a2bc9ee2c85aeb45fa1e2633986edd1fe31596ba",
+      "src/capture/codebaseCapture.mjs": "59611521f326883e1332eb8533361f1d82707a2d2a3581ea8c871f42297f8718",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/main.tsx": "3a464c6ba9091ecd74e8af7e809a2044285f0363eac2109c6c549659a772c37a",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6"
+    },
+    "proofSourceHashes": {
+      "src/DemoDashboard.tsx": "a7a36174cf5cff5e925f8b67a2bc9ee2c85aeb45fa1e2633986edd1fe31596ba",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "bin/nodetrace.mjs": "9174db77814893031502e09b151ba23b93541562651cdbf8330e7b95300ae77e",
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+    },
+    "sourceChanges": [],
+    "probes": {
+      "promotion/probes/wig-review.mjs": {
+        "baseSha256": "9b6a3024427ded77ed9a058ecfd9b2b76a3ce02cde62c6e34296aea6016d6b3d",
+        "currentSha256": "63325d4a54cc4db20aac1db372dfed6e823d4b562d418368536b2207e381cacf",
+        "rawEqual": false,
+        "lfEqual": true
+      },
+      "promotion/probes/web-quality-audit.mjs": {
+        "baseSha256": "6f997bc6df2b1f9533b404b5b95db1d70dab84cfb6a8e55efd38bda73c46e936",
+        "currentSha256": "03dcc6892c54ba97ea63e07b579540d9b163b1593783a4bb4e0db735f6c1fb5e",
+        "rawEqual": false,
+        "lfEqual": true
+      },
+      "scripts/installer-next-e2e-smoke.mjs": {
+        "baseSha256": "60a162699e395e5a72d631f08f33bfdbb9dd0cd6f425c74239172a1c823556e2",
+        "currentSha256": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+        "rawEqual": false,
+        "lfEqual": true
+      }
+    },
+    "counts": {
+      "sourceFiles": 49,
+      "proofSourceFiles": 13,
+      "rootFinalJourneyChecks": 686,
+      "rootFinalJourneyCaptures": 43,
+      "judgeJourneyChecks": 677,
+      "judgeJourneyCaptures": 43,
+      "independentChecks": 191,
+      "independentCaptures": 18,
+      "servedResponses": 42,
+      "inputAssetHashes": 18,
+      "installedRuntimeChecks": 9,
+      "installedAssets": 10
+    },
+    "rootFinalReceiptSha256": "78163f7525d6226daba6c3eb39082dd706a681388ab1245b5dd37c901073dfea",
+    "scope": "Only the frozen implementation/docs/package inputs; owner-generated proof files are not asserted unchanged."
+  },
+  "coverage": {
+    "sourceDemoWidths": [
+      320,
+      360,
+      390,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "sourceDemoStates": [
+      "happy empty",
+      "coach populated overview/raw/steps/minimap",
+      "native modal",
+      "missing registry",
+      "empty source",
+      "loading",
+      "HTTP503",
+      "malformed JSON",
+      "invalid nested fields",
+      "unsafe source",
+      "oversized state",
+      "ten-second timeout",
+      "Retry",
+      "late response after navigation",
+      "public authority attacks",
+      "sustained repeated review"
+    ],
+    "independentCapturedStates": 18,
+    "namedCapturedStates": 43,
+    "focusScreenshots": 2,
+    "installedConsumerViewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "installedRuntimeChecks": {
+      "hydratedActualState": true,
+      "keyboardReachedOrdinaryInspect": true,
+      "enterOpenedNativeModalWithFocus": true,
+      "escapeClosedAndReturnedFocus": true,
+      "pathnameUnrelatedQueryAndHashPreserved": true,
+      "servedStateMatchesInstalledBytes": true,
+      "servedBuildAssetsMatchInstalledBytes": true,
+      "noPageErrors": true,
+      "installedInputsUnchanged": true
+    }
+  },
+  "criterionRatings": [
+    {
+      "dimension": "visual",
+      "criterion": "V1 typography",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Owned text wraps legibly at seven widths; source capture bitmap text is small on phones.",
+      "evidence": "seven overview/modal PNG cells"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V2 spacing/grid",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Primary control spacing fits; narrow nested scrolling retains friction.",
+      "evidence": "seven overview/modal cells; focus390/1440"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V3 color/token discipline",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Shared inks are consistent; automated contrast checks report no violations.",
+      "evidence": "18 independent axe states; root two-seed axe"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V4 hierarchy",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Ordinary Inspect is visible and graph wrapper has owned h2 above vendor h3.",
+      "evidence": "source diff; overview PNG/AX"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V5 rendered legibility/contrast",
+      "score": 3,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Owned modal/status legible; graph labels overlap or clip at narrow widths and source bitmaps shrink.",
+      "evidence": "320/360/390 actual overview PNGs"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V6 consistent elevation/icons",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Panels, badges and icon vocabulary remain consistent in observed light theme.",
+      "evidence": "seven modal PNGs"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V7 alignment",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Final badge word and focus ring align without observed owned-control overlap.",
+      "evidence": "all modal PNGs; two focus PNGs"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V8 empty/loading/error/populated states",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "States visibly differentiate status and availability; installed command semantics separately fail recovery criterion.",
+      "evidence": "happy320, http-error, pending-direct-link PNGs"
+    },
+    {
+      "dimension": "visual",
+      "criterion": "V9 motion/reduced motion",
+      "score": null,
+      "status": "NOT_RUN",
+      "observationAndDeduction": "NOT_RUN; no new motion-grade evidence.",
+      "evidence": "none"
+    },
+    {
+      "dimension": "design",
+      "criterion": "primary action and progressive disclosure",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Ordinary Inspect opens truthful proof/missing-registry state without builder controls in demo.",
+      "evidence": "191-check replay"
+    },
+    {
+      "dimension": "design",
+      "criterion": "consistent setup wording across consumer contexts",
+      "score": 1,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Installed empty state advertises a missing script.",
+      "evidence": "consumer runtime screenshot and recovery-command.log"
+    },
+    {
+      "dimension": "responsive",
+      "criterion": "owned controls and prose reflow",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "No document horizontal overflow in seven observed widths including320; primary action and modal close accessible.",
+      "evidence": "independent42responses/18states"
+    },
+    {
+      "dimension": "responsive",
+      "criterion": "graph/canvas adaptation",
+      "score": 3,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Graph labels can clip/overlap; no claim that owned heading repair solves vendor layout.",
+      "evidence": "narrow overview PNGs"
+    },
+    {
+      "dimension": "responsive",
+      "criterion": "physical touch, keyboard, 200% text and locale",
+      "score": null,
+      "status": "NOT_RUN",
+      "observationAndDeduction": "NOT_RUN; emulated CSS viewports do not cover these criteria.",
+      "evidence": "none"
+    },
+    {
+      "dimension": "interaction",
+      "criterion": "keyboard/modal/history/error continuity",
+      "score": 5,
+      "status": "OBSERVED",
+      "observationAndDeduction": "677 named plus191 independent checks pass across recorded happy, adverse, late and sustained cases.",
+      "evidence": "journey/receipt.json; browser.json"
+    },
+    {
+      "dimension": "interaction",
+      "criterion": "installed first-run recovery",
+      "score": 1,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Exact displayed command exits1 Missing script; requires context-specific instructions.",
+      "evidence": "consumer-recovery-command.log"
+    },
+    {
+      "dimension": "accessibility",
+      "criterion": "semantic structure and focus lifecycle",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Connected tabs/panels, native modal, real focus return and visible ring observed.",
+      "evidence": "AX/DOM, focus reports"
+    },
+    {
+      "dimension": "accessibility",
+      "criterion": "automated rules",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Zero axe violations in18states and root2seeds; incomplete rules remain and are not assumed passed.",
+      "evidence": "axe4.12.1 independent; axe4.13.0 root"
+    },
+    {
+      "dimension": "accessibility",
+      "criterion": "screen reader, text resize and reduced motion",
+      "score": null,
+      "status": "NOT_RUN",
+      "observationAndDeduction": "NOT_RUN.",
+      "evidence": "none"
+    },
+    {
+      "dimension": "performance",
+      "criterion": "initial usable view and blocking budget",
+      "score": 2,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Retained root final TBT842/900.5 exceeds600ms; cause not established. Quiet rerun pending outside this receipt.",
+      "evidence": "retained-audits-before-quiet"
+    },
+    {
+      "dimension": "performance",
+      "criterion": "large/slow data feedback",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Bounded body, ten-second timeout, honest alert and Retry demonstrated.",
+      "evidence": "named journey raw error states"
+    },
+    {
+      "dimension": "performance",
+      "criterion": "constrained physical device responsiveness",
+      "score": null,
+      "status": "NOT_RUN",
+      "observationAndDeduction": "NOT_RUN.",
+      "evidence": "none"
+    },
+    {
+      "dimension": "usage",
+      "criterion": "fresh installed core trace inspection",
+      "score": 4,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Real Next install/build and nine runtime checks pass.",
+      "evidence": "consumer judge + supplement"
+    },
+    {
+      "dimension": "usage",
+      "criterion": "unassisted empty-coach recovery",
+      "score": 1,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Source-only command in installed host fails.",
+      "evidence": "consumer command reproduction"
+    },
+    {
+      "dimension": "usage",
+      "criterion": "fresh human usability",
+      "score": null,
+      "status": "NOT_RUN",
+      "observationAndDeduction": "NOT_RUN; agent-evaluated only.",
+      "evidence": "none"
+    },
+    {
+      "dimension": "alignment",
+      "criterion": "source/trace/artifact consistency and authority",
+      "score": 5,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Bound data/assets, captureKind, honest missing source; public state cannot grant builder authority.",
+      "evidence": "source identity; browser response hashes; authority cases"
+    },
+    {
+      "dimension": "alignment",
+      "criterion": "advertised consumer capability limits",
+      "score": 2,
+      "status": "OBSERVED",
+      "observationAndDeduction": "Trace UI works but installed setup advertises unavailable guided-capture command.",
+      "evidence": "installed empty-state PNG + command log"
+    }
+  ],
+  "overallScore": null,
+  "overallGrade": null,
+  "barScores": null,
+  "hardGates": {
+    "sourceIdentity": "PASS",
+    "namedInteractionProof": "PASS",
+    "freshInstalledBuild": "PASS",
+    "freshInstalledTraceRuntime": "PASS",
+    "installedRecoveryInstruction": "FAIL",
+    "preQuietWebQuality": "FAIL",
+    "finalWig": "NOT_RUN",
+    "fullReadiness": "OPEN"
+  },
+  "confidence": "High for exact bounded observed failures and exercised behavior; no inference to complete portfolio readiness",
+  "requiredFixes": [
+    {
+      "priority": "P2",
+      "status": "UNRESOLVED",
+      "title": "Installed empty-coach recovery recommends an unavailable consumer command",
+      "symptom": "A developer sees “To inspect the bundled snapshot, run npm run trace-coach:sqlite and refresh”, but that exact command fails with Missing script in the installed consumer.",
+      "boundary": "The source demo instructions are copied into a generic consumer while bin/nodetrace.mjs adds only nodetrace:dev, nodetrace:happy-path and nodetrace:smoke scripts.",
+      "mechanism": "DemoDashboard renders source-repository capture commands even when transplanted into a host that has neither those scripts nor the bundled capture workflow.",
+      "rootCause": "The transplanted demo lacks execution-context-specific setup guidance. Rendering/import portability is implemented, but recommended commands still assume the NodeTrace source package.",
+      "missingGuard": "The installer E2E verifies package installation, SQLite setup, smoke and production compilation; it does not execute the recovery command advertised by the rendered installed empty state.",
+      "smallestRepair": "Make installed demo guidance name supported consumer commands and explicitly distinguish any NodeTrace-source-only snapshot/capture workflow. Avoid promising that source-only scripts run inside the installed host.",
+      "reproduction": {
+        "command": "npm.cmd --cache .nodetrace/npm-cache run trace-coach:sqlite",
+        "status": 1,
+        "log": "E6b-nodetrace-consumer-recovery-command.log"
+      },
+      "remediationAttempted": false,
+      "reason": "This delegated verification is explicitly read-only with no source edits or rebuilds."
+    }
+  ],
+  "fraudsFound": [],
+  "probeIntegrity": "Existing WIG/web-quality/installer-E2E assertions unchanged from base after only line-ending normalization. Original false-positive measurements retained and independently adjudicated, not rewritten.",
+  "performance": {
+    "source": "E6b-nodetrace-judge-retained-audits-before-quiet/web-quality-audit.json",
+    "generatedAt": "2026-09-05T01:31:45.402Z",
+    "quietRerun": "root-owned pending; not included",
+    "results": [
+      {
+        "state": "happy-path",
+        "note": "README Happy Path: hero + Live graph rail, no Trace Coach",
+        "url": "http://127.0.0.1:4910/",
+        "commands": [
+          "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-happy-path.json --chrome-flags=--headless --quiet",
+          "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-happy-path.json"
+        ],
+        "lighthouse": {
+          "lighthouseVersion": "13.4.1",
+          "categories": {
+            "performance": 0.78,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.82,
+            "agentic-browsing": 0.67
+          },
+          "largestContentfulPaintMs": 2188.244,
+          "cumulativeLayoutShift": 0.01872374565732472,
+          "totalBlockingTimeMs": 842,
+          "firstContentfulPaintMs": 1659.7952,
+          "failedAudits": [
+            {
+              "id": "total-blocking-time",
+              "score": 0.34,
+              "title": "Total Blocking Time"
+            },
+            {
+              "id": "max-potential-fid",
+              "score": 0,
+              "title": "Max Potential First Input Delay"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "score": 0,
+              "title": "Minimize main-thread work"
+            },
+            {
+              "id": "bootup-time",
+              "score": 0,
+              "title": "Reduce JavaScript execution time"
+            },
+            {
+              "id": "unused-javascript",
+              "score": 0,
+              "title": "Reduce unused JavaScript"
+            },
+            {
+              "id": "meta-description",
+              "score": 0,
+              "title": "Document does not have a meta description"
+            },
+            {
+              "id": "robots-txt",
+              "score": 0,
+              "title": "robots.txt is not valid"
+            },
+            {
+              "id": "llms-txt",
+              "score": 0,
+              "title": "llms.txt does not follow recommendations"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0,
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "title": "Render-blocking requests"
+            }
+          ]
+        },
+        "axe": {
+          "axeVersion": "4.13.0",
+          "passes": 34,
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "nodes": 1
+            },
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": 7
+            }
+          ],
+          "violationNodes": 0,
+          "violations": []
+        },
+        "artifacts": [
+          "promotion/evidence/lighthouse-happy-path.json",
+          "promotion/evidence/axe-happy-path.json"
+        ]
+      },
+      {
+        "state": "trace-coach",
+        "note": "J3 screen: six-step Trace Coach mounted above the rail",
+        "url": "http://127.0.0.1:4910/",
+        "commands": [
+          "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-trace-coach.json --chrome-flags=--headless --quiet",
+          "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-trace-coach.json"
+        ],
+        "lighthouse": {
+          "lighthouseVersion": "13.4.1",
+          "categories": {
+            "performance": 0.77,
+            "accessibility": 1,
+            "best-practices": 1,
+            "seo": 0.83,
+            "agentic-browsing": 0.67
+          },
+          "largestContentfulPaintMs": 2207.753625,
+          "cumulativeLayoutShift": 0.03744749131464944,
+          "totalBlockingTimeMs": 900.4999999999998,
+          "firstContentfulPaintMs": 1660.2029,
+          "failedAudits": [
+            {
+              "id": "total-blocking-time",
+              "score": 0.31,
+              "title": "Total Blocking Time"
+            },
+            {
+              "id": "max-potential-fid",
+              "score": 0,
+              "title": "Max Potential First Input Delay"
+            },
+            {
+              "id": "mainthread-work-breakdown",
+              "score": 0,
+              "title": "Minimize main-thread work"
+            },
+            {
+              "id": "bootup-time",
+              "score": 0,
+              "title": "Reduce JavaScript execution time"
+            },
+            {
+              "id": "unused-javascript",
+              "score": 0,
+              "title": "Reduce unused JavaScript"
+            },
+            {
+              "id": "meta-description",
+              "score": 0,
+              "title": "Document does not have a meta description"
+            },
+            {
+              "id": "robots-txt",
+              "score": 0,
+              "title": "robots.txt is not valid"
+            },
+            {
+              "id": "llms-txt",
+              "score": 0,
+              "title": "llms.txt does not follow recommendations"
+            },
+            {
+              "id": "image-delivery-insight",
+              "score": 0.5,
+              "title": "Improve image delivery"
+            },
+            {
+              "id": "network-dependency-tree-insight",
+              "score": 0,
+              "title": "Network dependency tree"
+            },
+            {
+              "id": "render-blocking-insight",
+              "score": 0,
+              "title": "Render-blocking requests"
+            }
+          ]
+        },
+        "axe": {
+          "axeVersion": "4.13.0",
+          "passes": 39,
+          "incomplete": [
+            {
+              "id": "aria-prohibited-attr",
+              "impact": "serious",
+              "nodes": 1
+            },
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": 13
+            }
+          ],
+          "violationNodes": 0,
+          "violations": []
+        },
+        "artifacts": [
+          "promotion/evidence/lighthouse-trace-coach.json",
+          "promotion/evidence/axe-trace-coach.json"
+        ]
+      }
+    ]
+  },
+  "limitations": [
+    "All final dimensions and overall null until required missing criteria are observed.",
+    "No physical device, fresh human participant, screen reader, Firefox/WebKit,200%text or reduced-motion assessment.",
+    "Narrow graph labels clip/overlap; graph vendor behavior not repaired.",
+    "Current source capture bitmap text remains small on phones.",
+    "TBT fails; CPU contention is unproven hypothesis.",
+    "Full npm ci reports inherited high browserslist dev advisory; production-only audit zero does not mean all dependencies clean.",
+    "No provider integration, deployed/live production, auth, or full-product acceptance."
+  ],
+  "developerHandoffStatus": "OPEN: installed recovery-copy P2",
+  "userExperienceStatus": "REFUTED for installed recovery; core trace interaction bounded verified",
+  "freshHumanUsabilityStatus": "NOT_RUN",
+  "sharedIntegrationStatus": "NOT_RUN",
+  "productionStatus": "NOT_RUN",
+  "remediationAttempted": false,
+  "readOnlyReason": "Assigned independent read-only judge; root owns subsequent repair.",
+  "evidenceRefs": [
+    "E6b_NODETRACE_UI_JUDGE.md",
+    "E6b-nodetrace-judge-final-identity.json",
+    "E6b-nodetrace-judge-before.json",
+    "E6b-nodetrace-judge-source.diff",
+    "E6b-nodetrace-judge-journey/receipt.json",
+    "E6b-nodetrace-judge-browser.json",
+    "E6b-nodetrace-judge-focus.json",
+    "E6b_NODETRACE_CONSUMER_JUDGE.json",
+    "E6b_NODETRACE_CONSUMER_RUNTIME_SUPPLEMENT.json",
+    "E6b-nodetrace-consumer-recovery-command.log",
+    "E6b-nodetrace-judge-audit.json"
+  ],
+  "visualScore": null,
+  "designScore": null,
+  "responsiveScore": null,
+  "interactionScore": null,
+  "accessibilityScore": null,
+  "performanceScore": null,
+  "usageScore": null,
+  "alignmentScore": null,
+  "sourceFreeze": "Released for root installed-context copy repair only after final identity and actual annotated installed before capture; this receipt remains historical for pre-repair bytes."
+}

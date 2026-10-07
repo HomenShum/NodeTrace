@@ -1,0 +1,66 @@
+--- prior/src/DemoDashboard.tsx
++++ repaired/src/DemoDashboard.tsx
+@@ -20,11 +20,11 @@
+   codeOwnership: [],
+ };
+ 
+-export function DemoDashboard() {
+-  return <TraceLensProvider builderCapable={false}><DemoContent /></TraceLensProvider>;
+-}
+-
+-function DemoContent() {
++export function DemoDashboard({ installed = false }: { installed?: boolean }) {
++  return <TraceLensProvider builderCapable={false}><DemoContent installed={installed} /></TraceLensProvider>;
++}
++
++function DemoContent({ installed }: { installed: boolean }) {
+   const [state, setState] = useState<NodeTraceState>(seedState);
+   const [loadStatus, setLoadStatus] = useState<"loading" | "ready" | "error">("loading");
+   const [loadError, setLoadError] = useState("");
+@@ -79,7 +79,7 @@
+               {loadStatus === "error" ? <div className="loadError" role="alert"><p>{loadError}</p><button type="button" className="inspectTrace" onClick={() => setAttempt((value) => value + 1)}>Retry loading trace</button></div> : null}
+               <InspectTraceButton surfaceId="shell.statusStrip" disabled={loadStatus !== "ready"} />
+               <div className="showcaseActions">
+-                <div className="command">
++                {installed ? <div className="command"><Terminal size={15} aria-hidden="true" /><code translate="no">npm run nodetrace:happy-path</code></div> : <><div className="command">
+                   <Terminal size={15} aria-hidden="true" />
+                   <code translate="no">npm run understand:noderoom</code>
+                 </div>
+@@ -90,7 +90,7 @@
+                 <div className="command">
+                   <Terminal size={15} aria-hidden="true" />
+                   <code translate="no">npm run trace-coach:sqlite</code>
+-                </div>
++                </div></>}
+                 <span className="sourcePill">
+                   <CircleDot size={13} aria-hidden="true" /> no API key required
+                 </span>
+@@ -132,7 +132,7 @@
+               setActiveTab={navigation.selectTab}
+               setActiveStepId={navigation.selectStep}
+             />
+-          ) : loadStatus === "ready" ? <section className="coachEmpty" aria-labelledby="coach-empty-title"><h2 id="coach-empty-title">Load a guided trace</h2><p>No Trace Coach steps are available in this sample. To inspect the bundled snapshot, run <code translate="no">npm run trace-coach:sqlite</code> and refresh. For new captures, the first two commands above require a real NodeRoom checkout.</p></section> : null}
++          ) : loadStatus === "ready" ? <section className="coachEmpty" aria-labelledby="coach-empty-title"><h2 id="coach-empty-title">{installed ? "Connect your own trace" : "Load a guided trace"}</h2>{installed ? <p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate="no">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate="no">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p> : <p>No Trace Coach steps are available in this sample. To inspect the bundled snapshot, run <code translate="no">npm run trace-coach:sqlite</code> and refresh. For new captures, the first two commands above require a real NodeRoom checkout.</p>}</section> : null}
+ 
+           {state.traces.length > 0 ? <LiveGraphRail traces={state.traces} /> : null}
+ 
+--- prior/bin/nodetrace.mjs
++++ repaired/bin/nodetrace.mjs
+@@ -316,7 +316,7 @@
+ const DemoDashboard = dynamic(() => import("${importPath}").then((module) => module.DemoDashboard), { ssr: false });
+ 
+ export default function NodeTracePage() {
+-  return <DemoDashboard />;
++  return <DemoDashboard installed />;
+ }
+ `;
+ }
+@@ -329,7 +329,7 @@
+ 
+ createRoot(document.getElementById("root")).render(
+   <React.StrictMode>
+-    <DemoDashboard />
++    <DemoDashboard installed />
+   </React.StrictMode>,
+ );
+ `;

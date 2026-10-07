@@ -1,0 +1,27 @@
+{
+  "sourceScope": "Two runtime owners remain unchanged; four metadata files repair moved anchors and the now-dynamic header identity.",
+  "refreshExit": 0,
+  "checkExit": 0,
+  "changes": [
+    {
+      "path": ".tours/01-primary-user-flow.tour",
+      "beforeSha256": "4675e975d5cfe8e527d6ac29a265fd21f5285f5596e5fb9938204fcd8e1a5ef0",
+      "afterSha256": "4675e975d5cfe8e527d6ac29a265fd21f5285f5596e5fb9938204fcd8e1a5ef0"
+    },
+    {
+      "path": ".tours/03-debug-and-recovery.tour",
+      "beforeSha256": "40c61e922becbb09638ff829bf49f50667794cb84cd4243b939305e74e8fe449",
+      "afterSha256": "40c61e922becbb09638ff829bf49f50667794cb84cd4243b939305e74e8fe449"
+    },
+    {
+      "path": "docs/START_HERE.md",
+      "beforeSha256": "b2569422a70cd3182eca608dea8a4b026cacd3b9ed93e36e2b761720ee5bb1a4",
+      "afterSha256": "e826e45d80212c07fa9448f1a2caa081439e82fc6d9bdc54c9303518024292c3"
+    },
+    {
+      "path": "docs/codebase/CONCERNS.md",
+      "beforeSha256": "fb0e398ef2c3be32be39d8159a71ad3150a6609be925247e1f4195379ee3ef05",
+      "afterSha256": "50df0ffd7c8f60dd60de500b363b2a81478f396b3be69d56c42b453cb9ad6a2e"
+    }
+  ]
+}

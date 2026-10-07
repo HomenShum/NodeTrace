@@ -1,0 +1,74 @@
+{
+  "url": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "scroll": {
+    "x": 0,
+    "y": 24
+  },
+  "overflow": 0,
+  "theme": "rgb(245, 247, 251)",
+  "entityCount": "10",
+  "edgeCount": "15",
+  "canvas": {
+    "x": 55,
+    "y": 755.09375,
+    "width": 1330,
+    "height": 298,
+    "documentY": 779.09375
+  },
+  "selector": {
+    "x": 37,
+    "y": 575.484375,
+    "width": 1366,
+    "height": 44,
+    "documentY": 599.484375
+  },
+  "fit": {
+    "x": 54,
+    "y": 702.09375,
+    "width": 44,
+    "height": 44,
+    "documentY": 726.09375
+  },
+  "readout": null,
+  "selection": null,
+  "protected": [
+    {
+      "selector": ".showcase",
+      "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+      "bounds": {
+        "x": 22,
+        "y": -2,
+        "width": 1396,
+        "height": 319.359375,
+        "documentY": 22
+      }
+    },
+    {
+      "selector": "[aria-label=\"Trace Coach launch path\"]",
+      "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+      "bounds": {
+        "x": 997,
+        "y": 19,
+        "width": 400,
+        "height": 277.359375,
+        "documentY": 43
+      }
+    },
+    {
+      "selector": ".liveGraphRailHead",
+      "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+      "bounds": {
+        "x": 37,
+        "y": 498.140625,
+        "width": 1366,
+        "height": 44.5,
+        "documentY": 522.140625
+      }
+    }
+  ],
+  "frame": []
+}

@@ -1,0 +1,3226 @@
+{
+  "proof": "NODETRACE-RAW-READING-REGION-01",
+  "at": "2026-09-05T06:49:34.030Z",
+  "consumer": null,
+  "onlyCell": null,
+  "routedFixtures": "Exact retained before inputs; representative local saved trace, not fresh production data",
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "name": "actual-320-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "actual-320-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 264.375,
+        "width": 262,
+        "height": 520,
+        "documentY": 1740.375,
+        "clientHeight": 518,
+        "scrollHeight": 3675,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-320-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "actual-320-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "actual-320-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 264.375,
+        "width": 262,
+        "height": 520,
+        "documentY": 1740.375,
+        "clientHeight": 518,
+        "scrollHeight": 3675,
+        "scrollTop": 3157,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-320-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "actual-320-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "actual-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 3213,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "actual-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "actual-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 3213,
+        "scrollTop": 2666,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "actual-1024-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 2751,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "actual-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "actual-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 2751,
+        "scrollTop": 2254,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "actual-1440-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 191.46875,
+        "width": 1022,
+        "height": 560,
+        "documentY": 615.46875,
+        "clientHeight": 558,
+        "scrollHeight": 2701,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-1440-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "actual-1440-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "actual-1440-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 240.859375,
+        "width": 1022,
+        "height": 560,
+        "documentY": 664.859375,
+        "clientHeight": 558,
+        "scrollHeight": 2701,
+        "scrollTop": 2143,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-1440-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "actual-1440-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "short-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "short-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "short-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 900,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "short-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "short-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "short-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 719,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11345,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 0 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 1 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 2 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 3 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 4 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 5 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 6 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 7 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 8 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 9 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 10 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 11 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 12 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 13 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 14 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 15 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 16 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 17 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 18 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 19 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 20 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 21 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 22 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 23 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 24 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 25 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 26 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 27 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 28 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 29 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 30 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 31 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 32 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 33 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 34 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 35 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 36 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 37 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 38 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 39 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 40 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 41 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 42 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sustained 43 complete unchanged text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: sixty-second reading session",
+      "pass": true,
+      "detail": {
+        "rounds": 44,
+        "elapsedMs": 60714
+      }
+    },
+    {
+      "name": "long-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 6395,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "actual-390-no-preference-text200: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 10159,
+        "scrollTop": 0,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-390-no-preference-text200: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "actual-390-no-preference-text200: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "actual-390-no-preference-text200: actual doubled component text",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 10159,
+        "scrollTop": 9612,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-390-no-preference-text200: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "actual-390-no-preference-text200: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "actual-1024-reduce-text200: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6628,
+        "scrollTop": 0,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-1024-reduce-text200: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "actual-1024-reduce-text200: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "actual-1024-reduce-text200: actual doubled component text",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6628,
+        "scrollTop": 6131,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "actual-1024-reduce-text200: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "actual-1024-reduce-text200: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-390-reduce: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-reduce: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-390-reduce: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-390-reduce: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11345,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-reduce: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-390-reduce: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "failed state is visible before Retry",
+      "pass": true
+    },
+    {
+      "name": "honest failure and Retry restores named current reading region",
+      "pass": true
+    },
+    {
+      "name": "all captured source or installed assets equal this actual build",
+      "pass": true
+    },
+    {
+      "name": "no unexpected page or console errors",
+      "pass": true,
+      "detail": [
+        {
+          "name": "actual-320-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x3384001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "name": "actual-320-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x3384001b0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "name": "actual-320-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x3384001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "name": "actual-320-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x3384001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        },
+        {
+          "name": "degraded-retry",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+          "location": {
+            "url": "http://127.0.0.1:4959/nodetrace-state.json",
+            "line": 0,
+            "column": 0,
+            "lineNumber": 0,
+            "columnNumber": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "source/public inputs unchanged during proof",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "actual-320-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "documentHeight": 3266,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 264.375,
+        "width": 262,
+        "height": 520,
+        "documentY": 1740.375,
+        "clientHeight": 518,
+        "scrollHeight": 3675,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 296,
+        "height": 958.875,
+        "documentY": 2295.375
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-320-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "documentHeight": 3266,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1335.3000000715256
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 10,
+          "at": 1359.7000000476837
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 264.375,
+        "width": 262,
+        "height": 520,
+        "documentY": 1740.375,
+        "clientHeight": 518,
+        "scrollHeight": 3675,
+        "scrollTop": 3157,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 296,
+        "height": 958.875,
+        "documentY": 2295.375
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-390-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 3213,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-390-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1293.7999999523163
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 35,
+          "at": 1333.1999999284744
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 3213,
+        "scrollTop": 2666,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-1024-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 2751,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-1024-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1374.2999999523163
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 9,
+          "at": 1403.2000000476837
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 2751,
+        "scrollTop": 2254,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-1440-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "documentHeight": 2249,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 191.46875,
+        "width": 1022,
+        "height": 560,
+        "documentY": 615.46875,
+        "clientHeight": 558,
+        "scrollHeight": 2701,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 1396,
+        "height": 823.53125,
+        "documentY": 1403.03125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-1440-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "documentHeight": 2298,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1495.4000000953674
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 17,
+          "at": 1528.2000000476837
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 240.859375,
+        "width": 1022,
+        "height": 560,
+        "documentY": 664.859375,
+        "clientHeight": 558,
+        "scrollHeight": 2701,
+        "scrollTop": 2143,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 1396,
+        "height": 823.53125,
+        "documentY": 1452.421875
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "short-390-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-390-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1278.8000000715256
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 38,
+          "at": 1317.6000000238419
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 900,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-1024-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-1024-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1360.3999999761581
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 28,
+          "at": 1395.3999999761581
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 719,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "long-390-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-390-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1355.1000000238419
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 36,
+          "at": 1395.2000000476837
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11345,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-390-no-preference-sustained",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 2896,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 44495.5
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 44681.89999997616
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 45873.60000002384
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 46061.60000002384
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 47253
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 47449
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 48635.10000002384
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 48814
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 49998
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 50180.39999997616
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 51376.800000071526
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 51561
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 52748.10000002384
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 52930.89999997616
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 54127.39999997616
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 54312.5
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 55508.300000071526
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 55695.89999997616
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 56898.200000047684
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 57077.89999997616
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 58281.300000071526
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 58462.60000002384
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 59653.10000002384
+        },
+        {
+          "key": "Home",
+          "target": "trace-raw",
+          "scrollTop": 11345,
+          "at": 59846.300000071526
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 296.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 682.28125,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-1024-no-preference-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-1024-no-preference-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1424.6000000238419
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 14,
+          "at": 1457.1000000238419
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 6395,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "actual-390-no-preference-text200-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 10159,
+        "scrollTop": 0,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-390-no-preference-text200-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1289.8999999761581
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 36,
+          "at": 1327.5
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 10159,
+        "scrollTop": 9612,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-1024-reduce-text200-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6628,
+        "scrollTop": 0,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "actual-1024-reduce-text200-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2269,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1300
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 16,
+          "at": 1330.8999999761581
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 16.078125,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 636.078125,
+        "clientHeight": 497,
+        "scrollHeight": 6628,
+        "scrollTop": 6131,
+        "fontSize": "22px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1423.640625
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    },
+    {
+      "name": "long-390-reduce-top",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-390-reduce-end",
+      "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3116,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1226.7000000476837
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 12,
+          "at": 1253.2000000476837
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 279.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11345,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2201.28125
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "degraded-before-retry",
+      "url": "http://127.0.0.1:4959/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 995,
+      "overflow": 0,
+      "raw": null,
+      "focused": null,
+      "selection": ""
+    },
+    {
+      "name": "recovered-raw",
+      "url": "http://127.0.0.1:4959/?step=coach-step-01-artifact-entry&tab=raw",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 2896,
+      "overflow": 0,
+      "raw": {
+        "x": 29,
+        "y": 470.6875,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1617.6875,
+        "clientHeight": 547,
+        "scrollHeight": 3213,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(232, 237, 245) none 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 682.28125,
+        "documentY": 2201.28125
+      },
+      "focused": null,
+      "selection": "",
+      "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+    }
+  ],
+  "logs": [
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x3384001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x3384001b0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x3384001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x3384001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "name": "degraded-retry",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://127.0.0.1:4959/nodetrace-state.json",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    }
+  ],
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "afterHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "ok": true,
+  "limits": [
+    "Desktop Chromium viewport emulation",
+    "Text200 enlarges only actual Raw component text, not browser zoom",
+    "Not a human, physical-device or performance certification"
+  ]
+}

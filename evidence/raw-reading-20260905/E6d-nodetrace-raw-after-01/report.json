@@ -1,0 +1,83 @@
+{
+  "proof": "NODETRACE-RAW-READING-REGION-01",
+  "at": "2026-09-05T06:12:50.200Z",
+  "consumer": null,
+  "routedFixtures": "Exact retained before inputs; representative local saved trace, not fresh production data",
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "name": "actual-320-no-preference: entity has actual producing events",
+      "pass": false
+    },
+    {
+      "name": "source/public inputs unchanged during proof",
+      "pass": true
+    }
+  ],
+  "captures": [],
+  "logs": [
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x7cac001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x7cac001b0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x7cac001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "actual-320-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x7cac001b0800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4959/assets/index-B-49wX3f.css",
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4959/assets/index-Cib27Tc4.js",
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    }
+  ],
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "79adaca0dfe6f29a61bd628f7833bb9240a6a40f2b9b466b6d3fae45b5c84834",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "afterHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "79adaca0dfe6f29a61bd628f7833bb9240a6a40f2b9b466b6d3fae45b5c84834",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: actual-320-no-preference: entity has actual producing events\n    at check (file:///D:/VSCode%20Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace/scripts/raw-reading-proof.mjs:23:93)\n    at file:///D:/VSCode%20Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace/scripts/raw-reading-proof.mjs:73:5",
+  "ok": false,
+  "limits": [
+    "Desktop Chromium viewport emulation",
+    "Text200 enlarges only actual Raw component text, not browser zoom",
+    "Not a human, physical-device or performance certification"
+  ]
+}

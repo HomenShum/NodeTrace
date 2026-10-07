@@ -1,0 +1,29 @@
+{
+  "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "regions": [
+    {
+      "id": "CHANGE A",
+      "title": "Entity controls and local graph heading",
+      "x": 27,
+      "y": 403,
+      "width": 336,
+      "height": 88.625,
+      "borderWidth": 3,
+      "documentY": 2300
+    },
+    {
+      "id": "CHANGE B",
+      "title": "Graph and entity result",
+      "x": 28,
+      "y": 500.625,
+      "width": 334,
+      "height": 429.5,
+      "borderWidth": 3,
+      "documentY": 2397.625
+    }
+  ]
+}

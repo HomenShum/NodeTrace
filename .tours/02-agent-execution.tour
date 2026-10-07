@@ -1,0 +1,58 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "2. What an agent can drive: the capture engine",
+  "description": "NodeTrace has no agent runtime of its own. What it has is a pair of MCP tools somebody else's coding agent can call to photograph a codebase. This tour follows one capture from tool call to PNG.",
+  "ref": "main",
+  "steps": [
+    {
+      "file": "bin/nodetrace-mcp.mjs",
+      "line": 14,
+      "description": "Read this first: there is no planner, no model call and no agent loop anywhere in this repository. NodeTrace is the trace surface an agent-built product adopts, not an agent.\n\nWhat it exposes instead is this stdio MCP server, so a coding assistant can run a capture without a human driving a browser."
+    },
+    {
+      "file": "bin/nodetrace-mcp.mjs",
+      "line": 23,
+      "description": "Tool one: parse and resolve a plan without opening a browser. Cheap, and the only thing `npm run mcp:smoke` exercises."
+    },
+    {
+      "file": "bin/nodetrace-mcp.mjs",
+      "line": 50,
+      "description": "Tool two: actually run the capture. Inputs are declared as zod schemas, which the MCP SDK turns into the tool's JSON schema."
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "line": 87,
+      "description": "Validation for the whole engine happens once, here. A plan is input from an agent, so every path is resolved, every default filled, and a step whose source file does not exist throws before any browser starts."
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "line": 98,
+      "description": "`code-browser` is the only capture mode. Modes that drove VS Code Desktop and VS Code for the Web used to live here; the Wave 3 reduction removed them because no committed plan, no test and no CI job ever ran them, and this mode already renders source with Shiki, headless, with no editor installed."
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "line": 45,
+      "description": "The run itself. Playwright is imported dynamically so that merely importing this module -- which `bin/nodetrace.mjs` does on every `capture` command -- does not require a browser."
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "line": 216,
+      "description": "Half one: render the real file's real line range as HTML with Shiki, and screenshot it. The source in the picture is read from disk at capture time, which is the entire point -- a hand-drawn code screenshot proves nothing."
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "line": 356,
+      "description": "Half two: drive the real running app to the right state, find the selector, measure its bounding box, and screenshot the element. A box smaller than 20x20 throws rather than saving a sliver."
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "line": 457,
+      "description": "The receipt. `captureKind` fields starting with `actual-` are how downstream checks tell a real capture from a placeholder; `scripts/smoke.mjs` refuses a manifest whose steps are not all `actual-`."
+    },
+    {
+      "file": "scripts/capture-plan-smoke.mjs",
+      "line": 52,
+      "description": "The check that proves all of the above still works: it serves a page over HTTP from inside the test, runs the capture CLI against it, and asserts the manifest recorded `actual-code-browser-shiki` and a real DOMRect.\n\nBefore this existed, nothing ran the engine end to end -- only its plans were parsed."
+    }
+  ]
+}

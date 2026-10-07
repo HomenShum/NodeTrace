@@ -1,0 +1,177 @@
+{
+  "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "documentHeight": 2896,
+  "overflow": 0,
+  "keys": [
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 44589.39999997616
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 44779.10000002384
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 45975.5
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 46160.60000002384
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 47350.89999997616
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 47528.10000002384
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 48716.700000047684
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 48899.300000071526
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 50089.200000047684
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 50280.39999997616
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 51476.89999997616
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 51667.39999997616
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 52851.800000071526
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 53033.800000071526
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 54232.700000047684
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 54416.700000047684
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 55615.89999997616
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 55796.60000002384
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 56998.10000002384
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 57179.200000047684
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 58378.300000071526
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 58562.800000071526
+    },
+    {
+      "key": "End",
+      "target": "trace-raw",
+      "scrollTop": 0,
+      "at": 59767.800000071526
+    },
+    {
+      "key": "Home",
+      "target": "trace-raw",
+      "scrollTop": 11345,
+      "at": 59948.89999997616
+    }
+  ],
+  "raw": {
+    "x": 29,
+    "y": 296.6875,
+    "width": 332,
+    "height": 548.59375,
+    "documentY": 1617.6875,
+    "clientHeight": 547,
+    "scrollHeight": 11892,
+    "scrollTop": 0,
+    "fontSize": "11px",
+    "overflowY": "auto",
+    "outline": "rgb(31, 103, 177) solid 3px",
+    "tabIndex": 0
+  },
+  "graph": {
+    "width": 366,
+    "height": 682.28125,
+    "documentY": 2201.28125
+  },
+  "focused": "trace-raw",
+  "selection": "",
+  "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+}

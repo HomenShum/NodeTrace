@@ -9,7 +9,7 @@ Use this skill when a walkthrough, trace panel, onboarding demo, or README needs
 
 ## Rules
 
-- Capture source code from the real repository. Prefer NodeTrace `editor.mode: "code-browser"`, which renders the exact file and line range with Shiki in a local browser view. Use VS Code desktop/web, Cursor, or another visible IDE only when the user explicitly requires that editor surface.
+- Capture source code from the real repository with NodeTrace `editor.mode: "code-browser"`, which renders the exact file and line range with Shiki in a local browser view. It is the only capture mode, and it needs no editor installed.
 - Capture product UI from the running app with browser automation. Prefer Playwright element screenshots from stable selectors.
 - Measure DOMRects from the live DOM. Do not invent bounding boxes or reuse old coordinates.
 - Store a manifest that links every step to its source image, running-app image, file path, line range, selector, DOMRect, capture kind, and generation time.
@@ -56,7 +56,7 @@ Equivalent entrypoints:
 - `nodetrace-capture --plan path/to/capture-plan.json`
 - `nodetrace-mcp` for MCP clients; use `validate_capture_plan` first, then `capture_codebase`
 
-A plan defines `sourceRoot`, `captureRoot`, `manifestPath`, editor mode, app start/url, setup actions, and ordered steps. Each step maps a source file/anchor to a stable UI selector and optional UI actions. Use `editor.mode: "code-browser"` by default so the capture is CLI-friendly, headless-friendly, and independent of local VS Code workspace state.
+A plan defines `sourceRoot`, `captureRoot`, `manifestPath`, editor mode, app start/url, setup actions, and ordered steps. Each step maps a source file/anchor to a stable UI selector and optional UI actions. `editor.mode` is always `code-browser`, so the capture is CLI-friendly, headless-friendly, and independent of any local editor state.
 
 ## NodeTrace Proof
 

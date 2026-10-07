@@ -1,0 +1,7 @@
+
+> @homenshum/nodetrace@0.1.0 happy-path
+> node scripts/init-sqlite.mjs --json-out docs/eval/nodetrace-happy-path.json
+
+nodetrace happy path: PASS 34ms
+wrote .nodetrace/nodetrace.sqlite
+wrote public/nodetrace-state.json

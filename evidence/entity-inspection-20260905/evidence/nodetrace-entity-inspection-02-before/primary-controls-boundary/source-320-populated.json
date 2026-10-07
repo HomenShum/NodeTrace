@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+  "viewport": {
+    "width": 320,
+    "height": 800
+  },
+  "theme": "rgb(245, 247, 251)",
+  "scroll": {
+    "x": 0,
+    "y": 1999
+  },
+  "overflow": 0,
+  "active": "<body>\n    <div id=\"root\"><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" strok",
+  "entityCount": "14",
+  "edgeCount": "31",
+  "modal": false,
+  "fit": {
+    "x": 44,
+    "y": 425.6875,
+    "width": 27.84375,
+    "height": 21.9375,
+    "documentY": 2424.6875
+  },
+  "controls": {
+    "x": 44,
+    "y": 425.6875,
+    "width": 232,
+    "height": 21.9375,
+    "documentY": 2424.6875
+  },
+  "canvas": {
+    "x": 45,
+    "y": 456.625,
+    "width": 230,
+    "height": 298,
+    "documentY": 2455.625
+  },
+  "result": null,
+  "graphControls": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "fit",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "name": "traversal(31)· local",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 87.84375,
+        "y": 430.15625,
+        "width": 13,
+        "height": 13,
+        "documentY": 2429.15625
+      }
+    }
+  ],
+  "readout": null
+}

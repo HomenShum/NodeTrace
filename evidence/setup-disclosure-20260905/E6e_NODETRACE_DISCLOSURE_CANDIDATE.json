@@ -1,0 +1,75 @@
+{
+  "proof": "NODETRACE-D3-SETUP-DISCLOSURE-01",
+  "at": "2026-09-05T08:50:43.475881+00:00",
+  "base": "594c988881d17b759ff6455539dc3b293e1a4ee5",
+  "branch": "codex/trace-setup-disclosure-20260905",
+  "status": " M .tours/01-primary-user-flow.tour\n M .tours/03-debug-and-recovery.tour\n M docs/START_HERE.md\n M docs/codebase/CONCERNS.md\n M src/DemoDashboard.tsx\n M src/styles.css\n?? scripts/setup-disclosure-proof.mjs\n",
+  "files": [
+    {
+      "path": "src/DemoDashboard.tsx",
+      "bytes": 17471,
+      "sha256": "89865a4eb9144c88fa32b5e97e4b7d8c77465c41752ba2bd95486701c63ce662"
+    },
+    {
+      "path": "src/styles.css",
+      "bytes": 17737,
+      "sha256": "32e846db4aebee33b956a2ec968d8174bca1789388296365507aad099abd32fd"
+    },
+    {
+      "path": "scripts/setup-disclosure-proof.mjs",
+      "bytes": 20825,
+      "sha256": "4a0eddc878729fbcdf7a2bffa67cba4555ead55674a1efe92f73b577e1456e5d"
+    },
+    {
+      "path": ".tours/01-primary-user-flow.tour",
+      "bytes": 4399,
+      "sha256": "4675e975d5cfe8e527d6ac29a265fd21f5285f5596e5fb9938204fcd8e1a5ef0"
+    },
+    {
+      "path": ".tours/03-debug-and-recovery.tour",
+      "bytes": 3734,
+      "sha256": "40c61e922becbb09638ff829bf49f50667794cb84cd4243b939305e74e8fe449"
+    },
+    {
+      "path": "docs/START_HERE.md",
+      "bytes": 21628,
+      "sha256": "e826e45d80212c07fa9448f1a2caa081439e82fc6d9bdc54c9303518024292c3"
+    },
+    {
+      "path": "docs/codebase/CONCERNS.md",
+      "bytes": 8861,
+      "sha256": "50df0ffd7c8f60dd60de500b363b2a81478f396b3be69d56c42b453cb9ad6a2e"
+    }
+  ],
+  "reports": {
+    "E6e-nodetrace-disclosure-source-final/report.json": "38b792d9f19cec6094c67fbf0092ebbba6ef1e8ba2958bd02cac21b71bdce62b",
+    "E6e-nodetrace-disclosure-installed-final/report.json": "d9d05498b47910865dbb23c71fbf953c89535ff4c9f3c92f7b8825c43bdce2ff",
+    "E6e-nodetrace-disclosure-consumer-install-final/receipt.json": "4aa162ba435cc65f9b0af7da316e0501964db2366b901a2b5935533cb34bde64",
+    "E6e-nodetrace-disclosure-checks/report.json": "88c7bad6f53b4173dfb0cc492031c9d6477131f44ce9ff851dff29799677ee44",
+    "E6e-nodetrace-disclosure-citation-repair/receipt.json": "1b1d2de98c07ff684548109577ef70bb5c652cc2e67380e808e0f0c57607ee58",
+    "E6e-nodetrace-disclosure-citation-repair-utf8/receipt.json": "128e111f606e91a6af973a584e6d4a64ecdf0939c6f343f7ef3992932e1c3a32"
+  },
+  "sourceChecks": 92,
+  "installedChecks": 79,
+  "captures": 30,
+  "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-AxCJ0v",
+  "rootVisuals": "Six normal collapsed viewports, source and installed390 text200/provenance viewed. Initial text200 revealed inherited ellipsis; scoped labels now wrap. Final corrected provenance review follows.",
+  "runtimeScope": [
+    "Native setup disclosure closed by default; existing command/provenance text retained.",
+    "One selected-coach surface identity for header and first inspection; installed sample fallback unchanged.",
+    "Scoped provenance text wraps instead of ellipsis."
+  ],
+  "preservedFailures": [
+    "source01 proof label locator did not resolve the actual named combobox; source02 uses actual role.",
+    "source02 Back oracle overlooked lens history entries; explicit tab navigation isolates correct Back/Forward behavior.",
+    "installed01 counted all alerts including an empty Next host announcer; owned loadError removed after exactly2 requests in installed02.",
+    "source03/installed02 pass initial checks but root pixels expose enlarged provenance ellipsis; no complete-access claim retained.",
+    "Citations failed on moved anchors/header identity; exact four metadata paths repaired, tour descriptions unchanged."
+  ],
+  "limits": [
+    "No real provider, database-file inspection, source fixture replacement, production deployment, full grade or field performance claim.",
+    "Normal source uses exact previous input; normal fresh installed sample has4traces/no coach with its own new generation time/session.",
+    "Loading/error/empty are explicit routed local fixtures; actual normal cases never replaced.",
+    "Full dimension/overall scores remain null."
+  ]
+}

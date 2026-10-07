@@ -1,0 +1,27 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: A local Trace tab sample sourced from the latest full NodeRoom checkout, using real NodeRoom trace records, detail tabs, steps, flow, screenshot boxes, and raw JSON.
+  - button "Inspect trace"
+  - group:
+    - text: Setup and trace provenance
+    - code: npm run understand:noderoom
+    - code: npm run capture:noderoom:real
+    - code: npm run trace-coach:sqlite
+    - text: no API key required
+    - complementary "Trace Coach launch path":
+      - text: SQLite sample
+      - strong: verified
+      - text: SQLite NodeRoom trace browser UI Source app
+      - strong: NodeRoom
+      - text: SQLite sample Coach steps
+      - strong: "0"
+      - text: ordered labels Trace tabs
+      - strong: "4"
+      - text: overview, steps, minimap, raw The SQLite sample contains trace events. No Trace Coach captures are loaded yet.
+  - region "Load a guided trace":
+    - heading "Load a guided trace" [level=2]
+    - paragraph:
+      - text: No Trace Coach steps are available in this sample. To inspect the bundled snapshot, run
+      - code: npm run trace-coach:sqlite
+      - text: and refresh. For new captures, the first two commands above require a real NodeRoom checkout.

@@ -1,0 +1,149 @@
+{
+  "focusSequence": [
+    {
+      "press": 1,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": null,
+      "name": "Inspect trace",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 2,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(2)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "trace-record",
+      "name": "Open NodeRoom's Trace tab from the artifact shellpassStart from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 3,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(3)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "trace-record",
+      "name": "Use the real NodeRoom trace tabspassThe sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.Trace tab",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 4,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(4)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "trace-record",
+      "name": "Seed the app from NodeRoom TraceRecord datapassNodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.Data model - Step",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 5,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(5)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "trace-record",
+      "name": "Render code and UI evidence like NodeRoom step rowspassEach step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.Steps - Step 04 -",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 6,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(6)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "trace-record",
+      "name": "Keep the latest flow tab behaviorpassNodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.Flow - Step 05 - src",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 7,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(7)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "trace-record",
+      "name": "Match NodeRoom's dark trace surfacepassThe sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.Look and feel - Step 06 - s",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 8,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>button:nth-child(3)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": null,
+      "name": "Inspect trace",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 9,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>div:nth-child(4)>button:nth-child(1)",
+      "tag": "BUTTON",
+      "role": "tab",
+      "testId": null,
+      "name": "Overview",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 10,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)",
+      "tag": "DIV",
+      "role": "tabpanel",
+      "testId": null,
+      "name": "src/ui/panels/Artifact.tsxHomenShum/noderoom - lines 1-15[data-noderoom-surface=\"workSurface.traceStrip\"]DOMRect x11 y904 w1056 h45",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 11,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": "nodegraph-fit",
+      "name": "fit",
+      "inGraph": true,
+      "readout": false
+    },
+    {
+      "press": 12,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+      "tag": "INPUT",
+      "role": null,
+      "testId": null,
+      "name": "traversal(31)· local",
+      "inGraph": true,
+      "readout": false
+    },
+    {
+      "press": 13,
+      "path": "html:nth-child(1)>body:nth-child(2)",
+      "tag": "BODY",
+      "role": null,
+      "testId": null,
+      "name": "NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run c",
+      "inGraph": false,
+      "readout": false
+    },
+    {
+      "press": 14,
+      "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+      "tag": "BUTTON",
+      "role": null,
+      "testId": null,
+      "name": "Inspect trace",
+      "inGraph": false,
+      "readout": false
+    }
+  ],
+  "cycleClosed": true,
+  "pressBudget": 100,
+  "fitEntered": 1,
+  "actualFitActivations": 1,
+  "readoutReached": false
+}

@@ -1,0 +1,6 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: Loading the local trace file…
+  - button "Inspect trace" [disabled]
+  - group: Setup and trace provenance

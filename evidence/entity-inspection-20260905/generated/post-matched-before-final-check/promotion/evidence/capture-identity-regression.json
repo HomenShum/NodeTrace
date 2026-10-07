@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "probe": "capture-identity — the capture script must not photograph a foreign process",
+  "completedAt": "2026-08-14T02:05:31.947Z",
+  "observed": {
+    "port": 5187,
+    "impostor": "a foreign process already held the port",
+    "exitCode": 1,
+    "lastLine": "live graph rail capture: FAIL (port 5187 is already in use by another process — refusing to capture a page this checkout did not serve. Stop it, or set NODETRACE_CAPTURE_PORT to a free port.)",
+    "artifactShaBefore": "7612b62169bfe973",
+    "artifactShaAfter": "7612b62169bfe973",
+    "artifactRewritten": false,
+    "identityRejectsImpostor": "the captured page served a different public/nodetrace-state.json than this checkout has on disk (page sha256:537c2fbd4438, disk sha256:88fa81de520f) — another process answered on this port",
+    "identityAcceptsThisTree": true
+  },
+  "issues": []
+}

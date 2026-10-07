@@ -1,0 +1,154 @@
+{
+  "proof": "NODETRACE-RAW-RETRY-CAUSAL-JUDGE-01",
+  "at": "2026-09-05T06:46:15.867Z",
+  "head": "04891604227ab607a61557f49f2cdb41b28dd338",
+  "index": "8590352d94cdd845e606c3a9f2f0253e83c1b109a64f65ff960f539bd7503766",
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "scripts/raw-reading-proof.mjs": "05f42e9c1fc4a181849c372e743581842bcb0d6bdf0b583c25e857bf41629046",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "dist/index.html": "9d072162a05f356a428a6c2a49231f2e6e0d0b2563d8e2a47c9e6c081b2df346"
+  },
+  "afterHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "scripts/raw-reading-proof.mjs": "05f42e9c1fc4a181849c372e743581842bcb0d6bdf0b583c25e857bf41629046",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "dist/index.html": "9d072162a05f356a428a6c2a49231f2e6e0d0b2563d8e2a47c9e6c081b2df346"
+  },
+  "browser": "149.0.7827.55",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "requests": [
+    {
+      "attempt": 1,
+      "url": "http://127.0.0.1:4963/nodetrace-state.json",
+      "method": "GET",
+      "status": 503,
+      "bodySha256": "ba691ba042bcedd9a61a36f5969026bc95859dccdc7e47f24e6bce35673baf2f"
+    },
+    {
+      "attempt": 2,
+      "url": "http://127.0.0.1:4963/nodetrace-state.json",
+      "method": "GET",
+      "status": 200,
+      "bodySha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87"
+    }
+  ],
+  "checks": [
+    {
+      "name": "actual HTTP503 produces honest visible error",
+      "pass": true
+    },
+    {
+      "name": "old exact Retry locator matches no button",
+      "pass": true
+    },
+    {
+      "name": "actual named Retry loading trace button is available",
+      "pass": true
+    },
+    {
+      "name": "one failed request before explicit retry",
+      "pass": true
+    },
+    {
+      "name": "one explicit retry returns actual second response",
+      "pass": true
+    },
+    {
+      "name": "recovered Raw contains current selected complete step",
+      "pass": false
+    },
+    {
+      "name": "source build public HEAD and index inputs unchanged",
+      "pass": true
+    }
+  ],
+  "consoleLogs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "location": {
+        "url": "http://127.0.0.1:4963/nodetrace-state.json",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x29b4001b7600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "http://127.0.0.1:4963/?step=coach-step-01-artifact-entry",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x29b4001b7c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "http://127.0.0.1:4963/?step=coach-step-01-artifact-entry",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x29b4001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels",
+      "location": {
+        "url": "http://127.0.0.1:4963/?step=coach-step-01-artifact-entry",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x29b4001b7600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)",
+      "location": {
+        "url": "http://127.0.0.1:4963/?step=coach-step-01-artifact-entry",
+        "line": 0,
+        "column": 0,
+        "lineNumber": 0,
+        "columnNumber": 0
+      }
+    }
+  ],
+  "pageErrors": [],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4963/assets/index-B-49wX3f.css",
+      "status": 200,
+      "sha256": "a833eed7c729554d4dfa02b9684f66a37135111816edc3c0f12e8617fd0ed068",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4963/assets/index-Cib27Tc4.js",
+      "status": 200,
+      "sha256": "c131ddde697367a1fce0aa5c005946274a58144edc5eaf85cd4475c2096f7686",
+      "diskExact": true
+    }
+  ],
+  "failure": "AssertionError [ERR_ASSERTION]: recovered Raw contains current selected complete step\n    at check (file:///C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6d-nodetrace-raw-retry-judge.mjs:18:80)\n    at file:///C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6d-nodetrace-raw-retry-judge.mjs:45:2",
+  "ok": false,
+  "limits": [
+    "One actual built local source UI error/recovery case",
+    "Routed first HTTP503 then exact retained current fixture; no production/provider call",
+    "No product, proof harness, build, fixture, index or ref edits"
+  ]
+}

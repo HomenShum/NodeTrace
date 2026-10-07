@@ -1,0 +1,19 @@
+NodeTrace add -> D:\ProjectRecovery\nodetrace-entity-vite-final-consumer-20260905
+[1/4] install dependencies
+    cmd.exe /d /s /c npm.cmd install --cache .nodetrace/npm-cache --prefer-offline --no-audit --fund=false --progress=false
+    PASS 18.16s
+[2/4] happy path
+    cmd.exe /d /s /c npm.cmd run nodetrace:happy-path
+    PASS 565ms
+[3/4] smoke
+    cmd.exe /d /s /c npm.cmd run nodetrace:smoke
+    PASS 655ms
+[4/4] build
+    cmd.exe /d /s /c npm.cmd run build
+    PASS 6.71s
+NodeTrace add: PASS
+Receipt: .nodetrace/setup-receipt.json
+Log: .nodetrace/setup-log.txt
+Next:
+  npm run nodetrace:dev
+  open http://127.0.0.1:5173/nodetrace.html or the Vite URL printed by your app

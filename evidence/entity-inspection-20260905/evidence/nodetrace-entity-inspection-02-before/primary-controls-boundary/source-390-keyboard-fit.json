@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "theme": "rgb(245, 247, 251)",
+  "scroll": {
+    "x": 0,
+    "y": 1897
+  },
+  "overflow": 0,
+  "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+  "entityCount": "14",
+  "edgeCount": "31",
+  "modal": false,
+  "fit": {
+    "x": 44,
+    "y": 469.6875,
+    "width": 27.84375,
+    "height": 21.9375,
+    "documentY": 2366.6875
+  },
+  "controls": {
+    "x": 44,
+    "y": 469.6875,
+    "width": 302,
+    "height": 21.9375,
+    "documentY": 2366.6875
+  },
+  "canvas": {
+    "x": 45,
+    "y": 500.625,
+    "width": 300,
+    "height": 298,
+    "documentY": 2397.625
+  },
+  "result": null,
+  "graphControls": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "fit",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 44,
+        "y": 469.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2366.6875
+      }
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "name": "traversal(31)· local",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 87.84375,
+        "y": 474.15625,
+        "width": 13,
+        "height": 13,
+        "documentY": 2371.15625
+      }
+    }
+  ],
+  "readout": null
+}

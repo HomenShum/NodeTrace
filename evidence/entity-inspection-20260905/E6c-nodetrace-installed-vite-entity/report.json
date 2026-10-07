@@ -1,0 +1,484 @@
+{
+  "at": "2026-09-05T04:27:49.528Z",
+  "proof": "NODETRACE-INSTALLED-VITE-DEV-ENTITY-02",
+  "consumer": "D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905",
+  "primary": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "origin": "http://127.0.0.1:4958",
+  "route": "/nodetrace.html?host=preserved&returnTo=dashboard#host-section",
+  "normalMotion": true,
+  "browser": "Chromium",
+  "fixture": {
+    "initialSha256": "b5128e0eb00d5b91d030b129b301f9fb1e80c4f4f2d7172addde76f8df895c9a",
+    "initialTraces": 4,
+    "finalSha256": "b5128e0eb00d5b91d030b129b301f9fb1e80c4f4f2d7172addde76f8df895c9a"
+  },
+  "helperHashes": {
+    "entity-inspection-proof.mjs": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+    "proof-server.mjs": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd"
+  },
+  "bindings": [
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "replacements": [],
+      "sourceSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "expectedInstalledSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "installedSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.d.ts",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "replacements": [],
+      "sourceSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "expectedInstalledSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "installedSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/graph-model.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "replacements": [],
+      "sourceSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "expectedInstalledSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "installedSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/session.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/session.js",
+      "replacements": [],
+      "sourceSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "expectedInstalledSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "installedSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/react.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/react.js",
+      "replacements": [],
+      "sourceSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "expectedInstalledSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "installedSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/index.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/index.js",
+      "replacements": [],
+      "sourceSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "expectedInstalledSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "installedSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "exact": true
+    },
+    {
+      "source": "src/trace/LiveGraphRail.tsx",
+      "target": "src/nodetrace/LiveGraphRail.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+      "expectedInstalledSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "installedSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "exact": true
+    },
+    {
+      "source": "src/styles.css",
+      "target": "src/nodetrace-demo/styles.css",
+      "replacements": [],
+      "sourceSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "expectedInstalledSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "installedSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "exact": true
+    },
+    {
+      "source": "src/DemoDashboard.tsx",
+      "target": "src/nodetrace-demo/DemoDashboard.tsx",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "expectedInstalledSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "installedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "exact": true
+    },
+    {
+      "source": "src/demoState.ts",
+      "target": "src/nodetrace-demo/demoState.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "expectedInstalledSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "installedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "exact": true
+    },
+    {
+      "source": "src/demoNavigation.ts",
+      "target": "src/nodetrace-demo/demoNavigation.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "expectedInstalledSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "installedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensPanel.tsx",
+      "target": "src/nodetrace/TraceLensPanel.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "expectedInstalledSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "installedSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensProvider.tsx",
+      "target": "src/nodetrace/TraceLensProvider.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "expectedInstalledSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "installedSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "exact": true
+    },
+    {
+      "source": "src/trace/trace.css",
+      "target": "src/nodetrace/trace.css",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "expectedInstalledSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "installedSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "exact": true
+    },
+    {
+      "source": "src/trace/types.ts",
+      "target": "src/nodetrace/types.ts",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "expectedInstalledSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "installedSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "exact": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "source to installed exact transformation src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "pass": true,
+      "detail": {
+        "source": "vendor/nodegraph-live/NodeGraph.js",
+        "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+        "replacements": [],
+        "sourceSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+        "expectedInstalledSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+        "installedSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "pass": true,
+      "detail": {
+        "source": "vendor/nodegraph-live/NodeGraph.d.ts",
+        "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+        "replacements": [],
+        "sourceSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+        "expectedInstalledSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+        "installedSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "pass": true,
+      "detail": {
+        "source": "vendor/nodegraph-live/graph-model.js",
+        "target": "src/nodetrace/vendor/nodegraph-live/graph-model.js",
+        "replacements": [],
+        "sourceSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+        "expectedInstalledSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+        "installedSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/vendor/nodegraph-live/session.js",
+      "pass": true,
+      "detail": {
+        "source": "vendor/nodegraph-live/session.js",
+        "target": "src/nodetrace/vendor/nodegraph-live/session.js",
+        "replacements": [],
+        "sourceSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+        "expectedInstalledSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+        "installedSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/vendor/nodegraph-live/react.js",
+      "pass": true,
+      "detail": {
+        "source": "vendor/nodegraph-live/react.js",
+        "target": "src/nodetrace/vendor/nodegraph-live/react.js",
+        "replacements": [],
+        "sourceSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+        "expectedInstalledSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+        "installedSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/vendor/nodegraph-live/index.js",
+      "pass": true,
+      "detail": {
+        "source": "vendor/nodegraph-live/index.js",
+        "target": "src/nodetrace/vendor/nodegraph-live/index.js",
+        "replacements": [],
+        "sourceSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+        "expectedInstalledSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+        "installedSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/LiveGraphRail.tsx",
+      "pass": true,
+      "detail": {
+        "source": "src/trace/LiveGraphRail.tsx",
+        "target": "src/nodetrace/LiveGraphRail.tsx",
+        "replacements": [
+          [
+            "../../vendor/nodegraph-live/",
+            "./vendor/nodegraph-live/"
+          ]
+        ],
+        "sourceSha256": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+        "expectedInstalledSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+        "installedSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace-demo/styles.css",
+      "pass": true,
+      "detail": {
+        "source": "src/styles.css",
+        "target": "src/nodetrace-demo/styles.css",
+        "replacements": [],
+        "sourceSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+        "expectedInstalledSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+        "installedSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace-demo/DemoDashboard.tsx",
+      "pass": true,
+      "detail": {
+        "source": "src/DemoDashboard.tsx",
+        "target": "src/nodetrace-demo/DemoDashboard.tsx",
+        "replacements": [
+          [
+            "./trace",
+            "../nodetrace"
+          ]
+        ],
+        "sourceSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+        "expectedInstalledSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+        "installedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace-demo/demoState.ts",
+      "pass": true,
+      "detail": {
+        "source": "src/demoState.ts",
+        "target": "src/nodetrace-demo/demoState.ts",
+        "replacements": [
+          [
+            "./trace",
+            "../nodetrace"
+          ]
+        ],
+        "sourceSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+        "expectedInstalledSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+        "installedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace-demo/demoNavigation.ts",
+      "pass": true,
+      "detail": {
+        "source": "src/demoNavigation.ts",
+        "target": "src/nodetrace-demo/demoNavigation.ts",
+        "replacements": [
+          [
+            "./trace",
+            "../nodetrace"
+          ]
+        ],
+        "sourceSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+        "expectedInstalledSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+        "installedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/TraceLensPanel.tsx",
+      "pass": true,
+      "detail": {
+        "source": "src/trace/TraceLensPanel.tsx",
+        "target": "src/nodetrace/TraceLensPanel.tsx",
+        "replacements": [
+          [
+            "../../vendor/nodegraph-live/",
+            "./vendor/nodegraph-live/"
+          ]
+        ],
+        "sourceSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+        "expectedInstalledSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+        "installedSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/TraceLensProvider.tsx",
+      "pass": true,
+      "detail": {
+        "source": "src/trace/TraceLensProvider.tsx",
+        "target": "src/nodetrace/TraceLensProvider.tsx",
+        "replacements": [
+          [
+            "../../vendor/nodegraph-live/",
+            "./vendor/nodegraph-live/"
+          ]
+        ],
+        "sourceSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+        "expectedInstalledSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+        "installedSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/trace.css",
+      "pass": true,
+      "detail": {
+        "source": "src/trace/trace.css",
+        "target": "src/nodetrace/trace.css",
+        "replacements": [
+          [
+            "../../vendor/nodegraph-live/",
+            "./vendor/nodegraph-live/"
+          ]
+        ],
+        "sourceSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+        "expectedInstalledSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+        "installedSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+        "exact": true
+      }
+    },
+    {
+      "name": "source to installed exact transformation src/nodetrace/types.ts",
+      "pass": true,
+      "detail": {
+        "source": "src/trace/types.ts",
+        "target": "src/nodetrace/types.ts",
+        "replacements": [
+          [
+            "../../vendor/nodegraph-live/",
+            "./vendor/nodegraph-live/"
+          ]
+        ],
+        "sourceSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+        "expectedInstalledSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+        "installedSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+        "exact": true
+      }
+    },
+    {
+      "name": "generated Vite entry matches successful installer receipt",
+      "pass": true
+    },
+    {
+      "name": "generated Vite entry has installed mode and owned nonnull root",
+      "pass": true
+    },
+    {
+      "name": "host file preserved by installer and current replay index.html",
+      "pass": true
+    },
+    {
+      "name": "host file preserved by installer and current replay src/main.tsx",
+      "pass": true
+    },
+    {
+      "name": "host file preserved by installer and current replay vite.config.ts",
+      "pass": true
+    },
+    {
+      "name": "host file preserved by installer and current replay tsconfig.json",
+      "pass": true
+    },
+    {
+      "name": "private port is not 4173",
+      "pass": true
+    },
+    {
+      "name": "installed source package lock wrapper scripts schema and complete build unchanged",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "captures": [],
+  "responses": [],
+  "consoleLog": [],
+  "commands": [],
+  "errors": [],
+  "failure": "TypeError: fetch failed\n    at node:internal/deps/undici/undici:14976:13\n    at async file:///C:/Users/hshum/.codex/worktrees/5dba/nodebench-ai/docs/plans/portfolio-recovery-20260904/E6c-nodetrace-installed-vite-entity.mjs:69:11",
+  "buildAndSourceDrift": [],
+  "protectedFileCount": 38,
+  "ok": false,
+  "no4173": true,
+  "primaryMutated": false,
+  "limits": [
+    "Independent existing Next production build, anonymous desktop Chromium with emulated widths.",
+    "Long-state variants are explicitly browser-routed copies of the actual installed fixture.",
+    "Recovery command updates only disposable consumer runtime state, DB and evaluation receipt; prior bytes are preserved.",
+    "Host production build, Next route and whole-product grades remain separate. No production or deployment claim.",
+    "Reviewer did not author the repair but was reused after thread-limit rejection of fresh reviewer spawn."
+  ]
+}

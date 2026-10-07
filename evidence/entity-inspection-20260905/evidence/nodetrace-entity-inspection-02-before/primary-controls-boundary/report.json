@@ -1,0 +1,4610 @@
+{
+  "attempt": "primary-synchronized-dependencies",
+  "priorFailure": "../report.json",
+  "priorFallback": "../replay/report.json",
+  "proof": "NODETRACE-ENTITY-INSPECTION-02-BEFORE",
+  "startedAt": "2026-09-05T03:32:21.022Z",
+  "finishedAt": "2026-09-05T03:32:47.347Z",
+  "primary": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "consumer": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+  "runtimeSource": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "renderingComparisons": [
+    {
+      "file": "index.html",
+      "primarySha256": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "runtimeSha256": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/DemoDashboard.tsx",
+      "primarySha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "runtimeSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/capture/codebaseCapture.mjs",
+      "primarySha256": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+      "runtimeSha256": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/demoNavigation.ts",
+      "primarySha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "runtimeSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/demoState.ts",
+      "primarySha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "runtimeSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/main.tsx",
+      "primarySha256": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "runtimeSha256": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/styles.css",
+      "primarySha256": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "runtimeSha256": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/LiveGraphRail.tsx",
+      "primarySha256": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "runtimeSha256": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/TraceLensPanel.tsx",
+      "primarySha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "runtimeSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/TraceLensProvider.tsx",
+      "primarySha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "runtimeSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/index.ts",
+      "primarySha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+      "runtimeSha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/trace.css",
+      "primarySha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "runtimeSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "src/trace/types.ts",
+      "primarySha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "runtimeSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "tsconfig.json",
+      "primarySha256": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "runtimeSha256": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/NodeGraph.d.ts",
+      "primarySha256": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+      "runtimeSha256": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/NodeGraph.js",
+      "primarySha256": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "runtimeSha256": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/README.md",
+      "primarySha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+      "runtimeSha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/graph-model.d.ts",
+      "primarySha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+      "runtimeSha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/graph-model.js",
+      "primarySha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "runtimeSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/index.d.ts",
+      "primarySha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+      "runtimeSha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/index.js",
+      "primarySha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "runtimeSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/react.d.ts",
+      "primarySha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+      "runtimeSha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/react.js",
+      "primarySha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "runtimeSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/session.d.ts",
+      "primarySha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+      "runtimeSha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vendor/nodegraph-live/session.js",
+      "primarySha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "runtimeSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    },
+    {
+      "file": "vite.config.ts",
+      "primarySha256": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "runtimeSha256": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "rawEqual": true,
+      "normalizedLFEqual": true
+    }
+  ],
+  "sourceBefore": {
+    "at": "2026-09-05T03:32:21.022Z",
+    "head": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+    "tree": "0d4a78203c20e80fc9bd9ea066bf25d8ae4ddf32",
+    "status": "M package-lock.json",
+    "sourceHashes": {
+      "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+      "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "scripts/lib/proof-server.mjs": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd",
+      "vite.config.ts": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "index.html": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "src/main.tsx": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "tsconfig.json": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+    },
+    "installedHashes": {
+      "src/nodetrace-demo/DemoDashboard.tsx": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "src/nodetrace-demo/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+      "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+      "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+      ".next/BUILD_ID": "f1f63887b4c79386e3600161de5db5fa216363c3c53daa6be20b5e27779e373a",
+      "docs/NODETRACE_INTEGRATION.md": "d598f90bdba8a905d4d7716d0b2b5476c5d6cdd9c408ac377ac8240b84468e1d",
+      "public/nodetrace-state.json": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "src/nodetrace/LiveGraphRail.tsx": "d30627db82d441556f3d5dba50cf7aa699156e90707f9ab31c9a2c3a1964a792",
+      "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587"
+    },
+    "runtimeSource": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+    "runtimeHashes": {
+      "index.html": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "src/capture/codebaseCapture.mjs": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/main.tsx": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "tsconfig.json": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "vendor/nodegraph-live/NodeGraph.d.ts": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+      "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+      "vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+      "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+      "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+      "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+      "vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "vite.config.ts": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+      "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "dist/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "dist/index.html": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "dist/assets/index-C5GRn8kk.css": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "dist/assets/index-Cl47s1zn.js": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1"
+    },
+    "renderingComparisons": [
+      {
+        "file": "index.html",
+        "primarySha256": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+        "runtimeSha256": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/DemoDashboard.tsx",
+        "primarySha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+        "runtimeSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/capture/codebaseCapture.mjs",
+        "primarySha256": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+        "runtimeSha256": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/demoNavigation.ts",
+        "primarySha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+        "runtimeSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/demoState.ts",
+        "primarySha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+        "runtimeSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/main.tsx",
+        "primarySha256": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+        "runtimeSha256": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/styles.css",
+        "primarySha256": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+        "runtimeSha256": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/trace/LiveGraphRail.tsx",
+        "primarySha256": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+        "runtimeSha256": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/trace/TraceLensPanel.tsx",
+        "primarySha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+        "runtimeSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/trace/TraceLensProvider.tsx",
+        "primarySha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+        "runtimeSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/trace/index.ts",
+        "primarySha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+        "runtimeSha256": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/trace/trace.css",
+        "primarySha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+        "runtimeSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "src/trace/types.ts",
+        "primarySha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+        "runtimeSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "tsconfig.json",
+        "primarySha256": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+        "runtimeSha256": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/NodeGraph.d.ts",
+        "primarySha256": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+        "runtimeSha256": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/NodeGraph.js",
+        "primarySha256": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+        "runtimeSha256": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/README.md",
+        "primarySha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+        "runtimeSha256": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/graph-model.d.ts",
+        "primarySha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+        "runtimeSha256": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/graph-model.js",
+        "primarySha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+        "runtimeSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/index.d.ts",
+        "primarySha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+        "runtimeSha256": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/index.js",
+        "primarySha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+        "runtimeSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/react.d.ts",
+        "primarySha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+        "runtimeSha256": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/react.js",
+        "primarySha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+        "runtimeSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/session.d.ts",
+        "primarySha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+        "runtimeSha256": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vendor/nodegraph-live/session.js",
+        "primarySha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+        "runtimeSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      },
+      {
+        "file": "vite.config.ts",
+        "primarySha256": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+        "runtimeSha256": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+        "rawEqual": true,
+        "normalizedLFEqual": true
+      }
+    ]
+  },
+  "sourceAfter": {
+    "at": "2026-09-05T03:32:47.347Z",
+    "head": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+    "tree": "0d4a78203c20e80fc9bd9ea066bf25d8ae4ddf32",
+    "status": "M package-lock.json",
+    "sourceHashes": {
+      "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+      "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "scripts/lib/proof-server.mjs": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd",
+      "vite.config.ts": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "index.html": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "src/main.tsx": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "tsconfig.json": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+    },
+    "installedHashes": {
+      "src/nodetrace-demo/DemoDashboard.tsx": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "src/nodetrace-demo/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/nodetrace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/nodetrace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/app/nodetrace/page.tsx": "e2a46dbaeb6a5a4e559f5f2c90dfc79c18c2b072451f106eab3dc1651a1587c0",
+      "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+      "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+      ".next/BUILD_ID": "f1f63887b4c79386e3600161de5db5fa216363c3c53daa6be20b5e27779e373a",
+      "docs/NODETRACE_INTEGRATION.md": "d598f90bdba8a905d4d7716d0b2b5476c5d6cdd9c408ac377ac8240b84468e1d",
+      "public/nodetrace-state.json": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "src/nodetrace/LiveGraphRail.tsx": "d30627db82d441556f3d5dba50cf7aa699156e90707f9ab31c9a2c3a1964a792",
+      "src/nodetrace/vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587"
+    },
+    "runtimeHashes": {
+      "index.html": "5f4ad33d8934bea7c1c41721ff2a859313a6e7bb21dc2c8e8a2aa0f83fa629f5",
+      "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "src/capture/codebaseCapture.mjs": "a9a3ec6af8064ea6ccc26631c8e6d398f14ae7f788960311da0908d613f2af26",
+      "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "src/main.tsx": "fd7b0aa8a310b576a024e736a255e01fcd100803d685243a875f8d28ace00041",
+      "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+      "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+      "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "src/trace/index.ts": "9277c182f2dd2d288cb11d1a0a7df5c32364c6e6ef8b5f3a5d0d12cba2b14853",
+      "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "src/trace/types.ts": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "tsconfig.json": "cab51abb574de0436d9be9774eb1db72ceabf8d49a13848923ec2123e15b907f",
+      "vendor/nodegraph-live/NodeGraph.d.ts": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+      "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+      "vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+      "vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+      "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+      "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+      "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+      "vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "vite.config.ts": "5736a5148ac166febfa3d0aea842359cd4b939fad357f66118e7a910dc79c54c",
+      "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+      "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+      "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+      "bin/nodetrace.mjs": "b740adbe98dbeac2269356bfbd3befa233ee99bca47f46d3c82e7c07755cdbc6",
+      ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d",
+      "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "dist/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "dist/index.html": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "dist/assets/index-C5GRn8kk.css": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "dist/assets/index-Cl47s1zn.js": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1"
+    }
+  },
+  "preservation": {
+    "runtimeHashesEqual": true,
+    "sourceHashesEqual": true,
+    "installedHashesEqual": true,
+    "headAndTreeEqual": true,
+    "statusEqual": true
+  },
+  "checks": [
+    {
+      "name": "source-320 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "source-320 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "source-320 complete natural keyboard focus cycle recorded",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "source-320 actual keyboard Fit activation recorded",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "source-320 pointer positive control reveals entity event readout",
+      "pass": true,
+      "detail": 12
+    },
+    {
+      "name": "source-320 readout preserves named kind and label",
+      "pass": true,
+      "detail": "tool: workSurface.trace"
+    },
+    {
+      "name": "source-320 displayed producing event IDs match actual fixture",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "actual": [
+          "coach-step-02-detail-tabs-trace"
+        ]
+      }
+    },
+    {
+      "name": "source-320 no uncaught application error",
+      "pass": true,
+      "detail": [
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b1a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        }
+      ]
+    },
+    {
+      "name": "source-390 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "source-390 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "source-390 complete natural keyboard focus cycle recorded",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "source-390 actual keyboard Fit activation recorded",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "source-390 pointer positive control reveals entity event readout",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "source-390 readout preserves named kind and label",
+      "pass": true,
+      "detail": "tool: workSurface.trace"
+    },
+    {
+      "name": "source-390 displayed producing event IDs match actual fixture",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "actual": [
+          "coach-step-02-detail-tabs-trace"
+        ]
+      }
+    },
+    {
+      "name": "source-390 no uncaught application error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "source-1440 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "source-1440 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "source-1440 complete natural keyboard focus cycle recorded",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "source-1440 actual keyboard Fit activation recorded",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "source-1440 pointer positive control reveals entity event readout",
+      "pass": true,
+      "detail": 14
+    },
+    {
+      "name": "source-1440 readout preserves named kind and label",
+      "pass": true,
+      "detail": "tool: workSurface.trace"
+    },
+    {
+      "name": "source-1440 displayed producing event IDs match actual fixture",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "actual": [
+          "coach-step-02-detail-tabs-trace"
+        ]
+      }
+    },
+    {
+      "name": "source-1440 no uncaught application error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed-320 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-320 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-320 complete natural keyboard focus cycle recorded",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "installed-320 actual keyboard Fit activation recorded",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "installed-320 pointer positive control reveals entity event readout",
+      "pass": true,
+      "detail": 9
+    },
+    {
+      "name": "installed-320 readout preserves named kind and label",
+      "pass": true,
+      "detail": "tool: workSurface.evidenceCarousel"
+    },
+    {
+      "name": "installed-320 displayed producing event IDs match actual fixture",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "actual": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ]
+      }
+    },
+    {
+      "name": "installed-320 no uncaught application error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed-390 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-390 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-390 complete natural keyboard focus cycle recorded",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "installed-390 actual keyboard Fit activation recorded",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "installed-390 pointer positive control reveals entity event readout",
+      "pass": true,
+      "detail": 10
+    },
+    {
+      "name": "installed-390 readout preserves named kind and label",
+      "pass": true,
+      "detail": "tool: workSurface.evidenceCarousel"
+    },
+    {
+      "name": "installed-390 displayed producing event IDs match actual fixture",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "actual": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ]
+      }
+    },
+    {
+      "name": "installed-390 no uncaught application error",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed-1440 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 state bytes match exact owning fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 complete natural keyboard focus cycle recorded",
+      "pass": true,
+      "detail": 5
+    },
+    {
+      "name": "installed-1440 actual keyboard Fit activation recorded",
+      "pass": true,
+      "detail": 1
+    },
+    {
+      "name": "installed-1440 pointer positive control reveals entity event readout",
+      "pass": true,
+      "detail": 10
+    },
+    {
+      "name": "installed-1440 readout preserves named kind and label",
+      "pass": true,
+      "detail": "tool: workSurface.evidenceCarousel"
+    },
+    {
+      "name": "installed-1440 displayed producing event IDs match actual fixture",
+      "pass": true,
+      "detail": {
+        "expected": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "actual": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ]
+      }
+    },
+    {
+      "name": "installed-1440 no uncaught application error",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "cells": [
+    {
+      "name": "source-320",
+      "browser": "149.0.7827.55",
+      "fixtureRoot": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+      "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "traceRecords": 6,
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "captures": [
+        {
+          "name": "source-320-populated",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1999
+          },
+          "overflow": 0,
+          "active": "<body>\n    <div id=\"root\"><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" strok",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.625,
+            "width": 230,
+            "height": 298,
+            "documentY": 2455.625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2424.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2429.15625
+              }
+            }
+          ],
+          "readout": null,
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 359,
+              "width": 266,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 2358
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 456.625,
+              "width": 264,
+              "height": 298,
+              "borderWidth": 3,
+              "documentY": 2455.625
+            }
+          ]
+        },
+        {
+          "name": "source-320-keyboard-fit",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1833
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 591.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 591.6875,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 622.625,
+            "width": 230,
+            "height": 298,
+            "documentY": 2455.625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 591.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2424.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 596.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2429.15625
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "source-320-after-keyboard",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1999
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.625,
+            "width": 230,
+            "height": 298,
+            "documentY": 2455.625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2424.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2429.15625
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "source-320-pointer-selected",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1999
+          },
+          "overflow": 0,
+          "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-wi",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.625,
+            "width": 230,
+            "height": 298,
+            "documentY": 2455.625
+          },
+          "result": {
+            "x": 27,
+            "y": 864.1875,
+            "width": 266,
+            "height": 39.328125,
+            "documentY": 2863.1875
+          },
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2424.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2429.15625
+              }
+            }
+          ],
+          "readout": "tool: workSurface.traceproduced by trace event:coach-step-02-detail-tabs-trace",
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 359,
+              "width": 266,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 2358
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 456.625,
+              "width": 264,
+              "height": 446.890625,
+              "borderWidth": 3,
+              "documentY": 2455.625
+            }
+          ]
+        }
+      ],
+      "console": [
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b1a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "cell": "source-320",
+          "type": "warning",
+          "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        }
+      ],
+      "painted": {
+        "nodes": 12,
+        "chromaticPixels": 562,
+        "points": [
+          {
+            "x": 161,
+            "y": 534.8624581939799
+          },
+          {
+            "x": 136.5,
+            "y": 536.8557692307693
+          },
+          {
+            "x": 210,
+            "y": 560.2771739130435
+          },
+          {
+            "x": 93.5,
+            "y": 574.7286789297659
+          },
+          {
+            "x": 146,
+            "y": 590.6751672240803
+          },
+          {
+            "x": 88.5,
+            "y": 598.6484113712374
+          },
+          {
+            "x": 230.5,
+            "y": 612.6015886287626
+          },
+          {
+            "x": 173,
+            "y": 620.5748327759197
+          },
+          {
+            "x": 225.5,
+            "y": 636.5213210702341
+          },
+          {
+            "x": 108.5,
+            "y": 650.4744983277592
+          },
+          {
+            "x": 181.5,
+            "y": 674.892558528428
+          },
+          {
+            "x": 157.5,
+            "y": 676.3875418060201
+          }
+        ]
+      },
+      "keyboard": {
+        "focusSequence": [
+          {
+            "press": 1,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 2,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(2)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Open NodeRoom's Trace tab from the artifact shellpassStart from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 3,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(3)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Use the real NodeRoom trace tabspassThe sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.Trace tab",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 4,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Seed the app from NodeRoom TraceRecord datapassNodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.Data model - Step",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 5,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(5)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Render code and UI evidence like NodeRoom step rowspassEach step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.Steps - Step 04 -",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 6,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(6)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Keep the latest flow tab behaviorpassNodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.Flow - Step 05 - src",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 7,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(7)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Match NodeRoom's dark trace surfacepassThe sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.Look and feel - Step 06 - s",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 8,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>button:nth-child(3)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 9,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>div:nth-child(4)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": "tab",
+            "testId": null,
+            "name": "Overview",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 10,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)",
+            "tag": "DIV",
+            "role": "tabpanel",
+            "testId": null,
+            "name": "src/ui/panels/Artifact.tsxHomenShum/noderoom - lines 1-15[data-noderoom-surface=\"workSurface.traceStrip\"]DOMRect x11 y904 w1056 h45",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 11,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "nodegraph-fit",
+            "name": "fit",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 12,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+            "tag": "INPUT",
+            "role": null,
+            "testId": null,
+            "name": "traversal(31)· local",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 13,
+            "path": "html:nth-child(1)>body:nth-child(2)",
+            "tag": "BODY",
+            "role": null,
+            "testId": null,
+            "name": "NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run c",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 14,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          }
+        ],
+        "cycleClosed": true,
+        "pressBudget": 100,
+        "fitEntered": 1,
+        "actualFitActivations": 1,
+        "readoutReached": false
+      },
+      "pointer": {
+        "name": "tool: workSurface.trace",
+        "events": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "expectedEvents": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "semanticMatch": true
+      },
+      "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+      "video": "source-320-keyboard-pointer.webm"
+    },
+    {
+      "name": "source-390",
+      "browser": "149.0.7827.55",
+      "fixtureRoot": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+      "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "traceRecords": 6,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "captures": [
+        {
+          "name": "source-390-populated",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1897
+          },
+          "overflow": 0,
+          "active": "<body>\n    <div id=\"root\"><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" strok",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 500.625,
+            "width": 300,
+            "height": 298,
+            "documentY": 2397.625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 469.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2366.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 474.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2371.15625
+              }
+            }
+          ],
+          "readout": null,
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 403,
+              "width": 336,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 2300
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 500.625,
+              "width": 334,
+              "height": 298,
+              "borderWidth": 3,
+              "documentY": 2397.625
+            }
+          ]
+        },
+        {
+          "name": "source-390-keyboard-fit",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1897
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 500.625,
+            "width": 300,
+            "height": 298,
+            "documentY": 2397.625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 469.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2366.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 474.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2371.15625
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "source-390-after-keyboard",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1897
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 500.625,
+            "width": 300,
+            "height": 298,
+            "documentY": 2397.625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 469.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2366.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 474.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2371.15625
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "source-390-pointer-selected",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1897
+          },
+          "overflow": 0,
+          "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-wi",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "controls": {
+            "x": 44,
+            "y": 469.6875,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 2366.6875
+          },
+          "canvas": {
+            "x": 45,
+            "y": 500.625,
+            "width": 300,
+            "height": 298,
+            "documentY": 2397.625
+          },
+          "result": {
+            "x": 27,
+            "y": 890.796875,
+            "width": 336,
+            "height": 39.328125,
+            "documentY": 2787.796875
+          },
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 469.6875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 2366.6875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 474.15625,
+                "width": 13,
+                "height": 13,
+                "documentY": 2371.15625
+              }
+            }
+          ],
+          "readout": "tool: workSurface.traceproduced by trace event:coach-step-02-detail-tabs-trace",
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 403,
+              "width": 336,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 2300
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 500.625,
+              "width": 334,
+              "height": 429.5,
+              "borderWidth": 3,
+              "documentY": 2397.625
+            }
+          ]
+        }
+      ],
+      "console": [],
+      "painted": {
+        "nodes": 14,
+        "chromaticPixels": 589,
+        "points": [
+          {
+            "x": 197,
+            "y": 544.9761705685619
+          },
+          {
+            "x": 161,
+            "y": 547.9661371237459
+          },
+          {
+            "x": 258.5,
+            "y": 570.8892140468228
+          },
+          {
+            "x": 280.5,
+            "y": 595.805602006689
+          },
+          {
+            "x": 97,
+            "y": 604.7755016722408
+          },
+          {
+            "x": 174.5,
+            "y": 627.6985785953177
+          },
+          {
+            "x": 90,
+            "y": 639.6584448160535
+          },
+          {
+            "x": 299,
+            "y": 659.5915551839465
+          },
+          {
+            "x": 214,
+            "y": 671.5514214046823
+          },
+          {
+            "x": 292,
+            "y": 695.4711538461538
+          },
+          {
+            "x": 108.5,
+            "y": 703.444397993311
+          },
+          {
+            "x": 130.5,
+            "y": 728.3607859531772
+          },
+          {
+            "x": 227.5,
+            "y": 751.2838628762541
+          },
+          {
+            "x": 191.5,
+            "y": 754.2738294314381
+          }
+        ]
+      },
+      "keyboard": {
+        "focusSequence": [
+          {
+            "press": 1,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 2,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(2)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Open NodeRoom's Trace tab from the artifact shellpassStart from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 3,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(3)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Use the real NodeRoom trace tabspassThe sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.Trace tab",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 4,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Seed the app from NodeRoom TraceRecord datapassNodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.Data model - Step",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 5,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(5)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Render code and UI evidence like NodeRoom step rowspassEach step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.Steps - Step 04 -",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 6,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(6)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Keep the latest flow tab behaviorpassNodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.Flow - Step 05 - src",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 7,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(7)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Match NodeRoom's dark trace surfacepassThe sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.Look and feel - Step 06 - s",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 8,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>button:nth-child(3)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 9,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>div:nth-child(4)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": "tab",
+            "testId": null,
+            "name": "Overview",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 10,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)",
+            "tag": "DIV",
+            "role": "tabpanel",
+            "testId": null,
+            "name": "src/ui/panels/Artifact.tsxHomenShum/noderoom - lines 1-15[data-noderoom-surface=\"workSurface.traceStrip\"]DOMRect x11 y904 w1056 h45",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 11,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "nodegraph-fit",
+            "name": "fit",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 12,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+            "tag": "INPUT",
+            "role": null,
+            "testId": null,
+            "name": "traversal(31)· local",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 13,
+            "path": "html:nth-child(1)>body:nth-child(2)",
+            "tag": "BODY",
+            "role": null,
+            "testId": null,
+            "name": "NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run c",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 14,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          }
+        ],
+        "cycleClosed": true,
+        "pressBudget": 100,
+        "fitEntered": 1,
+        "actualFitActivations": 1,
+        "readoutReached": false
+      },
+      "pointer": {
+        "name": "tool: workSurface.trace",
+        "events": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "expectedEvents": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "semanticMatch": true
+      },
+      "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+      "video": "source-390-keyboard-pointer.webm"
+    },
+    {
+      "name": "source-1440",
+      "browser": "149.0.7827.55",
+      "fixtureRoot": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+      "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "traceRecords": 6,
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "captures": [
+        {
+          "name": "source-1440-populated",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 942
+          },
+          "overflow": 0,
+          "active": "<body>\n    <div id=\"root\"><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" strok",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 575.828125,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1517.828125
+          },
+          "controls": {
+            "x": 54,
+            "y": 575.828125,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 1517.828125
+          },
+          "canvas": {
+            "x": 55,
+            "y": 606.765625,
+            "width": 1330,
+            "height": 298,
+            "documentY": 1548.765625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 575.828125,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1517.828125
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 580.296875,
+                "width": 13,
+                "height": 13,
+                "documentY": 1522.296875
+              }
+            }
+          ],
+          "readout": null,
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 37,
+              "y": 579.921875,
+              "width": 1366,
+              "height": 67.234375,
+              "borderWidth": 3,
+              "documentY": 1521.921875
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 38,
+              "y": 656.15625,
+              "width": 1364,
+              "height": 298,
+              "borderWidth": 3,
+              "documentY": 1598.15625
+            }
+          ]
+        },
+        {
+          "name": "source-1440-keyboard-fit",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 913
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 654.21875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1567.21875
+          },
+          "controls": {
+            "x": 54,
+            "y": 654.21875,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 1567.21875
+          },
+          "canvas": {
+            "x": 55,
+            "y": 685.15625,
+            "width": 1330,
+            "height": 298,
+            "documentY": 1598.15625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 654.21875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1567.21875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 658.6875,
+                "width": 13,
+                "height": 13,
+                "documentY": 1571.6875
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "source-1440-after-keyboard",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 991
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 576.21875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1567.21875
+          },
+          "controls": {
+            "x": 54,
+            "y": 576.21875,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 1567.21875
+          },
+          "canvas": {
+            "x": 55,
+            "y": 607.15625,
+            "width": 1330,
+            "height": 298,
+            "documentY": 1598.15625
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 576.21875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1567.21875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 580.6875,
+                "width": 13,
+                "height": 13,
+                "documentY": 1571.6875
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "source-1440-pointer-selected",
+          "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 991
+          },
+          "overflow": 0,
+          "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-wi",
+          "entityCount": "14",
+          "edgeCount": "31",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 576.21875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1567.21875
+          },
+          "controls": {
+            "x": 54,
+            "y": 576.21875,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 1567.21875
+          },
+          "canvas": {
+            "x": 55,
+            "y": 607.15625,
+            "width": 1330,
+            "height": 298,
+            "documentY": 1598.15625
+          },
+          "result": {
+            "x": 37,
+            "y": 997.328125,
+            "width": 1366,
+            "height": 39.328125,
+            "documentY": 1988.328125
+          },
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 576.21875,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1567.21875
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(31)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 580.6875,
+                "width": 13,
+                "height": 13,
+                "documentY": 1571.6875
+              }
+            }
+          ],
+          "readout": "tool: workSurface.traceproduced by trace event:coach-step-02-detail-tabs-trace",
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 37,
+              "y": 530.921875,
+              "width": 1366,
+              "height": 67.234375,
+              "borderWidth": 3,
+              "documentY": 1521.921875
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 38,
+              "y": 607.15625,
+              "width": 1364,
+              "height": 429.5,
+              "borderWidth": 3,
+              "documentY": 1598.15625
+            }
+          ]
+        }
+      ],
+      "console": [],
+      "painted": {
+        "nodes": 14,
+        "chromaticPixels": 589,
+        "points": [
+          {
+            "x": 722,
+            "y": 651.1167955685619
+          },
+          {
+            "x": 686,
+            "y": 654.1067621237459
+          },
+          {
+            "x": 783.5,
+            "y": 677.0298390468228
+          },
+          {
+            "x": 805.5,
+            "y": 701.946227006689
+          },
+          {
+            "x": 622,
+            "y": 710.9161266722408
+          },
+          {
+            "x": 699.5,
+            "y": 733.8392035953177
+          },
+          {
+            "x": 615,
+            "y": 745.7990698160535
+          },
+          {
+            "x": 824,
+            "y": 765.7321801839465
+          },
+          {
+            "x": 739,
+            "y": 777.6920464046823
+          },
+          {
+            "x": 816.5,
+            "y": 801.6117788461538
+          },
+          {
+            "x": 633.5,
+            "y": 809.585022993311
+          },
+          {
+            "x": 655.5,
+            "y": 834.5014109531772
+          },
+          {
+            "x": 752.5,
+            "y": 857.4244878762541
+          },
+          {
+            "x": 716.5,
+            "y": 860.4144544314381
+          }
+        ]
+      },
+      "keyboard": {
+        "focusSequence": [
+          {
+            "press": 1,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 2,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(2)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Open NodeRoom's Trace tab from the artifact shellpassStart from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 3,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(3)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Use the real NodeRoom trace tabspassThe sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.Trace tab",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 4,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Seed the app from NodeRoom TraceRecord datapassNodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.Data model - Step",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 5,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(5)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Render code and UI evidence like NodeRoom step rowspassEach step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.Steps - Step 04 -",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 6,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(6)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Keep the latest flow tab behaviorpassNodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.Flow - Step 05 - src",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 7,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(7)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "trace-record",
+            "name": "Match NodeRoom's dark trace surfacepassThe sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.Look and feel - Step 06 - s",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 8,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>button:nth-child(3)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 9,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>div:nth-child(4)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": "tab",
+            "testId": null,
+            "name": "Overview",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 10,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)",
+            "tag": "DIV",
+            "role": "tabpanel",
+            "testId": null,
+            "name": "src/ui/panels/Artifact.tsxHomenShum/noderoom - lines 1-15[data-noderoom-surface=\"workSurface.traceStrip\"]DOMRect x11 y904 w1056 h45",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 11,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "nodegraph-fit",
+            "name": "fit",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 12,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+            "tag": "INPUT",
+            "role": null,
+            "testId": null,
+            "name": "traversal(31)· local",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 13,
+            "path": "html:nth-child(1)>body:nth-child(2)",
+            "tag": "BODY",
+            "role": null,
+            "testId": null,
+            "name": "NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run c",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 14,
+            "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          }
+        ],
+        "cycleClosed": true,
+        "pressBudget": 100,
+        "fitEntered": 1,
+        "actualFitActivations": 1,
+        "readoutReached": false
+      },
+      "pointer": {
+        "name": "tool: workSurface.trace",
+        "events": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "expectedEvents": [
+          "coach-step-02-detail-tabs-trace"
+        ],
+        "semanticMatch": true
+      },
+      "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+      "video": "source-1440-keyboard-pointer.webm"
+    },
+    {
+      "name": "installed-320",
+      "browser": "149.0.7827.55",
+      "fixtureRoot": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "captures": [
+        {
+          "name": "installed-320-populated",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1014
+          },
+          "overflow": 0,
+          "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verifi",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1439.609375
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 1439.609375
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.546875,
+            "width": 230,
+            "height": 298,
+            "documentY": 1470.546875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.609375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1439.609375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.078125,
+                "width": 13,
+                "height": 13,
+                "documentY": 1444.078125
+              }
+            }
+          ],
+          "readout": null,
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 361.921875,
+              "width": 266,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 1375.921875
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 459.546875,
+              "width": 264,
+              "height": 298,
+              "borderWidth": 3,
+              "documentY": 1473.546875
+            }
+          ]
+        },
+        {
+          "name": "installed-320-keyboard-fit",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1017
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1442.609375
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 1442.609375
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.546875,
+            "width": 230,
+            "height": 298,
+            "documentY": 1473.546875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.609375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1442.609375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.078125,
+                "width": 13,
+                "height": 13,
+                "documentY": 1447.078125
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "installed-320-after-keyboard",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1017
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1442.609375
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 1442.609375
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.546875,
+            "width": 230,
+            "height": 298,
+            "documentY": 1473.546875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.609375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1442.609375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.078125,
+                "width": 13,
+                "height": 13,
+                "documentY": 1447.078125
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "installed-320-pointer-selected",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 320,
+            "height": 800
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 1017
+          },
+          "overflow": 0,
+          "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" ari",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1442.609375
+          },
+          "controls": {
+            "x": 44,
+            "y": 425.609375,
+            "width": 232,
+            "height": 21.9375,
+            "documentY": 1442.609375
+          },
+          "canvas": {
+            "x": 45,
+            "y": 456.546875,
+            "width": 230,
+            "height": 298,
+            "documentY": 1473.546875
+          },
+          "result": {
+            "x": 27,
+            "y": 881.5,
+            "width": 266,
+            "height": 74.65625,
+            "documentY": 1898.5
+          },
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 425.609375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1442.609375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 430.078125,
+                "width": 13,
+                "height": 13,
+                "documentY": 1447.078125
+              }
+            }
+          ],
+          "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002",
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 358.921875,
+              "width": 266,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 1375.921875
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 456.546875,
+              "width": 264,
+              "height": 499.609375,
+              "borderWidth": 3,
+              "documentY": 1473.546875
+            }
+          ]
+        }
+      ],
+      "console": [],
+      "painted": {
+        "nodes": 9,
+        "chromaticPixels": 418,
+        "points": [
+          {
+            "x": 120.5,
+            "y": 537.7742997491639
+          },
+          {
+            "x": 88.5,
+            "y": 539.7676107859531
+          },
+          {
+            "x": 222.5,
+            "y": 555.2157713210702
+          },
+          {
+            "x": 93,
+            "y": 571.1622596153846
+          },
+          {
+            "x": 163,
+            "y": 600.5635974080268
+          },
+          {
+            "x": 220.5,
+            "y": 648.40306229097
+          },
+          {
+            "x": 210,
+            "y": 653.8846676421405
+          },
+          {
+            "x": 117.5,
+            "y": 661.3595840301003
+          },
+          {
+            "x": 141,
+            "y": 673.3194502508361
+          }
+        ]
+      },
+      "keyboard": {
+        "focusSequence": [
+          {
+            "press": 1,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 2,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "nodegraph-fit",
+            "name": "fit",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 3,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+            "tag": "INPUT",
+            "role": null,
+            "testId": null,
+            "name": "traversal(15)· local",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 4,
+            "path": "html:nth-child(1)>body:nth-child(2)",
+            "tag": "BODY",
+            "role": null,
+            "testId": null,
+            "name": "NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleveri",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 5,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          }
+        ],
+        "cycleClosed": true,
+        "pressBudget": 100,
+        "fitEntered": 1,
+        "actualFitActivations": 1,
+        "readoutReached": false
+      },
+      "pointer": {
+        "name": "tool: workSurface.evidenceCarousel",
+        "events": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "expectedEvents": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "semanticMatch": true
+      },
+      "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+      "video": "installed-320-keyboard-pointer.webm"
+    },
+    {
+      "name": "installed-390",
+      "browser": "149.0.7827.55",
+      "fixtureRoot": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "captures": [
+        {
+          "name": "installed-390-populated",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 777
+          },
+          "overflow": 0,
+          "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verifi",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1247.53125
+          },
+          "controls": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 1247.53125
+          },
+          "canvas": {
+            "x": 45,
+            "y": 501.46875,
+            "width": 300,
+            "height": 298,
+            "documentY": 1278.46875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 470.53125,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1247.53125
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 475,
+                "width": 13,
+                "height": 13,
+                "documentY": 1252
+              }
+            }
+          ],
+          "readout": null,
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 405.84375,
+              "width": 336,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 1182.84375
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 503.46875,
+              "width": 334,
+              "height": 298,
+              "borderWidth": 3,
+              "documentY": 1280.46875
+            }
+          ]
+        },
+        {
+          "name": "installed-390-keyboard-fit",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 779
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1249.53125
+          },
+          "controls": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 1249.53125
+          },
+          "canvas": {
+            "x": 45,
+            "y": 501.46875,
+            "width": 300,
+            "height": 298,
+            "documentY": 1280.46875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 470.53125,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1249.53125
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 475,
+                "width": 13,
+                "height": 13,
+                "documentY": 1254
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "installed-390-after-keyboard",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 779
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1249.53125
+          },
+          "controls": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 1249.53125
+          },
+          "canvas": {
+            "x": 45,
+            "y": 501.46875,
+            "width": 300,
+            "height": 298,
+            "documentY": 1280.46875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 470.53125,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1249.53125
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 475,
+                "width": 13,
+                "height": 13,
+                "documentY": 1254
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "installed-390-pointer-selected",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 779
+          },
+          "overflow": 0,
+          "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" ari",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 1249.53125
+          },
+          "controls": {
+            "x": 44,
+            "y": 470.53125,
+            "width": 302,
+            "height": 21.9375,
+            "documentY": 1249.53125
+          },
+          "canvas": {
+            "x": 45,
+            "y": 501.46875,
+            "width": 300,
+            "height": 298,
+            "documentY": 1280.46875
+          },
+          "result": {
+            "x": 27,
+            "y": 891.640625,
+            "width": 336,
+            "height": 39.328125,
+            "documentY": 1670.640625
+          },
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 44,
+                "y": 470.53125,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 1249.53125
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 87.84375,
+                "y": 475,
+                "width": 13,
+                "height": 13,
+                "documentY": 1254
+              }
+            }
+          ],
+          "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002",
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 27,
+              "y": 403.84375,
+              "width": 336,
+              "height": 88.625,
+              "borderWidth": 3,
+              "documentY": 1182.84375
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 28,
+              "y": 501.46875,
+              "width": 334,
+              "height": 429.5,
+              "borderWidth": 3,
+              "documentY": 1280.46875
+            }
+          ]
+        }
+      ],
+      "console": [],
+      "painted": {
+        "nodes": 10,
+        "chromaticPixels": 414,
+        "points": [
+          {
+            "x": 136.5,
+            "y": 548.8098871237459
+          },
+          {
+            "x": 89,
+            "y": 551.7998536789298
+          },
+          {
+            "x": 276,
+            "y": 558.7764423076923
+          },
+          {
+            "x": 300.5,
+            "y": 589.6727633779265
+          },
+          {
+            "x": 95.5,
+            "y": 598.6426630434783
+          },
+          {
+            "x": 199.5,
+            "y": 642.4955058528428
+          },
+          {
+            "x": 298,
+            "y": 698.3082148829432
+          },
+          {
+            "x": 272.5,
+            "y": 728.7062081939799
+          },
+          {
+            "x": 131.5,
+            "y": 732.1945025083612
+          },
+          {
+            "x": 167,
+            "y": 750.1343018394649
+          }
+        ]
+      },
+      "keyboard": {
+        "focusSequence": [
+          {
+            "press": 1,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 2,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "nodegraph-fit",
+            "name": "fit",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 3,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+            "tag": "INPUT",
+            "role": null,
+            "testId": null,
+            "name": "traversal(15)· local",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 4,
+            "path": "html:nth-child(1)>body:nth-child(2)",
+            "tag": "BODY",
+            "role": null,
+            "testId": null,
+            "name": "NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleveri",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 5,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          }
+        ],
+        "cycleClosed": true,
+        "pressBudget": 100,
+        "fitEntered": 1,
+        "actualFitActivations": 1,
+        "readoutReached": false
+      },
+      "pointer": {
+        "name": "tool: workSurface.evidenceCarousel",
+        "events": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "expectedEvents": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "semanticMatch": true
+      },
+      "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+      "video": "installed-390-keyboard-pointer.webm"
+    },
+    {
+      "name": "installed-1440",
+      "browser": "149.0.7827.55",
+      "fixtureRoot": "D:\\ProjectRecovery\\nodetrace-installed-repair-consumer-bWuHqU\\temp\\nodetrace-next-e2e-aK4D95",
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "captures": [
+        {
+          "name": "installed-1440-populated",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 24
+          },
+          "overflow": 0,
+          "active": "<body><div hidden=\"\"><!--$--><!--/$--></div><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verifi",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 621.9375
+          },
+          "controls": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 621.9375
+          },
+          "canvas": {
+            "x": 55,
+            "y": 628.875,
+            "width": 1330,
+            "height": 298,
+            "documentY": 652.875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 597.9375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 621.9375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 602.40625,
+                "width": 13,
+                "height": 13,
+                "documentY": 626.40625
+              }
+            }
+          ],
+          "readout": null,
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 37,
+              "y": 554.640625,
+              "width": 1366,
+              "height": 67.234375,
+              "borderWidth": 3,
+              "documentY": 578.640625
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 38,
+              "y": 630.875,
+              "width": 1364,
+              "height": 298,
+              "borderWidth": 3,
+              "documentY": 654.875
+            }
+          ]
+        },
+        {
+          "name": "installed-1440-keyboard-fit",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 26
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 623.9375
+          },
+          "controls": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 623.9375
+          },
+          "canvas": {
+            "x": 55,
+            "y": 628.875,
+            "width": 1330,
+            "height": 298,
+            "documentY": 654.875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 597.9375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 623.9375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 602.40625,
+                "width": 13,
+                "height": 13,
+                "documentY": 628.40625
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "installed-1440-after-keyboard",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 26
+          },
+          "overflow": 0,
+          "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 623.9375
+          },
+          "controls": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 623.9375
+          },
+          "canvas": {
+            "x": 55,
+            "y": 628.875,
+            "width": 1330,
+            "height": 298,
+            "documentY": 654.875
+          },
+          "result": null,
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 597.9375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 623.9375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 602.40625,
+                "width": 13,
+                "height": 13,
+                "documentY": 628.40625
+              }
+            }
+          ],
+          "readout": null
+        },
+        {
+          "name": "installed-1440-pointer-selected",
+          "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "theme": "rgb(245, 247, 251)",
+          "scroll": {
+            "x": 0,
+            "y": 26
+          },
+          "overflow": 0,
+          "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run nodetrace:happy-path</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>SQLite sample</span><strong>verified</strong></div><div class=\"launchFlow\" ari",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "modal": false,
+          "fit": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 623.9375
+          },
+          "controls": {
+            "x": 54,
+            "y": 597.9375,
+            "width": 1332,
+            "height": 21.9375,
+            "documentY": 623.9375
+          },
+          "canvas": {
+            "x": 55,
+            "y": 628.875,
+            "width": 1330,
+            "height": 298,
+            "documentY": 654.875
+          },
+          "result": {
+            "x": 37,
+            "y": 1019.046875,
+            "width": 1366,
+            "height": 39.328125,
+            "documentY": 1045.046875
+          },
+          "graphControls": [
+            {
+              "tag": "BUTTON",
+              "role": null,
+              "name": "fit",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 54,
+                "y": 597.9375,
+                "width": 27.84375,
+                "height": 21.9375,
+                "documentY": 623.9375
+              }
+            },
+            {
+              "tag": "INPUT",
+              "role": null,
+              "name": "traversal(15)· local",
+              "tabIndex": 0,
+              "bounds": {
+                "x": 97.84375,
+                "y": 602.40625,
+                "width": 13,
+                "height": 13,
+                "documentY": 628.40625
+              }
+            }
+          ],
+          "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002",
+          "boundary": [
+            {
+              "id": "CHANGE A",
+              "title": "Entity controls and local graph heading",
+              "x": 37,
+              "y": 552.640625,
+              "width": 1366,
+              "height": 67.234375,
+              "borderWidth": 3,
+              "documentY": 578.640625
+            },
+            {
+              "id": "CHANGE B",
+              "title": "Graph and entity result",
+              "x": 38,
+              "y": 628.875,
+              "width": 1364,
+              "height": 429.5,
+              "borderWidth": 3,
+              "documentY": 654.875
+            }
+          ]
+        }
+      ],
+      "console": [],
+      "painted": {
+        "nodes": 10,
+        "chromaticPixels": 404,
+        "points": [
+          {
+            "x": 659,
+            "y": 673.2261705685619
+          },
+          {
+            "x": 609.5,
+            "y": 676.2161371237459
+          },
+          {
+            "x": 804,
+            "y": 683.1927257525084
+          },
+          {
+            "x": 829.5,
+            "y": 716.0823578595317
+          },
+          {
+            "x": 616.5,
+            "y": 725.0522575250836
+          },
+          {
+            "x": 725,
+            "y": 770.4000836120401
+          },
+          {
+            "x": 827,
+            "y": 828.7044314381271
+          },
+          {
+            "x": 800.5,
+            "y": 860.0990802675585
+          },
+          {
+            "x": 654.5,
+            "y": 864.0857023411371
+          },
+          {
+            "x": 691,
+            "y": 882.5238294314381
+          }
+        ]
+      },
+      "keyboard": {
+        "focusSequence": [
+          {
+            "press": 1,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 2,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": "nodegraph-fit",
+            "name": "fit",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 3,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+            "tag": "INPUT",
+            "role": null,
+            "testId": null,
+            "name": "traversal(15)· local",
+            "inGraph": true,
+            "readout": false
+          },
+          {
+            "press": 4,
+            "path": "html:nth-child(1)>body:nth-child(2)",
+            "tag": "BODY",
+            "role": null,
+            "testId": null,
+            "name": "NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleveri",
+            "inGraph": false,
+            "readout": false
+          },
+          {
+            "press": 5,
+            "path": "html:nth-child(1)>body:nth-child(2)>main:nth-child(2)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+            "tag": "BUTTON",
+            "role": null,
+            "testId": null,
+            "name": "Inspect trace",
+            "inGraph": false,
+            "readout": false
+          }
+        ],
+        "cycleClosed": true,
+        "pressBudget": 100,
+        "fitEntered": 1,
+        "actualFitActivations": 1,
+        "readoutReached": false
+      },
+      "pointer": {
+        "name": "tool: workSurface.evidenceCarousel",
+        "events": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "expectedEvents": [
+          "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+        ],
+        "semanticMatch": true
+      },
+      "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+      "video": "installed-1440-keyboard-pointer.webm"
+    }
+  ],
+  "network": [
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved",
+      "status": 200,
+      "bytes": 475,
+      "sha256": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/assets/index-C5GRn8kk.css",
+      "status": 200,
+      "bytes": 16213,
+      "sha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/assets/index-Cl47s1zn.js",
+      "status": 200,
+      "bytes": 510087,
+      "sha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ide.png",
+      "status": 200,
+      "bytes": 102076,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ui.png",
+      "status": 200,
+      "bytes": 3350,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved",
+      "status": 200,
+      "bytes": 475,
+      "sha256": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/assets/index-C5GRn8kk.css",
+      "status": 200,
+      "bytes": 16213,
+      "sha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/assets/index-Cl47s1zn.js",
+      "status": 200,
+      "bytes": 510087,
+      "sha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ide.png",
+      "error": "Error: response.body: Response body is unavailable for redirect responses"
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ui.png",
+      "error": "Error: response.body: Response body is unavailable for redirect responses"
+    },
+    {
+      "cell": "source-320",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved",
+      "status": 200,
+      "bytes": 475,
+      "sha256": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/assets/index-C5GRn8kk.css",
+      "status": 200,
+      "bytes": 16213,
+      "sha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/assets/index-Cl47s1zn.js",
+      "status": 200,
+      "bytes": 510087,
+      "sha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ide.png",
+      "status": 200,
+      "bytes": 102076,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ui.png",
+      "status": 200,
+      "bytes": 3350,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved",
+      "status": 200,
+      "bytes": 475,
+      "sha256": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/assets/index-C5GRn8kk.css",
+      "status": 200,
+      "bytes": 16213,
+      "sha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/assets/index-Cl47s1zn.js",
+      "status": 200,
+      "bytes": 510087,
+      "sha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ide.png",
+      "error": "Error: response.body: Response body is unavailable for redirect responses"
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ui.png",
+      "error": "Error: response.body: Response body is unavailable for redirect responses"
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-390",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved",
+      "status": 200,
+      "bytes": 475,
+      "sha256": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/assets/index-C5GRn8kk.css",
+      "status": 200,
+      "bytes": 16213,
+      "sha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/assets/index-Cl47s1zn.js",
+      "status": 200,
+      "bytes": 510087,
+      "sha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ide.png",
+      "status": 200,
+      "bytes": 102076,
+      "sha256": "ee46c4f7825ba349d9a8a7718ae158cf598566ea8bdf4a16f6971abe435a5579",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ui.png",
+      "status": 200,
+      "bytes": 3350,
+      "sha256": "a343ab5f1b0e8ae0c8adc408689446178091f00ecfaa5f5bc25692173413607f",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved",
+      "status": 200,
+      "bytes": 475,
+      "sha256": "9423825699e3f5dd3af9386a64484a988acd20008689ad24950f1000b844355c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/assets/index-C5GRn8kk.css",
+      "status": 200,
+      "bytes": 16213,
+      "sha256": "79f97677871d7d0b41414d1ba85a141a01bd9a26d7f647f367f01ec9e5a7362c",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/assets/index-Cl47s1zn.js",
+      "status": 200,
+      "bytes": 510087,
+      "sha256": "af108359063d90cde538a38e6c936e6ad8a45a887554c6f220180a63a11906b1",
+      "diskMatch": null
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ide.png",
+      "error": "Error: response.body: Response body is unavailable for redirect responses"
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/captures/coach-step-01-artifact-entry-ui.png",
+      "error": "Error: response.body: Response body is unavailable for redirect responses"
+    },
+    {
+      "cell": "source-1440",
+      "url": "http://127.0.0.1:4961/nodetrace-state.json",
+      "status": 200,
+      "bytes": 28453,
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard",
+      "status": 200,
+      "bytes": 5212,
+      "sha256": "b227c57d8bd71575d8e7b6ca352030f72ad3b9f07d298715b6354c00f448a71a",
+      "diskMatch": null
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "bytes": 13271,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "bytes": 4842,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "bytes": 555,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "bytes": 3487,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "bytes": 48897,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-320",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard",
+      "status": 200,
+      "bytes": 5212,
+      "sha256": "b227c57d8bd71575d8e7b6ca352030f72ad3b9f07d298715b6354c00f448a71a",
+      "diskMatch": null
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "bytes": 13271,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "bytes": 4842,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "bytes": 555,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "bytes": 3487,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "bytes": 48897,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-390",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard",
+      "status": 200,
+      "bytes": 5212,
+      "sha256": "b227c57d8bd71575d8e7b6ca352030f72ad3b9f07d298715b6354c00f448a71a",
+      "diskMatch": null
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200,
+      "bytes": 13271,
+      "sha256": "50be05ae538c6ab659d01aa2d0ef85a2fc0e67d2801a4d94189e07c795ccb553",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/webpack-5a5084729816eddb.js",
+      "status": 200,
+      "bytes": 4842,
+      "sha256": "f6d5a732b2b71eaf316bab248e6a801f9d9b28f3d04cbd47e06bd70638df1f3c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/main-app-abfac28fbe0b52ff.js",
+      "status": 200,
+      "bytes": 555,
+      "sha256": "9b77287c61ddc3c56905e74d327088120ba1b31626711ec212e4a9f112558371",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/app/nodetrace/page-e6e34fbf7b4e74bc.js",
+      "status": 200,
+      "bytes": 3487,
+      "sha256": "b647eeb8ab3f19d6e950cb9b1c401c06bd4f754932101b5c58f0f7ccde0008ef",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200,
+      "bytes": 173687,
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200,
+      "bytes": 173019,
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/css/1383a2b9f3290658.css",
+      "status": 200,
+      "bytes": 3277,
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/484.b01289716f1af293.js",
+      "status": 200,
+      "bytes": 48897,
+      "sha256": "9547a0b4cfe2f9f502529c60da66de63ff400ddcbf31a9bf64179ec267ca27b9",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200,
+      "bytes": 60188,
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200,
+      "bytes": 218164,
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    },
+    {
+      "cell": "installed-1440",
+      "url": "http://127.0.0.1:39642/nodetrace-state.json",
+      "status": 200,
+      "bytes": 3355,
+      "sha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "diskMatch": true
+    }
+  ],
+  "logs": [
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b1a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "errors": [],
+  "applicationVerdict": "P1_CONFIRMED_KEYBOARD_ENTITY_INSPECTION_UNAVAILABLE",
+  "captureCompleted": true,
+  "serverPorts": [
+    4961,
+    39642
+  ],
+  "no4173": true,
+  "sourceMutated": false,
+  "limitations": [
+    "Desktop Chromium keyboard/pointer with viewport emulation; not physical touch or screen reader.",
+    "The initial primary missing-dependency failure and retained-runtime replay remain separate. This replay serves the synchronized primary build and its actual six-event state after normal npm ci. Twelve prior proof hashes remain exact; the sole changed lock hash is explicitly pinned above. No application source was edited.",
+    "Installed uses the retained Next production build and unchanged local snapshot.",
+    "Only graph entity-inspection/boundary was replayed; no full suite or provider operation."
+  ]
+}

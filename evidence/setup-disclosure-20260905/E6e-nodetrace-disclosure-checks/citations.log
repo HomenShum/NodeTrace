@@ -1,0 +1,16 @@
+
+> @homenshum/nodetrace@0.1.0 citations:check
+> node scripts/citations-check.mjs
+
+nodetrace citations check: FAIL
+  - .tours/01-primary-user-flow.tour is out of date; re-run with --write
+  - .tours/03-debug-and-recovery.tour is out of date; re-run with --write
+  - docs/codebase/CONCERNS.md: `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) does not contain function InspectTraceButton — the line moved, or the symbol did
+  - docs/codebase/CONCERNS.md: `src/DemoDashboard.tsx:165` (`const sourceModeLabel =`) does not contain const sourceModeLabel = — the line moved, or the symbol did
+  - docs/START_HERE.md: `src/DemoDashboard.tsx:72`
+(`data-nodetrace-surface="shell.statusStrip"`) does not contain data-nodetrace-surface="shell.statusStrip" — the line moved, or the symbol did
+  - docs/START_HERE.md: `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) does not contain function InspectTraceButton — the line moved, or the symbol did
+  - docs/START_HERE.md: `src/DemoDashboard.tsx:142`
+(`<TraceLensPanel state={state} />`) does not contain <TraceLensPanel state={state} /> — the line moved, or the symbol did
+  - docs/START_HERE.md: `src/DemoDashboard.tsx:137`
+(`<LiveGraphRail traces={state.traces} />`) does not contain <LiveGraphRail traces={state.traces} /> — the line moved, or the symbol did

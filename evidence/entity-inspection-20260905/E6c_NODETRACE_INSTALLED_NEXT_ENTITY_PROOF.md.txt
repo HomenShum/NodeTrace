@@ -1,0 +1,24 @@
+# Installed Next.js entity inspection proof
+
+**Builder. Re your request:** make each repo ready for usage and developer/user handoff, including visual UI, responsiveness and interaction standards. The actual installed Next.js entity job now passes this bounded review.
+
+**Decision: VERIFIED WITH LIMITS.** All **1,855 checks** passed with **95 captures** across **320, 360, 390, 768, 1024, 1440 and 1920px**, using normal motion. The reviewer inspected screenshots at every width, full long identities, the refreshed event IDs, the native modal, and the actual 390px before boundary. Seven videos are retained; no separate motion grade is assigned.
+
+The consumer at `C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-BzFZOC` was produced by the successful ordinary installer/package check and served with its existing `next start` build. The initial actual snapshot has four trace events, ten entities and fifteen traversal edges. Explicit long-name variants keep those four event records while changing one record's names/ID; these yield twelve entities and eighteen traversal edges. Browser variants never overwrite the consumer's state file.
+
+| Verified user job | Evidence |
+|---|---|
+| Natural Tab reaches Entity; keyboard selects every actual identity and its exact producing event IDs. | All seven initial and long-name cells in the raw report. |
+| Pointer → native → clear → reselect keeps both identity panels consistent; visits describe the current events. | [768px pointer to keyboard](E6c-nodetrace-installed-next-entity-final/next-768-pointer-to-keyboard.png) |
+| Long names, Unicode and event IDs wrap inside both panels. | [320px long selection](E6c-nodetrace-installed-next-entity-final/next-320-long-long-entity-0.png) |
+| Fit/Entity have 44px targets and visible focus; current glyphs fit without collisions through pointer hover and pan/Fit. | Current-frame assertions and [1920px Fit](E6c-nodetrace-installed-next-entity-final/next-1920-fit.png) |
+| Installed guidance remains honest; modal activation/containment/closure and Back/Forward preserve host query/hash. | [390px modal](E6c-nodetrace-installed-next-entity-final/next-390-modal.png) |
+| The displayed `npm run nodetrace:happy-path` succeeds and the new event IDs appear after refresh. | [Refreshed actual state](E6c-nodetrace-installed-next-entity-final/next-390-refreshed-state.png) |
+
+Fifteen source→installed bindings match the exact documented import transformations, including the changed renderer, declarations, rail and styles. The Next wrapper matches the protected before consumer. All **128 protected source/package/lock/config/schema/script/build files** stayed byte-identical; **160 served Next asset bodies** matched retained files. The one authorized refresh changed disposable runtime state, SQLite data and its evaluation receipt. Their complete before/after bytes are preserved; the useful refreshed state remains in that consumer.
+
+There were no page errors or browser console errors. Four `ReadPixels` GPU-stall warnings are preserved. Two earlier raw harness failures remain visible: one assumed the modal's first trace rather than its selected surface; the other navigated to an identical hash URL and retained the old document instead of loading the routed variant. The final replay derives the modal expectation from the actual URL and begins each changed input in a fresh document. Neither correction changed application code or relaxed the entity checks.
+
+Reviewer context: this reviewer did not author the repair, but root reused the reviewer after a fresh spawn was rejected by the tool thread limit. This is independent of authorship, not a fresh context. Entity navigation uses natural keyboard focus; the separate modal exercise focuses its opener explicitly. This lane covers normal Chromium with emulated widths, not physical touch, a screen-reader participant, another engine, maximum graph scale, production or whole-product grades. Vite installer acceptance and final consolidated review remain separate.
+
+[Machine proof and artifact hashes](E6c_NODETRACE_INSTALLED_NEXT_ENTITY_PROOF.json) · [Raw checks, captures and network identities](E6c-nodetrace-installed-next-entity-final/report.json) · [Exact source→installed transformations](E6c-nodetrace-installed-next-entity-final/source-installed-bindings.json)

@@ -1,0 +1,75 @@
+{
+  "url": "http://127.0.0.1:4965/?disclosureProof=preserved&step=coach-step-02-detail-tabs&tab=raw#review",
+  "width": 320,
+  "height": 800,
+  "overflow": 0,
+  "open": false,
+  "scrollY": 634,
+  "active": "BUTTON",
+  "regions": {
+    ".showcase": {
+      "x": 12,
+      "y": -622,
+      "width": 296,
+      "height": 384.71875,
+      "documentY": 12
+    },
+    ".showcaseCopy h1": {
+      "x": 29,
+      "y": -582.0625,
+      "width": 262,
+      "height": 109.40625,
+      "documentY": 51.9375
+    },
+    ".traceSetup > summary": {
+      "x": 29,
+      "y": -301.46875,
+      "width": 262,
+      "height": 47.1875,
+      "documentY": 332.53125
+    },
+    ".showcaseActions": {
+      "x": 29,
+      "y": -242.28125,
+      "width": 262,
+      "height": 187.5625,
+      "documentY": 391.71875
+    },
+    ".launchCard": {
+      "x": 29,
+      "y": -38.71875,
+      "width": 262,
+      "height": 501.109375,
+      "documentY": 595.28125
+    },
+    ".coachPanel": {
+      "x": 12,
+      "y": -221.28125,
+      "width": 296,
+      "height": 1207.171875,
+      "documentY": 412.71875
+    },
+    ".coachList": {
+      "x": 13,
+      "y": -220.28125,
+      "width": 294,
+      "height": 300,
+      "documentY": 413.71875
+    },
+    ".coachDetail": {
+      "x": 13,
+      "y": 79.71875,
+      "width": 294,
+      "height": 905.171875,
+      "documentY": 713.71875
+    },
+    ".coachEmpty": null,
+    ".liveGraphRail": {
+      "x": 12,
+      "y": 1003.890625,
+      "width": 296,
+      "height": 720.90625,
+      "documentY": 1637.890625
+    }
+  }
+}

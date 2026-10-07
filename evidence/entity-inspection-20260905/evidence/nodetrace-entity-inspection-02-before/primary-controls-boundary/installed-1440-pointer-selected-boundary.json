@@ -1,0 +1,29 @@
+{
+  "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "regions": [
+    {
+      "id": "CHANGE A",
+      "title": "Entity controls and local graph heading",
+      "x": 37,
+      "y": 552.640625,
+      "width": 1366,
+      "height": 67.234375,
+      "borderWidth": 3,
+      "documentY": 578.640625
+    },
+    {
+      "id": "CHANGE B",
+      "title": "Graph and entity result",
+      "x": 38,
+      "y": 628.875,
+      "width": 1364,
+      "height": 429.5,
+      "borderWidth": 3,
+      "documentY": 654.875
+    }
+  ]
+}

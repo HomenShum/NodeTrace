@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-08-13T19:07:06.194Z",
+  "session": {
+    "id": "trace-coach-noderoom-sqlite",
+    "title": "Trace Coach: NodeRoom codebase trace",
+    "status": "verified",
+    "summary": "A local Trace tab sample sourced from the latest full NodeRoom checkout, using real NodeRoom trace records, detail tabs, steps, flow, screenshot boxes, and raw JSON."
+  },
+  "builderCapable": false,
+  "surfaces": [],
+  "proofs": [],
+  "traces": [],
+  "codeOwnership": []
+}

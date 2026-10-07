@@ -1,0 +1,431 @@
+{
+  "proof": "NODETRACE-ENTITY-FINAL-INDEPENDENT-JUDGE",
+  "at": "2026-09-05T05:40:59.156956+00:00",
+  "mode": "Builder",
+  "requestTrace": "Each individual repo ready for developer/user handoff, including visual UI, responsiveness, interaction standards and gradings. This approves only the bounded NodeTrace entity repair.",
+  "verdict": "APPROVED_SCOPED_WITH_LIMITS",
+  "candidate": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace",
+  "baseCommit": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+  "stagedTree": "c77fe64fe38e668bffdeca7b3042c4187bf7c132",
+  "sourceHashes": {
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "scripts/lib/entity-inspection-proof.mjs": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/ui-readiness.mjs": "31b233e37e6a149b3657d19620d59733b69afd587983f9af9c07f7e3ba43c9df",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+  },
+  "portableManifestSha256": "ea28ec048f32e4da24506c481644506402e499216d42d10b1f9950fb8da543ce",
+  "portableArtifactCount": 2797,
+  "portableArtifactBytes": 251618199,
+  "stagedChangedPathCount": 2808,
+  "authoredPathCount": 10,
+  "reviewerIndependence": "Independent of application authorship. Same reviewer context reused after fresh-agent capacity rejection; this reviewer authored independent proof scripts, not candidate source.",
+  "checks": [
+    {
+      "name": "HEAD remains exact reviewed base",
+      "pass": true
+    },
+    {
+      "name": "index equals exact frozen tree",
+      "pass": true
+    },
+    {
+      "name": "authored path scope exact",
+      "pass": true,
+      "detail": [
+        "HANDOFF.md",
+        "bin/nodetrace.mjs",
+        "docs/GRAPH_INTEGRATION.md",
+        "package-lock.json",
+        "scripts/lib/entity-inspection-proof.mjs",
+        "scripts/ui-readiness.mjs",
+        "src/styles.css",
+        "src/trace/LiveGraphRail.tsx",
+        "vendor/nodegraph-live/NodeGraph.d.ts",
+        "vendor/nodegraph-live/NodeGraph.js"
+      ]
+    },
+    {
+      "name": "staged path count matches concrete receipt",
+      "pass": true
+    },
+    {
+      "name": "no unstaged tracked paths",
+      "pass": true
+    },
+    {
+      "name": "no untracked nonignored paths",
+      "pass": true
+    },
+    {
+      "name": "full index digest",
+      "pass": true
+    },
+    {
+      "name": "changed index digest",
+      "pass": true
+    },
+    {
+      "name": "all staged blobs equal current bytes and receipt hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "manifest exact advertised hash",
+      "pass": true
+    },
+    {
+      "name": "all portable artifact bytes and hashes exact",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "portable artifact count and total bytes exact",
+      "pass": true
+    },
+    {
+      "name": "no missing or additional portable paths",
+      "pass": true
+    },
+    {
+      "name": "all 16 source bindings exact and equal manifest",
+      "pass": true
+    },
+    {
+      "name": "literal NUL inherited same entity-key context",
+      "pass": true
+    },
+    {
+      "name": "graph model no semantic delta",
+      "pass": true
+    },
+    {
+      "name": "six lock entries all existing dev packages",
+      "pass": true,
+      "detail": [
+        "node_modules/baseline-browser-mapping",
+        "node_modules/browserslist",
+        "node_modules/caniuse-lite",
+        "node_modules/electron-to-chromium",
+        "node_modules/node-releases",
+        "node_modules/update-browserslist-db"
+      ]
+    },
+    {
+      "name": "actual cross-run source/index/installed/original-input snapshots equal",
+      "pass": true
+    },
+    {
+      "name": "first full failure preserved and retry honest",
+      "pass": true
+    },
+    {
+      "name": "retry did not use conditional wait",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture source-320",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture source-390",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture source-1440",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture installed-320",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture installed-390",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture installed-1440",
+      "pass": true
+    },
+    {
+      "name": "12 current frames positive, inside canvas, collision free and no page overflow",
+      "pass": true
+    },
+    {
+      "name": "36 saved canonical PNGs independently recounted; exact winning buffers",
+      "pass": true
+    },
+    {
+      "name": "all eight whole-product grades remain null",
+      "pass": true
+    },
+    {
+      "name": "122 captured and restored generated-file bindings exact",
+      "pass": true
+    },
+    {
+      "name": "portable original full audit includes development dependency counts and zero findings",
+      "pass": true
+    },
+    {
+      "name": "source and stage remained frozen throughout read-only validation",
+      "pass": true
+    }
+  ],
+  "claims": [
+    {
+      "claim": "Native and pointer selection show the same current identity, producing events and reconciled graph details.",
+      "verdict": "VERIFIED_BOUNDED",
+      "evidence": [
+        "E6c-nodetrace-independent-owner-knockout/report.json",
+        "E6c-nodetrace-canonical-owner-knockout-02/report.json",
+        "E6c-nodetrace-owner-message-exact/report.json"
+      ],
+      "independentChecks": 127,
+      "supplementCases": 5
+    },
+    {
+      "claim": "The exact frozen nodeMessage function preserves the mounted graph owner for duplicate/dangling edges, filters and missing IDs.",
+      "verdict": "FRESH_EXACT_SOURCE_REPLAY_PASS",
+      "evidence": [
+        "E6c-nodetrace-final-stage-owner-message/report.json"
+      ],
+      "independentCases": 5
+    },
+    {
+      "claim": "Final current-source seven-width journey passes.",
+      "verdict": "RAW_WORKER_EVIDENCE_AND_BINDINGS_VERIFIED",
+      "checks": 3368,
+      "captures": 128,
+      "evidence": [
+        "E6c-nodetrace-entity-canonical-source/receipt.json"
+      ],
+      "replayDisclosure": "Root ran the final full source matrix; this judge independently replayed targeted ownership failures and both installed matrices, and verified final source byte bindings. No redundant final full-source replay."
+    },
+    {
+      "claim": "Retained normally installed Next consumer works with the final renderer after an explicit one-file refresh and ordinary build.",
+      "verdict": "INDEPENDENT_ACTUAL_BROWSER_PASS",
+      "checks": 1855,
+      "captures": 95,
+      "widths": [
+        320,
+        360,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "protectedFiles": 133,
+      "evidence": [
+        "E6c_NODETRACE_INSTALLED_NEXT_ENTITY_OWNER_PROOF.json"
+      ],
+      "scope": "Local production-mode built Next server; actual displayed refresh command; not deployed."
+    },
+    {
+      "claim": "Retained normally installed Vite consumer works with the final renderer after an explicit one-file refresh and ordinary build.",
+      "verdict": "INDEPENDENT_ACTUAL_BROWSER_PASS",
+      "checks": 1874,
+      "captures": 95,
+      "widths": [
+        320,
+        360,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "protectedFiles": 38,
+      "evidence": [
+        "E6c_NODETRACE_INSTALLED_VITE_ENTITY_OWNER_PROOF.json"
+      ],
+      "scope": "Documented development /nodetrace.html route; optional demo HTML is not automatically included in the production host build."
+    },
+    {
+      "claim": "Six matched cells retain original fixtures and exact positive saved raster evidence.",
+      "verdict": "VERIFIED_WITH_DISCLOSED_RETRY",
+      "cells": 6,
+      "captures": 12,
+      "canonicalPngs": 36,
+      "evidence": [
+        "E6c_NODETRACE_MATCHED_CANONICAL_VISUAL.json",
+        "E6c_NODETRACE_FINAL_JUDGE_BINDINGS.json"
+      ],
+      "disclosure": "First full run remains failed at installed 1440 overview. Second diagnostic attempt failed due to UTF-8/cp1252 probe text. Retry02 passed without conditional wait. Actual source/index/installed/original-input snapshots equal across runs. Timing cause unproven."
+    },
+    {
+      "claim": "Full normal package check passes and known generated bytes were retained/restored.",
+      "verdict": "RAW_COMMAND_AND_CUSTODY_VERIFIED",
+      "exitCode": 0,
+      "generatedCaptureRestoreBindings": 122,
+      "evidence": [
+        "E6c-nodetrace-canonical-final-package-check.log",
+        "E6c-nodetrace-canonical-final-package-check.json"
+      ],
+      "disclosure": "Worker ran full check; judge inspected raw unchanged command sequence and exact captured/restored bytes. Fresh transient Next smoke differs from retained consumer browser lanes."
+    },
+    {
+      "claim": "Compatible development-tool lock closes observed advisories.",
+      "verdict": "VERIFIED_RECORDED_AUDIT",
+      "changedLockEntries": 6,
+      "allExistingDev": true,
+      "auditTotal": 0,
+      "evidence": [
+        "E6c-nodetrace-independent-lock-audit.json"
+      ],
+      "disclosure": "Recorded full audit includes development dependencies; package check separately audits omit=dev. Vulnerability databases can change."
+    },
+    {
+      "claim": "Every repo is ready for every developer/user, or all eight product grades pass.",
+      "verdict": "NOT_ESTABLISHED",
+      "grades": {
+        "visual": null,
+        "design": null,
+        "responsive": null,
+        "interaction": null,
+        "accessibility": null,
+        "performance": null,
+        "usage": null,
+        "alignment": null
+      }
+    }
+  ],
+  "causalClosure": [
+    {
+      "failure": "Glyph anchors fit but actual labels/hover text clipped or overlapped.",
+      "cause": "Default drawing did not bound measured glyph rectangles.",
+      "repair": "One current-frame placement owner measures glyphs, chooses adjacent bounds, truncates by code points or hides labels; native selector exposes full identity.",
+      "falsification": "Positive current canvas labels plus long identity hover/pan/Fit; clearing actual canvases invalidates observations and requires new paint."
+    },
+    {
+      "failure": "Pointer and native details disagreed; same-ID new events retained old visits; removed hovered entity dimmed remaining graph.",
+      "cause": "Independent selection snapshots and hover state survived input replacement.",
+      "repair": "Controlled ID from LiveGraphRail, current snapshot lookup, before-paint patch/revision, hover reset on inputs.",
+      "falsification": "Actual prop replacement/removal, pointer→native→clear→reselect, event growth visits1→2, empty/recovery and positive remaining labels."
+    },
+    {
+      "failure": "Interim raw-input detail duplicated reversed edges/dangling endpoints absent from canvas; omitted visits changed retained7 to0.",
+      "cause": "Raw arrays and optional visits bypassed existing graph reconciliation.",
+      "repair": "Use actual patched graph for nodeMessage and visits; preserve filters by actual type signature; no second normalizer or model-policy change.",
+      "falsification": "Generic actual pointer callback/detail baseline vs candidate, graph count42/visits7, filter-off metadata update and next current receipt; omitted map retains7 in both baseline and final."
+    },
+    {
+      "failure": "Fresh strict Vite React host rejected generated createRoot argument as possibly null.",
+      "cause": "Installer-owned root markup was not expressed in generated strict TS entry.",
+      "repair": "One nonnull assertion in Vite generated entry; normal install and host build completed.",
+      "falsification": "Actual strict normally installed Vite host build and documented dev route."
+    }
+  ],
+  "viewedMatchedPairs": [
+    {
+      "lane": "source",
+      "width": 320,
+      "before": "evidence/nodetrace-entity-inspection-02-before/primary-controls-boundary/source-320-pointer-selected-change-boundary.png",
+      "beforeSha256": "b678d18ab0f4a7bbce11084eb93140f93f148cfabd48f14a3a60d24eba33e335",
+      "after": "E6c-nodetrace-matched-canonical-visual/source-320-native-selected-change-boundary.png",
+      "afterSha256": "851ccc9ae6e7d2f09bbfc5086354aee4cd4a8887d4862320876c118f1416b239",
+      "actuallyViewed": true
+    },
+    {
+      "lane": "source",
+      "width": 390,
+      "before": "evidence/nodetrace-entity-inspection-02-before/primary-controls-boundary/source-390-pointer-selected-change-boundary.png",
+      "beforeSha256": "a69c9dc01d297f023a1acc776c7490d15eeaa656f21a805cba00e0f767369ac6",
+      "after": "E6c-nodetrace-matched-canonical-visual/source-390-native-selected-change-boundary.png",
+      "afterSha256": "3ac0e2b1469adbc684c3d7709d922f68cc88527af169019acb1219009b5341ba",
+      "actuallyViewed": true
+    },
+    {
+      "lane": "source",
+      "width": 1440,
+      "before": "evidence/nodetrace-entity-inspection-02-before/primary-controls-boundary/source-1440-pointer-selected-change-boundary.png",
+      "beforeSha256": "e833a6df1c1148a6039e38c07e642445246c2d3f6009e18b402c4124a5843712",
+      "after": "E6c-nodetrace-matched-canonical-visual/source-1440-native-selected-change-boundary.png",
+      "afterSha256": "83368fe14f21374eb181a53eb35e5b46e94fe2002653b8dec09b3c7549c1d587",
+      "actuallyViewed": true
+    },
+    {
+      "lane": "installed",
+      "width": 320,
+      "before": "evidence/nodetrace-entity-inspection-02-before/primary-controls-boundary/installed-320-pointer-selected-change-boundary.png",
+      "beforeSha256": "e48c77b87242a29f8f5e93a3c2fe16505323ed98d0a3e621ac8a672f8953b164",
+      "after": "E6c-nodetrace-matched-canonical-visual/installed-320-native-selected-change-boundary.png",
+      "afterSha256": "d05608dfff6d35fc91046e3d5bfebf81cdccc75c21996af85b16a9ea25077b98",
+      "actuallyViewed": true
+    },
+    {
+      "lane": "installed",
+      "width": 390,
+      "before": "evidence/nodetrace-entity-inspection-02-before/primary-controls-boundary/installed-390-pointer-selected-change-boundary.png",
+      "beforeSha256": "60d22c6330567b8ddd9537be4aeffb389c4e0a826afe813a423bdb209d81f826",
+      "after": "E6c-nodetrace-matched-canonical-visual/installed-390-native-selected-change-boundary.png",
+      "afterSha256": "1933f6b814c0da658d8fea00e9ab0f089969d6ebcdd8c1c78a047ba8d4c24d80",
+      "actuallyViewed": true
+    },
+    {
+      "lane": "installed",
+      "width": 1440,
+      "before": "evidence/nodetrace-entity-inspection-02-before/primary-controls-boundary/installed-1440-pointer-selected-change-boundary.png",
+      "beforeSha256": "8630d0b9678c7fb6cab618c4463db71e4837c447fea3180c40d9ec75b9ed592b",
+      "after": "E6c-nodetrace-matched-canonical-visual-retry-02/installed-1440-native-selected-change-boundary.png",
+      "afterSha256": "f1b5c1daa38fb08c9e250ef04f6e2858b0c312c85b1c000e177277b4ef6abe86",
+      "actuallyViewed": true
+    }
+  ],
+  "unresolvedImplementationFindings": [],
+  "retainedFailures": [
+    "E6c_NODETRACE_ENTITY_INTERIM_FINDINGS.json",
+    "E6c_NODETRACE_ENTITY_CANONICAL_EDGE_FINDING.json",
+    "E6c-nodetrace-canonical-owner-knockout-01/report.json",
+    "E6c-nodetrace-matched-canonical-visual/report.json",
+    "E6c-nodetrace-matched-canonical-visual-retry-01/report.json"
+  ],
+  "fraudChecks": {
+    "realSourceAndInstalledTransforms": true,
+    "noStaleGeneratedModulesForIndependentReplay": true,
+    "actualPointerKeyboardAndDisplayedCommand": true,
+    "actualCurrentCanvasClearKnockout": true,
+    "savedPixelsIndependentlyRecounted": 36,
+    "failedRunsNotRelabeled": true,
+    "countsNotGrades": true,
+    "noSecondFreshInstallClaim": true,
+    "noViteProductionDemoClaim": true,
+    "noWholeProductOrDeploymentClaim": true
+  },
+  "residuals": [
+    "The first desktop current-frame timing failure is retained; its exact cause is not established. No first-frame reliability or performance grade is granted.",
+    "All eight grades remain null. Physical touch, screen reader, other browser engines, fresh human usability and changed-renderer performance are unrun.",
+    "Representative bounded fixtures do not certify every input up to the 2000-trace/1MiB/100k-string admission limits or arbitrary graph sizes.",
+    "Installed Next is a local built server; Vite proof is the documented dev route. No deployment or shared-integration success is asserted.",
+    "Portable raw reports preserve original absolute paths as provenance; the current source harness is the portable launcher, not every historical replay script.",
+    "Known 61-file generated custody is verified; clean tracked/index state does not certify all ignored operator runtime data."
+  ],
+  "productGrades": {
+    "visual": null,
+    "design": null,
+    "responsive": null,
+    "interaction": null,
+    "accessibility": null,
+    "performance": null,
+    "usage": null,
+    "alignment": null
+  },
+  "nextAction": "Root may commit and submit this exact scoped candidate through existing shared integration. Preserve independent judge externally or add it as a separately bound metadata-only supplement; do not change a self-hashed manifest silently.",
+  "noCandidateSourceIndexRefEdits": true,
+  "supportingReportSha256": {
+    "E6c_NODETRACE_FINAL_JUDGE_BINDINGS.json": "f8f1a5cfac2c0fcc163a36b89738fe2cdec9925f4fb4eb2b8256cba680d05195",
+    "E6c-nodetrace-final-stage-owner-message/report.json": "a85de90bc4d3417a71788b357ca98a7b4010bc7d6d560075fb9505f23d3af4f0"
+  }
+}

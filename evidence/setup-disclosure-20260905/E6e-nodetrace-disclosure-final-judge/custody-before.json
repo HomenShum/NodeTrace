@@ -1,0 +1,57 @@
+{
+  "git": {
+    "head": "594c988881d17b759ff6455539dc3b293e1a4ee5",
+    "tree": "7995a3a56bca8363994891997dfcc8256c8cbaac",
+    "index": "feba008111856aad19ce8dad21c63e459e2d3c97b25e3bb9f48f3b259d783944",
+    "refs": "fb396d1f87462f2924f616bb36084776ed7f2c2ad724887c9bfcf65ac9340804",
+    "status": " M .tours/01-primary-user-flow.tour\u0000 M .tours/03-debug-and-recovery.tour\u0000 M docs/START_HERE.md\u0000 M docs/codebase/CONCERNS.md\u0000 M src/DemoDashboard.tsx\u0000 M src/styles.css\u0000?? scripts/setup-disclosure-proof.mjs\u0000"
+  },
+  "candidateChecks": [
+    {
+      "path": "src/DemoDashboard.tsx",
+      "exact": true
+    },
+    {
+      "path": "src/styles.css",
+      "exact": true
+    },
+    {
+      "path": "scripts/setup-disclosure-proof.mjs",
+      "exact": true
+    },
+    {
+      "path": ".tours/01-primary-user-flow.tour",
+      "exact": true
+    },
+    {
+      "path": ".tours/03-debug-and-recovery.tour",
+      "exact": true
+    },
+    {
+      "path": "docs/START_HERE.md",
+      "exact": true
+    },
+    {
+      "path": "docs/codebase/CONCERNS.md",
+      "exact": true
+    }
+  ],
+  "metadataEncodingFinding": [
+    {
+      "path": "docs/START_HERE.md",
+      "baselineEmDash": 62,
+      "currentEmDash": 0,
+      "currentMojibakeTriplet": 62,
+      "rawSha256": "b2569422a70cd3182eca608dea8a4b026cacd3b9ed93e36e2b761720ee5bb1a4",
+      "baseSha256": "4862ab8a090a4ca21ac3921cb2b1a2fa85b2aa9e7edc87550571a13326bb26dd"
+    },
+    {
+      "path": "docs/codebase/CONCERNS.md",
+      "baselineEmDash": 8,
+      "currentEmDash": 0,
+      "currentMojibakeTriplet": 8,
+      "rawSha256": "fb0e398ef2c3be32be39d8159a71ad3150a6609be925247e1f4195379ee3ef05",
+      "baseSha256": "c6968d51b0d7b332e2c52214db0a321afdc36368a50d0cfb7540b5f3b57e90a5"
+    }
+  ]
+}

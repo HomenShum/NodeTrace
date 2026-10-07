@@ -1,0 +1,576 @@
+{
+  "name": "source-320",
+  "browser": "149.0.7827.55",
+  "fixtureRoot": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "fixtureSha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+  "traceRecords": 6,
+  "viewport": {
+    "width": 320,
+    "height": 800
+  },
+  "captures": [
+    {
+      "name": "source-320-populated",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 1999
+      },
+      "overflow": 0,
+      "active": "<body>\n    <div id=\"root\"><main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" strok",
+      "entityCount": "14",
+      "edgeCount": "31",
+      "modal": false,
+      "fit": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "controls": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 232,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "canvas": {
+        "x": 45,
+        "y": 456.625,
+        "width": 230,
+        "height": 298,
+        "documentY": 2455.625
+      },
+      "result": null,
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(31)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 87.84375,
+            "y": 430.15625,
+            "width": 13,
+            "height": 13,
+            "documentY": 2429.15625
+          }
+        }
+      ],
+      "readout": null,
+      "boundary": [
+        {
+          "id": "CHANGE A",
+          "title": "Entity controls and local graph heading",
+          "x": 27,
+          "y": 359,
+          "width": 266,
+          "height": 88.625,
+          "borderWidth": 3,
+          "documentY": 2358
+        },
+        {
+          "id": "CHANGE B",
+          "title": "Graph and entity result",
+          "x": 28,
+          "y": 456.625,
+          "width": 264,
+          "height": 298,
+          "borderWidth": 3,
+          "documentY": 2455.625
+        }
+      ]
+    },
+    {
+      "name": "source-320-keyboard-fit",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 1833
+      },
+      "overflow": 0,
+      "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+      "entityCount": "14",
+      "edgeCount": "31",
+      "modal": false,
+      "fit": {
+        "x": 44,
+        "y": 591.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "controls": {
+        "x": 44,
+        "y": 591.6875,
+        "width": 232,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "canvas": {
+        "x": 45,
+        "y": 622.625,
+        "width": 230,
+        "height": 298,
+        "documentY": 2455.625
+      },
+      "result": null,
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 44,
+            "y": 591.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(31)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 87.84375,
+            "y": 596.15625,
+            "width": 13,
+            "height": 13,
+            "documentY": 2429.15625
+          }
+        }
+      ],
+      "readout": null
+    },
+    {
+      "name": "source-320-after-keyboard",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 1999
+      },
+      "overflow": 0,
+      "active": "<button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button>",
+      "entityCount": "14",
+      "edgeCount": "31",
+      "modal": false,
+      "fit": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "controls": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 232,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "canvas": {
+        "x": 45,
+        "y": 456.625,
+        "width": 230,
+        "height": 298,
+        "documentY": 2455.625
+      },
+      "result": null,
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(31)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 87.84375,
+            "y": 430.15625,
+            "width": 13,
+            "height": 13,
+            "documentY": 2429.15625
+          }
+        }
+      ],
+      "readout": null
+    },
+    {
+      "name": "source-320-pointer-selected",
+      "url": "http://127.0.0.1:4961/?unrelated=preserved&step=coach-step-01-artifact-entry#review",
+      "viewport": {
+        "width": 320,
+        "height": 800
+      },
+      "theme": "rgb(245, 247, 251)",
+      "scroll": {
+        "x": 0,
+        "y": 1999
+      },
+      "overflow": 0,
+      "active": "<main class=\"shell\" tabindex=\"-1\"><section class=\"workspace\"><header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-wi",
+      "entityCount": "14",
+      "edgeCount": "31",
+      "modal": false,
+      "fit": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "controls": {
+        "x": 44,
+        "y": 425.6875,
+        "width": 232,
+        "height": 21.9375,
+        "documentY": 2424.6875
+      },
+      "canvas": {
+        "x": 45,
+        "y": 456.625,
+        "width": 230,
+        "height": 298,
+        "documentY": 2455.625
+      },
+      "result": {
+        "x": 27,
+        "y": 864.1875,
+        "width": 266,
+        "height": 39.328125,
+        "documentY": 2863.1875
+      },
+      "graphControls": [
+        {
+          "tag": "BUTTON",
+          "role": null,
+          "name": "fit",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 44,
+            "y": 425.6875,
+            "width": 27.84375,
+            "height": 21.9375,
+            "documentY": 2424.6875
+          }
+        },
+        {
+          "tag": "INPUT",
+          "role": null,
+          "name": "traversal(31)· local",
+          "tabIndex": 0,
+          "bounds": {
+            "x": 87.84375,
+            "y": 430.15625,
+            "width": 13,
+            "height": 13,
+            "documentY": 2429.15625
+          }
+        }
+      ],
+      "readout": "tool: workSurface.traceproduced by trace event:coach-step-02-detail-tabs-trace",
+      "boundary": [
+        {
+          "id": "CHANGE A",
+          "title": "Entity controls and local graph heading",
+          "x": 27,
+          "y": 359,
+          "width": 266,
+          "height": 88.625,
+          "borderWidth": 3,
+          "documentY": 2358
+        },
+        {
+          "id": "CHANGE B",
+          "title": "Graph and entity result",
+          "x": 28,
+          "y": 456.625,
+          "width": 264,
+          "height": 446.890625,
+          "borderWidth": 3,
+          "documentY": 2455.625
+        }
+      ]
+    }
+  ],
+  "console": [
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b2000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b1a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "cell": "source-320",
+      "type": "warning",
+      "text": "[.WebGL-0x154c001b0e00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "painted": {
+    "nodes": 12,
+    "chromaticPixels": 562,
+    "points": [
+      {
+        "x": 161,
+        "y": 534.8624581939799
+      },
+      {
+        "x": 136.5,
+        "y": 536.8557692307693
+      },
+      {
+        "x": 210,
+        "y": 560.2771739130435
+      },
+      {
+        "x": 93.5,
+        "y": 574.7286789297659
+      },
+      {
+        "x": 146,
+        "y": 590.6751672240803
+      },
+      {
+        "x": 88.5,
+        "y": 598.6484113712374
+      },
+      {
+        "x": 230.5,
+        "y": 612.6015886287626
+      },
+      {
+        "x": 173,
+        "y": 620.5748327759197
+      },
+      {
+        "x": 225.5,
+        "y": 636.5213210702341
+      },
+      {
+        "x": 108.5,
+        "y": 650.4744983277592
+      },
+      {
+        "x": 181.5,
+        "y": 674.892558528428
+      },
+      {
+        "x": 157.5,
+        "y": 676.3875418060201
+      }
+    ]
+  },
+  "keyboard": {
+    "focusSequence": [
+      {
+        "press": 1,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": null,
+        "name": "Inspect trace",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 2,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(2)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "trace-record",
+        "name": "Open NodeRoom's Trace tab from the artifact shellpassStart from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 3,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(3)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "trace-record",
+        "name": "Use the real NodeRoom trace tabspassThe sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.Trace tab",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 4,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(4)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "trace-record",
+        "name": "Seed the app from NodeRoom TraceRecord datapassNodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.Data model - Step",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 5,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(5)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "trace-record",
+        "name": "Render code and UI evidence like NodeRoom step rowspassEach step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.Steps - Step 04 -",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 6,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(6)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "trace-record",
+        "name": "Keep the latest flow tab behaviorpassNodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.Flow - Step 05 - src",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 7,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>aside:nth-child(1)>button:nth-child(7)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "trace-record",
+        "name": "Match NodeRoom's dark trace surfacepassThe sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.Look and feel - Step 06 - s",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 8,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>button:nth-child(3)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": null,
+        "name": "Inspect trace",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 9,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>header:nth-child(1)>div:nth-child(4)>button:nth-child(1)",
+        "tag": "BUTTON",
+        "role": "tab",
+        "testId": null,
+        "name": "Overview",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 10,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(2)>div:nth-child(2)>div:nth-child(2)",
+        "tag": "DIV",
+        "role": "tabpanel",
+        "testId": null,
+        "name": "src/ui/panels/Artifact.tsxHomenShum/noderoom - lines 1-15[data-noderoom-surface=\"workSurface.traceStrip\"]DOMRect x11 y904 w1056 h45",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 11,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>button:nth-child(1)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": "nodegraph-fit",
+        "name": "fit",
+        "inGraph": true,
+        "readout": false
+      },
+      {
+        "press": 12,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>section:nth-child(3)>section:nth-child(2)>div:nth-child(2)>label:nth-child(2)>input:nth-child(1)",
+        "tag": "INPUT",
+        "role": null,
+        "testId": null,
+        "name": "traversal(31)· local",
+        "inGraph": true,
+        "readout": false
+      },
+      {
+        "press": 13,
+        "path": "html:nth-child(1)>body:nth-child(2)",
+        "tag": "BODY",
+        "role": null,
+        "testId": null,
+        "name": "NodeRoom codebase tracePortable trace UI for agent apps.Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.Inspect tracenpm run understand:noderoomnpm run c",
+        "inGraph": false,
+        "readout": false
+      },
+      {
+        "press": 14,
+        "path": "html:nth-child(1)>body:nth-child(2)>div:nth-child(1)>main:nth-child(1)>section:nth-child(1)>header:nth-child(1)>div:nth-child(1)>button:nth-child(4)",
+        "tag": "BUTTON",
+        "role": null,
+        "testId": null,
+        "name": "Inspect trace",
+        "inGraph": false,
+        "readout": false
+      }
+    ],
+    "cycleClosed": true,
+    "pressBudget": 100,
+    "fitEntered": 1,
+    "actualFitActivations": 1,
+    "readoutReached": false
+  },
+  "pointer": {
+    "name": "tool: workSurface.trace",
+    "events": [
+      "coach-step-02-detail-tabs-trace"
+    ],
+    "expectedEvents": [
+      "coach-step-02-detail-tabs-trace"
+    ],
+    "semanticMatch": true
+  },
+  "verdict": "KEYBOARD_ENTITY_JOB_INACCESSIBLE_CONFIRMED",
+  "video": "source-320-keyboard-pointer.webm"
+}

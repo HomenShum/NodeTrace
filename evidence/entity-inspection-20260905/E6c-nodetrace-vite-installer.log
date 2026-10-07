@@ -1,0 +1,19 @@
+NodeTrace add -> D:\ProjectRecovery\nodetrace-entity-vite-consumer-20260905
+[1/4] install dependencies
+    cmd.exe /d /s /c npm.cmd install --cache .nodetrace/npm-cache --prefer-offline --no-audit --fund=false --progress=false
+    PASS 17.34s
+[2/4] happy path
+    cmd.exe /d /s /c npm.cmd run nodetrace:happy-path
+    PASS 1.13s
+[3/4] smoke
+    cmd.exe /d /s /c npm.cmd run nodetrace:smoke
+    PASS 561ms
+[4/4] build
+    cmd.exe /d /s /c npm.cmd run build
+    FAIL 5.88s
+> build
+> tsc --noEmit && vite build
+
+src/nodetrace-demo/main.tsx(6,12): error TS2345: Argument of type 'HTMLElement | null' is not assignable to parameter of type 'Container'.
+  Type 'null' is not assignable to type 'Container'.
+NodeTrace add failed. See .nodetrace/setup-receipt.json and .nodetrace/setup-log.txt

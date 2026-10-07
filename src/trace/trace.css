@@ -1,7 +1,4 @@
-.nt-backdrop {
-  position: fixed;
-  inset: 0;
-  z-index: 30;
+.nt-panel::backdrop {
   background: rgb(18 24 32 / 0.28);
 }
 
@@ -10,6 +7,12 @@
   top: 18px;
   right: 18px;
   bottom: 18px;
+  left: auto;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  max-height: none;
+  height: calc(100dvh - 36px);
   z-index: 31;
   display: grid;
   grid-template-rows: auto 1fr;
@@ -21,6 +24,10 @@
   box-shadow: 0 24px 70px rgb(22 29 39 / 0.24);
   color: #18212f;
 }
+
+.nt-panel:not([open]) { display: none; }
+.nt-panel :focus-visible { outline: 3px solid #385f9d; outline-offset: 2px; }
+.nt-panel { overflow-wrap: anywhere; }
 
 .nt-head {
   display: grid;
@@ -54,7 +61,7 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  min-height: 32px;
+  min-height: 44px;
   padding: 0 10px;
   color: #536175;
   font-size: 12px;
@@ -68,8 +75,8 @@
 
 .nt-close {
   display: grid;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   place-items: center;
   border-radius: 8px;
 }
@@ -128,6 +135,8 @@
 }
 
 .nt-proofHead span {
+  flex: 0 0 auto;
+  white-space: nowrap;
   border-radius: 999px;
   padding: 4px 8px;
   background: #e4f2ec;
@@ -224,6 +233,7 @@
   .nt-panel {
     inset: 10px;
     width: auto;
+    height: calc(100dvh - 20px);
   }
 
   .nt-head {

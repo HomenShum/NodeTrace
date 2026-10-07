@@ -1,0 +1,107 @@
+{
+  "generatedAt": "2026-09-05T04:56:52.426Z",
+  "session": {
+    "id": "nodetrace-2026-09-05T04-56-52-415Z",
+    "title": "NodeTrace local happy path",
+    "status": "verified",
+    "summary": "SQLite trace session, proof cards, events, and gated ownership were generated locally."
+  },
+  "builderCapable": false,
+  "surfaces": [
+    {
+      "id": "workSurface.traceStrip",
+      "label": "Trace strip",
+      "proofAvailable": true,
+      "about": "Runtime progress, tool calls, receipts, and verifier status."
+    },
+    {
+      "id": "workSurface.evidenceCarousel",
+      "label": "Evidence",
+      "proofAvailable": true,
+      "about": "Source-backed evidence cards linked to visible artifacts or cells."
+    },
+    {
+      "id": "copilot.agentOperationStream",
+      "label": "Agent operations",
+      "proofAvailable": true,
+      "about": "Bounded stream of agent, worker, tool, and scheduler events."
+    },
+    {
+      "id": "shell.statusStrip",
+      "label": "Status",
+      "proofAvailable": true,
+      "about": "System health, credential state, run status, and review outcome."
+    },
+    {
+      "id": "shell.progressSpine",
+      "label": "Progress",
+      "proofAvailable": false,
+      "about": "End-to-end workflow stages from intake to review."
+    }
+  ],
+  "proofs": [
+    {
+      "id": "nodetrace-2026-09-05T04-56-52-415Z-proof-001",
+      "surfaceId": "workSurface.evidenceCarousel",
+      "artifactId": "demo-artifact",
+      "elementId": "evidence-card-001",
+      "title": "Portable evidence card",
+      "status": "verified",
+      "confidence": 0.98,
+      "sourceLabel": "db/schema.sql",
+      "sourceUrl": "",
+      "detail": "Business proof is stored as app-neutral rows keyed by opaque surface ids."
+    },
+    {
+      "id": "nodetrace-2026-09-05T04-56-52-415Z-proof-002",
+      "surfaceId": "shell.statusStrip",
+      "title": "No provider lock-in",
+      "status": "verified",
+      "confidence": 0.99,
+      "sourceLabel": "scripts/init-sqlite.mjs",
+      "sourceUrl": "",
+      "detail": "The happy path creates local SQLite rows and client state without any model provider or cloud account."
+    }
+  ],
+  "traces": [
+    {
+      "id": "nodetrace-2026-09-05T04-56-52-415Z-trace-001",
+      "surfaceId": "workSurface.traceStrip",
+      "phase": "schema",
+      "actor": "nodetrace",
+      "status": "ok",
+      "summary": "Applied generic SQLite trace schema",
+      "durationMs": 13
+    },
+    {
+      "id": "nodetrace-2026-09-05T04-56-52-415Z-trace-002",
+      "surfaceId": "workSurface.evidenceCarousel",
+      "artifactId": "demo-artifact",
+      "elementId": "evidence-card-001",
+      "phase": "proof",
+      "actor": "nodetrace",
+      "status": "ok",
+      "summary": "Inserted source-backed business proof",
+      "durationMs": 17
+    },
+    {
+      "id": "nodetrace-2026-09-05T04-56-52-415Z-trace-003",
+      "surfaceId": "copilot.agentOperationStream",
+      "phase": "events",
+      "actor": "nodetrace",
+      "status": "ok",
+      "summary": "Wrote bounded runtime trace rows",
+      "durationMs": 8
+    },
+    {
+      "id": "nodetrace-2026-09-05T04-56-52-415Z-trace-004",
+      "surfaceId": "shell.statusStrip",
+      "phase": "state",
+      "actor": "nodetrace",
+      "status": "ok",
+      "summary": "Published client-safe trace state JSON",
+      "durationMs": 11
+    }
+  ],
+  "codeOwnership": []
+}

@@ -1,6 +1,5 @@
 export { TraceLensPanel } from "./TraceLensPanel";
 export { TraceLensProvider, resolveTraceHit, useTraceLens } from "./TraceLensProvider";
-export { DEFAULT_SURFACES, surfaceMeta } from "./surfaces";
 export type {
   CodeOwnershipReceipt,
   LensMode,

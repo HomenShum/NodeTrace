@@ -1,0 +1,1956 @@
+{
+  "host": "D:/ProjectRecovery/nodetrace-entity-independent-owner-host-20260905",
+  "sourceBindings": {
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501"
+  },
+  "sourceStayedExact": true,
+  "fixture": {
+    "source": "D:/ProjectRecovery/nodetrace-entity-independent-host-20260905/main.tsx",
+    "count": 6,
+    "sha256": "defad41b48e3b0ff4784b234634921e490d81b8a7d548259f95cf22729a24cd2"
+  },
+  "port": 5174,
+  "reducedMotion": "reduce",
+  "errors": [],
+  "consoleErrors": [],
+  "checks": [
+    {
+      "name": "initial document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "initial positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "initial glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "initial glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "pointer-selected document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "pointer-selected positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "pointer-selected glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "pointer-selected glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "pointer-to-native document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "pointer-to-native positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "pointer-to-native glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "pointer-to-native glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "clear both panels",
+      "pass": true
+    },
+    {
+      "name": "clear document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "clear glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "clear glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "reselect document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "reselect glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "reselect glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "same-entities-extra-events document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "same-entities-extra-events positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "same-entities-extra-events glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "same-entities-extra-events glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "hover-before-removal document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "hover-before-removal positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "hover-before-removal glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "hover-before-removal glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "hovered-entity-removed document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "hovered-entity-removed positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "hovered-entity-removed glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "hovered-entity-removed glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "removal clears both panels",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-pointer-out document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-pointer-out positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-pointer-out glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-pointer-out glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-fit document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-fit positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-fit glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "removed-entity-fit glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "empty disabled",
+      "pass": true
+    },
+    {
+      "name": "empty no panels",
+      "pass": true
+    },
+    {
+      "name": "empty document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "empty glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "empty glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "recovered-current-events document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "recovered-current-events positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "recovered-current-events glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "recovered-current-events glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "long-forty-entities document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "long-forty-entities positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "long-forty-entities glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "long-forty-entities glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "long-full-selected document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "long-full-selected positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "long-full-selected glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "long-full-selected glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "owned identity current",
+      "pass": true
+    },
+    {
+      "name": "vendor identity current",
+      "pass": true
+    },
+    {
+      "name": "producing events current",
+      "pass": true
+    },
+    {
+      "name": "visits current",
+      "pass": true
+    },
+    {
+      "name": "count honest",
+      "pass": true
+    },
+    {
+      "name": "long-confirmed-pointer-hover document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "long-confirmed-pointer-hover positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "long-confirmed-pointer-hover glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "long-confirmed-pointer-hover glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "long-pan document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "long-pan glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "long-pan glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "long-fit document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "long-fit positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "long-fit glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "long-fit glyph collisions",
+      "pass": true
+    },
+    {
+      "name": "recorder knockout clears actual pixels and records",
+      "pass": true,
+      "detail": {
+        "recordCount": 0,
+        "alphaPixels": 0
+      }
+    },
+    {
+      "name": "recorder-fresh-frame-recovery document and panels fit",
+      "pass": true
+    },
+    {
+      "name": "recorder-fresh-frame-recovery positive current label paint",
+      "pass": true
+    },
+    {
+      "name": "recorder-fresh-frame-recovery glyph bounds",
+      "pass": true
+    },
+    {
+      "name": "recorder-fresh-frame-recovery glyph collisions",
+      "pass": true
+    }
+  ],
+  "states": [
+    {
+      "name": "initial",
+      "selection": "Choose an entity",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "14"
+    },
+    {
+      "name": "pointer-selected",
+      "selection": "tool: workSurface.trace",
+      "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "tool: workSurface.trace\nproduced by trace event:\ncoach-step-02-detail-tabs-trace",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 94.2552598207655,
+          "y": 26.72666698694229,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "14"
+    },
+    {
+      "name": "pointer-to-native",
+      "selection": "actor: trace-coach",
+      "vendor": "entity\ntrace-coach · actor\ncount\nunknown — not measured\nvisits\n6 — interaction frequency, not evidence strength",
+      "readout": "actor: trace-coach\nproduced by trace events:\ncoach-step-01-artifact-entry-trace\ncoach-step-02-detail-tabs-trace\ncoach-step-03-trace-data-trace\ncoach-step-04-step-row-trace\ncoach-step-05-flow-trace\ncoach-step-06-style-trace",
+      "visits": "6 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 94.2552598207655,
+          "y": 26.72666698694229,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "14"
+    },
+    {
+      "name": "clear",
+      "selection": "Choose an entity",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 94.2552598207655,
+          "y": 26.72666698694229,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "14"
+    },
+    {
+      "name": "reselect",
+      "selection": "tool: workSurface.trace",
+      "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "tool: workSurface.trace\nproduced by trace event:\ncoach-step-02-detail-tabs-trace",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 94.2552598207655,
+          "y": 26.72666698694229,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "14"
+    },
+    {
+      "name": "same-entities-extra-events",
+      "selection": "tool: workSurface.trace",
+      "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n2 — interaction frequency, not evidence strength",
+      "readout": "tool: workSurface.trace\nproduced by trace events:\ncoach-step-02-detail-tabs-trace\nrepeat-coach-step-02-detail-tabs-trace",
+      "visits": "2 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 94.2552598207655,
+          "y": 26.72666698694229,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "14"
+    },
+    {
+      "name": "hover-before-removal",
+      "selection": "tool: workSurface.trace",
+      "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n2 — interaction frequency, not evidence strength",
+      "readout": "tool: workSurface.trace\nproduced by trace events:\ncoach-step-02-detail-tabs-trace\nrepeat-coach-step-02-detail-tabs-trace",
+      "visits": "2 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "trace-tabs",
+          "x": 122.47481828768034,
+          "y": 44.841121867573555,
+          "width": 59.853515625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93860901650697,
+          "y": 65.79148691093714,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 54.00000201989608,
+          "y": 134.99867046570736,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219430380287,
+          "y": 165.55627315168636,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688274572893,
+          "y": 139.75233969115686,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.72317554448918,
+          "y": 219.98732809702454,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220306340553,
+          "y": 243.8901561794926,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 94.2552598207655,
+          "y": 26.72666698694229,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "14"
+    },
+    {
+      "name": "hovered-entity-removed",
+      "selection": "Choose an entity",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [
+        {
+          "text": "workSurface.traceData",
+          "x": 60.85573600388505,
+          "y": 87.9450039151169,
+          "width": 134.47705078125,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93861176323605,
+          "y": 53.25907606176323,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 53.99999749660492,
+          "y": 122.46626029082796,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219515578673,
+          "y": 153.02386327889857,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688726902008,
+          "y": 127.21992971156169,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.7231727827616,
+          "y": 207.45491877222685,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220445153276,
+          "y": 231.35774708111168,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "12"
+    },
+    {
+      "name": "removed-entity-pointer-out",
+      "selection": "Choose an entity",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [
+        {
+          "text": "workSurface.traceData",
+          "x": 60.85573600388505,
+          "y": 87.9450039151169,
+          "width": 134.47705078125,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93861176323605,
+          "y": 53.25907606176323,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 53.99999749660492,
+          "y": 122.46626029082796,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219515578673,
+          "y": 153.02386327889857,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688726902008,
+          "y": 127.21992971156169,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.7231727827616,
+          "y": 207.45491877222685,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220445153276,
+          "y": 231.35774708111168,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "12"
+    },
+    {
+      "name": "removed-entity-fit",
+      "selection": "Choose an entity",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [
+        {
+          "text": "workSurface.traceData",
+          "x": 60.85573600388505,
+          "y": 87.9450039151169,
+          "width": 134.47705078125,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 217.93861176323605,
+          "y": 53.25907606176323,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 53.99999749660492,
+          "y": 122.46626029082796,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 175.21219515578673,
+          "y": 153.02386327889857,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 208.55688726902008,
+          "y": 127.21992971156169,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "steps",
+          "x": 93.7231727827616,
+          "y": 207.45491877222685,
+          "width": 30.96533203125,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "flow",
+          "x": 187.30220445153276,
+          "y": 231.35774708111168,
+          "width": 25.640625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "12"
+    },
+    {
+      "name": "empty",
+      "selection": "No trace entities",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "0"
+    },
+    {
+      "name": "recovered-current-events",
+      "selection": "tool: workSurface.trace",
+      "vendor": "entity\nworkSurface.trace · tool\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "tool: workSurface.trace\nproduced by trace event:\nreplacement-coach-step-02-detail-tabs-trace",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "workSurface.traceStrip",
+          "x": 86.00182269731197,
+          "y": 83.63077439011089,
+          "width": 134.27734375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.traceData",
+          "x": 104.14182059647035,
+          "y": 64.47051703755818,
+          "width": 134.47705078125,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "look-and-feel",
+          "x": 85.2977170000018,
+          "y": 175.1608673253294,
+          "width": 78.88623046875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "trace-coach",
+          "x": 158.71237108483245,
+          "y": 151.73959096582212,
+          "width": 69.15966796875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "data-model",
+          "x": 193.20917336386637,
+          "y": 184.03457115025773,
+          "width": 68.3427734375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.trace",
+          "x": 115.01485358333635,
+          "y": 235.8764994996117,
+          "width": 106.76318359375,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "entry",
+          "x": 247.9854573410366,
+          "y": 207.52781936431523,
+          "width": 31.52099609375,
+          "height": 12,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "14"
+    },
+    {
+      "name": "long-forty-entities",
+      "selection": "Choose an entity",
+      "vendor": null,
+      "readout": null,
+      "visits": null,
+      "labels": [
+        {
+          "text": "surface-0",
+          "x": 86.79792965554005,
+          "y": 52.18003023610974,
+          "width": 55.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 69.36229289887724,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 127.50730944618422,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 174.57037464322275,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 198.49611373973522,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "surface-3",
+          "x": 55.40846739448084,
+          "y": 223.42640793469957,
+          "width": 54.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [],
+      "entityCount": "40"
+    },
+    {
+      "name": "long-full-selected",
+      "selection": "actor: International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review 0",
+      "vendor": "entity\nInternational supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review 0 · actor\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "actor: International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review International supplier review 0\nproduced by trace event:\ndense-0",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "surface-0",
+          "x": 86.79792965554005,
+          "y": 52.18003023610974,
+          "width": 55.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 69.36229289887724,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 127.50730944618422,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 174.57037464322275,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 198.49611373973522,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "surface-3",
+          "x": 55.40846739448084,
+          "y": 223.42640793469957,
+          "width": 54.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "40"
+    },
+    {
+      "name": "long-confirmed-pointer-hover",
+      "selection": "artifact: artifact-0",
+      "vendor": "entity\nartifact-0 · artifact\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "artifact: artifact-0\nproduced by trace event:\ndense-0",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "surface-0",
+          "x": 86.79792965554005,
+          "y": 52.18003023610974,
+          "width": 55.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 69.36229289887724,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 127.50730944618422,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 174.57037464322275,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 198.49611373973522,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "surface-3",
+          "x": 55.40846739448084,
+          "y": 223.42640793469957,
+          "width": 54.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "artifact-0",
+          "x": 159.73113883341452,
+          "y": 42.32655560968454,
+          "width": 54.7060546875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "40"
+    },
+    {
+      "name": "long-pan",
+      "selection": "artifact: artifact-0",
+      "vendor": "entity\nartifact-0 · artifact\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "artifact: artifact-0\nproduced by trace event:\ndense-0",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "surface-0",
+          "x": 152.98960222653258,
+          "y": 151.11723077949011,
+          "width": 55.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 194.69893454775098,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "artifact-2",
+          "x": 191.0394565529475,
+          "y": 283.0258009036894,
+          "width": 53.7060546875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "artifact-1",
+          "x": 201.36087857310469,
+          "y": 250.90479867141323,
+          "width": 51.7060546875,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "40"
+    },
+    {
+      "name": "long-fit",
+      "selection": "artifact: artifact-0",
+      "vendor": "entity\nartifact-0 · artifact\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "artifact: artifact-0\nproduced by trace event:\ndense-0",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "surface-0",
+          "x": 86.79792965554005,
+          "y": 52.18003023610974,
+          "width": 55.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 69.36229289887724,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 127.50730944618422,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 174.57037464322275,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 198.49611373973522,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "surface-3",
+          "x": 55.40846739448084,
+          "y": 223.42640793469957,
+          "width": 54.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "40"
+    },
+    {
+      "name": "recorder-fresh-frame-recovery",
+      "selection": "artifact: artifact-0",
+      "vendor": "entity\nartifact-0 · artifact\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength",
+      "readout": "artifact: artifact-0\nproduced by trace event:\ndense-0",
+      "visits": "1 — interaction frequency, not evidence strength",
+      "labels": [
+        {
+          "text": "surface-0",
+          "x": 86.79792965554005,
+          "y": 52.18003023610974,
+          "width": 55.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 69.36229289887724,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 4,
+          "y": 127.50730944618422,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 174.57037464322275,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "International supplier review International sup…",
+          "x": 5.56494140625,
+          "y": 198.49611373973522,
+          "width": 282.43505859375,
+          "height": 13,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "surface-3",
+          "x": 55.40846739448084,
+          "y": 223.42640793469957,
+          "width": 54.79150390625,
+          "height": 10,
+          "canvasWidth": 292,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ],
+      "overflow": false,
+      "panels": [
+        {
+          "width": 294,
+          "scroll": 294
+        },
+        {
+          "width": 328,
+          "scroll": 328
+        }
+      ],
+      "entityCount": "40"
+    }
+  ]
+}

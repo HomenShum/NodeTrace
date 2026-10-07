@@ -1,0 +1,57 @@
+{
+  "url": "http://127.0.0.1:4965/?disclosureProof=preserved#review",
+  "width": 390,
+  "height": 844,
+  "overflow": 0,
+  "open": true,
+  "scrollY": 0,
+  "active": "SUMMARY",
+  "regions": {
+    ".showcase": {
+      "x": 12,
+      "y": 12,
+      "width": 366,
+      "height": 1005.15625,
+      "documentY": 12
+    },
+    ".showcaseCopy h1": {
+      "x": 29,
+      "y": 51.9375,
+      "width": 332,
+      "height": 72.9375,
+      "documentY": 51.9375
+    },
+    ".traceSetup > summary": {
+      "x": 29,
+      "y": 296.0625,
+      "width": 332,
+      "height": 47.1875,
+      "documentY": 296.0625
+    },
+    ".showcaseActions": {
+      "x": 29,
+      "y": 355.25,
+      "width": 332,
+      "height": 187.5625,
+      "documentY": 355.25
+    },
+    ".launchCard": {
+      "x": 29,
+      "y": 558.8125,
+      "width": 332,
+      "height": 441.34375,
+      "documentY": 558.8125
+    },
+    ".coachPanel": null,
+    ".coachList": null,
+    ".coachDetail": null,
+    ".coachEmpty": {
+      "x": 12,
+      "y": 1033.15625,
+      "width": 366,
+      "height": 200.6875,
+      "documentY": 1033.15625
+    },
+    ".liveGraphRail": null
+  }
+}

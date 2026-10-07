@@ -1,0 +1,585 @@
+{
+  "generator": "Understand-Anything deterministic scripts via NodeTrace",
+  "sourceRepo": "HomenShum/noderoom",
+  "sourceRoot": "..",
+  "generatedAt": "2026-06-17T09:32:37.838Z",
+  "pluginRoot": "C:/Users/hshum/.understand-anything/repo/understand-anything-plugin",
+  "model": "Understand-Anything-backed codebase minimap",
+  "note": "Generated from scan-project.mjs, extract-import-map.mjs, and extract-structure.mjs over NodeRoom trace UI files.",
+  "scan": {
+    "totalFiles": 2474,
+    "filteredByIgnore": 0,
+    "estimatedComplexity": "very-large",
+    "stats": {
+      "filesScanned": 2474,
+      "byCategory": {
+        "docs": 173,
+        "config": 1772,
+        "code": 520,
+        "infra": 2,
+        "markup": 5,
+        "script": 2
+      },
+      "byLanguage": {
+        "markdown": 167,
+        "json": 1763,
+        "config": 1,
+        "unknown": 2,
+        "yaml": 10,
+        "txt": 6,
+        "typescript": 500,
+        "javascript": 7,
+        "drawio": 3,
+        "pid": 1,
+        "jsonl": 7,
+        "html": 3,
+        "batch": 1,
+        "powershell": 1,
+        "css": 2
+      }
+    }
+  },
+  "importMap": {
+    "stats": {
+      "filesScanned": 6,
+      "filesWithImports": 4,
+      "totalEdges": 7
+    },
+    "selectedEdges": 7
+  },
+  "structure": {
+    "filesAnalyzed": 6,
+    "filesSkipped": []
+  },
+  "nodes": [
+    {
+      "id": "artifact",
+      "label": "Artifact shell",
+      "kind": "component",
+      "filePath": "src/ui/panels/Artifact.tsx",
+      "layer": "UI entry",
+      "x": 112,
+      "y": 250,
+      "summary": "Entry point that imports and renders the TraceSurface tab.",
+      "understandAnything": {
+        "language": "typescript",
+        "fileCategory": "code",
+        "totalLines": 1807,
+        "metrics": {
+          "importCount": 1,
+          "exportCount": 2,
+          "functionCount": 55,
+          "classCount": 0
+        },
+        "exports": [
+          {
+            "name": "Artifact",
+            "line": 294,
+            "isDefault": false
+          },
+          {
+            "name": "ResearchLegacy",
+            "line": 778,
+            "isDefault": false
+          }
+        ],
+        "functions": [
+          {
+            "name": "ArtifactSurface",
+            "startLine": 50,
+            "endLine": 225,
+            "params": [
+              "{ roomId, me, artId, onArt, collab, style, surfaceKey = \"primary\", headerExtra, openIds, onCloseArtifact }"
+            ]
+          },
+          {
+            "name": "makeBlankRoomCode",
+            "startLine": 234,
+            "endLine": 238,
+            "params": []
+          },
+          {
+            "name": "BlankRoomState",
+            "startLine": 246,
+            "endLine": 292,
+            "params": [
+              "{ roomId, me, style, onOpenChat }"
+            ]
+          },
+          {
+            "name": "Artifact",
+            "startLine": 294,
+            "endLine": 417,
+            "params": [
+              "props"
+            ]
+          },
+          {
+            "name": "Wiki",
+            "startLine": 420,
+            "endLine": 527,
+            "params": [
+              "{ roomId, art, onOpenArtifact }"
+            ]
+          },
+          {
+            "name": "artifactWikiMeta",
+            "startLine": 529,
+            "endLine": 535,
+            "params": [
+              "art"
+            ]
+          },
+          {
+            "name": "coColor",
+            "startLine": 541,
+            "endLine": 545,
+            "params": [
+              "name"
+            ]
+          },
+          {
+            "name": "coInitials",
+            "startLine": 546,
+            "endLine": 551,
+            "params": [
+              "name"
+            ]
+          },
+          {
+            "name": "Research",
+            "startLine": 553,
+            "endLine": 742,
+            "params": [
+              "{ roomId, me, art }"
+            ]
+          },
+          {
+            "name": "parseResearchRows",
+            "startLine": 744,
+            "endLine": 750,
+            "params": [
+              "text"
+            ]
+          },
+          {
+            "name": "freshnessLabel",
+            "startLine": 751,
+            "endLine": 756,
+            "params": [
+              "last"
+            ]
+          },
+          {
+            "name": "freshnessClass",
+            "startLine": 757,
+            "endLine": 761,
+            "params": [
+              "last"
+            ]
+          }
+        ],
+        "classes": []
+      }
+    },
+    {
+      "id": "surface",
+      "label": "TraceSurface",
+      "kind": "component",
+      "filePath": "src/ui/panels/TraceSurface.tsx",
+      "layer": "Trace UI",
+      "x": 332,
+      "y": 176,
+      "summary": "Master-detail trace tab with records, tabs, and selected trace detail.",
+      "understandAnything": {
+        "language": "typescript",
+        "fileCategory": "code",
+        "totalLines": 246,
+        "metrics": {
+          "importCount": 3,
+          "exportCount": 1,
+          "functionCount": 9,
+          "classCount": 0
+        },
+        "exports": [
+          {
+            "name": "TraceSurface",
+            "line": 54,
+            "isDefault": false
+          }
+        ],
+        "functions": [
+          {
+            "name": "CaptureForm",
+            "startLine": 18,
+            "endLine": 52,
+            "params": [
+              "{ roomId, onCapture }"
+            ]
+          },
+          {
+            "name": "TraceSurface",
+            "startLine": 54,
+            "endLine": 126,
+            "params": [
+              "{ roomId, onOpenSource }"
+            ]
+          },
+          {
+            "name": "TraceOverview",
+            "startLine": 128,
+            "endLine": 166,
+            "params": [
+              "{ record }"
+            ]
+          },
+          {
+            "name": "groupSteps",
+            "startLine": 169,
+            "endLine": 179,
+            "params": [
+              "steps"
+            ]
+          },
+          {
+            "name": "shotUrl",
+            "startLine": 181,
+            "endLine": 183,
+            "params": [
+              "s"
+            ]
+          },
+          {
+            "name": "stepDelta",
+            "startLine": 184,
+            "endLine": 186,
+            "params": [
+              "s"
+            ]
+          },
+          {
+            "name": "Filmstrip",
+            "startLine": 189,
+            "endLine": 207,
+            "params": [
+              "{ steps }"
+            ]
+          },
+          {
+            "name": "TraceSteps",
+            "startLine": 209,
+            "endLine": 234,
+            "params": [
+              "{ record, onOpenSource }"
+            ]
+          },
+          {
+            "name": "TraceRaw",
+            "startLine": 236,
+            "endLine": 246,
+            "params": [
+              "{ record }"
+            ]
+          }
+        ],
+        "classes": []
+      }
+    },
+    {
+      "id": "data",
+      "label": "traceData",
+      "kind": "schema",
+      "filePath": "src/ui/panels/traceData.ts",
+      "layer": "Data model",
+      "x": 332,
+      "y": 382,
+      "summary": "TraceRecord, TraceStep, attachment, and bundled QA trace structures.",
+      "understandAnything": {
+        "language": "typescript",
+        "fileCategory": "code",
+        "totalLines": 144,
+        "metrics": {
+          "importCount": 3,
+          "exportCount": 4,
+          "functionCount": 1,
+          "classCount": 0
+        },
+        "exports": [
+          {
+            "name": "MAX_TRACE_STEPS",
+            "line": 40,
+            "isDefault": false
+          },
+          {
+            "name": "QA_TRACE_RECORD",
+            "line": 62,
+            "isDefault": false
+          },
+          {
+            "name": "QA_BUNDLES",
+            "line": 100,
+            "isDefault": false
+          },
+          {
+            "name": "buildAgentTraceRecords",
+            "line": 103,
+            "isDefault": false
+          }
+        ],
+        "functions": [
+          {
+            "name": "buildAgentTraceRecords",
+            "startLine": 103,
+            "endLine": 144,
+            "params": [
+              "input"
+            ]
+          }
+        ],
+        "classes": []
+      }
+    },
+    {
+      "id": "steps",
+      "label": "TraceStepRow",
+      "kind": "component",
+      "filePath": "src/ui/panels/TraceStepRow.tsx",
+      "layer": "Evidence UI",
+      "x": 560,
+      "y": 286,
+      "summary": "Shared renderer for linear steps and graph-node detail previews.",
+      "understandAnything": {
+        "language": "typescript",
+        "fileCategory": "code",
+        "totalLines": 52,
+        "metrics": {
+          "importCount": 1,
+          "exportCount": 1,
+          "functionCount": 1,
+          "classCount": 0
+        },
+        "exports": [
+          {
+            "name": "StepRow",
+            "line": 10,
+            "isDefault": false
+          }
+        ],
+        "functions": [
+          {
+            "name": "StepRow",
+            "startLine": 10,
+            "endLine": 52,
+            "params": [
+              "{ s, onOpenSource }"
+            ]
+          }
+        ],
+        "classes": []
+      }
+    },
+    {
+      "id": "flow",
+      "label": "TraceFlow",
+      "kind": "component",
+      "filePath": "src/ui/panels/TraceFlow.tsx",
+      "layer": "Graph UI",
+      "x": 784,
+      "y": 190,
+      "summary": "React Flow graph with controls, minimap, and shared step detail.",
+      "understandAnything": {
+        "language": "typescript",
+        "fileCategory": "code",
+        "totalLines": 105,
+        "metrics": {
+          "importCount": 2,
+          "exportCount": 1,
+          "functionCount": 1,
+          "classCount": 0
+        },
+        "exports": [
+          {
+            "name": "TraceFlow",
+            "line": 22,
+            "isDefault": false
+          }
+        ],
+        "functions": [
+          {
+            "name": "TraceFlow",
+            "startLine": 22,
+            "endLine": 105,
+            "params": [
+              "{ record, onOpenSource }"
+            ]
+          }
+        ],
+        "classes": []
+      }
+    },
+    {
+      "id": "style",
+      "label": "Trace CSS",
+      "kind": "runtime",
+      "filePath": "src/app/styles.css",
+      "layer": "Visual system",
+      "x": 790,
+      "y": 406,
+      "summary": "Dark trace surface, tabs, cards, screenshot boxes, filmstrip, and flow styling.",
+      "understandAnything": {
+        "language": "css",
+        "fileCategory": "markup",
+        "totalLines": 1302,
+        "metrics": {},
+        "exports": [],
+        "functions": [],
+        "classes": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "ua-import-artifact-surface",
+      "from": "artifact",
+      "to": "surface",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "id": "ua-import-surface-data",
+      "from": "surface",
+      "to": "data",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "id": "ua-import-surface-flow",
+      "from": "surface",
+      "to": "flow",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "id": "ua-import-surface-steps",
+      "from": "surface",
+      "to": "steps",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "id": "ua-import-steps-data",
+      "from": "steps",
+      "to": "data",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "id": "ua-import-flow-data",
+      "from": "flow",
+      "to": "data",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "id": "ua-import-flow-steps",
+      "from": "flow",
+      "to": "steps",
+      "label": "imports",
+      "source": "understand-anything import-map"
+    },
+    {
+      "from": "surface",
+      "to": "style",
+      "label": "uses trace CSS",
+      "source": "trace coach guided-tour"
+    }
+  ],
+  "layers": [
+    {
+      "id": "ui-entry",
+      "label": "UI entry",
+      "files": [
+        "src/ui/panels/Artifact.tsx"
+      ]
+    },
+    {
+      "id": "trace-ui",
+      "label": "Trace UI",
+      "files": [
+        "src/ui/panels/TraceSurface.tsx"
+      ]
+    },
+    {
+      "id": "data-model",
+      "label": "Data model",
+      "files": [
+        "src/ui/panels/traceData.ts"
+      ]
+    },
+    {
+      "id": "evidence-ui",
+      "label": "Evidence UI",
+      "files": [
+        "src/ui/panels/TraceStepRow.tsx"
+      ]
+    },
+    {
+      "id": "graph-ui",
+      "label": "Graph UI",
+      "files": [
+        "src/ui/panels/TraceFlow.tsx"
+      ]
+    },
+    {
+      "id": "visual-system",
+      "label": "Visual system",
+      "files": [
+        "src/app/styles.css"
+      ]
+    }
+  ],
+  "guidedTour": [
+    {
+      "id": "coach-step-01",
+      "label": "Step 01",
+      "nodeId": "artifact",
+      "filePath": "src/ui/panels/Artifact.tsx",
+      "summary": "Entry point that imports and renders the TraceSurface tab."
+    },
+    {
+      "id": "coach-step-02",
+      "label": "Step 02",
+      "nodeId": "surface",
+      "filePath": "src/ui/panels/TraceSurface.tsx",
+      "summary": "Master-detail trace tab with records, tabs, and selected trace detail."
+    },
+    {
+      "id": "coach-step-03",
+      "label": "Step 03",
+      "nodeId": "data",
+      "filePath": "src/ui/panels/traceData.ts",
+      "summary": "TraceRecord, TraceStep, attachment, and bundled QA trace structures."
+    },
+    {
+      "id": "coach-step-04",
+      "label": "Step 04",
+      "nodeId": "steps",
+      "filePath": "src/ui/panels/TraceStepRow.tsx",
+      "summary": "Shared renderer for linear steps and graph-node detail previews."
+    },
+    {
+      "id": "coach-step-05",
+      "label": "Step 05",
+      "nodeId": "flow",
+      "filePath": "src/ui/panels/TraceFlow.tsx",
+      "summary": "React Flow graph with controls, minimap, and shared step detail."
+    },
+    {
+      "id": "coach-step-06",
+      "label": "Step 06",
+      "nodeId": "style",
+      "filePath": "src/app/styles.css",
+      "summary": "Dark trace surface, tabs, cards, screenshot boxes, filmstrip, and flow styling."
+    }
+  ]
+}

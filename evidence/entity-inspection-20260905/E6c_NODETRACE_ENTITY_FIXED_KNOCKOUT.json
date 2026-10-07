@@ -1,0 +1,230 @@
+{
+  "at": "2026-09-05T04:10:08.574268+00:00",
+  "verdict": "THREE_OBSERVED_FINDINGS_CLOSED_FINAL_PACKAGE_JUDGE_PENDING",
+  "reviewerContext": "Reviewer did not author this UI repair. Parent reports a fresh-agent spawn was rejected at the tool thread limit, so the earlier independent backend reviewer was reused. Independent of authorship, not a fresh context.",
+  "sourceBindings": {
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "vendor/nodegraph-live/NodeGraph.js": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501"
+  },
+  "fixture": {
+    "source": "D:/ProjectRecovery/nodetrace-entity-independent-host-20260905/main.tsx",
+    "count": 6,
+    "sha256": "defad41b48e3b0ff4784b234634921e490d81b8a7d548259f95cf22729a24cd2"
+  },
+  "originalFindingPacket": "E6c_NODETRACE_ENTITY_INTERIM_FINDINGS.json",
+  "checks": 108,
+  "states": 18,
+  "closedFindings": [
+    {
+      "id": "NT-ENTITY-01",
+      "proof": "Actual pointer tool workSurface.trace → native actor trace-coach → keyboard Home clear → reselect. Both identity panels agree; current exact producing IDs and unknown count semantics pass.",
+      "screenshots": [
+        "pointer-to-native.png",
+        "clear.png",
+        "reselect.png"
+      ]
+    },
+    {
+      "id": "NT-ENTITY-02",
+      "proof": "Same mount, six source traces replaced by twelve with same entity IDs and new event IDs. Selected tool retains selection and immediately shows two event IDs and visits 2.",
+      "screenshots": [
+        "same-entities-extra-events.png"
+      ]
+    },
+    {
+      "id": "NT-ENTITY-03",
+      "proof": "Re-entered selected tool location then removed that entity during same mount. Twelve entities remain with positive colored ring paint and seven current glyphs; pointer-out and Fit retain recovered state.",
+      "screenshots": [
+        "hovered-entity-removed.png",
+        "removed-entity-pointer-out.png",
+        "removed-entity-fit.png"
+      ]
+    }
+  ],
+  "additionalProof": [
+    "Empty same-mount props disable native selection and remove both panels. Reintroduced same identities use replacement event IDs.",
+    "Ten bounded synthetic traces produce forty entities with long names. Positive current glyph paint, noncolliding in-canvas glyph bounds, full selected name/event panel wrapping, semantically confirmed pointer identity, pan and Fit pass.",
+    "Clearing the actual label and hover canvas pixels yields zero nontransparent pixels and zero recorder entries. Fit produces a new positive current frame.",
+    "Independent reviewer viewed pointer/native mismatch closure, visits update, removed-hover recovery, full long identity and panned graph screenshots.",
+    "Root controlled source receipt independently inspected: 3400 checks,128 captures, seven widths,zero reported failures. Changed application and type file hashes match this exact source copy."
+  ],
+  "limits": [
+    "This independent component replay is anonymous Chromium at 390×844 with reduced motion. It does not replace the root normal-motion source and installed-consumer matrices.",
+    "The prior separate fixed-host run captured four current primary events despite its profile boilerplate saying six. That raw profile is inaccurate on fixture count; report.json correctly records four. This knockout explicitly restores the retained original six-event failure payload in temporary host main.tsx only and binds its SHA256.",
+    "Forty-entity long-label proof is separate from the prior 160-entity scenario with intentionally suppressed labels; zero painted labels were never accepted as positive glyph evidence.",
+    "No primary source/index/ref/build/public-fixture edits,provider/auth/deployment activity or port 4173 use.",
+    "No whole-product grade,performance-at-maximum-contract-scale,other engine,physical touch,screen reader,production or human-usability certification.",
+    "Final installed package,custody,protected-boundary comparison and consolidated judge remain pending."
+  ],
+  "artifacts": {
+    "E6c-nodetrace-independent-fixed-knockout/clear.json": {
+      "sha256": "de0b4df148c6edcb72378787e9fa2cd81ebb7981be8c870e5d70e0c4fa70d3ac",
+      "bytes": 2071
+    },
+    "E6c-nodetrace-independent-fixed-knockout/clear.png": {
+      "sha256": "4b9a4fc2afe49c70e7bbc0be674de2e518f76aa10d644974df442e4509c928a4",
+      "bytes": 58970
+    },
+    "E6c-nodetrace-independent-fixed-knockout/empty.json": {
+      "sha256": "78b675633f7ce5f0e0b408b9e00af4959a4f4425c4e02fce2717da9f8be25650",
+      "bytes": 168
+    },
+    "E6c-nodetrace-independent-fixed-knockout/empty.png": {
+      "sha256": "999b2c32dd49208dc5baf338204ec63ff4edcb5d35b9154543eb5cf2c2e801fb",
+      "bytes": 29051
+    },
+    "E6c-nodetrace-independent-fixed-knockout/entity-inspection-proof.mjs": {
+      "sha256": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+      "bytes": 8918
+    },
+    "E6c-nodetrace-independent-fixed-knockout/fixture.json": {
+      "sha256": "defad41b48e3b0ff4784b234634921e490d81b8a7d548259f95cf22729a24cd2",
+      "bytes": 1709
+    },
+    "E6c-nodetrace-independent-fixed-knockout/hover-before-removal.json": {
+      "sha256": "7f1217119669358b4e24afe08e5b3725123832c3af3e9054d55ec2e76e0bf140",
+      "bytes": 2479
+    },
+    "E6c-nodetrace-independent-fixed-knockout/hover-before-removal.png": {
+      "sha256": "84854ea70ed6dd404bb6ccfd938bdd49cee33e366e9291599982bada2f850c17",
+      "bytes": 69392
+    },
+    "E6c-nodetrace-independent-fixed-knockout/hovered-entity-removed.json": {
+      "sha256": "b585e7e1146a56400911ebc4ef679edc88208d27deeacc722fd8a5e88adf42fc",
+      "bytes": 1837
+    },
+    "E6c-nodetrace-independent-fixed-knockout/hovered-entity-removed.png": {
+      "sha256": "e195af6c58756dda4217dba090a647b0452285c5cd885b4d24d8421648a2ecf2",
+      "bytes": 55638
+    },
+    "E6c-nodetrace-independent-fixed-knockout/initial.json": {
+      "sha256": "5c1ddf2b1f772245c1a14c27cfb322f8951ce3c385ded783da331db904d13a44",
+      "bytes": 1826
+    },
+    "E6c-nodetrace-independent-fixed-knockout/initial.png": {
+      "sha256": "d5d0341f0743a865a8f4520e2bf137ce206f25b2e0c040ad37def5fca73f3579",
+      "bytes": 56595
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-confirmed-pointer-hover.json": {
+      "sha256": "ffbe8cb5c0afa1f9f7a00ab49befb6340ae5b3bd237ea3c0c1390d2649c0fe8b",
+      "bytes": 2296
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-confirmed-pointer-hover.png": {
+      "sha256": "1bbe1701015f3429eefe9318b67c07044300ae5e715c39742f0c4929e5a92373",
+      "bytes": 74604
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-fit.json": {
+      "sha256": "869f22f5a5c39db6ba7faa3c0f3604a1a04860105d0b6ad3ad0ff6d9558d6cce",
+      "bytes": 2058
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-fit.png": {
+      "sha256": "2848e08709c32c8f6946500b88bac2ce4188f04917bdf8ae54b6b45f486e2eb0",
+      "bytes": 73902
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-forty-entities.json": {
+      "sha256": "698674f2b86bc126624fa288b27fc85126b3ed0d20ce45f9b5396ef936504c77",
+      "bytes": 1724
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-forty-entities.png": {
+      "sha256": "f8a9bf59ac46cdd562f9615dcf7a7c17df01ddbb34fb9db9e6b5dd11f0158193",
+      "bytes": 66735
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-full-selected.json": {
+      "sha256": "4989ade56500dfd198bc31689c82d1cb9554685a8662d97c29598f090d9ea34b",
+      "bytes": 5172
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-full-selected.png": {
+      "sha256": "712f97c29fecf8eeb8caf299afeac126b189e8553a999c08b647beaad339bd38",
+      "bytes": 121804
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-pan.json": {
+      "sha256": "1342f770a0d500c4463d6c8ee8756d00185b202acd080d0347a62970357c617b",
+      "bytes": 1221
+    },
+    "E6c-nodetrace-independent-fixed-knockout/long-pan.png": {
+      "sha256": "e0ae3630458c70f8c6cd9a38a08340dcd8e4601057b87885f7d241f1e0d95f9c",
+      "bytes": 41113
+    },
+    "E6c-nodetrace-independent-fixed-knockout/pointer-selected.json": {
+      "sha256": "7ea82c8c3d2312cba7338d4ca0934356933ee0189c70ef704531b81a2e03d51f",
+      "bytes": 2438
+    },
+    "E6c-nodetrace-independent-fixed-knockout/pointer-selected.png": {
+      "sha256": "deb96f9aaa4a4e8e529963154635c43412b1a1211b2e85a8240833cc8b3ef828",
+      "bytes": 67256
+    },
+    "E6c-nodetrace-independent-fixed-knockout/pointer-to-native.json": {
+      "sha256": "98148c75e6c72ddf023339fccfa11ee9d9034eb9b22bdaccfa3ab51297463fde",
+      "bytes": 2575
+    },
+    "E6c-nodetrace-independent-fixed-knockout/pointer-to-native.png": {
+      "sha256": "10dc4b816b4167b85d9cfb3ffc1433395999125bd4a69498755360f4282e2524",
+      "bytes": 69668
+    },
+    "E6c-nodetrace-independent-fixed-knockout/prior-four-event-host-main.tsx": {
+      "sha256": "529db9d4126696dabde7f2df6bd63e52f78ca88a9309cee189a9804986338805",
+      "bytes": 1404
+    },
+    "E6c-nodetrace-independent-fixed-knockout/proof-server.mjs": {
+      "sha256": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd",
+      "bytes": 10818
+    },
+    "E6c-nodetrace-independent-fixed-knockout/recorder-fresh-frame-recovery.json": {
+      "sha256": "869f22f5a5c39db6ba7faa3c0f3604a1a04860105d0b6ad3ad0ff6d9558d6cce",
+      "bytes": 2058
+    },
+    "E6c-nodetrace-independent-fixed-knockout/recorder-fresh-frame-recovery.png": {
+      "sha256": "2848e08709c32c8f6946500b88bac2ce4188f04917bdf8ae54b6b45f486e2eb0",
+      "bytes": 73902
+    },
+    "E6c-nodetrace-independent-fixed-knockout/recovered-current-events.json": {
+      "sha256": "b61219bd6709e5f2b5a566430d0a65ff7339c17f97e46de1b8244526e047a8ff",
+      "bytes": 2249
+    },
+    "E6c-nodetrace-independent-fixed-knockout/recovered-current-events.png": {
+      "sha256": "0293acd1756be9be3ef2e59f31f6676c5f9d0e00ca973b5bf6e52e533133b9e9",
+      "bytes": 72953
+    },
+    "E6c-nodetrace-independent-fixed-knockout/removed-entity-fit.json": {
+      "sha256": "b585e7e1146a56400911ebc4ef679edc88208d27deeacc722fd8a5e88adf42fc",
+      "bytes": 1837
+    },
+    "E6c-nodetrace-independent-fixed-knockout/removed-entity-fit.png": {
+      "sha256": "a173cfaa52409458494de4a2aa85ce6008105d5721e1c5c04bb31b0b4e7d682a",
+      "bytes": 54749
+    },
+    "E6c-nodetrace-independent-fixed-knockout/removed-entity-pointer-out.json": {
+      "sha256": "b585e7e1146a56400911ebc4ef679edc88208d27deeacc722fd8a5e88adf42fc",
+      "bytes": 1837
+    },
+    "E6c-nodetrace-independent-fixed-knockout/removed-entity-pointer-out.png": {
+      "sha256": "e195af6c58756dda4217dba090a647b0452285c5cd885b4d24d8421648a2ecf2",
+      "bytes": 55638
+    },
+    "E6c-nodetrace-independent-fixed-knockout/report.json": {
+      "sha256": "288ae2e6e6f794d1b437e7db73f5076642bbd872c8658d6aaee6d991f4065d2c",
+      "bytes": 55297
+    },
+    "E6c-nodetrace-independent-fixed-knockout/reselect.json": {
+      "sha256": "7ea82c8c3d2312cba7338d4ca0934356933ee0189c70ef704531b81a2e03d51f",
+      "bytes": 2438
+    },
+    "E6c-nodetrace-independent-fixed-knockout/reselect.png": {
+      "sha256": "609e9e5da7cdd9007d19ddf372be2f845e3ab30a46103dc8edefaa5fa0c77cc8",
+      "bytes": 68117
+    },
+    "E6c-nodetrace-independent-fixed-knockout/same-entities-extra-events.json": {
+      "sha256": "7f1217119669358b4e24afe08e5b3725123832c3af3e9054d55ec2e76e0bf140",
+      "bytes": 2479
+    },
+    "E6c-nodetrace-independent-fixed-knockout/same-entities-extra-events.png": {
+      "sha256": "84854ea70ed6dd404bb6ccfd938bdd49cee33e366e9291599982bada2f850c17",
+      "bytes": 69392
+    }
+  }
+}

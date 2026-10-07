@@ -1,0 +1,80 @@
+NodeTrace setup log
+startedAt=2026-09-05T01:57:56.594Z
+targetDir=D:\ProjectRecovery\nodetrace-installed-repair-consumer-bWuHqU\temp\nodetrace-next-e2e-aK4D95
+framework=next
+
+## install dependencies
+command=cmd.exe /d /s /c npm.cmd install --cache .nodetrace/npm-cache --prefer-offline --no-audit --fund=false --progress=false
+startedAt=2026-09-05T01:57:56.635Z
+completedAt=2026-09-05T01:58:16.688Z
+durationMs=20053
+status=PASS
+
+added 73 packages in 19s
+
+npm warn deprecated prebuild-install@7.1.3: No longer maintained. Please contact the author of the relevant native addon; alternatives are available.
+
+## happy path
+command=cmd.exe /d /s /c npm.cmd run nodetrace:happy-path
+startedAt=2026-09-05T01:58:16.689Z
+completedAt=2026-09-05T01:58:18.000Z
+durationMs=1311
+status=PASS
+
+> nodetrace:happy-path
+> node scripts/nodetrace-init.mjs --json-out docs/eval/nodetrace-happy-path.json
+
+nodetrace happy path: PASS 200ms
+wrote .nodetrace/nodetrace.sqlite
+wrote public/nodetrace-state.json
+
+## smoke
+command=cmd.exe /d /s /c npm.cmd run nodetrace:smoke
+startedAt=2026-09-05T01:58:18.001Z
+completedAt=2026-09-05T01:58:18.529Z
+durationMs=528
+status=PASS
+
+> nodetrace:smoke
+> node scripts/nodetrace-smoke.mjs
+
+nodetrace target smoke: PASS
+
+## build
+command=cmd.exe /d /s /c npm.cmd run build
+startedAt=2026-09-05T01:58:18.529Z
+completedAt=2026-09-05T01:59:34.518Z
+durationMs=75987
+status=PASS
+
+> build
+> next build
+
+   ▲ Next.js 15.5.25
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 26.6s
+   Linting and checking validity of types ...
+
+   We detected TypeScript in your project and created a tsconfig.json file for you.
+   Collecting page data ...
+   Generating static pages (0/5) ...
+   Generating static pages (1/5) 
+   Generating static pages (2/5) 
+   Generating static pages (3/5) 
+ ✓ Generating static pages (5/5)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS
+┌ ○ /                                      127 B         103 kB
+├ ○ /_not-found                            990 B         104 kB
+└ ○ /nodetrace                           1.31 kB         104 kB
++ First Load JS shared by all             103 kB
+  ├ chunks/255-37e0f0325134c4d7.js       46.4 kB
+  ├ chunks/4bd1b696-c023c6e3521b1417.js  54.2 kB
+  └ other shared chunks (total)          2.53 kB
+
+
+○  (Static)  prerendered as static content
+

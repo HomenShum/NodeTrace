@@ -1,0 +1,137 @@
+{
+  "generator": "nodetrace real NodeRoom capture",
+  "generatedAt": "2026-06-17T20:32:19.973Z",
+  "sourceRepo": "HomenShum/noderoom",
+  "sourceRoot": "..",
+  "appUrl": "http://127.0.0.1:5189/",
+  "sourceViewUrl": "inline:nodetrace-code-browser",
+  "captureModel": "actual code-browser source screenshots from real filesystem using Shiki + actual running NodeRoom Playwright screenshots",
+  "steps": [
+    {
+      "id": "coach-step-01-artifact-entry",
+      "sourceView": {
+        "captureKind": "actual-code-browser-shiki",
+        "filePath": "src/ui/panels/Artifact.tsx",
+        "startLine": 1658,
+        "endLine": 1684,
+        "imagePath": "captures/coach-step-01-artifact-entry-ide.png"
+      },
+      "uiCapture": {
+        "captureKind": "actual-noderoom-playwright",
+        "selector": "[data-noderoom-surface=\"workSurface.traceStrip\"]",
+        "rect": {
+          "x": 11,
+          "y": 904,
+          "width": 1056,
+          "height": 45
+        },
+        "screenshotPath": "captures/coach-step-01-artifact-entry-ui.png"
+      }
+    },
+    {
+      "id": "coach-step-02-detail-tabs",
+      "sourceView": {
+        "captureKind": "actual-code-browser-shiki",
+        "filePath": "src/ui/panels/TraceSurface.tsx",
+        "startLine": 96,
+        "endLine": 132,
+        "imagePath": "captures/coach-step-02-detail-tabs-ide.png"
+      },
+      "uiCapture": {
+        "captureKind": "actual-noderoom-playwright",
+        "selector": "[data-testid=\"trace-surface\"] .r-tracevu-tabs",
+        "rect": {
+          "x": 283,
+          "y": 165,
+          "width": 768,
+          "height": 29
+        },
+        "screenshotPath": "captures/coach-step-02-detail-tabs-ui.png"
+      }
+    },
+    {
+      "id": "coach-step-03-trace-data",
+      "sourceView": {
+        "captureKind": "actual-code-browser-shiki",
+        "filePath": "src/ui/panels/traceData.ts",
+        "startLine": 27,
+        "endLine": 69,
+        "imagePath": "captures/coach-step-03-trace-data-ide.png"
+      },
+      "uiCapture": {
+        "captureKind": "actual-noderoom-playwright",
+        "selector": "[data-testid=\"trace-record\"]",
+        "rect": {
+          "x": 19,
+          "y": 109,
+          "width": 239,
+          "height": 99
+        },
+        "screenshotPath": "captures/coach-step-03-trace-data-ui.png"
+      }
+    },
+    {
+      "id": "coach-step-04-step-row",
+      "sourceView": {
+        "captureKind": "actual-code-browser-shiki",
+        "filePath": "src/ui/panels/TraceStepRow.tsx",
+        "startLine": 20,
+        "endLine": 48,
+        "imagePath": "captures/coach-step-04-step-row-ide.png"
+      },
+      "uiCapture": {
+        "captureKind": "actual-noderoom-playwright",
+        "selector": "[data-testid=\"trace-step\"] .r-tracevu-shotframe",
+        "rect": {
+          "x": 329,
+          "y": 347,
+          "width": 440,
+          "height": 278
+        },
+        "screenshotPath": "captures/coach-step-04-step-row-ui.png"
+      }
+    },
+    {
+      "id": "coach-step-05-flow",
+      "sourceView": {
+        "captureKind": "actual-code-browser-shiki",
+        "filePath": "src/ui/panels/TraceFlow.tsx",
+        "startLine": 24,
+        "endLine": 66,
+        "imagePath": "captures/coach-step-05-flow-ide.png"
+      },
+      "uiCapture": {
+        "captureKind": "actual-noderoom-playwright",
+        "selector": "[data-testid=\"trace-flow\"]",
+        "rect": {
+          "x": 283,
+          "y": 211,
+          "width": 768,
+          "height": 440
+        },
+        "screenshotPath": "captures/coach-step-05-flow-ui.png"
+      }
+    },
+    {
+      "id": "coach-step-06-style",
+      "sourceView": {
+        "captureKind": "actual-code-browser-shiki",
+        "filePath": "src/app/styles.css",
+        "startLine": 897,
+        "endLine": 953,
+        "imagePath": "captures/coach-step-06-style-ide.png"
+      },
+      "uiCapture": {
+        "captureKind": "actual-noderoom-playwright",
+        "selector": ".r-tracevu",
+        "rect": {
+          "x": 11,
+          "y": 101,
+          "width": 1056,
+          "height": 803
+        },
+        "screenshotPath": "captures/coach-step-06-style-ui.png"
+      }
+    }
+  ]
+}

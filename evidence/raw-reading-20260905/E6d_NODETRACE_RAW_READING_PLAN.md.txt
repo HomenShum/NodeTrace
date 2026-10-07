@@ -1,0 +1,38 @@
+# NodeTrace Raw JSON reading-region plan
+
+**Builder. Re your request:** make each repository ready for usage/handoff with explicit visual, responsive and interaction grades. **Freeze this one-region patch for D4/R3, both currently observed3/5.** D3 setup placement stays separate. No application edit has been made.
+
+A developer comparing a raw trace field to its entity currently scrolls through the entire JSON before reaching the graph. At1024×768 the actual Raw region is2752.5px high and the page4269px. At390×844 it is3214.5px/page5782px. A valid46,157-byte input with180 declared long Unicode comment lines produces an11,893.5px region and14,461px page. The owned pre has a560px minimum, wrapping and overflow visible, with no bounded reading region. This is the upstream layout cause.
+
+The grade assessment remains historical for4d6c558. Current main is `04891604227ab607a61557f49f2cdb41b28dd338`, tree `b7222aaa890ccce519aba60b3e0c96b8c001068e`, exactly the successful CI commit's tree. Only browser provisioning changed since the assessed source; all sixteen runtime bindings are still exact. The ordinary before run usedcbc57ec and the component200% text supplement used merged main. Source/build/public bytes and each run's index stayed unchanged; all dedicated4959servers stopped.
+
+## Actual pre-edit boundary
+
+CHANGE A is only `[data-testid="trace-raw"]`, annotated with an actual3px border in the rendered browser. The JSON remains unedited by the annotation. I viewed the390px ordinary,1024px full, short/long390px and200% component-text390px captures before freezing this plan.
+
+- [390px current Raw boundary](E6d-nodetrace-raw-before/actual-390-no-preference-change-boundary.png)
+- [1024px full-page boundary](E6d-nodetrace-raw-before/actual-1024-no-preference-change-boundary-full.png)
+- [Short fixture boundary](E6d-nodetrace-raw-before/short-390-no-preference-change-boundary.png)
+- [Long fixture boundary](E6d-nodetrace-raw-before/long-390-no-preference-change-boundary.png)
+- [Actual22px component text](E6d-nodetrace-raw-before-text200/actual-390-no-preference-change-boundary.png)
+
+Seven ordinary/reduced-motion cells passed51diagnosis/custody checks; two actual component-text-doubling cells passed18. These are baseline observations, not repair acceptance. Original JSON, HTML/accessibility snapshots, metadata, console/network and screenshots are retained. Both current Raw fixtures preserve tab reload, Back, query/hash and selected entity before reload. Keyboard traversal currently does not focus Raw. Component text doubled from11px to22px really rendered; this does not claim browser zoom, whole-document text resizing or a motion grade.
+
+## Minimum change
+
+Touch only `src/DemoDashboard.tsx:325` for the existing Raw pre's name/focus semantics and `src/styles.css:734` for `.r-tracevu-raw` size/overflow. Keep full JSON.stringify output, colors and wrapping. Give the existing region a native vertical scroll boundary and one named keyboard focus stop. Remove the560px minimum that prevents a smaller responsive ceiling. Do not add parsers, state systems, editors, copy/search features, dependencies or a redesigned page.
+
+Frozen height budget: **Raw border box ≤min(560px,65vh)+2px**, allowing short content to use its natural smaller height. The following graph moves upward only by the reduced Raw height; that expected flow displacement is inside this patch. Preserve graph width/height/data/meanings and all preceding setup/list/tab/modal controls. Keep external page scrolling and native text selection; do not intercept wheel/keyboard navigation.
+
+Natural Tab from Raw reaches a named, visibly focused region. PageDown/End reaches its last line; Home reaches its first; Tab/Shift+Tab exits without a trap. The same record must not lose reading position during incidental rerenders. Reopening Raw begins at the payload start; a new selected step presents its current payload without stale scroll hiding the beginning. Use existing identity/remount behavior if needed, without a new persistence mechanism. Selected step, graph entity/events, Raw reload/Back/Forward and unrelated query/hash remain intact. JSON text hashes must remain byte-exact for each paired fixture.
+
+## Bounded proof after the patch
+
+1. Use exact actual fixture at320×800,390×844,1024×768,1440×960; use retained short and long fixtures at390×844 and1024×768.
+2. Add actual component200% text at390×844 and1024×768 (latter reduced motion), plus long390 reduced motion: eleven source cells total. Preserve exact input bytes. No smooth scrolling/new motion is introduced.
+3. For every cell capture payload hash, Raw/document DOMRects and scroll metrics, DOM/accessibility state, console and labelled pixels before resizing. Check the height budget, complete first/last text reachability, visible focus and no page overflow.
+4. Exercise natural keyboard scrolling/exit, pointer text selection, selected-step changes, current entity result, Raw reload/Back/Forward, five quick tab/step cycles and one60-second reading session. No new durable job/state claim.
+5. Run one normal entity→events comparison and bounded state-error/Retry path, then normal typecheck/build and the affected source journey. A representative normally installed consumer must build and replay short/long Raw at390/1024 plus entity comparison using the existing exact import transformations; identify routed coach input honestly.
+6. Independent judge reviews before/after and all declared observations. Root owns shared CI/merge. Do not repeat unrelated portfolio matrices or promote missing human/platform/performance grades. The4/4.5floors remain unchanged.
+
+The shared browser prerequisite is now observed passing in run33948517960, including actual capture and Next installer. That closes the CI setup issue only; it does not prove this unimplemented Raw patch. [Full frozen plan,69baseline checks and artifact hashes](E6d_NODETRACE_RAW_READING_PLAN.json).

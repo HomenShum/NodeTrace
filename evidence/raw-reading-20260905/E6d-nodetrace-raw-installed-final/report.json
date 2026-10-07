@@ -1,0 +1,2553 @@
+{
+  "proof": "NODETRACE-RAW-READING-REGION-01",
+  "at": "2026-09-05T06:48:11.591Z",
+  "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-lU78sE",
+  "onlyCell": null,
+  "routedFixtures": "Exact retained before inputs; representative local saved trace, not fresh production data",
+  "browser": "149.0.7827.55",
+  "checks": [
+    {
+      "name": "short-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "short-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "short-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "short-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 900,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "short-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "short-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "short-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "short-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 719,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "short-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "short-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-390-no-preference: exact paired before JSON",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-390-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-390-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11344,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-390-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-390-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: entity has exact actual producing events",
+      "pass": true,
+      "detail": {
+        "entityId": "[\"actor\",\"trace-coach\"]",
+        "entityLabel": "actor: trace-coach",
+        "eventIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ],
+        "expectedIds": [
+          "coach-step-01-artifact-entry-trace",
+          "coach-step-02-detail-tabs-trace",
+          "coach-step-03-trace-data-trace",
+          "coach-step-04-step-row-trace",
+          "coach-step-05-flow-trace",
+          "coach-step-06-style-trace"
+        ]
+      }
+    },
+    {
+      "name": "long-1024-no-preference: current selected snippet exact",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: natural Tab reaches named region",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: responsive height budget",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-1024-no-preference: no document overflow",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "long-1024-no-preference: visible keyboard focus",
+      "pass": true,
+      "detail": "rgb(31, 103, 177) solid 3px"
+    },
+    {
+      "name": "long-1024-no-preference: last line reachable with native End",
+      "pass": true,
+      "detail": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 6395,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      }
+    },
+    {
+      "name": "long-1024-no-preference: incidental entity render preserves reading position",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: forward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: backward Tab exits",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Home restores first line",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: pointer can select JSON text",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: selecting a record preserves the existing Overview transition",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: new step begins at top with current payload",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 0 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 1 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 2 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 3 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: burst 4 begins current text at top",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Raw/current bytes survive reload",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Back restores Raw",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: Forward restores Overview",
+      "pass": true
+    },
+    {
+      "name": "long-1024-no-preference: unrelated host state retained",
+      "pass": true
+    },
+    {
+      "name": "all captured source or installed assets equal this actual build",
+      "pass": true
+    },
+    {
+      "name": "no unexpected page or console errors",
+      "pass": false,
+      "detail": [
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x1104001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x1104001b8200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x1104001bac00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "warning",
+          "text": "[.WebGL-0x1104001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "short-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-390-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        },
+        {
+          "name": "long-1024-no-preference",
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+        }
+      ]
+    },
+    {
+      "name": "source/public inputs unchanged during proof",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "short-390-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-390-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1427.3000000715256
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 11,
+          "at": 1456.1000000238419
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 1447,
+        "scrollTop": 900,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-1024-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "short-1024-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1666.3999999761581
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 11,
+          "at": 1695.2999999523163
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 1216,
+        "scrollTop": 719,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5"
+    },
+    {
+      "name": "long-390-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-390-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "documentHeight": 3017,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1604.1000000238419
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 31,
+          "at": 1644.2000000476837
+        }
+      ],
+      "raw": {
+        "x": 29,
+        "y": 278.90625,
+        "width": 332,
+        "height": 548.59375,
+        "documentY": 1518.90625,
+        "clientHeight": 547,
+        "scrollHeight": 11892,
+        "scrollTop": 11344,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 366,
+        "height": 902.859375,
+        "documentY": 2102.5
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-1024-no-preference-top",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 0,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    },
+    {
+      "name": "long-1024-no-preference-end",
+      "url": "http://127.0.0.1:4960/nodetrace?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+      "viewport": {
+        "width": 1024,
+        "height": 768
+      },
+      "documentHeight": 2220,
+      "overflow": 0,
+      "keys": [
+        {
+          "key": "PageDown",
+          "target": "trace-raw",
+          "scrollTop": 0,
+          "at": 1713
+        },
+        {
+          "key": "End",
+          "target": "trace-raw",
+          "scrollTop": 33,
+          "at": 1755.1000000238419
+        }
+      ],
+      "raw": {
+        "x": 379,
+        "y": 15.6875,
+        "width": 606,
+        "height": 499.1875,
+        "documentY": 586.6875,
+        "clientHeight": 497,
+        "scrollHeight": 6892,
+        "scrollTop": 6395,
+        "fontSize": "11px",
+        "overflowY": "auto",
+        "outline": "rgb(31, 103, 177) solid 3px",
+        "tabIndex": 0
+      },
+      "graph": {
+        "width": 980,
+        "height": 823.53125,
+        "documentY": 1374.25
+      },
+      "focused": "trace-raw",
+      "selection": "",
+      "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+    }
+  ],
+  "logs": [
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x1104001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x1104001b8200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x1104001bac00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "warning",
+      "text": "[.WebGL-0x1104001b8800]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "short-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-390-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "name": "long-1024-no-preference",
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/ea227640c3c82f29.css",
+      "sha256": "f553240607e44e0600b0eb7fcd039f4392567f162f90f415b83a4cc13dc080ab",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/webpack-d16f5e05bf561c03.js",
+      "sha256": "a19f5ad129d32c8955aa912ad2eef89365ff4d4361bf29e466f8f897a7f0abd5",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/main-app-ecd2f93ca481396f.js",
+      "sha256": "0fd0f82f90c0a6f81d4eee7b40afb3b431e445931a6196c836c87c0db4a32f2e",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/app/nodetrace/page-205628246ae309b0.js",
+      "sha256": "f3b4c6883ed97b57f9af8cb4a36ff23f5e91bfc7cd1e9c61302e6e60fab77193",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/css/1383a2b9f3290658.css",
+      "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/484.b7d3d26e3d12c47e.js",
+      "sha256": "46899294b07032f358acf7bebc44b920494645cb6c21cabbd46651b83056779b",
+      "diskExact": true
+    },
+    {
+      "url": "http://127.0.0.1:4960/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+      "diskExact": true
+    }
+  ],
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "afterHashes": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/raw-reading-proof.mjs": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f"
+  },
+  "failure": "AssertionError [ERR_ASSERTION]: no unexpected page or console errors\n    at check (file:///D:/VSCode%20Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace/scripts/raw-reading-proof.mjs:23:93)\n    at file:///D:/VSCode%20Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace/scripts/raw-reading-proof.mjs:153:3",
+  "ok": false,
+  "limits": [
+    "Desktop Chromium viewport emulation",
+    "Text200 enlarges only actual Raw component text, not browser zoom",
+    "Not a human, physical-device or performance certification"
+  ]
+}

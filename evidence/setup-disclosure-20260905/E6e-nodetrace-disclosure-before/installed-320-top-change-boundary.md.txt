@@ -1,0 +1,5 @@
+# installed-320 — CHANGE A
+
+Use [installed-320 labelled top](installed-320-top-change-boundary.png) and the [unannotated viewport](installed-320-top.png). The full phone owner continues in [this separately captured lower labelled viewport](../E6e-nodetrace-disclosure-entry-before-03/installed-320-setup-bottom-labelled.png). Exact route, viewport, scroll and region DOM are in [installed-320-top.json](installed-320-top.json).
+
+The complete state matrix, allowed owner and protected neighbors are defined in [change-boundary.md](change-boundary.md). This is actual before evidence, not a proposed result.

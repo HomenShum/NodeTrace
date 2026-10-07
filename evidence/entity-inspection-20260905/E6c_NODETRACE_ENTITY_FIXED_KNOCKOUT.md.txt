@@ -1,0 +1,23 @@
+# NodeTrace fixed entity defect knockout
+
+**Builder. Re your request:** make every repo usable for handoff, including visual, responsive and interaction standards. This independent replay closes the three observed entity-inspection defects; final package acceptance remains pending.
+
+**Decision:** all three original P1s are closed on the exact repaired application snapshot. The actual original six-event payload was replayed without component remount. All 108 checks and 18 captured states passed with no console or page errors.
+
+| Finding | Observed corrected behavior | Raw screenshot |
+|---|---|---|
+| NT-ENTITY-01 | Pointer tool → native actor → clear → reselect keeps both panels on one current entity. | [Pointer to native](E6c-nodetrace-independent-fixed-knockout/pointer-to-native.png) |
+| NT-ENTITY-02 | Six traces become twelve with unchanged entities; current event IDs and visits 2 agree immediately. | [Same identities, new events](E6c-nodetrace-independent-fixed-knockout/same-entities-extra-events.png) |
+| NT-ENTITY-03 | Removing the hovered tool leaves 12 entities and 7 current labels; pointer-out and Fit retain normal ink. | [Hovered entity removed](E6c-nodetrace-independent-fixed-knockout/hovered-entity-removed.png) |
+
+The 40-entity long-name case also produces positive current glyph paint, with in-canvas noncolliding glyphs through confirmed pointer hover, pan and Fit. Both full-name panels wrap. Actual canvas clearing produced zero nontransparent pixels and zero recorder entries; Fit produced fresh positive evidence. These screenshots were viewed, not judged solely from assertion counts.
+
+Source application/type hashes agree with the root 3400-check/128-capture normal-motion source matrix. This independent component replay itself uses 390×844 and reduced motion. It does not certify an installed consumer or all seven viewports independently.
+
+The preceding fixed-host run used the primary fixture's current four events. Its raw profile boilerplate incorrectly says six; its report correctly records four. This knockout uses the original retained six-event input, with an explicit fixture hash and its own output directory. Prior failures and output files remain preserved.
+
+Reviewer context: this reviewer did not author the repair. A fresh-agent spawn was rejected by the tool thread limit, so root reused an independent reviewer from unrelated backend work. This is independent of authorship, not a fresh context.
+
+No primary files, indexes, refs, build outputs or public fixtures were changed. No provider, credentials, production or port 4173 was used. Final installed package, custody and protected-neighbor review remain open; whole-product grades remain unassigned.
+
+See [machine report](E6c_NODETRACE_ENTITY_FIXED_KNOCKOUT.json) for exact bindings and every artifact hash, and [raw replay](E6c-nodetrace-independent-fixed-knockout/report.json) for all 108 checks.

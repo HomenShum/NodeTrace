@@ -1,0 +1,20 @@
+[
+  {
+    "label": "CHANGE A · Entity controls and local graph heading",
+    "x": 27,
+    "y": 403,
+    "width": 336,
+    "height": 234.15625,
+    "documentY": 2300,
+    "borderWidth": 3
+  },
+  {
+    "label": "CHANGE B · Graph and entity result",
+    "x": 28,
+    "y": 646.15625,
+    "width": 334,
+    "height": 298,
+    "documentY": 2543.15625,
+    "borderWidth": 3
+  }
+]

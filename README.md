@@ -7,11 +7,26 @@ protocol.
 
 Portable Trace Lens UI and SQLite setup for agent-native apps.
 
+![Happy-path trace events rendered live as a graph rail](docs/screenshots/live-graph-rail.gif)
+
+Happy-path trace events rendered live as a traversal-only graph rail beside the
+dashboard; clicking a node lists the trace event ids that produced it.
+(Regenerate: `npm run record:live-graph`.)
+
 NodeTrace gives any coding agent a ready-to-port trace layer: tagged UI
 surfaces, a Review/Builder Trace Lens, business proof cards, bounded runtime
 trace rows, gated code ownership, and a local SQLite happy path. It is not bound
 to NodeAgent's agent architecture. Bring your own agent, tools, queue, database,
 or model provider.
+
+**New here? Read [`docs/START_HERE.md`](docs/START_HERE.md).** It follows one real
+user action — opening the Trace Lens for a tagged region — through the code.
+It describes the repaired local candidate, the historical failures and the
+remaining final-judgment boundary. Then [`docs/codebase/`](docs/codebase/) for
+stack, structure, architecture,
+conventions, integrations, testing and known concerns, and `.tours/` for the same
+three walkthroughs inside VS Code (`npm run citations:check` proves every tour
+step and every `path:line` in these documents still names the line it claims).
 
 Agent-trace injection guide: [`docs/AGENT_TRACE_ADOPTION.md`](docs/AGENT_TRACE_ADOPTION.md).
 Workpaper standard: [`docs/TRACE_WORKPAPER_STANDARD.md`](docs/TRACE_WORKPAPER_STANDARD.md).
@@ -34,9 +49,30 @@ creates:
 - `public/nodetrace-state.json`
 - `docs/eval/nodetrace-happy-path.json`
 
-Open the Vite URL and Cmd/Ctrl-click any tagged surface to open Trace Lens.
+Open the Vite URL and activate **Inspect trace** with keyboard, pointer or
+touch. Cmd/Ctrl-click on a tagged surface remains a shortcut. The candidate
+uses a native modal and visible loading/error/retry states; final UI acceptance
+is pending. The demo restores step, tab and lens selection through the URL,
+while installed hosts retain their own routing and the existing lens API.
+The demo always treats public JSON as Review data; builder access requires a host
+server to verify identity and provide the privileged data.
 
 ![NodeTrace dashboard overview](docs/screenshots/nodetrace-dashboard.png)
+
+## Live graph rail
+
+The dashboard renders every SQLite trace event into a
+[NodeGraph Live](https://github.com/HomenShum/NodeGraph) session as interaction
+history — faint constant-width traversal edges, never evidence, because traces
+are telemetry about what the system did, not curated claims about the world.
+Clicking a node lists the trace event ids that produced it. The build is
+vendored in `vendor/nodegraph-live/` until the `@homenshum/nodegraph-live` npm
+publish lands; `npm run capture:live-graph` regenerates the proof below and
+exits nonzero if the rail ingests zero entities, or if the graph canvas has not
+actually painted node rings — the counts in the DOM stay right through a dead
+WebGL context, so the picture is checked in pixels before it is written.
+
+![Live graph rail ingesting real SQLite trace events as traversal-only interaction history](docs/screenshots/live-graph-rail.png)
 
 ## Add To An Existing App
 
@@ -80,7 +116,11 @@ state remains Builder-safe, and confirms the Trace Lens keeps a bounded runtime
 window for the clicked surface. The integration prompt is in
 [`examples/qa-agent/README.md`](examples/qa-agent/README.md).
 
-For a NodeRoom codebase Trace Coach walkthrough:
+For a NodeRoom codebase Trace Coach walkthrough using **new captures**, first
+provide a real NodeRoom checkout and its dependencies. Both discovery and
+capture resolve it from `--source-root`, then `NODETRACE_SOURCE_ROOT`, then
+the parent directory. The automatic tool clone below supplies Understand-Anything,
+not the NodeRoom source.
 
 ```bash
 npm run understand:noderoom
@@ -89,8 +129,14 @@ npm run trace-coach:sqlite
 npm run dev
 ```
 
-That proof seeds the local sample app from NodeRoom's real trace-tab source
-path. It writes a SQLite-backed campaign where each ordered step contains a
+For the **bundled snapshot**, run `npm run trace-coach:sqlite` and `npm run dev`
+without the first two commands. This reuses committed captures and does not
+create new ones. The UI labels that state **bundled snapshot**, distinguishes it
+from a captured checkout, and explains when no coach is loaded.
+
+With a real checkout and successful capture commands, the workflow seeds the
+local sample app from NodeRoom's real trace-tab source path. It writes a
+SQLite-backed campaign where each ordered step contains a
 step label, real NodeRoom file path and line range, actual NodeTrace
 code-browser source screenshot rendered from the real filesystem, UI selector,
 DOMRect bounding box, actual running NodeRoom screenshot, and Mermaid flow
@@ -121,11 +167,12 @@ Reusable capture tool:
 - `nodetrace-capture --plan <capture-plan.json>` is the same tool as a dedicated binary.
 - `nodetrace-mcp` exposes `validate_capture_plan` and `capture_codebase` over stdio MCP for local coding agents.
 - [`examples/real-codebase-capture/noderoom.capture.json`](examples/real-codebase-capture/noderoom.capture.json) is the copyable plan format.
-- The default `editor.mode` is `code-browser`: NodeTrace renders real repo files with Shiki in a local browser view, so no VS Code profile, workspace trust, or desktop automation is required. `desktop` and `web` remain optional escape hatches.
+- `editor.mode` is `code-browser`, and that is the only mode: NodeTrace renders real repo files with Shiki in a local browser view, so no VS Code profile, workspace trust, or desktop automation is required.
 
 Default `add` behavior:
 
-- copies `src/nodetrace/`
+- copies `src/nodetrace/`, including the vendored NodeGraph Live renderer it
+  imports (`src/nodetrace/vendor/nodegraph-live/`)
 - creates `src/nodetrace-demo/`
 - creates `nodetrace.html` for Vite or `/nodetrace` App Router page for Next
 - copies the SQLite schema and init/smoke scripts

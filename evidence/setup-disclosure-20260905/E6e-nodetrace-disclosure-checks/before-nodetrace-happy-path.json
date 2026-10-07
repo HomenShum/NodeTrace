@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "startedAt": "2026-08-13T21:18:08.226Z",
+  "completedAt": "2026-08-13T21:18:08.267Z",
+  "durationMs": 41,
+  "apiKeysRequired": false,
+  "databasePath": ".nodetrace/nodetrace.sqlite",
+  "statePath": "public/nodetrace-state.json",
+  "tables": [
+    "trace_sessions",
+    "trace_surfaces",
+    "trace_proofs",
+    "trace_events",
+    "trace_code_ownership"
+  ],
+  "traceRows": 4,
+  "proofRows": 2,
+  "builderCapable": false
+}

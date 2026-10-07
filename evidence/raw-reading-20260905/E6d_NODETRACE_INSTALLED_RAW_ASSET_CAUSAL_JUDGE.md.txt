@@ -1,0 +1,13 @@
+Builder. **Complete the replay fixture; do not change the installer or filter404s.** A developer using the normal installed app gets a four-trace state with no coach screenshot packet. The proof injected a six-trace coach state whose screenshot attachments were absent from that consumer.
+
+**Re your request:** independently distinguish an installer defect from a replay-fixture mismatch. The three-way actual installed browser comparison passes9 diagnostic checks and preserves all50 protected consumer source/package/state/build files.
+
+- Normal installed data, without route overrides: no404s, console errors or page crashes.
+- Same installed app with only the coach JSON overridden:404s for `/captures/coach-step-01-artifact-entry-ide.png`, `/captures/coach-step-01-artifact-entry-ui.png`, `/captures/coach-step-02-detail-tabs-ide.png` and `/captures/coach-step-02-detail-tabs-ui.png`. Both displayed step02 images have naturalWidth0. [Broken replay pixels](E6d-nodetrace-installed-assets-judge/fixture-state-only-viewport.png)
+- Same app and JSON with exact explicitly named attachments: no404s or broken images; the two step02 images decode at1440×920 and768×30, the selected Raw payload is current, and served assets still match the real installed build. [Complete replay pixels](E6d-nodetrace-installed-assets-judge/fixture-with-exact-attachments-viewport.png)
+
+The complete fixture needs19 attachment files totaling804,271bytes. Every retained attachment equals both its actual Git blob at `04891604227ab607a61557f49f2cdb41b28dd338` and the current source public file. Their paths and hashes are explicit; the diagnostic served only those known URLs with their original bytes. No consumer file, app source, build or real installation output was edited. [Attachment manifest](E6d-nodetrace-installed-assets-judge/attachment-manifest.json), [raw network/console/input evidence](E6d-nodetrace-installed-assets-judge/report.json)
+
+Use this complete packet for the four planned short/long390/1024 installed cells. Keep original fixture JSON unchanged, bind every served attachment, leave all other requests and404 checks active, and retain the failed installed run. Label the packet as recorded coach replay; it is separate from the normal four-trace installed setup.
+
+This establishes no normal installer defect. It also does not certify every one of the19 attachment views: this diagnostic rendered the first two records at390px and byte-verified the full declared packet. Full matrix completion and grades remain separate. [Machine judgment and evidence hashes](E6d_NODETRACE_INSTALLED_RAW_ASSET_CAUSAL_JUDGE.json)

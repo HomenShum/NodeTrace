@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "at": "2026-09-05T09:09:42.244190+00:00",
+  "mode": "Builder",
+  "proof": "NODETRACE-D3-SETUP-DISCLOSURE-01-FINAL-INDEPENDENT-JUDGE",
+  "requestTrace": "Re your request to make each individual repo excellent and ready for usage/handoff, including visual UI, responsiveness and interaction grading: independently judge the frozen native setup disclosure and correct first-inspection identity.",
+  "verdict": "APPROVED_SCOPED_D3_WITH_CAPTURE_LIMITATION",
+  "reviewer": {
+    "agent": "/root/nodemem_mobile_judge",
+    "independentRuntimeNonauthor": true,
+    "freshBlindContext": false,
+    "contextReuseDisclosure": "This reviewer prepared the observed-before plan and later judged the parent implementation; did not author the runtime, consumer or worker proof. Prior reviewer context is reused."
+  },
+  "source": {
+    "repo": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+    "baseCommit": "594c988881d17b759ff6455539dc3b293e1a4ee5",
+    "branch": "codex/trace-setup-disclosure-20260905",
+    "candidateSha256": "f044bf1ebdfea1f04d3165a59e20d6b898113e0259f3ae340d925f22d6cf2f06",
+    "files": {
+      "src/DemoDashboard.tsx": {
+        "sha256": "89865a4eb9144c88fa32b5e97e4b7d8c77465c41752ba2bd95486701c63ce662",
+        "bytes": 17471
+      },
+      "src/styles.css": {
+        "sha256": "32e846db4aebee33b956a2ec968d8174bca1789388296365507aad099abd32fd",
+        "bytes": 17737
+      },
+      "scripts/setup-disclosure-proof.mjs": {
+        "sha256": "4a0eddc878729fbcdf7a2bffa67cba4555ead55674a1efe92f73b577e1456e5d",
+        "bytes": 20825
+      },
+      ".tours/01-primary-user-flow.tour": {
+        "sha256": "4675e975d5cfe8e527d6ac29a265fd21f5285f5596e5fb9938204fcd8e1a5ef0",
+        "bytes": 4399
+      },
+      ".tours/03-debug-and-recovery.tour": {
+        "sha256": "40c61e922becbb09638ff829bf49f50667794cb84cd4243b939305e74e8fe449",
+        "bytes": 3734
+      },
+      "docs/START_HERE.md": {
+        "sha256": "e826e45d80212c07fa9448f1a2caa081439e82fc6d9bdc54c9303518024292c3",
+        "bytes": 21628
+      },
+      "docs/codebase/CONCERNS.md": {
+        "sha256": "50df0ffd7c8f60dd60de500b363b2a81478f396b3be69d56c42b453cb9ad6a2e",
+        "bytes": 8861
+      }
+    },
+    "scope": "Two runtime owner files, one focused proof script and four necessary citation/tour metadata files. No future commit or staged tree is invented.",
+    "gitBefore": {
+      "head": "594c988881d17b759ff6455539dc3b293e1a4ee5",
+      "tree": "7995a3a56bca8363994891997dfcc8256c8cbaac",
+      "index": "feba008111856aad19ce8dad21c63e459e2d3c97b25e3bb9f48f3b259d783944",
+      "refs": "fb396d1f87462f2924f616bb36084776ed7f2c2ad724887c9bfcf65ac9340804",
+      "status": " M .tours/01-primary-user-flow.tour\u0000 M .tours/03-debug-and-recovery.tour\u0000 M docs/START_HERE.md\u0000 M docs/codebase/CONCERNS.md\u0000 M src/DemoDashboard.tsx\u0000 M src/styles.css\u0000?? scripts/setup-disclosure-proof.mjs\u0000"
+    },
+    "gitAfter": {
+      "head": "594c988881d17b759ff6455539dc3b293e1a4ee5",
+      "tree": "7995a3a56bca8363994891997dfcc8256c8cbaac",
+      "index": "feba008111856aad19ce8dad21c63e459e2d3c97b25e3bb9f48f3b259d783944",
+      "refs": "fb396d1f87462f2924f616bb36084776ed7f2c2ad724887c9bfcf65ac9340804",
+      "status": " M .tours/01-primary-user-flow.tour\u0000 M .tours/03-debug-and-recovery.tour\u0000 M docs/START_HERE.md\u0000 M docs/codebase/CONCERNS.md\u0000 M src/DemoDashboard.tsx\u0000 M src/styles.css\u0000?? scripts/setup-disclosure-proof.mjs\u0000"
+    },
+    "judgeChangedSourceIndexRefs": false
+  },
+  "verification": {
+    "sourceReplay": {
+      "checks": 92,
+      "capturedStates": 15,
+      "pass": true,
+      "report": "E6e-nodetrace-disclosure-final-judge/source/report.json"
+    },
+    "installedReplay": {
+      "checks": 79,
+      "capturedStates": 15,
+      "pass": true,
+      "report": "E6e-nodetrace-disclosure-final-judge/installed/report.json",
+      "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-AxCJ0v",
+      "protectedInputs": 53
+    },
+    "independentCausalProbe": {
+      "checks": 14,
+      "pass": true,
+      "report": "E6e-nodetrace-disclosure-final-judge/causal/report.json"
+    },
+    "singleFreshInstalled1440Capture": {
+      "checks": 6,
+      "pass": true,
+      "report": "E6e-nodetrace-disclosure-final-judge/installed-1440-capture/report.json"
+    },
+    "groupedSourceMetadataCustodyChecks": 33,
+    "allSourceBuildBindings": 35,
+    "directlyViewedPngs": 18,
+    "byteEquivalentIndependentCollapsedPngs": 5,
+    "citationReplay": "PASS 3 tours, 35 steps, 54 markdown citations",
+    "proofSyntax": "PASS",
+    "newBuildsByJudge": 0,
+    "providerCalls": 0,
+    "databaseFileAccess": false,
+    "environmentFileAccess": false,
+    "launchEnvironment": "Only existing OS path/temp/profile variables passed to local servers; no credential retrieval or environment writes."
+  },
+  "measuredBeforeAfter": [
+    {
+      "surface": "source",
+      "width": 320,
+      "height": 800,
+      "beforeHeroHeight": 1042.203125,
+      "afterHeroHeight": 384.71875,
+      "beforeNextY": 1070.203125,
+      "afterNextY": 412.71875,
+      "afterSummaryHeight": 47.1875,
+      "beforeGraphY": 2230.5625,
+      "afterGraphY": 1573.078125
+    },
+    {
+      "surface": "source",
+      "width": 390,
+      "height": 844,
+      "beforeHeroHeight": 939.65625,
+      "afterHeroHeight": 325.75,
+      "beforeNextY": 967.65625,
+      "afterNextY": 353.75,
+      "afterSummaryHeight": 47.1875,
+      "beforeGraphY": 2191.875,
+      "afterGraphY": 1577.96875
+    },
+    {
+      "surface": "source",
+      "width": 1440,
+      "height": 960,
+      "beforeHeroHeight": 341.859375,
+      "afterHeroHeight": 349.65625,
+      "beforeNextY": 379.859375,
+      "afterNextY": 387.65625,
+      "afterSummaryHeight": 47.1875,
+      "beforeGraphY": 1403.03125,
+      "afterGraphY": 1410.828125
+    },
+    {
+      "surface": "installed",
+      "width": 320,
+      "height": 800,
+      "beforeHeroHeight": 904.734375,
+      "afterHeroHeight": 362.21875,
+      "beforeNextY": 932.734375,
+      "afterNextY": 390.21875,
+      "afterSummaryHeight": 47.1875,
+      "beforeGraphY": 1245.484375,
+      "afterGraphY": 702.96875
+    },
+    {
+      "surface": "installed",
+      "width": 390,
+      "height": 844,
+      "beforeHeroHeight": 802.1875,
+      "afterHeroHeight": 303.25,
+      "beforeNextY": 830.1875,
+      "afterNextY": 331.25,
+      "afterSummaryHeight": 47.1875,
+      "beforeGraphY": 1072.71875,
+      "afterGraphY": 573.78125
+    },
+    {
+      "surface": "installed",
+      "width": 1440,
+      "height": 960,
+      "beforeHeroHeight": 319.359375,
+      "afterHeroHeight": 327.15625,
+      "beforeNextY": 357.359375,
+      "afterNextY": 365.15625,
+      "afterSummaryHeight": 47.1875,
+      "beforeGraphY": 507.140625,
+      "afterGraphY": 514.9375
+    }
+  ],
+  "behaviorObserved": [
+    "Native disclosure starts closed at320/390/1440; source first records and installed graph heading now appear before the phone fold. All six summaries are47.1875px high, above the frozen44px target.",
+    "Title, live load status, owned error/Retry and first inspection stay outside disclosure. Actual first inspection and header modifier-click resolve registered source/installed evidence; selected coach changes update the first identity.",
+    "Enter expands and Space collapses while retaining summary focus. User expansion survives resize. Setup toggles preserve selected Raw bytes, entity selection and URL. Existing tab Back/Forward and lens open/close navigation remain valid.",
+    "Every original command and provenance text is preserved and reachable. Header text doubled exactly without inherited compounding; provenance labels wrap instead of ellipsis. Empty/no-coach guidance remains truthful.",
+    "One explicit local503 failure followed by one Retry gives exactly two requests. A15-second bounded repeated-toggle sequence does not add state requests or lose disclosure state.",
+    "Coach/list/Raw and graph source below the header remain byte-identical to the baseline. Protected source/installed section widths and heights remain within the frozen1px comparison, with intended vertical translation only."
+  ],
+  "resolvedFindings": [
+    {
+      "id": "E6e-D3-01",
+      "finding": "Optional setup dominated the phone first view.",
+      "status": "RESOLVED_IN_EXERCISED_OWNER_SCOPE",
+      "evidence": "Source header320 shrinks1042.203125→384.71875px and390 shrinks939.65625→325.75px. Installed320 shrinks904.734375→362.21875px and390 shrinks802.1875→303.25px. Desktop following sections move down only7.796875px, within16px budget."
+    },
+    {
+      "id": "E6e-D3-02",
+      "finding": "First source inspection used absent shell.statusStrip despite a current registered coach surface.",
+      "status": "RESOLVED_WITH_CAUSAL_KNOCKOUT",
+      "evidence": "Actual bundle opens Room trace strip. Replacing the single compiled current-surface expression with its old literal in one browser response restores Surface unavailable; actual bytes in a fresh context restore success. Original failure and knockout pixels remain preserved."
+    },
+    {
+      "id": "E6e-DOC-UTF8-01",
+      "finding": "Citation editing corrupted70 existing em dashes across two handoff documents.",
+      "status": "RESOLVED_BEFORE_FINAL_APPROVAL",
+      "evidence": "Judge retained original bad bytes. Parent recreated intended changes from UTF8 Git baselines; final START_HERE equals baseline plus declared header/anchor edits, CONCERNS equals baseline plus two numeric anchors, tour descriptions remain exact. Final candidate f044bf1e supersedes retained2aea3468."
+    }
+  ],
+  "failureCausePrecision": {
+    "nextHostAlert": {
+      "status": "OBSERVED_ACTUAL_SHADOW_DOM",
+      "selector": "next-route-announcer shadowRoot > div#__next-route-announcer__[role=\"alert\"][aria-live=\"assertive\"]",
+      "text": "",
+      "dimensions": "1×1px, clipped",
+      "ownedErrorBehavior": "Actual .loadError[role=alert] exists during503 and is detached after exactly two state requests. The empty host announcer remains; all-alerts-zero was an incorrect oracle.",
+      "rawObservation": "E6e-nodetrace-disclosure-final-judge/causal/installed-alert-shadow-observation.json"
+    },
+    "earlierProbeErrors": "Original wrong combobox locator and lens-history oracle remain historical; role-based selection and explicit tab history follow the existing actual contracts. No product behavior was changed to accommodate those oracles.",
+    "enlargedProvenance": "Earlier passing lower-layer checks did not certify complete visual text. Root actual pixels found ellipsis; scoped wrapping plus strict label width checks now pass and actual final pixels were viewed."
+  },
+  "captureLimitation": {
+    "status": "ORIGINAL_FAILED_PIXEL_CAPTURE_RETAINED_FRESH_CURRENT_SCENE_OBSERVED",
+    "original": "E6e-nodetrace-disclosure-final-judge/installed/installed-1440-collapsed.png",
+    "originalSha256": "a37ac006238408188378f3c8b4bdf8bbb0c9195d78ef7463d3128c1653c69d82",
+    "originalGraphVisibleChromaticPixels": 0,
+    "fresh": "E6e-nodetrace-disclosure-final-judge/installed-1440-capture/installed-1440-current-viewport.png",
+    "freshSha256": "8f8c9f688d9fa26a2fd7579adfc22911bff9ee7b51237ed6093067bb4d95f780",
+    "freshGraphVisibleChromaticPixels": 243,
+    "rootFinalComparablePixels": 247,
+    "interpretation": "One independent viewport had a blank visible graph region despite passing DOM/earlier paint checks. Its capture cannot certify graph pixels. A single fresh1440 viewport under the unchanged source/consumer showed actual rings/labels and preserved DOM geometry. The historical blank cause is unestablished; GPU contention is not inferred.",
+    "readbackLimit": "Direct canvas exports of the WebGL layers are transparent alongside the freshly painted native screenshot; the label export changes across capture. These readbacks do not prove composited WebGL pixel identity or static same-frame canvas equality. Actual saved native PNGs provide the scoped visual observation.",
+    "noCompleteCaptureCertification": true,
+    "rawDiagnosis": "E6e-nodetrace-disclosure-final-judge/installed-1440-capture/pixel-observation.json"
+  },
+  "criterionObservation": {
+    "id": "D3",
+    "criterion": "Progressive disclosure",
+    "status": "OBSERVED_SCOPED_IMPROVEMENT",
+    "score": null,
+    "priorObservedScore": 3,
+    "observedScore": 5,
+    "scope": "Only the existing source and ordinarily installed header/disclosure/first-inspection owner in the frozen Chromium320/390/1440 and recovery/empty/enlarged/repeated-use cases.",
+    "reason": "Meets the frozen before reference and all exercised disclosure budgets/interaction states; no material observed D3 defect remains in this owner. This is the rubric5 anchor, not a full criterion/dimension or human-usability certification.",
+    "requiredCoverageComplete": false,
+    "profile": "AGENT_EVALUATED_ONLY"
+  },
+  "grades": {
+    "visualScore": null,
+    "designScore": null,
+    "responsiveScore": null,
+    "interactionScore": null,
+    "accessibilityScore": null,
+    "performanceScore": null,
+    "usageScore": null,
+    "alignmentScore": null,
+    "overallGrade": null
+  },
+  "workingTarget": 4.5,
+  "criterionFloor": 4,
+  "otherCriteriaRegraded": false,
+  "centralGradeRegisterModifiedByJudge": false,
+  "blockingImplementationFindings": [],
+  "limits": [
+    "Source uses exact before fixture. The newly ordinarily installed consumer has its own generated session/time and four events/no coach; it is not falsely labelled byte-identical to the older installed before input.",
+    "Current HTML/Chromium and saved native viewport evidence only. Real devices, Safari/Firefox, assistive technology, real-human usability, browser zoom and field performance remain unverified.",
+    "200 percent doubles header component text; it is not a browser-zoom or whole-app claim. The normal-text height budget is not applied to enlarged text.",
+    "No new build/install was run by the judge. Retained ordinary installer receipt records106655ms and all four phases; focused replay verifies installed transformed source, styles and53 protected inputs. Existing happy-path/smoke logs and later citation repair remain bound; the earlier citation failure stays a failure.",
+    "This is an uncommitted working candidate approval with a capture limitation. Exact staging, publication, normal shared CI and production verification remain separate; no deployment claim.",
+    "Original failures, corrupted metadata copies and the blank viewport are preserved. No broad audit or additional browser matrix is required for this closed named proof."
+  ],
+  "artifacts": {
+    "manifest": "E6e_NODETRACE_DISCLOSURE_FINAL_JUDGE_ARTIFACTS.json",
+    "manifestSha256": "18bb462155fdf8d64f364f3ae5445068e337391ce7b3537a6f1a2f243f40d3f2",
+    "rawBindings": "E6e-nodetrace-disclosure-final-judge/verification.json"
+  }
+}

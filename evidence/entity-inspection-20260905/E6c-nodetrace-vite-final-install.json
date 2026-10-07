@@ -1,0 +1,20 @@
+{
+  "source": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "target": "D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905",
+  "generatorHash": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+  "exitCode": 0,
+  "before": {
+    "index.html": "fa146504577651c76ca478688d4110e0156112d3b46f4c543fc43968d3b26de1",
+    "src/main.tsx": "60bc068f01bba7fd6558420bedb46633260a1906b854602ad50b0c7d4ff6d5e5",
+    "vite.config.ts": "1324d55fbba3c3c0e78f8cd30f51c7e4187d477768558acc2acaf7176a2232ff",
+    "tsconfig.json": "47fa3011f56da3a1fbedd9b10782c1f03d834db463e15c986048d4c4cd597024"
+  },
+  "after": {
+    "index.html": "fa146504577651c76ca478688d4110e0156112d3b46f4c543fc43968d3b26de1",
+    "src/main.tsx": "60bc068f01bba7fd6558420bedb46633260a1906b854602ad50b0c7d4ff6d5e5",
+    "vite.config.ts": "1324d55fbba3c3c0e78f8cd30f51c7e4187d477768558acc2acaf7176a2232ff",
+    "tsconfig.json": "47fa3011f56da3a1fbedd9b10782c1f03d834db463e15c986048d4c4cd597024"
+  },
+  "hostUnchanged": true,
+  "generatedEntry": "import React from \"react\";\nimport { createRoot } from \"react-dom/client\";\nimport { DemoDashboard } from \"./DemoDashboard\";\nimport \"./styles.css\";\n\ncreateRoot(document.getElementById(\"root\")!).render(\n  <React.StrictMode>\n    <DemoDashboard installed />\n  </React.StrictMode>,\n);\n"
+}

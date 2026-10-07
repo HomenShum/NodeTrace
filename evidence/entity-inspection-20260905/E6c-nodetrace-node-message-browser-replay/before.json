@@ -1,0 +1,39 @@
+{
+  "mode": "before",
+  "message": {
+    "source": "nodegraph",
+    "kind": "node",
+    "id": "b",
+    "label": "Product B",
+    "nodeKind": "product",
+    "edges": [
+      {
+        "other": "Supplier A",
+        "weight": 99,
+        "type": "assertion",
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "duplicate-should-not-appear",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/duplicate-should-not-appear"
+        }
+      }
+    ]
+  },
+  "detail": "entity\nProduct B · product\ncount\nunknown — not measured\nvisits\n1 — interaction frequency, not evidence strength\nassertions\nSupplier A · Independent contract fixture duplicate-should-not-appear · receipt",
+  "painted": {
+    "nodes": 2,
+    "chromaticPixels": 82,
+    "points": [
+      {
+        "x": 214,
+        "y": 357.4407786885246
+      },
+      {
+        "x": 687,
+        "y": 357.4407786885246
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+  "width": 390,
+  "height": 844,
+  "overflow": 0,
+  "open": true,
+  "scrollY": 0,
+  "active": "SUMMARY",
+  "regions": {
+    ".showcase": {
+      "x": 12,
+      "y": 12,
+      "width": 366,
+      "height": 861.375,
+      "documentY": 12
+    },
+    ".showcaseCopy h1": {
+      "x": 29,
+      "y": 51.9375,
+      "width": 332,
+      "height": 72.9375,
+      "documentY": 51.9375
+    },
+    ".traceSetup > summary": {
+      "x": 29,
+      "y": 251.0625,
+      "width": 332,
+      "height": 47.1875,
+      "documentY": 251.0625
+    },
+    ".showcaseActions": {
+      "x": 29,
+      "y": 310.25,
+      "width": 332,
+      "height": 88.78125,
+      "documentY": 310.25
+    },
+    ".launchCard": {
+      "x": 29,
+      "y": 415.03125,
+      "width": 332,
+      "height": 441.34375,
+      "documentY": 415.03125
+    },
+    ".coachPanel": null,
+    ".coachList": null,
+    ".coachDetail": null,
+    ".coachEmpty": {
+      "x": 12,
+      "y": 889.375,
+      "width": 366,
+      "height": 224.53125,
+      "documentY": 889.375
+    },
+    ".liveGraphRail": null
+  }
+}

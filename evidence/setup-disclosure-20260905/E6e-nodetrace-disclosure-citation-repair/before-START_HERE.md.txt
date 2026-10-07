@@ -1,0 +1,461 @@
+# START HERE
+
+You have never seen this repository and nobody who built it is available. This
+page walks one real user action all the way through the code, **in the order the
+code actually runs**, not in the order an architect would draw it.
+
+## The human situation, before any jargon
+
+A reviewer is looking at a screen in some product — a number, a status badge, a
+generated summary. They ask the question that no screenshot can answer: *where
+did that come from, and can I check it?* Normally somebody has to go read the
+code and reply in Slack.
+
+NodeTrace is the thing you drop into that product so the screen can answer for
+itself. A developer marks a region of their interface with one HTML attribute.
+The demo supplies an **Inspect trace** button that works with keyboard, pointer
+or touch. Holding **Ctrl** (or **Cmd** on a Mac) and clicking a tagged region
+also opens the Trace Lens. It shows the region's business proof and runtime
+steps, including explicit missing-data states. A host can expose internal code
+ownership only after verifying the reviewer's capability on its server.
+
+Two words you will meet everywhere below:
+
+- a **surface** is a named region of a user interface (`workSurface.traceStrip`,
+  `shell.statusStrip`). It is just a string. Both the interface and the database
+  agree to use the same string, and that agreement is the whole trick.
+- the **Trace Lens** is a native modal dialog displayed as a side panel.
+
+This repository ships three things around that idea: the panel itself, a command
+that transplants the panel into an app you already have, and a capture tool that
+photographs real source files and the real running app so a walkthrough can show
+code and screen side by side.
+
+**Candidate status, 2026-09-04:** this page describes the local user-journey
+repair. Earlier D1/D4 failures remain historical evidence; their candidate
+repairs and the new loading, navigation and provenance behavior still require
+final independent UI judgment. Compilation and citations do not certify visual
+quality, physical touch, human accessibility or production readiness.
+
+## Run it first
+
+```bash
+npm install
+npm run happy-path     # creates the SQLite file and public/nodetrace-state.json
+npm run dev            # use the Vite URL printed by the server
+```
+
+Then activate **Inspect trace** in the header, or Ctrl/Cmd-click the header.
+That is the action this document follows. `npm run check` runs the whole
+verification chain (about six minutes,
+because it installs NodeTrace into a throwaway Next.js app and builds it).
+
+---
+
+## Step 1 — The page loads and mounts one React component
+
+**File:** `src/main.tsx`
+**Symbol:** `src/main.tsx:6` (`createRoot(document.getElementById("root")!)`)
+**Called by:** the browser, via `index.html:11` (`<script type="module" src="/src/main.tsx">`)
+**Calls next:** `DemoDashboard`
+
+**Why this exists**
+The entrypoint mounts one demo page. Its selection helper reads and writes URL
+parameters for the selected coach step, tab and Trace Lens hit. That logic lives
+in `src/demoNavigation.ts:31` (`export function useDemoNavigation`), outside the
+portable provider. Installed applications keep their existing router and call
+the provider's `openHit` and `close` API themselves.
+
+**Core code**
+```tsx
+createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <DemoDashboard />
+  </React.StrictMode>,
+);
+```
+
+**Input** — the empty root div, `index.html:10` (`<div id="root"></div>`).
+**Output** — a mounted React tree.
+**Failure behavior** — if `#root` is missing the non-null assertion throws and
+the page is blank. Nothing catches it; there is no error boundary.
+**Next** — continue to `DemoDashboard` in Step 2.
+
+---
+
+## Step 2 — Load and validate the public state before rendering trace details
+
+**Files:** `src/DemoDashboard.tsx`, `src/demoState.ts`
+**Symbol:** `src/demoState.ts:31` (`export async function loadDemoState`)
+**Called by:** the request effect in `DemoContent`, on mount and retry
+**Calls next:** ready-state rendering and `useDemoNavigation`
+
+**Why this exists**
+The demo reads `public/nodetrace-state.json`, prepared by a SQLite seed command.
+The browser never opens SQLite. A missing or malformed file must tell the
+reviewer why evidence is unavailable instead of looking like an empty success.
+The loader checks HTTP status, limits the response to 1 MiB and validates its
+nested render fields with the existing Zod dependency. `DemoContent` supplies
+an AbortController and a ten-second timeout.
+
+**Core code**
+```tsx
+const response = await fetch("./nodetrace-state.json", { cache: "no-store", signal });
+if (!response.ok) throw new Error(`State request failed (HTTP ${response.status}).`);
+// After a bounded read and schema validation:
+return { ...parsed.data, builderCapable: false, codeOwnership: [] };
+```
+
+**Input** — a public JSON response and an abort signal.
+**Output** — validated review data. Public JSON is not builder authority: the
+loader strips ownership and forces `builderCapable: false`, and the demo's
+provider also receives `false`.
+**Failure behavior** — failed, invalid, oversized or timed-out requests produce
+an alert and **Retry loading trace**. Loading is announced and inspect controls
+remain disabled until the request succeeds. Effect cleanup aborts the request
+and prevents an obsolete response from replacing current state.
+**Next** — the ready header has a tagged surface at `src/DemoDashboard.tsx:72`
+(`data-nodetrace-surface="shell.statusStrip"`) and a normal inspect control.
+
+---
+
+## Step 3 — Open the lens through a normal control or the existing shortcut
+
+**Files:** `src/DemoDashboard.tsx`, `src/trace/TraceLensProvider.tsx`
+**Symbols:** `src/DemoDashboard.tsx:147` (`function InspectTraceButton`) and
+`src/trace/TraceLensProvider.tsx:45` (`const openHit = useCallback`)
+**Called by:** an Inspect trace button, a host control or the modifier-click listener
+**Calls next:** `openHit`; modifier-click first calls `resolveTraceHit`
+
+**Why this exists**
+A reviewer using a keyboard or phone needs an ordinary button. The demo's
+header and coach detail controls call the provider's existing API; hosts can
+provide an equivalent control without adopting the demo's URL policy.
+
+**Core code**
+```tsx
+const { openHit } = useTraceLens();
+// Inside a host's normal button handler:
+openHit({ surfaceId });
+```
+
+The existing window listener still accepts a plain Ctrl/Cmd-left-click in a
+tagged region. It resolves the hit, prevents the underlying action and calls
+`openHit`. Other clicks pass through to the host. See
+`src/trace/TraceLensProvider.tsx:58` (`event.metaKey || event.ctrlKey`).
+
+**Input** — an explicit `SurfaceHit`, or a DOM event resolved to one.
+**Output** — an open lens and its selected hit in React context.
+**Failure behavior** — a click outside a tagged region does nothing to the
+host. An unregistered but explicit surface opens a missing-data message rather
+than disappearing. Historical D1 and D4 have candidate repairs; final browser
+acceptance is pending, as recorded in [CONCERNS.md](codebase/CONCERNS.md).
+**Next** — Step 4 explains the shortcut's DOM resolver; normal controls already
+supply the same typed value.
+
+---
+
+## Step 4 — The click becomes a typed domain value
+
+**File:** `src/trace/TraceLensProvider.tsx`
+**Symbol:** `src/trace/TraceLensProvider.tsx:15` (`export function resolveTraceHit`)
+**Called by:** the window click listener in Step 3
+**Calls next:** `openHit`, which stores the result in React state
+
+**Why this exists**
+This is the selection boundary. Above it there is a DOM event; below it
+there is a `SurfaceHit` with one required surface id and three optional strings.
+Selecting a surface grants no privileged access. No DOM node, no event and no
+component reference crosses this line, which is
+why the panel can be rendered anywhere in the tree.
+
+**Core code**
+```tsx
+export function resolveTraceHit(target: EventTarget | null): SurfaceHit | null {
+  if (!(target instanceof Element)) return null;
+  const node = target.closest(surfaceSelector);
+  if (!node) return null;
+  const surfaceId = node.getAttribute("data-nodetrace-surface") ?? node.getAttribute("data-noderoom-surface");
+  if (!surfaceId) return null;
+  ...
+}
+```
+
+**Input** — `event.target`.
+**Output** — a `SurfaceHit`, defined at `src/trace/types.ts:10`
+(`export interface SurfaceHit {`): `surfaceId` plus optional
+`artifactId`, `elementId`, `targetRef` read from the nearest enclosing element
+that carries them.
+**Failure behavior** — every unsupported shape returns `null` and the click is
+left alone. `data-noderoom-surface` is accepted as well as
+`data-nodetrace-surface` so an app already tagged for NodeRoom works unchanged.
+**Next** — the stored hit re-renders `TraceLensPanel`; continue to Step 5.
+
+---
+
+## Step 5 — Tool registration and invocation: the MCP server, not the panel
+
+**File:** `bin/nodetrace-mcp.mjs`
+**Symbol:** `bin/nodetrace-mcp.mjs:22-23` (`"validate_capture_plan"`) and
+`bin/nodetrace-mcp.mjs:49-50` (`"capture_codebase"`)
+**Called by:** a coding agent over stdio MCP
+**Calls next:** `normalizeCapturePlan` / `captureCodebaseFromPlan` in
+`src/capture/codebaseCapture.mjs`
+
+**Why this exists**
+**The stage the gate calls "agent orchestration" does not exist in this
+repository, and you should not go looking for it.** NodeTrace has no planner, no
+model call, no agent loop — it is the surface an agent-built product adopts, not
+an agent. What it does have is a pair of tools it exposes *to* somebody else's
+agent, so a coding assistant can photograph a codebase without a human driving a
+browser.
+
+**Core code**
+```js
+server.registerTool("capture_codebase", { /* zod inputSchema */ },
+  async ({ planPath, cwd }) => {
+    const result = await captureCodebaseFromPlan(loadCapturePlan(absolutePlanPath), { cwd, planPath: absolutePlanPath });
+    ...
+  });
+await server.connect(new StdioServerTransport());
+```
+
+**Input** — a path to a capture plan JSON file (see
+`examples/real-codebase-capture/noderoom.capture.json`).
+**Output** — a JSON text block with the step count and manifest path, plus PNGs
+on disk.
+**Failure behavior** — a bad plan throws inside `normalizeCapturePlan` and the
+MCP call returns the error text. `editor.mode` other than `code-browser` is
+rejected by name — `src/capture/codebaseCapture.mjs:98`
+(`Unsupported editor.mode`).
+**Next** — continue to Step 6; the capture writes a manifest, and the happy path
+writes the database.
+
+---
+
+## Step 6 — Persistence: the only place rows are created
+
+**File:** `scripts/init-sqlite.mjs`
+**Symbol:** `scripts/init-sqlite.mjs:187` (`db.transaction(() => {`) and
+`scripts/init-sqlite.mjs:227` (`writeFileSync(statePath,`)
+**Called by:** `npm run happy-path`, and by `scripts/nodetrace-init.mjs` inside
+any app the installer patched
+**Calls next:** nothing — it is a script; it exits
+
+**Why this exists**
+This is the whole write path of the product. It applies `db/schema.sql`, inserts
+one demo session with its surfaces, proof cards, trace events and ownership rows,
+and then publishes the browser-safe subset as
+`public/nodetrace-state.json`. Notice what it strips: `codeOwnership` is written
+to the JSON **only** when `NODETRACE_BUILDER_CAPABLE=true`. That flag controls
+a local export; it does not authenticate a browser user. Do not publish a
+privileged export as a public static file. The demo always strips ownership and
+uses Review mode. An installed host must verify builder identity on its server
+and provide a safe privileged projection through its own route.
+
+**Core code**
+```js
+db.transaction(() => {
+  insertSession.run(session);
+  for (const surface of surfaces) insertSurface.run({ ...surface, proofAvailable: surface.proofAvailable ? 1 : 0 });
+  ...
+})();
+
+const clientState = { ..., codeOwnership: builderCapable ? codeOwnership.map(...) : [] };
+writeFileSync(statePath, `${JSON.stringify(clientState, null, 2)}\n`);
+```
+
+**Input** — `--db`, `--state`, `--json-out` (parsed by `node:util`), and the
+`NODETRACE_BUILDER_CAPABLE` environment variable.
+**Output** — `.nodetrace/nodetrace.sqlite`, `public/nodetrace-state.json`, and an
+optional receipt JSON.
+**Failure behavior** — a missing `better-sqlite3` prints one instruction and
+exits 1 — `scripts/init-sqlite.mjs:10` (`Missing dependency: run`). Everything
+else throws with a stack trace. The transaction means a half-written database is
+not possible.
+**Next** — the JSON this step wrote is what Step 2 fetches. That is the loop.
+
+---
+
+## Step 7 — Rendering: the panel filters the state down to one surface
+
+**File:** `src/trace/TraceLensPanel.tsx`
+**Symbol:** `src/trace/TraceLensPanel.tsx:7` (`export function TraceLensPanel({`)
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:142`
+(`<TraceLensPanel state={state} />`)
+**Calls next:** `src/trace/TraceLensPanel.tsx:184` (`function filterByHit`)
+
+**Why this exists**
+The panel reads the current hit from context and the full state from its prop,
+and narrows: proof cards and trace rows are matched
+first on the exact element, then fall back to the whole surface, so a click on a
+region with no per-element evidence still shows the region's evidence.
+
+**Core code**
+```tsx
+const meta = state.surfaces.find((surface) => surface.id === hit?.surfaceId) ?? null;
+if (!open || !hit) return null;
+
+const proofCards = filterByHit(state.proofs, hit.surfaceId, hit.artifactId, hit.elementId).slice(0, 6);
+const traceRows = filterByHit(state.traces, hit.surfaceId, hit.artifactId, hit.elementId).slice(-6).reverse();
+```
+
+**Input** — the `SurfaceHit` from Step 4 and the `NodeTraceState` from Step 2.
+**Output** — a native `<dialog>` with Business proof, Runtime trace and Code
+ownership regions. `src/trace/TraceLensPanel.tsx:21` (`dialog.showModal()`)
+makes the background inert, focuses Close, wraps Tab between available controls
+and restores the opener on dismissal. Escape, Close and a gesture beginning
+and ending on the backdrop dismiss it.
+**Failure behavior** — an unregistered surface renders **Surface unavailable**
+and tells the reviewer to load matching trace data. Empty proof/trace regions
+and locked ownership stay explicit. A source URL produces a link; a host's
+`onOpenSource` callback produces a button; otherwise the panel says opening is
+unavailable. Element/artifact fallback is labeled as surrounding-surface evidence,
+so it cannot imply the exact selected element was verified.
+
+The demo separately persists the selected step, tab and lens hit in URL query
+parameters through `useDemoNavigation`. Back/Forward and reload restore the
+selection after the actual dataset loads. Invalid steps normalize to a step in
+that dataset. Tabs connect `aria-controls` to their panels and support arrow,
+Home and End keys. None of this changes the portable host's routing contract
+or derives builder capability from a URL.
+**Next** — a second rendering path runs beside this one; continue to Step 8.
+
+---
+
+## Step 8 — The live graph rail turns trace rows into a picture
+
+**File:** `src/trace/LiveGraphRail.tsx`
+**Symbol:** `src/trace/LiveGraphRail.tsx:27` (`export function LiveGraphRail`)
+**Called by:** `DemoDashboard`, `src/DemoDashboard.tsx:137`
+(`<LiveGraphRail traces={state.traces} />`), only when `state.traces` is non-empty
+**Calls next:** `GraphSession.observe` and the `NodeGraph` renderer in
+`vendor/nodegraph-live/`
+
+**Why this exists**
+Each trace row names an actor, a surface, sometimes an artifact, and a phase.
+Feeding those to a graph session turns a flat list into a picture of what touched
+what. The header comment on this file states the rule that matters: trace rows
+are **telemetry**, so every edge is a faint `traversal` edge and never an
+`evidence` edge. Nothing here is a measured claim about the world.
+
+**Core code**
+```tsx
+for (const row of traces) {
+  const entities = entitiesFor(row);
+  // Telemetry only: no measured count, so no evidence edge can appear.
+  nextSession.observe(entities, undefined, { eventId: row.id });
+  ...
+}
+const snapshot = useSyncExternalStore(session.subscribe, session.getSnapshot, session.getSnapshot);
+```
+
+**Input** — `RuntimeTraceRow[]`.
+**Output** — a graph section with an `h2` heading, a WebGL canvas and
+`data-entity-count` / `data-edge-count`
+attributes, which is how the browser probes assert on it without reading pixels.
+**Failure behavior** — this component needs WebGL and mounts nothing useful on a
+server. That is why the installer loads the dashboard through
+`next/dynamic(..., { ssr: false })` in a Next.js target — `bin/nodetrace.mjs:307`
+(`function nextPage(importPath)`). Without it, `next build` dies in prerender
+with `WebGL2RenderingContext is not defined`.
+**Next** — continue to failure and recovery in Step 9.
+
+---
+
+## Step 9 — Installer failure and recovery have their own receipt
+
+**File:** `bin/nodetrace.mjs`
+**Symbol:** `bin/nodetrace.mjs:207` (`function runCommand`), and the receipt
+written at `bin/nodetrace.mjs:122` (`setup-receipt.json`)
+**Called by:** `bin/nodetrace.mjs:31` (`function addNodeTrace`), i.e.
+`npx @homenshum/nodetrace add`
+**Calls next:** nothing — it writes the receipt and sets the exit code
+
+**Why this exists**
+The riskiest thing this project does is modify somebody else's repository:
+copying files in, editing their `package.json`, running their install and their
+build. Every phase is timed, logged to `.nodetrace/setup-log.txt`, and recorded
+in `.nodetrace/setup-receipt.json` with `ok`, duration and a failure excerpt — and
+the chain stops at the first failure rather than continuing to make changes.
+
+**Core code**
+```js
+const result = spawnSync(command[0], command.slice(1), { cwd, timeout: options.timeoutMs, env: commandEnv() });
+const ok = result.status === 0 && !result.error;
+const status = timedOut ? `TIMEOUT after ${formatMs(options.timeoutMs)}` : ok ? "PASS" : "FAIL";
+```
+
+**Input** — a target directory, and optionally `--framework`, `--force`,
+`--skip-install`, `--skip-verify`.
+**Output** — files in the target, a patched `package.json`, a receipt, and exit
+code 0 or 1.
+**Failure behavior** — the receipt is written whether or not the phases passed,
+so a failed install is inspectable rather than silent. `writeText` refuses to
+overwrite an existing file unless `--force` is given — `bin/nodetrace.mjs:158`
+(`Refusing to overwrite`) — so re-running
+`add` cannot quietly clobber a customised copy.
+**Next** — continue to the tests in Step 10.
+
+---
+
+## Step 10 — The tests that prove the flow, and the one that does not
+
+**File:** `scripts/cli-smoke.mjs`, `scripts/capture-plan-smoke.mjs`,
+`scripts/mcp-smoke.mjs`, `scripts/smoke.mjs`
+**Symbol:** `scripts/cli-smoke.mjs:116` (`function validateInstalledImports`)
+and `scripts/capture-plan-smoke.mjs:52` (`async function checkRealCapture`)
+**Called by:** `npm run smoke`, `npm run capture:plan:smoke`, both members of
+`npm run check`
+**Calls next:** the real binaries, as subprocesses
+
+**Why this exists**
+Two of these are the tests worth knowing about.
+
+`validateInstalledImports` walks every file the installer copied into a target
+and asserts each relative import resolves *inside that target*. It exists because
+of defect D2: a component imported the vendored graph renderer by a path that was
+only correct in this repository, so every installed app failed at build time
+while this repository stayed green.
+
+`checkRealCapture` serves a page over HTTP from inside the test, then runs the
+capture CLI against it and checks the manifest recorded
+`actual-code-browser-shiki` and a real DOMRect. Before it existed, nothing ran the
+capture engine end to end — only its plans were parsed.
+
+**Core code**
+```js
+for (const match of readFileSync(file, "utf8").matchAll(/(?:from|import)\s+"(\.[^"]*)"/g)) {
+  if (resolvesInTarget(dirname(file), match[1])) continue;
+  issues.push(`${framework} ${shown} imports ${match[1]}, which the installer never copied into the target`);
+}
+```
+
+**Input** — a throwaway target directory and a throwaway capture plan.
+**Output** — a receipt in `docs/eval/`, and exit 0 or 1.
+**Failure behavior** — each script collects issues and prints them all before
+exiting 1, rather than throwing on the first one.
+**And the one that does not:** `scripts/smoke.mjs` is mostly not a test. Roughly
+170 of its 212 lines assert that documentation files and source files contain
+particular literal strings — that `README.md` contains `125-step QA-agent trace`,
+that `DemoDashboard.tsx` does *not* contain `surfaceBand`. Renaming a function or
+rewording a sentence turns it red. Read `docs/codebase/TESTING.md` before you
+change anything it names.
+
+---
+
+## Where you would add one adjacent capability
+
+Say you want the panel to also show *who approved* a surface.
+
+1. Add the field to `src/trace/types.ts:17` (`export interface TraceProof`).
+2. Add the column to `db/schema.sql:16` (`create table if not exists trace_proofs`).
+3. Write it in `scripts/init-sqlite.mjs` — both the `proofs` array and the
+   `insertProof` prepared statement, which must stay in sync by hand.
+4. Render it in `src/trace/TraceLensPanel.tsx`, inside the Business proof region.
+5. Add the column name to the schema assertion list in `scripts/smoke.mjs:47`
+   (`step_label`),
+   or the smoke will not notice if you delete it later.
+
+Steps 1-4 are the flow. Step 5 is the tax this repository charges, and it is the
+first thing to reconsider.

@@ -1,0 +1,212 @@
+{
+  "ok": true,
+  "condition": 8,
+  "generatedAt": "2026-09-05T01:54:36.135Z",
+  "servedFrom": "vite preview over dist/ (the built bundle, not the dev server)",
+  "tools": {
+    "lighthouse": "lighthouse@13.4.1",
+    "axe": "@axe-core/cli@4.13.0"
+  },
+  "major": [],
+  "results": [
+    {
+      "state": "happy-path",
+      "note": "README Happy Path: hero + Live graph rail, no Trace Coach",
+      "url": "http://127.0.0.1:4910/",
+      "commands": [
+        "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-happy-path.json --chrome-flags=--headless --quiet",
+        "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-happy-path.json"
+      ],
+      "lighthouse": {
+        "lighthouseVersion": "13.4.1",
+        "categories": {
+          "performance": 0.92,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.82,
+          "agentic-browsing": 0.67
+        },
+        "largestContentfulPaintMs": 1917.446625,
+        "cumulativeLayoutShift": 0.01872374565732472,
+        "totalBlockingTimeMs": 320,
+        "firstContentfulPaintMs": 1655.9573,
+        "failedAudits": [
+          {
+            "id": "total-blocking-time",
+            "score": 0.76,
+            "title": "Total Blocking Time"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.22,
+            "title": "Max Potential First Input Delay"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work"
+          },
+          {
+            "id": "bootup-time",
+            "score": 0,
+            "title": "Reduce JavaScript execution time"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "title": "Reduce unused JavaScript"
+          },
+          {
+            "id": "meta-description",
+            "score": 0,
+            "title": "Document does not have a meta description"
+          },
+          {
+            "id": "robots-txt",
+            "score": 0,
+            "title": "robots.txt is not valid"
+          },
+          {
+            "id": "llms-txt",
+            "score": 0,
+            "title": "llms.txt does not follow recommendations"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ]
+      },
+      "axe": {
+        "axeVersion": "4.13.0",
+        "passes": 34,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 7
+          }
+        ],
+        "violationNodes": 0,
+        "violations": []
+      },
+      "artifacts": [
+        "promotion/evidence/lighthouse-happy-path.json",
+        "promotion/evidence/axe-happy-path.json"
+      ]
+    },
+    {
+      "state": "trace-coach",
+      "note": "J3 screen: six-step Trace Coach mounted above the rail",
+      "url": "http://127.0.0.1:4910/",
+      "commands": [
+        "npx lighthouse@13.4.1 http://127.0.0.1:4910/ --output=json --output-path=promotion\\evidence\\lighthouse-trace-coach.json --chrome-flags=--headless --quiet",
+        "npx @axe-core/cli@4.13.0 http://127.0.0.1:4910/ --save promotion\\evidence\\axe-trace-coach.json"
+      ],
+      "lighthouse": {
+        "lighthouseVersion": "13.4.1",
+        "categories": {
+          "performance": 0.95,
+          "accessibility": 1,
+          "best-practices": 1,
+          "seo": 0.83,
+          "agentic-browsing": 0.67
+        },
+        "largestContentfulPaintMs": 1874.1045,
+        "cumulativeLayoutShift": 0.03744749131464944,
+        "totalBlockingTimeMs": 234,
+        "firstContentfulPaintMs": 1655.6836,
+        "failedAudits": [
+          {
+            "id": "total-blocking-time",
+            "score": 0.86,
+            "title": "Total Blocking Time"
+          },
+          {
+            "id": "max-potential-fid",
+            "score": 0.4,
+            "title": "Max Potential First Input Delay"
+          },
+          {
+            "id": "mainthread-work-breakdown",
+            "score": 0,
+            "title": "Minimize main-thread work"
+          },
+          {
+            "id": "bootup-time",
+            "score": 0,
+            "title": "Reduce JavaScript execution time"
+          },
+          {
+            "id": "unused-javascript",
+            "score": 0,
+            "title": "Reduce unused JavaScript"
+          },
+          {
+            "id": "meta-description",
+            "score": 0,
+            "title": "Document does not have a meta description"
+          },
+          {
+            "id": "robots-txt",
+            "score": 0,
+            "title": "robots.txt is not valid"
+          },
+          {
+            "id": "llms-txt",
+            "score": 0,
+            "title": "llms.txt does not follow recommendations"
+          },
+          {
+            "id": "image-delivery-insight",
+            "score": 0.5,
+            "title": "Improve image delivery"
+          },
+          {
+            "id": "network-dependency-tree-insight",
+            "score": 0,
+            "title": "Network dependency tree"
+          },
+          {
+            "id": "render-blocking-insight",
+            "score": 0,
+            "title": "Render-blocking requests"
+          }
+        ]
+      },
+      "axe": {
+        "axeVersion": "4.13.0",
+        "passes": 39,
+        "incomplete": [
+          {
+            "id": "aria-prohibited-attr",
+            "impact": "serious",
+            "nodes": 1
+          },
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 13
+          }
+        ],
+        "violationNodes": 0,
+        "violations": []
+      },
+      "artifacts": [
+        "promotion/evidence/lighthouse-trace-coach.json",
+        "promotion/evidence/axe-trace-coach.json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "at": "2026-09-05T06:22:16.518Z",
+  "browser": "149.0.7827.55",
+  "isolation": "Native pre only, no React, application handlers, fixture parser or proof-container listeners. Same retained long JSON text.",
+  "rows": [
+    {
+      "pauseMs": 0,
+      "end": {
+        "top": 10292,
+        "max": 10292
+      },
+      "after": {
+        "top": 0,
+        "max": 10292,
+        "focus": true
+      },
+      "homeReachedStart": true
+    },
+    {
+      "pauseMs": 0,
+      "end": {
+        "top": 10292,
+        "max": 10292
+      },
+      "after": {
+        "top": 0,
+        "max": 10292,
+        "focus": true
+      },
+      "homeReachedStart": true
+    },
+    {
+      "pauseMs": 250,
+      "end": {
+        "top": 10292,
+        "max": 10292
+      },
+      "after": {
+        "top": 0,
+        "max": 10292,
+        "focus": true
+      },
+      "homeReachedStart": true
+    },
+    {
+      "pauseMs": 250,
+      "end": {
+        "top": 10292,
+        "max": 10292
+      },
+      "after": {
+        "top": 0,
+        "max": 10292,
+        "focus": true
+      },
+      "homeReachedStart": true
+    }
+  ]
+}

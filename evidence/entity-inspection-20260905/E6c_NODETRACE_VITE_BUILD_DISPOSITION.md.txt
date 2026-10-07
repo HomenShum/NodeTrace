@@ -1,0 +1,9 @@
+# Vite consumer build and route scope
+
+The real fresh strict React/TypeScript consumer exposed one product defect: the generated entry passed a nullable root to createRoot. The installer owns the matching root markup, and its nonnull assertion fixes that compile failure. The original failed entry/setup receipt and successful corrected host build remain preserved.
+
+The subsequent host-production-route probe confirmed that ordinary Vite's host index build does not include the separate nodetrace.html entry; its HTTP200 was the host fallback, with no trace graph. The probe's provisional P1 label overstates the documented promise. The generated integration guide explicitly says to open /nodetrace.html in the dev server. No generated guide promises the host production build includes that optional demo route. This is an unverified production-integration boundary, not an additional regression in that documented developer flow.
+
+Keep the user's current host Vite config and main entry unchanged. Verify the actual documented Vite dev route at all seven widths and retain the successful strict host compile/build as separate evidence. The Next installed production route has its own proof. Do not call the Vite demo deployed, bundled into the host production app, or production-ready on the basis of the host build. A project adopting TraceLens into its own production shell must include it through that host's existing component/build entry, as the generated guide describes.
+
+The initial route probe, HTTP response, source/config hashes, DOM and390/1440 screenshots remain in E6c-nodetrace-vite-built-route-before; no failed evidence is overwritten. This disposition avoids adding a new build configuration or changing host ownership to satisfy a claim the integration did not make.

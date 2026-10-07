@@ -1,0 +1,1112 @@
+<!DOCTYPE html><html lang="en"><head>
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="/@vite/client"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeTrace Integration</title>
+  <style type="text/css" data-vite-dev-id="D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905/src/nodetrace/trace.css">.nt-panel::backdrop {
+  background: rgb(18 24 32 / 0.28);
+}
+
+.nt-panel {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  bottom: 18px;
+  left: auto;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  max-height: none;
+  height: calc(100dvh - 36px);
+  z-index: 31;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: min(460px, calc(100vw - 36px));
+  overflow: hidden;
+  border: 1px solid #d9dfda;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgb(22 29 39 / 0.24);
+  color: #18212f;
+}
+
+.nt-panel:not([open]) { display: none; }
+.nt-panel :focus-visible { outline: 3px solid #385f9d; outline-offset: 2px; }
+.nt-panel { overflow-wrap: anywhere; }
+
+.nt-head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #e5e9e3;
+  padding: 12px;
+}
+
+.nt-modes {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border: 1px solid #d9dfda;
+  border-radius: 8px;
+}
+
+.nt-modes button,
+.nt-close,
+.nt-proof footer button {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+.nt-modes button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 10px;
+  color: #536175;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.nt-modes button[data-on="true"] {
+  background: #1d2633;
+  color: #ffffff;
+}
+
+.nt-close {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 8px;
+}
+
+.nt-close:hover {
+  background: #eef1ee;
+}
+
+.nt-body {
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  overflow: auto;
+  padding: 14px;
+}
+
+.nt-about,
+.nt-empty,
+.nt-proof p {
+  margin: 0;
+  color: #687488;
+  font-size: 13px;
+}
+
+.nt-region {
+  display: grid;
+  gap: 10px;
+}
+
+.nt-regionHead {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #7d576a;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.nt-proof {
+  display: grid;
+  gap: 8px;
+  border: 1px solid #d9dfda;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fbfcfb;
+}
+
+.nt-proofHead,
+.nt-proof footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nt-proofHead span {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #e4f2ec;
+  color: #1f6b52;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.nt-proof footer {
+  color: #687488;
+  font-size: 12px;
+}
+
+.nt-proof footer a,
+.nt-proof footer button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #385f9d;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.nt-traces {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nt-traces li {
+  display: grid;
+  grid-template-columns: 82px 1fr;
+  gap: 5px 10px;
+  border-bottom: 1px solid #e8ece6;
+  padding: 10px 0;
+}
+
+.nt-traces span {
+  color: #7d576a;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nt-traces strong {
+  min-width: 0;
+  font-size: 13px;
+}
+
+.nt-traces em {
+  grid-column: 2;
+  color: #687488;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.nt-locked {
+  border-radius: 8px;
+  padding: 12px;
+  background: #f6efe4;
+  color: #6a4d1f;
+}
+
+.nt-owner {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.nt-owner div {
+  display: grid;
+  grid-template-columns: 86px 1fr;
+  gap: 8px;
+  border-bottom: 1px solid #e8ece6;
+  padding-bottom: 8px;
+}
+
+.nt-owner dt {
+  color: #687488;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.nt-owner dd {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .nt-panel {
+    inset: 10px;
+    width: auto;
+    height: calc(100dvh - 20px);
+  }
+
+  .nt-head {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  .nt-modes {
+    grid-column: 1 / -1;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905/src/nodetrace-demo/styles.css">:root {
+  --bg-app: #f5f7fb;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #eef2f7;
+  --bg-hover: #e9eef6;
+  --line: #dce2ea;
+  --line-strong: #bdc8d6;
+  --text-primary: #172033;
+  --text-secondary: #3d495d;
+  --text-muted: #536175;
+  --text-tertiary: #566276;
+  --accent-primary: #d85f45;
+  --accent-ink: #9b3b2d;
+  --accent-border: rgba(216, 95, 69, 0.34);
+  --accent-tint: rgba(216, 95, 69, 0.1);
+  --success-ink: #146540;
+  --warning-ink: #9a6a14;
+  --danger-ink: #b42335;
+  --violet-ink: #635bff;
+  --blue-ink: #1f67b1;
+  --shadow-elevated: 0 22px 60px rgba(40, 54, 76, 0.13);
+  --font-ui: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  color: var(--text-primary);
+  background: var(--bg-app);
+  font-family: var(--font-ui);
+  font-synthesis: none;
+  line-height: 1.45;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    linear-gradient(rgba(40, 54, 76, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(40, 54, 76, 0.04) 1px, transparent 1px),
+    var(--bg-app);
+  background-size: 48px 48px;
+}
+
+button {
+  border: 0;
+  font: inherit;
+}
+
+.shell {
+  min-height: 100vh;
+}
+
+.workspace {
+  width: min(100%, 1500px);
+  min-width: 0;
+  margin: 0 auto;
+  padding: 22px;
+  overflow: auto;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 400px);
+  gap: 16px;
+  min-height: 246px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  background:
+    linear-gradient(135deg, rgba(216, 95, 69, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(248, 250, 252, 0.72)),
+    var(--bg-primary);
+  box-shadow: var(--shadow-elevated);
+}
+
+.showcaseCopy {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.showcaseCopy h1 {
+  max-width: 860px;
+  margin: 0;
+  color: var(--text-primary);
+  font-size: clamp(34px, 4.2vw, 58px);
+  letter-spacing: 0;
+  line-height: 0.96;
+}
+
+.showcaseCopy > p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 12px 0 0;
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 7px;
+  color: var(--accent-ink);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.showcaseActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.command {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 13px;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.command code {
+  white-space: nowrap;
+}
+
+.sourcePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(22, 112, 74, 0.24);
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: rgba(22, 112, 74, 0.08);
+  color: var(--success-ink);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.launchCard {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.launchHead,
+.launchFlow,
+.launchCheck {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.launchHead {
+  justify-content: space-between;
+}
+
+.launchHead span {
+  color: var(--text-muted);
+  font-size: 11px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.launchHead strong {
+  border: 1px solid rgba(22, 112, 74, 0.28);
+  border-radius: 999px;
+  padding: 3px 9px;
+  background: rgba(22, 112, 74, 0.08);
+  color: var(--success-ink);
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.launchFlow {
+  flex-wrap: wrap;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px;
+  background: var(--bg-primary);
+  color: var(--text-tertiary);
+}
+
+.launchFlow span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.heroStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.heroStats div {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px;
+  background: var(--bg-secondary);
+}
+
+.heroStats span,
+.heroStats small {
+  display: block;
+  overflow: hidden;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heroStats strong {
+  display: block;
+  overflow: hidden;
+  margin: 3px 0;
+  color: var(--text-primary);
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.launchCheck {
+  align-items: flex-start;
+  border: 1px solid rgba(31, 103, 177, 0.2);
+  border-radius: 10px;
+  padding: 8px;
+  background: rgba(31, 103, 177, 0.06);
+  color: var(--blue-ink);
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.coachPanel {
+  display: grid;
+  grid-template-columns: minmax(286px, 340px) minmax(0, 1fr);
+  min-height: 700px;
+  margin-top: 16px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--bg-primary);
+  box-shadow: var(--shadow-elevated);
+}
+
+.coachList {
+  min-width: 0;
+  overflow: auto;
+  border-right: 1px solid var(--line);
+  background: #f2f5f9;
+  padding: 10px;
+}
+
+.coachSource {
+  display: grid;
+  gap: 4px;
+  margin-bottom: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background:
+    linear-gradient(180deg, rgba(216, 95, 69, 0.1), transparent 82%),
+    var(--bg-primary);
+}
+
+.coachSource span {
+  color: var(--accent-ink);
+  font-size: 10.5px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.coachSource strong {
+  color: var(--text-primary);
+  font-size: 13px;
+}
+
+.coachSource small {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  overflow-wrap: anywhere;
+}
+
+.r-tracevu-rec {
+  display: grid;
+  gap: 8px;
+  width: 100%;
+  margin: 0 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: left;
+  box-shadow: 0 1px 0 rgba(40, 54, 76, 0.03);
+}
+
+.r-tracevu-rec[data-on="true"],
+.r-tracevu-rec:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-tint);
+  box-shadow: 0 10px 24px rgba(216, 95, 69, 0.08);
+}
+
+.r-tracevu-rec-head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  min-width: 0;
+}
+
+.r-tracevu-rec-title {
+  min-width: 0;
+  flex: 1;
+  color: var(--text-primary);
+  font-size: 12.5px;
+  font-weight: 800;
+  line-height: 1.22;
+}
+
+.r-tracevu-pill {
+  border: 1px solid rgba(22, 112, 74, 0.28);
+  border-radius: 999px;
+  padding: 1px 6px;
+  background: rgba(22, 112, 74, 0.08);
+  color: var(--success-ink);
+  font-size: 9.5px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.r-tracevu-rec-sub {
+  overflow: hidden;
+  color: var(--text-muted);
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.r-tracevu-rec-meta {
+  overflow: hidden;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.coachDetail,
+.r-tracevu-detail {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.r-tracevu-detail-head {
+  flex: none;
+  border-bottom: 1px solid var(--line);
+  padding: 18px 20px 0;
+  background:
+    linear-gradient(180deg, rgba(31, 103, 177, 0.05), transparent 78%),
+    var(--bg-primary);
+}
+
+.r-tracevu-detail-head strong {
+  display: block;
+  color: var(--text-primary);
+  font-size: 21px;
+  line-height: 1.15;
+}
+
+.r-tracevu-detail-head p {
+  max-width: 920px;
+  margin: 8px 0 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.r-tracevu-tabs {
+  display: flex;
+  gap: 6px;
+  padding-bottom: 10px;
+}
+
+.r-tracevu-tabs button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 7px 11px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.r-tracevu-tabs button[data-on="true"] {
+  border-color: var(--accent-border);
+  background: var(--accent-tint);
+  color: var(--accent-ink);
+}
+
+.r-tracevu-tabs button:not([data-on="true"]):hover {
+  color: var(--text-secondary);
+}
+
+.r-tracevu-detail-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 16px;
+}
+
+.coachOverview {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: 12px;
+}
+
+.coachPane {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-primary);
+  padding: 14px;
+  box-shadow: 0 10px 28px rgba(40, 54, 76, 0.06);
+}
+
+.paneTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  color: var(--text-primary);
+  font-weight: 800;
+}
+
+.paneTitle span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.coachPane small {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.coachPane pre {
+  overflow: auto;
+  min-height: 486px;
+  max-height: 600px;
+  margin: 10px 0 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px;
+  background: #10151f;
+  color: #e8edf5;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.58;
+  white-space: pre-wrap;
+}
+
+.evidenceShot {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #111827;
+  object-fit: contain;
+}
+
+.ideShot,
+.uiShot {
+  aspect-ratio: 5 / 3;
+  max-height: 560px;
+}
+
+.mapShot {
+  aspect-ratio: 5 / 3;
+  max-height: 520px;
+}
+
+.captureFrame {
+  overflow: hidden;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg-secondary);
+}
+
+.captureChrome {
+  display: flex;
+  gap: 5px;
+  padding: 8px;
+  background: var(--bg-tertiary);
+}
+
+.captureChrome span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5c6672;
+}
+
+.captureBody {
+  position: relative;
+  min-height: 492px;
+  padding: 16px;
+  background:
+    linear-gradient(90deg, rgba(153, 163, 174, 0.09) 1px, transparent 1px),
+    linear-gradient(rgba(153, 163, 174, 0.09) 1px, transparent 1px),
+    #f8fafc;
+  background-size: 28px 28px;
+}
+
+.captureBody p {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  left: 16px;
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.captureBox {
+  position: absolute;
+  border: 2px solid var(--accent-primary);
+  border-radius: 5px;
+  background: rgba(216, 95, 69, 0.16);
+  box-shadow: 0 0 0 999px rgba(40, 54, 76, 0.08);
+}
+
+.r-tracevu-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.r-tracevu-group {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-primary);
+}
+
+.r-tracevu-group > summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 12px;
+  cursor: pointer;
+  list-style: none;
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.r-tracevu-group > summary::-webkit-details-marker {
+  display: none;
+}
+
+.r-tracevu-group-count {
+  margin-left: auto;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.r-tracevu-group .r-tracevu-steps {
+  padding: 8px;
+}
+
+.r-tracevu-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.r-tracevu-step {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 12px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-align: left;
+}
+
+.r-tracevu-step:hover {
+  border-color: var(--accent-border);
+  background: var(--accent-tint);
+}
+
+.r-tracevu-step-idx {
+  display: grid;
+  flex: none;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 1px solid rgba(22, 112, 74, 0.2);
+  border-radius: 8px;
+  background: rgba(22, 112, 74, 0.08);
+  color: var(--success-ink);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.r-tracevu-step-body {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.r-tracevu-step-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-primary);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.r-tracevu-step-detail {
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.r-tracevu-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+  color: var(--text-tertiary);
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+}
+
+.r-tracevu-metrics b {
+  color: var(--text-secondary);
+  font-weight: 800;
+}
+
+.mapPane {
+  min-height: 620px;
+}
+
+.graphNodes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.graphNodes span {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 7px 9px;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.graphNodes span.active {
+  border-color: var(--accent-border);
+  background: var(--accent-tint);
+  color: var(--accent-ink);
+}
+
+.graphEdges {
+  display: grid;
+  gap: 7px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.graphEdges li {
+  border-left: 2px solid var(--line-strong);
+  padding: 3px 0 3px 9px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.r-tracevu-raw {
+  min-height: 560px;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 14px;
+  background: #10151f;
+  color: #e8edf5;
+  font: 11px/1.5 var(--font-mono);
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 980px) {
+  .showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .coachOverview {
+    grid-template-columns: 1fr;
+  }
+
+  .coachPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .coachList {
+    max-height: 300px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 760px) {
+  .workspace {
+    padding: 12px;
+  }
+
+  .showcase {
+    align-items: flex-start;
+    padding: 16px;
+  }
+
+  .showcaseCopy h1 {
+    font-size: 38px;
+  }
+
+  .heroStats {
+    grid-template-columns: 1fr;
+  }
+
+  .r-tracevu-tabs {
+    flex-wrap: wrap;
+  }
+}
+
+.liveGraphRail {
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-primary);
+}
+
+.liveGraphRailHead {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.liveGraphRailHead small {
+  color: var(--text-muted);
+}
+
+.liveGraphRailHead h2 { margin: 0; font-size: 16px; font-weight: 700; }
+.inspectTrace { min-height: 44px; padding: 10px 14px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--bg-primary); color: var(--text-primary); cursor: pointer; font-weight: 700; }
+.inspectTrace:disabled { cursor: wait; color: var(--text-muted); }
+.showcaseCopy > .inspectTrace { margin-top: 8px; }
+.showcase :focus-visible, .coachPanel :focus-visible, .coachEmpty :focus-visible { outline: 3px solid var(--blue-ink); outline-offset: 3px; }
+.r-tracevu-detail-head > .inspectTrace { margin: 0 0 12px; }
+.coachEmpty { margin: 16px 0; padding: 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg-primary); }
+.coachEmpty h2 { margin: 0 0 8px; font-size: 18px; }
+.coachEmpty p, .loadError p { margin: 0 0 12px; overflow-wrap: anywhere; }
+.coachEmpty code, .command code { overflow-wrap: anywhere; white-space: normal; }
+.loadError { margin-bottom: 12px; color: var(--danger-ink); }
+
+.liveGraphRailReadout {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+
+.liveGraphRailControls { margin-bottom: 12px; min-width: 0; }
+.liveGraphRailControls label { display: grid; gap: 4px; font-size: 13px; font-weight: 600; }
+.liveGraphRailControls select { width: 100%; min-width: 0; min-height: 44px; padding: 8px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--bg-primary); color: var(--text-primary); font: inherit; }
+.liveGraphRailControls small { display: block; margin-top: 6px; color: var(--text-muted); }
+.liveGraphRail :focus-visible { outline: 3px solid var(--blue-ink); outline-offset: 3px; }
+.liveGraphRail [data-testid="nodegraph-fit"] { min-width: 44px; min-height: 44px; }
+.liveGraphRail [data-testid="edge-type-filters"] label { min-height: 44px; }
+.liveGraphRail [data-testid="nodegraph-selection"] { min-width: 0; overflow-wrap: anywhere; }
+.liveGraphRail [data-testid="nodegraph-selection"] dd { min-width: 0; }
+
+.liveGraphRailReadout ul {
+  margin: 4px 0 0;
+  padding-left: 18px;
+}
+
+.liveGraphRailReadout code {
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.liveGraphRailReadout > span { display: block; }
+</style></head>
+  <body>
+    <div id="root"><main class="shell" tabindex="-1"><section class="workspace"><header class="showcase" data-nodetrace-surface="shell.statusStrip"><div class="showcaseCopy"><p class="eyebrow"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-route" aria-hidden="true"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role="status" aria-live="polite">SQLite trace session, proof cards, events, and gated ownership were generated locally.</p><button type="button" class="inspectTrace" data-trace-inspect="true">Inspect trace</button><div class="showcaseActions"><div class="command"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal" aria-hidden="true"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg><code translate="no">npm run nodetrace:happy-path</code></div><span class="sourcePill"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-dot" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="1"></circle></svg> no API key required</span></div></div><aside class="launchCard" aria-label="Trace Coach launch path"><div class="launchHead"><span>SQLite sample</span><strong>verified</strong></div><div class="launchFlow" aria-label="SQLite to trace UI flow"><span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-database" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5V19A9 3 0 0 0 21 19V5"></path><path d="M3 12A9 3 0 0 0 21 12"></path></svg> SQLite</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-layers" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg> NodeRoom trace</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg><span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-play" aria-hidden="true"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg> browser UI</span></div><div class="heroStats"><div><span>Source app</span><strong>NodeRoom</strong><small>SQLite sample</small></div><div><span>Coach steps</span><strong>0</strong><small>ordered labels</small></div><div><span>Trace tabs</span><strong>4</strong><small>overview, steps, minimap, raw</small></div></div><div class="launchCheck"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg><span>The SQLite sample contains trace events. No Trace Coach captures are loaded yet.</span></div></aside></header><section class="coachEmpty" aria-labelledby="coach-empty-title"><h2 id="coach-empty-title">Connect your own trace</h2><p>This installed sample contains trace events. Guided source and UI captures are not included. Run <code translate="no">npm run nodetrace:happy-path</code> to regenerate the local sample and refresh. Read <code translate="no">docs/NODETRACE_INTEGRATION.md</code> in your project to connect the trace UI to your app.</p></section><section class="liveGraphRail" aria-label="Live graph rail" data-testid="live-graph-rail" data-entity-count="10" data-edge-count="15"><header class="liveGraphRailHead"><h2>Live graph rail</h2><small>10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.</small></header><div class="liveGraphRailControls"><label>Entity<select aria-describedby="_r_0_"><option value="">Choose an entity</option><option value="[&quot;actor&quot;,&quot;nodetrace&quot;]">actor: nodetrace</option><option value="[&quot;tool&quot;,&quot;workSurface.traceStrip&quot;]">tool: workSurface.traceStrip</option><option value="[&quot;step&quot;,&quot;schema&quot;]">step: schema</option><option value="[&quot;tool&quot;,&quot;workSurface.evidenceCarousel&quot;]">tool: workSurface.evidenceCarousel</option><option value="[&quot;artifact&quot;,&quot;demo-artifact&quot;]">artifact: demo-artifact</option><option value="[&quot;step&quot;,&quot;proof&quot;]">step: proof</option><option value="[&quot;tool&quot;,&quot;copilot.agentOperationStream&quot;]">tool: copilot.agentOperationStream</option><option value="[&quot;step&quot;,&quot;events&quot;]">step: events</option><option value="[&quot;tool&quot;,&quot;shell.statusStrip&quot;]">tool: shell.statusStrip</option><option value="[&quot;step&quot;,&quot;state&quot;]">step: state</option></select></label><small id="_r_0_">Choose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.</small></div><section data-testid="nodegraph" style="border: 1px solid rgb(226, 229, 231); border-radius: 8px; background: rgb(255, 255, 255); color: rgb(21, 24, 26); padding: 16px; font-family: ui-sans-serif, system-ui, sans-serif;"><header style="margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px;"><h3 style="margin: 0px; font-size: 14px; font-weight: 600;">Relationship graph</h3><p style="margin: 0px; font-size: 12px; color: rgb(90, 98, 106);">10 entities · 15 of 15 relationships shown</p></header><div data-testid="edge-type-filters" style="margin-bottom: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px;"><button type="button" data-testid="nodegraph-fit" style="border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;">fit</button><label style="display: flex; align-items: center; gap: 6px; font-size: 12px;"><input data-filter-type="traversal" type="checkbox" checked="" style=""><span>traversal</span><span style="color: rgb(90, 98, 106);">(15)</span><span title="interaction frequency, not evidence strength" style="color: rgb(90, 98, 106);">· local</span></label></div><div style="position: relative; border-radius: 6px; border: 1px solid rgb(226, 229, 231); height: 300px; width: 100%; background-image: radial-gradient(rgba(21, 24, 26, 0.06) 1px, transparent 1px); background-size: 22px 22px;"><div data-testid="nodegraph-canvas" style="position: absolute; inset: 0px;"><canvas class="sigma-edges" width="230px" height="298px" style="position: absolute; width: 230px; height: 298px;"></canvas><canvas class="sigma-edgeLabels" width="230px" height="298px" style="position: absolute; width: 230px; height: 298px;"></canvas><canvas class="sigma-nodes" width="230px" height="298px" style="position: absolute; width: 230px; height: 298px;"></canvas><canvas class="sigma-labels" width="230px" height="298px" style="position: absolute; width: 230px; height: 298px;"></canvas><canvas class="sigma-hovers" width="230px" height="298px" style="position: absolute; width: 230px; height: 298px;"></canvas><canvas class="sigma-hoverNodes" width="230px" height="298px" style="position: absolute; width: 230px; height: 298px;"></canvas><canvas class="sigma-mouse" width="230px" height="298px" style="position: absolute; touch-action: none; user-select: none; width: 230px; height: 298px;"></canvas></div><canvas data-testid="cinematic-layer" style="pointer-events: none; position: absolute; inset: 0px; z-index: 10; height: 100%; width: 100%;"></canvas></div><dl data-testid="nodegraph-selection" style="margin-top: 8px; margin-bottom: 0px; display: grid; grid-template-columns: auto 1fr; gap: 2px 12px; font-size: 12px;"><dt style="color: rgb(90, 98, 106);">entity</dt><dd style="margin: 0px;">workSurface.evidenceCarousel <span style="color: rgb(90, 98, 106);">· tool</span></dd><dt style="color: rgb(90, 98, 106);">count</dt><dd data-testid="count-readout" style="margin: 0px;">unknown — not measured</dd><dt style="color: rgb(90, 98, 106);">visits</dt><dd data-testid="visits-readout" style="margin: 0px;">1 <span style="color: rgb(90, 98, 106);">— interaction frequency, not evidence strength</span></dd></dl></section><div class="liveGraphRailReadout" data-testid="live-graph-node-events" aria-live="polite"><strong>tool: workSurface.evidenceCarousel</strong><span>produced by trace event:</span><ul><li><code>nodetrace-2026-09-05T04-32-18-015Z-trace-002</code></li></ul></div></section></section></main></div>
+    <script type="module" src="/src/nodetrace-demo/main.tsx"></script>
+  
+
+</body></html>

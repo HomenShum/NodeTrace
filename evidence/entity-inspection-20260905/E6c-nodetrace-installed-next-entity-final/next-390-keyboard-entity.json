@@ -1,0 +1,141 @@
+{
+  "url": "http://127.0.0.1:54273/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "overflow": 0,
+  "focus": "<select aria-describedby=\"_r_0_\"><option value=\"\">Choose an entity</option><option value=\"[&quot;actor&quot;,&quot;nodetrace&quot;]\">actor: nodetrace</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceStrip&quot;]\">tool: workSurface.traceStrip</option><option value=\"[&quot;step&quot;,&quot;schema&quot;]\">step: schema</option><option value=\"[&quot;tool&quot;,&quot;workSurface.evidenceCarousel&quot;]\">tool: workSurface.evidenceCarousel</option><option value=\"[&quot;artifact&quot;,&quot;demo-artifact&quot;]\">artifact: demo-artifact</option><option value=\"[&quot;step&quot;,&quot;proof&quot;]\">step: proof</option><option value=\"[&quot;tool&quot;,&quot;copilot.agentOperationStream&quot;]\">tool: copilot.agentOperationStream</option><option value=\"[&quot;step&quot;,&quot;events&quot;]\">step: events</option><option value=\"[&quot;tool&quot;,&quot;shell.statusStrip&quot;]\">tool: shell.statusStrip</option><option value=\"[&quot;step&quot;,&quot;state&quot;]\">step: state</option></select>",
+  "modal": false,
+  "selection": "step: state",
+  "events": [
+    "nodetrace-2026-09-05T04-07-42-031Z-trace-004"
+  ],
+  "labels": [
+    {
+      "text": "demo-artifact",
+      "x": 54.295305013656616,
+      "y": 45.864678527390744,
+      "width": 81.68603515625,
+      "height": 10,
+      "canvasWidth": 300,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "schema",
+      "x": 241.42212060865617,
+      "y": 52.893867802449854,
+      "width": 44.705078125,
+      "height": 10,
+      "canvasWidth": 300,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "nodetrace",
+      "x": 165.23856341516733,
+      "y": 136.8610286634668,
+      "width": 59.4951171875,
+      "height": 10,
+      "canvasWidth": 300,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "state",
+      "x": 263.4306473398171,
+      "y": 193.5781260731373,
+      "width": 28.708984375,
+      "height": 9,
+      "canvasWidth": 300,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "copilot.agentOperationStream",
+      "x": 97.17589973570334,
+      "y": 225.7044909630928,
+      "width": 178.298828125,
+      "height": 13,
+      "canvasWidth": 300,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    },
+    {
+      "text": "events",
+      "x": 132.51135495893175,
+      "y": 245.6206593888937,
+      "width": 38.5888671875,
+      "height": 9,
+      "canvasWidth": 300,
+      "canvasHeight": 298,
+      "supportedTransform": true
+    }
+  ],
+  "regions": {
+    ".showcaseActions": {
+      "text": "npm run nodetrace:happy-path no API key required",
+      "bounds": {
+        "x": 29,
+        "y": 251.0625,
+        "width": 332,
+        "height": 88.78125
+      }
+    },
+    ".coachEmpty": {
+      "text": "Connect your own traceThis installed sample contains trace events. Guided source and UI captures are not included. Run npm run nodetrace:happy-path to regenerate the local sample and refresh. Read docs/NODETRACE_INTEGRATION.md in your project to connect the trace UI to your app.",
+      "bounds": {
+        "x": 12,
+        "y": 830.1875,
+        "width": 366,
+        "height": 226.53125
+      }
+    },
+    ".liveGraphRailHead": {
+      "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+      "bounds": {
+        "x": 27,
+        "y": 1089.71875,
+        "width": 336,
+        "height": 83.125
+      }
+    },
+    ".liveGraphRailControls": {
+      "text": "EntityChoose an entityactor: nodetracetool: workSurface.traceStripstep: schematool: workSurface.evidenceCarouselartifact: demo-artifactstep: prooftool: copilot.agentOperationStreamstep: eventstool: shell.statusStripstep: stateChoose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.",
+      "bounds": {
+        "x": 27,
+        "y": 1182.84375,
+        "width": 336,
+        "height": 111.46875
+      }
+    },
+    "[data-testid=\"nodegraph-canvas\"]": {
+      "text": "",
+      "bounds": {
+        "x": 45,
+        "y": 1426,
+        "width": 300,
+        "height": 298
+      }
+    },
+    "[data-testid=\"nodegraph-selection\"]": {
+      "text": "entitystate · stepcountunknown — not measuredvisits1 — interaction frequency, not evidence strength",
+      "bounds": {
+        "x": 44,
+        "y": 1733,
+        "width": 302,
+        "height": 56.171875
+      }
+    },
+    "[data-testid=\"live-graph-node-events\"]": {
+      "text": "step: stateproduced by trace event:nodetrace-2026-09-05T04-07-42-031Z-trace-004",
+      "bounds": {
+        "x": 27,
+        "y": 1816.171875,
+        "width": 336,
+        "height": 56.71875
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "visibleText": "NODEROOM CODEBASE TRACE\n\nPortable trace UI for agent apps.\n\nLoading public/nodetrace-state.json\n\nnpm run understand:noderoom\nnpm run capture:noderoom:real\nnpm run trace-coach:sqlite\nno API key required\nLIVE SAMPLE\nLOADING\nSQLite\nNodeRoom trace\nbrowser UI\nSource app\nNodeRoom\nlocal checkout\nCoach steps\n0\nordered labels\nTrace tabs\n4\noverview, steps, minimap, raw\nSeeded from real NodeRoom files, code-browser captures, selectors, DOMRects, running-app screenshots, and flow metadata.",
+  "alerts": 0,
+  "retryButtons": 0
+}

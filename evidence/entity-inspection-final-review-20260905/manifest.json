@@ -1,0 +1,41 @@
+{
+  "reviewedCommit": "6048117a7879bde8b7a214746a4e4e49607bfe5f",
+  "reviewedTree": "c77fe64fe38e668bffdeca7b3042c4187bf7c132",
+  "artifacts": {
+    "E6c_NODETRACE_ENTITY_FINAL_JUDGE.md.txt": {
+      "sha256": "ec07299514b151c669605a67d73ac55af1de423e89af0bafb1fac02b7af7d4b2",
+      "bytes": 7652,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_ENTITY_FINAL_JUDGE.md"
+    },
+    "E6c_NODETRACE_ENTITY_FINAL_JUDGE.json": {
+      "sha256": "6d1de8001ee49aeb8d0652a794d942b9e7f0cc9a467f28c7640dd52f30eb1581",
+      "bytes": 19209,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_ENTITY_FINAL_JUDGE.json"
+    },
+    "E6c_NODETRACE_FINAL_JUDGE_BINDINGS.json": {
+      "sha256": "f8f1a5cfac2c0fcc163a36b89738fe2cdec9925f4fb4eb2b8256cba680d05195",
+      "bytes": 38985,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c_NODETRACE_FINAL_JUDGE_BINDINGS.json"
+    },
+    "E6c-nodetrace-approved-commit.json": {
+      "sha256": "8cee9f7af99d44666294b7759ac7c04ce82fc1d56d1b811f45f5771e543d6f36",
+      "bytes": 319,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-approved-commit.json"
+    },
+    "E6c-nodetrace-final-stage-owner-message/exact-nodeMessage.js.txt": {
+      "sha256": "d48071c8e21da1cb7a379bfd7fe23b5466f8d659dee43d7329300102aecc52d7",
+      "bytes": 722,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-final-stage-owner-message\\exact-nodeMessage.js.txt"
+    },
+    "E6c-nodetrace-final-stage-owner-message/exact-nodeMessage.mjs": {
+      "sha256": "51bc04b4bae4f3f7f1d007e2989742617967f28784c33feaa4d1e99a161d8abe",
+      "bytes": 888,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-final-stage-owner-message\\exact-nodeMessage.mjs"
+    },
+    "E6c-nodetrace-final-stage-owner-message/report.json": {
+      "sha256": "a85de90bc4d3417a71788b357ca98a7b4010bc7d6d560075fb9505f23d3af4f0",
+      "bytes": 3634,
+      "original": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6c-nodetrace-final-stage-owner-message\\report.json"
+    }
+  }
+}

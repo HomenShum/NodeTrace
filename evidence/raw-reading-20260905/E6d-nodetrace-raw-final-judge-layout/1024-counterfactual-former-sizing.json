@@ -1,0 +1,212 @@
+{
+  "viewport": {
+    "width": 1024,
+    "height": 768
+  },
+  "scroll": {
+    "x": 0,
+    "y": 366
+  },
+  "documentHeight": 4269,
+  "raw": {
+    "x": 379,
+    "y": 636.078125,
+    "width": 606,
+    "height": 2752.5,
+    "scrollTop": 0,
+    "scrollHeight": 2751,
+    "clientHeight": 2751,
+    "font": "11px / 16.5px \"JetBrains Mono\", SFMono-Regular, Consolas, monospace",
+    "display": "block",
+    "position": "static",
+    "grid": "none",
+    "overflow": "visible",
+    "lineHeight": "16.5px"
+  },
+  "graph": {
+    "x": 22,
+    "y": 3423.578125,
+    "width": 980,
+    "height": 823.53125,
+    "scrollTop": 0,
+    "scrollHeight": 822,
+    "clientHeight": 822,
+    "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "display": "block",
+    "position": "static",
+    "grid": "none",
+    "overflow": "visible",
+    "lineHeight": "23.2px"
+  },
+  "card": {
+    "x": 22,
+    "y": 400.46875,
+    "width": 980,
+    "height": 3005.109375,
+    "scrollTop": 0,
+    "scrollHeight": 3003,
+    "clientHeight": 3003,
+    "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "display": "grid",
+    "position": "static",
+    "grid": "340px 638px",
+    "overflow": "hidden",
+    "lineHeight": "23.2px"
+  },
+  "list": {
+    "x": 23,
+    "y": 401.46875,
+    "width": 340,
+    "height": 3003.109375,
+    "scrollTop": 0,
+    "scrollHeight": 3003,
+    "clientHeight": 3003,
+    "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "display": "block",
+    "position": "static",
+    "grid": "none",
+    "overflow": "auto",
+    "lineHeight": "23.2px"
+  },
+  "lastRecord": {
+    "x": 33,
+    "y": 1252.375,
+    "width": 319,
+    "height": 134.265625,
+    "scrollTop": 0,
+    "scrollHeight": 132,
+    "clientHeight": 132,
+    "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "display": "grid",
+    "position": "static",
+    "grid": "293px",
+    "overflow": "visible",
+    "lineHeight": "23.2px"
+  },
+  "header": {
+    "x": 22,
+    "y": 22,
+    "width": 980,
+    "height": 362.46875,
+    "scrollTop": 0,
+    "scrollHeight": 360,
+    "clientHeight": 360,
+    "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "display": "grid",
+    "position": "static",
+    "grid": "522px 400px",
+    "overflow": "visible",
+    "lineHeight": "23.2px"
+  },
+  "protected": {
+    ".showcase": {
+      "html": "<header class=\"showcase\" data-nodetrace-surface=\"shell.statusStrip\"><div class=\"showcaseCopy\"><p class=\"eyebrow\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-route\" aria-hidden=\"true\"><circle cx=\"6\" cy=\"19\" r=\"3\"></circle><path d=\"M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15\"></path><circle cx=\"18\" cy=\"5\" r=\"3\"></circle></svg> NodeRoom codebase trace</p><h1>Portable trace UI for agent apps.</h1><p role=\"status\" aria-live=\"polite\">Inspect saved NodeRoom trace records, source captures, UI screenshots, and flow metadata from the bundled snapshot.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"showcaseActions\"><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run understand:noderoom</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run capture:noderoom:real</code></div><div class=\"command\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-terminal\" aria-hidden=\"true\"><path d=\"M12 19h8\"></path><path d=\"m4 17 6-6-6-6\"></path></svg><code translate=\"no\">npm run trace-coach:sqlite</code></div><span class=\"sourcePill\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-dot\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><circle cx=\"12\" cy=\"12\" r=\"1\"></circle></svg> no API key required</span></div></div><aside class=\"launchCard\" aria-label=\"Trace Coach launch path\"><div class=\"launchHead\"><span>Bundled snapshot</span><strong>verified</strong></div><div class=\"launchFlow\" aria-label=\"SQLite to trace UI flow\"><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-database\" aria-hidden=\"true\"><ellipse cx=\"12\" cy=\"5\" rx=\"9\" ry=\"3\"></ellipse><path d=\"M3 5V19A9 3 0 0 0 21 19V5\"></path><path d=\"M3 12A9 3 0 0 0 21 12\"></path></svg> SQLite</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-layers\" aria-hidden=\"true\"><path d=\"M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z\"></path><path d=\"M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12\"></path><path d=\"M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17\"></path></svg> NodeRoom trace</span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-arrow-right\" aria-hidden=\"true\"><path d=\"M5 12h14\"></path><path d=\"m12 5 7 7-7 7\"></path></svg><span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-play\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"></polygon></svg> browser UI</span></div><div class=\"heroStats\"><div><span>Source app</span><strong>NodeRoom</strong><small>bundled snapshot</small></div><div><span>Coach steps</span><strong>6</strong><small>ordered labels</small></div><div><span>Trace tabs</span><strong>4</strong><small>overview, steps, minimap, raw</small></div></div><div class=\"launchCheck\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-circle-check\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><path d=\"m9 12 2 2 4-4\"></path></svg><span>This saved trace includes source and UI captures, selectors, DOMRects, and flow metadata. It does not run a new capture or agent.</span></div></aside></header>",
+      "box": {
+        "x": 22,
+        "y": 22,
+        "width": 980,
+        "height": 362.46875,
+        "scrollTop": 0,
+        "scrollHeight": 360,
+        "clientHeight": 360,
+        "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "display": "grid",
+        "position": "static",
+        "grid": "522px 400px",
+        "overflow": "visible",
+        "lineHeight": "23.2px"
+      }
+    },
+    ".coachList": {
+      "html": "<aside class=\"coachList r-tracevu-list\" aria-label=\"NodeRoom trace records\"><div class=\"coachSource\"><span>Source app</span><strong>NodeRoom</strong><small>bundled snapshot - HomenShum/noderoom - 6 guided steps</small></div><button type=\"button\" class=\"r-tracevu-rec\" data-on=\"true\" data-testid=\"trace-record\"><span class=\"r-tracevu-rec-head\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\" aria-hidden=\"true\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg><span class=\"r-tracevu-rec-title\">Open NodeRoom's Trace tab from the artifact shell</span><span class=\"r-tracevu-pill\" data-tone=\"ok\">pass</span></span><span class=\"r-tracevu-rec-sub\">Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.</span><span class=\"r-tracevu-rec-meta\">Entry - Step 01 - src/ui/panels/Artifact.tsx</span></button><button type=\"button\" class=\"r-tracevu-rec\" data-on=\"false\" data-testid=\"trace-record\"><span class=\"r-tracevu-rec-head\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\" aria-hidden=\"true\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg><span class=\"r-tracevu-rec-title\">Use the real NodeRoom trace tabs</span><span class=\"r-tracevu-pill\" data-tone=\"ok\">pass</span></span><span class=\"r-tracevu-rec-sub\">The sample should follow NodeRoom's detail-tab model instead of a loose walkthrough card: Overview, Steps, Flow, Evidence, and Raw JSON all hang off one selected trace record.</span><span class=\"r-tracevu-rec-meta\">Trace tabs - Step 02 - src/ui/panels/TraceSurface.tsx</span></button><button type=\"button\" class=\"r-tracevu-rec\" data-on=\"false\" data-testid=\"trace-record\"><span class=\"r-tracevu-rec-head\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\" aria-hidden=\"true\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg><span class=\"r-tracevu-rec-title\">Seed the app from NodeRoom TraceRecord data</span><span class=\"r-tracevu-pill\" data-tone=\"ok\">pass</span></span><span class=\"r-tracevu-rec-sub\">NodeTrace now seeds from the same mental model NodeRoom uses: records contain ordered steps, source metadata, verdicts, attachments, and raw audit payloads.</span><span class=\"r-tracevu-rec-meta\">Data model - Step 03 - src/ui/panels/traceData.ts</span></button><button type=\"button\" class=\"r-tracevu-rec\" data-on=\"false\" data-testid=\"trace-record\"><span class=\"r-tracevu-rec-head\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\" aria-hidden=\"true\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg><span class=\"r-tracevu-rec-title\">Render code and UI evidence like NodeRoom step rows</span><span class=\"r-tracevu-pill\" data-tone=\"ok\">pass</span></span><span class=\"r-tracevu-rec-sub\">Each step is an ordered, source-linked unit. Screenshot attachments carry a normalized box so the UI can draw exactly what was clicked or extracted.</span><span class=\"r-tracevu-rec-meta\">Steps - Step 04 - src/ui/panels/TraceStepRow.tsx</span></button><button type=\"button\" class=\"r-tracevu-rec\" data-on=\"false\" data-testid=\"trace-record\"><span class=\"r-tracevu-rec-head\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\" aria-hidden=\"true\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg><span class=\"r-tracevu-rec-title\">Keep the latest flow tab behavior</span><span class=\"r-tracevu-pill\" data-tone=\"ok\">pass</span></span><span class=\"r-tracevu-rec-sub\">NodeRoom's Flow tab derives graph nodes and edges from the same ordered steps. Clicking a node opens the same step renderer, avoiding drift between graph and list.</span><span class=\"r-tracevu-rec-meta\">Flow - Step 05 - src/ui/panels/TraceFlow.tsx</span></button><button type=\"button\" class=\"r-tracevu-rec\" data-on=\"false\" data-testid=\"trace-record\"><span class=\"r-tracevu-rec-head\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"13\" height=\"13\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-activity\" aria-hidden=\"true\"><path d=\"M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2\"></path></svg><span class=\"r-tracevu-rec-title\">Match NodeRoom's dark trace surface</span><span class=\"r-tracevu-pill\" data-tone=\"ok\">pass</span></span><span class=\"r-tracevu-rec-sub\">The sample app should look like NodeRoom: dark app chrome, compact tabs, muted metadata, accent verdict pills, step cards, and screenshot highlight boxes.</span><span class=\"r-tracevu-rec-meta\">Look and feel - Step 06 - src/app/styles.css</span></button></aside>",
+      "box": {
+        "x": 23,
+        "y": 401.46875,
+        "width": 340,
+        "height": 3003.109375,
+        "scrollTop": 0,
+        "scrollHeight": 3003,
+        "clientHeight": 3003,
+        "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "display": "block",
+        "position": "static",
+        "grid": "none",
+        "overflow": "auto",
+        "lineHeight": "23.2px"
+      }
+    },
+    ".r-tracevu-detail-head": {
+      "html": "<header class=\"r-tracevu-detail-head\"><strong>Open NodeRoom's Trace tab from the artifact shell</strong><p>Start from the real artifact panel. NodeRoom exposes a trace tab and a bottom room trace strip, so users can move from live room activity into the full provenance view.</p><button type=\"button\" class=\"inspectTrace\" data-trace-inspect=\"true\">Inspect trace</button><div class=\"r-tracevu-tabs\" role=\"tablist\" aria-label=\"NodeRoom trace detail\"><button type=\"button\" role=\"tab\" id=\"coach-tab-overview\" aria-controls=\"coach-panel-overview\" tabindex=\"-1\" aria-selected=\"false\" data-on=\"false\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-list-checks\" aria-hidden=\"true\"><path d=\"m3 17 2 2 4-4\"></path><path d=\"m3 7 2 2 4-4\"></path><path d=\"M13 6h8\"></path><path d=\"M13 12h8\"></path><path d=\"M13 18h8\"></path></svg>Overview</button><button type=\"button\" role=\"tab\" id=\"coach-tab-steps\" aria-controls=\"coach-panel-steps\" tabindex=\"-1\" aria-selected=\"false\" data-on=\"false\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-code-xml\" aria-hidden=\"true\"><path d=\"m18 16 4-4-4-4\"></path><path d=\"m6 8-4 4 4 4\"></path><path d=\"m14.5 4-5 16\"></path></svg>Steps</button><button type=\"button\" role=\"tab\" id=\"coach-tab-flow\" aria-controls=\"coach-panel-flow\" tabindex=\"-1\" aria-selected=\"false\" data-on=\"false\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-network\" aria-hidden=\"true\"><rect x=\"16\" y=\"16\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"2\" y=\"16\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"9\" y=\"2\" width=\"6\" height=\"6\" rx=\"1\"></rect><path d=\"M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3\"></path><path d=\"M12 12V8\"></path></svg>Minimap</button><button type=\"button\" role=\"tab\" id=\"coach-tab-raw\" aria-controls=\"coach-panel-raw\" tabindex=\"0\" aria-selected=\"true\" data-on=\"true\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"12\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-file-json\" aria-hidden=\"true\"><path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"></path><path d=\"M14 2v4a2 2 0 0 0 2 2h4\"></path><path d=\"M10 12a1 1 0 0 0-1 1v1a1 1 0 0 1-1 1 1 1 0 0 1 1 1v1a1 1 0 0 0 1 1\"></path><path d=\"M14 18a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1 1 1 0 0 1-1-1v-1a1 1 0 0 0-1-1\"></path></svg>Raw JSON</button></div></header>",
+      "box": {
+        "x": 363,
+        "y": 401.46875,
+        "width": 638,
+        "height": 218.609375,
+        "scrollTop": 0,
+        "scrollHeight": 218,
+        "clientHeight": 218,
+        "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "display": "block",
+        "position": "static",
+        "grid": "none",
+        "overflow": "visible",
+        "lineHeight": "23.2px"
+      }
+    },
+    ".liveGraphRailHead": {
+      "html": "<header class=\"liveGraphRailHead\"><h2>Live graph rail</h2><small>14 entities from 6 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.</small></header>",
+      "box": {
+        "x": 37,
+        "y": 3438.578125,
+        "width": 950,
+        "height": 44.5,
+        "scrollTop": 0,
+        "scrollHeight": 45,
+        "clientHeight": 45,
+        "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "display": "flex",
+        "position": "static",
+        "grid": "none",
+        "overflow": "visible",
+        "lineHeight": "23.2px"
+      }
+    },
+    ".liveGraphRailControls": {
+      "html": "<div class=\"liveGraphRailControls\"><label>Entity<select aria-describedby=\"_r_0_\"><option value=\"\">Choose an entity</option><option value=\"[&quot;actor&quot;,&quot;trace-coach&quot;]\">actor: trace-coach</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceStrip&quot;]\">tool: workSurface.traceStrip</option><option value=\"[&quot;artifact&quot;,&quot;noderoom-codebase-trace&quot;]\">artifact: noderoom-codebase-trace</option><option value=\"[&quot;step&quot;,&quot;entry&quot;]\">step: entry</option><option value=\"[&quot;tool&quot;,&quot;workSurface.trace&quot;]\">tool: workSurface.trace</option><option value=\"[&quot;step&quot;,&quot;trace-tabs&quot;]\">step: trace-tabs</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceData&quot;]\">tool: workSurface.traceData</option><option value=\"[&quot;step&quot;,&quot;data-model&quot;]\">step: data-model</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceSteps&quot;]\">tool: workSurface.traceSteps</option><option value=\"[&quot;step&quot;,&quot;steps&quot;]\">step: steps</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceFlow&quot;]\">tool: workSurface.traceFlow</option><option value=\"[&quot;step&quot;,&quot;flow&quot;]\">step: flow</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceStyle&quot;]\">tool: workSurface.traceStyle</option><option value=\"[&quot;step&quot;,&quot;look-and-feel&quot;]\">step: look-and-feel</option></select></label><small id=\"_r_0_\">Choose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.</small></div>",
+      "box": {
+        "x": 37,
+        "y": 3493.078125,
+        "width": 950,
+        "height": 92.15625,
+        "scrollTop": 0,
+        "scrollHeight": 92,
+        "clientHeight": 92,
+        "font": "16px / 23.2px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "display": "block",
+        "position": "static",
+        "grid": "none",
+        "overflow": "visible",
+        "lineHeight": "23.2px"
+      }
+    },
+    "[data-testid=\"live-graph-node-events\"]": {
+      "html": "<div class=\"liveGraphRailReadout\" data-testid=\"live-graph-node-events\" aria-live=\"polite\"><strong>actor: trace-coach</strong><span>produced by trace events:</span><ul><li><code>coach-step-01-artifact-entry-trace</code></li><li><code>coach-step-02-detail-tabs-trace</code></li><li><code>coach-step-03-trace-data-trace</code></li><li><code>coach-step-04-step-row-trace</code></li><li><code>coach-step-05-flow-trace</code></li><li><code>coach-step-06-style-trace</code></li></ul></div>",
+      "box": {
+        "x": 37,
+        "y": 4085.703125,
+        "width": 950,
+        "height": 146.40625,
+        "scrollTop": 0,
+        "scrollHeight": 146,
+        "clientHeight": 146,
+        "font": "12px / 17.4px Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "display": "block",
+        "position": "static",
+        "grid": "none",
+        "overflow": "visible",
+        "lineHeight": "17.4px"
+      }
+    }
+  },
+  "rawSha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e"
+}

@@ -1,0 +1,1255 @@
+{
+  "at": "2026-09-05T05:40:09.358731+00:00",
+  "stagedTree": "c77fe64fe38e668bffdeca7b3042c4187bf7c132",
+  "base": "c578e3d2c870423f28ce140691a08e8a9bdaaaa6",
+  "passed": true,
+  "checks": [
+    {
+      "name": "HEAD remains exact reviewed base",
+      "pass": true
+    },
+    {
+      "name": "index equals exact frozen tree",
+      "pass": true
+    },
+    {
+      "name": "authored path scope exact",
+      "pass": true,
+      "detail": [
+        "HANDOFF.md",
+        "bin/nodetrace.mjs",
+        "docs/GRAPH_INTEGRATION.md",
+        "package-lock.json",
+        "scripts/lib/entity-inspection-proof.mjs",
+        "scripts/ui-readiness.mjs",
+        "src/styles.css",
+        "src/trace/LiveGraphRail.tsx",
+        "vendor/nodegraph-live/NodeGraph.d.ts",
+        "vendor/nodegraph-live/NodeGraph.js"
+      ]
+    },
+    {
+      "name": "staged path count matches concrete receipt",
+      "pass": true
+    },
+    {
+      "name": "no unstaged tracked paths",
+      "pass": true
+    },
+    {
+      "name": "no untracked nonignored paths",
+      "pass": true
+    },
+    {
+      "name": "full index digest",
+      "pass": true
+    },
+    {
+      "name": "changed index digest",
+      "pass": true
+    },
+    {
+      "name": "all staged blobs equal current bytes and receipt hashes",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "manifest exact advertised hash",
+      "pass": true
+    },
+    {
+      "name": "all portable artifact bytes and hashes exact",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "portable artifact count and total bytes exact",
+      "pass": true
+    },
+    {
+      "name": "no missing or additional portable paths",
+      "pass": true
+    },
+    {
+      "name": "all 16 source bindings exact and equal manifest",
+      "pass": true
+    },
+    {
+      "name": "literal NUL inherited same entity-key context",
+      "pass": true
+    },
+    {
+      "name": "graph model no semantic delta",
+      "pass": true
+    },
+    {
+      "name": "six lock entries all existing dev packages",
+      "pass": true,
+      "detail": [
+        "node_modules/baseline-browser-mapping",
+        "node_modules/browserslist",
+        "node_modules/caniuse-lite",
+        "node_modules/electron-to-chromium",
+        "node_modules/node-releases",
+        "node_modules/update-browserslist-db"
+      ]
+    },
+    {
+      "name": "actual cross-run source/index/installed/original-input snapshots equal",
+      "pass": true
+    },
+    {
+      "name": "first full failure preserved and retry honest",
+      "pass": true
+    },
+    {
+      "name": "retry did not use conditional wait",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture source-320",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture source-390",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture source-1440",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture installed-320",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture installed-390",
+      "pass": true
+    },
+    {
+      "name": "matched cell current exact fixture installed-1440",
+      "pass": true
+    },
+    {
+      "name": "12 current frames positive, inside canvas, collision free and no page overflow",
+      "pass": true
+    },
+    {
+      "name": "36 saved canonical PNGs independently recounted; exact winning buffers",
+      "pass": true
+    },
+    {
+      "name": "all eight whole-product grades remain null",
+      "pass": true
+    },
+    {
+      "name": "122 captured and restored generated-file bindings exact",
+      "pass": true
+    },
+    {
+      "name": "portable original full audit includes development dependency counts and zero findings",
+      "pass": true
+    },
+    {
+      "name": "source and stage remained frozen throughout read-only validation",
+      "pass": true
+    }
+  ],
+  "pixels": [
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-320-populated.png",
+      "sha256": "42384d75ba4df8fdf0f44a57edde74dd41328b8c7d2d92769aeafd98f9194af0",
+      "darkGraphPixels": 639,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-320-populated-full.png",
+      "sha256": "d3172e9c79b5d5447a8fd1193fc175db27ae929152d0733ec2a6e148dc23060f",
+      "darkGraphPixels": 803,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-320-populated-change-boundary.png",
+      "sha256": "dd7641b0a886d001b8424bed0082b7522274a387f97cf79e01b1b306b6cbce61",
+      "darkGraphPixels": 639,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-320-native-selected.png",
+      "sha256": "950caa778b47915dcdaa5b7158ff25dbb4d9a70c920e6295d4f35729a4a22cd3",
+      "darkGraphPixels": 803,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-320-native-selected-full.png",
+      "sha256": "07531c24817fa5b1bb8268901edf7cbfbfea29fa3a276bd4c64906db388e986d",
+      "darkGraphPixels": 803,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-320-native-selected-change-boundary.png",
+      "sha256": "851ccc9ae6e7d2f09bbfc5086354aee4cd4a8887d4862320876c118f1416b239",
+      "darkGraphPixels": 803,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-390-populated.png",
+      "sha256": "7704dea1c49f68b352923b97121af4b066c856c233b002a73b26937d6f76df3e",
+      "darkGraphPixels": 847,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-390-populated-full.png",
+      "sha256": "a01d33cfec3a085b4cb123e01025d465776808a12404620e6b6ebafe767a3d84",
+      "darkGraphPixels": 1012,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-390-populated-change-boundary.png",
+      "sha256": "3004e39510d7509c71d515cb98ee7601fffd6c5aee847ebbfd6f9cdfe06c3a78",
+      "darkGraphPixels": 847,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-390-native-selected.png",
+      "sha256": "0194802f004303e03baf838814a752175d099021f00cc3a60d136ff768b7b9f4",
+      "darkGraphPixels": 1012,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-390-native-selected-full.png",
+      "sha256": "bb0d3735b1433c6db6aa9cdfa90a21631bc68766b33c6d778389603a7f0d2d3d",
+      "darkGraphPixels": 1012,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-390-native-selected-change-boundary.png",
+      "sha256": "3ac0e2b1469adbc684c3d7709d922f68cc88527af169019acb1219009b5341ba",
+      "darkGraphPixels": 1012,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-1440-populated.png",
+      "sha256": "05ae0b6c65a8598c8297ff58eab3cc577fd0391c331d9ea0a83b9b9a54381814",
+      "darkGraphPixels": 1219,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-1440-populated-full.png",
+      "sha256": "2aef4589c3edf7bd3b0681f00c9606fd9c30980c39926d4319af6c02b12f60d8",
+      "darkGraphPixels": 1297,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-1440-populated-change-boundary.png",
+      "sha256": "e33737d80a9077f347855adf284f7f145e2a5bf9dc9836554a2242faa000822d",
+      "darkGraphPixels": 819,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-1440-native-selected.png",
+      "sha256": "2ba62b8b81d1e87134eaac453778ffb36359d4d63d68ef85e03e5a5b64c7b7b9",
+      "darkGraphPixels": 1290,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-1440-native-selected-full.png",
+      "sha256": "93ff0c1a9a9162a5d9b6f4a3440f03685e8fd0d42d5a485165c33f6ad4934e94",
+      "darkGraphPixels": 1290,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\source-1440-native-selected-change-boundary.png",
+      "sha256": "83368fe14f21374eb181a53eb35e5b46e94fe2002653b8dec09b3c7549c1d587",
+      "darkGraphPixels": 1290,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-320-populated.png",
+      "sha256": "6776a4f12e89a86b8f214a15f2c5ac4b170815ffad23a843399152e93ff26d81",
+      "darkGraphPixels": 600,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-320-populated-full.png",
+      "sha256": "ed6d1214fc29eee109e8d6ab8a2a38d72c617d2bd5196a9f36736734943bd5b8",
+      "darkGraphPixels": 985,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-320-populated-change-boundary.png",
+      "sha256": "c339182b3634d25a70260f671b2898b799ab0007c1d5ea5eb32473240a1b41c9",
+      "darkGraphPixels": 600,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-320-native-selected.png",
+      "sha256": "e4deb77fd638f068f6ccd0bfd122a6ba577a316f5abd3f8bcfc5d4d5db3e09c6",
+      "darkGraphPixels": 985,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-320-native-selected-full.png",
+      "sha256": "4d341df84971c7d1a9dcd86e768861d46034d54e0056d01895472575fd139cb1",
+      "darkGraphPixels": 985,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-320-native-selected-change-boundary.png",
+      "sha256": "d05608dfff6d35fc91046e3d5bfebf81cdccc75c21996af85b16a9ea25077b98",
+      "darkGraphPixels": 985,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-390-populated.png",
+      "sha256": "0a2feef00498e3894ebcecd245c9941eb7de3b9fa8b9d56b77b1db7227ebc418",
+      "darkGraphPixels": 544,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-390-populated-full.png",
+      "sha256": "99255b9a5ff40d8d1badc05e05513e2ca4d9bd5ede455799091f5a83a20b1067",
+      "darkGraphPixels": 1216,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-390-populated-change-boundary.png",
+      "sha256": "bb4737cd1ff87da7de49d49a88387b98dee0baaf9ec7cda758a6ed4fbd32da31",
+      "darkGraphPixels": 525,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-390-native-selected.png",
+      "sha256": "893e4318718cf52e78214d2de8d96871bfae487c63316b4c91f1fda6a128772d",
+      "darkGraphPixels": 1216,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-390-native-selected-full.png",
+      "sha256": "ef4e0e6c322f1bb2fb1b9b63e49ed7fae332564ef21f6e973637172fac9cca93",
+      "darkGraphPixels": 1215,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual\\installed-390-native-selected-change-boundary.png",
+      "sha256": "1933f6b814c0da658d8fea00e9ab0f089969d6ebcdd8c1c78a047ba8d4c24d80",
+      "darkGraphPixels": 1216,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-populated.png",
+      "sha256": "52cf068ee86275843d96df0480eb02a383cbd5590f1a0bdb433e6958b64b62a6",
+      "darkGraphPixels": 1074,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-populated-full.png",
+      "sha256": "3b1bd3246c0967efcb4487885380c8a15d38b8dbbd1a89df629df6b268488ea4",
+      "darkGraphPixels": 1977,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-populated-change-boundary.png",
+      "sha256": "e7b548b07d17c453e786c24788bccb278ae412a98ea9a92c8cdf7e895bdd68b4",
+      "darkGraphPixels": 1057,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-native-selected.png",
+      "sha256": "68301b0475e5e29d47bc07df6acf8aa925734d0c8f8e7f1ffae5adf90b34098b",
+      "darkGraphPixels": 1977,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-native-selected-full.png",
+      "sha256": "615efb1b3f493008a6558dcd258b04a743d3f65c1db4caba8d7cf77324ad59d6",
+      "darkGraphPixels": 1977,
+      "attempts": 1,
+      "passed": true
+    },
+    {
+      "path": "E6c-nodetrace-matched-canonical-visual-retry-02\\installed-1440-native-selected-change-boundary.png",
+      "sha256": "f1b5c1daa38fb08c9e250ef04f6e2858b0c312c85b1c000e177277b4ef6abe86",
+      "darkGraphPixels": 1977,
+      "attempts": 1,
+      "passed": true
+    }
+  ],
+  "currentFrames": [
+    {
+      "name": "source-320-populated",
+      "labels": 6,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "source-320-native-selected",
+      "labels": 6,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "source-390-populated",
+      "labels": 7,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "source-390-native-selected",
+      "labels": 7,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "source-1440-populated",
+      "labels": 7,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "source-1440-native-selected",
+      "labels": 7,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "installed-320-populated",
+      "labels": 6,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "installed-320-native-selected",
+      "labels": 6,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "installed-390-populated",
+      "labels": 6,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "installed-390-native-selected",
+      "labels": 6,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "installed-1440-populated",
+      "labels": 8,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    },
+    {
+      "name": "installed-1440-native-selected",
+      "labels": 8,
+      "bounds": true,
+      "collisions": false,
+      "overflow": 0
+    }
+  ],
+  "generatedCustody": [
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/.gitkeep",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-agent-scale-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-builder-access-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-capture-plan-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-cli-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-happy-path.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-next-e2e-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-trace-coach-minimap.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-trace-coach-sqlite.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-trace-coach-sqlite.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "docs/eval/nodetrace-understand-anything-noderoom.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/a11y-lens-open-focus.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/axe-happy-path.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/axe-trace-coach.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/capture-identity-after-this-checkout.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/capture-identity-before-foreign-checkout.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/capture-identity-regression-prefix.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/capture-identity-regression.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/capture-paint-regression-prefix.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/capture-paint-regression.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/happy-path-desktop-1280.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/happy-path-mobile-375.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/j2-lens-statusstrip-desktop.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/j2-lens-tracestrip-desktop.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/j2-mobile-tap-no-lens.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/j4-installed-next-target-1280.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/j4-installed-next-target.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/lighthouse-happy-path.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/lighthouse-trace-coach.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/surface-sweep.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/trace-coach-desktop-1280.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/trace-coach-mobile-375.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/web-interface-guidelines.txt",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/web-quality-audit.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/wig-happy-path-empty-coach-slot.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/wig-keyboard-no-opener.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/wig-lens-open-focus-outside.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "promotion/evidence/wig-review.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-01-artifact-entry-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-01-artifact-entry-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-01-artifact-entry-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-02-detail-tabs-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-02-detail-tabs-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-02-detail-tabs-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-03-trace-data-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-03-trace-data-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-03-trace-data-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-04-step-row-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-04-step-row-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-04-step-row-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-05-flow-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-05-flow-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-05-flow-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-06-style-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-06-style-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/coach-step-06-style-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/noderoom-real-capture-manifest.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/captures/noderoom-trace-knowledge-graph.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/favicon.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-final-package-check",
+      "path": "public/nodetrace-state.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/.gitkeep",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-agent-scale-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-builder-access-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-capture-plan-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-cli-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-happy-path.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-next-e2e-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-smoke.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-trace-coach-minimap.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-trace-coach-sqlite.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-trace-coach-sqlite.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "docs/eval/nodetrace-understand-anything-noderoom.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/a11y-lens-open-focus.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/axe-happy-path.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/axe-trace-coach.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/capture-identity-after-this-checkout.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/capture-identity-before-foreign-checkout.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/capture-identity-regression-prefix.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/capture-identity-regression.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/capture-paint-regression-prefix.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/capture-paint-regression.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/happy-path-desktop-1280.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/happy-path-mobile-375.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/j2-lens-statusstrip-desktop.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/j2-lens-tracestrip-desktop.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/j2-mobile-tap-no-lens.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/j4-installed-next-target-1280.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/j4-installed-next-target.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/lighthouse-happy-path.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/lighthouse-trace-coach.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/surface-sweep.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/trace-coach-desktop-1280.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/trace-coach-mobile-375.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/web-interface-guidelines.txt",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/web-quality-audit.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/wig-happy-path-empty-coach-slot.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/wig-keyboard-no-opener.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/wig-lens-open-focus-outside.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "promotion/evidence/wig-review.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-01-artifact-entry-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-01-artifact-entry-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-01-artifact-entry-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-02-detail-tabs-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-02-detail-tabs-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-02-detail-tabs-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-03-trace-data-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-03-trace-data-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-03-trace-data-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-04-step-row-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-04-step-row-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-04-step-row-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-05-flow-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-05-flow-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-05-flow-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-06-style-ide.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-06-style-minimap.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/coach-step-06-style-ui.png",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/noderoom-real-capture-manifest.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/captures/noderoom-trace-knowledge-graph.json",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/favicon.svg",
+      "captureExact": true,
+      "restoredExact": true
+    },
+    {
+      "phase": "post-matched-before-final-check",
+      "path": "public/nodetrace-state.json",
+      "captureExact": true,
+      "restoredExact": true
+    }
+  ],
+  "largestPortableArtifacts": [
+    [
+      9745670,
+      "E6c-nodetrace-installed-owner-refresh/next/prior-build.zip"
+    ],
+    [
+      1618540,
+      "E6c-nodetrace-installed-vite-entity-owner/report.json"
+    ],
+    [
+      1617162,
+      "E6c-nodetrace-installed-vite-entity-ready/report.json"
+    ],
+    [
+      1569874,
+      "E6c-nodetrace-installed-vite-entity-owner/page@7d9892efad001f53f84ddd00c314fe83.webm"
+    ],
+    [
+      1545141,
+      "E6c-nodetrace-installed-next-entity-final/report.json"
+    ]
+  ],
+  "reviewer": "Independent of implementation authorship; reviewer context reused because fresh-agent capacity was exhausted. No candidate source/index/ref edits."
+}

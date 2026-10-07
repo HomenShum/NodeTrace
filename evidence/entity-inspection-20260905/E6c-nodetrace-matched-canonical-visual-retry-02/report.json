@@ -1,0 +1,1639 @@
+{
+  "proof": "NODETRACE-MATCHED-ENTITY-VISUAL-02",
+  "at": "2026-09-05T05:14:41.324Z",
+  "reviewer": "Sequential evidence worker; no application-source edits in this slice. Independent review follows.",
+  "beforeReport": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\evidence\\nodetrace-entity-inspection-02-before\\primary-controls-boundary\\report.json",
+  "primary": "D:/VSCode Projects/cafecorner_nodebench/nodebench_ai4/NodeTrace",
+  "consumer": "C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-BzFZOC",
+  "sourceBindings": {
+    "vendor/nodegraph-live/NodeGraph.d.ts": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+    "scripts/lib/entity-inspection-proof.mjs": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+    "vendor/nodegraph-live/NodeGraph.js": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+    "src/DemoDashboard.tsx": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/styles.css": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/LiveGraphRail.tsx": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "ee9c3324f6f023bc3a71f37036385a90d3eb60e2b43f8da5821a1fe85aa26add",
+    "scripts/ui-readiness.mjs": "31b233e37e6a149b3657d19620d59733b69afd587983f9af9c07f7e3ba43c9df",
+    "bin/nodetrace.mjs": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    ".gitattributes": "74d755d958f716223a33e5a5ff6e6f945ebe52e404aec94e8b0fc64f4812489d"
+  },
+  "installedTransforms": [
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "replacements": [],
+      "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "expectedInstalledSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "installedSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.d.ts",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "replacements": [],
+      "sourceSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "expectedInstalledSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "installedSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/graph-model.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "replacements": [],
+      "sourceSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "expectedInstalledSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "installedSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/session.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/session.js",
+      "replacements": [],
+      "sourceSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "expectedInstalledSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "installedSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/react.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/react.js",
+      "replacements": [],
+      "sourceSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "expectedInstalledSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "installedSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/index.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/index.js",
+      "replacements": [],
+      "sourceSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "expectedInstalledSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "installedSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "exact": true
+    },
+    {
+      "source": "src/trace/LiveGraphRail.tsx",
+      "target": "src/nodetrace/LiveGraphRail.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+      "expectedInstalledSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "installedSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "exact": true
+    },
+    {
+      "source": "src/styles.css",
+      "target": "src/nodetrace-demo/styles.css",
+      "replacements": [],
+      "sourceSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "expectedInstalledSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "installedSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "exact": true
+    },
+    {
+      "source": "src/DemoDashboard.tsx",
+      "target": "src/nodetrace-demo/DemoDashboard.tsx",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "expectedInstalledSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "installedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "exact": true
+    },
+    {
+      "source": "src/demoState.ts",
+      "target": "src/nodetrace-demo/demoState.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "expectedInstalledSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "installedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "exact": true
+    },
+    {
+      "source": "src/demoNavigation.ts",
+      "target": "src/nodetrace-demo/demoNavigation.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "expectedInstalledSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "installedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensPanel.tsx",
+      "target": "src/nodetrace/TraceLensPanel.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "expectedInstalledSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "installedSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensProvider.tsx",
+      "target": "src/nodetrace/TraceLensProvider.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "expectedInstalledSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "installedSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "exact": true
+    },
+    {
+      "source": "src/trace/trace.css",
+      "target": "src/nodetrace/trace.css",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "expectedInstalledSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "installedSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "exact": true
+    },
+    {
+      "source": "src/trace/types.ts",
+      "target": "src/nodetrace/types.ts",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "expectedInstalledSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "installedSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "exact": true
+    }
+  ],
+  "preservation": {
+    "head": true,
+    "stageListing": true,
+    "source": true,
+    "installed": true,
+    "originalPrimary": true,
+    "originalInstalled": true
+  },
+  "checks": [
+    {
+      "name": "final source binding vendor/nodegraph-live/NodeGraph.d.ts",
+      "pass": true
+    },
+    {
+      "name": "final source binding scripts/lib/entity-inspection-proof.mjs",
+      "pass": true
+    },
+    {
+      "name": "final source binding vendor/nodegraph-live/NodeGraph.js",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/DemoDashboard.tsx",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/demoNavigation.ts",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/demoState.ts",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/styles.css",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/trace/TraceLensPanel.tsx",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/trace/TraceLensProvider.tsx",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/trace/trace.css",
+      "pass": true
+    },
+    {
+      "name": "final source binding src/trace/LiveGraphRail.tsx",
+      "pass": true
+    },
+    {
+      "name": "final source binding package.json",
+      "pass": true
+    },
+    {
+      "name": "final source binding package-lock.json",
+      "pass": true
+    },
+    {
+      "name": "final source binding scripts/ui-readiness.mjs",
+      "pass": true
+    },
+    {
+      "name": "final source binding bin/nodetrace.mjs",
+      "pass": true
+    },
+    {
+      "name": "final source binding .gitattributes",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/vendor/nodegraph-live/session.js",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/vendor/nodegraph-live/react.js",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/vendor/nodegraph-live/index.js",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/LiveGraphRail.tsx",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace-demo/styles.css",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace-demo/DemoDashboard.tsx",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace-demo/demoState.ts",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace-demo/demoNavigation.ts",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/TraceLensPanel.tsx",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/TraceLensProvider.tsx",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/trace.css",
+      "pass": true
+    },
+    {
+      "name": "installed transform src/nodetrace/types.ts",
+      "pass": true
+    },
+    {
+      "name": "source exact original state bytes",
+      "pass": true
+    },
+    {
+      "name": "source exact original image /captures/coach-step-01-artifact-entry-ide.png",
+      "pass": true
+    },
+    {
+      "name": "source exact original image /captures/coach-step-01-artifact-entry-ui.png",
+      "pass": true
+    },
+    {
+      "name": "source exact original image /captures/coach-step-01-artifact-entry-ide.png",
+      "pass": true
+    },
+    {
+      "name": "source exact original image /captures/coach-step-01-artifact-entry-ui.png",
+      "pass": true
+    },
+    {
+      "name": "source exact original image /captures/coach-step-01-artifact-entry-ide.png",
+      "pass": true
+    },
+    {
+      "name": "source exact original image /captures/coach-step-01-artifact-entry-ui.png",
+      "pass": true
+    },
+    {
+      "name": "installed exact original state bytes",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 app route receives byte-exact original fixture",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 starts unselected",
+      "pass": true
+    },
+    {
+      "name": "installed-1440-overview: current canvas has painted labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "demo-artifact",
+          "x": 565.2239628881216,
+          "y": 42.131204000798746,
+          "width": 81.68603515625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.evidenceCarousel",
+          "x": 514.5591236280437,
+          "y": 23.999999984905564,
+          "width": 180.01416015625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "schema",
+          "x": 759.5581904835774,
+          "y": 49.369366252898985,
+          "width": 44.705078125,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "nodetrace",
+          "x": 680.4557740596177,
+          "y": 136.59571345341786,
+          "width": 59.4951171875,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "state",
+          "x": 782.414401813924,
+          "y": 195.49968599344578,
+          "width": 28.708984375,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "copilot.agentOperationStream",
+          "x": 609.7561547476693,
+          "y": 228.89376917747228,
+          "width": 178.298828125,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "events",
+          "x": 646.4525970812042,
+          "y": 249.50000001509443,
+          "width": 38.5888671875,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "shell.statusStrip",
+          "x": 699.7419375126635,
+          "y": 208.50524978480084,
+          "width": 92.5888671875,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-overview: every painted glyph is inside its canvas",
+      "pass": true,
+      "detail": [
+        {
+          "text": "demo-artifact",
+          "x": 565.2239628881216,
+          "y": 42.131204000798746,
+          "width": 81.68603515625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.evidenceCarousel",
+          "x": 514.5591236280437,
+          "y": 23.999999984905564,
+          "width": 180.01416015625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "schema",
+          "x": 759.5581904835774,
+          "y": 49.369366252898985,
+          "width": 44.705078125,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "nodetrace",
+          "x": 680.4557740596177,
+          "y": 136.59571345341786,
+          "width": 59.4951171875,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "state",
+          "x": 782.414401813924,
+          "y": 195.49968599344578,
+          "width": 28.708984375,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "copilot.agentOperationStream",
+          "x": 609.7561547476693,
+          "y": 228.89376917747228,
+          "width": 178.298828125,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "events",
+          "x": 646.4525970812042,
+          "y": 249.50000001509443,
+          "width": 38.5888671875,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "shell.statusStrip",
+          "x": 699.7419375126635,
+          "y": 208.50524978480084,
+          "width": 92.5888671875,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-overview: painted labels do not collide",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed-1440-populated exact saved PNG raster has >40 dark canvas pixels",
+      "pass": true,
+      "detail": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-populated-paint-attempt-1.png",
+          "sha256": "52cf068ee86275843d96df0480eb02a383cbd5590f1a0bdb433e6958b64b62a6",
+          "darkGraphPixels": 1074,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            758,
+            1382,
+            960
+          ],
+          "rasterSize": [
+            1440,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-populated-full exact saved PNG raster has >40 dark canvas pixels",
+      "pass": true,
+      "detail": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-populated-full-paint-attempt-1.png",
+          "sha256": "3b1bd3246c0967efcb4487885380c8a15d38b8dbbd1a89df629df6b268488ea4",
+          "darkGraphPixels": 1977,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            782,
+            1382,
+            1074
+          ],
+          "rasterSize": [
+            1440,
+            1132
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-populated-change-boundary exact saved PNG raster has >40 dark canvas pixels",
+      "pass": true,
+      "detail": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-populated-change-boundary-paint-attempt-1.png",
+          "sha256": "e7b548b07d17c453e786c24788bccb278ae412a98ea9a92c8cdf7e895bdd68b4",
+          "darkGraphPixels": 1057,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            760,
+            1382,
+            960
+          ],
+          "rasterSize": [
+            1440,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installed-1440 protected guidance/header copy unchanged",
+      "pass": true,
+      "detail": {
+        "before": [
+          {
+            "selector": ".showcase",
+            "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet."
+          },
+          {
+            "selector": "[aria-label=\"Trace Coach launch path\"]",
+            "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet."
+          },
+          {
+            "selector": ".liveGraphRailHead",
+            "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence."
+          }
+        ],
+        "after": [
+          {
+            "selector": ".showcase",
+            "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+            "bounds": {
+              "x": 22,
+              "y": -2,
+              "width": 1396,
+              "height": 319.359375,
+              "documentY": 22
+            }
+          },
+          {
+            "selector": "[aria-label=\"Trace Coach launch path\"]",
+            "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+            "bounds": {
+              "x": 997,
+              "y": 19,
+              "width": 400,
+              "height": 277.359375,
+              "documentY": 43
+            }
+          },
+          {
+            "selector": ".liveGraphRailHead",
+            "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+            "bounds": {
+              "x": 37,
+              "y": 498.140625,
+              "width": 1366,
+              "height": 44.5,
+              "documentY": 522.140625
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "installed-1440 old entity/edge counts unchanged",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 natural Tab reaches native Entity",
+      "pass": true,
+      "detail": [
+        {
+          "tag": "BUTTON",
+          "text": "Inspect trace"
+        },
+        {
+          "tag": "SELECT",
+          "text": "EntityChoose an entityactor: nodetracetool: workSurface.traceStripstep: schematool: workSurface.evidenceCarouselartifact: demo-artifactstep: prooftool: copilot.agentOperationStreamstep: eventstool: shell.statusStripstep: state"
+        }
+      ]
+    },
+    {
+      "name": "installed-1440 original pointer identity available natively",
+      "pass": true,
+      "detail": "tool: workSurface.evidenceCarousel"
+    },
+    {
+      "name": "installed-1440 native selection preserves full identity",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 native events match original pointer proof",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 both selection panels agree",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 measured count stays unknown",
+      "pass": true
+    },
+    {
+      "name": "installed-1440-native-selected: current canvas has painted labels",
+      "pass": true,
+      "detail": [
+        {
+          "text": "demo-artifact",
+          "x": 565.2239628881216,
+          "y": 42.131204000798746,
+          "width": 81.68603515625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.evidenceCarousel",
+          "x": 514.5591236280437,
+          "y": 23.999999984905564,
+          "width": 180.01416015625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "schema",
+          "x": 759.5581904835774,
+          "y": 49.369366252898985,
+          "width": 44.705078125,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "nodetrace",
+          "x": 680.4557740596177,
+          "y": 136.59571345341786,
+          "width": 59.4951171875,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "state",
+          "x": 782.414401813924,
+          "y": 195.49968599344578,
+          "width": 28.708984375,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "copilot.agentOperationStream",
+          "x": 609.7561547476693,
+          "y": 228.89376917747228,
+          "width": 178.298828125,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "events",
+          "x": 646.4525970812042,
+          "y": 249.50000001509443,
+          "width": 38.5888671875,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "shell.statusStrip",
+          "x": 699.7419375126635,
+          "y": 208.50524978480084,
+          "width": 92.5888671875,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-native-selected: every painted glyph is inside its canvas",
+      "pass": true,
+      "detail": [
+        {
+          "text": "demo-artifact",
+          "x": 565.2239628881216,
+          "y": 42.131204000798746,
+          "width": 81.68603515625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "workSurface.evidenceCarousel",
+          "x": 514.5591236280437,
+          "y": 23.999999984905564,
+          "width": 180.01416015625,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "schema",
+          "x": 759.5581904835774,
+          "y": 49.369366252898985,
+          "width": 44.705078125,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "nodetrace",
+          "x": 680.4557740596177,
+          "y": 136.59571345341786,
+          "width": 59.4951171875,
+          "height": 10,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "state",
+          "x": 782.414401813924,
+          "y": 195.49968599344578,
+          "width": 28.708984375,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "copilot.agentOperationStream",
+          "x": 609.7561547476693,
+          "y": 228.89376917747228,
+          "width": 178.298828125,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "events",
+          "x": 646.4525970812042,
+          "y": 249.50000001509443,
+          "width": 38.5888671875,
+          "height": 9,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        },
+        {
+          "text": "shell.statusStrip",
+          "x": 699.7419375126635,
+          "y": 208.50524978480084,
+          "width": 92.5888671875,
+          "height": 13,
+          "canvasWidth": 1330,
+          "canvasHeight": 298,
+          "supportedTransform": true
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-native-selected: painted labels do not collide",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed-1440-native-selected exact saved PNG raster has >40 dark canvas pixels",
+      "pass": true,
+      "detail": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-native-selected-paint-attempt-1.png",
+          "sha256": "68301b0475e5e29d47bc07df6acf8aa925734d0c8f8e7f1ffae5adf90b34098b",
+          "darkGraphPixels": 1977,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            501,
+            1382,
+            793
+          ],
+          "rasterSize": [
+            1440,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-native-selected-full exact saved PNG raster has >40 dark canvas pixels",
+      "pass": true,
+      "detail": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-native-selected-full-paint-attempt-1.png",
+          "sha256": "615efb1b3f493008a6558dcd258b04a743d3f65c1db4caba8d7cf77324ad59d6",
+          "darkGraphPixels": 1977,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            784,
+            1382,
+            1076
+          ],
+          "rasterSize": [
+            1440,
+            1265
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installed-1440-native-selected-change-boundary exact saved PNG raster has >40 dark canvas pixels",
+      "pass": true,
+      "detail": [
+        {
+          "attempt": 1,
+          "path": "installed-1440-native-selected-change-boundary-paint-attempt-1.png",
+          "sha256": "f1b5c1daa38fb08c9e250ef04f6e2858b0c312c85b1c000e177277b4ef6abe86",
+          "darkGraphPixels": 1977,
+          "positivePaint": true,
+          "canvasCrop": [
+            58,
+            501,
+            1382,
+            793
+          ],
+          "rasterSize": [
+            1440,
+            960
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installed-1440 no overflow in matched captures",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 host URL context preserved",
+      "pass": true
+    },
+    {
+      "name": "installed-1440 no application error",
+      "pass": true,
+      "detail": [
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c2c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        }
+      ]
+    },
+    {
+      "name": "installed-1440 no built module capture errors",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "installed-1440 actual served built modules match disk",
+      "pass": true
+    }
+  ],
+  "cells": [
+    {
+      "name": "installed-1440",
+      "viewport": {
+        "width": 1440,
+        "height": 960
+      },
+      "fixtureSha256": "ea7379623ed4ddd121caf87590204ff719eee3f233779f5451b68e3e35ed9f4c",
+      "traceRecords": 4,
+      "route": "/nodetrace?host=preserved&returnTo=dashboard#host-section",
+      "replay": "byte-exact original response through browser routing; not fresh backend output",
+      "captures": [
+        {
+          "name": "installed-1440-populated",
+          "url": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "scroll": {
+            "x": 0,
+            "y": 24
+          },
+          "overflow": 0,
+          "theme": "rgb(245, 247, 251)",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "canvas": {
+            "x": 55,
+            "y": 755.09375,
+            "width": 1330,
+            "height": 298,
+            "documentY": 779.09375
+          },
+          "selector": {
+            "x": 37,
+            "y": 575.484375,
+            "width": 1366,
+            "height": 44,
+            "documentY": 599.484375
+          },
+          "fit": {
+            "x": 54,
+            "y": 702.09375,
+            "width": 44,
+            "height": 44,
+            "documentY": 726.09375
+          },
+          "readout": null,
+          "selection": null,
+          "protected": [
+            {
+              "selector": ".showcase",
+              "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+              "bounds": {
+                "x": 22,
+                "y": -2,
+                "width": 1396,
+                "height": 319.359375,
+                "documentY": 22
+              }
+            },
+            {
+              "selector": "[aria-label=\"Trace Coach launch path\"]",
+              "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+              "bounds": {
+                "x": 997,
+                "y": 19,
+                "width": 400,
+                "height": 277.359375,
+                "documentY": 43
+              }
+            },
+            {
+              "selector": ".liveGraphRailHead",
+              "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+              "bounds": {
+                "x": 37,
+                "y": 498.140625,
+                "width": 1366,
+                "height": 44.5,
+                "documentY": 522.140625
+              }
+            }
+          ],
+          "frame": [
+            {
+              "text": "demo-artifact",
+              "x": 565.2239628881216,
+              "y": 42.131204000798746,
+              "width": 81.68603515625,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "workSurface.evidenceCarousel",
+              "x": 514.5591236280437,
+              "y": 23.999999984905564,
+              "width": 180.01416015625,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "schema",
+              "x": 759.5581904835774,
+              "y": 49.369366252898985,
+              "width": 44.705078125,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "nodetrace",
+              "x": 680.4557740596177,
+              "y": 136.59571345341786,
+              "width": 59.4951171875,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "state",
+              "x": 782.414401813924,
+              "y": 195.49968599344578,
+              "width": 28.708984375,
+              "height": 9,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "copilot.agentOperationStream",
+              "x": 609.7561547476693,
+              "y": 228.89376917747228,
+              "width": 178.298828125,
+              "height": 13,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "events",
+              "x": 646.4525970812042,
+              "y": 249.50000001509443,
+              "width": 38.5888671875,
+              "height": 9,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "shell.statusStrip",
+              "x": 699.7419375126635,
+              "y": 208.50524978480084,
+              "width": 92.5888671875,
+              "height": 13,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            }
+          ],
+          "pixelProof": [
+            {
+              "path": "installed-1440-populated.png",
+              "sha256": "52cf068ee86275843d96df0480eb02a383cbd5590f1a0bdb433e6958b64b62a6",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "path": "installed-1440-populated-paint-attempt-1.png",
+                  "sha256": "52cf068ee86275843d96df0480eb02a383cbd5590f1a0bdb433e6958b64b62a6",
+                  "darkGraphPixels": 1074,
+                  "positivePaint": true,
+                  "canvasCrop": [
+                    58,
+                    758,
+                    1382,
+                    960
+                  ],
+                  "rasterSize": [
+                    1440,
+                    960
+                  ]
+                }
+              ],
+              "checkedExactSavedBytes": true
+            },
+            {
+              "path": "installed-1440-populated-full.png",
+              "sha256": "3b1bd3246c0967efcb4487885380c8a15d38b8dbbd1a89df629df6b268488ea4",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "path": "installed-1440-populated-full-paint-attempt-1.png",
+                  "sha256": "3b1bd3246c0967efcb4487885380c8a15d38b8dbbd1a89df629df6b268488ea4",
+                  "darkGraphPixels": 1977,
+                  "positivePaint": true,
+                  "canvasCrop": [
+                    58,
+                    782,
+                    1382,
+                    1074
+                  ],
+                  "rasterSize": [
+                    1440,
+                    1132
+                  ]
+                }
+              ],
+              "checkedExactSavedBytes": true
+            },
+            {
+              "path": "installed-1440-populated-change-boundary.png",
+              "sha256": "e7b548b07d17c453e786c24788bccb278ae412a98ea9a92c8cdf7e895bdd68b4",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "path": "installed-1440-populated-change-boundary-paint-attempt-1.png",
+                  "sha256": "e7b548b07d17c453e786c24788bccb278ae412a98ea9a92c8cdf7e895bdd68b4",
+                  "darkGraphPixels": 1057,
+                  "positivePaint": true,
+                  "canvasCrop": [
+                    58,
+                    760,
+                    1382,
+                    960
+                  ],
+                  "rasterSize": [
+                    1440,
+                    960
+                  ]
+                }
+              ],
+              "checkedExactSavedBytes": true
+            }
+          ],
+          "boundary": [
+            {
+              "label": "CHANGE A · Entity controls and local graph heading",
+              "x": 37,
+              "y": 554.640625,
+              "width": 1366,
+              "height": 193.453125,
+              "documentY": 578.640625,
+              "borderWidth": 3
+            },
+            {
+              "label": "CHANGE B · Graph and entity result",
+              "x": 38,
+              "y": 757.09375,
+              "width": 1364,
+              "height": 298,
+              "documentY": 781.09375,
+              "borderWidth": 3
+            }
+          ]
+        },
+        {
+          "name": "installed-1440-native-selected",
+          "url": "http://127.0.0.1:54274/nodetrace?host=preserved&returnTo=dashboard#host-section",
+          "viewport": {
+            "width": 1440,
+            "height": 960
+          },
+          "scroll": {
+            "x": 0,
+            "y": 283
+          },
+          "overflow": 0,
+          "theme": "rgb(245, 247, 251)",
+          "entityCount": "10",
+          "edgeCount": "15",
+          "canvas": {
+            "x": 55,
+            "y": 498.09375,
+            "width": 1330,
+            "height": 298,
+            "documentY": 781.09375
+          },
+          "selector": {
+            "x": 37,
+            "y": 318.484375,
+            "width": 1366,
+            "height": 44,
+            "documentY": 601.484375
+          },
+          "fit": {
+            "x": 54,
+            "y": 445.09375,
+            "width": 44,
+            "height": 44,
+            "documentY": 728.09375
+          },
+          "readout": "tool: workSurface.evidenceCarouselproduced by trace event:nodetrace-2026-09-05T02-00-37-968Z-trace-002",
+          "selection": "entityworkSurface.evidenceCarousel · toolcountunknown — not measuredvisits1 — interaction frequency, not evidence strength",
+          "protected": [
+            {
+              "selector": ".showcase",
+              "text": " NodeRoom codebase tracePortable trace UI for agent apps.SQLite trace session, proof cards, events, and gated ownership were generated locally.Inspect tracenpm run nodetrace:happy-path no API key requiredSQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+              "bounds": {
+                "x": 22,
+                "y": -261,
+                "width": 1396,
+                "height": 319.359375,
+                "documentY": 22
+              }
+            },
+            {
+              "selector": "[aria-label=\"Trace Coach launch path\"]",
+              "text": "SQLite sampleverified SQLite NodeRoom trace browser UISource appNodeRoomSQLite sampleCoach steps0ordered labelsTrace tabs4overview, steps, minimap, rawThe SQLite sample contains trace events. No Trace Coach captures are loaded yet.",
+              "bounds": {
+                "x": 997,
+                "y": -240,
+                "width": 400,
+                "height": 277.359375,
+                "documentY": 43
+              }
+            },
+            {
+              "selector": ".liveGraphRailHead",
+              "text": "Live graph rail10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence.",
+              "bounds": {
+                "x": 37,
+                "y": 241.140625,
+                "width": 1366,
+                "height": 44.5,
+                "documentY": 524.140625
+              }
+            }
+          ],
+          "frame": [
+            {
+              "text": "demo-artifact",
+              "x": 565.2239628881216,
+              "y": 42.131204000798746,
+              "width": 81.68603515625,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "workSurface.evidenceCarousel",
+              "x": 514.5591236280437,
+              "y": 23.999999984905564,
+              "width": 180.01416015625,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "schema",
+              "x": 759.5581904835774,
+              "y": 49.369366252898985,
+              "width": 44.705078125,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "nodetrace",
+              "x": 680.4557740596177,
+              "y": 136.59571345341786,
+              "width": 59.4951171875,
+              "height": 10,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "state",
+              "x": 782.414401813924,
+              "y": 195.49968599344578,
+              "width": 28.708984375,
+              "height": 9,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "copilot.agentOperationStream",
+              "x": 609.7561547476693,
+              "y": 228.89376917747228,
+              "width": 178.298828125,
+              "height": 13,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "events",
+              "x": 646.4525970812042,
+              "y": 249.50000001509443,
+              "width": 38.5888671875,
+              "height": 9,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            },
+            {
+              "text": "shell.statusStrip",
+              "x": 699.7419375126635,
+              "y": 208.50524978480084,
+              "width": 92.5888671875,
+              "height": 13,
+              "canvasWidth": 1330,
+              "canvasHeight": 298,
+              "supportedTransform": true
+            }
+          ],
+          "pixelProof": [
+            {
+              "path": "installed-1440-native-selected.png",
+              "sha256": "68301b0475e5e29d47bc07df6acf8aa925734d0c8f8e7f1ffae5adf90b34098b",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "path": "installed-1440-native-selected-paint-attempt-1.png",
+                  "sha256": "68301b0475e5e29d47bc07df6acf8aa925734d0c8f8e7f1ffae5adf90b34098b",
+                  "darkGraphPixels": 1977,
+                  "positivePaint": true,
+                  "canvasCrop": [
+                    58,
+                    501,
+                    1382,
+                    793
+                  ],
+                  "rasterSize": [
+                    1440,
+                    960
+                  ]
+                }
+              ],
+              "checkedExactSavedBytes": true
+            },
+            {
+              "path": "installed-1440-native-selected-full.png",
+              "sha256": "615efb1b3f493008a6558dcd258b04a743d3f65c1db4caba8d7cf77324ad59d6",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "path": "installed-1440-native-selected-full-paint-attempt-1.png",
+                  "sha256": "615efb1b3f493008a6558dcd258b04a743d3f65c1db4caba8d7cf77324ad59d6",
+                  "darkGraphPixels": 1977,
+                  "positivePaint": true,
+                  "canvasCrop": [
+                    58,
+                    784,
+                    1382,
+                    1076
+                  ],
+                  "rasterSize": [
+                    1440,
+                    1265
+                  ]
+                }
+              ],
+              "checkedExactSavedBytes": true
+            },
+            {
+              "path": "installed-1440-native-selected-change-boundary.png",
+              "sha256": "f1b5c1daa38fb08c9e250ef04f6e2858b0c312c85b1c000e177277b4ef6abe86",
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "path": "installed-1440-native-selected-change-boundary-paint-attempt-1.png",
+                  "sha256": "f1b5c1daa38fb08c9e250ef04f6e2858b0c312c85b1c000e177277b4ef6abe86",
+                  "darkGraphPixels": 1977,
+                  "positivePaint": true,
+                  "canvasCrop": [
+                    58,
+                    501,
+                    1382,
+                    793
+                  ],
+                  "rasterSize": [
+                    1440,
+                    960
+                  ]
+                }
+              ],
+              "checkedExactSavedBytes": true
+            }
+          ],
+          "boundary": [
+            {
+              "label": "CHANGE A · Entity controls and local graph heading",
+              "x": 37,
+              "y": 295.640625,
+              "width": 1366,
+              "height": 193.453125,
+              "documentY": 578.640625,
+              "borderWidth": 3
+            },
+            {
+              "label": "CHANGE B · Graph and entity result",
+              "x": 38,
+              "y": 498.09375,
+              "width": 1364,
+              "height": 446.890625,
+              "documentY": 781.09375,
+              "borderWidth": 3
+            }
+          ]
+        }
+      ],
+      "console": [
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c2c00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c2600]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+        },
+        {
+          "type": "warning",
+          "text": "[.WebGL-0x25d4001c0200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+        }
+      ],
+      "network": [
+        {
+          "url": "http://127.0.0.1:54274/_next/static/css/0d00b21c23ed86e9.css",
+          "status": 200,
+          "bytes": 14142,
+          "sha256": "9e0fd0ce60b07262d570e1856491550979b7d940c0dc1771a27a6f097aa9ae59",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\css\\0d00b21c23ed86e9.css",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/webpack-89e0ae3b0ef9446a.js",
+          "status": 200,
+          "bytes": 4842,
+          "sha256": "3af02a78b5750a3d51fca8d83e27c1143bff21c974aa70bfdd561baa7348e849",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\webpack-89e0ae3b0ef9446a.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/main-app-37366d700e32e570.js",
+          "status": 200,
+          "bytes": 557,
+          "sha256": "e64e9c3f560e09ce1d58e410e8854a8e340186fa27a816ebabc91e5c91b0524c",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\main-app-37366d700e32e570.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/app/nodetrace/page-be7c7f5371dc7b35.js",
+          "status": 200,
+          "bytes": 3487,
+          "sha256": "984e509fed442856130ef168017559f81e06cfc2295d81c97d7ebfb2e4d5ae13",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\app\\nodetrace\\page-be7c7f5371dc7b35.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/255-37e0f0325134c4d7.js",
+          "status": 200,
+          "bytes": 173687,
+          "sha256": "0e25d0f71231e99267806b8aabf7a7810982bccb561d1ec7df7e6eaa60e4e530",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\255-37e0f0325134c4d7.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+          "status": 200,
+          "bytes": 173019,
+          "sha256": "2c752a401191671d5bbbe7514f5828bbb0a7cc50bfbe77ddaf1b1ccba4412ed2",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\4bd1b696-c023c6e3521b1417.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/css/1383a2b9f3290658.css",
+          "status": 200,
+          "bytes": 3277,
+          "sha256": "d62a8676c86e7f2e6339ea542316e8af2ed63aceff5f12990968bc16abd05cc0",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\css\\1383a2b9f3290658.css",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+          "status": 200,
+          "bytes": 60188,
+          "sha256": "349cefa62314826d7e162b7638b5437b6314cd27e2838489fc62cedbf223f52d",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\5a255377.58c8dcfdf915e228.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/484.e4f343b70676fc81.js",
+          "status": 200,
+          "bytes": 51510,
+          "sha256": "b1a80e55c55ae6d28f7e1970218d3eb41d86dd49aecf9fc81dc5fe52aadf8fee",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\484.e4f343b70676fc81.js",
+          "builtBytesMatch": true
+        },
+        {
+          "url": "http://127.0.0.1:54274/_next/static/chunks/941.b31d29c9d2dae6db.js",
+          "status": 200,
+          "bytes": 218164,
+          "sha256": "6969497ca11472659094b92f7db1544d071447e2bbc74847c7998800522f8750",
+          "builtFile": "C:\\Users\\hshum\\AppData\\Local\\Temp\\nodetrace-next-e2e-BzFZOC\\.next\\static\\chunks\\941.b31d29c9d2dae6db.js",
+          "builtBytesMatch": true
+        }
+      ],
+      "focus": [
+        {
+          "tag": "BUTTON",
+          "text": "Inspect trace"
+        },
+        {
+          "tag": "SELECT",
+          "text": "EntityChoose an entityactor: nodetracetool: workSurface.traceStripstep: schematool: workSurface.evidenceCarouselartifact: demo-artifactstep: prooftool: copilot.agentOperationStreamstep: eventstool: shell.statusStripstep: state"
+        }
+      ],
+      "selectedTarget": "tool: workSurface.evidenceCarousel",
+      "expectedEvents": [
+        "nodetrace-2026-09-05T02-00-37-968Z-trace-002"
+      ]
+    }
+  ],
+  "errors": [],
+  "ports": [
+    4917,
+    54274
+  ],
+  "serversStopped": true,
+  "replayDisclosure": "The exact original six-event and four-event bytes, and source assets when referenced, were returned through browser routing. Current application files/build and public data stayed unchanged. This is input replay, not new backend output.",
+  "passed": true
+}

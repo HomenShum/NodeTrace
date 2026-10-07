@@ -1,0 +1,275 @@
+{
+  "paint": {
+    "nodes": 10,
+    "chromaticPixels": 412,
+    "points": [
+      {
+        "x": 659,
+        "y": 706.2417955685619
+      },
+      {
+        "x": 609.5,
+        "y": 709.2317621237459
+      },
+      {
+        "x": 804,
+        "y": 716.2083507525084
+      },
+      {
+        "x": 829.5,
+        "y": 749.0979828595317
+      },
+      {
+        "x": 616.5,
+        "y": 758.0678825250836
+      },
+      {
+        "x": 725,
+        "y": 803.4157086120401
+      },
+      {
+        "x": 827,
+        "y": 861.7200564381271
+      },
+      {
+        "x": 800.5,
+        "y": 893.1147052675585
+      },
+      {
+        "x": 654.5,
+        "y": 897.1013273411371
+      },
+      {
+        "x": 691,
+        "y": 915.5394544314381
+      }
+    ]
+  },
+  "pre": {
+    "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+    "scrollY": 0,
+    "width": 1440,
+    "height": 960,
+    "graphBox": {
+      "x": 55,
+      "y": 786.890625,
+      "width": 1330,
+      "height": 298
+    },
+    "canvases": [
+      {
+        "index": 0,
+        "className": "sigma-edges",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "before-viewport-canvas-0.png"
+      },
+      {
+        "index": 1,
+        "className": "sigma-edgeLabels",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "before-viewport-canvas-1.png"
+      },
+      {
+        "index": 2,
+        "className": "sigma-nodes",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "before-viewport-canvas-2.png"
+      },
+      {
+        "index": 3,
+        "className": "sigma-labels",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "5bac5ebbc0740149c1acd156c1d197fa2aaaf97218e7806e5e3a22676aeb6f5f",
+        "file": "before-viewport-canvas-3.png"
+      },
+      {
+        "index": 4,
+        "className": "sigma-hovers",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "before-viewport-canvas-4.png"
+      },
+      {
+        "index": 5,
+        "className": "sigma-hoverNodes",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "before-viewport-canvas-5.png"
+      },
+      {
+        "index": 6,
+        "className": "sigma-mouse",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "before-viewport-canvas-6.png"
+      }
+    ],
+    "bodySha256": "76fa42acdf5b69bb32bdd6934f9b8dcf33304169dbb788eafebbb7108b894d5a"
+  },
+  "post": {
+    "url": "http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review",
+    "scrollY": 0,
+    "width": 1440,
+    "height": 960,
+    "graphBox": {
+      "x": 55,
+      "y": 786.890625,
+      "width": 1330,
+      "height": 298
+    },
+    "canvases": [
+      {
+        "index": 0,
+        "className": "sigma-edges",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "after-viewport-canvas-0.png"
+      },
+      {
+        "index": 1,
+        "className": "sigma-edgeLabels",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "after-viewport-canvas-1.png"
+      },
+      {
+        "index": 2,
+        "className": "sigma-nodes",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "after-viewport-canvas-2.png"
+      },
+      {
+        "index": 3,
+        "className": "sigma-labels",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "18d115bcca8ba9fe54c6845772bebc39be3e36c19eeef2cfe52eb1ff48183a1d",
+        "file": "after-viewport-canvas-3.png"
+      },
+      {
+        "index": 4,
+        "className": "sigma-hovers",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "after-viewport-canvas-4.png"
+      },
+      {
+        "index": 5,
+        "className": "sigma-hoverNodes",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "after-viewport-canvas-5.png"
+      },
+      {
+        "index": 6,
+        "className": "sigma-mouse",
+        "width": 1330,
+        "height": 298,
+        "rect": {
+          "x": 55,
+          "y": 786.890625,
+          "width": 1330,
+          "height": 298
+        },
+        "sha256": "7fafb9dca3c8f50eb7af7c0a980c1b9a3c9e42ee66eb96b534976f93e4521fa5",
+        "file": "after-viewport-canvas-6.png"
+      }
+    ],
+    "bodySha256": "76fa42acdf5b69bb32bdd6934f9b8dcf33304169dbb788eafebbb7108b894d5a"
+  },
+  "viewportPngSha256": "8f8c9f688d9fa26a2fd7579adfc22911bff9ee7b51237ed6093067bb4d95f780"
+}

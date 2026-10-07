@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm.cmd",
+    "run",
+    "check"
+  ],
+  "cwd": "D:\\VSCode Projects\\cafecorner_nodebench\\nodebench_ai4\\NodeTrace",
+  "started": "2026-09-05T05:20:16.620497+00:00",
+  "timeoutSeconds": 1200,
+  "exitCode": 0,
+  "finished": "2026-09-05T05:22:24.121732+00:00"
+}

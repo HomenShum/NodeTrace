@@ -1,0 +1,58 @@
+- main:
+  - paragraph: NodeRoom codebase trace
+  - heading "Portable trace UI for agent apps." [level=1]
+  - status: SQLite trace session, proof cards, events, and gated ownership were generated locally.
+  - button "Inspect trace"
+  - code: npm run nodetrace:happy-path
+  - text: no API key required
+  - complementary "Trace Coach launch path":
+    - text: SQLite sample
+    - strong: verified
+    - text: SQLite NodeRoom trace browser UI Source app
+    - strong: NodeRoom
+    - text: SQLite sample Coach steps
+    - strong: "0"
+    - text: ordered labels Trace tabs
+    - strong: "4"
+    - text: overview, steps, minimap, raw The SQLite sample contains trace events. No Trace Coach captures are loaded yet.
+  - region "Connect your own trace":
+    - heading "Connect your own trace" [level=2]
+    - paragraph:
+      - text: This installed sample contains trace events. Guided source and UI captures are not included. Run
+      - code: npm run nodetrace:happy-path
+      - text: to regenerate the local sample and refresh. Read
+      - code: docs/NODETRACE_INTEGRATION.md
+      - text: in your project to connect the trace UI to your app.
+  - region "Live graph rail":
+    - heading "Live graph rail" [level=2]
+    - text: 10 entities from 4 SQLite trace events. Trace events render as interaction history — faint constant-width traversal edges, never evidence. Entity
+    - combobox "Entity":
+      - option "Choose an entity"
+      - 'option "actor: nodetrace"'
+      - 'option "tool: workSurface.traceStrip"'
+      - 'option "step: schema"'
+      - 'option "tool: workSurface.evidenceCarousel" [selected]'
+      - 'option "artifact: demo-artifact"'
+      - 'option "step: proof"'
+      - 'option "tool: copilot.agentOperationStream"'
+      - 'option "step: events"'
+      - 'option "tool: shell.statusStrip"'
+      - 'option "step: state"'
+    - text: Choose an entity for its full name and producing events. Canvas labels shorten or hide to avoid overlap.
+    - heading "Relationship graph" [level=3]
+    - paragraph: 10 entities · 15 of 15 relationships shown
+    - button "fit"
+    - checkbox "traversal (15) · local" [checked]
+    - text: traversal (15) · local
+    - term: entity
+    - definition: workSurface.evidenceCarousel · tool
+    - term: count
+    - definition: unknown — not measured
+    - term: visits
+    - definition: 1 — interaction frequency, not evidence strength
+    - strong: "tool: workSurface.evidenceCarousel"
+    - text: "produced by trace event:"
+    - list:
+      - listitem:
+        - code: nodetrace-2026-09-05T02-00-37-968Z-trace-002
+- alert

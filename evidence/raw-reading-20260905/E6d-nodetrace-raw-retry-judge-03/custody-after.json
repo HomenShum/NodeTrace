@@ -1,0 +1,13 @@
+{
+  "after": {
+    "src/DemoDashboard.tsx": "00f40c4bd8b3dcff8809d8d8c49aa4820a476b375b390e6dc8b936a197aa74e1",
+    "src/styles.css": "755227ee305c0dcc6c87e7016e1dac3dc27c6848312455ad43ab4ef0934e7841",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "scripts/raw-reading-proof.mjs": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+    "public/nodetrace-state.json": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+    "dist/index.html": "9d072162a05f356a428a6c2a49231f2e6e0d0b2563d8e2a47c9e6c081b2df346"
+  },
+  "head": "04891604227ab607a61557f49f2cdb41b28dd338",
+  "index": "8590352d94cdd845e606c3a9f2f0253e83c1b109a64f65ff960f539bd7503766"
+}

@@ -1,0 +1,828 @@
+{
+  "at": "2026-09-05T07:25:23.420954+00:00",
+  "scope": "Bounded actual result reports/logs, checked raw outputs and viewed PNGs. Original bulk raw HTML is retained but not re-hashed for a redundant packaging pass.",
+  "files": [
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\current-full.json",
+      "sha256": "d57441a725bef6c2cfbd781048121b2d6e3b8b3e3d76511a5bdfe84e4b27edbf",
+      "bytes": 4351664
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\current-full.png",
+      "sha256": "eb64339dff9420df2c7040bfb78cb6de48a62b8b67a6adbb3a81b2c60fcdd64d",
+      "bytes": 393373
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\current-viewport.json",
+      "sha256": "48182a448931f1243e2595a25f8ba1ef685518b0aa55e409b1f4f62cf7462eeb",
+      "bytes": 4325784
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\former-full.json",
+      "sha256": "5321674f4c3143daf236c25477fcd365e696322ed47bb20de066657d0b5b4398",
+      "bytes": 4351662
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\former-full.png",
+      "sha256": "434dd4f6c34497cc332a2bca9741ab159d5f7a9d196f17eac61e5a6671d81cdb",
+      "bytes": 511357
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\report.json",
+      "sha256": "82b0ce7a913cb0b770cb6027e828aacac54016c0c1a0337397667f72aafebff9",
+      "bytes": 62725
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-before\\actual-1024-no-preference-change-boundary-full.png",
+      "sha256": "10d5f9e20d84c7c75bd18c5003bfa19f9b475ea69ecb9d9c8bd6cfe4fcb98201",
+      "bytes": 463540
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-before\\actual-390-no-preference-change-boundary.png",
+      "sha256": "ddced3fa7237ced2d62c9402078b74ace592a8d2c8a1abc5b56f2715277d23c4",
+      "bytes": 62577
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-before-text200\\actual-390-no-preference-change-boundary.png",
+      "sha256": "a40f3b48e7b6790c47762342a00a9abf807f4960a3cacc94900d6681f2cdca25",
+      "bytes": 68006
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-consumer-install\\current-report.json",
+      "sha256": "35002d1b48102d3fefaf01c1fd150dcfb991cfe2b074b4f3ad06d37985357896",
+      "bytes": 655
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-consumer-install\\custody.json",
+      "sha256": "ae80afd94caad994542cc8957139c711a2c9c7e465c2a7fc494b23eda27b30ce",
+      "bytes": 211
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-consumer-install\\installer.log",
+      "sha256": "9851aa6da4ef04f8d5e5640a8c458a738f2226af04565b381ad589a3d52f2a2f",
+      "bytes": 36
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-consumer-install\\setup-receipt.json",
+      "sha256": "a2239f029db41f69b6ed73e263d51e28493eca4265e2d09cdd2b8b249551f124",
+      "bytes": 1604
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\actual-state.json",
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-1024-no-preference-end-viewport.png",
+      "sha256": "67e5367ace579d644279490a9cc9ead27f511ad9f0bfa1e0e633136c7f83b2f1",
+      "bytes": 87197
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-1024-no-preference-end.json",
+      "sha256": "ad36cc92368cfa2680adb64876abaff579af0d8c230a95b95eb8b15478efa803",
+      "bytes": 986
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-1024-no-preference-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-1024-no-preference-top.json",
+      "sha256": "b9c10036dd785b7118b4c00369d73a4d99c190aa532991a94f99db480b9eb0d1",
+      "bytes": 745
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-1024-no-preference-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-state.json",
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\report.json",
+      "sha256": "4bb04cd03d73083d988437f5a0a5fc63cc320c7c1200ed1957297d4e92d931b6",
+      "bytes": 43142
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\server.log",
+      "sha256": "7058ce4b3b0bd78b7828e125611f08af5b30c7442d2d9d9728fadfdcf4871b42",
+      "bytes": 143
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\short-state.json",
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference.log",
+      "sha256": "e34b12e4ac97617681ddb5a5582f44f377b83fc88245a370f8412a12d965af6c",
+      "bytes": 37
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\actual-state.json",
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\long-state.json",
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\report.json",
+      "sha256": "97f46fae3f2913ed1ebcdfa0d30eaa0d6789048c7e971b1296608f6c75f26e73",
+      "bytes": 43241
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\server.log",
+      "sha256": "6700a08f0e5a5a5056853f499d8353606396ec0282ec03baba908dc486871d79",
+      "bytes": 143
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-390-no-preference-end.json",
+      "sha256": "f0a5d697ded6280de12b82a61638017f0b7310388cc0ac8e6e25f28e08a1baad",
+      "bytes": 976
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-390-no-preference-end.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-390-no-preference-top-viewport.png",
+      "sha256": "47913ac307f889ec3ba4e96eba7c48d1bf82657faccc35aeac9888d451bbcba3",
+      "bytes": 47657
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-390-no-preference-top.json",
+      "sha256": "9f6dc94edfe2cabcddf3e09b85ffde3fc4bc8e24edfe85efaf66b59f99660c6a",
+      "bytes": 748
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-390-no-preference-top.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-state.json",
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference.log",
+      "sha256": "25322c59285c88f37f07dfce4e92e8145fd1804bc7c4543ce268a448a3fe0b6d",
+      "bytes": 37
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\runs.json",
+      "sha256": "5c86acec07a20518f0cfff5e4a7ba23de1369f00e79508f7f09cbb23a12cf4e3",
+      "bytes": 1831
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-1024-reduce-text200-end-viewport.png",
+      "sha256": "afc5f404c7b1d70aa588d576d2a184c734922e105e82381226277889e18e21c1",
+      "bytes": 92648
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-1024-reduce-text200-end.json",
+      "sha256": "2e827c5d81f40a26828e04fe111389f6adfaa12582904ba93ac592e344c30f26",
+      "bytes": 985
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-1024-reduce-text200-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-1024-reduce-text200-top.json",
+      "sha256": "5506ba78260d86793790c63a8ef24069bc1f8288ab54c353545e2d54b410c1a0",
+      "bytes": 744
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-1024-reduce-text200-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-state.json",
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\long-state.json",
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\report.json",
+      "sha256": "bb311ca72706bf75b0fad8363fe411f4a51eda293996a68fc2798ca13d9e0308",
+      "bytes": 13962
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\server.log",
+      "sha256": "cfccabc300f2b403d6d5048194b3ab07530950c3cd72c4af919037a867d071b1",
+      "bytes": 77
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\short-state.json",
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200.log",
+      "sha256": "a548fecf5e263945d9cd35b23af47590f0ea17db97528b0058d030e9f8e9e09b",
+      "bytes": 37
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-390-no-preference-end.json",
+      "sha256": "3410b0a4eb629c1a0f8ce14c2c1d5c51069effc9e8817be875fa706adf4813d1",
+      "bytes": 982
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-390-no-preference-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-390-no-preference-top-viewport.png",
+      "sha256": "570c1d58fadac9abd91e9ca7beb2f34546556980dbab2afe00d4e3da76e34926",
+      "bytes": 47697
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-390-no-preference-top.json",
+      "sha256": "8d04135c3663fa4fdbbcfecc87670389c77712d538baec032d02ed8f980d847f",
+      "bytes": 741
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-390-no-preference-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-state.json",
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\long-state.json",
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\report.json",
+      "sha256": "0ef9daceaf9daf6e55b418c8ac39b5576171ce4097ecd2225b05deb2ffe70c4f",
+      "bytes": 13877
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\server.log",
+      "sha256": "cfccabc300f2b403d6d5048194b3ab07530950c3cd72c4af919037a867d071b1",
+      "bytes": 77
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\short-state.json",
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference.log",
+      "sha256": "a548fecf5e263945d9cd35b23af47590f0ea17db97528b0058d030e9f8e9e09b",
+      "bytes": 37
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\actual-state.json",
+      "sha256": "38fa5dec655052bcad13f80246a88be523d08f2e3a67e25adc96368f2392fe87",
+      "bytes": 27849
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-end.json",
+      "sha256": "f46f8235c6e0e71bb0ffc9150a53d492098ec91766a6b78f6c8de9d2517944cc",
+      "bytes": 983
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-sustained-viewport.png",
+      "sha256": "8643299cfc5b02f1346487c58f4bdf59553501a0bd4f14475ed383ddf4b0b15c",
+      "bytes": 49775
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-sustained.json",
+      "sha256": "24c03224bd739f2d5a4d8e21271fb4110b307b8661be2758b8293efa650fe620",
+      "bytes": 3485
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-sustained.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-top.json",
+      "sha256": "28152367430e11793fd6226351b6af59a1ccfc34671927ab35e9be84a9761e31",
+      "bytes": 742
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-state.json",
+      "sha256": "f88b22e897fb37695ca7f307ecae83e0b16710e11c8524e7384c725723170e59",
+      "bytes": 46157
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\report.json",
+      "sha256": "e5db71372e94348c4859df128e3891c57eeab971770e1682243198dba3c7b992",
+      "bytes": 23057
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\server.log",
+      "sha256": "cfccabc300f2b403d6d5048194b3ab07530950c3cd72c4af919037a867d071b1",
+      "bytes": 77
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\short-state.json",
+      "sha256": "98adaf7dbe91e8bcf3e1bdd70224f984d8d06abe8e8f504bff67706cb7c832c6",
+      "bytes": 20055
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference.log",
+      "sha256": "bb50444aa723609acacb6e535a5239b963ae4e96d35bb82714e2d4d3788b5aa5",
+      "bytes": 37
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\1024-counterfactual-former-sizing.json",
+      "sha256": "8614e037c3ef3abc128b98e2cb009bf49c6a38ad50e59eac18cee5da791eb6fa",
+      "bytes": 22844
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\1024-current-initial.json",
+      "sha256": "aa682fb02b673e920b7bcbc290d6005a4e1eae3d535d1d52654002fe0ac96917",
+      "bytes": 22842
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\1024-current-initial.png",
+      "sha256": "3ce40946e48ea9d4944e78b982b56e03ac0d19a3e7226e5b3a4672054e7f9502",
+      "bytes": 331320
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\1440-counterfactual-former-sizing.json",
+      "sha256": "f17e25410100bfe57f4e6a5d3a12da0d13965eb9421db5a51fbdb7a9f9002004",
+      "bytes": 22836
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\1440-current-initial.json",
+      "sha256": "a9875285030b8fbbf5b98b5b99b2711e4c6883adff6821a1f25023faebdb0335",
+      "bytes": 22851
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\390-counterfactual-former-sizing.json",
+      "sha256": "ac26f0fa494f556ba925b17d6235f36f8394ffbf086bcd1a0b4670ad45ac4197",
+      "bytes": 22802
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\390-current-initial.json",
+      "sha256": "79865de4ecb67125073f05e696334e421ed8922bb03a19ea5092093bb1c935b8",
+      "bytes": 22802
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\failure.png",
+      "sha256": "90bb3bf760ab594a87a258f3e3c8e163f7484a5f6bbb03deedcc1d2ee565d678",
+      "bytes": 513947
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\report.json",
+      "sha256": "f20580011d4924e156843721c2c2a19bb19cd326cd6ea8f7af5cc87c178fa5a6",
+      "bytes": 346624
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout-viewport1440\\1440-counterfactual-former-sizing.json",
+      "sha256": "b095e98309a5844de4dc577c55bf1f309f88a85b60c774231929309c37f47ec5",
+      "bytes": 22856
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout-viewport1440\\1440-current-initial.json",
+      "sha256": "a9875285030b8fbbf5b98b5b99b2711e4c6883adff6821a1f25023faebdb0335",
+      "bytes": 22851
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout-viewport1440\\1440-current-initial.png",
+      "sha256": "e5a1f087d8014e782313edcdfb6cdb2d347498dcd584b0f39e58fd4c36f7073b",
+      "bytes": 184372
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout-viewport1440\\report.json",
+      "sha256": "e5e40efd51542fa0454d1b6683cdb0824b35616dac88739499703211d451bfa2",
+      "bytes": 126650
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout-viewport1440\\server.log",
+      "sha256": "f956effa12113fe57c06a07c4041f6942df4f57eabfd452aee4ac176fc162f8f",
+      "bytes": 77
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-implementation.patch",
+      "sha256": "784417983a90b23d28f39eca8b4e8c64df8ccc25e9f1aac492f4673c8edaac06",
+      "bytes": 929
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\long-1024-no-preference-end-viewport.png",
+      "sha256": "67e5367ace579d644279490a9cc9ead27f511ad9f0bfa1e0e633136c7f83b2f1",
+      "bytes": 87197
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\long-1024-no-preference-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\long-1024-no-preference-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\long-390-no-preference-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\long-390-no-preference-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\report.json",
+      "sha256": "7b5a760b4b2cb97b0c7224bffdf29b4e1cd403e85d9a971b63208dd9728eec08",
+      "bytes": 95406
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\short-1024-no-preference-end.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\short-1024-no-preference-top.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\short-390-no-preference-end.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\short-390-no-preference-top.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-retry-judge-03\\report.json",
+      "sha256": "f15a26609719aeb3e698dc200d345fa8a36845d63d8cc54143859f33e7ac407f",
+      "bytes": 6284
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1024-no-preference-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1024-no-preference-top.png",
+      "sha256": "5682813fbffc64d2866eec8cd4f9f490a7e292f800bcd7471b207a524802d9e3",
+      "bytes": 332712
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1024-no-preference-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1024-reduce-text200-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1024-reduce-text200-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1440-no-preference-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1440-no-preference-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-320-no-preference-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-320-no-preference-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-text200-end-viewport.png",
+      "sha256": "edf2f7a324b6cf22f8c075188ca26a38f93a3f8f5c30f267472444aa130d38e9",
+      "bytes": 43316
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-text200-end.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-text200-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-top-viewport.png",
+      "sha256": "570c1d58fadac9abd91e9ca7beb2f34546556980dbab2afe00d4e3da76e34926",
+      "bytes": 47697
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-top.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\degraded-before-retry-viewport.png",
+      "sha256": "27f4e2a1c6cf28d3bea81ce88aecbd9229bd96b76c79086929cbbc7939ee4a6c",
+      "bytes": 87315
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-1024-no-preference-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-1024-no-preference-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-no-preference-end-viewport.png",
+      "sha256": "a66777bcc89e5d0967de054c362b7ea23179ac35db66d8d8a5b2705474b5f5e6",
+      "bytes": 38275
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-no-preference-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-no-preference-sustained.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-no-preference-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-reduce-end.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-reduce-top.raw.txt",
+      "sha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499",
+      "bytes": 29222
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\recovered-raw-viewport.png",
+      "sha256": "0532545dc51a8bd084925e60c2e19286af299cb407affb57a58d7521bbcc7b86",
+      "bytes": 57843
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\recovered-raw.raw.txt",
+      "sha256": "8194fc7e9d7fb45694caa99a7d30dd592fd01bd56efc9bd6c96e8603ee10412e",
+      "bytes": 5187
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\report.json",
+      "sha256": "df01257847944bcf81b17deee9f3ba9125de1d730f3cd1530d51862790d05b27",
+      "bytes": 92004
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\short-1024-no-preference-end.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\short-1024-no-preference-top.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\short-390-no-preference-end.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\short-390-no-preference-top.raw.txt",
+      "sha256": "10b0395bad7d794cf25abc43ab7c17bf52885dc3400f2c1aefb6e706e33b42b5",
+      "bytes": 2321
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-raw-1440-capture-cause.mjs",
+      "sha256": "a7ddad8dcbf7a4dde3569f53f7b42864ac7d674d6dbadffc1d045925045ae13a",
+      "bytes": 3885
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-raw-final-judge-layout-viewport1440.mjs",
+      "sha256": "ccce6fe75500a70219458bd96a027222896366658513828aa3164624d52c01ff",
+      "bytes": 8523
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-raw-final-judge-layout.mjs",
+      "sha256": "c88ca86acaec04afe4e97d938b1c6969ca01510e92bf72fda9d5b330f3df64e3",
+      "bytes": 8345
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-raw-final-judge-replay.py",
+      "sha256": "bd7c610ec7362cd774177a39130cc9b05beb5a5c6ff9e175faee25edcd5df59f",
+      "bytes": 5075
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-raw-proof-source-accepted.mjs.txt",
+      "sha256": "8a89a1351801b4906a54d1addd2ab9488ac7b98c61ab7d4e129b43fc85980bdf",
+      "bytes": 17672
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_CRITERION_ASSESSMENT.json",
+      "sha256": "8db284582aac0fc6cd5a3426b63a15f9743fb44e634c4ac8b459904ee0dfc7ab",
+      "bytes": 178012
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_INSTALLED_RAW_ASSET_CAUSAL_JUDGE.json",
+      "sha256": "a1ba5aebb60844fc2734b54a8ab7b2201ac9c7acafe3daa009f8975f874f7ad8",
+      "bytes": 17397
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_FINAL_JUDGE_BINDINGS.json",
+      "sha256": "2546fdb4838d4514c6a53c31c53f6e73219bc67323919a6c6082317a6a79e98a",
+      "bytes": 29352
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_FINAL_JUDGE_INITIAL_BINDINGS.json",
+      "sha256": "86472ce221f123b6354937171f994b0d898d4300c18ae2ec7b530aa0213087fc",
+      "bytes": 18895
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_HOME_CAUSAL_JUDGE.json",
+      "sha256": "3b9f4f652a6640c71bb8b431eda1f6209433e37b6aba1bd9c4e1fc4b18d2dada",
+      "bytes": 16942
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_IMPLEMENTATION_RECEIPT.json",
+      "sha256": "43334bd5c48ff278d3724753041c88bba20f446a1b4aa9fb68e0e17ec750d669",
+      "bytes": 3214
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_IMPLEMENTATION_RECEIPT.md",
+      "sha256": "995752051fa85eb08d644bb36bc00cbbdbd20d2e4508d1195ba3627a8cc85fdf",
+      "bytes": 2028
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_READING_PLAN.json",
+      "sha256": "15a91ab309196e31b36894938dbad266ff305f7af6041ef67adb85e1555711ba",
+      "bytes": 30818
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_READING_PLAN.md",
+      "sha256": "4cd2f2f33daffb88c78c33ffe6decac7697e21f4047e44810f0f388724e41128",
+      "bytes": 5991
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d_NODETRACE_RAW_RETRY_CAUSAL_JUDGE.json",
+      "sha256": "2bebb40467f4b9ddc282c856b9fc22c5bfc72c85b4f445cc31f1721fc38c3e88",
+      "bytes": 13799
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\REPO_READINESS_STANDARD.md",
+      "sha256": "8b5bb532bf0dfeed7cc4ecd2b425d708fc49048cc05ab4cbeb315fc3534aeff2",
+      "bytes": 18664
+    }
+  ],
+  "viewedScreenshots": [
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-before\\actual-390-no-preference-change-boundary.png",
+      "sha256": "ddced3fa7237ced2d62c9402078b74ace592a8d2c8a1abc5b56f2715277d23c4",
+      "bytes": 62577
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-before\\actual-1024-no-preference-change-boundary-full.png",
+      "sha256": "10d5f9e20d84c7c75bd18c5003bfa19f9b475ea69ecb9d9c8bd6cfe4fcb98201",
+      "bytes": 463540
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-before-text200\\actual-390-no-preference-change-boundary.png",
+      "sha256": "a40f3b48e7b6790c47762342a00a9abf807f4960a3cacc94900d6681f2cdca25",
+      "bytes": 68006
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-top-viewport.png",
+      "sha256": "570c1d58fadac9abd91e9ca7beb2f34546556980dbab2afe00d4e3da76e34926",
+      "bytes": 47697
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-1024-no-preference-top.png",
+      "sha256": "5682813fbffc64d2866eec8cd4f9f490a7e292f800bcd7471b207a524802d9e3",
+      "bytes": 332712
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\actual-390-no-preference-text200-end-viewport.png",
+      "sha256": "edf2f7a324b6cf22f8c075188ca26a38f93a3f8f5c30f267472444aa130d38e9",
+      "bytes": 43316
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\long-390-no-preference-end-viewport.png",
+      "sha256": "a66777bcc89e5d0967de054c362b7ea23179ac35db66d8d8a5b2705474b5f5e6",
+      "bytes": 38275
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-installed-accepted\\long-1024-no-preference-end-viewport.png",
+      "sha256": "67e5367ace579d644279490a9cc9ead27f511ad9f0bfa1e0e633136c7f83b2f1",
+      "bytes": 87197
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-390-no-preference\\actual-390-no-preference-top-viewport.png",
+      "sha256": "570c1d58fadac9abd91e9ca7beb2f34546556980dbab2afe00d4e3da76e34926",
+      "bytes": 47697
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-actual-1024-reduce-text200\\actual-1024-reduce-text200-end-viewport.png",
+      "sha256": "afc5f404c7b1d70aa588d576d2a184c734922e105e82381226277889e18e21c1",
+      "bytes": 92648
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\source-long-390-no-preference\\long-390-no-preference-sustained-viewport.png",
+      "sha256": "8643299cfc5b02f1346487c58f4bdf59553501a0bd4f14475ed383ddf4b0b15c",
+      "bytes": 49775
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-short-390-no-preference\\short-390-no-preference-top-viewport.png",
+      "sha256": "47913ac307f889ec3ba4e96eba7c48d1bf82657faccc35aeac9888d451bbcba3",
+      "bytes": 47657
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge\\installed-long-1024-no-preference\\long-1024-no-preference-end-viewport.png",
+      "sha256": "67e5367ace579d644279490a9cc9ead27f511ad9f0bfa1e0e633136c7f83b2f1",
+      "bytes": 87197
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\1024-current-initial.png",
+      "sha256": "3ce40946e48ea9d4944e78b982b56e03ac0d19a3e7226e5b3a4672054e7f9502",
+      "bytes": 331320
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout\\failure.png",
+      "sha256": "90bb3bf760ab594a87a258f3e3c8e163f7484a5f6bbb03deedcc1d2ee565d678",
+      "bytes": 513947
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-final-judge-layout-viewport1440\\1440-current-initial.png",
+      "sha256": "e5a1f087d8014e782313edcdfb6cdb2d347498dcd584b0f39e58fd4c36f7073b",
+      "bytes": 184372
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\current-full.png",
+      "sha256": "eb64339dff9420df2c7040bfb78cb6de48a62b8b67a6adbb3a81b2c60fcdd64d",
+      "bytes": 393373
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-1440-capture-cause\\former-full.png",
+      "sha256": "434dd4f6c34497cc332a2bca9741ab159d5f7a9d196f17eac61e5a6671d81cdb",
+      "bytes": 511357
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\degraded-before-retry-viewport.png",
+      "sha256": "27f4e2a1c6cf28d3bea81ce88aecbd9229bd96b76c79086929cbbc7939ee4a6c",
+      "bytes": 87315
+    },
+    {
+      "path": "C:\\Users\\hshum\\.codex\\worktrees\\5dba\\nodebench-ai\\docs\\plans\\portfolio-recovery-20260904\\E6d-nodetrace-raw-source-accepted\\recovered-raw-viewport.png",
+      "sha256": "0532545dc51a8bd084925e60c2e19286af299cb407affb57a58d7521bbcc7b86",
+      "bytes": 57843
+    }
+  ]
+}

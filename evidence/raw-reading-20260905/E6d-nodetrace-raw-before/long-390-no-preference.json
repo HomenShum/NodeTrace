@@ -1,0 +1,37 @@
+{
+  "url": "http://127.0.0.1:4959/?unrelated=preserved&step=coach-step-01-artifact-entry&tab=raw#review",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "scroll": {
+    "x": 0,
+    "y": 1147
+  },
+  "documentHeight": 14461,
+  "overflow": 0,
+  "raw": {
+    "x": 29,
+    "y": 470.6875,
+    "width": 332,
+    "height": 11893.5,
+    "documentY": 1617.6875,
+    "clientHeight": 11892,
+    "scrollHeight": 11892,
+    "tabIndex": -1,
+    "overflowY": "visible",
+    "fontSize": "11px",
+    "lineHeight": "16.5px"
+  },
+  "graph": {
+    "x": 12,
+    "y": 12399.1875,
+    "width": 366,
+    "height": 902.859375,
+    "documentY": 13546.1875
+  },
+  "activeTab": "Raw JSON",
+  "selectedEntity": "[\"actor\",\"trace-coach\"]",
+  "readout": "actor: trace-coachproduced by trace events:coach-step-01-artifact-entry-tracecoach-step-02-detail-tabs-tracecoach-step-03-trace-data-tracecoach-step-04-step-row-tracecoach-step-05-flow-tracecoach-step-06-style-trace",
+  "rawSha256": "05b944ba571895ecc64a1bcb700243d59cbcdb533de1f6aca760b20b91631499"
+}

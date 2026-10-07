@@ -1,0 +1,568 @@
+{
+  "at": "2026-09-05T08:21:31.722329+00:00",
+  "proof": "NODETRACE-D3-SETUP-DISCLOSURE-01",
+  "files": [
+    {
+      "path": "E6e-nodetrace-disclosure-before/change-boundary.md",
+      "sha256": "62a19496260c144212fb234cbfddb6310e140023de8c35bf4bf8000e82057211",
+      "bytes": 6191,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/custody-after.json",
+      "sha256": "ad0db8edd4c5e8dc8109b81e7e8a652c92eb89ea454cafbfc8193d7c3d772378",
+      "bytes": 10356,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/custody-before.json",
+      "sha256": "ad0db8edd4c5e8dc8109b81e7e8a652c92eb89ea454cafbfc8193d7c3d772378",
+      "bytes": 10356,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top-change-boundary.md",
+      "sha256": "24bef7234e997b436782524917b499ddf28209f0207af4a3fd0a206b391f6f4f",
+      "bytes": 448,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top-change-boundary.png",
+      "sha256": "370eb5d37b869eeb7f3b76cfc332d128a11720d3898a90f1b20a315430c9f587",
+      "bytes": 185219,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.ax.txt",
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64",
+      "bytes": 2181,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.html",
+      "sha256": "a54b7c65d35fa72fb643ed53063d4bbed927759ec9eecd67db13ba8eb1e28eec",
+      "bytes": 14440,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.json",
+      "sha256": "e4fd37fbef1466e099696d0e0a5115877e71cb539394f3203ef0ef97e1e20906",
+      "bytes": 21411,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-1440-top.png",
+      "sha256": "d5b7ed91239749fee975d84a31cc5e11e4998c46860adbfc119e34b108b1e272",
+      "bytes": 185451,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom-change-boundary.png",
+      "sha256": "1aca5f3f5e41c285cb7f89047f55a1d8241d0f1ccb4c4e54a28d5c2239a0738a",
+      "bytes": 61364,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.ax.txt",
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64",
+      "bytes": 2181,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.html",
+      "sha256": "e619aed8100fd9670a151c1f5c0a84fbec573d8020c4b324bc615b4bccd0f6db",
+      "bytes": 14426,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.json",
+      "sha256": "b773d9e12c312ad88bf70cafb335fdf2cfc43b586d68b6f58159abff7570754e",
+      "bytes": 21408,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-setup-bottom.png",
+      "sha256": "0fe011ddb4dc9a5828b2f37615522238ef963539c5a724756c73a110ebadc3ee",
+      "bytes": 60850,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top-change-boundary.md",
+      "sha256": "366705a48f8736f5617c714a499770b631a4133dc8fdd0431800d9bc9a6e2296",
+      "bytes": 613,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top-change-boundary.png",
+      "sha256": "bda49efa06b07c1af6eef93694dcb15e75543a66c074f0796471a52348e6f0b4",
+      "bytes": 77856,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.ax.txt",
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64",
+      "bytes": 2181,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.html",
+      "sha256": "e619aed8100fd9670a151c1f5c0a84fbec573d8020c4b324bc615b4bccd0f6db",
+      "bytes": 14426,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.json",
+      "sha256": "75f2ab09110c8c3a10e35b688740e6c0f05bd1030bfc40a216c0dc506e5b455a",
+      "bytes": 21402,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-320-top.png",
+      "sha256": "53e1fc9b2350b1523b3ace8971b1e34bb137b3c3bf385d8d7eff130c885138f6",
+      "bytes": 78061,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.ax.txt",
+      "sha256": "89b83d029677e5eeec69e8431bceb64536ffb77b83a914940c606d246690eaab",
+      "bytes": 2975,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.html",
+      "sha256": "f7c631bae61cedfb6d8ac356c5f5c53e1161ec770bd9e61f37a912fde78aa34c",
+      "bytes": 17578,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.json",
+      "sha256": "4d76aca7aca1de68791cb042169ef35f596c9036d98c52e55b7d80c0e61daeb0",
+      "bytes": 21982,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-existing-inspect.png",
+      "sha256": "f164b7febc4982699abaf7ee650fedb854ace87bf26bf13a82d8dcb2cdbcaafa",
+      "bytes": 32557,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top-change-boundary.md",
+      "sha256": "62e6a366e1514446e6c0c0b9aa82f32ab42e1cd46704f92e526383ab53628434",
+      "bytes": 442,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top-change-boundary.png",
+      "sha256": "daa822153d6c57c5dd19e761723e656428f9630597181593ef64e53c50bd0503",
+      "bytes": 101407,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.ax.txt",
+      "sha256": "ad5f25760eb56fc40bb15b577d7e1346fd62987ffdc6195b0148b9579874bd64",
+      "bytes": 2181,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.html",
+      "sha256": "5a315e0739f441b01d11b0abf5ae502e05e6949eeeddf035a96098462e78dade",
+      "bytes": 14426,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.json",
+      "sha256": "59fae67e4fcc38d77baa9f796fd95f9532a55f060b641aadebf2bfdc31b35a65",
+      "bytes": 21367,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-390-top.png",
+      "sha256": "39e7399e138596e2cd7be9928d4afb62c17f25d7159a13484dcd60615bae86f5",
+      "bytes": 102253,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-actual-input.json",
+      "sha256": "d2343166f80d8bc46766db9fcce1c2945aa6a0a393a6c1301e8315d7b599ba4a",
+      "bytes": 3355,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/installed-server.log",
+      "sha256": "66e0852037135847abd20cd703424b81adbed34c0d7b8d15dab04ff3d597efde",
+      "bytes": 143,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/report.json",
+      "sha256": "9dd6bc5aa8810d810f13723e7c9a7dfa11981aed7490abf21ddce7799dc159df",
+      "bytes": 498689,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top-change-boundary.md",
+      "sha256": "aad4ed0db87a3b10ca50562558eaea191ad1cf9f9f4c887fcd8d41b54981a14a",
+      "bytes": 430,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top-change-boundary.png",
+      "sha256": "c58c55866f1d18c230c1b137f5869bb654e4e58475c98870a18efd7563c28c58",
+      "bytes": 266062,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.ax.txt",
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b",
+      "bytes": 4664,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.html",
+      "sha256": "e4a7e4d9df5e70a125e3b10883c97aadede38e9326b90dd1a4a22eacfd9ba9ea",
+      "bytes": 21109,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.json",
+      "sha256": "42b5ce1c7280f2b81d4482d426d0821cbdb3160895433d8e1574635e19a3a90e",
+      "bytes": 57027,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-1440-top.png",
+      "sha256": "c8dd5db33b8b4ec8f608bf08815683714884627a71f16eeab70cfc0abf8d0774",
+      "bytes": 265284,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom-change-boundary.png",
+      "sha256": "6095a3daba6333c0c980502e2e7650b22351a9f59e5c058b7d5b06a3ea6df756",
+      "bytes": 51246,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.ax.txt",
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b",
+      "bytes": 4664,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.html",
+      "sha256": "57d8266b0604430ddc5e17d89769e2fe222d93961e883cc80e2e5b8379715f6d",
+      "bytes": 21095,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.json",
+      "sha256": "5331a7db68089f1a425c6d1032dce6863118f5433cb4fb1ac1aecbd724b373fe",
+      "bytes": 57003,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-setup-bottom.png",
+      "sha256": "cfa5d4d2f4decd1e1968bf9f5877ea41dfc0d87081a936a21c468742c0c34561",
+      "bytes": 51813,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top-change-boundary.md",
+      "sha256": "ebf7f15149b346c2f364b65d9fdbde0226e1e23b2c023d5c65dd1ea9063923fb",
+      "bytes": 592,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top-change-boundary.png",
+      "sha256": "86f9e16605171029eb4efbe10a699ee91533e90f9776c8a22cf14a7c43032bd5",
+      "bytes": 95191,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.ax.txt",
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b",
+      "bytes": 4664,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.html",
+      "sha256": "57d8266b0604430ddc5e17d89769e2fe222d93961e883cc80e2e5b8379715f6d",
+      "bytes": 21095,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.json",
+      "sha256": "be680689730a49e63ae23685010a3c5802074367219dc5bc901a73621341d179",
+      "bytes": 57000,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-320-top.png",
+      "sha256": "9f6bbd753d9f1a7956221e408e8e4567c70098dea4b35bd55118d91fd074e54f",
+      "bytes": 96571,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.ax.txt",
+      "sha256": "ad7637c4a053aa8777ac9d5b24fa565e7c0cf809e2b03ef44931ebefbe731e5e",
+      "bytes": 5279,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.html",
+      "sha256": "222f6a768ad4a63b05fb9b7226b32b0eaa648ded82194893a6dc78188ce5e9e5",
+      "bytes": 23988,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.json",
+      "sha256": "7b6d5695c8a5c52928b8f62cbe47b719e9d425b8cccd0507da79bba48f142a38",
+      "bytes": 57484,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-existing-inspect.png",
+      "sha256": "42623d3240badc268669aeffad89dd55b94b40f34dc0334350f0fad4b0d513fc",
+      "bytes": 27693,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom-change-boundary.png",
+      "sha256": "1e86efa078b3eacb8684a7a75a850c63f3f11c85087b7907a467cdd9b96e2b33",
+      "bytes": 70987,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.ax.txt",
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b",
+      "bytes": 4664,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.html",
+      "sha256": "e424ad8cea22588d968e859a0040c9bd290e19da6bd5a91168e56f560f119e3a",
+      "bytes": 21095,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.json",
+      "sha256": "5b7cb0698033d0b568560fab94f686a926d18139cf3cb5234c088007c4e513f6",
+      "bytes": 56954,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-setup-bottom.png",
+      "sha256": "c1fa67976416151fd3f23684744cef49b771efded18bc74171e09ddca53d5cd9",
+      "bytes": 71479,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top-change-boundary.md",
+      "sha256": "1ee38f14db30c26d300c6c73389f7bac6a4266520a229110ca2eb5273dbf3566",
+      "bytes": 592,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top-change-boundary.png",
+      "sha256": "df2dbf722c6af06fe5bf48d2d9a61708198a8e282e3a55f774a24d4c01670dec",
+      "bytes": 88853,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.ax.txt",
+      "sha256": "cf1616662270ace87ceb63ef1b1b724714b12fe900230122776df8840ffa068b",
+      "bytes": 4664,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.html",
+      "sha256": "e424ad8cea22588d968e859a0040c9bd290e19da6bd5a91168e56f560f119e3a",
+      "bytes": 21095,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.json",
+      "sha256": "9453f16c2eb138a8d6803c9c1cda36ae571278d7966ed5848b126fefbb90ad1d",
+      "bytes": 56952,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-390-top.png",
+      "sha256": "d339280e98b399d84eb00a8e8cd6740875ea4bacd833561d51de87c8dfda5df8",
+      "bytes": 90249,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-actual-input.json",
+      "sha256": "e0848e5b2889c18b5861804f8ad6506ec3662e3e9b58d97492153f6777debc7f",
+      "bytes": 28453,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before/source-server.log",
+      "sha256": "d98d5e22041a50ef684179d7b0d83e56765defec6f8080e428030c4696a0aacb",
+      "bytes": 77,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-before.mjs",
+      "sha256": "0c2bb19a64eef53a0dc507bd513ab45d63b8b584fc53ec76666c530929085893",
+      "bytes": 11865,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/report.json",
+      "sha256": "ddddf61e2c4ec41433b938f4609db91b79ee28309202b8cb00b3ea3b07dcf4a8",
+      "bytes": 24097,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-320-setup-bottom-labelled.png",
+      "sha256": "06123c422acba3a399862cf353c354ff04c6c455c2c4569f7c8b863ba6a9f9d0",
+      "bytes": 51561,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-existing-coach-inspect.ax.txt",
+      "sha256": "f22616068a1b538c410393ce088d5a603871705ebaffb8654de5606f25bd01f7",
+      "bytes": 5652,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-existing-coach-inspect.html",
+      "sha256": "894680ab44e3927e13efe43d317b6ee4d3516da0f2d1ef1cfe07ea9aff669224",
+      "bytes": 24743,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-existing-coach-inspect.png",
+      "sha256": "c995e64273910bcdb9b08df4b567bd655b2d6809aff1d0d6524d3ef03c991ec9",
+      "bytes": 40267,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before/source-390-setup-bottom-labelled.png",
+      "sha256": "2a683b56db8fb7cab3c4bf2c561cb6238119416b61abb622b629274c0b92a3a6",
+      "bytes": 68439,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/report.json",
+      "sha256": "3ca759e498b594e3270b6a871c3ee416c6227c5acd4a1825822be111b2dd8607",
+      "bytes": 24104,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-320-setup-bottom-labelled.png",
+      "sha256": "06123c422acba3a399862cf353c354ff04c6c455c2c4569f7c8b863ba6a9f9d0",
+      "bytes": 51561,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-existing-coach-inspect.ax.txt",
+      "sha256": "f22616068a1b538c410393ce088d5a603871705ebaffb8654de5606f25bd01f7",
+      "bytes": 5652,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-existing-coach-inspect.html",
+      "sha256": "894680ab44e3927e13efe43d317b6ee4d3516da0f2d1ef1cfe07ea9aff669224",
+      "bytes": 24743,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-existing-coach-inspect.png",
+      "sha256": "c995e64273910bcdb9b08df4b567bd655b2d6809aff1d0d6524d3ef03c991ec9",
+      "bytes": 40267,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02/source-390-setup-bottom-labelled.png",
+      "sha256": "2a683b56db8fb7cab3c4bf2c561cb6238119416b61abb622b629274c0b92a3a6",
+      "bytes": 68439,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-02.mjs",
+      "sha256": "5bcba1d2c05fb7fa35381e413915fb06232f9498b06c5aad53a847664ffda4c8",
+      "bytes": 7588,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/existing-coach-inspection-route.json",
+      "sha256": "a1056305215b0244dd34daf3bc89fb27da51821969e383942e11351c25821865",
+      "bytes": 353,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/installed-320-setup-bottom-labelled.png",
+      "sha256": "23245de4a0ac009a50c56cbf0a5d664a841b99aeea001b38831535050b6e79b7",
+      "bytes": 60475,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/installed-server.log",
+      "sha256": "c70e83221ccf694e1a9e7bc8b0f24add091c4106365608b0d4333046c4b38cc7",
+      "bytes": 143,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/report.json",
+      "sha256": "f24744550c38f1ed8e8da25a70270ac06e578702372c357d9389fd17bf54def3",
+      "bytes": 24690,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-320-setup-bottom-labelled.png",
+      "sha256": "06123c422acba3a399862cf353c354ff04c6c455c2c4569f7c8b863ba6a9f9d0",
+      "bytes": 51561,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.ax.txt",
+      "sha256": "f22616068a1b538c410393ce088d5a603871705ebaffb8654de5606f25bd01f7",
+      "bytes": 5652,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.html",
+      "sha256": "894680ab44e3927e13efe43d317b6ee4d3516da0f2d1ef1cfe07ea9aff669224",
+      "bytes": 24743,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-existing-coach-inspect.png",
+      "sha256": "c995e64273910bcdb9b08df4b567bd655b2d6809aff1d0d6524d3ef03c991ec9",
+      "bytes": 40267,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-390-setup-bottom-labelled.png",
+      "sha256": "2a683b56db8fb7cab3c4bf2c561cb6238119416b61abb622b629274c0b92a3a6",
+      "bytes": 68439,
+      "viewed": true
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03/source-server.log",
+      "sha256": "d98d5e22041a50ef684179d7b0d83e56765defec6f8080e428030c4696a0aacb",
+      "bytes": 77,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before-03.mjs",
+      "sha256": "48752be80c916cebd81c7a0ed365bc5809ae129d0fefc6a86e5242a257b22d86",
+      "bytes": 7730,
+      "viewed": false
+    },
+    {
+      "path": "E6e-nodetrace-disclosure-entry-before.mjs",
+      "sha256": "c5f2df24e4571c1efdab24515e6b3f430c7a13c08699157baa415b8676c9dca2",
+      "bytes": 7498,
+      "viewed": false
+    }
+  ],
+  "count": 93,
+  "bytes": 4056850,
+  "viewedPngs": 15,
+  "rawPreservation": "All original captures and both failed supplemental probe reports remain exact; the corrected third probe uses the actual lens close contract."
+}

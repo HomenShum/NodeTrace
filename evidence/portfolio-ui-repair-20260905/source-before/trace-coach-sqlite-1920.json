@@ -1,0 +1,63 @@
+{
+  "state": "trace-coach:sqlite",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "browser": "149.0.7827.55",
+  "stateHash": "8d0fc775847a422e059bbce2376531bb4964baec7c31d30a8240264d9e48439d",
+  "sourceHashes": {
+    "src/DemoDashboard.tsx": "c4b6da1f1e6da76d4dca341f42d057d36716a7a56ac6519d2d01fa12b515279c",
+    "src/styles.css": "eb5649ea2744a1a93a47a60cf58a6f3e2162ba44467e3b7fc10d40890aaa8fc4",
+    "src/trace/TraceLensPanel.tsx": "38cd30fe53289aada3326c36ad5ee592935160e6f57dd3fd35c2edc9f6d91156",
+    "src/trace/TraceLensProvider.tsx": "4708e3e3d39a51a06182371a7bb4d8c44876e71fbaf78170ac6798ee0f327417",
+    "src/trace/trace.css": "7543b3830ef11679e710a6a4b2ce3457626e71996be958f8295620846385f0c2",
+    "src/trace/LiveGraphRail.tsx": "0a89de5aa48c0975432e2befdd8f1293f522c3a81ed7e9b0042d3f82904fcce3",
+    "package.json": "2531f01b87268e323786ba5be567e3015a9c8009f41d19e424db725b670d9fbe",
+    "package-lock.json": "8d05055d68192b5a62f45f34da9bff4eeac86e1ff3fa802c7a46057acb35835f"
+  },
+  "errors": [],
+  "dom": {
+    "title": "NodeTrace",
+    "url": "http://127.0.0.1:4916/",
+    "headings": [
+      {
+        "level": "H1",
+        "text": "Portable trace UI for agent apps."
+      },
+      {
+        "level": "H3",
+        "text": "Relationship graph"
+      }
+    ],
+    "overflow": 0,
+    "regions": [
+      {
+        "selector": ".showcase",
+        "present": true,
+        "x": 232,
+        "y": -765,
+        "width": 1456,
+        "height": 306.640625
+      },
+      {
+        "selector": ".coachPanel",
+        "present": true,
+        "x": 232,
+        "y": -442.359375,
+        "width": 1456,
+        "height": 1005.171875
+      },
+      {
+        "selector": ".liveGraphRailHead",
+        "present": true,
+        "x": 247,
+        "y": 595.8125,
+        "width": 1426,
+        "height": 44.5
+      }
+    ]
+  },
+  "png": "trace-coach-sqlite-1920.png",
+  "html": "trace-coach-sqlite-1920.html"
+}

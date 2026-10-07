@@ -1,0 +1,93 @@
+{
+  "at": "2026-09-05T04:45:47.600111+00:00",
+  "id": "NT-ENTITY-04",
+  "priority": "P2",
+  "status": "REPRODUCED_IN_SCOPE_COMPATIBILITY_REGRESSION",
+  "blocks": "Claim that selected details/callbacks preserve actual graph edge semantics for existing direct NodeGraph consumers.",
+  "sourceHash": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+  "baseSourceHash": "892ca69f298b3c25c69e385c8c00cd9265f2612479caaf9320cb73c07dd629c5",
+  "actualBefore": {
+    "graphRelationships": 1,
+    "callbackEdges": 1,
+    "receiptWeights": [
+      99
+    ]
+  },
+  "actualCandidate": {
+    "graphRelationships": 1,
+    "callbackEdges": 2,
+    "receiptWeights": [
+      1,
+      99
+    ]
+  },
+  "cause": "The current message builder reconstructs edges from raw props instead of reading the actual canonical patched graph that drives the canvas. It therefore reintroduces duplicate or dangling edges into callbacks and visible assertion badges.",
+  "scope": "Direct NodeGraph typed raw input; LiveGraphRail GraphSession snapshots are already canonical, so completed recorded NodeTrace jobs remain valid for their exact source bytes.",
+  "causalChain": [
+    "The stale-selection fix moved detail construction from graph attributes to current raw props.",
+    "Raw GraphEdge arrays can contain duplicate pairs and missing endpoints; the existing graph model canonicalizes these.",
+    "Reading raw props bypasses that existing model policy.",
+    "Current callbacks and badges can therefore disagree with the actual canvas and its relationship count.",
+    "Reuse the actual graph after its committed prop patch and trigger React metadata refresh; do not create a second normalizer or change graph-model policy."
+  ],
+  "pureProbeCorrection": "The preceding exact-function probe used initial buildGraph as its comparison. Initial buildGraph first-wins while the unchanged mounted patchGraph currently last-wins. The actual browser baseline is authoritative: it shows one weight99 edge; candidate shows both weight1 and weight99. Fixture release names are arbitrary labels, not the expected mounted policy. The original pure probe is retained with this correction.",
+  "recommendedRepair": "Read callbacks and selected details from the same actual patched graph. A before-paint prop patch plus a revision for attribute-only updates prevents stale detail; key filter resets by actual edge-type signature so metadata changes preserve chosen filters. Keep current visits props and controlled selected ID.",
+  "requiredKnockout": [
+    "Same valid duplicate/dangling input: current canvas edge count, callback edges and assertion badges must agree with baseline mounted graph.",
+    "Same-ID metadata update with a filter switched off: labels/counts/receipts/visits update without re-enabling that filter.",
+    "Retain pointer/native/clear/reselect, visit growth and removed-hover proofs on corrected bytes."
+  ],
+  "screenshots": [
+    "E6c-nodetrace-node-message-browser-replay/before-boundary.png",
+    "E6c-nodetrace-node-message-browser-replay/after-boundary.png"
+  ],
+  "artifacts": {
+    "E6c-nodetrace-node-message-browser-replay/after-boundary.json": {
+      "sha256": "48dcfb9a0d470103a2bddfb78260a76a2c1bca2862c13cc327c08fd0df14acf6",
+      "bytes": 83
+    },
+    "E6c-nodetrace-node-message-browser-replay/after-boundary.png": {
+      "sha256": "fa01f5274b6f5f9f81fc6fb91dfdf0eab2c43ec6bb3056955cf75bb451d94c39",
+      "bytes": 57127
+    },
+    "E6c-nodetrace-node-message-browser-replay/after.html": {
+      "sha256": "2ed2f8e3eea74612337d8abd6590f206858950e8b1505d72082e953d59b3e01b",
+      "bytes": 5531
+    },
+    "E6c-nodetrace-node-message-browser-replay/after.json": {
+      "sha256": "3bc830e7eb9a25223e3e46051406634e59d4bc02dec5155032c2fe9ae8ca2dd9",
+      "bytes": 1387
+    },
+    "E6c-nodetrace-node-message-browser-replay/after.png": {
+      "sha256": "c683e7bdb0ff894269bab97240c94b67b1ac31226dcf36e9032f5c54b5a22b9f",
+      "bytes": 55318
+    },
+    "E6c-nodetrace-node-message-browser-replay/before-boundary.json": {
+      "sha256": "fc1be428cd71ee9458bb6d3045c62a354be12e9773d5e677d4c6f7dfbc250082",
+      "bytes": 83
+    },
+    "E6c-nodetrace-node-message-browser-replay/before-boundary.png": {
+      "sha256": "3ebe0b2281527836c87ff72a42e36ad58d7468e7b9e38f134e2d24202560eaa7",
+      "bytes": 45644
+    },
+    "E6c-nodetrace-node-message-browser-replay/before.html": {
+      "sha256": "a7119a5c60e71f2d79ef17b1c2398107768d4896de58bf7d52dd006f14e3924f",
+      "bytes": 4884
+    },
+    "E6c-nodetrace-node-message-browser-replay/before.json": {
+      "sha256": "5ba6b9e5503b8a02c8c851a9c9b50a150857f1adb51cba77ae1441ed1e36dd0e",
+      "bytes": 985
+    },
+    "E6c-nodetrace-node-message-browser-replay/before.png": {
+      "sha256": "3bc669559fd0f451d89c579ab347141e6c623a91a8496b262b615adf4b4f6ea4",
+      "bytes": 43791
+    },
+    "E6c-nodetrace-node-message-browser-replay/report.json": {
+      "sha256": "916068986589e1d43398e1791903dcac0e29afd39f74a0a4bb29dd7cc7ad7398",
+      "bytes": 3063
+    }
+  },
+  "noSourceEdits": true,
+  "reviewerContext": "Independent of authorship; same reused reviewer context already disclosed in all lane reports.",
+  "finalJudge": "PENDING_CORRECTION_AND_FROZEN_BINDINGS"
+}

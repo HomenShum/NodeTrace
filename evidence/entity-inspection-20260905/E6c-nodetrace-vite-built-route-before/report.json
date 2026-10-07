@@ -1,0 +1,56 @@
+{
+  "consumer": "D:/ProjectRecovery/nodetrace-entity-vite-consumer-20260905",
+  "before": {
+    "index.html": "fa146504577651c76ca478688d4110e0156112d3b46f4c543fc43968d3b26de1",
+    "src/main.tsx": "60bc068f01bba7fd6558420bedb46633260a1906b854602ad50b0c7d4ff6d5e5",
+    "vite.config.ts": "1324d55fbba3c3c0e78f8cd30f51c7e4187d477768558acc2acaf7176a2232ff",
+    "package.json": "79020f8ee78953813357670056b408ac40a85e52cda0ac7172d985c6c104bd15",
+    "package-lock.json": "4cc29f73dae68dea53fc63ad72f3437cc1ccbcc87b7e8b40098f7fb153aa796e",
+    "src/nodetrace-demo/main.tsx": "a707f7da8130e070c514ea16ebc34b791487c012e40070b08fc20009aad0208a",
+    "dist/index.html": "d37665b3cd569c9741ae8e34c5dd28dc604703b96468be193740bdf762f98a14"
+  },
+  "after": {
+    "index.html": "fa146504577651c76ca478688d4110e0156112d3b46f4c543fc43968d3b26de1",
+    "src/main.tsx": "60bc068f01bba7fd6558420bedb46633260a1906b854602ad50b0c7d4ff6d5e5",
+    "vite.config.ts": "1324d55fbba3c3c0e78f8cd30f51c7e4187d477768558acc2acaf7176a2232ff",
+    "package.json": "79020f8ee78953813357670056b408ac40a85e52cda0ac7172d985c6c104bd15",
+    "package-lock.json": "4cc29f73dae68dea53fc63ad72f3437cc1ccbcc87b7e8b40098f7fb153aa796e",
+    "src/nodetrace-demo/main.tsx": "a707f7da8130e070c514ea16ebc34b791487c012e40070b08fc20009aad0208a",
+    "dist/index.html": "d37665b3cd569c9741ae8e34c5dd28dc604703b96468be193740bdf762f98a14"
+  },
+  "unchanged": true,
+  "builtDemoExists": false,
+  "cells": [
+    {
+      "width": 390,
+      "height": 844,
+      "url": "http://127.0.0.1:4958/nodetrace.html?host=preserved#trace",
+      "status": 200,
+      "body": "Installed trace host\nInspect saved traces",
+      "graphCount": 0,
+      "rect": {
+        "x": 8,
+        "y": 21.4375,
+        "width": 374,
+        "height": 76.4375
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "height": 960,
+      "url": "http://127.0.0.1:4958/nodetrace.html?host=preserved#trace",
+      "status": 200,
+      "body": "Installed trace host\nInspect saved traces",
+      "graphCount": 0,
+      "rect": {
+        "x": 8,
+        "y": 21.4375,
+        "width": 1424,
+        "height": 76.4375
+      },
+      "errors": []
+    }
+  ],
+  "verdict": "P1_CONFIRMED_HOST_BUILD_OMITS_DEMO_ROUTE"
+}

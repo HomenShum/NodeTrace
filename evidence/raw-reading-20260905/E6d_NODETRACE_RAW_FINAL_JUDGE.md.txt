@@ -1,0 +1,24 @@
+Builder. **Approve the frozen Raw reading repair for its reviewed scope.** A developer can inspect the complete saved JSON, then compare it with the graph without scrolling past the entire payload. Independent source and installed-consumer journeys pass. One screenshot limitation is explicitly retained.
+
+**Re your request:** make each repository usable and ready for handoff, including visual, responsive and interaction grading. This independent nonauthor review checked the actual two-file runtime diff, proof script, rendered before/after pixels, exact JSON, focus/scroll behavior, producing-event identity, history/reload, and installed consumer output. Reviewer context was reused; this was not a fresh blind review.
+
+- All 170 custody checks pass. The three frozen candidate files, HEAD/index/refs/status, 53 installed source/state/build inputs and 19 fixture attachments remain exact; attachments also match Git HEAD.
+- Five fresh representative journeys pass **187 checks / 11 capture states**, including a new 60-second long-phone reading session. The worker's separately bound evidence remains 312 source checks/25 states and 104 installed checks/8 states. All 43 Raw text captures across those original and new reports equal their paired fixture hashes.
+- At 1024px, the page drops from 4269px to 2269px and graph Y from 3423.578125 to 1423.640625. At 390px, Raw height drops from 3214.5px to 548.59375px. Exact protected DOM, graph dimensions and original before geometry survive the independent former-CSS knockout at 390/1024. The desktop sidebar still sets the card height.
+- Native focus, End/Home, text selection, Tab exit, current-step reset, incidental-render continuity and Back/Forward pass. Earlier 503/Retry and attachment failures remain preserved with their independent causal records. The ordinary Next install/build record was inspected; the final judge replayed its retained actual build without re-running installation.
+
+| Criterion observation only | Before → after | Remaining deduction |
+| --- | --- | --- |
+| D4 useful density | 3 → 4 | The unchanged desktop step list leaves some empty column space below Raw; the graph remains a later section. |
+| R3 panel adaptation | 3 → 5 | No material Raw-panel adaptation defect survives the frozen exercised cases. |
+| D3 progressive disclosure | 3 → 3 | The phone setup/status content still precedes evidence; separate scope. |
+
+All complete criterion, dimension and overall grades remain null. The 4.5 working target is unchanged, and the central grade register was not edited. These are agent-evaluated observations; human/device/platform and full coverage requirements remain unresolved.
+
+**Capture limitation:** the first independent layout run remains failed at 1440px. Full-page screenshot causes the unchanged command row to wrap and increases the header by 49.390625px, under both current and former Raw sizing. DOM and computed font declarations remain unchanged; idle and viewport capture have no shift. Thus the original pre-capture metadata is not exact same-frame position proof for later full-page pixels. The fresh viewport-only 1440 correction passes 22 checks and reproduces the exact historical geometry. Its receipt is the valid boundary evidence; no application fix or grading waiver was substituted.
+
+Native Home issued before an earlier native scroll finishes remains a Chromium limitation, also demonstrated in a static no-app control. Completed-action proof waits actual scrollend and still requires exact zero. Component200% enlarges Raw text only; installed replay explicitly supplies the recorded six-event coach fixture and 19 attachments, while the normal installed sample has four traces without a coach.
+
+Deliverables: [structured verdict](E6d_NODETRACE_RAW_FINAL_JUDGE.json), [bounded artifact/hash manifest](E6d_NODETRACE_RAW_FINAL_JUDGE_ARTIFACTS.json), [custody](E6d_NODETRACE_RAW_FINAL_JUDGE_BINDINGS.json), [five replay receipts](E6d-nodetrace-raw-final-judge/runs.json), [retained layout failure](E6d-nodetrace-raw-final-judge-layout/report.json), [capture cause](E6d-nodetrace-raw-1440-capture-cause/report.json), and [corrected 1440 viewport proof](E6d-nodetrace-raw-final-judge-layout-viewport1440/report.json).
+
+No source/index/ref/environment edits, credentials, provider calls, deployment, push or commit by this judge. Port4173 stayed untouched. The next lowest observed item is D3; it needs its own bounded plan after this repair is published.

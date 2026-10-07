@@ -1,0 +1,129 @@
+{
+  "sourceHash": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+  "functionHash": "83653a98f946f78e30fd7f88ec42dd3f277609ce3cac8335f43d5de7b3748d43",
+  "input": {
+    "nodes": [
+      {
+        "id": "a",
+        "label": "Supplier A",
+        "type": "supplier"
+      },
+      {
+        "id": "b",
+        "label": "Product B",
+        "type": "product"
+      }
+    ],
+    "edges": [
+      {
+        "source": "a",
+        "target": "b",
+        "type": "assertion",
+        "weight": 1,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "reviewed-first",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/reviewed-first"
+        }
+      },
+      {
+        "source": "b",
+        "target": "a",
+        "type": "assertion",
+        "weight": 99,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "duplicate-should-not-appear",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/duplicate-should-not-appear"
+        }
+      },
+      {
+        "source": "a",
+        "target": "missing",
+        "type": "assertion",
+        "weight": 23,
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "missing-endpoint-should-not-appear",
+          "subjectId": "a",
+          "objectId": "missing",
+          "url": "https://example.invalid/missing-endpoint-should-not-appear"
+        }
+      }
+    ]
+  },
+  "graph": {
+    "order": 2,
+    "size": 1
+  },
+  "expectedCanonicalEdges": [
+    {
+      "other": "Product B",
+      "weight": 1,
+      "type": "assertion",
+      "receipt": {
+        "source": "Independent contract fixture",
+        "release": "reviewed-first",
+        "subjectId": "a",
+        "objectId": "b",
+        "url": "https://example.invalid/reviewed-first"
+      }
+    }
+  ],
+  "actualMessage": {
+    "source": "nodegraph",
+    "kind": "node",
+    "id": "a",
+    "label": "Supplier A",
+    "nodeKind": "supplier",
+    "edges": [
+      {
+        "other": "Product B",
+        "weight": 1,
+        "type": "assertion",
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "reviewed-first",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/reviewed-first"
+        }
+      },
+      {
+        "other": "Product B",
+        "weight": 99,
+        "type": "assertion",
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "duplicate-should-not-appear",
+          "subjectId": "a",
+          "objectId": "b",
+          "url": "https://example.invalid/duplicate-should-not-appear"
+        }
+      },
+      {
+        "weight": 23,
+        "type": "assertion",
+        "receipt": {
+          "source": "Independent contract fixture",
+          "release": "missing-endpoint-should-not-appear",
+          "subjectId": "a",
+          "objectId": "missing",
+          "url": "https://example.invalid/missing-endpoint-should-not-appear"
+        }
+      }
+    ]
+  },
+  "contractRegressed": true,
+  "newlyVisibleReleases": [
+    "reviewed-first",
+    "duplicate-should-not-appear",
+    "missing-endpoint-should-not-appear"
+  ],
+  "scope": "Direct NodeGraph typed raw input; current LiveGraphRail GraphSession snapshots are canonical and its recorded jobs are unaffected.",
+  "sourceMutated": false
+}

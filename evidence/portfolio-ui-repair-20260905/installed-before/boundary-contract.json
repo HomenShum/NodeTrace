@@ -1,0 +1,262 @@
+{
+  "proof": "NODETRACE-INSTALLED-RECOVERY-BOUNDARY-01",
+  "capturedAt": "2026-09-05T01:48:55.378Z",
+  "url": "http://127.0.0.1:39743/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "deviceScaleFactor": 1,
+  "screenshotMode": "fullPage",
+  "theme": "existing light theme",
+  "state": "Real installed SQLite happy path, no coach records, closed lens",
+  "browser": "fresh anonymous Playwright Chromium",
+  "cleanImage": "before-clean-390.png",
+  "annotatedImage": "change-boundary-390.png",
+  "regions": [
+    {
+      "id": "CHANGE A",
+      "label": "setup command region",
+      "selector": ".showcaseActions",
+      "bounds": {
+        "x": 29,
+        "y": 251.0625,
+        "width": 332,
+        "height": 187.5625
+      },
+      "text": "npm run understand:noderoomnpm run capture:noderoom:realnpm run trace-coach:sqlite no API key required"
+    },
+    {
+      "id": "CHANGE B",
+      "label": "empty-coach instructions",
+      "selector": ".coachEmpty",
+      "bounds": {
+        "x": 12,
+        "y": 928.96875,
+        "width": 366,
+        "height": 201.6875
+      },
+      "text": "Load a guided traceNo Trace Coach steps are available in this sample. To inspect the bundled snapshot, run npm run trace-coach:sqlite and refresh. For new captures, the first two commands above require a real NodeRoom checkout."
+    }
+  ],
+  "ownedChange": "Adapt the installed demo setup commands and empty-coach recovery guidance to its real consumer execution context.",
+  "neighborsToPreserve": [
+    "Hero heading and state summary",
+    "Inspect trace control and modal behavior",
+    "SQLite status summary",
+    "Live graph data, renderer, and surrounding layout"
+  ],
+  "annotationMethod": "Actual settled page captured before annotations; 3px DOM overlays added at observed document-coordinate bounds with no reconstructed imagery.",
+  "sourceRoot": "D:/ProjectRecovery/nodetrace-canonical-consumer-20260904",
+  "installedRoot": "D:/ProjectRecovery/nodetrace-consumer-judge-ypHymO/temp/nodetrace-next-e2e-rJxBA6",
+  "logs": [
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6054001b8200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6054001ba000]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6054001b9a00]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels"
+    },
+    {
+      "type": "warning",
+      "text": "[.WebGL-0x6054001b8200]GL Driver Message (OpenGL, Performance, GL_CLOSE_PATH_NV, High): GPU stall due to ReadPixels (this message will no longer repeat)"
+    }
+  ],
+  "responses": [
+    {
+      "url": "http://127.0.0.1:39743/nodetrace?host=preserved&returnTo=dashboard",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/css/0b9e091888c97c1f.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/main-app-bbd581b7f052c3f4.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/webpack-ba48cf75e18cf87f.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/app/nodetrace/page-700adf72acf84146.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/255-37e0f0325134c4d7.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/css/1383a2b9f3290658.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/5a255377.58c8dcfdf915e228.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/484.f9508ba3e8181e39.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/_next/static/chunks/941.b31d29c9d2dae6db.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:39743/nodetrace-state.json",
+      "status": 200
+    },
+    {
+      "url": "blob:http://127.0.0.1:39743/dbeb1e6f-4986-432f-ad26-1f7a74bfb827",
+      "status": 200
+    }
+  ],
+  "beforeConsumer": {
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    "src/nodetrace-demo/DemoDashboard.tsx": "214065321b8b85fba432689515efbd7e78a4d6f8adc7e0cec3115aee717f43a7",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+    "src/nodetrace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6",
+    "src/app/nodetrace/page.tsx": "cc2204f2b7ffc225131827cdcaf4719d442ee79915521e35184e13941eb05d00",
+    "public/nodetrace-state.json": "8562392996bd46cc5598d481f2d7975adf5b63ef75fdda975a28ea4ad1fc41eb",
+    ".nodetrace/nodetrace.sqlite": "d9d6ddca9584de6c43c9fa07fddb73bd93f580968a934d5e0178831bc2a0386a",
+    ".next/BUILD_ID": "824339dfd693270617fd736314dcb46f5bd20b25374d107f5eb593cf139ecc49"
+  },
+  "afterConsumer": {
+    "package.json": "1f3d9ac1c3dd697ef6897f8f6ae08047eea0ef93fdea1d94072f1530b4041ca5",
+    "package-lock.json": "145a1aca955362358e7a125a0d5e92b0d114149827d74b5c3be09a973a604f89",
+    "src/nodetrace-demo/DemoDashboard.tsx": "214065321b8b85fba432689515efbd7e78a4d6f8adc7e0cec3115aee717f43a7",
+    "src/nodetrace-demo/demoState.ts": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+    "src/nodetrace-demo/demoNavigation.ts": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+    "src/nodetrace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/nodetrace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+    "src/nodetrace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6",
+    "src/app/nodetrace/page.tsx": "cc2204f2b7ffc225131827cdcaf4719d442ee79915521e35184e13941eb05d00",
+    "public/nodetrace-state.json": "8562392996bd46cc5598d481f2d7975adf5b63ef75fdda975a28ea4ad1fc41eb",
+    ".nodetrace/nodetrace.sqlite": "d9d6ddca9584de6c43c9fa07fddb73bd93f580968a934d5e0178831bc2a0386a",
+    ".next/BUILD_ID": "824339dfd693270617fd736314dcb46f5bd20b25374d107f5eb593cf139ecc49"
+  },
+  "beforeSource": {
+    "bin/nodetrace-capture.mjs": "8ce11d500e424efec6b3e52129990d9a773843c2ab4735c414bcc4f4ca5783df",
+    "bin/nodetrace-mcp.mjs": "85d726ba1cd6d47e85b3438bcc219c883992ab59a8be21aa11234273f0e011fe",
+    "bin/nodetrace.mjs": "9174db77814893031502e09b151ba23b93541562651cdbf8330e7b95300ae77e",
+    "src/DemoDashboard.tsx": "a7a36174cf5cff5e925f8b67a2bc9ee2c85aeb45fa1e2633986edd1fe31596ba",
+    "src/capture/codebaseCapture.mjs": "59611521f326883e1332eb8533361f1d82707a2d2a3581ea8c871f42297f8718",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/main.tsx": "3a464c6ba9091ecd74e8af7e809a2044285f0363eac2109c6c549659a772c37a",
+    "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6",
+    "vendor/nodegraph-live/NodeGraph.d.ts": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+    "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+    "vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+    "db/schema.sql": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "scripts/agent-trace-scale-smoke.mjs": "e698dc43e26376e9058c9af96ec9a689f76fa890ce449d2c6bf046d1b91cda0f",
+    "scripts/builder-access-smoke.mjs": "454497bc398f6f83aad22aec92488e450faa6f416f89ed25bbacf674e620613a",
+    "scripts/capture-live-graph-rail.mjs": "cdd1dd156f4c7306ff6d3b09fc5cb616a43112cb8977407f29b7466662dbde59",
+    "scripts/capture-noderoom-real-assets.mjs": "d3e99b680adba0ca2f55d44e286dcca2bde609461920281be4b0750d7200633b",
+    "scripts/capture-plan-fixture.mjs": "0ed8a703027455ed70f8dae75e803ed44626de17ac972be8049ac8a92425dc05",
+    "scripts/capture-plan-smoke.mjs": "9b81beeccf0929df1c00fedbb6c2d6bc12b01c20779c09a91d6cd564051fc45f",
+    "scripts/citations-check.mjs": "27043ac8d84cbb68ce786b948c93d1cb983d6c374683b7d30bdd62f76495c3db",
+    "scripts/cli-smoke.mjs": "e313ca25f7463379074a47ce5750e228de257693d44c839d23823d17bd426431",
+    "scripts/init-sqlite.mjs": "5b0ff389f3ad0daf8492d02186a8992b4b3c4602e9cc7d51ea68ff06e6a31632",
+    "scripts/installer-next-e2e-smoke.mjs": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+    "scripts/lib/proof-server.mjs": "b8b8843a266bcddf72a5c5ff45ccd46af0fa69f393a67c1621897406041dd359",
+    "scripts/mcp-smoke.mjs": "10032b3a1042018a3f1a05ef16b8ccf0c694d8dafa47483fcc45fc2c1d7239f9",
+    "scripts/record-live-graph-rail.mjs": "0891e5fe4dbd3f01adb26d5f45c27ce35b0bec88dd6b79eb3f9acd91d3dcb690",
+    "scripts/render-walkthrough-media.mjs": "2c642b383debae9b5689c4753b9bc944e93f55078478b85764a340e3e04ea89a",
+    "scripts/smoke.mjs": "873abd8f1eb64e8d038f63f767d6c2d9234a5a28ac475cef3762f4361b93c7f9",
+    "scripts/trace-coach-sqlite.mjs": "ad44dcea46392c1e91c2c69a5d94859a883eae3c0b79162bd5522f03a5638731",
+    "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+    "scripts/understand-anything-noderoom.mjs": "50178e8071b04d3a059c4ac9e7133a59145e0a2c830b8d479931ccf18f9dc979",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+    "AGENTS.md": "c763289a0000cdd84adff68fcd74bc29aa1a89d454baa9d2e48f58693a5f6438"
+  },
+  "afterSource": {
+    "bin/nodetrace-capture.mjs": "8ce11d500e424efec6b3e52129990d9a773843c2ab4735c414bcc4f4ca5783df",
+    "bin/nodetrace-mcp.mjs": "85d726ba1cd6d47e85b3438bcc219c883992ab59a8be21aa11234273f0e011fe",
+    "bin/nodetrace.mjs": "9174db77814893031502e09b151ba23b93541562651cdbf8330e7b95300ae77e",
+    "src/DemoDashboard.tsx": "a7a36174cf5cff5e925f8b67a2bc9ee2c85aeb45fa1e2633986edd1fe31596ba",
+    "src/capture/codebaseCapture.mjs": "59611521f326883e1332eb8533361f1d82707a2d2a3581ea8c871f42297f8718",
+    "src/demoNavigation.ts": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+    "src/demoState.ts": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+    "src/main.tsx": "3a464c6ba9091ecd74e8af7e809a2044285f0363eac2109c6c549659a772c37a",
+    "src/styles.css": "61ab9b19330a2be4d7a5c18eb0153b3a45b61ac6c7b2c6782aece237e3e08ffa",
+    "src/trace/LiveGraphRail.tsx": "e43e95cb21f5ee4e599ce8fb1071e147546239aaddda28122ad2610644b35e81",
+    "src/trace/TraceLensPanel.tsx": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+    "src/trace/TraceLensProvider.tsx": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+    "src/trace/index.ts": "3dd70e1202444ba5a92c5edadec931cfd9eae082ca972f36ffa278e5b165fd19",
+    "src/trace/trace.css": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+    "src/trace/types.ts": "42915c1ded0a9bcf89790f0eddfafebeb85d394b8a19b89385fa087f74c539a6",
+    "vendor/nodegraph-live/NodeGraph.d.ts": "c6e6a3d46c2bdd5ecbf4bc5395fe7b41460cfb178d3b0e725b5e81a1446172aa",
+    "vendor/nodegraph-live/NodeGraph.js": "b4fdf3d22e92710ce3a648a3c0bb668e563346bba8747d2cd33f3b3fac9d3587",
+    "vendor/nodegraph-live/README.md": "61ff25cddfcbef8395db90186db3e092511fb9a7be429b94085693b7788cf977",
+    "vendor/nodegraph-live/graph-model.d.ts": "8a08642942fe6c9c1630b265244d28e96de9dc1fc2cf370ca4568408e98371ea",
+    "vendor/nodegraph-live/graph-model.js": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+    "vendor/nodegraph-live/index.d.ts": "656e19072563e6df91b7821f5abc1e1af84546f9cb82c8dcdf7ca13c54bcb92d",
+    "vendor/nodegraph-live/index.js": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+    "vendor/nodegraph-live/react.d.ts": "5f45caf8018e45cfc8696eaa68332202d8a6140a6bd66abdbf71b79c35a6f936",
+    "vendor/nodegraph-live/react.js": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+    "vendor/nodegraph-live/session.d.ts": "a7960fa007cba43c33d3779186a0aed1eafe5aedf8b834626bdd7be76206cc67",
+    "vendor/nodegraph-live/session.js": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+    "db/schema.sql": "1681dbec735edbcec70f4124c4fb862195978118306c3083a8942c37d156c5d2",
+    "scripts/agent-trace-scale-smoke.mjs": "e698dc43e26376e9058c9af96ec9a689f76fa890ce449d2c6bf046d1b91cda0f",
+    "scripts/builder-access-smoke.mjs": "454497bc398f6f83aad22aec92488e450faa6f416f89ed25bbacf674e620613a",
+    "scripts/capture-live-graph-rail.mjs": "cdd1dd156f4c7306ff6d3b09fc5cb616a43112cb8977407f29b7466662dbde59",
+    "scripts/capture-noderoom-real-assets.mjs": "d3e99b680adba0ca2f55d44e286dcca2bde609461920281be4b0750d7200633b",
+    "scripts/capture-plan-fixture.mjs": "0ed8a703027455ed70f8dae75e803ed44626de17ac972be8049ac8a92425dc05",
+    "scripts/capture-plan-smoke.mjs": "9b81beeccf0929df1c00fedbb6c2d6bc12b01c20779c09a91d6cd564051fc45f",
+    "scripts/citations-check.mjs": "27043ac8d84cbb68ce786b948c93d1cb983d6c374683b7d30bdd62f76495c3db",
+    "scripts/cli-smoke.mjs": "e313ca25f7463379074a47ce5750e228de257693d44c839d23823d17bd426431",
+    "scripts/init-sqlite.mjs": "5b0ff389f3ad0daf8492d02186a8992b4b3c4602e9cc7d51ea68ff06e6a31632",
+    "scripts/installer-next-e2e-smoke.mjs": "4620c9716edd813cada52a789f06a237f6505b6006e43cb7adb402e9782cabb7",
+    "scripts/lib/proof-server.mjs": "b8b8843a266bcddf72a5c5ff45ccd46af0fa69f393a67c1621897406041dd359",
+    "scripts/mcp-smoke.mjs": "10032b3a1042018a3f1a05ef16b8ccf0c694d8dafa47483fcc45fc2c1d7239f9",
+    "scripts/record-live-graph-rail.mjs": "0891e5fe4dbd3f01adb26d5f45c27ce35b0bec88dd6b79eb3f9acd91d3dcb690",
+    "scripts/render-walkthrough-media.mjs": "2c642b383debae9b5689c4753b9bc944e93f55078478b85764a340e3e04ea89a",
+    "scripts/smoke.mjs": "873abd8f1eb64e8d038f63f767d6c2d9234a5a28ac475cef3762f4361b93c7f9",
+    "scripts/trace-coach-sqlite.mjs": "ad44dcea46392c1e91c2c69a5d94859a883eae3c0b79162bd5522f03a5638731",
+    "scripts/ui-readiness.mjs": "acd2a125de77442e368fbbe2b24f5f3ce60c4f5c7a049d888f389550a6832537",
+    "scripts/understand-anything-noderoom.mjs": "50178e8071b04d3a059c4ac9e7133a59145e0a2c830b8d479931ccf18f9dc979",
+    "package.json": "70a7a278f02403c0514e3e905eed62c773eb8cea6ac1a80cf48780f205531dab",
+    "package-lock.json": "6095da2df93f628ab2fd3666d430b75617429e844d44046ea52c9a61175a973f",
+    "AGENTS.md": "c763289a0000cdd84adff68fcd74bc29aa1a89d454baa9d2e48f58693a5f6438"
+  },
+  "changedConsumer": [],
+  "changedSource": [],
+  "sourceUnchanged": true,
+  "artifacts": {
+    "before-clean-390.png": "eb1b5221187fad6047e62cb799cc7af5cd152914d5454346eb9894aad24c3fd9",
+    "change-boundary-390.png": "9595ffb41ea33cea338fece3ed34ded8cb9d785bfa9e516c504828fe34dd26db",
+    "before-clean.html": "3211169ac6f68cd114d0c4876cd7b1a137ca2741d617c564bda152134bf0f7e3",
+    "before-clean-ax.json": "b02cb57b2a1b702b388b036c8c2bcef3e9e9c49419d8329470c97f70bc8fc8e1",
+    "annotated.html": "c1d9182c9e49cf4787619c3728b198a2511ceacf0f0707619d07f1e0ea5d043d"
+  }
+}

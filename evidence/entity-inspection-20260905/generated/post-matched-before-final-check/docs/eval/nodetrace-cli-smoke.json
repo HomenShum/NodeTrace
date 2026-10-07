@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "completedAt": "2026-09-05T04:06:59.756Z",
+  "apiKeysRequired": false,
+  "frameworks": [
+    "vite",
+    "next"
+  ],
+  "issues": []
+}

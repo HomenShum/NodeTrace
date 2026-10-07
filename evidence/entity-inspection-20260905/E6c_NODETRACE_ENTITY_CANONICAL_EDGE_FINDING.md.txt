@@ -1,0 +1,16 @@
+# Current graph and selected detail disagree
+
+**Builder. Re your request:** repositories should be usable for handoff. A developer embedding the graph renderer must receive details about the relationships its canvas actually contains. The current repair violates that compatibility contract for duplicate raw edges.
+
+**NT-ENTITY-04 · P2 · reproduced, correction required.** Both the baseline and candidate render one relationship. An actual pointer selection in the baseline emits one edge and one assertion badge, with weight 99. The candidate emits two edges/badges, weights 1 and 99. The false extra badge is inside the annotated 3px CHANGE B region:
+
+- [Actual baseline](E6c-nodetrace-node-message-browser-replay/before-boundary.png)
+- [Actual candidate](E6c-nodetrace-node-message-browser-replay/after-boundary.png)
+
+The stale-selection repair builds details from raw edge props. The unchanged graph model drops missing endpoints and canonicalizes duplicates, so those raw rows no longer necessarily describe the canvas. The actual NodeTrace rail already supplies canonical GraphSession snapshots; its recorded jobs are unaffected. The regression still falls within the explicit promise to preserve existing direct renderer behavior.
+
+Reuse the actual graph after its committed prop patch. Refresh React details for attribute-only changes before paint, and reset filters only when their actual type signature changes. Keep current visits and controlled selection. Do not introduce another normalizer or change graph-model duplicate policy.
+
+Correction to the preceding pure-code probe: initial buildGraph first-wins, while mounted patchGraph currently last-wins. The actual browser baseline is authoritative for this repair; its single weight 99 edge must be preserved. The fixture release names are arbitrary strings, not an assertion that the first input must win. The original pure output and first overly-specific pointer attempt remain retained.
+
+No application source was edited by this reviewer. The exact candidate/base copies, actual pointer callbacks, HTML, screenshots and hashes are in the [machine finding](E6c_NODETRACE_ENTITY_CANONICAL_EDGE_FINDING.json). Final entity judgment waits for correction and frozen bindings.

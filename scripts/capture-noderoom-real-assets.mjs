@@ -1,19 +1,28 @@
 import { existsSync } from "node:fs";
 import { dirname, relative, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { parseArgs } from "node:util";
 import { captureCodebaseFromPlan, findFreePort } from "../src/capture/codebaseCapture.mjs";
 
 if (isMain()) await main();
 
 async function main() {
-  const options = parseArgs(process.argv.slice(2));
+  const { values: options } = parseArgs({
+    options: {
+      "source-root": { type: "string" },
+      "capture-root": { type: "string" },
+      manifest: { type: "string" },
+      host: { type: "string" },
+      "timeout-ms": { type: "string" },
+      "node-room-port": { type: "string" },
+      "node-room-url": { type: "string" },
+    },
+  });
   const sourceRoot = resolve(options["source-root"] ?? process.env.NODETRACE_SOURCE_ROOT ?? "..");
   const captureRoot = resolve(options["capture-root"] ?? process.env.NODETRACE_CAPTURE_ROOT ?? "public/captures");
   const manifestPath = resolve(options.manifest ?? process.env.NODETRACE_REAL_CAPTURE_MANIFEST ?? `${captureRoot}/noderoom-real-capture-manifest.json`);
   const host = options.host ?? "127.0.0.1";
   const timeoutMs = Number(options["timeout-ms"] ?? 120_000);
-  const codeCli = options["code-cli"] ?? process.env.NODETRACE_CODE_CLI ?? "code";
-  const editorCapture = options["editor-capture"] ?? process.env.NODETRACE_EDITOR_CAPTURE ?? "code-browser";
 
   if (!existsSync(resolve(sourceRoot, "package.json"))) {
     console.error(`NodeRoom source root not found: ${sourceRoot}`);
@@ -21,7 +30,6 @@ async function main() {
   }
 
   const nodeRoomPort = Number(options["node-room-port"] ?? await findFreePort(5179, host));
-  const vscodePort = Number(options["vscode-port"] ?? await findFreePort(5199, host));
   const appUrl = options["node-room-url"];
   const plan = buildNodeRoomCapturePlan({
     sourceRoot,
@@ -29,10 +37,7 @@ async function main() {
     manifestPath,
     host,
     timeoutMs,
-    codeCli,
-    editorCapture,
     nodeRoomPort,
-    vscodePort,
     appUrl,
   });
 
@@ -47,10 +52,7 @@ export function buildNodeRoomCapturePlan({
   manifestPath = "public/captures/noderoom-real-capture-manifest.json",
   host = "127.0.0.1",
   timeoutMs = 120_000,
-  codeCli = "code",
-  editorCapture = "code-browser",
   nodeRoomPort = 5179,
-  vscodePort = 5199,
   appUrl,
 } = {}) {
   return {
@@ -61,12 +63,7 @@ export function buildNodeRoomCapturePlan({
     captureRoot,
     manifestPath,
     timeoutMs,
-    editor: {
-      mode: editorCapture,
-      codeCli,
-      host,
-      port: vscodePort,
-    },
+    editor: { mode: "code-browser" },
     app: {
       name: "NodeRoom",
       url: appUrl,
@@ -193,25 +190,6 @@ export function buildNodeRoomCapturePlan({
   };
 }
 
-function parseArgs(args) {
-  const parsed = {};
-  for (let index = 0; index < args.length; index += 1) {
-    const arg = args[index];
-    if (!arg.startsWith("--")) continue;
-    const [rawKey, inlineValue] = arg.slice(2).split("=", 2);
-    if (inlineValue !== undefined) {
-      parsed[rawKey] = inlineValue;
-      continue;
-    }
-    const next = args[index + 1];
-    if (!next || next.startsWith("--")) parsed[rawKey] = "true";
-    else {
-      parsed[rawKey] = next;
-      index += 1;
-    }
-  }
-  return parsed;
-}
 
 function relativePath(path) {
   return relative(process.cwd(), path).replaceAll("\\", "/");

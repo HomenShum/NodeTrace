@@ -1,0 +1,68 @@
+{
+  "url": "http://127.0.0.1:39642/nodetrace?host=preserved&returnTo=dashboard#host-section",
+  "viewport": {
+    "width": 1440,
+    "height": 960
+  },
+  "theme": "rgb(245, 247, 251)",
+  "scroll": {
+    "x": 0,
+    "y": 26
+  },
+  "overflow": 0,
+  "active": "<button type=\"button\" data-testid=\"nodegraph-fit\" style=\"border: 1px solid rgb(226, 229, 231); border-radius: 6px; background: transparent; color: rgb(90, 98, 106); padding: 2px 8px; font-size: 11px; cursor: pointer;\">fit</button>",
+  "entityCount": "10",
+  "edgeCount": "15",
+  "modal": false,
+  "fit": {
+    "x": 54,
+    "y": 597.9375,
+    "width": 27.84375,
+    "height": 21.9375,
+    "documentY": 623.9375
+  },
+  "controls": {
+    "x": 54,
+    "y": 597.9375,
+    "width": 1332,
+    "height": 21.9375,
+    "documentY": 623.9375
+  },
+  "canvas": {
+    "x": 55,
+    "y": 628.875,
+    "width": 1330,
+    "height": 298,
+    "documentY": 654.875
+  },
+  "result": null,
+  "graphControls": [
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "name": "fit",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 54,
+        "y": 597.9375,
+        "width": 27.84375,
+        "height": 21.9375,
+        "documentY": 623.9375
+      }
+    },
+    {
+      "tag": "INPUT",
+      "role": null,
+      "name": "traversal(15)· local",
+      "tabIndex": 0,
+      "bounds": {
+        "x": 97.84375,
+        "y": 602.40625,
+        "width": 13,
+        "height": 13,
+        "documentY": 628.40625
+      }
+    }
+  ],
+  "readout": null
+}

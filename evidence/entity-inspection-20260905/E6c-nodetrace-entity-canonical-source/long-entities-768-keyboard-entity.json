@@ -1,0 +1,24 @@
+{
+  "url": "http://127.0.0.1:4917/?step=coach-step-01-artifact-entry",
+  "viewport": {
+    "width": 768,
+    "height": 1024
+  },
+  "overflow": 0,
+  "focus": "<select aria-describedby=\"_r_0_\"><option value=\"\">Choose an entity</option><option value=\"[&quot;actor&quot;,&quot;Reviewer_long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-&quot;]\">actor: Reviewer_long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-long-identifier-</option><option value=\"[&quot;tool&quot;,&quot;tool:供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/&quot;]\">tool: tool:供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/供应商🙂/</option><option value=\"[&quot;artifact&quot;,&quot;artifact_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&quot;]\">artifact: artifact_aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option><option value=\"[&quot;step&quot;,&quot;entry&quot;]\">step: entry</option><option value=\"[&quot;actor&quot;,&quot;trace-coach&quot;]\">actor: trace-coach</option><option value=\"[&quot;tool&quot;,&quot;workSurface.trace&quot;]\">tool: workSurface.trace</option><option value=\"[&quot;artifact&quot;,&quot;noderoom-codebase-trace&quot;]\">artifact: noderoom-codebase-trace</option><option value=\"[&quot;step&quot;,&quot;trace-tabs&quot;]\">step: trace-tabs</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceData&quot;]\">tool: workSurface.traceData</option><option value=\"[&quot;step&quot;,&quot;data-model&quot;]\">step: data-model</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceSteps&quot;]\">tool: workSurface.traceSteps</option><option value=\"[&quot;step&quot;,&quot;steps&quot;]\">step: steps</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceFlow&quot;]\">tool: workSurface.traceFlow</option><option value=\"[&quot;step&quot;,&quot;flow&quot;]\">step: flow</option><option value=\"[&quot;tool&quot;,&quot;workSurface.traceStyle&quot;]\">tool: workSurface.traceStyle</option><option value=\"[&quot;step&quot;,&quot;look-and-feel&quot;]\">step: look-and-feel</option></select>",
+  "headings": [
+    {
+      "level": "H1",
+      "text": "Portable trace UI for agent apps."
+    },
+    {
+      "level": "H2",
+      "text": "Live graph rail"
+    },
+    {
+      "level": "H3",
+      "text": "Relationship graph"
+    }
+  ],
+  "modal": false
+}

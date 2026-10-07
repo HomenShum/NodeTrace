@@ -1,0 +1,1723 @@
+{
+  "at": "2026-09-05T04:59:57.132581+00:00",
+  "proof": "NODETRACE-INSTALLED-VITE-ENTITY-OWNER-03",
+  "verdict": "RECORDED_INSTALLED_ENTITY_JOB_VERIFIED_WITH_LIMITS",
+  "requestTrace": "Make each repo usable for developer/user handoff, including visual UI, responsiveness and interaction standards.",
+  "reviewerContext": "Independent of application authorship; reused reviewer context after a fresh spawn was rejected by the tool thread limit.",
+  "consumer": "D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905",
+  "origin": "http://127.0.0.1:4958",
+  "route": "/nodetrace.html?host=preserved&returnTo=dashboard#host-section",
+  "rendererSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+  "provenance": {
+    "normalOriginalInstallation": "E6c_NODETRACE_INSTALLED_VITE_ENTITY_PROOF.json",
+    "historicalReportSha256": "0a8232b5bd56518093cdf43210f8b35b07c640a22c6b5db6a59e31309055d3a7",
+    "historicalRendererSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+    "finalInputRefresh": "Only installed vendor NodeGraph.js copied from final frozen primary bytes after bounded compatibility passed; actual ordinary build rerun. This is an explicit update of an existing normally installed consumer, not a claim of a second complete fresh installer run.",
+    "refreshReceipt": "E6c-nodetrace-installed-owner-refresh\\receipt.json",
+    "refreshReceiptSha256": "2a72bcc44a6cd4e8b148a203fa5df857ada98dcb1ece83425d098b6b768eada5",
+    "lane": {
+      "kind": "vite",
+      "consumer": "D:/ProjectRecovery/nodetrace-entity-vite-final-consumer-20260905",
+      "exitCode": 0,
+      "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "changes": [
+        "dist/nodetrace-state.json",
+        "src/nodetrace/vendor/nodegraph-live/NodeGraph.js"
+      ],
+      "unexpectedChanges": [],
+      "priorBuildSha256": "90b3def865d1a0e625fd0f14898a142d891c2bab51144dd9b07f89fd7d021d12",
+      "priorRendererSha256": "3cb5072f1e65e7646770c4e69b6ab6206309d9909736b9ec5016b165195df724",
+      "beforeIdentitySha256": "28c776bbb57b495542f9601d567c698113a78288f3fac18f47ff22b260f2542f",
+      "afterIdentitySha256": "c21b9a9e680baabc04d5ae174f895e9110ad58b3f4298c6a2d60c119aebebb6e"
+    },
+    "priorRendererAndCompleteBuildBytesRetained": true
+  },
+  "coverage": {
+    "widths": [
+      320,
+      360,
+      390,
+      768,
+      1024,
+      1440,
+      1920
+    ],
+    "checks": 1874,
+    "captures": 95,
+    "normalMotion": true,
+    "videos": 7,
+    "actualInitialTraceEvents": 4,
+    "actualInitialEntities": 10,
+    "actualInitialTraversalEdges": 15,
+    "boundedLongVariantEntities": 12,
+    "boundedLongVariantTraversalEdges": 18
+  },
+  "claims": [
+    {
+      "claim": "Every actual entity is naturally keyboard-reachable; full identity and exact producing event IDs agree.",
+      "status": "VERIFIED_FOR_RECORDED_INPUTS"
+    },
+    {
+      "claim": "Pointer/native/clear/reselect share one selected entity; visits agree and count remains explicitly unknown.",
+      "status": "VERIFIED_FOR_RECORDED_INPUTS"
+    },
+    {
+      "claim": "Entity/Fit have44px targets and visible focus; positive current glyph frames fit without collisions through hover and pan/Fit.",
+      "status": "VERIFIED_FOR_RECORDED_INPUTS"
+    },
+    {
+      "claim": "Long full names, Unicode and event IDs stay readable inside both panels.",
+      "status": "VERIFIED_FOR_BOUNDED_VARIANTS"
+    },
+    {
+      "claim": "Installed guidance and modal focus/closure/history preserve the host path/query/hash.",
+      "status": "VERIFIED_FOR_RECORDED_JOURNEYS"
+    },
+    {
+      "claim": "The actual displayed refresh command succeeds and its newly created event IDs reach the UI.",
+      "status": "VERIFIED",
+      "evidence": [
+        {
+          "displayed": "npm run nodetrace:happy-path",
+          "status": 0,
+          "beforeSha256": "1e0b05f14d415e956dee933bf1cddbe9701ecc9f7977f0d1f57758a8bb3a2866",
+          "afterSha256": "4c349b723ce89d21936c87207f4179e2a0bf9956df6ff0b613ee7932767c8ff3",
+          "traces": 4,
+          "proofs": 2
+        }
+      ]
+    },
+    {
+      "claim": "Installed source/config/package/lock/build remain exact throughout browser and refresh proof.",
+      "status": "VERIFIED",
+      "protectedFiles": 38,
+      "drift": []
+    }
+  ],
+  "sourceInstalledBindings": [
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+      "replacements": [],
+      "sourceSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "expectedInstalledSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "installedSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/NodeGraph.d.ts",
+      "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+      "replacements": [],
+      "sourceSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "expectedInstalledSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "installedSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/graph-model.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/graph-model.js",
+      "replacements": [],
+      "sourceSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "expectedInstalledSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "installedSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/session.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/session.js",
+      "replacements": [],
+      "sourceSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "expectedInstalledSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "installedSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/react.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/react.js",
+      "replacements": [],
+      "sourceSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "expectedInstalledSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "installedSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+      "exact": true
+    },
+    {
+      "source": "vendor/nodegraph-live/index.js",
+      "target": "src/nodetrace/vendor/nodegraph-live/index.js",
+      "replacements": [],
+      "sourceSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "expectedInstalledSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "installedSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+      "exact": true
+    },
+    {
+      "source": "src/trace/LiveGraphRail.tsx",
+      "target": "src/nodetrace/LiveGraphRail.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "7121abfc799f78e3741f966e7379e11ff021de89f27875cfb81100138feb273b",
+      "expectedInstalledSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "installedSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+      "exact": true
+    },
+    {
+      "source": "src/styles.css",
+      "target": "src/nodetrace-demo/styles.css",
+      "replacements": [],
+      "sourceSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "expectedInstalledSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "installedSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+      "exact": true
+    },
+    {
+      "source": "src/DemoDashboard.tsx",
+      "target": "src/nodetrace-demo/DemoDashboard.tsx",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "f27d2b4f27bad8a600e92057712bcb2512634ad24548c55db0ad2a3db9d31455",
+      "expectedInstalledSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "installedSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+      "exact": true
+    },
+    {
+      "source": "src/demoState.ts",
+      "target": "src/nodetrace-demo/demoState.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "113cccf1a708c025c5e24930b43e51c7c1b98383b5d6a0cf48a9e2b60e6e8490",
+      "expectedInstalledSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "installedSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+      "exact": true
+    },
+    {
+      "source": "src/demoNavigation.ts",
+      "target": "src/nodetrace-demo/demoNavigation.ts",
+      "replacements": [
+        [
+          "./trace",
+          "../nodetrace"
+        ]
+      ],
+      "sourceSha256": "0c3d00fca4a9c6567ec361478a43c9e30e8de0d520da3738c3d7f21482d3c863",
+      "expectedInstalledSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "installedSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensPanel.tsx",
+      "target": "src/nodetrace/TraceLensPanel.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "expectedInstalledSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "installedSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+      "exact": true
+    },
+    {
+      "source": "src/trace/TraceLensProvider.tsx",
+      "target": "src/nodetrace/TraceLensProvider.tsx",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "expectedInstalledSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "installedSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+      "exact": true
+    },
+    {
+      "source": "src/trace/trace.css",
+      "target": "src/nodetrace/trace.css",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "expectedInstalledSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "installedSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+      "exact": true
+    },
+    {
+      "source": "src/trace/types.ts",
+      "target": "src/nodetrace/types.ts",
+      "replacements": [
+        [
+          "../../vendor/nodegraph-live/",
+          "./vendor/nodegraph-live/"
+        ]
+      ],
+      "sourceSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "expectedInstalledSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "installedSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+      "exact": true
+    }
+  ],
+  "helperHashes": {
+    "entity-inspection-proof.mjs": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+    "proof-server.mjs": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd"
+  },
+  "wrapper": {
+    "path": "src/nodetrace-demo/main.tsx",
+    "sha256": "a707f7da8130e070c514ea16ebc34b791487c012e40070b08fc20009aad0208a",
+    "generatorHash": "a7ea71cdc05b5214cb01914b62fd172cb5af39a86d59bf9e87b272eb18e8526c",
+    "entryMatchesReceipt": true
+  },
+  "servedResponses": {
+    "count": 560,
+    "mode": "Vite dev transformations, not production assets",
+    "allSucceeded": true,
+    "allBuildBodiesMatch": null,
+    "directSourceProbes": [
+      {
+        "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.js",
+        "status": 200,
+        "responseSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4",
+        "recoveredSourceSha256": "f8014271a069d8d16f4d603e948c4beae952cea43611dca0968a36c582cda5b2",
+        "diskSha256": "e1fb07f8877a9281d8f03b8d766aea818ef4abbcd54e95dfc167bee74a95fae4"
+      },
+      {
+        "target": "src/nodetrace/vendor/nodegraph-live/NodeGraph.d.ts",
+        "status": 200,
+        "responseSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580",
+        "recoveredSourceSha256": null,
+        "diskSha256": "b5293a73ffc430c60fe5859cf2bb9cf8a116b23cf6da019be1c51f99c6c62580"
+      },
+      {
+        "target": "src/nodetrace/vendor/nodegraph-live/graph-model.js",
+        "status": 200,
+        "responseSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71",
+        "recoveredSourceSha256": null,
+        "diskSha256": "37d0d231264638e2dff3d7d7367684f56bf85b7fd290da9d252f04f3eb466d71"
+      },
+      {
+        "target": "src/nodetrace/vendor/nodegraph-live/session.js",
+        "status": 200,
+        "responseSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94",
+        "recoveredSourceSha256": null,
+        "diskSha256": "5388a479ff2be8c9aa131c4a266aa480bae5b92e04631ab03ba22e020edacd94"
+      },
+      {
+        "target": "src/nodetrace/vendor/nodegraph-live/react.js",
+        "status": 200,
+        "responseSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb",
+        "recoveredSourceSha256": null,
+        "diskSha256": "5b9c6ccffcdcfa4ddc0b17bb54958645a96c4cc13f213b56bf7c0959bcc625cb"
+      },
+      {
+        "target": "src/nodetrace/vendor/nodegraph-live/index.js",
+        "status": 200,
+        "responseSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501",
+        "recoveredSourceSha256": null,
+        "diskSha256": "3ab47706f06afcb4fe40cb876f565fd82f03ae58319c463bd7b1be7745fb6501"
+      },
+      {
+        "target": "src/nodetrace/LiveGraphRail.tsx",
+        "status": 200,
+        "responseSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a",
+        "recoveredSourceSha256": null,
+        "diskSha256": "99e16bb53e69e7a60dfb880df2acf65842b63ae82ad7dce7d50f187fec6d338a"
+      },
+      {
+        "target": "src/nodetrace-demo/styles.css",
+        "status": 200,
+        "responseSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce",
+        "recoveredSourceSha256": null,
+        "diskSha256": "d9656364f780b49a5bb0210825d1e6997236d2337153a6a362f52c883a9b13ce"
+      },
+      {
+        "target": "src/nodetrace-demo/DemoDashboard.tsx",
+        "status": 200,
+        "responseSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5",
+        "recoveredSourceSha256": null,
+        "diskSha256": "32fea0c8bc51c0e816af355d5a5542304e345b0e641d69735ce624fa3f2712c5"
+      },
+      {
+        "target": "src/nodetrace-demo/demoState.ts",
+        "status": 200,
+        "responseSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed",
+        "recoveredSourceSha256": null,
+        "diskSha256": "bcee56334c3720fe3bb879f63fef6a6d15468c302a0005f0e9d17d811e2013ed"
+      },
+      {
+        "target": "src/nodetrace-demo/demoNavigation.ts",
+        "status": 200,
+        "responseSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633",
+        "recoveredSourceSha256": null,
+        "diskSha256": "b09715787e6daea8ab51af74b7ef4fea21af4b3e9216ef7fcf9735e406d94633"
+      },
+      {
+        "target": "src/nodetrace/TraceLensPanel.tsx",
+        "status": 200,
+        "responseSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb",
+        "recoveredSourceSha256": null,
+        "diskSha256": "ab6ce16f3b7487465b81943768e07b6e70a0266c30b571a87eaa4d13067395fb"
+      },
+      {
+        "target": "src/nodetrace/TraceLensProvider.tsx",
+        "status": 200,
+        "responseSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b",
+        "recoveredSourceSha256": null,
+        "diskSha256": "9501e732d144170100189f9a7e83c54543a4eea7009f609acd511781439da28b"
+      },
+      {
+        "target": "src/nodetrace/trace.css",
+        "status": 200,
+        "responseSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758",
+        "recoveredSourceSha256": null,
+        "diskSha256": "84bb34c2480005244e69ecd265d0c5f117d3729f2fdd9282f1f683e31d2a3758"
+      },
+      {
+        "target": "src/nodetrace/types.ts",
+        "status": 200,
+        "responseSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf",
+        "recoveredSourceSha256": null,
+        "diskSha256": "3965d9881747ab433907622985b28e14cc38269c99853f343b2c8f74a1dd36cf"
+      }
+    ]
+  },
+  "fixture": {
+    "initialSha256": "1e0b05f14d415e956dee933bf1cddbe9701ecc9f7977f0d1f57758a8bb3a2866",
+    "initialTraces": 4,
+    "finalSha256": "4c349b723ce89d21936c87207f4179e2a0bf9956df6ff0b613ee7932767c8ff3"
+  },
+  "commandPreservation": {
+    "before": "E6c-nodetrace-installed-vite-entity-owner\\command-before",
+    "after": "E6c-nodetrace-installed-vite-entity-owner\\command-after",
+    "fullStateDatabaseAndEvaluationBytesPreserved": true,
+    "successfulRefreshRetainedInConsumer": true
+  },
+  "console": {
+    "pageErrors": 0,
+    "consoleErrors": 0,
+    "warningCount": 4,
+    "warningDisposition": "ReadPixels GPU-stall warnings retained; no runtime failure accompanies these checks."
+  },
+  "viewedScreenshots": [
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-320-populated.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-360-pointer-to-keyboard.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-390-modal.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-768-fit.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-1024-long-long-entity-2.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-1440-fit.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-1920-populated.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-320-long-long-entity-0.png",
+    "E6c-nodetrace-installed-vite-entity-owner\\vite-390-refreshed-state.png"
+  ],
+  "preservedHistoricalFailures": [
+    {
+      "directory": "E6c-nodetrace-installed-vite-entity",
+      "disposition": "INITIAL_TRANSPORT_FAILURE_NOT_REPRODUCED",
+      "explanation": "Server reported ready, but first Node source fetch failed before browser work. Initial error lacked nested socket cause. No root cause is asserted; later direct-byte source fetches and browser jobs succeeded.",
+      "reportSha256": "b7f375c28fdb5b43fb5298b72e772ff5a30080eb3f5abbc497bd3b4bc2fc6fb8"
+    },
+    {
+      "directory": "E6c-nodetrace-installed-vite-entity-replay",
+      "disposition": "HARNESS_PARSING_ASSUMPTION_CORRECTED",
+      "explanation": "The raw HTTP response already exactly matched the source file. The harness incorrectly decoded the first use-client directive as an export wrapper. Direct byte equality now proves identity; all fifteen final responses match installed bytes directly.",
+      "reportSha256": "7ca4e31e8437ec743fe9a986eebc9c57860ec363acd6660035f0fa252391d205"
+    },
+    {
+      "directory": "E6c-nodetrace-installed-vite-entity-final",
+      "disposition": "HARNESS_READINESS_ASSUMPTION_CORRECTED",
+      "explanation": "Waiting for networkidle timed out although DOM/pixels show the real dev app rendered. Final readiness uses DOMContentLoaded plus actual enabled UI, exact fetched state and positive stable graph paint. No claim is made about which dev request prevented network idle.",
+      "reportSha256": "81f9f60570da33cd3adb2a33b31c69a35038c9ce5f0b4d04e8a26fa1f2b1d964"
+    }
+  ],
+  "limits": [
+    "Next uses an actual rebuilt local production-mode server; Vite uses only its documented development route. No hosted production or deployment claim.",
+    "Vite optional demo HTML is not included in the ordinary host production output; unchanged disposition remains in E6c_NODETRACE_VITE_BUILD_DISPOSITION.md.",
+    "Anonymous desktop Chromium with normal motion and emulated widths; no physical touch, screen-reader participant, alternate engine, maximum graph scale, universal cold-start reliability or human usability certification.",
+    "Entity uses natural Tab and ArrowDown; separate modal exercise focuses its opener explicitly before keyboard activation.",
+    "Seven videos retained without assigning an independent motion grade. Whole-product and eight-dimension grades remain separate.",
+    "Reviewer performed the explicitly authorized installed vendor-file refresh and local builds; no primary application/index/ref/build/state, credentials, provider requests, deployment or4173 actions."
+  ],
+  "artifacts": {
+    "E6c-nodetrace-installed-vite-entity-owner/advertised-command.log": {
+      "sha256": "cf5cd94e9ba7e3cdea5b69aeecad157f390ebd915c359dea5dc30253ddadaf6f",
+      "bytes": 206
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/entity-inspection-proof.mjs": {
+      "sha256": "c032e9c2cab4ddace728bc5a37ac5b21a52f66c2e61bdf3fecb852a35a01de2e",
+      "bytes": 8918
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/initial-state.json": {
+      "sha256": "1e0b05f14d415e956dee933bf1cddbe9701ecc9f7977f0d1f57758a8bb3a2866",
+      "bytes": 3355
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/installed-after.json": {
+      "sha256": "a8623d9a6687ca6da00af6764c2535893d296ab0cfdcb49a111f1c234c9652fa",
+      "bytes": 5451
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/installed-before.json": {
+      "sha256": "a8623d9a6687ca6da00af6764c2535893d296ab0cfdcb49a111f1c234c9652fa",
+      "bytes": 5451
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/long-state.json": {
+      "sha256": "60340c324398bc931590369148bf540048dd6ea5bd9a3d94009b302646cf2177",
+      "bytes": 4349
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@2bc98dfa43b173778a529f13accf80ea.webm": {
+      "sha256": "b6efed0da75134b44b25479ec66f4f053e2f2f56fdead26007b65bfbfa5b5acd",
+      "bytes": 1264071
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@34c34ea0f51a998b92c31d42e4f4ffe2.webm": {
+      "sha256": "e62aec208179f1fbfad59bca433174aaf0e707f679c5832553430b84e92ffe75",
+      "bytes": 777467
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@7d9892efad001f53f84ddd00c314fe83.webm": {
+      "sha256": "c5c4392709ed15d4d104ce82e9eb3e2ad4f600a2ee2ba171e72eb0fe82f34178",
+      "bytes": 1569874
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@8699b5b472d6798e7fe9871023413d12.webm": {
+      "sha256": "27775022b717ae2faa4984392d5dcfb59d075dd85c92c816ad2a10077a8372af",
+      "bytes": 863216
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@966b46e2f8f35f8c0369d7e84ee801d1.webm": {
+      "sha256": "71e0ade183c0d44c13426bda717d47e224edfdd6fb4f7707f393575bc9ac0ef0",
+      "bytes": 1101527
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@b50b5546721a2b5cc4a8e0b157166fd9.webm": {
+      "sha256": "f86cd728a9ad23b3e8e83e2349be63b5544f91b5eb41fd9721d407a9d20afcdd",
+      "bytes": 1311113
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/page@fabf62e4e1964e0b412839e17f14d706.webm": {
+      "sha256": "9e80a1f94a1dd2570cb8b1d8c8c0623e54cefa71b0027350684607e201499aef",
+      "bytes": 768906
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/proof-server.mjs": {
+      "sha256": "0dc00bd4b52f55e7e7c052b2fe89eaff72958cea8d09faaf53203d1d3346cffd",
+      "bytes": 10818
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/report.json": {
+      "sha256": "15666d0ae1b6529c56608e91e891099a850068ce9c9c5b22afd789e7b6f20654",
+      "bytes": 1618540
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/served-source-probes.json": {
+      "sha256": "1724b7058bf982aa369d0f272f9f6cc9217d2ef905ed37495338a7aa23dd0bdf",
+      "bytes": 4461
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/server-events.json": {
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/server.log": {
+      "sha256": "5208a648b78b8e1f3c3ffb175c14f3e950e2668f73edeaef8cfa14da03ebc4c9",
+      "bytes": 159
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/source-installed-bindings.json": {
+      "sha256": "0bbd003dad5402317a3b7f6974d04f99cd257950325efb06eab291520d560305",
+      "bytes": 8329
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-fit.html": {
+      "sha256": "287658670d393cccb95e3828deb9aae3c72075a3159f023f2b8731e6e7d6cf87",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-fit.json": {
+      "sha256": "6f9c1cefbe15822d8a02aca2ff943457e8a6884b0f3a38f2cf3d7f850237bd6a",
+      "bytes": 4542
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-fit.png": {
+      "sha256": "c1c94de95cea212c6146269b39f70d619509b126e120d50c7a7b64d387f1051b",
+      "bytes": 182674
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-keyboard-entity.html": {
+      "sha256": "2ca830dc1baeb2dfe549b322bdfb7e370c71b5cc0e9b030fd371aee23ec62436",
+      "bytes": 31846
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-keyboard-entity.json": {
+      "sha256": "eb1b270a9e80ec4a87ed47b05fb360a3748f31aa9d5a55c704e6778a6eb57516",
+      "bytes": 5027
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-keyboard-entity.png": {
+      "sha256": "45557a5ea21b0287283585a15fd36b2c9096572b43c6ccfedb42f2467686aaaa",
+      "bytes": 176572
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-keyboard-entity.html": {
+      "sha256": "eb8d8394c3275d766454c8ea3354b26d5f8e5011098e965163427f026ee8bc40",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-keyboard-entity.json": {
+      "sha256": "35e6121d7b6c77dcbdad4479fc25850bc0e39bdc9e3667c51c1038738dee61f1",
+      "bytes": 8796
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-keyboard-entity.png": {
+      "sha256": "b0eab3fbaa3fc0cbadcd07375182fefa7574d2caec9e96c1723e8666ed2ff62f",
+      "bytes": 173180
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-0.html": {
+      "sha256": "58866b87bc7513a691e70365773e176a9b8f31f671b1fdb633f3f308cf05a406",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-0.json": {
+      "sha256": "a716cace65fdb5e0dcf44f37d6ed9c5fd2200f73025c6d2f0611cc09a99dc6fe",
+      "bytes": 10424
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-0.png": {
+      "sha256": "7c93302e314e32382c195de8d60907c51a9a7b6e784ce968de7b82e7427bcda6",
+      "bytes": 184331
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-1.html": {
+      "sha256": "23f1070f9c6271f0be233830729ddc518c5c15b3786acb283e5882b9fb92b25b",
+      "bytes": 35904
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-1.json": {
+      "sha256": "5768ed653cdf79c136af2ebc64a9c1928f0e9d599e84b004921102a6d76f88c6",
+      "bytes": 11210
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-1.png": {
+      "sha256": "d52575f5ee4fcdb17654b62f2a12dd07edcd5bd10849393406542f4c01843782",
+      "bytes": 210790
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-2.html": {
+      "sha256": "e221505dd2fe8173dea91531e83fd4613e90133f9e5cf5a62db78ef339e3d581",
+      "bytes": 35980
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-2.json": {
+      "sha256": "c188500e8f8ec7b7e8c5a790a34f4478d37164fa7ca128b7b1bba28ebaf9e47e",
+      "bytes": 11324
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-long-entity-2.png": {
+      "sha256": "ded89d873de86330a9323e88de13eb134e6d6a535c7bd26553f135cf5bd78fc8",
+      "bytes": 180011
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-pointer-entity.html": {
+      "sha256": "eb8d8394c3275d766454c8ea3354b26d5f8e5011098e965163427f026ee8bc40",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-pointer-entity.json": {
+      "sha256": "f16cb98c6672ac574ecb31aa7cd1bd2362b0d2c5ec2419b83eba89086b6eaf0b",
+      "bytes": 18223
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-pointer-entity.png": {
+      "sha256": "0ef5d457461e4707b0f49f565e1b811f2ee053da877087d33a4b6b082308b7d0",
+      "bytes": 172278
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-pointer-to-keyboard.html": {
+      "sha256": "58866b87bc7513a691e70365773e176a9b8f31f671b1fdb633f3f308cf05a406",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-pointer-to-keyboard.json": {
+      "sha256": "a716cace65fdb5e0dcf44f37d6ed9c5fd2200f73025c6d2f0611cc09a99dc6fe",
+      "bytes": 10424
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-long-pointer-to-keyboard.png": {
+      "sha256": "7c93302e314e32382c195de8d60907c51a9a7b6e784ce968de7b82e7427bcda6",
+      "bytes": 184331
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-modal.html": {
+      "sha256": "395cc3ae3507137305ad9a23612342c23553ca7aadc6a6986dccfc01c058ad2d",
+      "bytes": 35207
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-modal.json": {
+      "sha256": "8fb76e1ed0b883cd2e76176d79074e4cb12a1f4270a654d7f59b6545cce7e72b",
+      "bytes": 4727
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-modal.png": {
+      "sha256": "82a7040b54767f7e793f76d97358f06eb901f0e5265aaf7ad0bcd0aafa6566e3",
+      "bytes": 147581
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pan.html": {
+      "sha256": "287658670d393cccb95e3828deb9aae3c72075a3159f023f2b8731e6e7d6cf87",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pan.json": {
+      "sha256": "670fb629bbe837d9f4b9f76c205ebd6998bc609d500bde16226b76c60409f79e",
+      "bytes": 14480
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pan.png": {
+      "sha256": "0451bf25656860667a8dda1190eb79be8f24716ee28847f5f9dbbff6a9ee1691",
+      "bytes": 178107
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pointer-entity.html": {
+      "sha256": "a194066417a591829db4bd199126da5b1a129a4789e70969e62144837d5f7e64",
+      "bytes": 31892
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pointer-entity.json": {
+      "sha256": "a41a555870d57bc2b6d76a481f8be7d63c1672b96e4ea64ec3e0f794ce1abefc",
+      "bytes": 14827
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pointer-entity.png": {
+      "sha256": "d7db65a3084635e0c3d7e110884e57b559e6701086945869ae0d20797428bf2f",
+      "bytes": 181736
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pointer-to-keyboard.html": {
+      "sha256": "287658670d393cccb95e3828deb9aae3c72075a3159f023f2b8731e6e7d6cf87",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pointer-to-keyboard.json": {
+      "sha256": "4119bd40d406397366046abf54fa1d1a46bcafcfc92d8fddcdeaa704b9fdca3d",
+      "bytes": 5590
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-pointer-to-keyboard.png": {
+      "sha256": "fd659c83f8d2bc81579186d9eccdecef69c45bc0fa69d2dcc1c7bddeb80ac13e",
+      "bytes": 186209
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-populated.html": {
+      "sha256": "abcbc858a520b8658939bab0d5df43efa4635ecf99a5e208f18e27ab0e123c91",
+      "bytes": 30973
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-populated.json": {
+      "sha256": "7a1d0de459f64ecd53274ae32895b3dfb97d8eca9b7ae363c7f33fcbeda7eec3",
+      "bytes": 13213
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-populated.png": {
+      "sha256": "d34b7b191b8874e7f03e7d27b7a846f4dda61de948db4d8cbee53fe947a677bb",
+      "bytes": 166507
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1024-video.json": {
+      "sha256": "dbb74fe3d1af0427d827a6df59eaef4c0b906585885c72aadc88a52a28ec5b63",
+      "bytes": 99
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-fit.html": {
+      "sha256": "cdc584ec5668b25211ff1c539d0371079867e4064c522bb36bd689f6e7590a18",
+      "bytes": 32069
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-fit.json": {
+      "sha256": "4b9c401c6442782c402da44366d3ea8bfd02e59349c96216187753871b176055",
+      "bytes": 4816
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-fit.png": {
+      "sha256": "23a1358f86d6d3cf8fcb232594faa4789da5a5ca47d57d232cb8e4d9ebcb2380",
+      "bytes": 212951
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-keyboard-entity.html": {
+      "sha256": "d6256e16f0f996056093ff9fff8c9ac84e225654c6184aff229e57f76bb9b245",
+      "bytes": 31860
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-keyboard-entity.json": {
+      "sha256": "d03dba2c705e320cfea67f3e299d70c77a3e31853f285d535752d4f2715f9a24",
+      "bytes": 5301
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-keyboard-entity.png": {
+      "sha256": "2e08ff91ebc34ad4d861463b689121a42cbb3d9d98c5fd1deb1d17b0e4818df8",
+      "bytes": 206829
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-keyboard-entity.html": {
+      "sha256": "af1b2826d658bc8a786462509378cb4b75fd974ae9b65245aa1bb9f1842aa37f",
+      "bytes": 34466
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-keyboard-entity.json": {
+      "sha256": "0291f1ba58200affcee942788b86903c6568d691ab88be3217097d6eefa02663",
+      "bytes": 8883
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-keyboard-entity.png": {
+      "sha256": "415e45aa521fc01192b622eb73b2dee0b3d7a727518ccae837d40dd4ba8feb60",
+      "bytes": 200941
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-0.html": {
+      "sha256": "5d212954d327762efc6e2969f49e624cf7baad2ad1e9fae038d4898bad68d027",
+      "bytes": 35396
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-0.json": {
+      "sha256": "32f463dc2f3249c0cd1696fd15473623812ede27c781d98224d07baa114a167e",
+      "bytes": 10514
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-0.png": {
+      "sha256": "a12a781585b57e3c797a11db2ec8213ca325ce4fed175de7f31a19a108a65694",
+      "bytes": 209528
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-1.html": {
+      "sha256": "2b2f220e74c7ce84d4edd1e09a8b707fcb0171f074928b4c2439edec41516171",
+      "bytes": 35918
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-1.json": {
+      "sha256": "c3acbce2810be383a6695d8c7740227d3ccd2e89d7d5fa7a5b96dba99ca73ac2",
+      "bytes": 11296
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-1.png": {
+      "sha256": "45086c31c0ac547592f080387f9874b799d9001ac6ce0b91494a28d3e9e79421",
+      "bytes": 230135
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-2.html": {
+      "sha256": "248edd0c7c1ec10b59c18cb3c18cfe9b3ddfd024897a14d5eb54cb7c0eaefb34",
+      "bytes": 35994
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-2.json": {
+      "sha256": "fa5fbb02bde545c84c7176f8373c76232f8f655ed42d71186325d853e2979fc0",
+      "bytes": 11413
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-long-entity-2.png": {
+      "sha256": "1f317d38925854b6ca11a5d4b9ca24cedc383dad4a33d5ec7d1ffd7e6cdda4d0",
+      "bytes": 205992
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-pointer-entity.html": {
+      "sha256": "af1b2826d658bc8a786462509378cb4b75fd974ae9b65245aa1bb9f1842aa37f",
+      "bytes": 34466
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-pointer-entity.json": {
+      "sha256": "10a339a0b273f26eae9fc44bbac420a79c4f01076d378df4fc9cffdb3349e3f8",
+      "bytes": 18324
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-pointer-entity.png": {
+      "sha256": "9a302ccfb2651b6d413b6e06b6f50a207fb929de704d5e4a850d890ea3e610ba",
+      "bytes": 200080
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-pointer-to-keyboard.html": {
+      "sha256": "5d212954d327762efc6e2969f49e624cf7baad2ad1e9fae038d4898bad68d027",
+      "bytes": 35396
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-pointer-to-keyboard.json": {
+      "sha256": "32f463dc2f3249c0cd1696fd15473623812ede27c781d98224d07baa114a167e",
+      "bytes": 10514
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-long-pointer-to-keyboard.png": {
+      "sha256": "a12a781585b57e3c797a11db2ec8213ca325ce4fed175de7f31a19a108a65694",
+      "bytes": 209528
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-modal.html": {
+      "sha256": "120f1b450320bc05fadffa451fb3f3a602cba0a19d1523df0aa2abe03a9bc9be",
+      "bytes": 35221
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-modal.json": {
+      "sha256": "b127d5723646f2fc3e28dc63929d5ea39e7f42b778078d44a872b68b4b924c17",
+      "bytes": 5001
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-modal.png": {
+      "sha256": "d30ed1a82496ff3a46a2c49b73bda8c51bdb21c9d224c645550bc4cce26885dd",
+      "bytes": 160328
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pan.html": {
+      "sha256": "cdc584ec5668b25211ff1c539d0371079867e4064c522bb36bd689f6e7590a18",
+      "bytes": 32069
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pan.json": {
+      "sha256": "5ede2a96c23984ccdb7dc982ce48fbee101ea31dac47507f4a95efe5fd246529",
+      "bytes": 14763
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pan.png": {
+      "sha256": "4ef63473a577b17a0b8f3bcb8be6cf9747f2aeb3353c846d0ffc1b3c74ca8d0c",
+      "bytes": 208262
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pointer-entity.html": {
+      "sha256": "83085e715a0169128bc470419b10adc8b811beb3683e1edd4dacabba68765459",
+      "bytes": 31906
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pointer-entity.json": {
+      "sha256": "2659458344c6c10d79bf804f3db5b9c7971475a333c002463e83eec367c43036",
+      "bytes": 14857
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pointer-entity.png": {
+      "sha256": "d9cd12b79c6227f70832ee5e2609b23eee473d2de9e3b58a071ddac696d6b327",
+      "bytes": 209360
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pointer-to-keyboard.html": {
+      "sha256": "cdc584ec5668b25211ff1c539d0371079867e4064c522bb36bd689f6e7590a18",
+      "bytes": 32069
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pointer-to-keyboard.json": {
+      "sha256": "c5466de95a8f4c6aae6ab63ad90cedf89347fb06ec3e028385cf2fd9eda5fb67",
+      "bytes": 5606
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-pointer-to-keyboard.png": {
+      "sha256": "a2def041118bcd79f52979bd34af6990e1afa5f8111e489fb3f47571fed4ac03",
+      "bytes": 213789
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-populated.html": {
+      "sha256": "fd4480985c519f63f320f0ef51210605bf6c3e1e8f22a32c3fe510ca41d8093d",
+      "bytes": 30987
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-populated.json": {
+      "sha256": "63e63a63b1146e578633525696f4c9a61b237cc73cb1c05cb958fa73146ff091",
+      "bytes": 13501
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-populated.png": {
+      "sha256": "506ee3e029ac952229fec2617df8951ba68ae0776ae9a86ab83cecf5bd7266e4",
+      "bytes": 196760
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1440-video.json": {
+      "sha256": "614c151df0ddbef2c577c8dd33f485dbfd9dfb7d07ab5e6c4ae70612b6274958",
+      "bytes": 99
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-fit.html": {
+      "sha256": "0e3b7c1326b27ed0f8e483257e0afeceac26c58c771faf3c77717095bd91be6a",
+      "bytes": 32069
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-fit.json": {
+      "sha256": "ae57a8405f498ed61ebc73e983dbe19d6a688475ad7096521baeb3f156d6b9ed",
+      "bytes": 5058
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-fit.png": {
+      "sha256": "7e7a70571e9c3d40d4f412d0ac810e0ecdf8e2db88be2b2c9c03bd45ffb21fd8",
+      "bytes": 235598
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-keyboard-entity.html": {
+      "sha256": "09c68661266bbeaf49a782becb596ab2aa4b3807c931140e5399373115f65eb9",
+      "bytes": 31860
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-keyboard-entity.json": {
+      "sha256": "83a605676a6d443aa250090de767775eea69d6479b83880b85a0d8f64734d9d2",
+      "bytes": 5543
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-keyboard-entity.png": {
+      "sha256": "0ad2a89c1d931f2064a242b0514c92f97a052a143f70ab43b97e392a870b62ba",
+      "bytes": 229076
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-keyboard-entity.html": {
+      "sha256": "887db1fccb17a3a6a16be9952a260a6099eda2610e4140636ad577a59492c098",
+      "bytes": 34466
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-keyboard-entity.json": {
+      "sha256": "981a90e945aa63b1c239576f0888b3effa02729b67414fddcbc5c7b595b89671",
+      "bytes": 9078
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-keyboard-entity.png": {
+      "sha256": "c7559af8eebe7fc55f742422e8454a9adf7439d43427fe5ac1c66cef3c4db2c7",
+      "bytes": 222159
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-0.html": {
+      "sha256": "abcfe266ad07c8b13997656a663648b74e8d58777828587ef1d590aea6cde70d",
+      "bytes": 35396
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-0.json": {
+      "sha256": "38b00b5e31ec4a8f7af7776603af1c1283a9c056323ca160faea45b752703628",
+      "bytes": 10709
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-0.png": {
+      "sha256": "1f28d794279320baa7d673942198bc5a9a240ff205f2473a842842c7c8b5b3c8",
+      "bytes": 231290
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-1.html": {
+      "sha256": "cf582043c8394521c8a5b2455191ae2fe4172ecadfdf2581d8df6c0468344f0d",
+      "bytes": 35918
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-1.json": {
+      "sha256": "10d7b6cc59a38d3fe13451e03f326510b23eec08ccef9577840edff2fccc0a55",
+      "bytes": 11491
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-1.png": {
+      "sha256": "56150d73bf74a91b1ee557ca8097914eaf59792abc92fd6938bcb04063045130",
+      "bytes": 253019
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-2.html": {
+      "sha256": "148dc4adff842fab73feb28d04beb184b9d18a27bab6809a6ab5635220057c36",
+      "bytes": 35994
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-2.json": {
+      "sha256": "542e352cdc49869ffd306a16e5e92adc5aceddd9d80c55119396327e9120cce2",
+      "bytes": 11608
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-long-entity-2.png": {
+      "sha256": "cfab66e8ca779d31ede00fa7ca1b60df6113d841ad0690c66498bd4e5fe382af",
+      "bytes": 228538
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-pointer-entity.html": {
+      "sha256": "887db1fccb17a3a6a16be9952a260a6099eda2610e4140636ad577a59492c098",
+      "bytes": 34466
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-pointer-entity.json": {
+      "sha256": "cd388711d375a853fa99dbf3f81b16c0e3f216220599e5d211b8c4bf13feb18d",
+      "bytes": 18519
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-pointer-entity.png": {
+      "sha256": "4a5a67ac48be7e4330c73193a3578fff05903db6d72a2d22b332e5b7adf5377a",
+      "bytes": 221262
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-pointer-to-keyboard.html": {
+      "sha256": "abcfe266ad07c8b13997656a663648b74e8d58777828587ef1d590aea6cde70d",
+      "bytes": 35396
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-pointer-to-keyboard.json": {
+      "sha256": "38b00b5e31ec4a8f7af7776603af1c1283a9c056323ca160faea45b752703628",
+      "bytes": 10709
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-long-pointer-to-keyboard.png": {
+      "sha256": "1f28d794279320baa7d673942198bc5a9a240ff205f2473a842842c7c8b5b3c8",
+      "bytes": 231290
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-modal.html": {
+      "sha256": "e57eecf72b250332672416b5bbb099f27f379e0484a16c3ebcdde1605f6b4ad2",
+      "bytes": 35221
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-modal.json": {
+      "sha256": "1729478d84dc5f28b1587803a039157c5651f6264041ce1386e5fa36c48a479d",
+      "bytes": 5243
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-modal.png": {
+      "sha256": "c45ad7367451e811dec595e5c553c9fabc60bc7c52fed17c6372d80ad999d5d8",
+      "bytes": 229689
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pan.html": {
+      "sha256": "0e3b7c1326b27ed0f8e483257e0afeceac26c58c771faf3c77717095bd91be6a",
+      "bytes": 32069
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pan.json": {
+      "sha256": "026a1bb747dbbacbe031fbde8e1dda15a9807e0e26177a7ea61741f3912bee2b",
+      "bytes": 15021
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pan.png": {
+      "sha256": "1775716106db0234f1111bb4d7a32cb7fe4b7c346161a5a0e73fbd9d30957b77",
+      "bytes": 231879
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pointer-entity.html": {
+      "sha256": "6b428210a03e242ac38bfda3de600db9e82fe613a7c92c4b92da5789839116e4",
+      "bytes": 31906
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pointer-entity.json": {
+      "sha256": "f83892bddb2de31fddb0dcdb977d6128ea8700f826adc528192be4033fade7fd",
+      "bytes": 15099
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pointer-entity.png": {
+      "sha256": "f9827c3dd32696b66fa857c829390f2988e44d43493c248ea577d8b64ce1a222",
+      "bytes": 231597
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pointer-to-keyboard.html": {
+      "sha256": "0e3b7c1326b27ed0f8e483257e0afeceac26c58c771faf3c77717095bd91be6a",
+      "bytes": 32069
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pointer-to-keyboard.json": {
+      "sha256": "e0f39a792cfab61fee2b45dd39f5ab5d7e566ae76a1f39211f2d0c55c6dd4bc2",
+      "bytes": 5848
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-pointer-to-keyboard.png": {
+      "sha256": "ae0572b77bb74d6b8aad59027af98b2bb47eb6424978fbeeccf4314c8c470eee",
+      "bytes": 236467
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-populated.html": {
+      "sha256": "077ec052cf1c08bf898243abbad31943d0efdab926dc31bbac1f6c1bb8816d2c",
+      "bytes": 30987
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-populated.json": {
+      "sha256": "383f5d60d873d2ce8d437e562046872826583e341a1c12bf3bc291a0e6d35c67",
+      "bytes": 13744
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-populated.png": {
+      "sha256": "e35d587e09b3b7fd2bfdeba48dd04c4b3dad8bfa2356fdce138a5ad789153fa8",
+      "bytes": 217645
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-1920-video.json": {
+      "sha256": "b7d1cad8966b63c265d1466a471fcfc1d1d1bacb18a6bc3a05581bb45a90eff3",
+      "bytes": 100
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-fit.html": {
+      "sha256": "4d99c9e0e626c4ce0e50fcebe8363a48b1aefd1fe4c5b295265efcbb78bdd6e5",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-fit.json": {
+      "sha256": "03e574c1f55c4ae217e948a1a9ec5d9edddb934d82262822d6e8c3335aff94c9",
+      "bytes": 4540
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-fit.png": {
+      "sha256": "089ce589666f89a6c757fff7cc78dcd920f55e2ed9f3671a60f8334c8ec64e64",
+      "bytes": 151025
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-keyboard-entity.html": {
+      "sha256": "e9a6ee97a300fe62f18285945b4cc4fddd9773823b2aabbddf8cd0a9698f9571",
+      "bytes": 31846
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-keyboard-entity.json": {
+      "sha256": "6b4753e64feaa0e751a4ce214f9de21cf127e8eece20b109192f100d3a6a8d6d",
+      "bytes": 5025
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-keyboard-entity.png": {
+      "sha256": "b1c1817fd91b9172b641c32469e1afd96f126726cede5b6bfa81c608ba4fbfae",
+      "bytes": 145482
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-keyboard-entity.html": {
+      "sha256": "0f6e5faa9d68c97d1375dcf65efd4279f3ab86a7083bc9538bb608981ff8913f",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-keyboard-entity.json": {
+      "sha256": "f034839cf18b55c83fed213b36105cdefe2b7d41ddbbc8700928b260531c5441",
+      "bytes": 8455
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-keyboard-entity.png": {
+      "sha256": "4d7b81525d669bea385523058b11c135c45b1e6b8779d8ebdc898419f0a09fbc",
+      "bytes": 141689
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-0.html": {
+      "sha256": "2fdcb9300599d547b1c91d611b734be590a3966fab177e832ffd5982173ddc0d",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-0.json": {
+      "sha256": "a8c6f37eaadc30b65344c7a9dc4706cb4863acb430871d202bc126521b5b9a3a",
+      "bytes": 10089
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-0.png": {
+      "sha256": "ad5ef00aae7797901fa9ab9f0fb830e48432da91131545bae20a410a845c14b0",
+      "bytes": 149495
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-1.html": {
+      "sha256": "de7184a27005215a6ea92d8b3f412312ce5bce26500dfb68cfb2009b31fdeef9",
+      "bytes": 35904
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-1.json": {
+      "sha256": "2c079ee9cca952fa6df9f8328570f7cb11fd15dd70cdeabdec72319912e96f84",
+      "bytes": 9877
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-1.png": {
+      "sha256": "abca8f13a96c9bca70af514e137968dfeb7de971aecf1b4a490e6d8b6b8a2dc2",
+      "bytes": 165412
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-2.html": {
+      "sha256": "d4526694b433a77c9a8cd92639d9e4e7f1023fa8d18be8856e58fdb9da124250",
+      "bytes": 35980
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-2.json": {
+      "sha256": "1742c0190185a3ba15568c7ec010a9d4fddf337835fe902f762e0e3f9015d5fd",
+      "bytes": 10987
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-long-entity-2.png": {
+      "sha256": "26d122a011b0f0b132a44ee1a3d0a05c8613b84ff16d0e1d2fa0e1c3394f1f36",
+      "bytes": 147711
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-pointer-entity.html": {
+      "sha256": "0f6e5faa9d68c97d1375dcf65efd4279f3ab86a7083bc9538bb608981ff8913f",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-pointer-entity.json": {
+      "sha256": "f2ec7a11f2e55849e37d2afba8a4e2721064cec27bc36ed117ce15cf4c5c84f9",
+      "bytes": 17882
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-pointer-entity.png": {
+      "sha256": "d60dcc395883893b8b1dc58aaaf24ce24660ad31db3f081cdb1b4b837d6a46ac",
+      "bytes": 140888
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-pointer-to-keyboard.html": {
+      "sha256": "2fdcb9300599d547b1c91d611b734be590a3966fab177e832ffd5982173ddc0d",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-pointer-to-keyboard.json": {
+      "sha256": "9fcb3bfe8c6584b221f1299a01023a13f55a892983011da4ecb1e4e691cdd298",
+      "bytes": 10088
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-long-pointer-to-keyboard.png": {
+      "sha256": "e22b4f5540aa42a7e05f07a7ef4c3b5625760ef948c12a3ff4b0efd12e1a80a1",
+      "bytes": 149505
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-modal.html": {
+      "sha256": "63a44775895303b7661bb24956b1ee21b266da5740e5b3fb64611922621b83e1",
+      "bytes": 35207
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-modal.json": {
+      "sha256": "872aadf6ca855504215147585ea60e6fe56620dd16a2b0a3059a8e54b27e19e8",
+      "bytes": 4725
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-modal.png": {
+      "sha256": "36e4db99c83454c4cf1ae46511f0f92a4be3dd317b17db916cc4d8f1444be9e9",
+      "bytes": 34311
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pan.html": {
+      "sha256": "4d99c9e0e626c4ce0e50fcebe8363a48b1aefd1fe4c5b295265efcbb78bdd6e5",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pan.json": {
+      "sha256": "c634f87295b3d3f39965f0b44624db7f0c8eb5616606c7f94ee0900827974ddb",
+      "bytes": 14491
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pan.png": {
+      "sha256": "dc24b63a0e230749b95e1a9db391361d726bfe033a12537c4c506bf69ca18664",
+      "bytes": 146442
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pointer-entity.html": {
+      "sha256": "3a22cb6e89b58994b011a02a83c974f7d750e03db2d616f9a18517bb831769f3",
+      "bytes": 31892
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pointer-entity.json": {
+      "sha256": "ac7cc2fa248215cf0c702438f8d0d5e87969d5b2a462dc548b5b3b6c91e71714",
+      "bytes": 14810
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pointer-entity.png": {
+      "sha256": "8c17baecf2798fa76a585cbc52a3cca172c9c1aedcebdc5a1b9795e6df134f1e",
+      "bytes": 149987
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pointer-to-keyboard.html": {
+      "sha256": "4d99c9e0e626c4ce0e50fcebe8363a48b1aefd1fe4c5b295265efcbb78bdd6e5",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pointer-to-keyboard.json": {
+      "sha256": "4dd9e085628fde7f3f481b3e9b513b202ca1c1c1fd3ac2c25c972880b5053df1",
+      "bytes": 5572
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-pointer-to-keyboard.png": {
+      "sha256": "e365115956ce191b9826e67ec7715701e25b4423c6a2f0ce986c19fda63659dc",
+      "bytes": 153838
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-populated.html": {
+      "sha256": "968998f071062af7361c331cf5ff0c2993b90651c854ecf7029f963dda17dfd8",
+      "bytes": 30973
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-populated.json": {
+      "sha256": "e12f2f18d66d3df248b6e70f9737e4d714bd0a0270976a67f45601dda66833a9",
+      "bytes": 13215
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-populated.png": {
+      "sha256": "2e887d7b6043da8bc372a225648ad0ed11a5a70ef283e7e327fd6a074dd22e04",
+      "bytes": 136816
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-320-video.json": {
+      "sha256": "5342ecdf108aeef01bb2cb39a4da11f521de770a33570eb1b132febd434d97fb",
+      "bytes": 98
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-fit.html": {
+      "sha256": "cbf40bbe06ae436be48781e7e44c7e5fa030d8666e3b717d9df714839ce58919",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-fit.json": {
+      "sha256": "7d5d48069e25980003241ea74b811e7e1cb03890e419aa7fbf235ef182abe238",
+      "bytes": 4751
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-fit.png": {
+      "sha256": "bcaa15da66d1cbfd302656ffdb32d2e9fab82980261529632a8821b9766d9420",
+      "bytes": 160662
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-keyboard-entity.html": {
+      "sha256": "06959adf2fb553df5e9c2978fe27934d8f9d8b756e58bd1245133b5d1b20b023",
+      "bytes": 31846
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-keyboard-entity.json": {
+      "sha256": "221f7f95091e0e6fe038d44a1b6b41d4d5341239502f553e9a5ffc1fb9b83f22",
+      "bytes": 5236
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-keyboard-entity.png": {
+      "sha256": "e54472cf3051eab4ad3e44964a04215dcb81685458380425b3728b38fb71b52c",
+      "bytes": 160322
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-keyboard-entity.html": {
+      "sha256": "de70dcd621d768494ef25cba082ee797aaf83d1fb19c99375e56a8a4915482a9",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-keyboard-entity.json": {
+      "sha256": "c3c09038f5805ba97fa023b4904ac4fe62af2dd7ff71ae98efbcdad9fe75bac4",
+      "bytes": 8648
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-keyboard-entity.png": {
+      "sha256": "c54f8832fe1d0c21d0cb8b18bfc55995585490a3a9f233f40c4f2c77b8b1d132",
+      "bytes": 154155
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-0.html": {
+      "sha256": "ee47d6f9d14932a841f0dd585b5ba908c6f1ddfc5255d63fe5ce0a86f9f294d7",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-0.json": {
+      "sha256": "68bd0d4906fd672a9368ab51baa12bb05ae66d745efd38052dd69176e4213a32",
+      "bytes": 10286
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-0.png": {
+      "sha256": "69065a32bb7f0ca00bf2ebb050aa9b4e13dd6a342ab35b5fa634b7d85fdd3ae0",
+      "bytes": 162314
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-1.html": {
+      "sha256": "3435a12ec70c59baa2cc50191774bf2205b733609f9f1f99bc3cfbb40f2aec89",
+      "bytes": 35904
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-1.json": {
+      "sha256": "dcfb5426ddbe3cb89d9d08b6b578d864f4b3270740d7d8fa9dd6ae604d902084",
+      "bytes": 11068
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-1.png": {
+      "sha256": "25c44248135fafa960bc6f93e291281a058d43b5bb9e32a18f28ad3a4486f22c",
+      "bytes": 173729
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-2.html": {
+      "sha256": "3d047718f77c0672dd36dd19e149f7a3ed88f063a1830ea8c81b689511dd70b8",
+      "bytes": 35980
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-2.json": {
+      "sha256": "552641ebeee59ccec6aae00dbfbe0a70d4a64c0a61b1fde6a5589ccbaec40920",
+      "bytes": 11177
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-long-entity-2.png": {
+      "sha256": "7d509ac5cbea713ab6aa5f93a425250fa8a32f26bb6a05dab7b71a91c7c105c1",
+      "bytes": 159268
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-pointer-entity.html": {
+      "sha256": "de70dcd621d768494ef25cba082ee797aaf83d1fb19c99375e56a8a4915482a9",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-pointer-entity.json": {
+      "sha256": "81b619366ead1957254dbc76c874b11be7e466ff765c8e01eabd90083b6b4ae9",
+      "bytes": 18075
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-pointer-entity.png": {
+      "sha256": "2809dc877e26f5b9e41ab6d22c381ce2e54633d408b3728600afb157943e6568",
+      "bytes": 153390
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-pointer-to-keyboard.html": {
+      "sha256": "ee47d6f9d14932a841f0dd585b5ba908c6f1ddfc5255d63fe5ce0a86f9f294d7",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-pointer-to-keyboard.json": {
+      "sha256": "d31caaa65784a47df141184d22b91646abda85b9d3b723f35a4ae758567eed2f",
+      "bytes": 10284
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-long-pointer-to-keyboard.png": {
+      "sha256": "35cadac08352b228af986f1e28f38ae0fe6941fa0f7a2fd79faf5da811aa4d36",
+      "bytes": 162310
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-modal.html": {
+      "sha256": "25fdd4f445847ef21b07e1451bd24982870e12298172b0d866d6d86361be4eee",
+      "bytes": 35207
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-modal.json": {
+      "sha256": "21d2a5f97dc03b3dd63e6a6d5ee43ca6886d268e5f520c8dcba30e07cc72eeab",
+      "bytes": 4936
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-modal.png": {
+      "sha256": "e0fa9f21b0930a3adfee2cbb4f0d99b30b9cd95046ae9084a6f14dec1821d40b",
+      "bytes": 33382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pan.html": {
+      "sha256": "cbf40bbe06ae436be48781e7e44c7e5fa030d8666e3b717d9df714839ce58919",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pan.json": {
+      "sha256": "7ac9be38cadf75abd0402ef64270a6310d7bc44323bc123e0fe9a2dd1fdd3b8d",
+      "bytes": 14501
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pan.png": {
+      "sha256": "95808e92e85dad0c28e957f0273e1e06fb4d7132642c85201e803f14b694efb9",
+      "bytes": 155406
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pointer-entity.html": {
+      "sha256": "eaabca868964a04978bc191e935a5bc715ff043a82d40db13d613eea0819ce96",
+      "bytes": 31892
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pointer-entity.json": {
+      "sha256": "f11978ecae8888d00bf2c5f565deefacea4d1543227ddf520d8c76d54fad24ae",
+      "bytes": 15019
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pointer-entity.png": {
+      "sha256": "2692ebb90548d0e7c0d862e811b119b4197abfa5d0af7c04bf53acd24200415e",
+      "bytes": 164840
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pointer-to-keyboard.html": {
+      "sha256": "cbf40bbe06ae436be48781e7e44c7e5fa030d8666e3b717d9df714839ce58919",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pointer-to-keyboard.json": {
+      "sha256": "164e23bca72384e0b7ce1e360f7c953590d513ec928334097179ae28fd8c43b7",
+      "bytes": 5782
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-pointer-to-keyboard.png": {
+      "sha256": "407260e2cc74fa90cbd7d6b96c4108c16e4cdb6aed3beeac374fea4e40aab0e2",
+      "bytes": 163685
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-populated.html": {
+      "sha256": "844796a1eb594d2e8385826426e245a61109dd5e940c93a400b1a59f7cca0190",
+      "bytes": 30973
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-populated.json": {
+      "sha256": "91401487e4777023f74acc47aba732e73c80820109fab1984ddfda64eb367ebc",
+      "bytes": 13427
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-populated.png": {
+      "sha256": "3b77b5238b32e5f231d13887adcfa88eb197b084896d4403c0e56e4fc4148dd7",
+      "bytes": 151840
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-360-video.json": {
+      "sha256": "f29ce697606233964c7def65873b8da5bc6830dfb250c7983f4fb09ca27b55e2",
+      "bytes": 98
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-fit.html": {
+      "sha256": "e5bd00eb795b4aeb4a54095cf2a7a80834ca540d970ed175e806e72eadd3202e",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-fit.json": {
+      "sha256": "5f57afd13b9332df0390513c9b0585ebb0ee11cedc893f112197b7d9ce7749a1",
+      "bytes": 4532
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-fit.png": {
+      "sha256": "b6c3d7deeaf77c921c2f049563cf5d813d272f7bb97037934cc4105d11b561bc",
+      "bytes": 164787
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-keyboard-entity.html": {
+      "sha256": "413f48f30e954952b6305c80886e18c4a20b500ee349696f9d95cd25f2611f44",
+      "bytes": 31846
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-keyboard-entity.json": {
+      "sha256": "35418d14dfbed463e2ce9b4fcd65aead5d1306960486ab2d2a69c2991eab7f67",
+      "bytes": 5017
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-keyboard-entity.png": {
+      "sha256": "d3f0c9cc1e64f05f20be84d2b7a0062ca25b1a36d493f3427bb091ba7ab230e1",
+      "bytes": 165270
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-keyboard-entity.html": {
+      "sha256": "584077773af358eae1fd5ec3fe0f1dc07cb1fc18649b34cf996004322a7f6f1f",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-keyboard-entity.json": {
+      "sha256": "0776b69b4ae833c6427976687ccdc7175168ff40c0e606a190d9e561a59a3d80",
+      "bytes": 8423
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-keyboard-entity.png": {
+      "sha256": "916df1009a7108a7627accc8b4cd9114ffcfb62c6a57cdc0b9937ae30d36d473",
+      "bytes": 158021
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-0.html": {
+      "sha256": "1c7d4f05b73708778fc88550aa5099919bd837763eabf8cec48fbebfce473e34",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-0.json": {
+      "sha256": "370d7a88c3b0d5a22de923ff3285225e39b3e5ecc5514a0fac469ba739ec44d6",
+      "bytes": 10057
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-0.png": {
+      "sha256": "f39f77bf33cd965aaa0b827631173e0f204b1ae9a9282fa431cab1596ccee49a",
+      "bytes": 166284
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-1.html": {
+      "sha256": "af9f765409bb1122c1567d9399f98bb0e83876e32227060f175881bad28140bd",
+      "bytes": 35904
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-1.json": {
+      "sha256": "da29890e06084411fbd834c9885a611319898db6c1cd1caecc19d365a0318314",
+      "bytes": 10835
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-1.png": {
+      "sha256": "d62e93d7eb06f9d1a79c5a37b978c9aa4b59a2bd64976ec4b8bca0c34717ebb2",
+      "bytes": 179457
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-2.html": {
+      "sha256": "c66784e3292c982778f96b169dfffc6424bfb7cc0c6050e0b2c14540765f2971",
+      "bytes": 35980
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-2.json": {
+      "sha256": "8f95ed07c9976c8d0f9153630d3b946068b07861ede53ed82921ad8cb0e6da67",
+      "bytes": 10954
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-long-entity-2.png": {
+      "sha256": "d90898906829ba2031b9aec7c38b5df9486191af2f361cd3fb64ab24f311b6a2",
+      "bytes": 162688
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-pointer-entity.html": {
+      "sha256": "584077773af358eae1fd5ec3fe0f1dc07cb1fc18649b34cf996004322a7f6f1f",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-pointer-entity.json": {
+      "sha256": "f09171f20056f1a0230b797bf204e86cf4ead3318ec45317ef3873706670bea0",
+      "bytes": 17850
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-pointer-entity.png": {
+      "sha256": "df08b0c87d9698deb7a4456fa957d066a17e8a7ea55001d663a2a639ac166b35",
+      "bytes": 157201
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-pointer-to-keyboard.html": {
+      "sha256": "1c7d4f05b73708778fc88550aa5099919bd837763eabf8cec48fbebfce473e34",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-pointer-to-keyboard.json": {
+      "sha256": "d068a3b462661f7f4f672c2cb916a2ca7c238b6ff58a83a25e97e8e16661a2bf",
+      "bytes": 10056
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-long-pointer-to-keyboard.png": {
+      "sha256": "f39f77bf33cd965aaa0b827631173e0f204b1ae9a9282fa431cab1596ccee49a",
+      "bytes": 166284
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-modal.html": {
+      "sha256": "2d718fee62e8e8c93cb1e9c7a0715852b2025d9d411b503857e3dfe442897f28",
+      "bytes": 35207
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-modal.json": {
+      "sha256": "fe8f3749ddf308095d8170564f904b38886a62e603316516b585375ab6189b03",
+      "bytes": 4717
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-modal.png": {
+      "sha256": "5b1ac165983d023ef5477323b240d49f2f05d0dd5cb6e439df86c5689af795e7",
+      "bytes": 33479
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pan.html": {
+      "sha256": "e5bd00eb795b4aeb4a54095cf2a7a80834ca540d970ed175e806e72eadd3202e",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pan.json": {
+      "sha256": "2dc2ee5d63fbd535eac13b83f4e2e176b659b526b65c21c1f09a4eaa8ccede55",
+      "bytes": 14008
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pan.png": {
+      "sha256": "b35b29dd789b6b3f9df2423f5a1f15b3b77d650304df34ec92954185d9632435",
+      "bytes": 156663
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pointer-entity.html": {
+      "sha256": "5dbb9043365b0fc61bc78a7adb52235f5e8ac70959cdcca63582e54be5e3a2ee",
+      "bytes": 31892
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pointer-entity.json": {
+      "sha256": "4f26f98b513a7e15107d0e0cf4c198a7e5821135a2f5fa67fae71f9deddbb02c",
+      "bytes": 14801
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pointer-entity.png": {
+      "sha256": "5d4d51b592e78690b8712343838dcb88e5293e21beb220f7165e6a76ce965fbd",
+      "bytes": 169827
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pointer-to-keyboard.html": {
+      "sha256": "e5bd00eb795b4aeb4a54095cf2a7a80834ca540d970ed175e806e72eadd3202e",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pointer-to-keyboard.json": {
+      "sha256": "b093b0f510f6258e080fb569b8ade8ee49cb669bbea8ce846f654b80decbe60b",
+      "bytes": 5564
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-pointer-to-keyboard.png": {
+      "sha256": "ccbe8bf67c683cdf097ebb1226eca42b96e16a9563abfbb589a8b792493cb52b",
+      "bytes": 167963
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-populated.html": {
+      "sha256": "773011ff330d45cb33b3d4ac67aa14e72fd2e8c0b5badbb5f2987436f194f6c4",
+      "bytes": 30973
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-populated.json": {
+      "sha256": "db183b2a45bcc77967284b3d1119e0c682415d8d8887b48da23163c79a71ef5d",
+      "bytes": 13214
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-populated.png": {
+      "sha256": "885e9dc26bb6e0ca01dfe1f2c724b5f668c3ef6e8c416a9f7ebb2b42446531d1",
+      "bytes": 155915
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-keyboard-entity.html": {
+      "sha256": "e6ea2c0db7fe5851350ed1c35a11d43927d3f3a31893969b1da00928d088561a",
+      "bytes": 31846
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-keyboard-entity.json": {
+      "sha256": "ffe8b986011d52dc03068917f87438995c2aa69be41be88050aca678a7c88a7a",
+      "bytes": 5017
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-keyboard-entity.png": {
+      "sha256": "9dc5af613b2781be0cd23b7d6079c783f69242fb5b37b37f85bc78e36343120d",
+      "bytes": 165321
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-pointer-entity.html": {
+      "sha256": "d7907fed53e4b0d0d036d1954d54821c924ffd9de419d976af9f4961e544c8a7",
+      "bytes": 31892
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-pointer-entity.json": {
+      "sha256": "2cd181804786c3fe92f40715312f1640e38f547f68167860b2b7f50be082fd79",
+      "bytes": 14800
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-pointer-entity.png": {
+      "sha256": "9b5b7f2c9cbb72e58069f1440ae6ee085c39469f1ddfd789af969dfdce9eafe9",
+      "bytes": 169917
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-pointer-to-keyboard.html": {
+      "sha256": "12971142d9e756c0a9108523aa32c140f3e1fe88b9517958375dffa34ad853a5",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-pointer-to-keyboard.json": {
+      "sha256": "38d69feef3f7f35fa5a2a5cfbe0bc84c0263f8d710bae214346e0f8a10ab7ed3",
+      "bytes": 5563
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-pointer-to-keyboard.png": {
+      "sha256": "e79267a3fe9ffe9298cd327ce1607da33558fe9470ab7708d96f43e18814a9f3",
+      "bytes": 168039
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-state.html": {
+      "sha256": "12971142d9e756c0a9108523aa32c140f3e1fe88b9517958375dffa34ad853a5",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-state.json": {
+      "sha256": "a4d0693a0eb4b77e6aca8192c22f5adca718feedbf6c73b988913ddf2e723c52",
+      "bytes": 4773
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-refreshed-state.png": {
+      "sha256": "fcfa1342e6b9e3adb143bac2303ac935b902b04923c3b7835c81bbb3e3c5f2b2",
+      "bytes": 168067
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-390-video.json": {
+      "sha256": "eebfcf96e18a2ae9862f34bb228f9e5dfcb9ed9f6b426c1669ed2d3309ae2783",
+      "bytes": 98
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-fit.html": {
+      "sha256": "335dab3bff39a36dc60cd3b77a1cdff19c42c34337ef8140bf0be52618ad1979",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-fit.json": {
+      "sha256": "9b57f6ce3274dbed35497a30fb72d5fe8e9505d2822174b8333d8649a97fd7bf",
+      "bytes": 4543
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-fit.png": {
+      "sha256": "7da93474f85694d615093879343d1d34a297298648af6cf41ee8aa90c94c809f",
+      "bytes": 159769
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-keyboard-entity.html": {
+      "sha256": "dd48962899a85b34e6a9e63b996e4fd00ea5a58455063dd4899c6b45dc97fd59",
+      "bytes": 31846
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-keyboard-entity.json": {
+      "sha256": "b7bcd59b9a8fd293f99eeee469dbfd86f11bf4a1b4d12d7f497a8b76637f73e8",
+      "bytes": 5028
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-keyboard-entity.png": {
+      "sha256": "175f816ed9227ed82757d532d5c2ea69b973f10fac1dbc33d102b07fd7a0d65d",
+      "bytes": 152645
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-keyboard-entity.html": {
+      "sha256": "5337d1619a8c9592e3d19af930bb714d936381f96abf43c477bc92c34256f268",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-keyboard-entity.json": {
+      "sha256": "4d3be76f623d71879142405cee1333712fe7f52f18643ec3b2a95c36a11e7109",
+      "bytes": 8751
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-keyboard-entity.png": {
+      "sha256": "637d29f83f986a1b9430c94f6f1a19284fca5e5a843fc42fe2c91aebafb6a7bd",
+      "bytes": 148661
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-0.html": {
+      "sha256": "0ffa6b0914c4246136b35f8423f332694052c9eacb38c991a87f6a5419535af0",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-0.json": {
+      "sha256": "109dfce9a35d722636731e1a607f79f2c1a13b7d7c7a1d806e641bb72926504f",
+      "bytes": 10386
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-0.png": {
+      "sha256": "6c4457d38648d6aeb7a2e4d23004b4bda46f1345e57b507c38e50b3edab29b0d",
+      "bytes": 143705
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-1.html": {
+      "sha256": "eab085d68f3f7e0dba02a547ba30e70246bec0aa03d72e4848a9767da5f0ea2d",
+      "bytes": 35904
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-1.json": {
+      "sha256": "cff3c16eff9b63bff6b080ea4c18b3952445e520e78f42ad4f72d2bc9c2cd98b",
+      "bytes": 11165
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-1.png": {
+      "sha256": "7dff018fac0a41e9fdac276094d82b0740f3421f2e28157a3aa841a0fdb538e2",
+      "bytes": 190833
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-2.html": {
+      "sha256": "03f92907df4c110f2cf488c694e2963e20919c1d2ff9c850a75c8950577a226d",
+      "bytes": 35980
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-2.json": {
+      "sha256": "fae6f3277c16e63ea607d9b82af500ee4853e393149c50cdc63732517470e526",
+      "bytes": 11281
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-long-entity-2.png": {
+      "sha256": "d53de7112045b2df583fc722fcb50524fe1109b2d8621a0388957d08b80f88ac",
+      "bytes": 156375
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-pointer-entity.html": {
+      "sha256": "5337d1619a8c9592e3d19af930bb714d936381f96abf43c477bc92c34256f268",
+      "bytes": 34452
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-pointer-entity.json": {
+      "sha256": "806aeda8def69a564bc432e8b83d376702f01629cdf0fdddab4539370ec61b0d",
+      "bytes": 18178
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-pointer-entity.png": {
+      "sha256": "5630d1a0dc414fbbd52811865e9f684de7a20be127a311b740a9b64322a7b7d5",
+      "bytes": 147779
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-pointer-to-keyboard.html": {
+      "sha256": "0ffa6b0914c4246136b35f8423f332694052c9eacb38c991a87f6a5419535af0",
+      "bytes": 35382
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-pointer-to-keyboard.json": {
+      "sha256": "6577bbd882a2aa2b05ef60bdd990c6d2624096cf629e68d39cc3074822f98fe2",
+      "bytes": 10384
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-long-pointer-to-keyboard.png": {
+      "sha256": "6b44b90ba66d585617997f8347f0598eba9c62eeea643f8434990ee5b928d82b",
+      "bytes": 159201
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-modal.html": {
+      "sha256": "87d791097fd54945f4f2febfbc9b12f05ced1b5082c1311c6061be588c8096f5",
+      "bytes": 35207
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-modal.json": {
+      "sha256": "60348f563a7a7b0bdc619e6bebdbddf88faaa1af4213e90c0f055a3b90ee50b1",
+      "bytes": 4728
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-modal.png": {
+      "sha256": "ddfcae0864c1532c2db4d31a910250fd99c72842e47a11ef746758395f7e1986",
+      "bytes": 116388
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pan.html": {
+      "sha256": "335dab3bff39a36dc60cd3b77a1cdff19c42c34337ef8140bf0be52618ad1979",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pan.json": {
+      "sha256": "b2cf86a9f4f873a1e957bbb62820cd4a9f1659db990a34baf9ee211bb77624fb",
+      "bytes": 14478
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pan.png": {
+      "sha256": "d4c5ee7ab5736bb2994a3baa2476aba6cb5deac49aac3d32e53d5f4a2ddee79b",
+      "bytes": 155167
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pointer-entity.html": {
+      "sha256": "d6a5d7f758b90e582da14117d2d41785e8ff8bccb31caa9347cdea3ba478b272",
+      "bytes": 31892
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pointer-entity.json": {
+      "sha256": "b5f0af5ace111e9fbe5999d39e3bc7dcbdf86adc15e3d8fd785b132be264803b",
+      "bytes": 14829
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pointer-entity.png": {
+      "sha256": "f7292e0309e549483934a88743d73ede00e95e2df5dc6049b53a4ff1616181d1",
+      "bytes": 157776
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pointer-to-keyboard.html": {
+      "sha256": "335dab3bff39a36dc60cd3b77a1cdff19c42c34337ef8140bf0be52618ad1979",
+      "bytes": 32055
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pointer-to-keyboard.json": {
+      "sha256": "2670d520d150069031886ce29862fd6b34c247596ee71c3acfeae4e69a86dc97",
+      "bytes": 5592
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-pointer-to-keyboard.png": {
+      "sha256": "35872a5b45826eeb42dccd58ef1567d338211d3d092a673f7c1af04c3fc73d12",
+      "bytes": 163313
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-populated.html": {
+      "sha256": "96f5c74971ead620bc5f9cc0fa6ba8f641737f795cd567e872e2851c8a1792c7",
+      "bytes": 30973
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-populated.json": {
+      "sha256": "f0902b2af5a41bb32aff545bf98c53cdc7ef7cf2c49d333c5ec73e70e6188767",
+      "bytes": 13216
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-populated.png": {
+      "sha256": "4906be0cb7c5173ee359762cba897e0dd9a2910dbe2a11772c620a3b5cb21e37",
+      "bytes": 143566
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/vite-768-video.json": {
+      "sha256": "f67728853c993191144c89bd60241caa08ee2bdd20c824eb63831042848f9bb3",
+      "bytes": 99
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/command-after/.nodetrace/nodetrace.sqlite": {
+      "sha256": "d1cc59f4051fb341b6edfc396619baaa8e47f5068d785d19f69a88bb3a6d9ec8",
+      "bytes": 69632
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/command-after/docs/eval/nodetrace-happy-path.json": {
+      "sha256": "d3e64a6f4e833a1d399d104b26108fe405631cbba580e18f237d5fa6733bd65d",
+      "bytes": 441
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/command-after/public/nodetrace-state.json": {
+      "sha256": "4c349b723ce89d21936c87207f4179e2a0bf9956df6ff0b613ee7932767c8ff3",
+      "bytes": 3355
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/command-before/.nodetrace/nodetrace.sqlite": {
+      "sha256": "d56654b68d96818d28fcc64a0288b060c15dc8b37a2a05fd6324d42369f3af99",
+      "bytes": 69632
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/command-before/docs/eval/nodetrace-happy-path.json": {
+      "sha256": "377592543e42a6fa151464801bbd5ba742963dbe4e7b83b4a3d91862aef95425",
+      "bytes": 441
+    },
+    "E6c-nodetrace-installed-vite-entity-owner/command-before/public/nodetrace-state.json": {
+      "sha256": "1e0b05f14d415e956dee933bf1cddbe9701ecc9f7977f0d1f57758a8bb3a2866",
+      "bytes": 3355
+    }
+  }
+}

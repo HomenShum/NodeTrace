@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "startedAt": "2026-06-17T09:32:35.949Z",
+  "completedAt": "2026-06-17T09:32:37.841Z",
+  "durationMs": 1892,
+  "apiKeysRequired": false,
+  "sourceRoot": "..",
+  "pluginRoot": "C:/Users/hshum/.understand-anything/repo/understand-anything-plugin",
+  "graphPath": "public/captures/noderoom-trace-knowledge-graph.json",
+  "reportPath": "docs/eval/nodetrace-understand-anything-noderoom.json",
+  "scan": {
+    "totalFiles": 2474,
+    "filteredByIgnore": 0,
+    "estimatedComplexity": "very-large"
+  },
+  "importMap": {
+    "filesScanned": 6,
+    "filesWithImports": 4,
+    "totalEdges": 7
+  },
+  "structure": {
+    "filesAnalyzed": 6,
+    "filesSkipped": []
+  },
+  "selectedFiles": [
+    "src/ui/panels/Artifact.tsx",
+    "src/ui/panels/TraceSurface.tsx",
+    "src/ui/panels/traceData.ts",
+    "src/ui/panels/TraceStepRow.tsx",
+    "src/ui/panels/TraceFlow.tsx",
+    "src/app/styles.css"
+  ]
+}

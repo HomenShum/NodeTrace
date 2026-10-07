@@ -1,0 +1,38 @@
+# CHANGE A — Setup disclosure owner
+
+A developer opening a saved trace needs to reach its evidence before reading setup instructions. The source phone currently spends more than one screen on setup, and its first Inspect trace action requests a surface missing from the actual registry. The installed sample has a valid first action but still leads with setup. The existing header should keep the current task and honest load state visible, reveal setup on demand, and inspect the current valid trace (progressive disclosure and surface identity).
+
+**Named proof:** NODETRACE-D3-SETUP-DISCLOSURE-01. **Before only; no implementation approved by this artifact.** Root must view these boundaries and accept the frozen plan before editing.
+
+## Actual before inputs and routes
+
+- Canonical source commit: `594c988881d17b759ff6455539dc3b293e1a4ee5`, clean index; exact Raw merge tree `7995a3a56bca8363994891997dfcc8256c8cbaac`.
+- Source: actual existing Vite build at `http://127.0.0.1:4965/?disclosureProof=preserved#review`; six trace events and six guided steps. Native navigation adds the actual selected step query. Exact input is `source-actual-input.json`.
+- Installed: normally installed and built retained Next consumer `C:/Users/hshum/AppData/Local/Temp/nodetrace-next-e2e-lU78sE`, route `http://127.0.0.1:4966/nodetrace?disclosureProof=preserved#review`; four events, no coach. Exact input is `installed-actual-input.json`.
+- No fixture/app response replacement. GET-only local browser traffic. Existing builds and all 53 installed protected files were verified and preserved. Servers were stopped after capture.
+- Exact viewports: 320×800, 390×844, 1440×960; Chromium, device scale 1, normal component text and motion preference. Only viewport screenshots; full-page capture is excluded because its known 1440 wrapping side effect would confound the geometry.
+
+## Box contract
+
+The native 3px magenta **CHANGE A · Setup disclosure owner** rectangle bounds `.showcase`, the smallest existing owner containing both the always-visible task/status and optional setup/provenance content. Its full boundary appears in the desktop capture. On phones it spans two actual viewport tiles; use the labelled top plus the retained lower labelled variant, not a reconstructed or stitched image. Temporary overlay nodes were removed with exact underlying DOM equality.
+
+Allowed inside this box: place the existing commands, no-key pill and launch/provenance card behind one native details/summary; use one resolved current surface identity consistently for the header and first Inspect trace button. Title, typography, load announcements, errors, Retry and Inspect remain visible. Proposed summary label: “Setup and trace provenance”. Start closed consistently at every viewport; user toggling must survive resize without a media-query state reset.
+
+Protected outside this box: coach record list, active record/tab/Raw payload, source/UI screenshots, installed Connect your own trace guidance, graph renderer/controls/selection/events and trace lens implementation. Their content, widths and internal geometry stay unchanged; vertical translation caused by the shortened preceding header is intended. No registry, capture fixture, SQLite, installer transformation, graph semantics or ownership policy edits.
+
+| State | Required behavior after repair | Before coverage |
+|---|---|---|
+| Loading | Keep live load status and disabled Inspect outside disclosure. Optional setup must not imply successful evidence. | Source code contract read; not newly routed in this before pass. |
+| Error and Retry | Alert and actual Retry stay visible while collapsed; one real reload attempt follows current behavior. | Existing approved recovery proof retained; new after replay required. |
+| Empty/no coach | Keep truthful no-capture guidance and installed command/document path reachable. Never insert a coach fallback. | Actual four-event installed sample captured. Fully empty state remains an explicit after scenario. |
+| Populated source | First Inspect uses selected coach step's actual registered surface; header modifier-click resolves the same identity. | Actual six-step source first action missing; actual selected coach action succeeds. |
+| Collapsed/resolved | Heading, current status, Inspect and native summary visible; source first record and installed first graph heading move into reach. | Proposed state, not implemented or claimed as passing. |
+| Expanded | All original commands, counts, provenance and limitations appear unchanged; normal keyboard/click toggle and focus work. | Current expanded content captured; new native disclosure must be tested after implementation. |
+| Long/overflow/200% text | Summary and setup content wrap without clipping; no horizontal document overflow; keyboard can reach every revealed control. | Normal-text 320/390/1440 before only; enlarged and long-content after required. |
+| Resize/history/repeated use | Resize preserves user's disclosure choice; opening/closing it does not change unrelated query/hash, current step/tab/entity or retained evidence. Lens open adds lens query; close restores prior query as existing navigation specifies. | Actual query/hash preserved and native lens open/close contract separately verified. |
+
+## Expected after limits
+
+At normal phone text, set the initial setup region to at most 60% of the viewport height, show the first guided record before the fold, and show the installed graph heading before the fold while retaining its integration guidance. At desktop, the first following section must not move down more than 16px from its measured before position. These are acceptance budgets for the scoped repair, not invented current outcomes or grade floors. Enlarged text is judged by complete access and no clipping rather than the normal-text height budget.
+
+Use matched actual inputs for before/after, preserve the 41-check before report, and add focused keyboard, resize, loading/error/empty and repeated-use checks without weakening existing tests. Full D3 coverage, human/device validation, other dimension grades and the 4.5 readiness target remain unresolved.
