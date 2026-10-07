@@ -11,6 +11,13 @@
 <p align="center"><a href="docs/START_HERE.md">Code&nbsp;walkthrough</a> · <a href="HANDOFF.md">Handoff</a> · <a href="https://homenshum.github.io/">All&nbsp;projects</a></p>
 <!-- brand:end -->
 
+# NodeTrace
+
+NodeKit repository ownership and brownfield mapping are documented in
+[`docs/NODEKIT_ADOPTION.md`](docs/NODEKIT_ADOPTION.md). NodeTrace is a portable
+trace presentation/storage package, not a second agent runtime or receipt
+protocol.
+
 Portable Trace Lens UI and SQLite setup for agent-native apps.
 
 ![Happy-path trace events rendered live as a graph rail](docs/screenshots/live-graph-rail.gif)
