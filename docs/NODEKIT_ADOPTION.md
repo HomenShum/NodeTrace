@@ -37,7 +37,7 @@ Use the scripts already defined in [package.json](../package.json):
 | Command | Actual scope |
 | --- | --- |
 | `npm run demo` / `npm run doctor` | Generate the local SQLite happy path |
-| `npm run proof` | Run the temporary SQLite happy-path and documentation/schema smoke, installer CLI smoke and MCP smoke |
+| `npm run proof` | Run the temporary SQLite happy-path and documentation/schema smoke, installer structure/import and capture dry-run checks (no target install or build), and MCP plan-validation smoke (no capture execution) |
 | `npm run check` | Run `prepush`: happy path, smoke, citations, Builder safety, 125-step fixture, capture-plan proof, bundled coach, installed Next build, repository build, package dry run and production dependency audit |
 | `npm run dev` | Start the local Vite service |
 
