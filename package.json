@@ -82,6 +82,7 @@
     "@modelcontextprotocol/sdk": "^1.29.0",
     "@sigma/node-border": "^3.0.0",
     "better-sqlite3": "^12.11.1",
+    "cross-spawn": "^7.0.6",
     "graphology": "^0.26.0",
     "graphology-layout-forceatlas2": "^0.10.1",
     "lucide-react": "^0.515.0",

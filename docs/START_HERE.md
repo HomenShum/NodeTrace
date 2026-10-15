@@ -228,7 +228,7 @@ await server.connect(new StdioServerTransport());
 on disk.
 **Failure behavior** — a bad plan throws inside `normalizeCapturePlan` and the
 MCP call returns the error text. `editor.mode` other than `code-browser` is
-rejected by name — `src/capture/codebaseCapture.mjs:98`
+rejected by name — `src/capture/codebaseCapture.mjs:99`
 (`Unsupported editor.mode`).
 **Next** — continue to Step 6; the capture writes a manifest, and the happy path
 writes the database.
@@ -406,7 +406,7 @@ overwrite an existing file unless `--force` is given — `bin/nodetrace.mjs:158`
 **File:** `scripts/cli-smoke.mjs`, `scripts/capture-plan-smoke.mjs`,
 `scripts/mcp-smoke.mjs`, `scripts/smoke.mjs`
 **Symbol:** `scripts/cli-smoke.mjs:116` (`function validateInstalledImports`)
-and `scripts/capture-plan-smoke.mjs:52` (`async function checkRealCapture`)
+and `scripts/capture-plan-smoke.mjs:57` (`async function checkRealCapture`)
 **Called by:** `npm run smoke`, `npm run capture:plan:smoke`, both members of
 `npm run check`
 **Calls next:** the real binaries, as subprocesses
