@@ -14,11 +14,13 @@ import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import { spawn } from "node:child_process";
 import { createCaptureFixture, FIXTURE_APP_HTML } from "./capture-plan-fixture.mjs";
+import { checkStartedCaptures } from "./capture-start-command-smoke.mjs";
 
 const tempDir = mkdtempSync(join(tmpdir(), "nodetrace-capture-plan-smoke-"));
 const reportPath = "docs/eval/nodetrace-capture-plan-smoke.json";
 const issues = [];
 let realRun = "skipped";
+let startedRuns;
 
 try {
   const { planPath } = createCaptureFixture(tempDir);
@@ -29,6 +31,8 @@ try {
     issues.push(`unexpected dry-run output: ${dry.stdout}`);
   }
   realRun = await checkRealCapture();
+  startedRuns = await checkStartedCaptures();
+  issues.push(...startedRuns.issues);
 } finally {
   rmSync(tempDir, { recursive: true, force: true });
 }
@@ -38,6 +42,7 @@ writeJson(reportPath, {
   completedAt: new Date().toISOString(),
   fixture: "local disposable capture plan",
   realCapture: realRun,
+  startedCaptures: startedRuns,
   issues,
 });
 

@@ -21,37 +21,37 @@
     },
     {
       "file": "src/capture/codebaseCapture.mjs",
-      "line": 87,
+      "line": 88,
       "description": "Validation for the whole engine happens once, here. A plan is input from an agent, so every path is resolved, every default filled, and a step whose source file does not exist throws before any browser starts."
     },
     {
       "file": "src/capture/codebaseCapture.mjs",
-      "line": 98,
+      "line": 99,
       "description": "`code-browser` is the only capture mode. Modes that drove VS Code Desktop and VS Code for the Web used to live here; the Wave 3 reduction removed them because no committed plan, no test and no CI job ever ran them, and this mode already renders source with Shiki, headless, with no editor installed."
     },
     {
       "file": "src/capture/codebaseCapture.mjs",
-      "line": 45,
+      "line": 46,
       "description": "The run itself. Playwright is imported dynamically so that merely importing this module -- which `bin/nodetrace.mjs` does on every `capture` command -- does not require a browser."
     },
     {
       "file": "src/capture/codebaseCapture.mjs",
-      "line": 216,
+      "line": 219,
       "description": "Half one: render the real file's real line range as HTML with Shiki, and screenshot it. The source in the picture is read from disk at capture time, which is the entire point -- a hand-drawn code screenshot proves nothing."
     },
     {
       "file": "src/capture/codebaseCapture.mjs",
-      "line": 356,
+      "line": 359,
       "description": "Half two: drive the real running app to the right state, find the selector, measure its bounding box, and screenshot the element. A box smaller than 20x20 throws rather than saving a sliver."
     },
     {
       "file": "src/capture/codebaseCapture.mjs",
-      "line": 457,
+      "line": 460,
       "description": "The receipt. `captureKind` fields starting with `actual-` are how downstream checks tell a real capture from a placeholder; `scripts/smoke.mjs` refuses a manifest whose steps are not all `actual-`."
     },
     {
       "file": "scripts/capture-plan-smoke.mjs",
-      "line": 52,
+      "line": 57,
       "description": "The check that proves all of the above still works: it serves a page over HTTP from inside the test, runs the capture CLI against it, and asserts the manifest recorded `actual-code-browser-shiki` and a real DOMRect.\n\nBefore this existed, nothing ran the engine end to end -- only its plans were parsed."
     }
   ]

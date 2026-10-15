@@ -4,6 +4,7 @@ import { spawn, spawnSync } from "node:child_process";
 import net from "node:net";
 import { setTimeout as delay } from "node:timers/promises";
 import { parseArgs } from "node:util";
+import spawnPortable from "cross-spawn";
 
 export async function runCaptureCli(args, context = {}) {
   const { values: options } = parseArgs({
@@ -206,10 +207,12 @@ async function resolveAppBaseUrl(plan, childProcesses) {
   const command = materializeCommand(plan.app.startCommand, { host: plan.app.host, port });
   const child = spawnPlanCommand(command, { cwd: plan.app.startCwd });
   childProcesses.push(child);
+  const readiness = new AbortController();
+  child.once("error", (error) => readiness.abort(error));
   child.stdout?.on("data", (chunk) => process.stdout.write(`[${plan.app.name}] ${chunk}`));
   child.stderr?.on("data", (chunk) => process.stderr.write(`[${plan.app.name}] ${chunk}`));
   const url = plan.app.waitUrl ?? `http://${plan.app.host}:${port}/`;
-  await waitForHttp(url, plan.timeoutMs, `${plan.app.name} dev server`);
+  await waitForHttp(url, plan.timeoutMs, `${plan.app.name} dev server`, readiness);
   return url;
 }
 
@@ -500,27 +503,39 @@ function replaceTokens(value, values) {
 }
 
 function spawnPlanCommand(command, options) {
-  if (Array.isArray(command)) return spawnPortable(command[0], command.slice(1), { cwd: options.cwd, stdio: ["ignore", "pipe", "pipe"], windowsHide: true });
-  if (typeof command === "object") return spawnPortable(command.command, command.args ?? [], { cwd: options.cwd, stdio: ["ignore", "pipe", "pipe"], windowsHide: true });
-  return spawn(command, { cwd: options.cwd, shell: true, stdio: ["ignore", "pipe", "pipe"], windowsHide: true });
+  // Own the POSIX process group, including shells and package-manager children.
+  const spawnOptions = { cwd: options.cwd, detached: process.platform !== "win32", stdio: ["ignore", "pipe", "pipe"], windowsHide: true };
+  if (Array.isArray(command)) return spawnPortable(command[0], command.slice(1), spawnOptions);
+  if (typeof command === "object") return spawnPortable(command.command, command.args ?? [], spawnOptions);
+  return spawn(command, { ...spawnOptions, shell: true });
 }
 
-function spawnPortable(command, args, options) {
-  if (process.platform !== "win32") return spawn(command, args, options);
-  return spawn("cmd.exe", ["/d", "/s", "/c", [command, ...args].map(quoteCmdArg).join(" ")], options);
-}
-
-async function waitForHttp(url, timeoutMs, label) {
-  const started = Date.now();
-  while (Date.now() - started < timeoutMs) {
-    try {
-      const response = await fetch(url);
-      if (response.ok || response.status < 500) return;
-    } catch {
-      await delay(500);
+async function waitForHttp(url, timeoutMs, label, controller) {
+  const failure = new Error(`${label} did not become reachable at ${url}`);
+  const deadline = performance.now() + timeoutMs;
+  const timer = setTimeout(() => controller.abort(failure), timeoutMs);
+  const { signal } = controller;
+  try {
+    while (performance.now() < deadline) {
+      signal.throwIfAborted();
+      try {
+        const response = await fetch(url, { signal });
+        await response.body?.cancel();
+        signal.throwIfAborted();
+        if (performance.now() < deadline && (response.ok || response.status < 500)) return;
+      } catch {
+        signal.throwIfAborted();
+      }
+      const remaining = deadline - performance.now();
+      if (remaining > 0) await delay(Math.min(500, remaining), undefined, { signal });
     }
+    throw failure;
+  } catch (error) {
+    throw signal.aborted ? signal.reason : error;
+  } finally {
+    clearTimeout(timer);
+    controller.abort();
   }
-  throw new Error(`${label} did not become reachable at ${url}`);
 }
 
 function isPortFree(port, host) {
@@ -535,7 +550,10 @@ function isPortFree(port, host) {
 function killTree(child) {
   if (!child?.pid || child.killed) return;
   if (process.platform === "win32") spawnSync("taskkill", ["/pid", String(child.pid), "/t", "/f"], { stdio: "ignore" });
-  else child.kill("SIGTERM");
+  else {
+    try { process.kill(-child.pid, "SIGTERM"); }
+    catch (error) { if (error.code !== "ESRCH") throw error; }
+  }
 }
 
 function applyCaptureOverrides(plan, options) {

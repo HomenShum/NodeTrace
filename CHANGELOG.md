@@ -1,5 +1,27 @@
 # Changelog
 
+## 2026-10-15 — Start capture apps reliably and enforce readiness budgets
+
+A coding agent collecting source and app screenshots can now use structured
+Windows startup commands. Previously those commands threw before launching the
+app; string commands could wait past the readiness budget and still report success.
+
+- Reuse the already resolved `cross-spawn` package as an explicit dependency
+  for array/object commands; preserve string commands' shell behavior.
+- Abort readiness fetches on the configured deadline or a child startup error,
+  dispose unread bodies, and back off between retries. Preserve reachable 404
+  responses and the existing timeout error.
+- Terminate the owned POSIX process group so package-manager and shell-launched
+  apps do not survive capture cleanup.
+- Add real started-app capture cases to the existing evaluator: executable and
+  argument paths with spaces, literal arguments, npm and Windows command shims,
+  two simultaneous captures, repeated captures, missing commands, delayed headers,
+  transient/continuous 503 responses and an unfinished response body. Retain
+  fixture inputs, logs, manifests and real PNGs in the reported temporary directory.
+
+This bounds app readiness, not the entire capture or arbitrary shell descendants.
+External cancellation and MCP progress logging are separate follow-up work.
+
 ## 2026-10-07 — Integrate the handoff without reverting current main
 
 A developer adding trace inspection should be able to find its ownership map while retaining the repository's current presentation and dependency fixes.
