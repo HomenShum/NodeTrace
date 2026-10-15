@@ -51,9 +51,13 @@ Workpaper standard: [`docs/TRACE_WORKPAPER_STANDARD.md`](docs/TRACE_WORKPAPER_ST
 ```bash
 npm install
 npm run happy-path
-npm run dev
 npm run smoke
+npm run dev
 ```
+
+Run smoke before starting the foreground Vite server; it creates its own
+temporary SQLite database and does not need the dev server. Leave
+`npm run dev` running while using the demo, and press Ctrl+C to stop it.
 
 The default path uses no API keys and no cloud account. `npm run happy-path`
 creates:

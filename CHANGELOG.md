@@ -30,3 +30,16 @@ The prior entry below is retained as historical proposal evidence against its st
   claim. Current-head automatic CI is recorded on
   [PR #3](https://github.com/HomenShum/NodeTrace/pull/3); historical checks on the
   July head do not certify this refresh.
+
+
+## 2026-10-15 - Run quickstart checks before the foreground server
+
+A developer following Happy Path in one terminal could not reach smoke while
+Vite kept that terminal occupied. The README now runs the unchanged smoke
+command before dev and explains its temporary SQLite database and the server's
+foreground lifetime. Command text, scripts and runtime behavior are unchanged.
+
+The same static sequence/source check changed from 10/11 to 11/11. This checks
+the instructions and source contracts, not a new smoke or application run.
+No browser, build, capture, provider or behavior-qualification proof was added;
+the separate frozen PR 11 and its three-round NOT_QUALIFIED hold are unchanged.
